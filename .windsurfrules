@@ -1,0 +1,53 @@
+# web-portfolio — Windsurf Rules
+
+One-page portfolio and personAI for Marco D'Antonio.
+Stack: Next.js 16, Tailwind v4, Three.js, Lenis, Cloudflare Workers AI.
+Deployed on Cloudflare Workers via OpenNext.
+
+## Read first
+
+- README.md — stack, commands, section map
+- AGENTS.md — working rules
+- docs/CODEBASE.md — architecture and file map
+- docs/DESIGN-SYSTEM.md — tokens, primitives, reuse checklist
+- docs/COMPONENTS.md — component catalog
+- docs/ANIMATION-GUIDE.md — scroll-signal pattern, motion tokens
+
+## Architecture
+
+This is a ONE-PAGE site. All sections live in `app/page.tsx`.
+There are NO multi-page routes for about/projects/experience/contact.
+The only dynamic API route is `/api/personai`.
+
+## Layout pattern
+
+Every section follows this exact structure:
+```tsx
+<SpotlightSection id="sectionid" className="py-24 sm:py-28">
+  <Container>
+    <YourSection />
+  </Container>
+</SpotlightSection>
+```
+
+## Text / i18n
+
+All visible text lives in `content/i18n.ts`.
+Access with: `const { t } = useLanguage()`
+Never hardcode UI strings in components.
+
+## Scroll animation
+
+Subscribe to `lib/scroll-signal` — NEVER add your own scroll listeners:
+```tsx
+useEffect(() => {
+  return subscribeScroll(() => { /* your animation */ });
+}, []);
+```
+
+## Non-negotiables
+
+- Section titles: use `<KineticHeading>` — not `<h2>` directly
+- Form inputs: use `components/ui/input` and `components/ui/textarea`
+- Do NOT reintroduce: `.surface-card`, `.section-copy`, `.eyebrow`, `ScrambleText`
+- Run `npm run lint && npm run build` after every change

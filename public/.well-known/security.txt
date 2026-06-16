@@ -1,0 +1,4 @@
+Contact: mailto:me@marcodantonio.it
+Preferred-Languages: it, en
+Canonical: https://marcodantonio.it/.well-known/security.txt
+Expires: 2027-06-02T00:00:00.000Z

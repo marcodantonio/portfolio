@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+Sitemap: https://marcodantonio.it/sitemap.xml

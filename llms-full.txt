@@ -1,0 +1,201 @@
+# Marco D'Antonio — Portfolio & personAI (full reference)
+
+> One-page portfolio and AI assistant for Marco D'Antonio, full-stack developer & AI engineer.
+> Stack: Next.js 16, Tailwind v4, Three.js, Lenis, Cloudflare Workers AI.
+> Deployed on Cloudflare Workers via OpenNext.
+> Live at: https://marcodantonio.it
+
+---
+
+## Architecture
+
+Two locale routes: `/` (Italian) and `/en` (English). Sections stacked in `app/(it)/page.tsx` and `app/(en)/en/page.tsx`, anchor-navigated:
+`#about` → `#education` → `#skills` → `#projects` → `#experience` → `#contact`
+
+Only dynamic route: `/api/personai` — RAG chat powered by Cloudflare Workers AI.
+
+---
+
+## File map
+
+```
+app/
+  (it)/layout.tsx    # Italian root HTML/body shell + lang="it"
+  (it)/page.tsx      # Root Italian page: all sections
+  (it)/opengraph-image.tsx  # Italian OG preview generator
+  (it)/twitter-image.tsx     # Italian Twitter preview generator
+  (en)/layout.tsx    # English root HTML/body shell + lang="en"
+  (en)/en/page.tsx   # English locale page
+  (en)/en/opengraph-image.tsx  # English OG preview generator
+  (en)/en/twitter-image.tsx     # English Twitter preview generator
+  design-system.css  # All global tokens, motion classes, component CSS
+  api/personai/      # POST handler for AI chat
+
+components/
+  intro.tsx          # Hero: particle canvas + chat widget + parallax-out
+  about.tsx          # Bio + profile.json terminal card
+  education.tsx      # Degrees + radar arc SVG
+  skills.tsx         # 3D Fibonacci sphere with tagged skills
+  projects-rail.tsx  # Drag-scroll holographic card rail
+  experience.tsx     # Timeline with animated SVG line draw
+  contact.tsx        # Email form + social links + Turnstile
+  kinetic-heading.tsx  # Reusable section title (per-word mask reveal)
+  marquee.tsx        # Infinite tech-stack ticker
+  grain-overlay.tsx  # Fixed film-grain noise layer
+  system/
+    copy.tsx           # Eyebrow text primitive
+    spotlight-section.tsx  # Full-width section wrapper with cursor glow
+    smooth-scroll.tsx      # Lenis smooth-scroll provider
+  ui/                # shadcn base: button, input, textarea, badge
+
+content/
+  i18n.ts            # Bilingual dictionary (IT + EN) — ALL UI strings
+  knowledge/         # personAI knowledge base
+  site.ts            # Site metadata
+
+lib/
+  data.ts            # Projects, skills, experiences (feeds i18n + personAI)
+  motion.ts          # Motion tokens + prefersReducedMotion()
+  scroll-signal.ts   # Shared single-rAF scroll listener
+  personai.ts        # RAG retrieval + Workers AI prompt/response
+  cloudflare.ts      # getCloudflareContext() wrapper
+  utils.ts           # cn(), validateString(), getErrorMessage()
+
+context/
+  theme-context.tsx    # Light/dark + localStorage
+  language-context.tsx # IT/EN toggle + localStorage + URL routing
+
+actions/
+  sendEmail.ts       # Server action: Turnstile validation + Resend email
+
+public/
+  portrait.jpg       # Shared portrait asset used by JSON-LD and content
+
+app/
+  robots.ts          # robots.txt
+  sitemap.ts         # sitemap.xml
+  not-found.tsx      # 404 page
+```
+
+---
+
+## Layout pattern for new sections
+
+```tsx
+// In app/(it)/page.tsx or app/(en)/en/page.tsx
+<SpotlightSection id="sectionid" className="py-24 sm:py-28">
+  <Container>
+    <YourSection />
+  </Container>
+</SpotlightSection>
+
+// In components/your-section.tsx
+export default function YourSection() {
+  const { t } = useLanguage();
+  return (
+    <div className="space-y-8">
+      <KineticHeading eyebrow={t.yoursection.label} text={t.yoursection.title} />
+      {/* content */}
+    </div>
+  );
+}
+```
+
+Add section ID to `SECTIONS` array in `components/header.tsx` for nav highlighting.
+Add IT + EN strings to `content/i18n.ts`.
+
+---
+
+## Design tokens (app/design-system.css)
+
+```css
+/* Colors */
+--background, --surface, --foreground
+--accent, --accent-soft
+--copy-default, --copy-muted, --copy-soft
+--line, --line-subtle
+
+/* Motion */
+--ease-out: cubic-bezier(0.16, 1, 0.3, 1)
+--ease-inout: cubic-bezier(0.65, 0, 0.35, 1)
+--dur-fast: 0.35s
+--dur-base: 0.6s
+--dur-slow: 0.85s
+```
+
+---
+
+## Scroll animation pattern
+
+ONE shared rAF listener. All scroll-linked work subscribes here:
+
+```tsx
+import { subscribeScroll } from "@/lib/scroll-signal";
+
+useEffect(() => {
+  return subscribeScroll(() => {
+    const rect = element.getBoundingClientRect();
+    const progress = Math.max(0, Math.min(1, rect.top / window.innerHeight));
+    element.style.opacity = `${1 - progress}`;
+  });
+}, []);
+```
+
+Never add your own `addEventListener('scroll')`.
+
+---
+
+## i18n pattern
+
+```ts
+// content/i18n.ts
+type Copy = {
+  mysection: { label: string; title: string; description: string }
+}
+dictionary.it = { mysection: { label: "// N — label", title: "Titolo", description: "..." } }
+dictionary.en = { mysection: { label: "// N — label", title: "Title", description: "..." } }
+
+// In component
+const { t } = useLanguage();
+<KineticHeading eyebrow={t.mysection.label} text={t.mysection.title} />
+```
+
+---
+
+## personAI
+
+RAG chat widget embedded in the hero. Speaks about Marco in third person to recruiters/visitors.
+
+- **Widget**: `components/hero-mini-chat.tsx`
+- **API**: `app/api/personai/route.ts` — validates input + lang, calls `answerPersonAIQuestion`
+- **Logic**: `lib/personai.ts` — keyword retrieval → messages format → Workers AI → JSON parse
+- **Model**: `@cf/meta/llama-3.1-8b-instruct` (fixed)
+- **Output**: `response_format: { type: "json_schema" }` → `{ "answer": "..." }`
+- **Language**: passed explicitly as `lang: "it" | "en"` from UI → system message instruction
+
+Knowledge sources:
+- `portfolioDocuments` built at runtime from `lib/data.ts` (profile, projects, skills, experience)
+- `content/knowledge/generated-cv.ts` — CV text
+
+---
+
+## Non-negotiables
+
+- Do NOT add section routes (no `/about`, `/projects`, `/experience`, `/contact`)
+- `/en` is the approved English locale route
+- Do NOT reintroduce: `.surface-card`, `.section-copy`, `.eyebrow`, `ScrambleText`, `react-parallax-tilt`
+- Do NOT add custom scroll listeners — use `lib/scroll-signal`
+- Do NOT hardcode UI strings — use `content/i18n.ts`
+- DO run `npm run lint && npm run build` after every change
+
+---
+
+## Commands
+
+```bash
+npm run dev          # Local dev (port 3000)
+npm run lint         # ESLint
+npm run build        # Production build
+npm run preview      # Cloudflare OpenNext preview (tests CF bindings)
+npm run deploy       # Deploy to Cloudflare Workers
+```
