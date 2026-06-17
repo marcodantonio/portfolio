@@ -1,5 +1,12 @@
 # Worklog
 
+## 2026-06-18 (cinematic chapter design)
+
+- Defined the approved direction for the next WOW pass: keep the current one-page section order while upgrading each section into a more cinematic chapter.
+- Chose a shared chapter system plus local GSAP timelines as the technical direction, avoiding both light-only polish and a fragile single global scene director.
+- Scoped Projects as the main expanded/pinned anchor moment, with Hero, About, Education, Skills, Experience, and Contact retaining their current roles but gaining stronger section choreography.
+- Captured the design in `docs/superpowers/specs/2026-06-18-cinematic-chapter-system-design.md` before implementation planning.
+
 ## 2026-06-14 (GSAP motion upgrade)
 
 - Added GSAP 3 (ScrollTrigger + SplitText, both free since 3.13) as the scroll-choreography engine, behind a single entry point `lib/gsap.ts` — components import `{ gsap, ScrollTrigger, SplitText }` from there, never from `gsap` directly.
