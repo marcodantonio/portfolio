@@ -15,7 +15,7 @@ function SkillSphereShell() {
   return (
     <div
       className="tag-sphere ds-panel ds-panel--strong relative flex items-center justify-center overflow-hidden"
-      style={{ width: 380, height: 380, maxWidth: "100%" }}
+      style={{ width: "min(380px, calc(100vw - 3rem))", height: "min(380px, calc(100vw - 3rem))" }}
       aria-hidden="true"
     >
       <div
@@ -74,14 +74,14 @@ export default function Skills() {
   }, [sphereReady]);
 
   return (
-    <div className="space-y-10">
+    <div className="skills-machine space-y-10">
       <KineticHeading eyebrow={t.skills.label} text={t.skills.title} />
 
       <div
         data-reveal
-        className="grid items-center gap-12 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-16"
+        className="skills-machine__grid grid items-center gap-12 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-16"
       >
-        <div ref={sphereHostRef} className="flex justify-center">
+        <div ref={sphereHostRef} className="skills-machine__sphere flex justify-center">
           {sphereReady ? (
             <LazySkillSphere skills={sphereSkills} activeCategory={active} />
           ) : (
@@ -89,7 +89,7 @@ export default function Skills() {
           )}
         </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="skills-machine__groups flex flex-col gap-3">
           <p className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-copy-muted">
             {t.skills.hint}
           </p>

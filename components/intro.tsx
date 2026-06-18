@@ -138,7 +138,7 @@ export default function Intro() {
   return (
     <section
       id="hero-section"
-      className="w-full"
+      className="hero-stage w-full"
     >
       {/* Three.js particle background (hero only) */}
       <HeroCanvas />
@@ -172,7 +172,7 @@ export default function Intro() {
       {/* Hero content */}
       <div
         ref={innerRef}
-        className="relative z-10 flex min-h-[100dvh] flex-col items-center justify-center gap-4 px-4 pb-24 pt-28 text-center will-change-[transform,opacity]"
+        className="hero-stage__content relative z-10 flex min-h-[100dvh] flex-col items-center justify-center gap-4 px-4 pb-24 pt-28 text-center will-change-[transform,opacity]"
       >
 
         {/* Badge */}
@@ -193,7 +193,7 @@ export default function Intro() {
 
         {/* Name */}
         <h1
-          className="hero-entry font-display font-black leading-[0.92] tracking-[-0.05em] text-foreground"
+          className="hero-stage__title hero-entry font-display font-black leading-[0.92] tracking-[-0.05em] text-foreground"
           style={{
             fontSize: "clamp(52px, 8vw, 100px)",
             animation: "heroRise 0.7s ease 0.1s both, heroFade 0.4s ease 0.05s both",
@@ -213,7 +213,7 @@ export default function Intro() {
 
         {/* Chat widget */}
         <div
-          className="hero-entry w-full flex justify-center"
+          className="hero-stage__chat hero-entry w-full flex justify-center"
           style={{ animation: "heroFadeUp 0.5s var(--ease-out) 0.35s both" }}
         >
           {chatReady ? (

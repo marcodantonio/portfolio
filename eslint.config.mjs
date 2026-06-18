@@ -6,6 +6,8 @@ const eslintConfig = [
       ".next/**",
       ".open-next/**",
       ".wrangler/**",
+      ".claude/**",
+      ".superpowers/**",
       "cloudflare-env.d.ts",
     ],
   },

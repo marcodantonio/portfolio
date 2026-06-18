@@ -6,6 +6,7 @@
 - Chose a shared chapter system plus local GSAP timelines as the technical direction, avoiding both light-only polish and a fragile single global scene director.
 - Scoped Projects as the main expanded/pinned anchor moment, with Hero, About, Education, Skills, Experience, and Contact retaining their current roles but gaining stronger section choreography.
 - Captured the design in `docs/superpowers/specs/2026-06-18-cinematic-chapter-system-design.md` before implementation planning.
+- Implemented the shared chapter wrapper, section treatment hooks, expanded Projects active-state rail, and `scripts/verify-cinematic-chapters.mjs` structural guard on branch `codex/cinematic-chapter-system`.
 
 ## 2026-06-14 (GSAP motion upgrade)
 

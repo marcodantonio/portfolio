@@ -28,7 +28,7 @@ export default function SiteContent() {
     <main>
       <Intro />
 
-      <SpotlightSection id="about" className="py-24 sm:py-28">
+      <SpotlightSection id="about" variant="chapter" className="py-24 sm:py-28">
         <SectionGhostNumber index="01" />
         <Container>
           <About />
@@ -37,7 +37,7 @@ export default function SiteContent() {
 
       <Divider />
 
-      <SpotlightSection id="education" as="div" className="bg-[var(--surface)] py-24 sm:py-28">
+      <SpotlightSection id="education" as="div" variant="chapter" className="bg-[var(--surface)] py-24 sm:py-28">
         <SectionGhostNumber index="02" />
         <Container>
           <Education />
@@ -46,7 +46,7 @@ export default function SiteContent() {
 
       <Divider />
 
-      <SpotlightSection id="skills" className="py-24 sm:py-28">
+      <SpotlightSection id="skills" variant="chapter" className="py-24 sm:py-28">
         <SectionGhostNumber index="03" />
         <Container>
           <Skills />
@@ -55,7 +55,7 @@ export default function SiteContent() {
 
       <Marquee items={marqueeItems} />
 
-      <SpotlightSection id="projects" as="div" className="bg-[var(--surface)] py-24 sm:py-28">
+      <SpotlightSection id="projects" as="div" variant="chapter" className="bg-[var(--surface)] py-24 sm:py-28">
         <SectionGhostNumber index="04" />
         <Container>
           <ProjectsRail />
@@ -64,7 +64,7 @@ export default function SiteContent() {
 
       <Divider />
 
-      <SpotlightSection id="experience" className="py-24 sm:py-28">
+      <SpotlightSection id="experience" variant="chapter" className="py-24 sm:py-28">
         <SectionGhostNumber index="05" />
         <Container>
           <Experience />
@@ -73,7 +73,7 @@ export default function SiteContent() {
 
       <Divider />
 
-      <SpotlightSection id="contact" className="py-24 sm:py-28">
+      <SpotlightSection id="contact" variant="chapter" className="py-24 sm:py-28">
         <SectionGhostNumber index="06" />
         <Container>
           <Contact />

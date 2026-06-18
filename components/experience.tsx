@@ -39,10 +39,10 @@ export default function Experience() {
   }, []);
 
   return (
-    <div className="space-y-12">
+    <div className="experience-theatre space-y-12">
       <KineticHeading eyebrow={t.experience.label} text={t.experience.title} />
 
-      <div ref={timelineRef} className="relative max-w-3xl">
+      <div ref={timelineRef} className="experience-theatre__timeline relative max-w-3xl">
         {/* Drawn line */}
         <svg
           className="pointer-events-none absolute left-[18px] top-2 w-1.5"
@@ -57,7 +57,7 @@ export default function Experience() {
         {t.experience.items.map((item, index) => (
           <div
             key={`${item.title}-${item.date}`}
-            className="tl-item relative pb-12 pl-[70px] last:pb-0"
+            className="experience-theatre__item tl-item relative pb-12 pl-[70px] last:pb-0"
           >
             <span className="tl-marker absolute left-0 top-0 z-[2] flex h-[42px] w-[42px] items-center justify-center rounded-full border border-line-subtle bg-background text-[var(--accent)] [&_svg]:h-[17px] [&_svg]:w-[17px]">
               {experiencesData[index]?.icon}

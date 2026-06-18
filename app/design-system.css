@@ -68,7 +68,7 @@ html, body, #__next {
 /* Prevent horizontal scrollbar caused by the projects rail track extending
    beyond the viewport. overflow-x: hidden on <html> acts as viewport scroll
    suppression — it does NOT create a clipping BFC for child shadows. */
-html { overflow-x: hidden; }
+html, body { overflow-x: hidden; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -637,7 +637,7 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth iframe { pointer-events: none; }
 
 /* ── Marquee (tech ticker) ── */
-.marquee { overflow: hidden; white-space: nowrap; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee { overflow: hidden; white-space: nowrap; max-width: 100vw; contain: layout paint; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
 .marquee-track { display: inline-flex; align-items: center; gap: 2.5rem; padding-right: 2.5rem; will-change: transform; animation: marquee 42s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 .marquee-item { font-family: var(--font-display); font-weight: 800; font-size: clamp(20px, 3vw, 34px); letter-spacing: -0.03em; color: var(--copy-muted); transition: color 0.25s; }
@@ -706,6 +706,185 @@ html.dark .grain { opacity: 0.07; mix-blend-mode: soft-light; }
 /* ════════════════════════════════════════════════════════════
    WOW LAYER — interactive effects for the one-page experience
    ════════════════════════════════════════════════════════════ */
+
+/* ── Cinematic chapter system ── */
+.chapter-section {
+  min-height: min(980px, 100svh);
+  display: flex;
+  align-items: center;
+}
+.chapter-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 0 42%, color-mix(in srgb, var(--accent) 4%, transparent) 42% 43%, transparent 43% 100%),
+    linear-gradient(color-mix(in srgb, var(--foreground) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--foreground) 4%, transparent) 1px, transparent 1px);
+  background-size: 100% 100%, 88px 88px, 88px 88px;
+  mask-image: linear-gradient(180deg, transparent, #000 16%, #000 84%, transparent);
+  opacity: 0.38;
+}
+.chapter-section > * {
+  position: relative;
+  z-index: 1;
+}
+html.dark .chapter-section::after {
+  opacity: 0.46;
+  background:
+    linear-gradient(115deg, transparent 0 42%, color-mix(in srgb, var(--accent) 9%, transparent) 42% 43%, transparent 43% 100%),
+    linear-gradient(color-mix(in srgb, white 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, white 4%, transparent) 1px, transparent 1px);
+  background-size: 100% 100%, 92px 92px, 92px 92px;
+}
+
+@media (max-width: 767px) {
+  .chapter-section {
+    min-height: auto;
+  }
+  .chapter-section::after {
+    background-size: 100% 100%, 64px 64px, 64px 64px;
+    opacity: 0.24;
+  }
+}
+
+/* Hero as opening stage */
+.hero-stage::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 38svh;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent, color-mix(in srgb, var(--background) 92%, transparent)),
+    repeating-linear-gradient(90deg, transparent 0 86px, color-mix(in srgb, var(--foreground) 5%, transparent) 86px 87px);
+  opacity: 0.5;
+}
+.hero-stage__content {
+  transform-style: preserve-3d;
+}
+.hero-stage__title {
+  text-shadow: 0 22px 70px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.hero-stage__chat {
+  perspective: 1100px;
+}
+.hero-stage__chat .chat-win {
+  transform: rotateX(0deg) translateZ(0);
+}
+
+/* About dossier */
+.chapter-dossier__terminal {
+  position: relative;
+  min-height: 360px;
+  box-shadow: 0 30px 90px color-mix(in srgb, var(--foreground) 12%, transparent);
+}
+.chapter-dossier__terminal::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 26%, transparent), transparent 34%),
+    linear-gradient(315deg, color-mix(in srgb, #14b8a6 18%, transparent), transparent 38%);
+  opacity: 0.4;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  padding: 1px;
+}
+
+/* Education radar stage */
+.education-radar-stage__radar {
+  filter: drop-shadow(0 32px 70px color-mix(in srgb, var(--accent) 16%, transparent));
+}
+.education-radar-stage__cards {
+  perspective: 1100px;
+}
+.education-radar-stage__card {
+  transform-style: preserve-3d;
+}
+.education-radar-stage__card:hover {
+  transform: translateY(-3px) translateZ(18px);
+}
+
+/* Skills kinetic machine */
+.skills-machine__grid {
+  perspective: 1200px;
+}
+.skills-machine__grid > * {
+  min-width: 0;
+}
+.skills-machine__sphere {
+  position: relative;
+}
+.skills-machine__sphere::before {
+  content: '';
+  position: absolute;
+  inset: 8%;
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+.skills-machine__groups > button {
+  box-shadow: 0 14px 40px color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+
+/* Experience theatre */
+.experience-theatre__timeline {
+  perspective: 1100px;
+}
+.experience-theatre__item {
+  transform-style: preserve-3d;
+}
+.experience-theatre__item.in-view > div:last-child {
+  box-shadow: 0 22px 70px color-mix(in srgb, var(--foreground) 9%, transparent);
+}
+
+/* Contact closing command */
+.contact-command__form {
+  position: relative;
+  border: 1px solid var(--line-subtle);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 72%, transparent), color-mix(in srgb, var(--background) 82%, transparent));
+  padding: clamp(1rem, 2vw, 1.5rem);
+  box-shadow: 0 26px 80px color-mix(in srgb, var(--foreground) 9%, transparent);
+}
+.contact-command__form::before {
+  content: attr(data-command);
+  position: absolute;
+  right: 1rem;
+  top: -0.75rem;
+  border: 1px solid var(--line-subtle);
+  border-radius: 999px;
+  background: var(--background);
+  padding: 0.2rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  .chapter-dossier__terminal {
+    min-height: auto;
+  }
+  .marquee {
+    display: none;
+  }
+  .skills-machine__sphere::before,
+  .contact-command__form::before {
+    display: none;
+  }
+  .contact-command__form {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
 
 /* ── Mouse spotlight (section wrapper) ── */
 /* NOTE: deliberately NOT using content-visibility:auto here. The real section
@@ -824,6 +1003,48 @@ html.dark .grain { opacity: 0.07; mix-blend-mode: soft-light; }
 
 /* ── Holographic project cards (horizontal rail) ── */
 
+.projects-cinematic {
+  position: relative;
+}
+.projects-cinematic::before {
+  content: '';
+  position: absolute;
+  inset: 4rem -8vw auto;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--accent), color-mix(in srgb, #14b8a6 70%, var(--accent)), transparent);
+  opacity: 0.56;
+}
+.projects-cinematic__meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+}
+.projects-cinematic__active {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.75rem;
+  color: var(--copy-muted);
+}
+.projects-cinematic__active span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+}
+.projects-cinematic__active strong {
+  max-width: min(32vw, 360px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2vw, 28px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--foreground);
+}
+
 /* Outer drag wrapper. No overflow set — track uses overflow: visible so
    box-shadows and 3D tilt render freely in all directions.
    Horizontal scrollbar prevention is handled by html { overflow-x: hidden }.
@@ -854,7 +1075,7 @@ html.dark .grain { opacity: 0.07; mix-blend-mode: soft-light; }
    Scrolling is driven by transform: translateX(), not scrollLeft. */
 .rail-track {
   display: flex;
-  gap: 1.5rem;
+  gap: clamp(1.25rem, 3vw, 2.4rem);
   overflow: visible;
   will-change: transform;
 }
@@ -901,8 +1122,36 @@ html.dark .holo-card::before {
   background: var(--accent); transform: scaleX(0); transform-origin: left;
   transition: transform 0.3s; z-index: 4;
 }
-.holo-card:hover { border-color: color-mix(in srgb, var(--accent) 32%, transparent); box-shadow: 0 24px 60px rgba(0,0,0,0.30); }
+.holo-card:hover,
+.holo-card.is-active {
+  border-color: color-mix(in srgb, var(--accent) 32%, transparent);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.30);
+}
+.holo-card.is-active {
+  box-shadow:
+    0 28px 90px color-mix(in srgb, var(--accent) 18%, transparent),
+    0 18px 54px rgba(0,0,0,0.22);
+}
 .holo-card:hover::after { transform: scaleX(1); }
+.holo-card.is-active::after { transform: scaleX(1); }
+
+@media (max-width: 767px) {
+  .rail-outer {
+    overflow: hidden;
+    margin-inline: 0 !important;
+    contain: layout paint;
+  }
+  .projects-cinematic__meta {
+    grid-template-columns: 1fr;
+  }
+  .projects-cinematic__active {
+    justify-content: space-between;
+  }
+  .projects-cinematic__active strong {
+    max-width: 70vw;
+    font-size: 18px;
+  }
+}
 
 /* ── Expandable skill chips (reveal real skills on hover/focus) ── */
 .skill-reveal {

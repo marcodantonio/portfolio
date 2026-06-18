@@ -118,12 +118,12 @@ export default function Education() {
   }, []);
 
   return (
-    <div className="space-y-12">
+    <div className="education-radar-stage space-y-12">
       <KineticHeading eyebrow={t.education.label} text={t.education.title} />
 
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* Radar map */}
-        <div ref={radarRef} className="relative mx-auto w-full max-w-[420px]" style={{ aspectRatio: "1 / 1.05" }}>
+        <div ref={radarRef} className="education-radar-stage__radar relative mx-auto w-full max-w-[420px]" style={{ aspectRatio: "1 / 1.05" }}>
           <svg viewBox="0 0 200 210" className="block h-full w-full">
             <defs>
               <radialGradient id="radarBg">
@@ -172,7 +172,7 @@ export default function Education() {
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col gap-4">
+        <div className="education-radar-stage__cards flex flex-col gap-4">
           {EDUCATION.map((edu) => {
             const text = t.education.items[edu.id];
             return (
@@ -180,7 +180,7 @@ export default function Education() {
               key={edu.id}
               onMouseEnter={() => setActive(edu.id)}
               onMouseLeave={() => setActive(null)}
-              className="group relative overflow-hidden rounded-xl border border-line-subtle bg-panel px-7 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)]"
+              className="education-radar-stage__card group relative overflow-hidden rounded-xl border border-line-subtle bg-panel px-7 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)]"
             >
               <span className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-[var(--accent)] transition-transform duration-300 group-hover:scale-x-100" />
               <div className="mb-4 flex items-center gap-2">

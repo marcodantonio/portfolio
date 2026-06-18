@@ -48,6 +48,7 @@ type Copy = {
     sub: string;
     email: string;
     message: string;
+    command: string;
     send: string;
     sending: string;
     sent: string;
@@ -191,6 +192,7 @@ export const dictionary: Record<Lang, Copy> = {
       sub: "Sono aperto a collaborazioni su software, AI e infrastruttura. Se hai un'idea, parliamone.",
       email: "Email",
       message: "Messaggio",
+      command: "send_message()",
       send: "Invia messaggio",
       sending: "Invio...",
       sent: "Messaggio inviato ✓",
@@ -332,6 +334,7 @@ export const dictionary: Record<Lang, Copy> = {
       sub: "I'm open to collaborations on software, AI, and infrastructure. If you have an idea, let's talk.",
       email: "Email",
       message: "Message",
+      command: "send_message()",
       send: "Send message",
       sending: "Sending...",
       sent: "Message sent ✓",

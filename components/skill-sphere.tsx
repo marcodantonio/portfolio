@@ -31,6 +31,7 @@ export default function SkillSphere({ skills, activeCategory, size = 380 }: Skil
   const wrapRef = useRef<HTMLDivElement>(null);
   const rotRef = useRef<HTMLDivElement>(null);
   const tagRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const cssSize = `min(${size}px, calc(100vw - 3rem))`;
   const displaySkills = useMemo(() => {
     return [...skills].sort((a, b) => hashString(`${a.category}:${a.label}`) - hashString(`${b.category}:${b.label}`));
   }, [skills]);
@@ -160,7 +161,7 @@ export default function SkillSphere({ skills, activeCategory, size = 380 }: Skil
     <div
       ref={wrapRef}
       className="tag-sphere"
-      style={{ width: size, height: size, maxWidth: "100%" }}
+      style={{ width: cssSize, height: cssSize }}
     >
       <div ref={rotRef} className="tag-sphere-rot">
         {displaySkills.map((skill, i) => {

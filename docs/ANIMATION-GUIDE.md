@@ -6,6 +6,8 @@ Motion on this page is built from three things: **motion tokens** (easing, durat
 
 Decorative scroll choreography — kinetic headings, ghost numerals, reveals, the projects rail, pointer-follow effects — runs on GSAP.
 
+The homepage now uses a shared cinematic chapter system. `SpotlightSection variant="chapter"` provides the common stage layer, while each section keeps its own focused animation hooks. Do not build a single global scene director; keep pinning and scrubbed timelines local and intentional, with Projects as the primary expanded pinned moment.
+
 ### Single import (`lib/gsap.ts`)
 
 Plugins are registered once. **Always import from `@/lib/gsap`, never from `gsap` directly:**
@@ -30,7 +32,7 @@ Disabled entirely under reduced motion (native scroll).
 
 ### Responsive tiers (`gsap.matchMedia`)
 
-Build behavior per breakpoint/pointer/motion preference and let GSAP revert it automatically. The projects rail only pins on desktop, fine-pointer, no-reduced-motion:
+Build behavior per breakpoint/pointer/motion preference and let GSAP revert it automatically. The projects rail only pins on desktop, fine-pointer, no-reduced-motion, and mobile keeps the drag fallback:
 
 ```tsx
 const mm = gsap.matchMedia();
@@ -192,6 +194,19 @@ As you scroll past the hero, content slides up + fades out. Creates "cinematic" 
 4. Applies `translateY(${progress * -70}px)` + `opacity ${1 - progress * 1.15}` from its `onUpdate`
 
 **Result:** Content smoothly rises out of frame as you scroll, perfectly timed with particle disperse.
+
+## Cinematic Chapter System
+
+The one-page sections remain in their original order, but each main section is staged as a chapter:
+
+- About: `.chapter-dossier`
+- Education: `.education-radar-stage`
+- Skills: `.skills-machine`
+- Projects: `.projects-cinematic`
+- Experience: `.experience-theatre`
+- Contact: `.contact-command`
+
+Shared depth and spacing come from `.chapter-section`. Section-specific motion should use local `ScrollTrigger` effects only where the visual object needs it. Avoid adding decorative scroll listeners or a global scene store.
 
 ## Chat Shockwave
 

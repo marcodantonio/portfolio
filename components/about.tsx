@@ -82,7 +82,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="space-y-12">
+    <div className="chapter-dossier space-y-12">
       <KineticHeading eyebrow={t.about.label} text={t.about.title} />
 
       <div className="grid gap-12 lg:grid-cols-[1fr_390px] lg:gap-20">
@@ -99,7 +99,7 @@ export default function About() {
         <div
           ref={cardRef}
           data-reveal
-          className="overflow-hidden rounded-xl border border-line bg-[var(--surface)] font-mono"
+          className="chapter-dossier__terminal overflow-hidden rounded-xl border border-line bg-[var(--surface)] font-mono"
         >
           <div className="flex items-center gap-1.5 border-b border-line px-4 py-2.5">
             <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F57]" />

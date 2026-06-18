@@ -92,13 +92,13 @@ export default function Contact() {
   };
 
   return (
-    <div className="space-y-12">
+    <div className="contact-command space-y-12">
       <div className="flex flex-col gap-3">
         <Eyebrow className="text-[0.78rem] tracking-[0.24em]">{t.contact.label}</Eyebrow>
       </div>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
-        <div data-reveal>
+        <div data-reveal className="contact-command__copy">
           <h2 className="font-display text-[clamp(26px,3.2vw,42px)] font-extrabold leading-[1.12] tracking-[-0.035em]">
             {t.contact.title}
             <br />
@@ -130,7 +130,8 @@ export default function Contact() {
         <form
           ref={formRef}
           data-reveal
-          className="flex flex-col gap-4"
+          data-command={t.contact.command}
+          className="contact-command__form flex flex-col gap-4"
           onFocusCapture={() => setSecurityMounted(true)}
           onSubmit={handleSubmit}
         >

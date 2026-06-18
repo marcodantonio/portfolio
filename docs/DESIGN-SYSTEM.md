@@ -17,7 +17,7 @@
 ## Structural patterns
 
 - **Container**: max-w-1100px, px-6, mx-auto (all sections use this)
-- **SpotlightSection**: full-width wrapper with cursor-tracking accent spotlight (radial-gradient)
+- **SpotlightSection**: full-width wrapper with cursor-tracking accent spotlight (radial-gradient); `variant="chapter"` enables the cinematic section system
 - **Divider**: thin border (border-line-subtle) between sections
 - **Grid spacing**: gap-6 for columns, py-24 sm:py-28 for section vertical padding
 
@@ -27,7 +27,7 @@
 
 **Other system primitives**:
 - `smooth-scroll.tsx` — Lenis wrapper (client-side, anchor-safe)
-- `spotlight-section.tsx` — section wrapper with full-width accent glow
+- `spotlight-section.tsx` — section wrapper with full-width accent glow and chapter variant
 
 **Base UI** (`components/ui/*`):
 - `button` — variants (default, outline, ghost)
@@ -62,6 +62,14 @@ useEffect(() => {
 ```
 Lenis is driven by `gsap.ticker` (one rAF for all scroll work). Functional scroll state (header, progress bar) still uses `lib/scroll-signal`.
 
+## Pattern: Cinematic chapters
+
+Existing homepage sections use `<SpotlightSection variant="chapter">` for the shared cinematic layer. This adds stable full-viewport chapter spacing, subtle grid/depth treatment, and the `.chapter-section` hook.
+
+Use it only for the main one-page chapters: about, education, skills, projects, experience, and contact. Section-specific treatments use named hooks: `.chapter-dossier`, `.education-radar-stage`, `.skills-machine`, `.projects-cinematic`, `.experience-theatre`, and `.contact-command`.
+
+Projects is the main expanded chapter: desktop keeps the pinned rail and now exposes active-project context; touch/mobile keeps the drag fallback.
+
 **Parallax-out** in the hero:
 - Hero content (name, chat, CTA) moves up + fades as you scroll past
 - A ScrollTrigger `scrub` tween drives the inner div's transform + opacity
@@ -91,6 +99,7 @@ Lenis is driven by `gsap.ticker` (one rAF for all scroll work). Functional scrol
 ## Design direction
 
 - **Premium but human**: smooth motion, clear type, breathing space
+- **Cinematic but structured**: wow moments come from shared chapter staging and Projects expansion, not a separate reel or reordered page
 - **Dark-first**: light mode is the override (light defaults, dark variants)
 - **Recruiter-friendly**: fast to scan, copy is literal, CTA is clear, no gimmicks block reading
 - **Reduced-motion respects**: all motion disables under `prefers-reduced-motion: reduce`

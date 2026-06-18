@@ -14,12 +14,14 @@ Full-width section wrapper with cursor-tracking accent spotlight (radial-gradien
 **Props:**
 - `id` (string, required) — for anchor nav
 - `as` (string, default "section") — HTML tag
+- `variant` (`"default" | "chapter"`, default `"default"`) — chapter enables shared cinematic section staging
 - `className` (string) — additional styles (padding, bg)
 - `children` — inner content
 
 **Behavior:**
 - Full width (`w-full`)
 - Spotlight glow follows cursor (GPU-accelerated, safe)
+- Chapter variant adds `.chapter-section` and `data-chapter-variant="chapter"` for shared depth/spacing
 - No motion on `prefers-reduced-motion`
 
 ### Container
@@ -186,7 +188,7 @@ Degree + thesis with a radar visualization (Pescara ↔ L'Aquila arc). Custom SV
 ### Projects-Rail
 5 holographic cards in a horizontal rail. Hover → accent sheen follows cursor (subtle, on-palette).
 
-**Pattern:** On desktop (≥1024px, fine pointer, no reduced motion) a `gsap.matchMedia` block pins `#projects` and scrubs the card track horizontally via ScrollTrigger, with a progress bar and velocity-linked skew. Touch keeps the existing momentum drag rail (pointer events + friction rAF). Card tilt uses `gsap.quickTo`; `holo-card` class carries `--mx`, `--my`, `--hop` for the cursor sheen. (`#projects.spotlight` is forced `content-visibility: visible` so the pin measures real geometry.)
+**Pattern:** On desktop (≥1024px, fine pointer, no reduced motion) a `gsap.matchMedia` block pins `#projects` and scrubs the card track horizontally via ScrollTrigger, with a progress bar, active-project context, larger cards, and velocity-linked skew. Touch keeps the existing momentum drag rail (pointer events + friction rAF). Card tilt uses `gsap.quickTo`; `holo-card` class carries `--mx`, `--my`, `--hop` for the cursor sheen. The `.projects-cinematic` wrapper is the main expanded chapter moment.
 
 ### Experience
 Timeline with animated SVG vertical line. Fill line's `y2` attribute is driven by scroll progress.
@@ -194,7 +196,7 @@ Timeline with animated SVG vertical line. Fill line's `y2` attribute is driven b
 **Pattern:** A `ScrollTrigger.create({ scrub: true })` updates the fill `y2` from its `onUpdate`; a separate `ScrollTrigger.batch` reveals each `.tl-item`. Both killed on unmount.
 
 ### Contact
-Email form (left) + social links (right). Uses Framer Motion for staggered entrance.
+Email form (left) + social links (right). Uses the `.contact-command` chapter treatment for the closing scene.
 
 **Pattern:** 2-col grid (mobile: 1-col). Form action via `sendEmail` server action.
 

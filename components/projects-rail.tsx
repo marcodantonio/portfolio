@@ -28,12 +28,14 @@ function HoloCard({
   title,
   description,
   tags,
+  active,
 }: {
   index: number;
   total: number;
   title: string;
   description: string;
   tags: readonly string[];
+  active: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const Icon = ICONS[index % ICONS.length];
@@ -93,7 +95,7 @@ function HoloCard({
       onMouseMove={handleMove}
       onMouseLeave={reset}
       data-cursor="view"
-      className="holo-card flex w-[clamp(280px,80vw,400px)] flex-shrink-0 flex-col rounded-2xl border border-line-subtle bg-surface p-8"
+      className={`holo-card flex w-[clamp(300px,78vw,520px)] flex-shrink-0 flex-col rounded-2xl border border-line-subtle bg-surface p-8 lg:min-h-[420px] lg:p-10${active ? " is-active" : ""}`}
     >
       <p className="mb-5 font-mono text-[11px] tracking-[0.1em] text-copy-muted">
         {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
@@ -126,6 +128,7 @@ const FRICTION = 0.93;
 
 export default function ProjectsRail() {
   const { t } = useLanguage();
+  const projectCount = t.projects.items.length;
   // outerRef  = the clip/cursor container (visible window)
   // trackRef  = the moving flex track (transform target)
   const outerRef = useRef<HTMLDivElement>(null);
@@ -139,6 +142,8 @@ export default function ProjectsRail() {
   const progressRef = useRef<HTMLDivElement>(null);
   const pinnedRef = useRef(false);
   const [pinActive, setPinActive] = useState(false);
+  const [activeProject, setActiveProject] = useState(0);
+  const activeProjectRef = useRef(0);
 
   useEffect(() => () => cancelAnimationFrame(rafId.current), []);
 
@@ -160,13 +165,24 @@ export default function ProjectsRail() {
         txRef.current = 0;
         const skewTo = gsap.quickTo(track, "skewX", { duration: 0.5, ease: "power3.out" });
         const distance = () => track.scrollWidth - outer.clientWidth;
+        const chapterDistance = () => Math.max(distance(), 1) * 1.25 + window.innerHeight * 0.35;
+        const setProjectFromProgress = (progress: number) => {
+          const next = Math.min(
+            projectCount - 1,
+            Math.max(0, Math.round(progress * (projectCount - 1)))
+          );
+          if (next !== activeProjectRef.current) {
+            activeProjectRef.current = next;
+            setActiveProject(next);
+          }
+        };
         const tween = gsap.to(track, {
           x: () => -distance(),
           ease: "none",
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: () => `+=${distance()}`,
+            end: () => `+=${chapterDistance()}`,
             pin: true,
             scrub: 1,
             anticipatePin: 1,
@@ -175,6 +191,7 @@ export default function ProjectsRail() {
               if (progressRef.current) {
                 progressRef.current.style.transform = `scaleX(${self.progress})`;
               }
+              setProjectFromProgress(self.progress);
               // Subtle velocity-linked skew (clamped), eased back to 0.
               const skew = gsap.utils.clamp(-4, 4, self.getVelocity() / -350);
               skewTo(skew);
@@ -186,6 +203,8 @@ export default function ProjectsRail() {
         return () => {
           pinnedRef.current = false;
           setPinActive(false);
+          activeProjectRef.current = 0;
+          setActiveProject(0);
           tween.scrollTrigger?.kill();
           tween.kill();
           gsap.set(track, { clearProps: "transform" });
@@ -194,7 +213,7 @@ export default function ProjectsRail() {
       }
     );
     return () => mm.revert();
-  }, []);
+  }, [projectCount]);
 
   const clamp = (v: number) => {
     const outer = outerRef.current;
@@ -249,15 +268,21 @@ export default function ProjectsRail() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="projects-cinematic space-y-8">
       <KineticHeading eyebrow={t.projects.label} text={t.projects.title} />
 
-      <div className="flex items-center gap-3 font-mono text-[11px] tracking-[0.08em] text-copy-muted">
-        <span
-          className="h-px max-w-[200px] flex-1"
-          style={{ background: "linear-gradient(to right, var(--accent), transparent)" }}
-        />
-        <span>{pinActive ? t.projects.scrollHint : t.projects.drag}</span>
+      <div className="projects-cinematic__meta">
+        <div className="flex min-w-0 items-center gap-3 font-mono text-[11px] tracking-[0.08em] text-copy-muted">
+          <span
+            className="h-px max-w-[200px] flex-1"
+            style={{ background: "linear-gradient(to right, var(--accent), transparent)" }}
+          />
+          <span>{pinActive ? t.projects.scrollHint : t.projects.drag}</span>
+        </div>
+        <div className="projects-cinematic__active">
+          <span>{String(activeProject + 1).padStart(2, "0")} / {String(projectCount).padStart(2, "0")}</span>
+          <strong>{t.projects.items[activeProject]?.title}</strong>
+        </div>
       </div>
 
       {pinActive ? (
@@ -281,10 +306,11 @@ export default function ProjectsRail() {
             <HoloCard
               key={project.title}
               index={index}
-              total={t.projects.items.length}
+              total={projectCount}
               title={project.title}
               description={project.description}
               tags={projectsData[index]?.tags ?? []}
+              active={index === activeProject}
             />
           ))}
         </div>
