@@ -19,6 +19,7 @@ export default function Header({ mode = "site" }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string | null>(null);
   const scrolledRef = useRef(false);
+  const activeRef = useRef<string | null>(null);
 
   useEffect(() => {
     return subscribeScroll(() => {
@@ -39,7 +40,10 @@ export default function Header({ mode = "site" }: HeaderProps) {
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActive(visible.target.id);
+        if (visible && visible.target.id !== activeRef.current) {
+          activeRef.current = visible.target.id;
+          setActive(visible.target.id);
+        }
       },
       { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.25, 0.5, 1] }
     );

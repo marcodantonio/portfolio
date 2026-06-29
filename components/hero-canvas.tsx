@@ -230,7 +230,7 @@ export default function HeroCanvas() {
           return raycaster.ray.intersectPlane(ground, hit) ? hit : null;
         };
 
-        const onMouseMove = (e: MouseEvent) => {
+        const onPointerMove = (e: PointerEvent) => {
           const rect = canvas.getBoundingClientRect();
           mouseInHero = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
           if (mouseInHero) {
@@ -240,7 +240,14 @@ export default function HeroCanvas() {
             if (p) uniforms.u_mouse.value.set(p.x, p.y);
           }
         };
-        window.addEventListener("mousemove", onMouseMove, { passive: true });
+        const onPointerLeave = () => {
+          mouseInHero = false;
+          camTX = 0;
+          camTY = 0;
+          uniforms.u_mouse.value.set(999, 999);
+        };
+        hero?.addEventListener("pointermove", onPointerMove, { passive: true });
+        hero?.addEventListener("pointerleave", onPointerLeave, { passive: true });
 
         const onHeroClick = (e: MouseEvent) => {
           const target = e.target as HTMLElement;
@@ -287,8 +294,18 @@ export default function HeroCanvas() {
         const onPulse = () => uniforms.u_click.value.set(0, 0, 1.3);
         window.addEventListener("hero:pulse", onPulse);
 
-        let animId: number;
+        let animId: number | undefined;
+        let isInView = true;
+        let isRunning = false;
+        const stopLoop = () => {
+          isRunning = false;
+          if (animId !== undefined) {
+            cancelAnimationFrame(animId);
+            animId = undefined;
+          }
+        };
         const tick = () => {
+          if (!isRunning) return;
           animId = requestAnimationFrame(tick);
           timer.update(); // THREE.Timer requires explicit update each frame
           uniforms.u_time.value = timer.getElapsed();
@@ -331,25 +348,48 @@ export default function HeroCanvas() {
           renderer.render(scene, camera);
         };
 
-        // Pause rendering entirely while the tab is hidden; cancel first so a
-        // queued frame can't pair with the resume call into a double loop.
-        const onVisibility = () => {
-          cancelAnimationFrame(animId);
-          if (!document.hidden) {
-            timer.reset();
-            tick();
+        const startLoop = () => {
+          if (isRunning || document.hidden || !isInView) return;
+          const elapsedBeforeReset = timer.getElapsed();
+          const formationElapsed = formStart === null ? 0 : Math.max(0, elapsedBeforeReset - formStart);
+          isRunning = true;
+          timer.reset();
+          if (formStart !== null) {
+            formStart = -formationElapsed;
           }
+          tick();
+        };
+
+        // Pause rendering entirely while hidden or away from the hero; cancel
+        // first so a queued frame can't pair with the resume into a double loop.
+        const onVisibility = () => {
+          if (document.hidden) stopLoop();
+          else startLoop();
         };
         document.addEventListener("visibilitychange", onVisibility);
 
-        if (!document.hidden) tick();
+        const viewportObserver = hero
+          ? new IntersectionObserver(
+              (entries) => {
+                isInView = entries.some((entry) => entry.isIntersecting);
+                if (isInView) startLoop();
+                else stopLoop();
+              },
+              { rootMargin: "240px 0px" }
+            )
+          : undefined;
+        if (hero) viewportObserver?.observe(hero);
+
+        startLoop();
 
         cleanup = () => {
-          cancelAnimationFrame(animId);
+          stopLoop();
           clearTimeout(resizeTo);
           clearTimeout(formTimer);
           themeObserver.disconnect();
-          window.removeEventListener("mousemove", onMouseMove);
+          viewportObserver?.disconnect();
+          hero?.removeEventListener("pointermove", onPointerMove);
+          hero?.removeEventListener("pointerleave", onPointerLeave);
           window.removeEventListener("resize", onResize);
           window.removeEventListener("hero:pulse", onPulse);
           document.removeEventListener("bootend", beginFormation);

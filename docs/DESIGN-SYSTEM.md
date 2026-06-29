@@ -10,14 +10,14 @@
 - Theme switching via `html.dark` class (no re-render); stored in localStorage
 
 **Motion tokens** (all in `app/design-system.css`):
-- `--ease-out: cubic-bezier(0.16, 1, 0.3, 1)` — premium entrance
+- `--ease-out: cubic-bezier(0.16, 1, 0.3, 1)` — decisive entrance
 - `--ease-inout: cubic-bezier(0.65, 0, 0.35, 1)` — smooth loops
 - `--dur-fast: 0.35s`, `--dur-base: 0.6s`, `--dur-slow: 0.85s`
 
 ## Structural patterns
 
 - **Container**: max-w-1100px, px-6, mx-auto (all sections use this)
-- **SpotlightSection**: full-width wrapper with cursor-tracking accent spotlight (radial-gradient); `variant="chapter"` enables the cinematic section system
+- **SpotlightSection**: full-width wrapper with cursor-tracking accent spotlight (radial-gradient); `variant="story"` enables the homepage narrative flow
 - **Divider**: thin border (border-line-subtle) between sections
 - **Grid spacing**: gap-6 for columns, py-24 sm:py-28 for section vertical padding
 
@@ -27,7 +27,7 @@
 
 **Other system primitives**:
 - `smooth-scroll.tsx` — Lenis wrapper (client-side, anchor-safe)
-- `spotlight-section.tsx` — section wrapper with full-width accent glow and chapter variant
+- `spotlight-section.tsx` — section wrapper with full-width accent glow plus the homepage story variant
 
 **Base UI** (`components/ui/*`):
 - `button` — variants (default, outline, ghost)
@@ -40,8 +40,7 @@
 Every section uses `<KineticHeading>` for the main heading:
 ```tsx
 <KineticHeading
-  eyebrow="// 01 — about"
-  text="Chi sono"
+  text="Profilo"
   as="h2"
 />
 ```
@@ -62,13 +61,15 @@ useEffect(() => {
 ```
 Lenis is driven by `gsap.ticker` (one rAF for all scroll work). Functional scroll state (header, progress bar) still uses `lib/scroll-signal`.
 
-## Pattern: Cinematic chapters
+## Pattern: Story flow
 
-Existing homepage sections use `<SpotlightSection variant="chapter">` for the shared cinematic layer. This adds stable full-viewport chapter spacing, subtle grid/depth treatment, and the `.chapter-section` hook.
+Homepage body sections use `<SpotlightSection variant="story">` for a continuous narrative layer. This keeps the same anchors and content order, but removes numbered chapter chrome, repeated eyebrow labels, and hard divider lines.
 
-Use it only for the main one-page chapters: about, education, skills, projects, experience, and contact. Section-specific treatments use named hooks: `.chapter-dossier`, `.education-radar-stage`, `.skills-machine`, `.projects-cinematic`, `.experience-theatre`, and `.contact-command`.
+Use it only for the main homepage story scenes: about, education, skills, projects, experience, and contact. Section-specific treatments still use named hooks: `.profile-dossier`, `.education-radar-stage`, `.skills-machine`, `.projects-cinematic`, `.experience-theatre`, and `.contact-command`.
 
-Projects is the main expanded chapter: desktop keeps the pinned rail and now exposes active-project context; touch/mobile keeps the drag fallback.
+Do not reintroduce `components/cinematic-director.tsx`, `components/section-ghost-number.tsx`, section counters, or visible `// 01` labels. The site should read as one continuous portfolio surface, not a stack of labelled portfolio modules.
+
+Projects remains the main expanded moment: desktop keeps the pinned reel and active-project context; touch/mobile keeps the drag fallback.
 
 **Parallax-out** in the hero:
 - Hero content (name, chat, CTA) moves up + fades as you scroll past
@@ -85,6 +86,7 @@ Projects is the main expanded chapter: desktop keeps the pinned rail and now exp
 - `.section-copy` (use BodyCopy from system/copy.tsx)
 - One-off layout wrappers (reuse SpotlightSection + Container)
 - `ScrambleText` (use KineticHeading for titles)
+- `CinematicDirector`, `SectionGhostNumber`, numbered section rails, visible `// 01` labels
 - Custom scroll listeners or new `scroll-signal` subscribers for decorative motion (use GSAP ScrollTrigger via `lib/gsap`)
 
 ## Reuse checklist before writing new CSS
@@ -98,8 +100,8 @@ Projects is the main expanded chapter: desktop keeps the pinned rail and now exp
 
 ## Design direction
 
-- **Premium but human**: smooth motion, clear type, breathing space
-- **Cinematic but structured**: wow moments come from shared chapter staging and Projects expansion, not a separate reel or reordered page
+- **Polished but human**: smooth motion, clear type, breathing space
+- **Direct but kinetic**: signature interactions come from the continuous story flow, local visual objects, and Projects expansion, not manifesto-style section copy
 - **Dark-first**: light mode is the override (light defaults, dark variants)
 - **Recruiter-friendly**: fast to scan, copy is literal, CTA is clear, no gimmicks block reading
 - **Reduced-motion respects**: all motion disables under `prefers-reduced-motion: reduce`

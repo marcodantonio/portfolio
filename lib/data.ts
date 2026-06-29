@@ -29,7 +29,7 @@ export const experiencesData = [
     title: "Software Developer",
     location: "Netsons",
     description:
-      "Development and integration of new web features and services. Collaboration with the systems team on infrastructure optimization, scalable solutions, CI/CD automation, and containerized delivery.",
+      "Development and integration of web features and services. Collaboration with the systems team on infrastructure, CI/CD automation, and containerized delivery.",
     icon: React.createElement(CgWorkAlt),
     date: "2025 — Present",
   },
@@ -40,18 +40,24 @@ export const projectsData = [
     title: "Computer Vision AI",
     description:
       "A custom object detection pipeline connected to a web app where new scans can improve the model over time.",
+    role: "YOLO training, synthetic dataset, and web prototype.",
+    output: "Object recognition connected to reusable scans.",
     tags: ["Python", "YOLOv8", "Object Detection", "Blender", "AI"],
   },
   {
     title: "Clothing E-commerce",
     description:
       "A full e-commerce project with storefront, order flow, shipping workflows, reviews, ratings, and admin logic.",
+    role: "Storefront, order logic, and admin panel.",
+    output: "Catalog, checkout, shipping, reviews, and ratings.",
     tags: ["JavaScript", "HTML5", "CSS", "MySQL", "Bootstrap", "PHP"],
   },
   {
     title: "University Classroom Management System",
     description:
       "A scheduling platform for university spaces and recurring events, with classroom booking, tracking, admin workflows, OpenAPI documentation, and MySQL-backed services.",
+    role: "Java REST backend, database, and booking workflows.",
+    output: "Rooms, recurring events, tracking, and OpenAPI docs.",
     tags: [
       "Java",
       "RESTful Services",
@@ -65,12 +71,16 @@ export const projectsData = [
     title: "Machine Learning Recommendation AI",
     description:
       "A recommendation engine that combines static and dynamic user preferences to suggest more relevant items across different datasets.",
+    role: "Ranking model and user-preference handling.",
+    output: "Reusable suggestions across datasets and categories.",
     tags: ["Python", "Machine Learning", "Data Analysis", "AI"],
   },
   {
     title: "WordPress Websites",
     description:
       "A set of early websites for local businesses, focused on speed, clarity, and practical delivery.",
+    role: "Setup, theme, technical content, and deployment.",
+    output: "Client-editable sites on a WordPress/Docker stack.",
     tags: ["WordPress", "Docker", "MariaDB", "PHP"],
   },
 ] as const;

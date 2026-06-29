@@ -7,7 +7,7 @@ import { LoaderCircle } from "lucide-react";
 import toast from "react-hot-toast";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { sendEmail } from "@/actions/sendEmail";
-import { Eyebrow } from "@/components/system/copy";
+import KineticHeading from "@/components/kinetic-heading";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -33,6 +33,7 @@ export default function Contact() {
   const [securityMounted, setSecurityMounted] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const turnstileRef = useRef<TurnstileInstance>(null);
+  const contactHeading = [t.contact.title, t.contact.titleEm].filter(Boolean).join(" ");
 
   // Mounts Turnstile on demand and resolves once its ref is populated, so a
   // submit that fires before the form is focused still gets a live widget.
@@ -93,17 +94,12 @@ export default function Contact() {
 
   return (
     <div className="contact-command space-y-12">
-      <div className="flex flex-col gap-3">
-        <Eyebrow className="text-[0.78rem] tracking-[0.24em]">{t.contact.label}</Eyebrow>
-      </div>
-
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
         <div data-reveal className="contact-command__copy">
-          <h2 className="font-display text-[clamp(26px,3.2vw,42px)] font-extrabold leading-[1.12] tracking-[-0.035em]">
-            {t.contact.title}
-            <br />
-            <em className="not-italic text-[var(--accent)]">{t.contact.titleEm}</em>
-          </h2>
+          <KineticHeading
+            text={contactHeading}
+            className="contact-command__heading"
+          />
           <p className="mt-4 max-w-md text-[15px] leading-[1.82] text-copy-muted">{t.contact.sub}</p>
 
           <div className="mt-9 flex flex-col gap-2.5">

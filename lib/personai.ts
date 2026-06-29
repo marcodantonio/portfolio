@@ -55,6 +55,8 @@ const portfolioDocuments: KnowledgeDocument[] = [
     content: projects
       .map((project) => `${project.title}
 Summary: ${project.description}
+Role: ${project.role}
+Output: ${project.output}
 Stack: ${project.tags?.join(", ") ?? ""}`)
       .join("\n\n"),
   },
@@ -180,6 +182,9 @@ function buildMessages(question: string, chunks: KnowledgeChunk[], lang: string)
     "- Never address the user as 'Marco'. Never speak as if you are Marco.",
     "- Only use facts from the context below. Do not invent anything.",
     "- If the context is insufficient, say so briefly.",
+    "- Use concrete facts: roles, dates, stack, outputs, and constraints.",
+    "- Avoid motivational, promotional, or generic resume wording.",
+    "- Never provide phone numbers. Use the public email address when contact is relevant.",
     "- Keep answers concise and easy to scan. Use bullet points for multiple items.",
     "- Do not mention being an AI, model, or assistant.",
     `- You MUST respond in ${language}. This is mandatory.`,

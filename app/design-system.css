@@ -704,48 +704,64 @@ html.dark .grain { opacity: 0.07; mix-blend-mode: soft-light; }
 }
 
 /* ════════════════════════════════════════════════════════════
-   WOW LAYER — interactive effects for the one-page experience
+   INTERACTIVE LAYER — effects for the one-page experience
    ════════════════════════════════════════════════════════════ */
 
-/* ── Cinematic chapter system ── */
-.chapter-section {
-  min-height: min(980px, 100svh);
-  display: flex;
-  align-items: center;
+/* ── Story flow — continuous homepage body without numbered chapter chrome ── */
+.story-flow {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, var(--background), color-mix(in srgb, var(--surface) 46%, var(--background)) 42%, var(--background) 100%);
 }
-.chapter-section::after {
+.story-flow::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
   background:
-    linear-gradient(115deg, transparent 0 42%, color-mix(in srgb, var(--accent) 4%, transparent) 42% 43%, transparent 43% 100%),
-    linear-gradient(color-mix(in srgb, var(--foreground) 5%, transparent) 1px, transparent 1px),
-    linear-gradient(90deg, color-mix(in srgb, var(--foreground) 4%, transparent) 1px, transparent 1px);
-  background-size: 100% 100%, 88px 88px, 88px 88px;
-  mask-image: linear-gradient(180deg, transparent, #000 16%, #000 84%, transparent);
-  opacity: 0.38;
+    linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 7%, transparent) 48%, transparent 58%),
+    repeating-linear-gradient(90deg, transparent 0 184px, color-mix(in srgb, var(--foreground) 4%, transparent) 184px 185px);
+  opacity: 0.42;
+  mask-image: linear-gradient(180deg, transparent, #000 6%, #000 94%, transparent);
 }
-.chapter-section > * {
+.story-flow > * {
   position: relative;
   z-index: 1;
 }
-html.dark .chapter-section::after {
-  opacity: 0.46;
+.story-section {
+  min-height: clamp(560px, 74svh, 820px);
+  display: flex;
+  align-items: center;
+  overflow: clip;
+}
+.story-section::after {
+  content: '';
+  position: absolute;
+  inset: 8% 0 auto;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 20%, transparent), transparent);
+  opacity: 0.38;
+}
+.story-section > * {
+  position: relative;
+  z-index: 1;
+}
+html.dark .story-flow::before {
+  opacity: 0.56;
   background:
-    linear-gradient(115deg, transparent 0 42%, color-mix(in srgb, var(--accent) 9%, transparent) 42% 43%, transparent 43% 100%),
-    linear-gradient(color-mix(in srgb, white 5%, transparent) 1px, transparent 1px),
-    linear-gradient(90deg, color-mix(in srgb, white 4%, transparent) 1px, transparent 1px);
-  background-size: 100% 100%, 92px 92px, 92px 92px;
+    linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 9%, transparent) 48%, transparent 58%),
+    repeating-linear-gradient(90deg, transparent 0 184px, rgba(255, 255, 255, 0.035) 184px 185px);
 }
 
 @media (max-width: 767px) {
-  .chapter-section {
+  .story-section {
     min-height: auto;
   }
-  .chapter-section::after {
-    background-size: 100% 100%, 64px 64px, 64px 64px;
+  .story-flow::before,
+  .story-section::after {
     opacity: 0.24;
   }
 }
@@ -776,12 +792,12 @@ html.dark .chapter-section::after {
 }
 
 /* About dossier */
-.chapter-dossier__terminal {
+.profile-dossier__terminal {
   position: relative;
   min-height: 360px;
   box-shadow: 0 30px 90px color-mix(in srgb, var(--foreground) 12%, transparent);
 }
-.chapter-dossier__terminal::before {
+.profile-dossier__terminal::before {
   content: '';
   position: absolute;
   inset: -1px;
@@ -868,7 +884,7 @@ html.dark .chapter-section::after {
 }
 
 @media (max-width: 767px) {
-  .chapter-dossier__terminal {
+  .profile-dossier__terminal {
     min-height: auto;
   }
   .marquee {
@@ -891,7 +907,7 @@ html.dark .chapter-section::after {
    heights (714–1124px) differ from any fixed intrinsic placeholder, so toggling
    skipped/rendered as sections enter the viewport shifts the document height by
    ~1300px during the first scroll. ScrollTrigger caches its start/end positions,
-   so that shift desyncs the pin, reveals, ghost-number parallax and timeline.
+   so that shift desyncs the pin, reveals and timeline.
    On a 6-section one-pager the skip-rendering win is negligible; correctness wins. */
 .spotlight {
   position: relative;
@@ -1079,24 +1095,6 @@ html.dark .chapter-section::after {
   overflow: visible;
   will-change: transform;
 }
-/* ── Ghost section numerals ── */
-.ghost-num {
-  position: absolute;
-  top: 0.5rem;
-  right: clamp(0.5rem, 3vw, 3rem);
-  z-index: 0;
-  pointer-events: none;
-  user-select: none;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: clamp(110px, 22vw, 260px);
-  line-height: 1;
-  letter-spacing: -0.06em;
-  color: transparent;
-  -webkit-text-stroke: 1px color-mix(in srgb, var(--accent) 22%, transparent);
-  opacity: 0.5;
-}
-
 .holo-card {
   --mx: 50%; --my: 50%; --hop: 0;
   position: relative; overflow: hidden;
@@ -1134,6 +1132,36 @@ html.dark .holo-card::before {
 }
 .holo-card:hover::after { transform: scaleX(1); }
 .holo-card.is-active::after { transform: scaleX(1); }
+.project-proof {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line-subtle);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, transparent), transparent 58%),
+    color-mix(in srgb, var(--surface) 82%, transparent);
+}
+.project-proof__row {
+  display: grid;
+  grid-template-columns: minmax(4.8rem, auto) 1fr;
+  gap: 0.8rem;
+  align-items: baseline;
+}
+.project-proof dt {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  line-height: 1.3;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.project-proof dd {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--copy-default);
+}
 
 @media (max-width: 767px) {
   .rail-outer {
@@ -1150,6 +1178,10 @@ html.dark .holo-card::before {
   .projects-cinematic__active strong {
     max-width: 70vw;
     font-size: 18px;
+  }
+  .project-proof__row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 }
 

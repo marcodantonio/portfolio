@@ -4,9 +4,9 @@ Motion on this page is built from three things: **motion tokens** (easing, durat
 
 ## GSAP / ScrollTrigger
 
-Decorative scroll choreography — kinetic headings, ghost numerals, reveals, the projects rail, pointer-follow effects — runs on GSAP.
+Decorative scroll choreography — kinetic headings, reveals, the projects rail, pointer-follow effects — runs on GSAP.
 
-The homepage now uses a shared cinematic chapter system. `SpotlightSection variant="chapter"` provides the common stage layer, while each section keeps its own focused animation hooks. Do not build a single global scene director; keep pinning and scrubbed timelines local and intentional, with Projects as the primary expanded pinned moment.
+The homepage now uses a continuous story flow. `SpotlightSection variant="story"` provides the common body rhythm without numbered chapter chrome. Keep pinning and section-specific interactions local and intentional, with Projects as the primary expanded pinned moment.
 
 ### Single import (`lib/gsap.ts`)
 
@@ -88,7 +88,7 @@ For `matchMedia`, `mm.revert()` kills everything it created. For `batch`, kill e
 Everything in `app/design-system.css`:
 
 ```css
---ease-out: cubic-bezier(0.16, 1, 0.3, 1);        /* Premium entrance, snappy */
+--ease-out: cubic-bezier(0.16, 1, 0.3, 1);        /* Decisive entrance, snappy */
 --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);     /* Smooth loops, hover */
 --dur-fast: 0.35s;                                 /* Quick feedback */
 --dur-base: 0.6s;                                  /* Standard animation */
@@ -132,8 +132,7 @@ Used on all section titles. Characters rise out of a clip mask, staggered, when 
 
 ```tsx
 <KineticHeading
-  eyebrow="// 03 — skills"
-  text="Stack tecnico"
+  text="Competenze"
   as="h2"
 />
 ```
@@ -166,7 +165,7 @@ One-line scroll inertia. Wraps the app via `<SmoothScroll />` provider.
 
 ## Hero Particle Formation
 
-The "wow moment": particles assemble into "MARCO D'ANTONIO" on first load.
+The hero particle formation assembles into "MARCO D'ANTONIO" on first load.
 
 **Lifecycle:**
 1. **0–350ms:** Boot overlay showing; particles idle in ambient field
@@ -183,9 +182,11 @@ The "wow moment": particles assemble into "MARCO D'ANTONIO" on first load.
 - `u_form = 0.5` → glyph target positions
 - `u_form = 1.0` → ambient positions again (disperse)
 
+The render loop is hero-scoped: pointer tracking listens on `#hero-section`, and rendering pauses when the hero leaves the viewport or the tab is hidden.
+
 ## Hero Content Parallax-Out
 
-As you scroll past the hero, content slides up + fades out. Creates "cinematic" descent illusion.
+As you scroll past the hero, content slides up + fades out. This creates depth without adding another scene layer.
 
 **How:**
 1. Hero inner div (`revealedRef`) initially hidden (opacity 0, translateY 24px)
@@ -195,18 +196,22 @@ As you scroll past the hero, content slides up + fades out. Creates "cinematic" 
 
 **Result:** Content smoothly rises out of frame as you scroll, perfectly timed with particle disperse.
 
-## Cinematic Chapter System
+## Story Flow
 
-The one-page sections remain in their original order, but each main section is staged as a chapter:
+The one-page sections remain in their original anchor order, but the visible grammar is a continuous portfolio flow instead of numbered chapters:
 
-- About: `.chapter-dossier`
+- About: `.profile-dossier`
 - Education: `.education-radar-stage`
 - Skills: `.skills-machine`
 - Projects: `.projects-cinematic`
 - Experience: `.experience-theatre`
 - Contact: `.contact-command`
 
-Shared depth and spacing come from `.chapter-section`. Section-specific motion should use local `ScrollTrigger` effects only where the visual object needs it. Avoid adding decorative scroll listeners or a global scene store.
+Shared spacing and connective background treatment come from `.story-section` and `.story-flow`.
+
+Do not reintroduce `CinematicDirector`, `SectionGhostNumber`, visible section counters, or `// 01` eyebrow labels. Those patterns make the page read as a generated portfolio template.
+
+Section-specific motion should use local `ScrollTrigger` effects only where the visual object needs it. Continuous rAF loops must pause when their visual object is off-screen or when the tab is hidden. Do not add decorative scroll listeners; use ScrollTrigger and clean up every trigger/tween.
 
 ## Chat Shockwave
 
@@ -230,7 +235,7 @@ window.addEventListener("hero:pulse", () => {
 
 ## Marquee (Tech Stack Ticker)
 
-Infinite horizontal scroll with pause-on-hover.
+Reusable infinite horizontal scroll with pause-on-hover. It is not mounted in the current homepage story flow; avoid putting it back between Skills and Projects unless the overall rhythm is redesigned again.
 
 **CSS animation:**
 ```css

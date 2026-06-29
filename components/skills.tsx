@@ -75,7 +75,7 @@ export default function Skills() {
 
   return (
     <div className="skills-machine space-y-10">
-      <KineticHeading eyebrow={t.skills.label} text={t.skills.title} />
+      <KineticHeading text={t.skills.title} />
 
       <div
         data-reveal

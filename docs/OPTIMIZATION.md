@@ -2,8 +2,8 @@
 
 ## Current priorities
 
-1. Normalize a few remaining bespoke media treatments across pages
-2. Tighten a few page-level hero/detail compositions
+1. Keep rAF/WebGL work scoped to visible sections only
+2. Normalize a few remaining bespoke media treatments across pages
 3. Keep reducing UI duplication as new sections evolve
 4. Continue simplifying page-level visual noise where cards are not needed
 5. Refine `personAI` tone further if real recruiter usage suggests it
@@ -16,6 +16,12 @@
 ## Known product debt
 
 - `personAI` can still be refined further in tone and response presentation after more real usage feedback
+
+## Recent under-the-hood improvements
+
+- Hero WebGL now pauses its render loop when `#hero-section` leaves the viewport or the tab is hidden.
+- Hero pointer tracking is scoped to `#hero-section` instead of `window`, so later sections do not pay bounding-box work on every pointer move.
+- Skill sphere rAF now pauses outside the viewport and renders only once under `prefers-reduced-motion`.
 
 ## What was already removed
 

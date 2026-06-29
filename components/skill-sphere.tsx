@@ -63,10 +63,12 @@ export default function SkillSphere({ skills, activeCategory, size = 380 }: Skil
     let velY = 0;
     const autoSpinY = 0.0028;
     let dragging = false;
+    let isInView = true;
+    let isRunning = false;
     let lastX = 0;
     let lastY = 0;
     let lastMoveAt = 0;
-    let rafId: number;
+    let rafId: number | undefined;
 
     const onPointerDown = (event: PointerEvent) => {
       dragging = true;
@@ -113,20 +115,15 @@ export default function SkillSphere({ skills, activeCategory, size = 380 }: Skil
 
     const radius = () => Math.min(rot.clientWidth, rot.clientHeight) * 0.42;
 
-    const tick = () => {
-      rafId = requestAnimationFrame(tick);
-      if (!reduce) {
-        if (!dragging) {
-          rotY += autoSpinY;
-          rotX += velX;
-          rotY += velY;
-          velX *= 0.972;
-          velY *= 0.972;
-          if (Math.abs(velX) < 0.000015) velX = 0;
-          if (Math.abs(velY) < 0.000015) velY = 0;
-        }
+    const stopLoop = () => {
+      isRunning = false;
+      if (rafId !== undefined) {
+        cancelAnimationFrame(rafId);
+        rafId = undefined;
       }
+    };
 
+    const renderFrame = () => {
       const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
       const cosX = Math.cos(rotX), sinX = Math.sin(rotX);
       const r = radius();
@@ -145,15 +142,60 @@ export default function SkillSphere({ skills, activeCategory, size = 380 }: Skil
         el.style.zIndex = `${Math.round(depth * 100)}`;
       });
     };
-    tick();
+
+    const tick = () => {
+      if (!isRunning) return;
+      rafId = requestAnimationFrame(tick);
+      if (!dragging) {
+        rotY += autoSpinY;
+        rotX += velX;
+        rotY += velY;
+        velX *= 0.972;
+        velY *= 0.972;
+        if (Math.abs(velX) < 0.000015) velX = 0;
+        if (Math.abs(velY) < 0.000015) velY = 0;
+      }
+      renderFrame();
+    };
+
+    const startLoop = () => {
+      if (document.hidden || !isInView) return;
+      if (reduce) {
+        renderFrame();
+        return;
+      }
+      if (isRunning) return;
+      isRunning = true;
+      tick();
+    };
+
+    const visibilityObserver = new IntersectionObserver(
+      (entries) => {
+        isInView = entries.some((entry) => entry.isIntersecting);
+        if (isInView) startLoop();
+        else stopLoop();
+      },
+      { rootMargin: "180px 0px" }
+    );
+    visibilityObserver.observe(wrap);
+
+    const onVisibilityChange = () => {
+      if (document.hidden) stopLoop();
+      else startLoop();
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
+
+    startLoop();
 
     return () => {
-      cancelAnimationFrame(rafId);
+      stopLoop();
+      visibilityObserver.disconnect();
       wrap.removeEventListener("pointerdown", onPointerDown);
       wrap.removeEventListener("pointermove", onPointerMove);
       wrap.removeEventListener("pointerup", stopDragging);
       wrap.removeEventListener("pointercancel", stopDragging);
       wrap.removeEventListener("pointerleave", onPointerLeave);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
     };
   }, [points]);
 

@@ -1,5 +1,48 @@
 # Worklog
 
+## 2026-06-29 (portfolio evidence and anti-filler pass)
+
+- Added role/output proof blocks to every project card in IT/EN so Projects carries concrete evidence instead of only descriptions.
+- Added project role/output metadata to `lib/data.ts` and personAI's project context.
+- Sanitized the generated CV knowledge source: phone number redaction, removal of motivational resume summary, generic soft-skill line, privacy boilerplate, and marketing-style phrases.
+- Tightened the personAI prompt so answers prefer concrete facts and avoid motivational/promotional wording.
+- Added an accessible `aria-label` to the hero H1 while keeping the visual split name treatment.
+- Cleaned active README/docs wording away from "WOW/premium/vibe" language and updated docs for project proof cards.
+- Extended `scripts/verify-cinematic-chapters.mjs` to guard against the rejected copy and CV phrases returning.
+
+## 2026-06-29 (direct portfolio copy pass)
+
+- Replaced the remaining editorial section headings with literal portfolio labels in IT/EN: Profilo, Formazione, Competenze, Progetti, Esperienza, Contatto.
+- Tightened the contact intro copy so it states the actual purpose of the form instead of using slogan-style language.
+- Extended the narrative-flow verification script to fail if the rejected manifesto-style headings return to the visible i18n copy.
+
+## 2026-06-29 (runtime loop hygiene)
+
+- Scoped hero particle pointer tracking to `#hero-section` instead of a global `window` mouse listener.
+- Paused the hero WebGL render loop when the hero is outside the viewport, while preserving the existing hidden-tab pause and StrictMode cleanup.
+- Paused the skill sphere rAF loop outside the viewport and made reduced-motion render a static frame instead of a continuous loop.
+- Removed the unused `SpotlightSection variant="chapter"` path and its `.chapter-section` CSS so the old numbered-chapter system has no active implementation surface left.
+- Renamed the About treatment hook from `.chapter-dossier` to `.profile-dossier` to remove leftover chapter-system naming from active code.
+- Centralized boot overlay timers so SKIP/auto-finish cancel pending line timers and avoid duplicate finish work.
+- Added an active-section ref guard in the header observer to avoid redundant state updates while scrolling.
+- Updated README and optimization/animation docs to remove stale ghost-numeral language and document the visibility-scoped loops.
+
+## 2026-06-26 (narrative flow anti-template pass)
+
+- Replaced the visible numbered chapter grammar with a continuous homepage story flow: `SpotlightSection variant="story"`, `.story-flow`, and `.story-section`.
+- Removed the homepage `CinematicDirector`, `SectionGhostNumber`, ghost numeral CSS, hard section dividers, and visible eyebrow labels from the main sections.
+- Reworked section titles in IT/EN copy so they read as specific editorial statements instead of generic portfolio modules.
+- Removed project card counters and the homepage tech ticker from the body flow; Projects remains the main pinned horizontal case reel.
+- Updated the structural guard so `node scripts/verify-cinematic-chapters.mjs` fails if numbered chapter chrome or `// 01` section labels return.
+
+## 2026-06-19 (cinematic director follow-up)
+
+- Reworked the conservative cinematic chapter pass after design feedback that the site still read like full-height sections instead of an award-style experience.
+- Added `components/cinematic-director.tsx`: an aria-hidden GSAP ScrollTrigger director with a fixed chapter rail, active-section class, and scrubbed heading/visual transforms.
+- Recalibrated the follow-up after style feedback so the new motion layer evolves the existing visual language instead of replacing it with a separate cinematic skin.
+- Kept the homepage tech ticker and Projects card scale aligned with the existing site style while retaining the desktop pinned rail, active-project context, and tilt/scrub motion.
+- Updated the structural guard, design-system docs, component catalog, and animation guide to reflect the new shared director.
+
 ## 2026-06-18 (cinematic chapter design)
 
 - Defined the approved direction for the next WOW pass: keep the current one-page section order while upgrading each section into a more cinematic chapter.

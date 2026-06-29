@@ -25,9 +25,8 @@
   - `hero-canvas.tsx` — hero-only Three.js particle field (inside `#hero-section`)
   - `about.tsx`, `education.tsx`, `skills.tsx`, `projects-rail.tsx`, `experience.tsx`, `contact.tsx` — sections
   - `kinetic-heading.tsx` — reusable title with GSAP SplitText char-level masked reveal on scroll-in
-  - `section-ghost-number.tsx` — oversized ghost numeral behind a section, parallax-scrubbed via ScrollTrigger (decorative, `aria-hidden`)
   - `custom-cursor.tsx`, `magnetic.tsx` — GSAP `quickTo` pointer-follow effects
-  - `marquee.tsx` — infinite tech-stack ticker (pauses on hover)
+  - `marquee.tsx` — reusable infinite tech-stack ticker (not mounted in the current homepage flow)
   - `grain-overlay.tsx` — subtle film-grain layer
   - `system/` — design-system primitives: `copy.tsx` (Eyebrow), `spotlight-section.tsx`, `smooth-scroll.tsx` (Lenis↔GSAP-ticker bridge), `reveal-manager.tsx` (`ScrollTrigger.batch` entrance reveals for `[data-reveal]`)
   - `ui/` — shadcn base: button, input, textarea, badge, separator
@@ -51,17 +50,17 @@
 
 ## Page structure (locale routes + anchor nav)
 
-The portfolio has two locale routes, `/` and `/en`, each with the same 6 sections, each an `<SpotlightSection>`:
+The portfolio has two locale routes, `/` and `/en`, each with the same anchors inside a continuous story flow:
 
 1. **Hero (Intro)** — particle field (particle formation on first load), chat widget, CTA, scroll hint
 2. **About** (`#about`) — bio paragraphs + syntax-highlighted profile.json card
 3. **Education** (`#education`) — degree + thesis with Pescara↔L'Aquila radar arc
 4. **Skills** (`#skills`) — 3D Fibonacci sphere with tagged skills (category dim/glow on hover)
-5. **Projects** (`#projects`) — drag-scroll rail of 5 holographic cards (accent sheen follows cursor)
+5. **Projects** (`#projects`) — drag-scroll rail of 5 holographic proof cards (role, output, stack)
 6. **Experience** (`#experience`) — timeline with animated SVG line draw (scrubbed via ScrollTrigger)
 7. **Contact** (`#contact`) — email form + GitHub/LinkedIn rows
 
-All sections are full-width (SpotlightSection), inner content centered via Container wrapper (max-w-1100px, px-6).
+All story scenes are full-width (`SpotlightSection variant="story"`), with inner content centered via the Container wrapper (max-w-1100px, px-6). Visible numbered section chrome and ghost numerals are intentionally removed.
 
 ## Data flow
 
@@ -73,7 +72,7 @@ All sections are full-width (SpotlightSection), inner content centered via Conta
 - **personAI**: `content/knowledge/` builds the retrieval corpus from data + generated CV
 - **Locale routing**: `/` and `/en` have separate root layouts, so the server emits the correct `<html lang>` from the first response
 - **Social image**: locale-specific `opengraph-image.tsx` / `twitter-image.tsx` files generate the social previews; `public/portrait.jpg` stays as the shared portrait asset
-- **Scroll**: Decorative scroll choreography (kinetic headings, ghost numerals, reveals, projects rail, timeline draw) runs on GSAP ScrollTrigger via `lib/gsap`. Functional scroll state (header scrolled flag, progress bar) still goes through `lib/scroll-signal`
+- **Scroll**: Decorative scroll choreography (kinetic headings, story reveals, projects rail, timeline draw) runs on GSAP ScrollTrigger via `lib/gsap`. Functional scroll state (header scrolled flag, progress bar) still goes through `lib/scroll-signal`
 - **Agent docs**: `/docs/api` is the service documentation entry point, and `/.well-known/api-catalog` is the machine-readable catalog advertised from the homepage via `Link` headers
 
 ## Motion & animation
@@ -83,7 +82,6 @@ All sections are full-width (SpotlightSection), inner content centered via Conta
 - **Formation flourish**: Hero-only particles form "MARCO D'ANTONIO" on first load (350ms after boot), then idle in ambient field
 - **Hero chat shockwave**: Chat sends/receives → dispatch `hero:pulse` event → particles radiate + flare
 - **Kinetic headings**: GSAP SplitText char-level masked reveal on scroll-in (ScrollTrigger `once`)
-- **Ghost numerals**: Oversized section numbers parallax-scrubbed behind sections (ScrollTrigger `scrub`)
 - **Batched reveals**: `ScrollTrigger.batch` entrance reveals for any `[data-reveal]` element (via `reveal-manager.tsx`)
 - **Projects rail**: Desktop pins `#projects` and scrubs the card track horizontally; touch keeps the momentum drag rail
 - **Timeline draw**: SVG line draw scrubbed as the timeline scrolls into view (ScrollTrigger)

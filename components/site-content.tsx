@@ -4,20 +4,10 @@ import Education from "@/components/education";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import ProjectsRail from "@/components/projects-rail";
-import SectionGhostNumber from "@/components/section-ghost-number";
 import Skills from "@/components/skills";
-import Marquee from "@/components/marquee";
 import SpotlightSection from "@/components/system/spotlight-section";
-import { skillsData } from "@/lib/data";
-
-const marqueeItems = Array.from(new Set(skillsData.flatMap((g) => g.skills)));
-
-function Divider() {
-  return <hr className="mx-auto w-full max-w-[1100px] border-t border-line-subtle" />;
-}
 
 function Container({ children }: { children: React.ReactNode }) {
-  // `relative` so section content stacks above the positioned ghost numeral.
   return <div className="relative mx-auto w-full max-w-[1100px] px-6">{children}</div>;
 }
 
@@ -25,56 +15,40 @@ export default function SiteContent() {
   // Block flow (not flex): ScrollTrigger's pin-spacer can't reserve the pin
   // distance inside a flex container, which would overlap the next section.
   return (
-    <main>
+    <main className="story-flow">
       <Intro />
 
-      <SpotlightSection id="about" variant="chapter" className="py-24 sm:py-28">
-        <SectionGhostNumber index="01" />
+      <SpotlightSection id="about" variant="story" className="py-20 sm:py-24">
         <Container>
           <About />
         </Container>
       </SpotlightSection>
 
-      <Divider />
-
-      <SpotlightSection id="education" as="div" variant="chapter" className="bg-[var(--surface)] py-24 sm:py-28">
-        <SectionGhostNumber index="02" />
+      <SpotlightSection id="education" as="div" variant="story" className="py-20 sm:py-24">
         <Container>
           <Education />
         </Container>
       </SpotlightSection>
 
-      <Divider />
-
-      <SpotlightSection id="skills" variant="chapter" className="py-24 sm:py-28">
-        <SectionGhostNumber index="03" />
+      <SpotlightSection id="skills" variant="story" className="py-20 sm:py-24">
         <Container>
           <Skills />
         </Container>
       </SpotlightSection>
 
-      <Marquee items={marqueeItems} />
-
-      <SpotlightSection id="projects" as="div" variant="chapter" className="bg-[var(--surface)] py-24 sm:py-28">
-        <SectionGhostNumber index="04" />
+      <SpotlightSection id="projects" as="div" variant="story" className="py-20 sm:py-24">
         <Container>
           <ProjectsRail />
         </Container>
       </SpotlightSection>
 
-      <Divider />
-
-      <SpotlightSection id="experience" variant="chapter" className="py-24 sm:py-28">
-        <SectionGhostNumber index="05" />
+      <SpotlightSection id="experience" variant="story" className="py-20 sm:py-24">
         <Container>
           <Experience />
         </Container>
       </SpotlightSection>
 
-      <Divider />
-
-      <SpotlightSection id="contact" variant="chapter" className="py-24 sm:py-28">
-        <SectionGhostNumber index="06" />
+      <SpotlightSection id="contact" variant="story" className="py-20 sm:py-24">
         <Container>
           <Contact />
         </Container>

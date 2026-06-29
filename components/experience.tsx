@@ -40,7 +40,7 @@ export default function Experience() {
 
   return (
     <div className="experience-theatre space-y-12">
-      <KineticHeading eyebrow={t.experience.label} text={t.experience.title} />
+      <KineticHeading text={t.experience.title} />
 
       <div ref={timelineRef} className="experience-theatre__timeline relative max-w-3xl">
         {/* Drawn line */}

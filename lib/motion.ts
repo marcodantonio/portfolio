@@ -5,7 +5,7 @@
 
 /** Easing curves (cubic-bezier args) shared across JS-driven animation. */
 export const EASE = {
-  /** Expo-out — premium, decisive entrances. */
+  /** Expo-out — decisive entrances. */
   out: [0.16, 1, 0.3, 1] as const,
   /** Smooth in-out for parallax/loops. */
   inOut: [0.65, 0, 0.35, 1] as const,

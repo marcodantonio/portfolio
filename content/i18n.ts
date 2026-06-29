@@ -34,7 +34,8 @@ type Copy = {
     title: string;
     drag: string;
     scrollHint: string;
-    items: Array<{ title: string; description: string }>;
+    proofLabels: { role: string; output: string };
+    items: Array<{ title: string; description: string; proof: { role: string; output: string } }>;
   };
   experience: {
     label: string;
@@ -68,7 +69,7 @@ export const dictionary: Record<Lang, Copy> = {
       contact: "Contatto",
     },
     hero: {
-      badge: "// Software Developer & AI Engineer",
+      badge: "Software Developer & AI Engineer",
       scroll: "scroll",
       chatSub: "assistente digitale",
       chatGreeting:
@@ -83,8 +84,8 @@ export const dictionary: Record<Lang, Copy> = {
       chatErrorOffline: "Errore di connessione. Riprova!",
     },
     about: {
-      label: "// 01 — about",
-      title: "Chi sono",
+      label: "Profilo",
+      title: "Profilo",
       bio: [
         "Sono Marco, un <strong>Software Developer</strong> con esperienza su web systems, intelligenza artificiale e infrastrutture.",
         "Lavoro in Netsons su funzionalità web, integrazione servizi e automazione del delivery con CI/CD e container.",
@@ -93,7 +94,7 @@ export const dictionary: Record<Lang, Copy> = {
       termTitle: "marco@dev — profile.sh",
     },
     education: {
-      label: "// 02 — education",
+      label: "Formazione",
       title: "Formazione",
       msc: "Magistrale in corso",
       bsc: "Triennale",
@@ -123,9 +124,9 @@ export const dictionary: Record<Lang, Copy> = {
       },
     },
     skills: {
-      label: "// 03 — skills",
-      title: "Stack tecnico",
-      hint: "// passa su una categoria",
+      label: "Competenze",
+      title: "Competenze",
+      hint: "passa su una categoria",
       skills: "skill",
       categories: {
         "Development & Engineering": "Sviluppo & Engineering",
@@ -136,37 +137,61 @@ export const dictionary: Record<Lang, Copy> = {
       },
     },
     projects: {
-      label: "// 04 — projects",
+      label: "Progetti",
       title: "Progetti",
       drag: "trascina →",
       scrollHint: "scorri — le card scorrono in orizzontale",
+      proofLabels: {
+        role: "Ruolo",
+        output: "Output",
+      },
       items: [
         {
           title: "Computer Vision AI",
           description:
             "Pipeline di object detection personalizzata collegata a una web app, dove le nuove scansioni migliorano il modello nel tempo.",
+          proof: {
+            role: "Training YOLO, dataset sintetico e prototipo web.",
+            output: "Riconoscimento oggetti collegato a scansioni riutilizzabili.",
+          },
         },
         {
           title: "E-commerce Abbigliamento",
           description: "Progetto e-commerce completo con storefront, flusso ordini, spedizioni, recensioni e pannello di amministrazione.",
+          proof: {
+            role: "Storefront, logica ordini e pannello admin.",
+            output: "Catalogo, checkout, spedizioni, recensioni e rating.",
+          },
         },
         {
           title: "Gestione Aule Universitarie",
           description: "Piattaforma di prenotazione per spazi universitari ed eventi ricorrenti, con tracking, OpenAPI e servizi MySQL.",
+          proof: {
+            role: "Backend Java REST, database e flussi di prenotazione.",
+            output: "Aule, eventi ricorrenti, tracking e documentazione OpenAPI.",
+          },
         },
         {
           title: "AI di Raccomandazione ML",
           description:
             "Motore di raccomandazione che combina preferenze statiche e dinamiche per suggerire elementi più pertinenti.",
+          proof: {
+            role: "Modello di ranking e gestione preferenze utente.",
+            output: "Suggerimenti riutilizzabili su dataset e categorie diverse.",
+          },
         },
         {
           title: "Siti WordPress",
           description: "Una serie di siti per attività locali, focalizzati su velocità, chiarezza e consegna pratica.",
+          proof: {
+            role: "Setup, tema, contenuti tecnici e deploy.",
+            output: "Siti gestibili dal cliente con stack WordPress/Docker.",
+          },
         },
       ],
     },
     experience: {
-      label: "// 05 — experience",
+      label: "Esperienza",
       title: "Esperienza",
       items: [
         {
@@ -181,15 +206,15 @@ export const dictionary: Record<Lang, Copy> = {
           title: "Software Developer",
           location: "Netsons",
           description:
-            "Sviluppo e integrazione di nuove funzionalità e servizi web. Collaborazione con il reparto sistemi per l'ottimizzazione delle infrastrutture, soluzioni scalabili, automazione CI/CD e delivery containerizzato.",
+            "Sviluppo e integrazione di funzionalità e servizi web. Collaborazione con il reparto sistemi su infrastruttura, automazione CI/CD e delivery containerizzato.",
         },
       ],
     },
     contact: {
-      label: "// 06 — contact",
-      title: "Hai un progetto",
-      titleEm: "interessante?",
-      sub: "Sono aperto a collaborazioni su software, AI e infrastruttura. Se hai un'idea, parliamone.",
+      label: "Contatto",
+      title: "Contatto",
+      titleEm: "",
+      sub: "Per collaborazioni o opportunità su software, AI e infrastruttura, puoi scrivermi qui.",
       email: "Email",
       message: "Messaggio",
       command: "send_message()",
@@ -210,7 +235,7 @@ export const dictionary: Record<Lang, Copy> = {
       contact: "Contact",
     },
     hero: {
-      badge: "// Software Developer & AI Engineer",
+      badge: "Software Developer & AI Engineer",
       scroll: "scroll",
       chatSub: "digital assistant",
       chatGreeting:
@@ -225,8 +250,8 @@ export const dictionary: Record<Lang, Copy> = {
       chatErrorOffline: "Connection error. Try again!",
     },
     about: {
-      label: "// 01 — about",
-      title: "About me",
+      label: "Profile",
+      title: "Profile",
       bio: [
         "I'm Marco, a <strong>Software Developer</strong> with experience across web systems, artificial intelligence, and infrastructure.",
         "I work at Netsons on web features, service integration, and delivery automation with CI/CD and containers.",
@@ -235,7 +260,7 @@ export const dictionary: Record<Lang, Copy> = {
       termTitle: "marco@dev — profile.sh",
     },
     education: {
-      label: "// 02 — education",
+      label: "Education",
       title: "Education",
       msc: "MSc in progress",
       bsc: "Bachelor's",
@@ -265,9 +290,9 @@ export const dictionary: Record<Lang, Copy> = {
       },
     },
     skills: {
-      label: "// 03 — skills",
-      title: "Tech stack",
-      hint: "// hover a category",
+      label: "Skills",
+      title: "Skills",
+      hint: "hover a category",
       skills: "skills",
       categories: {
         "Development & Engineering": "Development & Engineering",
@@ -278,37 +303,61 @@ export const dictionary: Record<Lang, Copy> = {
       },
     },
     projects: {
-      label: "// 04 — projects",
+      label: "Projects",
       title: "Projects",
       drag: "drag →",
       scrollHint: "scroll — the cards glide sideways",
+      proofLabels: {
+        role: "Role",
+        output: "Output",
+      },
       items: [
         {
           title: "Computer Vision AI",
           description:
             "A custom object detection pipeline connected to a web app where new scans can improve the model over time.",
+          proof: {
+            role: "YOLO training, synthetic dataset, and web prototype.",
+            output: "Object recognition connected to reusable scans.",
+          },
         },
         {
           title: "Clothing E-commerce",
           description: "A full e-commerce project with storefront, order flow, shipping workflows, reviews, ratings, and admin logic.",
+          proof: {
+            role: "Storefront, order logic, and admin panel.",
+            output: "Catalog, checkout, shipping, reviews, and ratings.",
+          },
         },
         {
           title: "University Classroom Management System",
           description: "A scheduling platform for university spaces and recurring events, with classroom booking, tracking, OpenAPI, and MySQL-backed services.",
+          proof: {
+            role: "Java REST backend, database, and booking workflows.",
+            output: "Rooms, recurring events, tracking, and OpenAPI docs.",
+          },
         },
         {
           title: "Machine Learning Recommendation AI",
           description:
             "A recommendation engine that combines static and dynamic user preferences to suggest more relevant items.",
+          proof: {
+            role: "Ranking model and user-preference handling.",
+            output: "Reusable suggestions across datasets and categories.",
+          },
         },
         {
           title: "WordPress Websites",
           description: "A set of websites for local businesses, focused on speed, clarity, and practical delivery.",
+          proof: {
+            role: "Setup, theme, technical content, and deployment.",
+            output: "Client-editable sites on a WordPress/Docker stack.",
+          },
         },
       ],
     },
     experience: {
-      label: "// 05 — experience",
+      label: "Experience",
       title: "Experience",
       items: [
         {
@@ -323,15 +372,15 @@ export const dictionary: Record<Lang, Copy> = {
           title: "Software Developer",
           location: "Netsons",
           description:
-            "Development and integration of new web features and services. Collaboration with the systems team on infrastructure optimization, scalable solutions, CI/CD automation, and containerized delivery.",
+            "Development and integration of web features and services. Collaboration with the systems team on infrastructure, CI/CD automation, and containerized delivery.",
         },
       ],
     },
     contact: {
-      label: "// 06 — contact",
-      title: "Got an interesting",
-      titleEm: "project?",
-      sub: "I'm open to collaborations on software, AI, and infrastructure. If you have an idea, let's talk.",
+      label: "Contact",
+      title: "Contact",
+      titleEm: "",
+      sub: "For collaborations or opportunities in software, AI, and infrastructure, use the form below.",
       email: "Email",
       message: "Message",
       command: "send_message()",

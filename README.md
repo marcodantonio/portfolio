@@ -1,14 +1,14 @@
 # web-portfolio
 
-Premium one-page portfolio built with Next.js, Tailwind v4, shadcn/ui, Three.js, GSAP (ScrollTrigger + SplitText), and Cloudflare Workers AI. Features a cinematic design with smooth scroll choreography, particle effects, kinetic typography, and a live AI assistant.
+Interactive one-page portfolio built with Next.js, Tailwind v4, shadcn/ui, Three.js, GSAP (ScrollTrigger + SplitText), and Cloudflare Workers AI. It combines a WebGL hero, scroll-linked motion, project proof cards, and a live assistant for Marco's background.
 
 ## What is in this repo
 
 - Marco D'Antonio's portfolio: full-stack developer & AI engineer
 - **One-page** single-scroll experience with anchor-based navigation
 - Locale principale in italiano su `/`, con versione inglese su `/en`
-- **WOW moment** hero: particle field formation + interactive chat
-- Smooth-scroll (Lenis driven by GSAP's ticker) + GSAP ScrollTrigger choreography (kinetic reveals, ghost numerals, pinned projects rail)
+- Hero: particle field formation + interactive chat
+- Smooth-scroll (Lenis driven by GSAP's ticker) + GSAP ScrollTrigger choreography (kinetic reveals, story scenes, pinned projects rail)
 - `/api/personai` backend for live AI chat answering questions about Marco's background
 - Cloudflare Workers / OpenNext deployment setup
 - Full i18n: IT (default) + EN

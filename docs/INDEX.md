@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-- [QUICK-START.md](./QUICK-START.md): how to add a section, vibe-coding guide for new contributors
+- [QUICK-START.md](./QUICK-START.md): how to add a section and follow repository conventions
 - [CODEBASE.md](./CODEBASE.md): architecture, file structure, page layout, data flow
 
 ## Building & Designing
@@ -18,7 +18,7 @@
 ## Project Context
 
 - [PERSONAI.md](./PERSONAI.md): product intent and implementation notes for `personAI` backend
-- [WORKLOG.md](./WORKLOG.md): recent changes (WOW implementation, cleanup, optimization)
+- [WORKLOG.md](./WORKLOG.md): recent changes, cleanup, and optimization notes
 - [OPTIMIZATION.md](./OPTIMIZATION.md): performance tips and known improvements
 
 ## AI Documentation

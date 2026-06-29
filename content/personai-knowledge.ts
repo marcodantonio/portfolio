@@ -78,7 +78,7 @@ export const personaiKnowledge: KnowledgeEntry[] = [
     title: "Netsons role",
     source: "CV",
     content:
-      "At Netsons, Marco works as a Software Developer on new web features and services. The CV says he collaborates with the systems team on infrastructure optimization, scalable solutions, CI/CD automation, and containerized delivery. The stack listed includes PHP, JavaScript, HTML5, CSS, MySQL, Web RESTful Services, CI/CD, and Docker.",
+      "At Netsons, Marco works as a Software Developer on web features and services. The CV says he collaborates with the systems team on infrastructure, CI/CD automation, and containerized delivery. The stack listed includes PHP, JavaScript, HTML5, CSS, MySQL, Web RESTful Services, CI/CD, and Docker.",
     tags: ["netsons", "software developer", "ci/cd", "docker", "php", "mysql", "web"],
     weight: 1.12,
   },

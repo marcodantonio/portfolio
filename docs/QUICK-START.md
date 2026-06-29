@@ -1,10 +1,10 @@
-# Quick Start: Vibe-Coding Guide
+# Quick Start: Implementation Guide
 
-New to this portfolio? Start here to understand the DNA and add a feature without breaking the vibe.
+New to this portfolio? Start here to understand the structure and add a feature without breaking the current conventions.
 
-## The Vibe
+## Direction
 
-- **One-page, smooth, cinematic** — single scroll descent with linked animations
+- **One-page, smooth, interactive** — single scroll surface with linked animations
 - **Dark-first, recruiter-friendly** — clear hierarchy, no gimmicks blocking reading
 - **Modular, optimal** — reuse components + patterns, one shared scroll listener
 - **Bilingual i18n** — all text in one place, toggleable language
@@ -73,23 +73,23 @@ docs/
 ```ts
 // In content/i18n.ts, add to Copy type:
 mysection: {
-  label: string;      // Eyebrow
+  label: string;      // Internal/nav label if needed
   title: string;      // KineticHeading
   description: string;
 }
 
 // In dictionary.it:
 mysection: {
-  label: "// 07 — my section",
-  title: "My Section",
-  description: "Some text here."
+  label: "Sezione",
+  title: "Sezione",
+  description: "Testo concreto e verificabile."
 }
 
 // In dictionary.en:
 mysection: {
-  label: "// 07 — my section",
-  title: "My Section",
-  description: "Some text here."
+  label: "Section",
+  title: "Section",
+  description: "Concrete, verifiable text."
 }
 ```
 
@@ -109,7 +109,6 @@ export default function MySection() {
     <div className="space-y-8">
       <div className="flex flex-col gap-3">
         <KineticHeading
-          eyebrow={t.mysection.label}
           text={t.mysection.title}
           as="h2"
         />
@@ -362,7 +361,7 @@ Before committing:
 
 ## One More Thing
 
-The coolest part of this codebase is **how little there is**. All the "wow" comes from:
+The strongest part of this codebase is how little global machinery it needs. The interactive feel comes from:
 - One particle canvas (hero-only)
 - One smooth scroll engine (Lenis, driven by GSAP's ticker)
 - One scroll-choreography engine (GSAP ScrollTrigger via `lib/gsap`)
@@ -370,4 +369,4 @@ The coolest part of this codebase is **how little there is**. All the "wow" come
 
 Don't add complexity. Keep copy literal. Reuse components. When you're tempted to write custom logic, check if a ScrollTrigger pattern or a motion token already does it.
 
-**Vibe-code ethically.** 🎬
+Keep copy literal. Keep interactions purposeful.

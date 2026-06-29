@@ -119,7 +119,7 @@ export default function Education() {
 
   return (
     <div className="education-radar-stage space-y-12">
-      <KineticHeading eyebrow={t.education.label} text={t.education.title} />
+      <KineticHeading text={t.education.title} />
 
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* Radar map */}

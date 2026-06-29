@@ -57,7 +57,7 @@ export default function Intro() {
     const inner = innerRef.current;
     const hero = document.getElementById("hero-section");
 
-    // First-visit cinematic: keep the hero content hidden while the particles
+    // First-visit formation: keep the hero content hidden while the particles
     // assemble into the name, then fade it in as they disperse.
     const willForm = !reduced && !sessionStorage.getItem("heroFormed");
     let revealTimer: ReturnType<typeof setTimeout> | number | undefined;
@@ -193,14 +193,17 @@ export default function Intro() {
 
         {/* Name */}
         <h1
+          aria-label="Marco D'Antonio"
           className="hero-stage__title hero-entry font-display font-black leading-[0.92] tracking-[-0.05em] text-foreground"
           style={{
             fontSize: "clamp(52px, 8vw, 100px)",
             animation: "heroRise 0.7s ease 0.1s both, heroFade 0.4s ease 0.05s both",
           }}
         >
-          Marco<br />
-          <span style={{ color: "var(--accent)" }}>D&apos;Antonio</span>
+          <span aria-hidden="true">
+            Marco<br />
+            <span style={{ color: "var(--accent)" }}>D&apos;Antonio</span>
+          </span>
         </h1>
 
         {/* Typed subtitle */}

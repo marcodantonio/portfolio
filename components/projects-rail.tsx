@@ -24,16 +24,18 @@ const isFinePointer =
 
 function HoloCard({
   index,
-  total,
   title,
   description,
+  proof,
+  proofLabels,
   tags,
   active,
 }: {
   index: number;
-  total: number;
   title: string;
   description: string;
+  proof: { role: string; output: string };
+  proofLabels: { role: string; output: string };
   tags: readonly string[];
   active: boolean;
 }) {
@@ -97,11 +99,8 @@ function HoloCard({
       data-cursor="view"
       className={`holo-card flex w-[clamp(300px,78vw,520px)] flex-shrink-0 flex-col rounded-2xl border border-line-subtle bg-surface p-8 lg:min-h-[420px] lg:p-10${active ? " is-active" : ""}`}
     >
-      <p className="mb-5 font-mono text-[11px] tracking-[0.1em] text-copy-muted">
-        {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
-      </p>
       <span
-        className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl"
+        className="mb-8 flex h-11 w-11 items-center justify-center rounded-xl"
         style={{ background: "var(--accent-soft)" }}
       >
         <Icon className="h-5 w-5" style={{ color: "var(--accent)" }} strokeWidth={1.5} />
@@ -109,7 +108,17 @@ function HoloCard({
       <h3 className="mb-2.5 font-display text-xl font-extrabold leading-tight tracking-[-0.03em]">
         {title}
       </h3>
-      <p className="mb-5 flex-1 text-[13.5px] leading-relaxed text-copy-muted">{description}</p>
+      <p className="mb-5 text-[13.5px] leading-relaxed text-copy-muted">{description}</p>
+      <dl className="project-proof mb-5">
+        <div className="project-proof__row">
+          <dt>{proofLabels.role}</dt>
+          <dd>{proof.role}</dd>
+        </div>
+        <div className="project-proof__row">
+          <dt>{proofLabels.output}</dt>
+          <dd>{proof.output}</dd>
+        </div>
+      </dl>
       <div className="mt-auto flex flex-wrap gap-1.5">
         {tags.slice(0, 4).map((tag) => (
           <span
@@ -269,7 +278,7 @@ export default function ProjectsRail() {
 
   return (
     <div className="projects-cinematic space-y-8">
-      <KineticHeading eyebrow={t.projects.label} text={t.projects.title} />
+      <KineticHeading text={t.projects.title} />
 
       <div className="projects-cinematic__meta">
         <div className="flex min-w-0 items-center gap-3 font-mono text-[11px] tracking-[0.08em] text-copy-muted">
@@ -280,7 +289,6 @@ export default function ProjectsRail() {
           <span>{pinActive ? t.projects.scrollHint : t.projects.drag}</span>
         </div>
         <div className="projects-cinematic__active">
-          <span>{String(activeProject + 1).padStart(2, "0")} / {String(projectCount).padStart(2, "0")}</span>
           <strong>{t.projects.items[activeProject]?.title}</strong>
         </div>
       </div>
@@ -306,9 +314,10 @@ export default function ProjectsRail() {
             <HoloCard
               key={project.title}
               index={index}
-              total={projectCount}
               title={project.title}
               description={project.description}
+              proof={project.proof}
+              proofLabels={t.projects.proofLabels}
               tags={projectsData[index]?.tags ?? []}
               active={index === activeProject}
             />

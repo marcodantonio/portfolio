@@ -14,14 +14,14 @@ Full-width section wrapper with cursor-tracking accent spotlight (radial-gradien
 **Props:**
 - `id` (string, required) — for anchor nav
 - `as` (string, default "section") — HTML tag
-- `variant` (`"default" | "chapter"`, default `"default"`) — chapter enables shared cinematic section staging
+- `variant` (`"default" | "story"`, default `"default"`) — story enables the current homepage narrative flow
 - `className` (string) — additional styles (padding, bg)
 - `children` — inner content
 
 **Behavior:**
 - Full width (`w-full`)
 - Spotlight glow follows cursor (GPU-accelerated, safe)
-- Chapter variant adds `.chapter-section` and `data-chapter-variant="chapter"` for shared depth/spacing
+- Story variant adds `.story-section` for continuous homepage spacing and subtle connective background treatment
 - No motion on `prefers-reduced-motion`
 
 ### Container
@@ -44,8 +44,7 @@ Title with GSAP SplitText char-level masked reveal on scroll-in. Replaces Scramb
 
 ```tsx
 <KineticHeading
-  eyebrow="// 03 — skills"
-  text="Stack tecnico"
+  text="Competenze"
   as="h2"
   className="mb-12"
 />
@@ -53,7 +52,7 @@ Title with GSAP SplitText char-level masked reveal on scroll-in. Replaces Scramb
 
 **Props:**
 - `text` (string, required) — the title
-- `eyebrow` (string, optional) — small label above
+- `eyebrow` (string, optional) — small label above. Avoid it on the homepage story flow.
 - `as` (string, default "h2") — "h1" | "h2" | "h3"
 - `className` (string, optional) — extra styles
 
@@ -64,23 +63,8 @@ Title with GSAP SplitText char-level masked reveal on scroll-in. Replaces Scramb
 - Split is reverted on unmount; heading remounts on text change via React `key`
 - Skipped under reduced motion (plain text shown)
 
-### SectionGhostNumber
-Oversized ghost numeral (01–06) drifting behind a section, parallax-scrubbed on scroll. Decorative only.
-
-```tsx
-<SectionGhostNumber index="03" />
-```
-
-**Props:**
-- `index` (string, required) — the numeral to render
-
-**Behavior:**
-- `gsap.fromTo(node, { yPercent: 24 }, { yPercent: -24, scrollTrigger: { scrub: true } })` against its parent section
-- `aria-hidden`; styled by `.ghost-num` in design-system.css
-- Skipped under reduced motion; trigger killed on unmount
-
 ### Marquee
-Infinite horizontal ticker (tech stack list). Pauses on hover; disabled under reduced-motion.
+Reusable infinite horizontal ticker (tech stack list). Pauses on hover; disabled under reduced-motion. It is no longer mounted in the homepage body.
 
 ```tsx
 <Marquee items={["React", "Next.js", "Python", "Three.js"]} />
@@ -171,7 +155,7 @@ Wraps a child with a radial magnetic pull toward the cursor, plus an elastic sna
 ## Content Components
 
 ### About
-Bio sections with `<Eyebrow>` + paragraphs, and a syntax-highlighted profile.json card.
+Bio sections with a `KineticHeading`, paragraphs, and a syntax-highlighted profile.json card.
 
 **Pattern:** 2-col grid on large (left: bio, right: card). Uses semantic `bg-surface`, `border-line`.
 
@@ -186,9 +170,9 @@ Degree + thesis with a radar visualization (Pescara ↔ L'Aquila arc). Custom SV
 **Pattern:** Three.js canvas, cursor repulsion, scroll-aware tilt. Categories from `lib/data.ts`.
 
 ### Projects-Rail
-5 holographic cards in a horizontal rail. Hover → accent sheen follows cursor (subtle, on-palette).
+5 holographic cards in a horizontal rail. Hover → accent sheen follows cursor (subtle, on-palette). Each card includes a proof block with role and output so the project reads as evidence, not just a title.
 
-**Pattern:** On desktop (≥1024px, fine pointer, no reduced motion) a `gsap.matchMedia` block pins `#projects` and scrubs the card track horizontally via ScrollTrigger, with a progress bar, active-project context, larger cards, and velocity-linked skew. Touch keeps the existing momentum drag rail (pointer events + friction rAF). Card tilt uses `gsap.quickTo`; `holo-card` class carries `--mx`, `--my`, `--hop` for the cursor sheen. The `.projects-cinematic` wrapper is the main expanded chapter moment.
+**Pattern:** On desktop (≥1024px, fine pointer, no reduced motion) a `gsap.matchMedia` block pins `#projects` and scrubs the card track horizontally via ScrollTrigger, with a progress bar, active-project context, larger cards, and velocity-linked skew. Touch keeps the existing momentum drag rail (pointer events + friction rAF). Card tilt uses `gsap.quickTo`; `holo-card` class carries `--mx`, `--my`, `--hop` for the cursor sheen. The `.projects-cinematic` wrapper is the main expanded story moment.
 
 ### Experience
 Timeline with animated SVG vertical line. Fill line's `y2` attribute is driven by scroll progress.
@@ -196,7 +180,7 @@ Timeline with animated SVG vertical line. Fill line's `y2` attribute is driven b
 **Pattern:** A `ScrollTrigger.create({ scrub: true })` updates the fill `y2` from its `onUpdate`; a separate `ScrollTrigger.batch` reveals each `.tl-item`. Both killed on unmount.
 
 ### Contact
-Email form (left) + social links (right). Uses the `.contact-command` chapter treatment for the closing scene.
+Email form (left) + social links (right). Uses the `.contact-command` treatment for the closing scene.
 
 **Pattern:** 2-col grid (mobile: 1-col). Form action via `sendEmail` server action.
 
@@ -227,7 +211,7 @@ Hero-only Three.js particle field (absolute, `zIndex 0`, inside `#hero-section`)
 - Cursor: repulsion + depth offset
 - Chat pulse: shockwave + color flare when chat sends/receives (`hero:pulse`)
 - Theme: additive blending (dark), normal blending (light)
-- Perf/robustness: render paused on `visibilitychange` (tab hidden), double-rAF guard for hidden-tab loads, WebGL capability guard, StrictMode double-mount guard
+- Perf/robustness: render loop pauses on `visibilitychange` and while the hero is outside the viewport, pointer tracking is scoped to the hero instead of `window`, double-rAF guard for hidden-tab loads, WebGL capability guard, StrictMode double-mount guard
 
 **Lifecycle:**
 1. SSR-safe: dynamic import of `three`

@@ -7,7 +7,7 @@ type SpotlightSectionProps = {
   children: ReactNode;
   id?: string;
   className?: string;
-  variant?: "default" | "chapter";
+  variant?: "default" | "story";
   /** Render element. Defaults to <section>. */
   as?: "section" | "div";
 };
@@ -38,8 +38,11 @@ export default function SpotlightSection({
     id,
     ref,
     onMouseMove: handleMove,
-    "data-chapter-variant": variant,
-    className: cn("spotlight scroll-mt-28", variant === "chapter" && "chapter-section", className),
+    className: cn(
+      "spotlight scroll-mt-28",
+      variant === "story" && "story-section",
+      className
+    ),
   } as const;
 
   if (as === "div") {

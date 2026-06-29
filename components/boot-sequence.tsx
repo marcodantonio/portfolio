@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type BootLine = {
   parts: Array<{ text: string; color?: string; isCaret?: boolean; isBar?: boolean }>;
@@ -36,6 +36,26 @@ export default function BootSequence() {
   const [visible, setVisible] = useState(false);
   const [done, setDone] = useState(false);
   const [renderedLines, setRenderedLines] = useState<BootLine[]>([]);
+  const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const finishedRef = useRef(false);
+
+  const clearTimers = useCallback(() => {
+    timersRef.current.forEach(clearTimeout);
+    timersRef.current = [];
+  }, []);
+
+  const finish = useCallback(() => {
+    if (finishedRef.current) return;
+    finishedRef.current = true;
+    clearTimers();
+    sessionStorage.setItem("booted", "1");
+    setDone(true);
+    const hideTimer = setTimeout(() => setVisible(false), 700);
+    // Lets the hero kick off its particle-formation flourish once the boot
+    // overlay starts clearing.
+    const bootTimer = setTimeout(() => document.dispatchEvent(new Event("bootend")), 250);
+    timersRef.current.push(hideTimer, bootTimer);
+  }, [clearTimers]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -49,29 +69,19 @@ export default function BootSequence() {
     setVisible(true);
 
     let acc = 0;
-    const timers: ReturnType<typeof setTimeout>[] = [];
     LINES.forEach((line) => {
       acc += line.delay;
       const t = setTimeout(() => {
         setRenderedLines((prev) => [...prev, line]);
       }, acc);
-      timers.push(t);
+      timersRef.current.push(t);
     });
 
     const finishTimer = setTimeout(finish, acc + 450);
-    timers.push(finishTimer);
+    timersRef.current.push(finishTimer);
 
-    return () => timers.forEach(clearTimeout);
-  }, []);
-
-  function finish() {
-    sessionStorage.setItem("booted", "1");
-    setDone(true);
-    setTimeout(() => setVisible(false), 700);
-    // Lets the hero kick off its particle-formation flourish once the boot
-    // overlay starts clearing.
-    setTimeout(() => document.dispatchEvent(new Event("bootend")), 250);
-  }
+    return clearTimers;
+  }, [clearTimers, finish]);
 
   if (!visible && done) return null;
 
