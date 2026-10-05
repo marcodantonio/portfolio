@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r7-macro-setup-inspection-20261005",
+  "access": "query",
+  "status": "succeeded",
+  "revisionBefore": 7,
+  "revisionAfter": null,
+  "sceneSequenceAfter": 0,
+  "finishedAt": "2026-10-05T05:23:33.479Z",
+  "result": {
+    "objects": [
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_00",
+        "source_vertices": 638,
+        "source_polygons": 1272,
+        "glTF_min": [
+          -32.456050872802734,
+          1.7999999523162842,
+          8.763751983642578
+        ],
+        "glTF_max": [
+          -27.715686798095703,
+          6.483217716217041,
+          12.19446849822998
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_01",
+        "source_vertices": 838,
+        "source_polygons": 1672,
+        "glTF_min": [
+          -32.932647705078125,
+          -1.100000023841858,
+          16.943798065185547
+        ],
+        "glTF_max": [
+          -28.909231185913086,
+          5.627105236053467,
+          20.136043548583984
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_02",
+        "source_vertices": 752,
+        "source_polygons": 1500,
+        "glTF_min": [
+          -26.770936965942383,
+          -1.100000023841858,
+          18.754009246826172
+        ],
+        "glTF_max": [
+          -21.763093948364258,
+          5.0207295417785645,
+          22.645675659179688
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_03",
+        "source_vertices": 709,
+        "source_polygons": 1414,
+        "glTF_min": [
+          -22.462535858154297,
+          -1.100000023841858,
+          11.351263999938965
+        ],
+        "glTF_max": [
+          -19.02654266357422,
+          4.288165092468262,
+          14.337261199951172
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_04",
+        "source_vertices": 626,
+        "source_polygons": 1248,
+        "glTF_min": [
+          -20.29154396057129,
+          -1.100000023841858,
+          26.25342559814453
+        ],
+        "glTF_max": [
+          -17.109569549560547,
+          3.9762165546417236,
+          28.70713996887207
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_05",
+        "source_vertices": 544,
+        "source_polygons": 1084,
+        "glTF_min": [
+          -14.995047569274902,
+          -1.100000023841858,
+          27.672019958496094
+        ],
+        "glTF_max": [
+          -12.521607398986816,
+          2.6619365215301514,
+          30.268768310546875
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_06",
+        "source_vertices": 514,
+        "source_polygons": 1024,
+        "glTF_min": [
+          -4.267506122589111,
+          -1.100000023841858,
+          27.986480712890625
+        ],
+        "glTF_max": [
+          -2.109175205230713,
+          3.0511839389801025,
+          30.375438690185547
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_07",
+        "source_vertices": 477,
+        "source_polygons": 950,
+        "glTF_min": [
+          0.44226956367492676,
+          -1.100000023841858,
+          29.4412784576416
+        ],
+        "glTF_max": [
+          2.9876937866210938,
+          2.671447277069092,
+          31.509462356567383
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_08",
+        "source_vertices": 469,
+        "source_polygons": 934,
+        "glTF_min": [
+          10.703442573547363,
+          -1.100000023841858,
+          26.622894287109375
+        ],
+        "glTF_max": [
+          13.453085899353027,
+          2.1957499980926514,
+          28.940967559814453
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_09",
+        "source_vertices": 567,
+        "source_polygons": 1130,
+        "glTF_min": [
+          26.047245025634766,
+          -1.100000023841858,
+          24.273967742919922
+        ],
+        "glTF_max": [
+          29.309999465942383,
+          1.9398934841156006,
+          26.671985626220703
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_10",
+        "source_vertices": 529,
+        "source_polygons": 1054,
+        "glTF_min": [
+          28.71480369567871,
+          -1.100000023841858,
+          20.941604614257812
+        ],
+        "glTF_max": [
+          31.47376251220703,
+          2.2107417583465576,
+          23.18629264831543
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_11",
+        "source_vertices": 552,
+        "source_polygons": 1100,
+        "glTF_min": [
+          28.78702735900879,
+          -1.100000023841858,
+          5.347015380859375
+        ],
+        "glTF_max": [
+          31.950775146484375,
+          2.8084237575531006,
+          7.653567790985107
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_12",
+        "source_vertices": 797,
+        "source_polygons": 1590,
+        "glTF_min": [
+          27.46552276611328,
+          -1.100000023841858,
+          -10.022956848144531
+        ],
+        "glTF_max": [
+          30.520299911499023,
+          5.312206745147705,
+          -7.262436866760254
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_13",
+        "source_vertices": 624,
+        "source_polygons": 1244,
+        "glTF_min": [
+          23.183494567871094,
+          -1.100000023841858,
+          -4.7025861740112305
+        ],
+        "glTF_max": [
+          25.44417381286621,
+          4.0942583084106445,
+          -2.003602981567383
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_14",
+        "source_vertices": 867,
+        "source_polygons": 1730,
+        "glTF_min": [
+          -28.757484436035156,
+          1.7999999523162842,
+          -23.121564865112305
+        ],
+        "glTF_max": [
+          -24.396175384521484,
+          7.870566368103027,
+          -19.879222869873047
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_15",
+        "source_vertices": 744,
+        "source_polygons": 1484,
+        "glTF_min": [
+          -23.986286163330078,
+          1.7999999523162842,
+          -19.900959014892578
+        ],
+        "glTF_max": [
+          -19.2716064453125,
+          6.968210697174072,
+          -16.766183853149414
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_16",
+        "source_vertices": 1150,
+        "source_polygons": 2296,
+        "glTF_min": [
+          -19.628589630126953,
+          1.7999999523162842,
+          -24.716087341308594
+        ],
+        "glTF_max": [
+          -14.100818634033203,
+          9.385431289672852,
+          -21.080860137939453
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_17",
+        "source_vertices": 1076,
+        "source_polygons": 2148,
+        "glTF_min": [
+          -13.036293029785156,
+          1.7999999523162842,
+          -25.14349937438965
+        ],
+        "glTF_max": [
+          -7.880783557891846,
+          9.914812088012695,
+          -21.94741439819336
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_18",
+        "source_vertices": 956,
+        "source_polygons": 1908,
+        "glTF_min": [
+          -6.850269794464111,
+          1.7999999523162842,
+          -23.638917922973633
+        ],
+        "glTF_max": [
+          -0.7323240637779236,
+          9.365683555603027,
+          -20.470584869384766
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_19",
+        "source_vertices": 1033,
+        "source_polygons": 2062,
+        "glTF_min": [
+          1.2616382837295532,
+          1.7999999523162842,
+          -23.505643844604492
+        ],
+        "glTF_max": [
+          6.557332515716553,
+          9.226591110229492,
+          -19.901086807250977
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_20",
+        "source_vertices": 1010,
+        "source_polygons": 2016,
+        "glTF_min": [
+          7.727819442749023,
+          1.7999999523162842,
+          -24.667966842651367
+        ],
+        "glTF_max": [
+          12.763886451721191,
+          9.477638244628906,
+          -21.349395751953125
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_21",
+        "source_vertices": 796,
+        "source_polygons": 1588,
+        "glTF_min": [
+          16.417903900146484,
+          1.7999999523162842,
+          -22.03738021850586
+        ],
+        "glTF_max": [
+          21.47014617919922,
+          7.593250751495361,
+          -18.718908309936523
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_22",
+        "source_vertices": 716,
+        "source_polygons": 1428,
+        "glTF_min": [
+          22.428434371948242,
+          1.7999999523162842,
+          -21.567426681518555
+        ],
+        "glTF_max": [
+          26.26727867126465,
+          7.28743314743042,
+          -18.514415740966797
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_23",
+        "source_vertices": 620,
+        "source_polygons": 1236,
+        "glTF_min": [
+          -7.023439884185791,
+          9.199999809265137,
+          -28.917861938476562
+        ],
+        "glTF_max": [
+          -1.9046201705932617,
+          13.634554862976074,
+          -25.638959884643555
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_24",
+        "source_vertices": 634,
+        "source_polygons": 1264,
+        "glTF_min": [
+          3.216698408126831,
+          9.199999809265137,
+          -28.808168411254883
+        ],
+        "glTF_max": [
+          8.590164184570312,
+          13.635000228881836,
+          -25.34825897216797
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+        "source_vertices": 1612,
+        "source_polygons": 3220,
+        "glTF_min": [
+          -9.164700508117676,
+          8.699999809265137,
+          -35.12216567993164
+        ],
+        "glTF_max": [
+          12.19029426574707,
+          19.423599243164062,
+          -25.76186752319336
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+        "source_vertices": 2682,
+        "source_polygons": 5360,
+        "glTF_min": [
+          -15.773399353027344,
+          3.0999999046325684,
+          -34.260765075683594
+        ],
+        "glTF_max": [
+          19.181541442871094,
+          14.57824993133545,
+          -20.125415802001953
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+        "source_vertices": 7421,
+        "source_polygons": 14838,
+        "glTF_min": [
+          -34.44200134277344,
+          -10,
+          -36.441688537597656
+        ],
+        "glTF_max": [
+          34.27458572387695,
+          4.880761623382568,
+          34.44200134277344
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+        "source_vertices": 1054,
+        "source_polygons": 2104,
+        "glTF_min": [
+          22.125459671020508,
+          -10,
+          2.9996860027313232
+        ],
+        "glTF_max": [
+          33.31528091430664,
+          4.031717300415039,
+          13.816564559936523
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+        "source_vertices": 1363,
+        "source_polygons": 2722,
+        "glTF_min": [
+          10.827486991882324,
+          3.0999999046325684,
+          -29.229907989501953
+        ],
+        "glTF_max": [
+          27.940448760986328,
+          10.777003288269043,
+          -16.468059539794922
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+        "source_vertices": 1242,
+        "source_polygons": 2480,
+        "glTF_min": [
+          20.261749267578125,
+          -10,
+          -7.502499580383301
+        ],
+        "glTF_max": [
+          25.97960662841797,
+          6.94867467880249,
+          1.3714606761932373
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+        "source_vertices": 1382,
+        "source_polygons": 2760,
+        "glTF_min": [
+          26.71196937561035,
+          -10,
+          -15.670125961303711
+        ],
+        "glTF_max": [
+          32.07854461669922,
+          8.66866397857666,
+          -4.782352447509766
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+        "source_vertices": 1027,
+        "source_polygons": 2050,
+        "glTF_min": [
+          -5.672268867492676,
+          -10,
+          22.336732864379883
+        ],
+        "glTF_max": [
+          3.763570547103882,
+          5.443751335144043,
+          33.835975646972656
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+        "source_vertices": 737,
+        "source_polygons": 1470,
+        "glTF_min": [
+          8.689008712768555,
+          -10,
+          22.206695556640625
+        ],
+        "glTF_max": [
+          16.2558650970459,
+          3.6739861965179443,
+          29.901519775390625
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+        "source_vertices": 1013,
+        "source_polygons": 2022,
+        "glTF_min": [
+          -20.236713409423828,
+          -10,
+          20.5072021484375
+        ],
+        "glTF_max": [
+          -12.003110885620117,
+          5.3793864250183105,
+          31.204055786132812
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+        "source_vertices": 1166,
+        "source_polygons": 2328,
+        "glTF_min": [
+          -19.540786743164062,
+          2.9000000953674316,
+          -20.689659118652344
+        ],
+        "glTF_max": [
+          12.43767261505127,
+          6.23652982711792,
+          -16.61969757080078
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+        "source_vertices": 5667,
+        "source_polygons": 11330,
+        "glTF_min": [
+          -29.437829971313477,
+          -10,
+          -33.405609130859375
+        ],
+        "glTF_max": [
+          29.467519760131836,
+          8.364511489868164,
+          -15.61022663116455
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+        "source_vertices": 1050,
+        "source_polygons": 2096,
+        "glTF_min": [
+          19.919384002685547,
+          -10,
+          16.653423309326172
+        ],
+        "glTF_max": [
+          31.24107551574707,
+          2.858691692352295,
+          28.390478134155273
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+        "source_vertices": 1698,
+        "source_polygons": 3392,
+        "glTF_min": [
+          -26.886856079101562,
+          -10,
+          7.322357654571533
+        ],
+        "glTF_max": [
+          -18.789451599121094,
+          8.474411010742188,
+          24.791410446166992
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+        "source_vertices": 2138,
+        "source_polygons": 4272,
+        "glTF_min": [
+          -33.841312408447266,
+          -10,
+          4.938056468963623
+        ],
+        "glTF_max": [
+          -27.11634635925293,
+          11.383950233459473,
+          25.540016174316406
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+        "source_vertices": 1512,
+        "source_polygons": 3020,
+        "glTF_min": [
+          -30.966081619262695,
+          -4.5,
+          -3.692453384399414
+        ],
+        "glTF_max": [
+          -19.942625045776367,
+          6.997818946838379,
+          10.34012508392334
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+        "source_vertices": 760,
+        "source_polygons": 1516,
+        "glTF_min": [
+          -34.05821990966797,
+          -10,
+          12.257230758666992
+        ],
+        "glTF_max": [
+          -29.15045928955078,
+          2.388075351715088,
+          24.248371124267578
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+        "source_vertices": 1925,
+        "source_polygons": 3846,
+        "glTF_min": [
+          -29.340656280517578,
+          2.799999952316284,
+          -30.19256591796875
+        ],
+        "glTF_max": [
+          -6.7172651290893555,
+          12.57328987121582,
+          -16.987306594848633
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+        "source_vertices": 945,
+        "source_polygons": 1886,
+        "glTF_min": [
+          -22.094053268432617,
+          7.099999904632568,
+          -29.589664459228516
+        ],
+        "glTF_max": [
+          -9.072528839111328,
+          13.566962242126465,
+          -21.898029327392578
+        ]
+      }
+    ],
+    "lights": [
+      {
+        "name": "ProjectsIsland_V2_Warm_Key_Preview_Only",
+        "type": "SUN",
+        "energy": 2.0999999046325684,
+        "colour": [
+          1,
+          0.8799999952316284,
+          0.699999988079071
+        ],
+        "matrix": [
+          [
+            0.6585046648979187,
+            0.5633333325386047,
+            -0.49902623891830444,
+            -40
+          ],
+          [
+            -0.7525766491889954,
+            0.49291670322418213,
+            -0.43664804100990295,
+            -35
+          ],
+          [
+            -2.7172973204869777e-8,
+            0.6630902886390686,
+            0.7485394477844238,
+            60
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Cool_Sky_Fill_Preview_Only",
+        "type": "SUN",
+        "energy": 0.3400000035762787,
+        "colour": [
+          0.6499999761581421,
+          0.8100000023841858,
+          1
+        ],
+        "matrix": [
+          [
+            -0.6196442246437073,
+            -0.5343505144119263,
+            0.5749004483222961,
+            38
+          ],
+          [
+            0.7848827838897705,
+            -0.42185553908348083,
+            0.4538688063621521,
+            30
+          ],
+          [
+            -8.80955042248388e-8,
+            0.7324666380882263,
+            0.6808028817176819,
+            45
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "world_nodes": [
+      {
+        "name": "Background",
+        "type": "ShaderNodeBackground",
+        "colour": [
+          0.7300000190734863,
+          0.8199999928474426,
+          0.9599999785423279,
+          1
+        ],
+        "strength": 0.3199999928474426
+      }
+    ],
+    "view_transform": "Khronos PBR Neutral",
+    "look": "None",
+    "exposure": 0,
+    "gamma": 1,
+    "engine": "BLENDER_EEVEE",
+    "camera": "ProjectsIsland_V2_Review_Camera_Excluded",
+    "unit_scale": 1,
+    "query_only": true
+  },
+  "queryOnly": true
+}

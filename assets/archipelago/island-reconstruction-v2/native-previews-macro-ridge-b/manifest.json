@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-connected-rear-macro-candidate-b-20261005",
+  "committedRevision": 7,
+  "headSceneSequence": 0,
+  "authoringStudyVersion": 9,
+  "sourceNativeRevision": 7,
+  "plannedNativeRevision": 8,
+  "committed": false,
+  "portableExport": false,
+  "runtimeIntegration": false,
+  "artAcceptance": false,
+  "actualViews": [
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-b-front.png",
+      "bytes": 346996,
+      "width": 640,
+      "height": 480,
+      "sha256": "9f87406cbb534bf7f7521573b3f30f0062f9bbc509db4e1f17cee2c858a6051d",
+      "artifactId": "ab4f80e81e47fd2126c2def36d2b8196",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": false
+    },
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-b-hero.png",
+      "bytes": 368962,
+      "width": 640,
+      "height": 480,
+      "sha256": "c3a9398a11770b09073faa3aa76121ecd8fa10029dbad95b15825f57538e529e",
+      "artifactId": "0852e6c263f9b7d78ec90828f10466a8",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": true
+    },
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-b-right.png",
+      "bytes": 331232,
+      "width": 640,
+      "height": 480,
+      "sha256": "7069097c1ccad925daa5fee9f63fe40e4d9edaeccfb843b1f197ebdc687b891a",
+      "artifactId": "d59dc14c7c1436d3edd0108cd450f1f6",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": false
+    },
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-b-top.png",
+      "bytes": 415160,
+      "width": 640,
+      "height": 480,
+      "sha256": "8628be0a8161ccf33137a69c76995eed52ffb36155f67c7003b0067af839e2e1",
+      "artifactId": "03c68a5fbdbf14dd197d6481f961fe85",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": false
+    }
+  ],
+  "sourceAuditReceipt": "../macro-ridge-candidate-b.json",
+  "independentSeamDiagnosticReceipt": "../macro-ridge-candidate-b-self-contact-diagnostic.json",
+  "rootVisualReview": {
+    "allFourActualNativeViewsInspected": true,
+    "decision": "REJECTED_NOT_PROMOTED",
+    "reasons": [
+      "330 nonadjacent self-contact hits require actual diagnosis/repair",
+      "Rear front wall remains long and almost straight despite real relief",
+      "Broad uniform courtyard and repeated western prisms remain artistically distant from the guide"
+    ],
+    "committed": false,
+    "portableExport": false,
+    "runtimeIntegration": false,
+    "referenceFidelityAccepted": false
+  }
+}

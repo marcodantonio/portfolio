@@ -1,0 +1,130 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r7-portable-mineral-albedo-20261005",
+  "status": "succeeded",
+  "finishedAt": "2026-10-05T04:06:55.192Z",
+  "revisionBefore": 6,
+  "revisionAfter": 7,
+  "sceneSequenceAfter": 0,
+  "recipe": "refine_projects_island_v2_r7_albedo.py",
+  "recipeSHA256": "a06ee7dc16224d0fca00a9afd5f6cb4ca205615dc3c89d42ed02a0d96dbbd512",
+  "result": {
+    "schemaVersion": 1,
+    "recipe": "projects-island-v2-r7-neutral-mineral-albedo",
+    "source_revision": "R6",
+    "source_owners_exact": 44,
+    "source_triangles_exact": 109088,
+    "source_geometry_uv_corner_normals_colour_and_ownership_exact": true,
+    "source_state_sha256": "c8e4863bc8892648a7524227ff1479f6c0b344a5f5b458d9bee0370c30acbd94",
+    "historical_r6_audit_exact": true,
+    "original_native_png_bytes_exact": 4,
+    "new_albedo_pngs": 2,
+    "new_materials": 0,
+    "existing_terrain_materials": 2,
+    "textures": [
+      {
+        "name": "ProjectsIsland_V2_Limestone_NeutralAlbedo_R7_1024",
+        "kind": "Limestone",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 535090,
+        "sha256": "dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3",
+        "PNG": {
+          "bitDepth": 8,
+          "colorType": 6,
+          "opaque": true
+        },
+        "generated_linear_RGB_mean": [
+          0.9355714127900683,
+          0.9402371234255043,
+          0.9383736312170186
+        ],
+        "generated_linear_min_max_std": [
+          0.5562946200370789,
+          0.9980000257492065,
+          0.03190293163061142
+        ],
+        "actual_png_sRGB_RGB_mean": [
+          0.9709800662714088,
+          0.9731160310799964,
+          0.9722620625292961
+        ],
+        "actual_png_decoded_linear_RGB_mean": [
+          0.9355828331065368,
+          0.9402631785710014,
+          0.9383903712172241
+        ],
+        "maximum_linear_quantization_error": 0.004454433917999268,
+        "opposing_edge_texels_exact": true,
+        "nominal_metres_per_uv_tile": 6.4
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_NeutralAlbedo_R7_1024",
+        "kind": "HoneyEarth",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 802348,
+        "sha256": "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b",
+        "PNG": {
+          "bitDepth": 8,
+          "colorType": 6,
+          "opaque": true
+        },
+        "generated_linear_RGB_mean": [
+          0.9311750052991101,
+          0.9284866567261929,
+          0.9221484231890713
+        ],
+        "generated_linear_min_max_std": [
+          0.7354596257209778,
+          0.9980000257492065,
+          0.03790656849741936
+        ],
+        "actual_png_sRGB_RGB_mean": [
+          0.968945273212114,
+          0.9677049730888143,
+          0.9647759963442581
+        ],
+        "actual_png_decoded_linear_RGB_mean": [
+          0.931256280928551,
+          0.9285551107003016,
+          0.9221925037618348
+        ],
+        "maximum_linear_quantization_error": 0.004454374313354492,
+        "opposing_edge_texels_exact": true,
+        "nominal_metres_per_uv_tile": 6.4
+      }
+    ],
+    "graphs": [
+      {
+        "material": "ProjectsIsland_V2_Limestone",
+        "vertex_colour": "TerrainColour",
+        "uv_map": "UVMap",
+        "graph": "ShaderNodeMix RGBA MULTIPLY factor1: COLOR_0 x sRGB baseColorTexture",
+        "original_nodes_and_non_albedo_links_exact": true,
+        "new_nodes": 3
+      },
+      {
+        "material": "ProjectsIsland_V2_HoneyEarth",
+        "vertex_colour": "TerrainColour",
+        "uv_map": "UVMap",
+        "graph": "ShaderNodeMix RGBA MULTIPLY factor1: COLOR_0 x sRGB baseColorTexture",
+        "original_nodes_and_non_albedo_links_exact": true,
+        "new_nodes": 3
+      }
+    ],
+    "provider_requests": 0,
+    "renders": 0,
+    "exports": 0,
+    "original_roughness_metallic_normal_MR_graphs_exact": true,
+    "full_reference_fidelity_verified": false,
+    "runtime_integrated": false,
+    "scope": "Albedo-only; rear/ledge geometry targets remain OPEN. Not sculpting, union, gameplay, performance or art approval."
+  },
+  "output": {
+    "stdoutTail": "Info: Saved as \"session.blend\"\nINFO Draco is available, use library at /opt/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so\nINFO MeshOptimizer is available, use library at /opt/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so\n04:06:48 | INFO: Starting glTF 2.0 export\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_00_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_01_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_02_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_03_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_04_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_05_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_06_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_07_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_08_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_09_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_10_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_11_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_12_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_13_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_14_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_15_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_16_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_17_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_18_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_19_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_20_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_21_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_22_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_23_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Attached_Fracture_24_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_East_Ledge_North_Of_Access_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_East_Long_Lower_Shoulder_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Front_Central_Long_Finger_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Front_East_Short_Finger_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Front_Left_Principal_Finger_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Rear_Connected_Low_Saddle_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Southeast_Low_Access_Headland_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_West_Low_Shelf_Before_Cleft_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging_Mesh\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Western_Broad_Second_Terrace_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:48 | INFO: Extracting primitive: ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon_R4_Constrained_Source\n04:06:48 | INFO: Primitives created: 1\n04:06:49 | INFO: Finished glTF 2.0 export in 1.0498638153076172 s\n\n",
+    "stderrTail": "",
+    "truncated": false
+  },
+  "scope": "Recipe counters cover its code only, not provider checkpoint/export or credit charges."
+}

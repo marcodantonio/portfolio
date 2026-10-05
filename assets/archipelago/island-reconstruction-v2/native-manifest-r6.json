@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r6-partial-geological-recomposition-20261005",
+  "revision": 6,
+  "sceneSequence": 0,
+  "humanScope": "Isola senza edifici, poi elementi separati",
+  "workflow": "Reference-led native Blender Scene Builder; not automatic multiview-to-mesh",
+  "status": "REAL_NATIVE_R6_PARTIAL; source/binary/scoped Asset Lab checks pass; art and gameplay not approved",
+  "recipe": {
+    "file": "refine_projects_island_v2_r6_diagnostic.py",
+    "sha256": "f951529f554340eb23d9247c2f83c0645e93e8a6db837906127eae4f53b2838b"
+  },
+  "nativeResult": "native-result-r6.json",
+  "sourceMetadata": "native-source-r6-after.json",
+  "fullReferenceFidelityVerified": false,
+  "artisticTargets": {
+    "diagnostic_candidate_only": true,
+    "full_reference_fidelity_verified": false,
+    "body_and_major_caps_not_noop": {
+      "body_changed_vertices": 875,
+      "body_maximum_abs_y_delta_metres": 0.6750000715255737,
+      "major_caps_significant": 11,
+      "major_caps_attempted": 11,
+      "failclosed_minimum_body_vertices": 120,
+      "failclosed_minimum_body_y_delta_metres": 0.65,
+      "failclosed_minimum_major_caps": 8,
+      "major_cap_vertex_threshold": 12,
+      "major_cap_delta_threshold_metres": 0.35
+    },
+    "rear_fracture_variation": {
+      "target_significant_owners": 4,
+      "actual_significant_owners": 3,
+      "significant_owners": [
+        "Attached_Fracture_14",
+        "Attached_Fracture_18",
+        "Attached_Fracture_21"
+      ],
+      "vertex_threshold": 12,
+      "delta_threshold_metres": 0.25,
+      "geometric_target_met": false,
+      "status": "OPEN"
+    },
+    "front_low_connecting_ledge_reauthoring": {
+      "changed_vertices": 187,
+      "maximum_move_metres": 0.14795528510508507,
+      "vertex_threshold": 15,
+      "delta_threshold_metres": 0.35,
+      "geometric_target_met": false,
+      "status": "OPEN"
+    }
+  },
+  "files": {
+    "master": {
+      "file": "projects-island-v2-r6.glb",
+      "bytes": 15159428,
+      "sha256": "419a93354d886eae4d5457fefa7124300595d66b14bcb896829a8b188a34efee",
+      "meshes": 44,
+      "vertices": 301854,
+      "triangles": 109088
+    },
+    "blend": {
+      "file": "projects-island-v2-r6.blend",
+      "bytes": 15753247,
+      "sha256": "6137c2d68e285b50a3733a3735ccfcc92531924abf7b6d5a28ad524c73a8da5a"
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r6-batched.glb",
+      "bytes": 15460056,
+      "sha256": "a263b372fd46a3fb98f9fc1ac59405a915fd1f81d7f30dd8b181fa894f12d6cc",
+      "meshes": 2,
+      "vertices": 301854,
+      "triangles": 109088,
+      "removedFaces": 0,
+      "exactParity": true,
+      "notLOD": true
+    },
+    "publicDistModelShaParity": true
+  },
+  "portable": {
+    "report": "portable-check-r6.json",
+    "checks": 5490861,
+    "negativeFixtures": 20,
+    "interfaceFixtureGroups": 4,
+    "geometry": {
+      "nearZeroAreaTriangles": 0,
+      "normalOppositionCandidates": 0,
+      "interpretation": "Actual transformed triangle shading diagnostics, not source manifold/watertightness certification from glTF seams"
+    },
+    "apron": {
+      "triangles": 10486,
+      "clippedTriangles": 2356,
+      "summedProjectedAreaSquareMetres": 832.0000000000008,
+      "summedPlanarAreaSquareMetres": 832.0000000000008,
+      "summedInclinedAreaSquareMetres": 0,
+      "minimumY": 4.800000190734863,
+      "maximumY": 4.800000190734863,
+      "proposedTopY": 4.8,
+      "tolerance": 0.00001,
+      "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+    },
+    "variableColorOwners": 44,
+    "materials": 2,
+    "pngs": 4,
+    "albedoTextureAssigned": false,
+    "aoAssigned": false,
+    "boundsMinYUpMetres": [
+      -34.44200134277344,
+      -10,
+      -36.441688537597656
+    ],
+    "boundsMaxYUpMetres": [
+      34.27458572387695,
+      19.423599243164062,
+      34.44200134277344
+    ]
+  },
+  "independentComparison": "binary-comparison-r6.json",
+  "nativePreviews": "native-previews-r6/manifest.json",
+  "candidatePreviews": "native-previews-r6-candidate/manifest.json",
+  "browser": "built-browser-r6.json",
+  "gates": {
+    "lint": "PASS",
+    "build": "PASS 2026-10-05T03:24:57Z,110 files/0 errors/0 warnings; existing FormEvent hint and Vite chunk warning",
+    "catalogMaster": "PASS",
+    "catalogBatched": "PASS exact source/material/image/attribute/tri/bounds parity",
+    "browser": "PASS scoped built3060 cameras/390x844 resized viewport/datum/404 retry/isolated WebGL failure; not physical device or FPS"
+  },
+  "preservedFailedQueries": [
+    "native-diagnostic-r6-initial.json",
+    "native-diagnostic-r6-feather.json",
+    "native-diagnostic-r6-exact-faces.json",
+    "native-diagnostic-r6-adaptive-strict.json"
+  ],
+  "preservedRevisionManifests": [
+    "native-manifest-r1.json",
+    "native-manifest-r2.json",
+    "native-manifest-r3.json",
+    "native-manifest-r4.json",
+    "native-manifest-r5.json"
+  ],
+  "runtimeIntegrated": false,
+  "overUnchanged8MiBProfile": true,
+  "newPaidImageJobs": 0,
+  "creditsChargedToNativeEditingNotProven": true,
+  "remainingArt": "Major/rear seams and beveled triangles too regular, albedo flat, vegetation absent. Rear and connecting ledge targets explicit OPEN.",
+  "noGameMapPhysicsOceanOrMarcoAiChange": true,
+  "goalComplete": false
+}

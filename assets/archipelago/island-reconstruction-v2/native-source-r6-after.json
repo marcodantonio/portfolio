@@ -1,0 +1,1796 @@
+{
+  "metadataFromActualCommittedGlb": "projects-island-v2-r6.glb",
+  "sha256": "419a93354d886eae4d5457fefa7124300595d66b14bcb896829a8b188a34efee",
+  "notIndependentOfNativeAssertions": true,
+  "sourceAudit": {
+    "meshes": 44,
+    "triangles": 109088,
+    "hard_triangle_limit": 180000,
+    "all_closed_positive": true,
+    "zero_area": 0,
+    "uv_degenerate": 0,
+    "normal_opposition": 0,
+    "body_xz_indices_exact": true,
+    "all_indices_and_counts_exact": true,
+    "all_original_submerged_geometry_exact": true,
+    "sea_ring_vertices_exact": 256,
+    "unselected_geometry_uv_corner_normals_exact": 22,
+    "original_pbr_definitions_exact": 2,
+    "original_packed_png_bytes_exact": 4,
+    "protected_clearing_approach_contact_basal_points_exact": true,
+    "actual_baseline_surface_pairs_exact": 25950,
+    "new_surface_contacts": 0,
+    "surface_contact_sha256": "21f58d004541ee648ffa55707ff694b9b68a2e0e98185f111f38abb8b8203c3d",
+    "not_union_self_intersection_or_art_approval": true,
+    "clearing": {
+      "summed_clipped_triangle_area_m2": 832.0000000000008,
+      "minimum_y": 4.800000190734863,
+      "maximum_y": 4.800000190734863,
+      "height_tolerance": 0.00001,
+      "not_union_or_physics_approval": true
+    },
+    "sea_origin_y": 0,
+    "foundation_y": -10,
+    "source_details": [
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_00",
+        "source_vertices": 638,
+        "triangles": 1272,
+        "closed_positive": true,
+        "signed_volume": 35.535897506968105,
+        "source_co_sha256": "18025967789a698f9229e8171c8fb75a0234cce5dcef5b7deb285eb9fb1b4832",
+        "source_uv_sha256": "0d38bdad3417ee6144fd550ad75e801bc02b10c06f28c13c59bdefcb39bf60dd",
+        "source_corner_normal_sha256": "e75ca05553f236bbe8a9bd0fed14fd8d02ff029a6bc171b649a40dd9cb36a4a8",
+        "minimum_cross_length": 0.00006548627803710365,
+        "minimum_uv_determinant": 0.0000011626935929598403,
+        "minimum_normal_dot": 0.999999815420808,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_01",
+        "source_vertices": 838,
+        "triangles": 1672,
+        "closed_positive": true,
+        "signed_volume": 50.31949572724371,
+        "source_co_sha256": "3181b578df1e946a9c6b24cc5fc865f150a9bf5795b23456175c2315adc66d32",
+        "source_uv_sha256": "ac5f9a326c83d0972b9e5e5acbe8cfb108c5908cadb27c7ca7ea3afabebbe2dc",
+        "source_corner_normal_sha256": "f395ba71ab652f1af51e4e578b5f73e1ef83080e27e18a88f752d91a5961dac1",
+        "minimum_cross_length": 0.0000062512858208547515,
+        "minimum_uv_determinant": 1.143812795589838e-7,
+        "minimum_normal_dot": 0.9999946376789371,
+        "submerged_sha256": "76d885d9fc2b6132abb712429cd0250b5d17c1146137890bc2d7ee471260bbac",
+        "submerged_triangles": 356
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_02",
+        "source_vertices": 752,
+        "triangles": 1500,
+        "closed_positive": true,
+        "signed_volume": 58.42617350858138,
+        "source_co_sha256": "86773765ac87e784e4663a9e3b8444493923b86beef487d5e3bca050a1037646",
+        "source_uv_sha256": "bf0a37a1a298236ec4c16a752fbfd877f493e15571c478892d17ee7a713103e9",
+        "source_corner_normal_sha256": "4ee0de92907fe038a9c36fc4c3f7cbf14c77f07570c95ff4fe7538db69abe839",
+        "minimum_cross_length": 0.000008425941551257755,
+        "minimum_uv_determinant": 1.5199475456029177e-7,
+        "minimum_normal_dot": 0.9999974922296393,
+        "submerged_sha256": "ba746b24f1ee0dc6c6e428c6b1676a8a211912f455c0d395a9f3a41d89f8b07b",
+        "submerged_triangles": 354
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_03",
+        "source_vertices": 709,
+        "triangles": 1414,
+        "closed_positive": true,
+        "signed_volume": 32.62263540384362,
+        "source_co_sha256": "bcbf53a111f70089e4fe27cbba7d8ac6ab86b058cc0ac0e31bd6f9d88590bda9",
+        "source_uv_sha256": "52bef5b0078cbb9cea37103f56bc71e9a9ff4e20a2b4230eef05e58c2d1bc38f",
+        "source_corner_normal_sha256": "ac4f5e156fbd1c9d43979ba80df24f35d92afb173d2cf6252d34e6980a8db38a",
+        "minimum_cross_length": 0.000006748617600979611,
+        "minimum_uv_determinant": 1.1202780569874449e-7,
+        "minimum_normal_dot": 0.999999291611115,
+        "submerged_sha256": "4dc38902bcc5e49c16ce1c8d5f7f510a77ff570bafbde1de631081424ca0c76f",
+        "submerged_triangles": 347
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_04",
+        "source_vertices": 626,
+        "triangles": 1248,
+        "closed_positive": true,
+        "signed_volume": 23.957090611579986,
+        "source_co_sha256": "6f4cf8305ea75636af67afcf5677ae42f8030e8397de8fb06a5e8459fceb09e2",
+        "source_uv_sha256": "ca550fa6017d645de9982557c95162bca0cc46282a95c5e3e74b509d40d6b4e0",
+        "source_corner_normal_sha256": "284ffe30ddf3a31a9b4fcd09c766758ef4f0d6aa9f14020f9ce8b6360d668700",
+        "minimum_cross_length": 0.0000018835612807436966,
+        "minimum_uv_determinant": 3.094942258030642e-8,
+        "minimum_normal_dot": 0.999989471009696,
+        "submerged_sha256": "fe3e2d6f0c0f47de3f121dd416b3d818919ff9689de27e97f4a722fd949fbdf3",
+        "submerged_triangles": 291
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_05",
+        "source_vertices": 544,
+        "triangles": 1084,
+        "closed_positive": true,
+        "signed_volume": 14.673397728900344,
+        "source_co_sha256": "5764a00835bd56739ccd4c9563a50e2a08eff199a3e054e496c6464b788cd6d5",
+        "source_uv_sha256": "cecf623b1472248158eebc170acbf2e5383c779773433db45d2e08426e592c79",
+        "source_corner_normal_sha256": "b08d9e67cd2a3cd7d2f393c6d628c73f2a76d363c73cfccd8107491842f0c8b7",
+        "minimum_cross_length": 0.0011205290417692266,
+        "minimum_uv_determinant": 0.00001944310639601099,
+        "minimum_normal_dot": 0.9999999765894283,
+        "submerged_sha256": "f23acbefcb1205c034cb95d2d88ebea06fa505e15fc4c7c490adf467a439c64b",
+        "submerged_triangles": 302
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_06",
+        "source_vertices": 514,
+        "triangles": 1024,
+        "closed_positive": true,
+        "signed_volume": 12.498591954670122,
+        "source_co_sha256": "2efa69d9145e84f0b2dbe8dce7130496f05599840dfb51bcdc440e7ef11ef485",
+        "source_uv_sha256": "5b730ed6d5e684d308a73f3b0f11669b51382e22e7e8a106f6e1c44b9ff467cc",
+        "source_corner_normal_sha256": "b89b5e09eff9fb188038ec679d73a165d4ca12994be392495635539589db40a7",
+        "minimum_cross_length": 0.0010437392817662379,
+        "minimum_uv_determinant": 0.00002043550861685617,
+        "minimum_normal_dot": 0.9999999895761359,
+        "submerged_sha256": "d0f0d22c0ca39b51a55fc07e9269a4b6550d9eaa28b9651fc9d95bc21c8cfe73",
+        "submerged_triangles": 284
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_07",
+        "source_vertices": 477,
+        "triangles": 950,
+        "closed_positive": true,
+        "signed_volume": 12.013160607859767,
+        "source_co_sha256": "13f492cc98140f882a7c2067bc4a3235487eee7abc574d1d4efafe23798ed614",
+        "source_uv_sha256": "d8c5e1a4907080489e97002a7f14d9b85b50580aef265d0cbca3ba35f4c9ecfc",
+        "source_corner_normal_sha256": "9b3adddd1eaa48de3394ed73fb5c46e3a6f23631a500040b009f4143eef1f228",
+        "minimum_cross_length": 0.000015102375196322826,
+        "minimum_uv_determinant": 2.849470659427311e-7,
+        "minimum_normal_dot": 0.9999996330909555,
+        "submerged_sha256": "93465d26970941d77291179384797f58333b405c6a5ffdda124dbd6578103a1f",
+        "submerged_triangles": 265
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_08",
+        "source_vertices": 469,
+        "triangles": 934,
+        "closed_positive": true,
+        "signed_volume": 12.58685514919839,
+        "source_co_sha256": "acdc928b2c140e9b655aa56c9550f4588faaef7ac35091c230d3ca27c160d105",
+        "source_uv_sha256": "3204dd1f208aba7b4adc0706fe61df3dff19eaeaae66904ae670bf0c1485e056",
+        "source_corner_normal_sha256": "e55c175fd57bf26a19cf5fc3bcec947c70848b2bdb9c45b9945a900b1044baa4",
+        "minimum_cross_length": 0.0005419436522996348,
+        "minimum_uv_determinant": 0.000009733372326792278,
+        "minimum_normal_dot": 0.9999999889916154,
+        "submerged_sha256": "da654f85b7d716437b380079711844396ee38f33fe60f7b1065a56cfba6dcca9",
+        "submerged_triangles": 236
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_09",
+        "source_vertices": 567,
+        "triangles": 1130,
+        "closed_positive": true,
+        "signed_volume": 14.037527054962386,
+        "source_co_sha256": "1656d2cd85c5c9b00aefb7cc7b046f083143ba858582bfb33e1a5a3179ff4109",
+        "source_uv_sha256": "a60340e9c5db67d9b0b284fff7d9706b47e32e4cc769c9c466004e8b3ae903d2",
+        "source_corner_normal_sha256": "d6216b6b825e1bf31346d7f30f1891602da35d52f497f085d3098bca1cb3dc95",
+        "minimum_cross_length": 0.0000010069471011442204,
+        "minimum_uv_determinant": 1.740659172355663e-8,
+        "minimum_normal_dot": 0.999988531231074,
+        "submerged_sha256": "b2bacec3876a29e0a4538acaa852b6602e58ca453fd80c025b0248675c4b605e",
+        "submerged_triangles": 319
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_10",
+        "source_vertices": 529,
+        "triangles": 1054,
+        "closed_positive": true,
+        "signed_volume": 12.695548374213319,
+        "source_co_sha256": "053d0dd6dca8840cbc2b9cc7bdcd30c226b157a24ee3f6128efb5e9a0a1363af",
+        "source_uv_sha256": "49db8cfc6051a0811092715ae09e46b894265d28e769afda6d73d51481705081",
+        "source_corner_normal_sha256": "d19295d6a18bdcd2fbad9b751ce9f7b5364f8d0f7d6b095fd5797d483789ae17",
+        "minimum_cross_length": 0.00011425219899646871,
+        "minimum_uv_determinant": 0.000002110948258859935,
+        "minimum_normal_dot": 0.9999998735198465,
+        "submerged_sha256": "9510ea174d6dc4ca096d897ad34df02c660fa2fd2588c376de485a9257935502",
+        "submerged_triangles": 293
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_11",
+        "source_vertices": 552,
+        "triangles": 1100,
+        "closed_positive": true,
+        "signed_volume": 18.846961119675953,
+        "source_co_sha256": "b3d66864f3c17dc6c9386cbaaf0e9273700036b358cd55ae2ec157f6a60afe91",
+        "source_uv_sha256": "5f5792081a1818134ddc449abfa83c73b1db6ba121b41a12a3545599f39b0f08",
+        "source_corner_normal_sha256": "198e9a8577cc3ebf9b4debbcb1c453b10facefd20c7b4e41eb52373618fd4e0c",
+        "minimum_cross_length": 0.000009390826455045093,
+        "minimum_uv_determinant": 1.4682072446703387e-7,
+        "minimum_normal_dot": 0.9999979903427998,
+        "submerged_sha256": "67e02e9394c8a08ef08320dc0910c9ec6d4a98daff19b7fe3fff785d414f9e18",
+        "submerged_triangles": 310
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_12",
+        "source_vertices": 797,
+        "triangles": 1590,
+        "closed_positive": true,
+        "signed_volume": 30.361196637804348,
+        "source_co_sha256": "3bfca7e8cfd8c9011fd7140e07e6bcb60e46b4b8029ba25ad6cbfa2bbcf6b176",
+        "source_uv_sha256": "e4f9e4b39bd7f2b078d2df74b9871f947cb149b0a2fc236a6f533b1d2234c51f",
+        "source_corner_normal_sha256": "6e2da9a96660905a7c07ac17573b053eaee395a0d502bd6aa4793f7c5e122140",
+        "minimum_cross_length": 0.00002667759425028893,
+        "minimum_uv_determinant": 4.936265725064004e-7,
+        "minimum_normal_dot": 0.9999997542777848,
+        "submerged_sha256": "6c79f7af26da7a55d919cc2e0f2f3f51b2e76e9b5291b611e7f32c6fb5ded1cb",
+        "submerged_triangles": 315
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_13",
+        "source_vertices": 624,
+        "triangles": 1244,
+        "closed_positive": true,
+        "signed_volume": 16.98226964785584,
+        "source_co_sha256": "3b0e547fa6f3e92c60383ce8ac5ca1c83cc4b9f32373b4e4546fa4f8a94c4d0c",
+        "source_uv_sha256": "58d1f67c43d3f3c93dadfb2b63ecb3e05e2a1f508d02b8d8afce409817b75825",
+        "source_corner_normal_sha256": "7f1d150b8792e7d92ca4c187a24c979ec21738bc4426412630274d6003f0f17b",
+        "minimum_cross_length": 0.00032724192986068875,
+        "minimum_uv_determinant": 0.000005421564583940608,
+        "minimum_normal_dot": 0.9999999711022481,
+        "submerged_sha256": "bd2b5f5c4e9fcff2ae50006e5310280af492f57355f4179faa3442d6e6673c35",
+        "submerged_triangles": 302
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_14",
+        "source_vertices": 867,
+        "triangles": 1730,
+        "closed_positive": true,
+        "signed_volume": 43.9311874839846,
+        "source_co_sha256": "e2ba4fb2efe466be6ee68279ba27591ade747e59fb4270fe85746ac213f22e99",
+        "source_uv_sha256": "5caf3b8325a42627ce32362e5ec05958519646fe25dc06872f9555bddc141146",
+        "source_corner_normal_sha256": "e3288f1227862e73d11768b7624cb4303dc7260c50bba9ab32b7c183d9252d21",
+        "minimum_cross_length": 0.00003004030254327017,
+        "minimum_uv_determinant": 4.7559569793520495e-7,
+        "minimum_normal_dot": 0.9999995685531207,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "4b4019e31d06365376caefe9bc9021aac61ae8fe7954b38557b8ceb3f6ca88fb"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_15",
+        "source_vertices": 744,
+        "triangles": 1484,
+        "closed_positive": true,
+        "signed_volume": 37.578808579568246,
+        "source_co_sha256": "748e4aea2a5747570be66b586f0094851b8f2bdff48be66b638a27cad261e2aa",
+        "source_uv_sha256": "efa438a318d11e9f82c47c37ea2693cbaab442d68f40d7360073779c56919b9f",
+        "source_corner_normal_sha256": "0c9f2320230c8c2b31d8f1b6d6691baf0373145d252fa69ee0ccfdfcd93c3377",
+        "minimum_cross_length": 0.000021629190314895603,
+        "minimum_uv_determinant": 3.8403106827900046e-7,
+        "minimum_normal_dot": 0.9999990415690493,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "d23087c06e5677c7903e1504dc31f3974b74915a721b12ccbe996ae38fa81890"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_16",
+        "source_vertices": 1150,
+        "triangles": 2296,
+        "closed_positive": true,
+        "signed_volume": 78.30814950472258,
+        "source_co_sha256": "33dd74a85c8a4a8bf8b9f63351cbf17edaa712e3729345ba5afbc56c29e1cddd",
+        "source_uv_sha256": "15a44b6d5dbb4d1bacc7c93f0cb9e976ec06f6a51c68aeee4bc334d5f1ee2f06",
+        "source_corner_normal_sha256": "ebcccfade6976cc190aa5a335bc74f1c1cd856d618edeafe0ce01c094170eae8",
+        "minimum_cross_length": 0.0000020564765820062177,
+        "minimum_uv_determinant": 3.99220994040661e-8,
+        "minimum_normal_dot": 0.9999699439061854,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "2e0da5bcadb489e8ff8e6550186003a0560b0cb0b504253fa65c0a480ceeff1c"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_17",
+        "source_vertices": 1076,
+        "triangles": 2148,
+        "closed_positive": true,
+        "signed_volume": 64.00187614162651,
+        "source_co_sha256": "65810d07393b301f0f328c5f0d0ede94a8ade34edf7390709acac1bf8eeb7fe0",
+        "source_uv_sha256": "f0aff9df35a89bc7fba003b04d2f9b013bb8d525f4ade411e3f2df48f62407a6",
+        "source_corner_normal_sha256": "6ce0d26fad021e128208e5359354f5c580e2b11ac8032eaf619a05af5d99919a",
+        "minimum_cross_length": 0.00017325733058438323,
+        "minimum_uv_determinant": 0.0000031115888532440295,
+        "minimum_normal_dot": 0.9999999512189733,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "b8264d7c6bf2660cf5e1f22312cc617352de13129386df0c0e3ce70fe98a0157"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_18",
+        "source_vertices": 956,
+        "triangles": 1908,
+        "closed_positive": true,
+        "signed_volume": 70.73127799397216,
+        "source_co_sha256": "315a789f92e3717371d2b79179b405d473f1edbdcb81f6b9da2a66b27953a2fd",
+        "source_uv_sha256": "b1431c14de70a35476f564a19d11530fecaf7ec07d4a67354308043f0379fb19",
+        "source_corner_normal_sha256": "2e6247823f77ad9a7962899967679afcad0fbcb40ca926d8e82d07dc50140fc3",
+        "minimum_cross_length": 0.000034544755773108884,
+        "minimum_uv_determinant": 6.43645002185167e-7,
+        "minimum_normal_dot": 0.9999995402760157,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "d9e3488075b265107342ac7e3096e1e3fb4b92c2aee5643d1262b2732e207f6c"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_19",
+        "source_vertices": 1033,
+        "triangles": 2062,
+        "closed_positive": true,
+        "signed_volume": 73.11071821070034,
+        "source_co_sha256": "b0cdfdb6050bc6b2eea4ea9c03f728f70fa01d87a741d0b9837510ddba572722",
+        "source_uv_sha256": "4278376a2918d14d9c490f8b0cbf424cdc8a447c4842ab736b49ac428bc8ad53",
+        "source_corner_normal_sha256": "125e4ec84bd765bec3133ae7081873e612bce5a7a3c26d9c3110d46a600c8b12",
+        "minimum_cross_length": 0.0006957118216843835,
+        "minimum_uv_determinant": 0.000013246504835251471,
+        "minimum_normal_dot": 0.9999999893699608,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "ed00609981102555d5378f929b4e63dc99281292b8db189340bc6971cb2053a8"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_20",
+        "source_vertices": 1010,
+        "triangles": 2016,
+        "closed_positive": true,
+        "signed_volume": 60.03945374992197,
+        "source_co_sha256": "b85f0d432decbfa727c9845a1e43a0b174b31e293657369b7f6465f4e08e3ccf",
+        "source_uv_sha256": "c0a7a3495d15c5050cb16de84c978759c222e2320fe7482411df02d3e1e452de",
+        "source_corner_normal_sha256": "6499e412b7c2b50d0d07784a59b9a5c1eb3deeb6c098d3183e5e12096f17e841",
+        "minimum_cross_length": 0.000002287020961119294,
+        "minimum_uv_determinant": 4.662842911784537e-8,
+        "minimum_normal_dot": 0.9999974979262101,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "52909763532abc5035d7d2e1eaacabc08575e250c8edb65c88829af83bf44aa7"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_21",
+        "source_vertices": 796,
+        "triangles": 1588,
+        "closed_positive": true,
+        "signed_volume": 44.85724873893174,
+        "source_co_sha256": "94e51a69c260a4a72735a624ae441d93381aea669d786bd5b5c92c1028c2d191",
+        "source_uv_sha256": "0963072b407724910c93c5d284aa4d2b6da605bc872888c0616f2d526970da94",
+        "source_corner_normal_sha256": "486dd6ad935d003b138213a6e9d03aedcbbbc3b68eec8eac08f398f6d070ba86",
+        "minimum_cross_length": 0.00005983123187389363,
+        "minimum_uv_determinant": 0.0000010574735824775416,
+        "minimum_normal_dot": 0.9999997571048264,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "c1432f27a18bb1bac735385668f9f5932a2d409dff557328c5fd5cbff9bc4143"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_22",
+        "source_vertices": 716,
+        "triangles": 1428,
+        "closed_positive": true,
+        "signed_volume": 29.70379436551534,
+        "source_co_sha256": "c35077d0dde5286ab40fe2ffc9b80b62faf7787a2405e463df886ab9c0c0274e",
+        "source_uv_sha256": "0418e4e438042218244130c55fb0fde613d20158f3e47ad4172bd5a15c7c3323",
+        "source_corner_normal_sha256": "b12b518cfac4c03873a731fbd95cca2a7aa1b0ffae2dd607bbfa08ae43f56e1f",
+        "minimum_cross_length": 0.00014122751927580037,
+        "minimum_uv_determinant": 0.000002901445782299561,
+        "minimum_normal_dot": 0.9999998436180896,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "dd6fa585012685f5268b53454021e2ba071f2f6953d9229eea1388d50fb432dd"
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_23",
+        "source_vertices": 620,
+        "triangles": 1236,
+        "closed_positive": true,
+        "signed_volume": 39.310176497203734,
+        "source_co_sha256": "a5c30a46abc46f51b32e9224e644f6ea5615ab0f41d57e71d3694ecba3dae77f",
+        "source_uv_sha256": "21e067c8240a561064cc5f19df6068e055ca757585543383db08074fb90de857",
+        "source_corner_normal_sha256": "59cc7dc5de67f3f41b96a69abfca3ec0e1306c98bb034b6699f49edab5dd8cc0",
+        "minimum_cross_length": 0.000005665268197216027,
+        "minimum_uv_determinant": 9.919904186972417e-8,
+        "minimum_normal_dot": 0.9999980285588479,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_24",
+        "source_vertices": 634,
+        "triangles": 1264,
+        "closed_positive": true,
+        "signed_volume": 41.632753172677084,
+        "source_co_sha256": "663a39443e96080c08b050f4bd2633e13d1bab109e5d6cb22945914813dc10ed",
+        "source_uv_sha256": "80c97f95db1f0e0afb06e267c1fcde0f1af7cf032dd1b4c9c4d6803045e52db6",
+        "source_corner_normal_sha256": "f29b47b6d07881585ec4ca2432578402d8e81e24586d392a694ce24cf08d310f",
+        "minimum_cross_length": 0.000038912826029963454,
+        "minimum_uv_determinant": 7.382859621429816e-7,
+        "minimum_normal_dot": 0.9999990537143727,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+        "source_vertices": 1612,
+        "triangles": 3220,
+        "closed_positive": true,
+        "signed_volume": 1032.8895290482938,
+        "source_co_sha256": "811af32b4d159d25a79d6e0644fc1fff8959e658b258ba287227afad3f13fcd9",
+        "source_uv_sha256": "41b5cf8243d93ed6c7479253ba5ed2d6a691a670032264d1e49122b731f0b89c",
+        "source_corner_normal_sha256": "aa7a1eb768ac0c33efdcd78aa0fc5c603c3f344f15b09cc3e80ba2bc35d832d3",
+        "minimum_cross_length": 0.0000023149067215073577,
+        "minimum_uv_determinant": 3.615599553086213e-8,
+        "minimum_normal_dot": 0.9999758248666353,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "da1721f11e58b3b907c562a01881b4cb253fc0731556c5714df6afbe4801584a"
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+        "source_vertices": 2682,
+        "triangles": 5360,
+        "closed_positive": true,
+        "signed_volume": 2495.389636813544,
+        "source_co_sha256": "92707c5c7a716c92e114bde937ec3d57ec6950aa692895891fb9548f9cfc2876",
+        "source_uv_sha256": "e73e92ecde82bab4001baaa1a04948dcf951d43ab5d1d1b74c8c6e4894eca173",
+        "source_corner_normal_sha256": "6b9ed808eb5b8d1f7eab8a34c02e2c26530ad724f1ddc256ad6c87bcbcb7b47b",
+        "minimum_cross_length": 7.392341638276587e-7,
+        "minimum_uv_determinant": 1.4287536487245234e-8,
+        "minimum_normal_dot": 0.9999284908184395,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "2dd32eb2ceb3699f1222923037f1764ebe0858d59a6e0836c107af148fa2687d"
+      },
+      {
+        "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+        "source_vertices": 7421,
+        "triangles": 14838,
+        "closed_positive": true,
+        "signed_volume": 48588.11691890645,
+        "source_co_sha256": "f1e7ca196773f004f9be614e64952ab4e0cd0cf174dffad45f5109a00d1a4e39",
+        "source_uv_sha256": "8abd961da850311d95307f53d33875437978f2466772f441c50f334b3afdc873",
+        "source_corner_normal_sha256": "f62a9f3fd259471d6902cb15932f2874226bca73966ba0cb564fd9acab90911c",
+        "minimum_cross_length": 0.1795090522908457,
+        "minimum_uv_determinant": 0.00414173056692313,
+        "minimum_normal_dot": 0.9999999998299358,
+        "submerged_sha256": "0d723790086145b5a796b9fb2c301a6e250eb9e0098fd1c5c83462687de59278",
+        "submerged_triangles": 3840,
+        "protected_point_sha256": "30d985ee2771ffb896d0b39710300a2098f1020946592966a448b799154cc88e"
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+        "source_vertices": 1054,
+        "triangles": 2104,
+        "closed_positive": true,
+        "signed_volume": 793.6438992539925,
+        "source_co_sha256": "2783e421d7f7f84920987ebe988786afdfcc109807b3101d2ec664c25b9f64d0",
+        "source_uv_sha256": "b04e5a16cba93abd447fb84addc985c1aa3b8b4bb8f9de16d0528d0e7a862cf6",
+        "source_corner_normal_sha256": "df1690d0933b5cf8bb0cedede6e8ac32a2ed2b553600827cf79a670f80370646",
+        "minimum_cross_length": 0.00006669122190449126,
+        "minimum_uv_determinant": 0.0000011742548622351023,
+        "minimum_normal_dot": 0.9999995957422099,
+        "submerged_sha256": "a63bfc986ecb726345911890cddd21daae8844ff4ad2f1d2bbd2c6388d3c516b",
+        "submerged_triangles": 820
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+        "source_vertices": 1363,
+        "triangles": 2722,
+        "closed_positive": true,
+        "signed_volume": 674.254910957966,
+        "source_co_sha256": "96908ae8afcce7887177a12fa535a1a9c853b3caa920a669f6e5a4fb4a25e079",
+        "source_uv_sha256": "2c3cd36e1103d257ed1d2638cbc7cd3ea397772e4c9d20345736b56889d700e6",
+        "source_corner_normal_sha256": "6a280828694796ba056ce7911aea43ce5c45ec202abd3ebb3d942336b372dd56",
+        "minimum_cross_length": 0.000011851269506431624,
+        "minimum_uv_determinant": 2.1865440658075386e-7,
+        "minimum_normal_dot": 0.9998689306923494,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "34450dce5bd530e6ef52b81c2b989b7a809fd9ad25928f00098a7d5084062557"
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+        "source_vertices": 1242,
+        "triangles": 2480,
+        "closed_positive": true,
+        "signed_volume": 491.8800312655872,
+        "source_co_sha256": "ec30f13f4f3a7e653c7e09ba3c77a180aae9d27a29fac78205c7bfaf6bb24e8a",
+        "source_uv_sha256": "24c453ccbed0af091039acca112ac73eb42e3e8361d22c1e0b11f8def7100d55",
+        "source_corner_normal_sha256": "246472f96665fc10cabe2b513ecc9a60272fcf49f3c4f1f4fc4158ea1b8d7ffe",
+        "minimum_cross_length": 0.00237573023899385,
+        "minimum_uv_determinant": 0.000042368915842416754,
+        "minimum_normal_dot": 0.9999999942296135,
+        "submerged_sha256": "a174682721c641d160ac7337f14638581b231f6b7ab94bf4c05a9d3f9ae04d52",
+        "submerged_triangles": 682
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+        "source_vertices": 1382,
+        "triangles": 2760,
+        "closed_positive": true,
+        "signed_volume": 610.8592937788011,
+        "source_co_sha256": "e3a862dde6ceb44b712db906fdfcb89066d7d9103bbff1e67c34f4f1eecf81d8",
+        "source_uv_sha256": "a0d900a59a692c386fd531c081805fcd3885a0223121a2d167cf07899968c63a",
+        "source_corner_normal_sha256": "5c3064bdd1c909056742fdd88450d47b03e6f17d0b8ea082aa20b9866eadcb87",
+        "minimum_cross_length": 0.00002715747914588262,
+        "minimum_uv_determinant": 4.7403671032952843e-7,
+        "minimum_normal_dot": 0.9999992039013125,
+        "submerged_sha256": "6ddbfe4d7d821832351c0e824d658df7870b1514fdcbce7c0a1f38839333077e",
+        "submerged_triangles": 707
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+        "source_vertices": 1027,
+        "triangles": 2050,
+        "closed_positive": true,
+        "signed_volume": 952.925039463076,
+        "source_co_sha256": "9411e182bc5be840ed37611ce0f3611248de9f15b292a12d03670b3b19caf363",
+        "source_uv_sha256": "a803b6486008ff9d88b82fbd0e58459787570ee2d8f15dcb136815ee9739ede5",
+        "source_corner_normal_sha256": "1d1aa0097380cc9ef9b2a5194a3af01def23630203ac490a13a2fc2c1aa5eb41",
+        "minimum_cross_length": 0.00003292570172783317,
+        "minimum_uv_determinant": 5.576924877459533e-7,
+        "minimum_normal_dot": 0.9999994985430231,
+        "submerged_sha256": "2769b149883769f1b78d9804b3349935303aaf7385b00a6a59375f61974787c2",
+        "submerged_triangles": 775,
+        "protected_point_sha256": "ac973e6315012abc31f64c7ea2bd34aee0ad7ec3a583eb0ba00759553e9897e9"
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+        "source_vertices": 737,
+        "triangles": 1470,
+        "closed_positive": true,
+        "signed_volume": 476.78260783738403,
+        "source_co_sha256": "6b6079b39e187ac87aa46da0baf955dea55a3e8440262f8aea1e8cf06bd7029a",
+        "source_uv_sha256": "fc724123c4c088ef5a889835c4be66be4f62ae335d5c43c71e3f7999725a6f9b",
+        "source_corner_normal_sha256": "3faae1ffbe2cd5a6611220096fb11fb9d4bad2c63328609336830da0fb4097a3",
+        "minimum_cross_length": 0.000003075224616520561,
+        "minimum_uv_determinant": 5.6300279993592994e-8,
+        "minimum_normal_dot": 0.9996127553872274,
+        "submerged_sha256": "8dcacd4a3614b701c53cbcd966f0a4ecaef715deca347ad2a2f423fc824d99f6",
+        "submerged_triangles": 640,
+        "protected_point_sha256": "ccd214dda4133f3c2b4a8ade3ce216a5c7412cf8f6cc41ddb48d766e127f7770"
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+        "source_vertices": 1013,
+        "triangles": 2022,
+        "closed_positive": true,
+        "signed_volume": 858.3392351121657,
+        "source_co_sha256": "729d18f1e1a30f9e7f10102a596f6f97a8e950d008686a020621716a3229b9b7",
+        "source_uv_sha256": "cd33b0c15f435a6bc279240259d257efa20f83bbfe775030ff941a3de9cd3bf4",
+        "source_corner_normal_sha256": "cc9990bc4ed06c30e14bc1dddb0f4627e71e1637afddddc8af95fc2b32cec1ca",
+        "minimum_cross_length": 0.00011104304182008898,
+        "minimum_uv_determinant": 0.0000017819180584410788,
+        "minimum_normal_dot": 0.9999989199491597,
+        "submerged_sha256": "2df7991e51ef50c235e8de079abb45f7c010b7cb89d7c73350796cd6450a7cb6",
+        "submerged_triangles": 715,
+        "protected_point_sha256": "1c3bddf390bbbce05d9c4424d5469c349ee46f8c06b60223c50aa662b518171c"
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+        "source_vertices": 1166,
+        "triangles": 2328,
+        "closed_positive": true,
+        "signed_volume": 239.381426990148,
+        "source_co_sha256": "4ebc4624470f4c8990ca3c7ce788c25aa3c7ba9100425dbfa1328198add3b46c",
+        "source_uv_sha256": "2224ec4798a79ededa238155904e8bf7542cceba25ff864ad2f1b5776778645f",
+        "source_corner_normal_sha256": "d1157cdb14d1545b62022eba5099ad69d23450e18317aaad9184fab849533b9b",
+        "minimum_cross_length": 0.0000011452271206817423,
+        "minimum_uv_determinant": 2.155286438210169e-8,
+        "minimum_normal_dot": 0.999984160807206,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "76d12a0ad8a6f5ef7782226fe92d8d80bf9c8a404a91d2713209a3c5db72feee"
+      },
+      {
+        "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+        "source_vertices": 5667,
+        "triangles": 11330,
+        "closed_positive": true,
+        "signed_volume": 12184.713980002882,
+        "source_co_sha256": "b41055643eb807561a1645c956368152f09fa6fd575954cb5d69ed785bc682ba",
+        "source_uv_sha256": "830b50b487c27b0ff8b78ddba8a7f2c8eaa6fe5b582aabf89c2c01f4f4f56e8a",
+        "source_corner_normal_sha256": "3cffd8f06922f95dff5dc83ca3c53a5fc6142e585aeb865cd808bc52f832434a",
+        "minimum_cross_length": 0.0000013875713480975184,
+        "minimum_uv_determinant": 2.224101081083063e-8,
+        "minimum_normal_dot": 0.9997238041501849,
+        "submerged_sha256": "299e8206e38b0daf5793a32e0e5674994027705e0f8d64c777f2795f16b33a18",
+        "submerged_triangles": 2634,
+        "protected_point_sha256": "b1fa7a3808b9e8aba1695c76226ff3d244aff2cb6a38fb933f6010dd2dc1d7ea"
+      },
+      {
+        "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+        "source_vertices": 1050,
+        "triangles": 2096,
+        "closed_positive": true,
+        "signed_volume": 969.6261179877927,
+        "source_co_sha256": "df0d81ad5118092c5dacd0aac8f8f8f3d10efe1769392c6f32f2e209df2d9993",
+        "source_uv_sha256": "9c6b73a68ba5121fcd0a580a377f6dc8f68eb46f0a54205292937be69dad6c23",
+        "source_corner_normal_sha256": "25106f22eff61c02694eb8bdef90645f1e405cc6dac61be16b96152df02af120",
+        "minimum_cross_length": 0.000003109273178875297,
+        "minimum_uv_determinant": 5.42972884431947e-8,
+        "minimum_normal_dot": 0.9999930445156896,
+        "submerged_sha256": "be2a09a7fd1f2c0549021c662466db4cb00e5388c3a09837338dd0975bcb7d4a",
+        "submerged_triangles": 865
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+        "source_vertices": 1698,
+        "triangles": 3392,
+        "closed_positive": true,
+        "signed_volume": 1593.6265049835447,
+        "source_co_sha256": "dca7b3da23417e24767329f067ebbb5479a9043208d57330dba2b2c1369006ba",
+        "source_uv_sha256": "50805db7ab254bb36eb7f90120a4136404dc29f661ccece3608de8b9c16f3359",
+        "source_corner_normal_sha256": "7c5d678e14648a5a752aef2553bda2ecd3389ddbe7b329ef696b6b9789e0d2d2",
+        "minimum_cross_length": 0.00014543324461324358,
+        "minimum_uv_determinant": 0.0000027350073281695586,
+        "minimum_normal_dot": 0.9999983561693219,
+        "submerged_sha256": "c470fb77deb5339ce50f79dd454898a7cfc8f0b68b8d1a7be790a6341e8eadeb",
+        "submerged_triangles": 957,
+        "protected_point_sha256": "0506f8509d5041da78be0d65b13c7a7d61fb718fbf773eed16b4f20ad5c9e86c"
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+        "source_vertices": 2138,
+        "triangles": 4272,
+        "closed_positive": true,
+        "signed_volume": 1669.5567931118824,
+        "source_co_sha256": "5b56d8b2ea85c442bac9bfc709eb19cc0ab773ccd8366be470f375ad8b48a2b0",
+        "source_uv_sha256": "75ff29b7d0ff1e893b18d0bea8f30df9552e0117b55ca56eb2fb66e041f37766",
+        "source_corner_normal_sha256": "3bf179daad9fad14af69307454087b2b5bbf81049a5705142de4115ba2c83604",
+        "minimum_cross_length": 0.00005446917179306678,
+        "minimum_uv_determinant": 9.973928172257729e-7,
+        "minimum_normal_dot": 0.9999990929325192,
+        "submerged_sha256": "138473d133539aef26fee9157814a12fdbe9a2e2e02af192c9b21ba82fd5bb86",
+        "submerged_triangles": 1129,
+        "protected_point_sha256": "d07bb4ba461ba5052c4978dfa6fd31c2687136016732d6f86f1afa763a9fd068"
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+        "source_vertices": 1512,
+        "triangles": 3020,
+        "closed_positive": true,
+        "signed_volume": 1055.8124657402836,
+        "source_co_sha256": "3a2d97ce9bc72ef0dde2df963beec4fd1cd0fd230858809ba7ea369f7945fd8a",
+        "source_uv_sha256": "fdc1736f483751fadc7edb330ed879481d12cc059b0dddbc6586dbc02baa86f9",
+        "source_corner_normal_sha256": "f1c922d4127be6c20ffab9a68fc13cd5cd5e6dafd4c96d12c86f57ea3fba1fd0",
+        "minimum_cross_length": 0.0036478953373700975,
+        "minimum_uv_determinant": 0.00006034052906933596,
+        "minimum_normal_dot": 0.9999999975404833,
+        "submerged_sha256": "15117d72e6849c893e52c15b7f3ec7fad4eaadff43a95d0273460d9ad099819d",
+        "submerged_triangles": 795
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+        "source_vertices": 760,
+        "triangles": 1516,
+        "closed_positive": true,
+        "signed_volume": 422.78797947901546,
+        "source_co_sha256": "6dfed9aa0f56527ec7c6c2c39b1ea14aa273994d67535b1f2aed40a1e849f99d",
+        "source_uv_sha256": "fcc4eaceb329e3d7241e6fded9b562dc3873869142b8e8b2e32c1357bcd796e1",
+        "source_corner_normal_sha256": "3644202c75581b96f0f51d511225aaf0d39307a0468566f245f40974519e8cf1",
+        "minimum_cross_length": 0.002838134028004432,
+        "minimum_uv_determinant": 0.00006858609222604173,
+        "minimum_normal_dot": 0.9999999966364362,
+        "submerged_sha256": "84a871bce6048076166293c6cdb76ed4e5cb0a61aa3cd906eae06018bd2ac007",
+        "submerged_triangles": 626
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+        "source_vertices": 1925,
+        "triangles": 3846,
+        "closed_positive": true,
+        "signed_volume": 1296.9572106412384,
+        "source_co_sha256": "a7fcce2967820be8b5980a043a2b917d33f289680ef35c5e1a5dc2a8c0bf75d9",
+        "source_uv_sha256": "4b57cee6aed80a1bba18d46947092e11f024de2d6aa84bb1fde31bd14c86245b",
+        "source_corner_normal_sha256": "cfa83e081afbed6656d7c218a6f034eb42b5cacb1c8decb315435403cf8908ab",
+        "minimum_cross_length": 0.0000034909516950297795,
+        "minimum_uv_determinant": 6.53471943223849e-8,
+        "minimum_normal_dot": 0.9991405875037721,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "cc2a05428916e919d529a19b3b3713238d89a1e4e3078bb0b0c755562ab9e670"
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+        "source_vertices": 945,
+        "triangles": 1886,
+        "closed_positive": true,
+        "signed_volume": 320.0109230615287,
+        "source_co_sha256": "84a9a7320ba0f52d8443c916d06e0a8687a854c308b0d23976013c58e9d467da",
+        "source_uv_sha256": "a7955fb82a6fd8da75436c83533772acef0ee676091c5d2205b8865ca893473b",
+        "source_corner_normal_sha256": "266342edb99404c6c6d7351f15950f9254d9ea0c9873da479c09e2ad309e3964",
+        "minimum_cross_length": 2.2389136572020924e-9,
+        "minimum_uv_determinant": 4.7634785005357116e-11,
+        "minimum_normal_dot": 0.6971158415688894,
+        "submerged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "submerged_triangles": 0,
+        "protected_point_sha256": "00b16c06c741c5173b2af1dc4f851b475dc536e6a851fd713c0e4b6faf451516"
+      }
+    ],
+    "no_runtime_map_physics_ocean_mutations": true
+  },
+  "protection": {
+    "Attached_Fracture_14": {
+      "protected_vertices": 733,
+      "free_vertices": 134,
+      "categories": {
+        "actual_contact_faces": 344,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 156,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 726
+      },
+      "protected_point_sha256": "4b4019e31d06365376caefe9bc9021aac61ae8fe7954b38557b8ceb3f6ca88fb",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_15": {
+      "protected_vertices": 642,
+      "free_vertices": 102,
+      "categories": {
+        "actual_contact_faces": 325,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 156,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 605
+      },
+      "protected_point_sha256": "d23087c06e5677c7903e1504dc31f3974b74915a721b12ccbe996ae38fa81890",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_16": {
+      "protected_vertices": 880,
+      "free_vertices": 270,
+      "categories": {
+        "actual_contact_faces": 414,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 184,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 784
+      },
+      "protected_point_sha256": "2e0da5bcadb489e8ff8e6550186003a0560b0cb0b504253fa65c0a480ceeff1c",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 5
+    },
+    "Attached_Fracture_17": {
+      "protected_vertices": 1001,
+      "free_vertices": 75,
+      "categories": {
+        "actual_contact_faces": 465,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 164,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 905
+      },
+      "protected_point_sha256": "b8264d7c6bf2660cf5e1f22312cc617352de13129386df0c0e3ce70fe98a0157",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_18": {
+      "protected_vertices": 777,
+      "free_vertices": 179,
+      "categories": {
+        "actual_contact_faces": 335,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 156,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 621
+      },
+      "protected_point_sha256": "d9e3488075b265107342ac7e3096e1e3fb4b92c2aee5643d1262b2732e207f6c",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_19": {
+      "protected_vertices": 842,
+      "free_vertices": 191,
+      "categories": {
+        "actual_contact_faces": 336,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 172,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 670
+      },
+      "protected_point_sha256": "ed00609981102555d5378f929b4e63dc99281292b8db189340bc6971cb2053a8",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_20": {
+      "protected_vertices": 864,
+      "free_vertices": 146,
+      "categories": {
+        "actual_contact_faces": 378,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 160,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 718
+      },
+      "protected_point_sha256": "52909763532abc5035d7d2e1eaacabc08575e250c8edb65c88829af83bf44aa7",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_21": {
+      "protected_vertices": 609,
+      "free_vertices": 187,
+      "categories": {
+        "actual_contact_faces": 272,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 156,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 466
+      },
+      "protected_point_sha256": "c1432f27a18bb1bac735385668f9f5932a2d409dff557328c5fd5cbff9bc4143",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Attached_Fracture_22": {
+      "protected_vertices": 585,
+      "free_vertices": 131,
+      "categories": {
+        "actual_contact_faces": 272,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 144,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 541
+      },
+      "protected_point_sha256": "dd6fa585012685f5268b53454021e2ba071f2f6953d9229eea1388d50fb432dd",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Cannon_Asymmetric_High_Plateau": {
+      "protected_vertices": 1260,
+      "free_vertices": 352,
+      "categories": {
+        "actual_contact_faces": 292,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 1253,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 596
+      },
+      "protected_point_sha256": "da1721f11e58b3b907c562a01881b4cb253fc0731556c5714df6afbe4801584a",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Cannon_Continuous_Middle_Terrace": {
+      "protected_vertices": 2346,
+      "free_vertices": 336,
+      "categories": {
+        "actual_contact_faces": 1140,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 1956,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 1829
+      },
+      "protected_point_sha256": "2dd32eb2ceb3699f1222923037f1764ebe0858d59a6e0836c107af148fa2687d",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Continuous_Connected_Coast_And_Bedrock": {
+      "protected_vertices": 6315,
+      "free_vertices": 1106,
+      "categories": {
+        "actual_contact_faces": 2036,
+        "submerged_and_sea": 2049,
+        "exact_lower_basal_band": 0,
+        "full_triangle_approaches": 678,
+        "full_triangle_reserved_clearing": 1248,
+        "actual_nearest_half_metre_face_halo": 2219,
+        "body_embedding_or_ambiguous_whole_faces": 885
+      },
+      "protected_point_sha256": "30d985ee2771ffb896d0b39710300a2098f1020946592966a448b799154cc88e",
+      "embedding_faces_protected": 1375,
+      "ambiguous_embedding_faces_protected": 3,
+      "adaptive_added_vertices": 0
+    },
+    "East_Long_Lower_Shoulder": {
+      "protected_vertices": 1076,
+      "free_vertices": 287,
+      "categories": {
+        "actual_contact_faces": 461,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 997,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 814
+      },
+      "protected_point_sha256": "34450dce5bd530e6ef52b81c2b989b7a809fd9ad25928f00098a7d5084062557",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Front_Central_Long_Finger": {
+      "protected_vertices": 858,
+      "free_vertices": 169,
+      "categories": {
+        "actual_contact_faces": 250,
+        "submerged_and_sea": 416,
+        "exact_lower_basal_band": 789,
+        "full_triangle_approaches": 303,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 313
+      },
+      "protected_point_sha256": "ac973e6315012abc31f64c7ea2bd34aee0ad7ec3a583eb0ba00759553e9897e9",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Front_East_Short_Finger": {
+      "protected_vertices": 622,
+      "free_vertices": 115,
+      "categories": {
+        "actual_contact_faces": 157,
+        "submerged_and_sea": 344,
+        "exact_lower_basal_band": 596,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 260
+      },
+      "protected_point_sha256": "ccd214dda4133f3c2b4a8ade3ce216a5c7412cf8f6cc41ddb48d766e127f7770",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Front_Left_Principal_Finger": {
+      "protected_vertices": 848,
+      "free_vertices": 165,
+      "categories": {
+        "actual_contact_faces": 279,
+        "submerged_and_sea": 384,
+        "exact_lower_basal_band": 823,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 308
+      },
+      "protected_point_sha256": "1c3bddf390bbbce05d9c4424d5469c349ee46f8c06b60223c50aa662b518171c",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Front_Low_Connecting_Ridge_Ledge": {
+      "protected_vertices": 956,
+      "free_vertices": 210,
+      "categories": {
+        "actual_contact_faces": 390,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 328,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 845
+      },
+      "protected_point_sha256": "76d12a0ad8a6f5ef7782226fe92d8d80bf9c8a404a91d2713209a3c5db72feee",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Rear_Connected_Low_Saddle": {
+      "protected_vertices": 4995,
+      "free_vertices": 672,
+      "categories": {
+        "actual_contact_faces": 1960,
+        "submerged_and_sea": 1408,
+        "exact_lower_basal_band": 3787,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 2789
+      },
+      "protected_point_sha256": "b1fa7a3808b9e8aba1695c76226ff3d244aff2cb6a38fb933f6010dd2dc1d7ea",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "West_Front_Inner_Cleft_Buttress": {
+      "protected_vertices": 1451,
+      "free_vertices": 247,
+      "categories": {
+        "actual_contact_faces": 421,
+        "submerged_and_sea": 514,
+        "exact_lower_basal_band": 1445,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 539
+      },
+      "protected_point_sha256": "0506f8509d5041da78be0d65b13c7a7d61fb718fbf773eed16b4f20ad5c9e86c",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "West_Front_Outer_Cleft_Buttress": {
+      "protected_vertices": 1892,
+      "free_vertices": 246,
+      "categories": {
+        "actual_contact_faces": 472,
+        "submerged_and_sea": 607,
+        "exact_lower_basal_band": 1892,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 563
+      },
+      "protected_point_sha256": "d07bb4ba461ba5052c4978dfa6fd31c2687136016732d6f86f1afa763a9fd068",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Western_Broad_Second_Terrace": {
+      "protected_vertices": 1709,
+      "free_vertices": 216,
+      "categories": {
+        "actual_contact_faces": 713,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 1454,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 1299
+      },
+      "protected_point_sha256": "cc2a05428916e919d529a19b3b3713238d89a1e4e3078bb0b0c755562ab9e670",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    },
+    "Western_High_Shoulder_Connected_To_Cannon": {
+      "protected_vertices": 853,
+      "free_vertices": 92,
+      "categories": {
+        "actual_contact_faces": 385,
+        "submerged_and_sea": 0,
+        "exact_lower_basal_band": 759,
+        "full_triangle_approaches": 0,
+        "full_triangle_reserved_clearing": 0,
+        "actual_nearest_half_metre_face_halo": 660
+      },
+      "protected_point_sha256": "00b16c06c741c5173b2af1dc4f851b475dc536e6a851fd713c0e4b6faf451516",
+      "embedding_faces_protected": 0,
+      "ambiguous_embedding_faces_protected": 0,
+      "adaptive_added_vertices": 0
+    }
+  },
+  "geometry": {
+    "Attached_Fracture_14": {
+      "changed_vertices": 129,
+      "maximum_move_metres": 0.3231610671212575,
+      "maximum_abs_y_move": 0.3059062957763672,
+      "minimum_original_face_cosine": 0.7039277941095263,
+      "minimum_area_ratio": 0.6479044996752392,
+      "bounds_before": [
+        [
+          -28.757484436035156,
+          1.7999999523162842,
+          -23.121564865112305
+        ],
+        [
+          -24.396175384521484,
+          7.870871067047119,
+          -19.879222869873047
+        ]
+      ],
+      "bounds_after": [
+        [
+          -28.757484436035156,
+          1.7999999523162842,
+          -23.121564865112305
+        ],
+        [
+          -24.396175384521484,
+          7.870566368103027,
+          -19.879222869873047
+        ]
+      ]
+    },
+    "Attached_Fracture_15": {
+      "changed_vertices": 82,
+      "maximum_move_metres": 0.022915406692130113,
+      "maximum_abs_y_move": 0.02108907699584961,
+      "minimum_original_face_cosine": 0.999660658976637,
+      "minimum_area_ratio": 0.9530325803569881,
+      "bounds_before": [
+        [
+          -23.986286163330078,
+          1.7999999523162842,
+          -19.900959014892578
+        ],
+        [
+          -19.2716064453125,
+          6.968210697174072,
+          -16.766183853149414
+        ]
+      ],
+      "bounds_after": [
+        [
+          -23.986286163330078,
+          1.7999999523162842,
+          -19.900959014892578
+        ],
+        [
+          -19.2716064453125,
+          6.968210697174072,
+          -16.766183853149414
+        ]
+      ]
+    },
+    "Attached_Fracture_16": {
+      "changed_vertices": 251,
+      "maximum_move_metres": 0.20741582705088227,
+      "maximum_abs_y_move": 0.19728946685791016,
+      "minimum_original_face_cosine": 0.031901611685039084,
+      "minimum_area_ratio": 0.6864373561440915,
+      "bounds_before": [
+        [
+          -19.628589630126953,
+          1.7999999523162842,
+          -24.716087341308594
+        ],
+        [
+          -14.100818634033203,
+          9.385431289672852,
+          -21.080860137939453
+        ]
+      ],
+      "bounds_after": [
+        [
+          -19.628589630126953,
+          1.7999999523162842,
+          -24.716087341308594
+        ],
+        [
+          -14.100818634033203,
+          9.385431289672852,
+          -21.080860137939453
+        ]
+      ]
+    },
+    "Attached_Fracture_17": {
+      "changed_vertices": 75,
+      "maximum_move_metres": 0.07503604619380384,
+      "maximum_abs_y_move": 0.04842042922973633,
+      "minimum_original_face_cosine": 0.9962144263666293,
+      "minimum_area_ratio": 0.9291815660988498,
+      "bounds_before": [
+        [
+          -13.036293029785156,
+          1.7999999523162842,
+          -25.14349937438965
+        ],
+        [
+          -7.880783557891846,
+          9.914812088012695,
+          -21.94741439819336
+        ]
+      ],
+      "bounds_after": [
+        [
+          -13.036293029785156,
+          1.7999999523162842,
+          -25.14349937438965
+        ],
+        [
+          -7.880783557891846,
+          9.914812088012695,
+          -21.94741439819336
+        ]
+      ]
+    },
+    "Attached_Fracture_18": {
+      "changed_vertices": 173,
+      "maximum_move_metres": 0.5741860839844822,
+      "maximum_abs_y_move": 0.560481071472168,
+      "minimum_original_face_cosine": 0.7471668633927031,
+      "minimum_area_ratio": 0.428027174544748,
+      "bounds_before": [
+        [
+          -6.850269794464111,
+          1.7999999523162842,
+          -23.638917922973633
+        ],
+        [
+          -0.7323240637779236,
+          9.378366470336914,
+          -20.470584869384766
+        ]
+      ],
+      "bounds_after": [
+        [
+          -6.850269794464111,
+          1.7999999523162842,
+          -23.638917922973633
+        ],
+        [
+          -0.7323240637779236,
+          9.365683555603027,
+          -20.470584869384766
+        ]
+      ]
+    },
+    "Attached_Fracture_19": {
+      "changed_vertices": 189,
+      "maximum_move_metres": 0.19779854923883897,
+      "maximum_abs_y_move": 0.16914892196655273,
+      "minimum_original_face_cosine": 0.9900281438639219,
+      "minimum_area_ratio": 0.7271325133463022,
+      "bounds_before": [
+        [
+          1.2616382837295532,
+          1.7999999523162842,
+          -23.505643844604492
+        ],
+        [
+          6.557332515716553,
+          9.226591110229492,
+          -19.901086807250977
+        ]
+      ],
+      "bounds_after": [
+        [
+          1.2616382837295532,
+          1.7999999523162842,
+          -23.505643844604492
+        ],
+        [
+          6.557332515716553,
+          9.226591110229492,
+          -19.901086807250977
+        ]
+      ]
+    },
+    "Attached_Fracture_20": {
+      "changed_vertices": 123,
+      "maximum_move_metres": 0.23139921038818825,
+      "maximum_abs_y_move": 0.22066879272460938,
+      "minimum_original_face_cosine": 0.9510979381868787,
+      "minimum_area_ratio": 0.7673818453529225,
+      "bounds_before": [
+        [
+          7.727819442749023,
+          1.7999999523162842,
+          -24.667966842651367
+        ],
+        [
+          12.763886451721191,
+          9.477638244628906,
+          -21.349395751953125
+        ]
+      ],
+      "bounds_after": [
+        [
+          7.727819442749023,
+          1.7999999523162842,
+          -24.667966842651367
+        ],
+        [
+          12.763886451721191,
+          9.477638244628906,
+          -21.349395751953125
+        ]
+      ]
+    },
+    "Attached_Fracture_21": {
+      "changed_vertices": 187,
+      "maximum_move_metres": 0.27077571854098004,
+      "maximum_abs_y_move": 0.23955869674682617,
+      "minimum_original_face_cosine": 0.7435399820478066,
+      "minimum_area_ratio": 0.6887861545739624,
+      "bounds_before": [
+        [
+          16.417903900146484,
+          1.7999999523162842,
+          -22.03738021850586
+        ],
+        [
+          21.47014617919922,
+          7.60799503326416,
+          -18.718908309936523
+        ]
+      ],
+      "bounds_after": [
+        [
+          16.417903900146484,
+          1.7999999523162842,
+          -22.03738021850586
+        ],
+        [
+          21.47014617919922,
+          7.593250751495361,
+          -18.718908309936523
+        ]
+      ]
+    },
+    "Attached_Fracture_22": {
+      "changed_vertices": 131,
+      "maximum_move_metres": 0.147211170387562,
+      "maximum_abs_y_move": 0.12769174575805664,
+      "minimum_original_face_cosine": 0.228767979680962,
+      "minimum_area_ratio": 0.4505082967001772,
+      "bounds_before": [
+        [
+          22.428434371948242,
+          1.7999999523162842,
+          -21.567426681518555
+        ],
+        [
+          26.26727867126465,
+          7.28743314743042,
+          -18.514415740966797
+        ]
+      ],
+      "bounds_after": [
+        [
+          22.428434371948242,
+          1.7999999523162842,
+          -21.567426681518555
+        ],
+        [
+          26.26727867126465,
+          7.28743314743042,
+          -18.514415740966797
+        ]
+      ]
+    },
+    "Cannon_Asymmetric_High_Plateau": {
+      "changed_vertices": 352,
+      "maximum_move_metres": 0.9601185283824272,
+      "maximum_abs_y_move": 0.9181041717529297,
+      "minimum_original_face_cosine": 0.9022864594490869,
+      "minimum_area_ratio": 0.5928157638474604,
+      "bounds_before": [
+        [
+          -9.164700508117676,
+          8.699999809265137,
+          -35.12216567993164
+        ],
+        [
+          12.19029426574707,
+          18.914897918701172,
+          -25.76186752319336
+        ]
+      ],
+      "bounds_after": [
+        [
+          -9.164700508117676,
+          8.699999809265137,
+          -35.12216567993164
+        ],
+        [
+          12.19029426574707,
+          19.423599243164062,
+          -25.76186752319336
+        ]
+      ]
+    },
+    "Cannon_Continuous_Middle_Terrace": {
+      "changed_vertices": 336,
+      "maximum_move_metres": 0.7929748585610783,
+      "maximum_abs_y_move": 0.7297229766845703,
+      "minimum_original_face_cosine": 0.7440132874076187,
+      "minimum_area_ratio": 0.5988341651253412,
+      "bounds_before": [
+        [
+          -15.773399353027344,
+          3.0999999046325684,
+          -34.260765075683594
+        ],
+        [
+          19.181541442871094,
+          14.57824993133545,
+          -20.125415802001953
+        ]
+      ],
+      "bounds_after": [
+        [
+          -15.773399353027344,
+          3.0999999046325684,
+          -34.260765075683594
+        ],
+        [
+          19.181541442871094,
+          14.57824993133545,
+          -20.125415802001953
+        ]
+      ]
+    },
+    "Continuous_Connected_Coast_And_Bedrock": {
+      "changed_vertices": 875,
+      "maximum_move_metres": 0.6750000715255737,
+      "maximum_abs_y_move": 0.6750000715255737,
+      "minimum_original_face_cosine": 0.9143702161796564,
+      "minimum_area_ratio": 0.8112116673065823,
+      "bounds_before": [
+        [
+          -34.44200134277344,
+          -10,
+          -36.441688537597656
+        ],
+        [
+          34.27458572387695,
+          4.882262706756592,
+          34.44200134277344
+        ]
+      ],
+      "bounds_after": [
+        [
+          -34.44200134277344,
+          -10,
+          -36.441688537597656
+        ],
+        [
+          34.27458572387695,
+          4.880761623382568,
+          34.44200134277344
+        ]
+      ]
+    },
+    "East_Long_Lower_Shoulder": {
+      "changed_vertices": 287,
+      "maximum_move_metres": 0.7586796298277811,
+      "maximum_abs_y_move": 0.7031726837158203,
+      "minimum_original_face_cosine": 0.8653627188768428,
+      "minimum_area_ratio": 0.5451619143145292,
+      "bounds_before": [
+        [
+          10.827486991882324,
+          3.0999999046325684,
+          -29.229907989501953
+        ],
+        [
+          27.940448760986328,
+          10.8326416015625,
+          -16.468059539794922
+        ]
+      ],
+      "bounds_after": [
+        [
+          10.827486991882324,
+          3.0999999046325684,
+          -29.229907989501953
+        ],
+        [
+          27.940448760986328,
+          10.777003288269043,
+          -16.468059539794922
+        ]
+      ]
+    },
+    "Front_Central_Long_Finger": {
+      "changed_vertices": 169,
+      "maximum_move_metres": 0.48325582407301726,
+      "maximum_abs_y_move": 0.454958438873291,
+      "minimum_original_face_cosine": 0.9108874717919312,
+      "minimum_area_ratio": 0.7438945749488692,
+      "bounds_before": [
+        [
+          -5.672268867492676,
+          -10,
+          22.336732864379883
+        ],
+        [
+          3.763570547103882,
+          5.610897064208984,
+          33.835975646972656
+        ]
+      ],
+      "bounds_after": [
+        [
+          -5.672268867492676,
+          -10,
+          22.336732864379883
+        ],
+        [
+          3.763570547103882,
+          5.443751335144043,
+          33.835975646972656
+        ]
+      ]
+    },
+    "Front_East_Short_Finger": {
+      "changed_vertices": 115,
+      "maximum_move_metres": 0.3803364221077342,
+      "maximum_abs_y_move": 0.36363816261291504,
+      "minimum_original_face_cosine": 0.9389362792072858,
+      "minimum_area_ratio": 0.791298427999052,
+      "bounds_before": [
+        [
+          8.689008712768555,
+          -10,
+          22.206695556640625
+        ],
+        [
+          16.2558650970459,
+          3.7401697635650635,
+          29.901519775390625
+        ]
+      ],
+      "bounds_after": [
+        [
+          8.689008712768555,
+          -10,
+          22.206695556640625
+        ],
+        [
+          16.2558650970459,
+          3.6739861965179443,
+          29.901519775390625
+        ]
+      ]
+    },
+    "Front_Left_Principal_Finger": {
+      "changed_vertices": 165,
+      "maximum_move_metres": 0.3928074284183039,
+      "maximum_abs_y_move": 0.34277844429016113,
+      "minimum_original_face_cosine": 0.9558416504236932,
+      "minimum_area_ratio": 0.714324942703899,
+      "bounds_before": [
+        [
+          -20.236713409423828,
+          -10,
+          20.5072021484375
+        ],
+        [
+          -12.003110885620117,
+          5.263510227203369,
+          31.204055786132812
+        ]
+      ],
+      "bounds_after": [
+        [
+          -20.236713409423828,
+          -10,
+          20.5072021484375
+        ],
+        [
+          -12.003110885620117,
+          5.3793864250183105,
+          31.204055786132812
+        ]
+      ]
+    },
+    "Front_Low_Connecting_Ridge_Ledge": {
+      "changed_vertices": 187,
+      "maximum_move_metres": 0.14795528510508507,
+      "maximum_abs_y_move": 0.13654565811157227,
+      "minimum_original_face_cosine": 0.08077256128060296,
+      "minimum_area_ratio": 0.7748356138928145,
+      "bounds_before": [
+        [
+          -19.540786743164062,
+          2.9000000953674316,
+          -20.689659118652344
+        ],
+        [
+          12.43767261505127,
+          6.23652982711792,
+          -16.61969757080078
+        ]
+      ],
+      "bounds_after": [
+        [
+          -19.540786743164062,
+          2.9000000953674316,
+          -20.689659118652344
+        ],
+        [
+          12.43767261505127,
+          6.23652982711792,
+          -16.61969757080078
+        ]
+      ]
+    },
+    "Rear_Connected_Low_Saddle": {
+      "changed_vertices": 672,
+      "maximum_move_metres": 0.8326062116309455,
+      "maximum_abs_y_move": 0.8172736167907715,
+      "minimum_original_face_cosine": 0.7920927375535972,
+      "minimum_area_ratio": 0.5825194411085627,
+      "bounds_before": [
+        [
+          -29.437829971313477,
+          -10,
+          -33.405609130859375
+        ],
+        [
+          29.467519760131836,
+          8.364511489868164,
+          -15.61022663116455
+        ]
+      ],
+      "bounds_after": [
+        [
+          -29.437829971313477,
+          -10,
+          -33.405609130859375
+        ],
+        [
+          29.467519760131836,
+          8.364511489868164,
+          -15.61022663116455
+        ]
+      ]
+    },
+    "West_Front_Inner_Cleft_Buttress": {
+      "changed_vertices": 247,
+      "maximum_move_metres": 0.7014687750616211,
+      "maximum_abs_y_move": 0.6766438484191895,
+      "minimum_original_face_cosine": 0.8214198777389764,
+      "minimum_area_ratio": 0.6991046057922696,
+      "bounds_before": [
+        [
+          -26.886856079101562,
+          -10,
+          7.322357654571533
+        ],
+        [
+          -18.789451599121094,
+          8.690349578857422,
+          24.791410446166992
+        ]
+      ],
+      "bounds_after": [
+        [
+          -26.886856079101562,
+          -10,
+          7.322357654571533
+        ],
+        [
+          -18.789451599121094,
+          8.474411010742188,
+          24.791410446166992
+        ]
+      ]
+    },
+    "West_Front_Outer_Cleft_Buttress": {
+      "changed_vertices": 246,
+      "maximum_move_metres": 0.40749631746176773,
+      "maximum_abs_y_move": 0.361846923828125,
+      "minimum_original_face_cosine": 0.9683296569149794,
+      "minimum_area_ratio": 0.7172567639172439,
+      "bounds_before": [
+        [
+          -33.841312408447266,
+          -10,
+          4.938056468963623
+        ],
+        [
+          -27.11634635925293,
+          11.420502662658691,
+          25.540016174316406
+        ]
+      ],
+      "bounds_after": [
+        [
+          -33.841312408447266,
+          -10,
+          4.938056468963623
+        ],
+        [
+          -27.11634635925293,
+          11.383950233459473,
+          25.540016174316406
+        ]
+      ]
+    },
+    "Western_Broad_Second_Terrace": {
+      "changed_vertices": 216,
+      "maximum_move_metres": 0.6909481312182448,
+      "maximum_abs_y_move": 0.644587516784668,
+      "minimum_original_face_cosine": 0.6952843038393399,
+      "minimum_area_ratio": 0.5848147353610874,
+      "bounds_before": [
+        [
+          -29.340656280517578,
+          2.799999952316284,
+          -30.19256591796875
+        ],
+        [
+          -6.7172651290893555,
+          12.57328987121582,
+          -16.987306594848633
+        ]
+      ],
+      "bounds_after": [
+        [
+          -29.340656280517578,
+          2.799999952316284,
+          -30.19256591796875
+        ],
+        [
+          -6.7172651290893555,
+          12.57328987121582,
+          -16.987306594848633
+        ]
+      ]
+    },
+    "Western_High_Shoulder_Connected_To_Cannon": {
+      "changed_vertices": 92,
+      "maximum_move_metres": 0.4831103370152956,
+      "maximum_abs_y_move": 0.4729042053222656,
+      "minimum_original_face_cosine": 0.8378048450125459,
+      "minimum_area_ratio": 0.7054556005638519,
+      "bounds_before": [
+        [
+          -22.094053268432617,
+          7.099999904632568,
+          -29.589664459228516
+        ],
+        [
+          -9.072528839111328,
+          13.598749160766602,
+          -21.898029327392578
+        ]
+      ],
+      "bounds_after": [
+        [
+          -22.094053268432617,
+          7.099999904632568,
+          -29.589664459228516
+        ],
+        [
+          -9.072528839111328,
+          13.566962242126465,
+          -21.898029327392578
+        ]
+      ]
+    }
+  },
+  "artisticTargets": {
+    "diagnostic_candidate_only": true,
+    "full_reference_fidelity_verified": false,
+    "body_and_major_caps_not_noop": {
+      "body_changed_vertices": 875,
+      "body_maximum_abs_y_delta_metres": 0.6750000715255737,
+      "major_caps_significant": 11,
+      "major_caps_attempted": 11,
+      "failclosed_minimum_body_vertices": 120,
+      "failclosed_minimum_body_y_delta_metres": 0.65,
+      "failclosed_minimum_major_caps": 8,
+      "major_cap_vertex_threshold": 12,
+      "major_cap_delta_threshold_metres": 0.35
+    },
+    "rear_fracture_variation": {
+      "target_significant_owners": 4,
+      "actual_significant_owners": 3,
+      "significant_owners": [
+        "Attached_Fracture_14",
+        "Attached_Fracture_18",
+        "Attached_Fracture_21"
+      ],
+      "vertex_threshold": 12,
+      "delta_threshold_metres": 0.25,
+      "geometric_target_met": false,
+      "status": "OPEN"
+    },
+    "front_low_connecting_ledge_reauthoring": {
+      "changed_vertices": 187,
+      "maximum_move_metres": 0.14795528510508507,
+      "vertex_threshold": 15,
+      "delta_threshold_metres": 0.35,
+      "geometric_target_met": false,
+      "status": "OPEN"
+    }
+  },
+  "fullArtistAcceptance": false
+}

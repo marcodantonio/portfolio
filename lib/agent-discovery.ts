@@ -63,11 +63,11 @@ export const agentCatalog = {
   webmcp: [
     {
       name: "scroll_to_section",
-      description: "Scroll the page to one of the main sections: about, education, skills, projects, experience, or contact.",
+      description: "Open a portfolio island's content: about, education, skills, projects, experience, or contact. Use top to open the archipelago map.",
     },
     {
-      name: "focus_contact_form",
-      description: "Jump to the contact section and focus the email field.",
+      name: "open_marco_ai",
+      description: "Open Marco.AI, Marco's digital assistant.",
     },
     {
       name: "download_cv",

@@ -1,0 +1,456 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-portable-albedo-product-dynamic-rna-20261005",
+  "status": "succeeded",
+  "revisionBefore": 6,
+  "sceneSequenceAfter": 0,
+  "finishedAt": "2026-10-05T03:39:32.308Z",
+  "recipe": "inspect_portable_albedo_product_dynamic_rna.py",
+  "recipeSha256": "d8d2697e9a80e22f8dc31696ec80d0077d5692100c14c9e591d62bc26de67df0",
+  "result": {
+    "temporaryQueryOnly": true,
+    "originalSceneGeometryMaterialsUntouched": true,
+    "exportCount": 2,
+    "publishedGLB": false,
+    "rendered": false,
+    "actualBlenderVersion": "5.2.0 LTS",
+    "exporterRNA": "EXPORT_SCENE_OT_gltf",
+    "actualEnumEvidence": {
+      "export_format": {
+        "source": "ExportGLTF2_Base.get_format_items",
+        "values": [
+          "GLB",
+          "GLTF_SEPARATE"
+        ],
+        "rnaDefault": ""
+      },
+      "export_vertex_color": {
+        "source": "rna.enum_items",
+        "values": [
+          "MATERIAL",
+          "ACTIVE",
+          "NAME",
+          "NONE"
+        ],
+        "rnaDefault": "MATERIAL"
+      }
+    },
+    "sourcePackedPNG": {
+      "bytes": 335,
+      "sha256": "a56cc6e60f6ed30b57689408418dfac72eaf4fea36f9837f7a00838eca326529",
+      "width": 16,
+      "height": 16,
+      "bitDepth": 8,
+      "colorType": 6,
+      "interlace": 0
+    },
+    "exports": [
+      {
+        "vertexColorMode": "MATERIAL",
+        "RNAConfirmedOptions": {
+          "export_format": "GLB",
+          "use_selection": true,
+          "export_all_vertex_colors": true,
+          "export_cameras": false,
+          "export_lights": false,
+          "export_animations": false,
+          "export_vertex_color": "MATERIAL"
+        },
+        "actualGLBBytes": 4160,
+        "actualGLBSHA256": "3183d3e06880506a16a191ba63c0108bede7e1f2d3d2f166eb0c80079c2de709",
+        "actualMeshCount": 3,
+        "actualImageCount": 1,
+        "primitives": [
+          {
+            "mesh": "QueryAlbedoProduct_DirectVertexColor",
+            "source": {
+              "graph": "DirectVertexColor",
+              "singlePBRSlot": true,
+              "vertexColorLayer": "FixtureColor",
+              "sourceImagePNG": false
+            },
+            "actualAttributes": {
+              "POSITION": 0,
+              "NORMAL": 1,
+              "TEXCOORD_0": 2,
+              "COLOR_0": 3
+            },
+            "actualCOLOR_0": {
+              "count": 3,
+              "componentType": 5126,
+              "normalized": false,
+              "minRGB": [
+                0.10000000149011612,
+                0.20000000298023224,
+                0.30000001192092896
+              ],
+              "maxRGB": [
+                0.8999999761581421,
+                0.8500000238418579,
+                0.949999988079071
+              ],
+              "varies": true,
+              "values": [
+                [
+                  0.8999999761581421,
+                  0.20000000298023224,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.8500000238418579,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.20000000298023224,
+                  0.949999988079071
+                ]
+              ]
+            },
+            "actualBaseColorTexture": null,
+            "actualBaseColorFactor": null,
+            "actualEmbeddedPNG": null,
+            "portableProductObserved": false
+          },
+          {
+            "mesh": "QueryAlbedoProduct_MultiplyMixRGB",
+            "source": {
+              "graph": "MultiplyMixRGB",
+              "singlePBRSlot": true,
+              "vertexColorLayer": "FixtureColor",
+              "sourceImagePNG": true
+            },
+            "actualAttributes": {
+              "POSITION": 5,
+              "NORMAL": 6,
+              "TEXCOORD_0": 7,
+              "COLOR_0": 8,
+              "COLOR_1": 9
+            },
+            "actualCOLOR_0": {
+              "count": 3,
+              "componentType": 5121,
+              "normalized": true,
+              "minRGB": [
+                1,
+                1,
+                1
+              ],
+              "maxRGB": [
+                1,
+                1,
+                1
+              ],
+              "varies": false,
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            },
+            "actualBaseColorTexture": {
+              "index": 0
+            },
+            "actualBaseColorFactor": null,
+            "actualEmbeddedPNG": {
+              "bytes": 335,
+              "sha256": "a56cc6e60f6ed30b57689408418dfac72eaf4fea36f9837f7a00838eca326529",
+              "width": 16,
+              "height": 16,
+              "bitDepth": 8,
+              "colorType": 6,
+              "interlace": 0,
+              "sourcePackedBytesExact": true
+            },
+            "portableProductObserved": false
+          },
+          {
+            "mesh": "QueryAlbedoProduct_MultiplyRGBA",
+            "source": {
+              "graph": "MultiplyRGBA",
+              "singlePBRSlot": true,
+              "vertexColorLayer": "FixtureColor",
+              "sourceImagePNG": true
+            },
+            "actualAttributes": {
+              "POSITION": 10,
+              "NORMAL": 11,
+              "TEXCOORD_0": 12,
+              "COLOR_0": 13
+            },
+            "actualCOLOR_0": {
+              "count": 3,
+              "componentType": 5126,
+              "normalized": false,
+              "minRGB": [
+                0.10000000149011612,
+                0.20000000298023224,
+                0.30000001192092896
+              ],
+              "maxRGB": [
+                0.8999999761581421,
+                0.8500000238418579,
+                0.949999988079071
+              ],
+              "varies": true,
+              "values": [
+                [
+                  0.8999999761581421,
+                  0.20000000298023224,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.8500000238418579,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.20000000298023224,
+                  0.949999988079071
+                ]
+              ]
+            },
+            "actualBaseColorTexture": {
+              "index": 1
+            },
+            "actualBaseColorFactor": null,
+            "actualEmbeddedPNG": {
+              "bytes": 335,
+              "sha256": "a56cc6e60f6ed30b57689408418dfac72eaf4fea36f9837f7a00838eca326529",
+              "width": 16,
+              "height": 16,
+              "bitDepth": 8,
+              "colorType": 6,
+              "interlace": 0,
+              "sourcePackedBytesExact": true
+            },
+            "portableProductObserved": true
+          }
+        ]
+      },
+      {
+        "vertexColorMode": "ACTIVE",
+        "RNAConfirmedOptions": {
+          "export_format": "GLB",
+          "use_selection": true,
+          "export_all_vertex_colors": true,
+          "export_cameras": false,
+          "export_lights": false,
+          "export_animations": false,
+          "export_vertex_color": "ACTIVE"
+        },
+        "actualGLBBytes": 3996,
+        "actualGLBSHA256": "5861e7a85c7c6f311924f8c980f32bd4d4e5c1b00515bc599febf14825197dc2",
+        "actualMeshCount": 3,
+        "actualImageCount": 1,
+        "primitives": [
+          {
+            "mesh": "QueryAlbedoProduct_DirectVertexColor",
+            "source": {
+              "graph": "DirectVertexColor",
+              "singlePBRSlot": true,
+              "vertexColorLayer": "FixtureColor",
+              "sourceImagePNG": false
+            },
+            "actualAttributes": {
+              "POSITION": 0,
+              "NORMAL": 1,
+              "TEXCOORD_0": 2,
+              "COLOR_0": 3
+            },
+            "actualCOLOR_0": {
+              "count": 3,
+              "componentType": 5126,
+              "normalized": false,
+              "minRGB": [
+                0.10000000149011612,
+                0.20000000298023224,
+                0.30000001192092896
+              ],
+              "maxRGB": [
+                0.8999999761581421,
+                0.8500000238418579,
+                0.949999988079071
+              ],
+              "varies": true,
+              "values": [
+                [
+                  0.8999999761581421,
+                  0.20000000298023224,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.8500000238418579,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.20000000298023224,
+                  0.949999988079071
+                ]
+              ]
+            },
+            "actualBaseColorTexture": null,
+            "actualBaseColorFactor": null,
+            "actualEmbeddedPNG": null,
+            "portableProductObserved": false
+          },
+          {
+            "mesh": "QueryAlbedoProduct_MultiplyMixRGB",
+            "source": {
+              "graph": "MultiplyMixRGB",
+              "singlePBRSlot": true,
+              "vertexColorLayer": "FixtureColor",
+              "sourceImagePNG": true
+            },
+            "actualAttributes": {
+              "POSITION": 5,
+              "NORMAL": 6,
+              "TEXCOORD_0": 7,
+              "COLOR_0": 8
+            },
+            "actualCOLOR_0": {
+              "count": 3,
+              "componentType": 5123,
+              "normalized": true,
+              "minRGB": [
+                0.10000762951094835,
+                0.2,
+                0.30000762951094834
+              ],
+              "maxRGB": [
+                0.9000076295109484,
+                0.8500038147554742,
+                0.9499961852445258
+              ],
+              "varies": true,
+              "values": [
+                [
+                  0.9000076295109484,
+                  0.2,
+                  0.30000762951094834,
+                  1
+                ],
+                [
+                  0.10000762951094835,
+                  0.8500038147554742,
+                  0.30000762951094834,
+                  1
+                ],
+                [
+                  0.10000762951094835,
+                  0.2,
+                  0.9499961852445258,
+                  1
+                ]
+              ]
+            },
+            "actualBaseColorTexture": {
+              "index": 0
+            },
+            "actualBaseColorFactor": null,
+            "actualEmbeddedPNG": {
+              "bytes": 335,
+              "sha256": "a56cc6e60f6ed30b57689408418dfac72eaf4fea36f9837f7a00838eca326529",
+              "width": 16,
+              "height": 16,
+              "bitDepth": 8,
+              "colorType": 6,
+              "interlace": 0,
+              "sourcePackedBytesExact": true
+            },
+            "portableProductObserved": true
+          },
+          {
+            "mesh": "QueryAlbedoProduct_MultiplyRGBA",
+            "source": {
+              "graph": "MultiplyRGBA",
+              "singlePBRSlot": true,
+              "vertexColorLayer": "FixtureColor",
+              "sourceImagePNG": true
+            },
+            "actualAttributes": {
+              "POSITION": 9,
+              "NORMAL": 10,
+              "TEXCOORD_0": 11,
+              "COLOR_0": 12
+            },
+            "actualCOLOR_0": {
+              "count": 3,
+              "componentType": 5126,
+              "normalized": false,
+              "minRGB": [
+                0.10000000149011612,
+                0.20000000298023224,
+                0.30000001192092896
+              ],
+              "maxRGB": [
+                0.8999999761581421,
+                0.8500000238418579,
+                0.949999988079071
+              ],
+              "varies": true,
+              "values": [
+                [
+                  0.8999999761581421,
+                  0.20000000298023224,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.8500000238418579,
+                  0.30000001192092896
+                ],
+                [
+                  0.10000000149011612,
+                  0.20000000298023224,
+                  0.949999988079071
+                ]
+              ]
+            },
+            "actualBaseColorTexture": {
+              "index": 1
+            },
+            "actualBaseColorFactor": null,
+            "actualEmbeddedPNG": {
+              "bytes": 335,
+              "sha256": "a56cc6e60f6ed30b57689408418dfac72eaf4fea36f9837f7a00838eca326529",
+              "width": 16,
+              "height": 16,
+              "bitDepth": 8,
+              "colorType": 6,
+              "interlace": 0,
+              "sourcePackedBytesExact": true
+            },
+            "portableProductObserved": true
+          }
+        ]
+      }
+    ],
+    "scope": "Actual portable graph fixtures only; not terrain UV/texture integration, rendering, runtime or art approval",
+    "ownedFixturesDisposed": true,
+    "originalSelectionAndActiveObjectRestored": true
+  },
+  "interpretation": "Modern ShaderNodeMix RGBA/MULTIPLY exports varying Float32 COLOR_0 and byte-identical embedded albedo in explicit MATERIAL and ACTIVE fixture exports. Legacy MixRGB/MULTIPLY exports white COLOR_0 in MATERIAL (real source paint moves to COLOR_1); ACTIVE coerces normalized source paint. No original island material, native provider exporter settings or rendered fidelity approved.",
+  "sourceModelStillRevision": 6,
+  "modelMaterialIntegrationPerformed": false,
+  "transportRecovery": "First dynamic submission returned a non-JSON tool transport error; fresh project R6/S0/null and OPERATION_NOT_FOUND were checked before retrying the exact same id/code. Only successful operation is recorded here."
+}

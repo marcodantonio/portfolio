@@ -1,0 +1,290 @@
+{
+  "version": 3,
+  "created": "2026-10-01",
+  "previous": "manifest-v2.json",
+  "pipeline": {
+    "images": "Built-in Images edit for digital workshop; fourteen total generated sheets including retained v1/v2. prompts-v3.json.",
+    "meshes": "Reference-led authored Blender 5.2, not automatic image-to-3D, exact reconstruction or certified orthographic CAD",
+    "export": "GLB 2.0 Y-up metres with embedded portable PBR textures",
+    "aggregation": "Affine baking and compatible material/attribute batching; no decimation, texture compression or LOD",
+    "status": "Partial art study; studio-v2 and digital workshop aggregates mounted experimentally",
+    "artAcceptance": false,
+    "hardwarePerformance": "unverified"
+  },
+  "additionalReference": {
+    "path": "reference-sheets-v3/03-digital-workshop.png",
+    "bytes": 2180957,
+    "sha256": "8fbe52f1e08604f5fa7d58b6f6764838d7e82b3750d70b478ce5432125d70564"
+  },
+  "prompt": {
+    "path": "prompts-v3.json",
+    "bytes": 2179,
+    "sha256": "1fec48273f8703b4dbafe48ed4f088fae1cff18f5f3c5e5f5492e88a5b66b7f7"
+  },
+  "newMasters": [
+    {
+      "id": "studio-v2",
+      "projectId": "0fca031e-1aa8-44aa-ad28-785c623839cd",
+      "projectUrl": "https://higgsfield.ai/3d-jutsu/0fca031e-1aa8-44aa-ad28-785c623839cd",
+      "revision": 1,
+      "operationId": "studio-v2-authoring-20261001-002",
+      "root": "HomeStudio_V2_Origin_At_Deck_Centre",
+      "files": {
+        "glb": {
+          "path": "../../public/models/archipelago/studio-v2.glb",
+          "bytes": 7909672,
+          "sha256": "f6d24a43db3e9c4b3a10876eec64c8010c1d9d864a7080b5c77b1f841cf4d939"
+        },
+        "blend": {
+          "path": "blender/studio-v2.blend",
+          "bytes": 15522506,
+          "sha256": "efd55afd32956495b5acbdb289c315c425259dbee242cc099ba017ff1ee174c1"
+        },
+        "script": {
+          "path": "blender/build_studio_v2.py",
+          "bytes": 61368,
+          "sha256": "71d1a9fa9ebaf4dcc393fa987317c487f759bfb8b52b1c2e855d0ef972dcf4d3"
+        },
+        "preview": {
+          "path": "renders-v3/studio-v2-eevee.png",
+          "bytes": 822856,
+          "sha256": "50b48a28fe7c8ae90ad576e129c6e456a123d9595e1a0aaae34108963022c66e",
+          "artifactId": "8c5c05fb9277efd4b5e1d6510ae5bc17"
+        }
+      },
+      "geometry": {
+        "asset": "studio-v2",
+        "bytes": 7909672,
+        "triangles": 144702,
+        "vertices": 160994,
+        "meshes": 1189,
+        "materials": 25,
+        "textures": 17,
+        "embeddedImages": 11,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "boundsMinYUpMetres": [
+          -6.05,
+          -0.58,
+          -4.1597
+        ],
+        "boundsMaxYUpMetres": [
+          6.05,
+          5.5639,
+          4.05
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      "aggregate": {
+        "asset": "studio-v2",
+        "bytes": 7271624,
+        "triangles": 144702,
+        "vertices": 160994,
+        "meshes": 39,
+        "materials": 25,
+        "textures": 17,
+        "embeddedImages": 11,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "boundsMinYUpMetres": [
+          -6.05,
+          -0.58,
+          -4.1597
+        ],
+        "boundsMaxYUpMetres": [
+          6.05,
+          5.5639,
+          4.05
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance",
+        "sha256": "76006d0277e95685ac490e555317e7227f30fd80d1f1bd66c9049925d6e389c4",
+        "path": "../../public/models/archipelago/studio-v2-batched.glb"
+      },
+      "inGameMaster": false,
+      "inGameAggregate": true,
+      "artAcceptance": false,
+      "limits": "25 materials and 17 glTF texture declarations exceed viewer advisory 12/12; 11 embedded images. No measured GPU memory/FPS."
+    },
+    {
+      "id": "workshop",
+      "projectId": "99c8ce2d-51fb-47aa-b75c-425d1415e4e6",
+      "projectUrl": "https://higgsfield.ai/3d-jutsu/99c8ce2d-51fb-47aa-b75c-425d1415e4e6",
+      "revision": 2,
+      "operationId": "workshop-v1-authoring-20261001-002",
+      "root": "DigitalWorkshop_V1_Origin_At_Deck_Centre",
+      "files": {
+        "glb": {
+          "path": "../../public/models/archipelago/workshop-v1.glb",
+          "bytes": 8496964,
+          "sha256": "37de0b5ddb84153195adf284a998b046d5f588ca7c6c5c2172f5debea6b09e48"
+        },
+        "blend": {
+          "path": "blender/workshop-v1.blend",
+          "bytes": 15820393,
+          "sha256": "63f758d253ad288123361a1ffbe6f4862288d17b3803677eeaa111d2f3f9ea86"
+        },
+        "script": {
+          "path": "blender/build_workshop_v1.py",
+          "bytes": 42614,
+          "sha256": "4ab11c99f7dedec73a687b74567f9b495a48c90fb8f3b61408f5e3b6aa16d79e"
+        },
+        "preview": {
+          "path": "renders-v3/workshop-v1-eevee.png",
+          "bytes": 647837,
+          "sha256": "675aa48b33c5c3a160139204db565a0e2ee9d3b4b6e88765667828c268d47cea",
+          "artifactId": "643dce8f9b0cec282371e33c4e45d393"
+        }
+      },
+      "geometry": {
+        "asset": "workshop",
+        "bytes": 8496964,
+        "triangles": 133340,
+        "vertices": 189352,
+        "meshes": 1521,
+        "materials": 21,
+        "textures": 11,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          30,
+          9.9,
+          24
+        ],
+        "boundsMinYUpMetres": [
+          -15,
+          -0.5,
+          -12
+        ],
+        "boundsMaxYUpMetres": [
+          15,
+          9.4,
+          12
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": false,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      "aggregate": {
+        "asset": "workshop",
+        "bytes": 7816240,
+        "triangles": 133340,
+        "vertices": 189346,
+        "meshes": 30,
+        "materials": 21,
+        "textures": 11,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          30,
+          9.9,
+          24
+        ],
+        "boundsMinYUpMetres": [
+          -15,
+          -0.5,
+          -12
+        ],
+        "boundsMaxYUpMetres": [
+          15,
+          9.4,
+          12
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance",
+        "sha256": "5faff0ffa373a999d6de885960fa53a0a38cdc1c82988223d847e030e737f88b",
+        "path": "../../public/models/archipelago/workshop-v1-batched.glb"
+      },
+      "inGameMaster": false,
+      "inGameAggregate": true,
+      "artAcceptance": false,
+      "limits": "Master 8,496,964 bytes exceeds 8 MiB study/authoring target; mounted aggregate 7,816,240 fits unchanged hard 8 MiB loader guard. 21 materials exceed viewer advisory12. Cloth and screen designs remain too sparse/regular."
+    }
+  ],
+  "buildingIntegration": {
+    "studio": {
+      "anchor": [
+        -15,
+        14.06,
+        42
+      ],
+      "deckMetres": [
+        12,
+        8,
+        0.24
+      ],
+      "hulls": 21
+    },
+    "workshop": {
+      "anchor": [
+        -16,
+        18.06,
+        -38
+      ],
+      "deckMetres": [
+        30,
+        24,
+        0.24
+      ],
+      "hulls": 27,
+      "contract": {
+        "path": "workshop-contract-v1.json",
+        "bytes": 7320,
+        "sha256": "2de584b009cb20293b364e6f8f56bafbad2884b377c2c576dd12304fe0fee56f"
+      },
+      "stationCount": 5,
+      "cannon": "Existing independent apparatus outside imported root and hidden fallback"
+    },
+    "shared": "Six territories, nine semantic places, four bridges; imported decks are structural support, not new islands. Exact six coastlines and four bridge profiles retained.",
+    "failure": "Independent owner/abort/fallback per building. Neither GLB gates reader, game readiness or chat.",
+    "resources": "Scoped HTML image decoding under existing public img-src blob policy; failed image URLs are revoked without global changes.",
+    "collision": "Conservative hulls; leaves/cloth/lamps/decor above solid furnishings non-solid. Not per-triangle collision."
+  },
+  "rejectedRevision": {
+    "projectId": "99c8ce2d-51fb-47aa-b75c-425d1415e4e6",
+    "revision": 1,
+    "reason": "Oversized front-reaching canopies obscured stations; master10,283,852/batch9,776,632 exceeded loader8MiB.",
+    "preserved": [
+      "rejected/workshop-v1-r1.glb",
+      "rejected/workshop-v1-r1-batched.glb",
+      "blender/workshop-v1-r1.blend",
+      "blender/build_workshop_v1_r1.py",
+      "renders-v3/workshop-v1-r1-eevee.png"
+    ],
+    "codeSha256": "aec98944faa62692690855dfcdfffac106f0745335d4264f538c997d70c21179",
+    "masterSha256": "ab4ce199ececcd487a5fcd32a8506eb9020930395351d1eece111c43a752436d",
+    "aggregateSha256": "1eca93a2c50877fb7eaaef651ad8cf1fc7dd283b49e8c313ed078a2d9503b90e"
+  },
+  "verification": {
+    "geometry": "All seven masters and aggregates structure/parity pass; historic source diagnostics retained",
+    "physics": "4361 actual-module Rapier checks, 2989 workshop terrain samples,85 free supports,27 world hull contacts,five approaches both ways",
+    "browser": "3046 built:14 assets ×4 views/58 lab captures; main independent404 and held requests,case/chat focus,cannon/parachute skip; noJS8readers/CV200,forcedWebGLfailure,reducedmotion. Lab keyboardfocus and failed blobURL cleanup rechecked after final rebuild. Exact results/limits design-qa.md.",
+    "production": "No commit/push/deploy/production mutation; local gates not deployment or live AI proof"
+  }
+}

@@ -1,6 +1,4 @@
-"use client";
-
-import { useRef, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type SpotlightSectionProps = {
@@ -12,11 +10,7 @@ type SpotlightSectionProps = {
   as?: "section" | "div";
 };
 
-/**
- * Wraps content with an accent radial spotlight that tracks the cursor.
- * Pointer position is written to CSS custom properties so the glow is
- * painted entirely on the GPU via `.spotlight::before` — no re-renders.
- */
+/** Full-width semantic wrapper for an anchored homepage story scene. */
 export default function SpotlightSection({
   children,
   id,
@@ -24,20 +18,8 @@ export default function SpotlightSection({
   variant = "default",
   as = "section",
 }: SpotlightSectionProps) {
-  const ref = useRef<HTMLElement>(null);
-
-  const handleMove = (event: React.MouseEvent<HTMLElement>) => {
-    const node = ref.current;
-    if (!node) return;
-    const rect = node.getBoundingClientRect();
-    node.style.setProperty("--sx", `${event.clientX - rect.left}px`);
-    node.style.setProperty("--sy", `${event.clientY - rect.top}px`);
-  };
-
   const props = {
     id,
-    ref,
-    onMouseMove: handleMove,
     className: cn(
       "spotlight scroll-mt-28",
       variant === "story" && "story-section",

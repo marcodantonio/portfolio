@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "checker": "scripts/lib/projects-v2-upper-saddle-comparison.mjs",
+  "checkerSHA256": "ebe6a8227ed497168e95bc47b2b2ebab01b5320b4077934e092bea9c084dcc7a",
+  "rootActualResult": {
+    "status": "PASS actual R7 identity and scoped negative fixtures; not an R8 binary approval",
+    "baselineSHA256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+    "negativeFixtures": 17,
+    "cases": [
+      "blocked42 POSITION",
+      "blocked42 NORMAL",
+      "blocked42 UV",
+      "blocked42 COLOR_0",
+      "blocked42 raw indices",
+      "wholly-submerged Saddle face",
+      "touching085 mixed face including high corner",
+      "protected lower winding reversal",
+      "protected lower UV",
+      "protected lower COLOR_0",
+      "apron upper intrusion despite no interior vertex",
+      "PBR normal strength",
+      "PBR binding replaced",
+      "PNG payload replacement",
+      "owned hierarchy mutation",
+      "editable triangle ceiling",
+      "identity cannot pass actual R8 comparison"
+    ],
+    "fullTriangleCrossingApronFixture": true,
+    "identity": {
+      "frozenRawOwners": 42,
+      "submerged": 19159,
+      "sea": 256,
+      "apronSquareMetres": 832.0000000000008,
+      "prospectiveFaces": [
+        1049,
+        1519
+      ],
+      "selectedLowerWholeFaces": [
+        {
+          "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+          "faces": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+          "faces": 3714
+        }
+      ]
+    }
+  },
+  "actualR8BinaryTest": false
+}

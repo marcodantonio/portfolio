@@ -1,7 +1,6 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { dictionary, type Lang } from "@/content/i18n";
 
 type LanguageContextType = {
@@ -18,7 +17,6 @@ type LanguageProviderProps = {
 };
 
 export default function LanguageProvider({ children, initialLang }: LanguageProviderProps) {
-  const router = useRouter();
   // Route-driven default: the server decides the active locale, and the
   // client keeps it in sync with the URL after mount.
   const [lang, setLangState] = useState<Lang>(initialLang);
@@ -27,18 +25,21 @@ export default function LanguageProvider({ children, initialLang }: LanguageProv
     const initial = document.documentElement.lang === "en" ? "en" : initialLang;
     // Keep the context aligned with the SSR locale and persist it for future
     // visits. The document lang is already set server-side by the layout.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLangState(initial);
-    window.localStorage.setItem("lang", initial);
+    try { window.localStorage.setItem("lang", initial); } catch { /* Storage is optional. */ }
   }, [initialLang]);
 
   const setLang = (next: Lang) => {
     setLangState(next);
-    window.localStorage.setItem("lang", next);
+    try { window.localStorage.setItem("lang", next); } catch { /* Storage is optional. */ }
 
-    const suffix = `${window.location.search}${window.location.hash}`;
-    const target = next === "it" ? `/${suffix}` : `/en${suffix}`;
-    router.replace(target, { scroll: false });
+    const target = new URL(window.location.href);
+    target.pathname = next === "it" ? "/" : "/en";
+    if (next === "it") target.searchParams.set("lang", "it");
+    else target.searchParams.delete("lang");
+    // Both URLs are independently server-rendered by Astro. Keep this running
+    // game and its chat intact when only the visible language changes.
+    window.history.replaceState(null, "", `${target.pathname}${target.search}${target.hash}`);
   };
 
   useEffect(() => {

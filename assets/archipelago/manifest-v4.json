@@ -1,0 +1,263 @@
+{
+  "version": 4,
+  "created": "2026-10-01",
+  "previous": "manifest-v3.json",
+  "pipeline": {
+    "images": "Higgsfield MCP gpt_image_2_5 generated explorer turnaround from the original supplied welcome scene; 15 generated sheets retained.",
+    "meshes": "Reference-led manual Blender 5.2 authoring through Higgsfield 3D Jutsu; no callable automatic image-to-3D generation used.",
+    "export": "GLB2 Y-up metres, embedded portable PBR textures.",
+    "aggregation": "Static semantic material batching, exact Float32 weld; no decimation or LOD.",
+    "status": "Three static building aggregates and one rigid articulated explorer mounted as local prototypes; fidelity incomplete.",
+    "artAcceptance": false,
+    "hardwarePerformance": "unverified"
+  },
+  "media": {
+    "projectId": "526743aa-0b4a-4241-a9b6-acd6d52be712",
+    "jobId": "a7c3cc0b-a7c7-48a4-bc7d-fedfbdd82928",
+    "model": "gpt_image_2_5",
+    "estimatedCredits": 2.75,
+    "actualCredits": "not independently measured",
+    "character": "Higgsfield multiview reference followed by original manual Blender five-pivot geometry, not automatic reconstruction.",
+    "observedBalance": {
+      "before": 110,
+      "after": 107.25,
+      "delta": 2.75,
+      "plan": "plus",
+      "trialEndsAtUTC": "2026-10-04T11:33:52Z",
+      "note": "Read-only snapshots; delta matches the single2.75-credit image estimate, not independent per-job billing proof."
+    }
+  },
+  "archive": {
+    "projectId": "5f2f89a5-737b-4fcd-9eae-761b50dd0064",
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/5f2f89a5-737b-4fcd-9eae-761b50dd0064",
+    "revision": 2,
+    "operationId": "archive-v1-texture-sizing-20261001-003",
+    "root": "ArchiveObservatory_V1_Origin_At_Deck_Centre",
+    "previewArtifactId": "ac9f28955b0f958792e854cb9a7a2d10",
+    "aggregate": {
+      "asset": "archive",
+      "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/archive-v1-batched.glb",
+      "bytes": 8152984,
+      "triangles": 168324,
+      "vertices": 185238,
+      "meshes": 43,
+      "materials": 29,
+      "textures": 21,
+      "embeddedImages": 15,
+      "boundsYUpMetres": [
+        18.1634,
+        12.4166,
+        14.055
+      ],
+      "boundsMinYUpMetres": [
+        -9.0884,
+        -0.7032,
+        -7
+      ],
+      "boundsMaxYUpMetres": [
+        9.075,
+        11.7135,
+        7.055
+      ],
+      "geometryDiagnostics": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 0,
+        "interpretation": "Review candidates, not manifold or visual certification"
+      },
+      "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+      "belowStudyProfile": true,
+      "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+    },
+    "inGameMaster": false,
+    "inGameAggregate": true,
+    "collision": "Shared 18x14m deck at19.06,22 conservative hulls; actual-module Rapier checks, not per-triangle collision.",
+    "revisions": {
+      "failedInitial": "Initial excessive miniature-bevel geometry rejected by unchanged180000 triangle safety limit, no committed export.",
+      "revision1": "Geometry corrected to168324 triangles; aggregate8731032 bytes exceeded runtime8MiB, retained outsidepublic.",
+      "revision2": "Seven continuous maps resized512x384→384x288 with normal-vector renormalization, ornament/cloth/leaf retained. All180 pavers consistent warm limestone rather than checkerboard. Same geometry and collision dimensions."
+    },
+    "limits": "29 used materials/21 texture declarations/15 embedded images exceed lab12/12 advisory. Master10856840 bytes never main-mounted. Aggregate8152984 bytes below unchanged8MiB/96mesh/180k gate. No artistic/performance approval."
+  },
+  "worldArt": {
+    "terrain": {
+      "physicalTerritories": 6,
+      "exactRimVertices": 576,
+      "desktopTriangles": 125552,
+      "compactTriangles": 82760,
+      "meshes": 18,
+      "materials": 3,
+      "collisionPositions": "Exact shared top positions and four bridge profiles preserved.",
+      "groundFinish": "Map-anchored inhabited limestone/earth plazas and planted green pockets; six top colour buffers and top shader only. Geometry/normals/bounds, cliff/foliage colours and path pixels unchanged."
+    },
+    "vegetation": {
+      "desktopTriangles": 587508,
+      "compactTriangles": 240652,
+      "pocketsDesktop": 206,
+      "pocketsCompact": 169,
+      "drawBatches": 36,
+      "materials": 4,
+      "closedTemplates": true,
+      "physicalSolids": "No additional collider; existing map trunks/rocks remain."
+    },
+    "backdrop": {
+      "desktopTriangles": 90720,
+      "compactTriangles": 28224,
+      "physicalTerritoriesAdded": 0,
+      "clearanceOutsideWorldBounds": 80
+    },
+    "timber": "Shared filtered anisotropic grain, sparse knots and bounded derivative-normal relief on bridges/boarding ramps only. All position/index/normal/matrix/bounds remain exact; no new texture or per-frame allocation. Other architecture and GLB PBR are unchanged.",
+    "overview": "Cached actual terrain/bridge/architecture/ready-building bounds plus shared local guards; exact perspective HUD-safe fit. Portrait fits above measured intro card and shares one Welcome marker on main land. No physical geography, movement or content changes.",
+    "lighting": "Neutral tone mapping, fog/sky horizon match, distance-scaled portrait overview fog and two bounded non-shadow-casting interior fills per ready building. Global physical-map sun framing interpolates to original local 32-unit actor frame; unchanged2048 atlas is coarser globally. Source-owned resources."
+  },
+  "files": [
+    {
+      "path": "assets/archipelago/reference-sheets-v4/13-explorer-turnaround.png",
+      "bytes": 3758790,
+      "sha256": "f5442adaaa51d96641925ac9cf16532df42558454596499aeac15aeb14697494"
+    },
+    {
+      "path": "assets/archipelago/prompts-v4.json",
+      "bytes": 2667,
+      "sha256": "de84fea6706e6c46d8ece5ed7da0d883560ab29ab9b644421d32635f0e62347e"
+    },
+    {
+      "path": "assets/archipelago/blender/build_archive_v1.py",
+      "bytes": 63201,
+      "sha256": "695927f743332ca4734bc14563c6a4254779687369c322bcdf92c195ebac91d4"
+    },
+    {
+      "path": "assets/archipelago/blender/archive-v1.blend",
+      "bytes": 31668491,
+      "sha256": "e72a5cd1a33956f1be59fe2b53c377c0de2ca19c9bb0e77d36e6fc1cfca9ba69"
+    },
+    {
+      "path": "assets/archipelago/blender/build_archive_v1_r1.py",
+      "bytes": 62325,
+      "sha256": "99d89437dc9ab9cee14a1fd3d7eba8b93dc910f684a00f4daf15ff223e8295de"
+    },
+    {
+      "path": "assets/archipelago/blender/archive-v1-r1.blend",
+      "bytes": 32250664,
+      "sha256": "245a559392e17fffeaa237a5754c33e5a688693a3d81d608099fe75acb401b14"
+    },
+    {
+      "path": "assets/archipelago/renders-v4/archive-v1-r2-eevee.png",
+      "bytes": 722586,
+      "sha256": "26d38ce59fddd9330a45aa0d81ae21833ddcf257ec1d44a19ef5109d87ed3a84"
+    },
+    {
+      "path": "assets/archipelago/renders-v4/archive-v1-eevee.png",
+      "bytes": 736025,
+      "sha256": "21f940c5e9819f0b8adf026de9b01becf2c81345ea33f75aaaa09aff0d22feed"
+    },
+    {
+      "path": "assets/archipelago/rejected/archive-v1-r1.glb",
+      "bytes": 11434888,
+      "sha256": "ec3f0f75affce95db2d91606e788e21c37479d74b9f7b0eba882ee995b7385dc"
+    },
+    {
+      "path": "assets/archipelago/rejected/archive-v1-r1-batched.glb",
+      "bytes": 8731032,
+      "sha256": "e661581ec33a7976cadce5605ff3c0b2b8039ef7f0fe67fd9cd817dea39d38ef"
+    },
+    {
+      "path": "public/models/archipelago/archive-v1.glb",
+      "bytes": 10856840,
+      "sha256": "2567a50fef9f4d49610ebf8db5ea1ed7c283b2980aeb7fdd74d3a19e886fc1d9"
+    },
+    {
+      "path": "public/models/archipelago/archive-v1-batched.glb",
+      "bytes": 8152984,
+      "sha256": "b0294b6b8239de7c8c4b6839e9baebf528e3c33f797a8078ed6827c4cd37da10"
+    },
+    {
+      "path": "public/models/archipelago/explorer-v1.glb",
+      "bytes": 1382360,
+      "sha256": "9ac2bfedf822161e33a7d70d6cfac96a44b29cfa445b246773870497345ac729"
+    },
+    {
+      "path": "assets/archipelago/blender/explorer-v1.blend",
+      "bytes": 4063620,
+      "sha256": "b3e468243fee62d5bf1ae49e7c8bf168fc7d1846b029e1962cc761ef46779a61"
+    },
+    {
+      "path": "assets/archipelago/blender/build_explorer_v1.py",
+      "bytes": 39881,
+      "sha256": "3e591d7f173d3ce6ecd1947ac893ad178083d970fb0feea953075be839eda997"
+    },
+    {
+      "path": "assets/archipelago/renders-v4/explorer-v1-r2-eevee.png",
+      "bytes": 568545,
+      "sha256": "c19efbf75ada16eda0422a3f0f0d76c5453715ccab1e319ba140aa8c0b92f518"
+    },
+    {
+      "path": "assets/archipelago/blender/explorer-v1-r1.glb",
+      "bytes": 1358956,
+      "sha256": "0ffd7fea1f11e88293d3249ee75c5c36461abf6b3d1300b33f376e678841b47a"
+    },
+    {
+      "path": "assets/archipelago/blender/explorer-v1-r1.blend",
+      "bytes": 4008697,
+      "sha256": "8cdae28198caa388dc36cea91be16c4039bbeb704da54800f9da64da00c67822"
+    },
+    {
+      "path": "assets/archipelago/blender/build_explorer_v1_r1.py",
+      "bytes": 39492,
+      "sha256": "f5a5b5596e63f9235dbc7572835ec6cabd06a27b19d89a7b54ad4c0002dd2511"
+    },
+    {
+      "path": "assets/archipelago/renders-v4/explorer-v1-eevee.png",
+      "bytes": 568379,
+      "sha256": "92f546933881fcd6f06aa88506a86fa6b7f023c1b77f01f81453a331f62bef9a"
+    }
+  ],
+  "verification": {
+    "structure": "Archive master and aggregate PASS; aggregation parity PASS, no near-zero-area or normal-opposition candidates.",
+    "physics": "5951 actual-module deterministic checks PASS at this checkpoint.",
+    "worldArt": "1284521 actual-source CPU geometry/ownership checks PASS at this checkpoint.",
+    "overview": "1803 actual-source/GLB projection assertions PASS;3521 bound/map guard points and2052436 total ready-asset samples per viewport, zero clipping in1680x945/1024x768/390x844. Mobile intro/nav custom bounds and short-view fallback checked; not GPU/pixel/performance acceptance.",
+    "lintBuild": "Fresh lint/build PASS on105 files, zero Astro errors/warnings, one legacy FormEvent hint and retained Vite large-chunk warning.",
+    "browser": "Fresh built3046 all four ready/HTTP200, one canvas, zero normal errors. Held explorer request, unique replacement, stride/jump/landing, settled inspection fade/restored focus, archive/explorer404 recovery checked. Final1680x945/390x844 day/night ground/timber/overview reviewed; all six lands clear of intro, no overflow, mobile Main marker simplified. Walking blur cancellation, Education reader return and mobile chat/reader movement pause/focus verified; no AI/audio request. Exact captures/limits in design-qa.md; not reference or performance acceptance.",
+    "deployment": "None. Existing3021 preserved;3046 local preview only.",
+    "explorer": "Separate actualGLB checker +8 negative cases PASS; real TS runtime helper keeps every vertex above foot plane in17rigidposes. Two hair-normal diagnostics remain."
+  },
+  "explorer": {
+    "projectId": "1cef7a2c-97fb-41ef-b871-7de0b8d48652",
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/1cef7a2c-97fb-41ef-b871-7de0b8d48652",
+    "revision": 2,
+    "operationId": "explorer-v1-shoulders-20261001-002",
+    "previewArtifactId": "1ea0e8320bfdc97d03bab447500e22d8",
+    "root": "Explorer_V1_Foot_Origin",
+    "bytes": 1382360,
+    "triangles": 49466,
+    "meshNodes": 33,
+    "materials": 19,
+    "textureDeclarations": 13,
+    "embeddedImages": 5,
+    "imageDimensions": [
+      256,
+      256
+    ],
+    "heightMetres": 2.239,
+    "feetY": 0,
+    "joints": 5,
+    "skin": false,
+    "authoredClips": [],
+    "batching": "Only within each rigid joint; static scene packer never used.",
+    "mounted": true,
+    "revisions": "Revision1 preserved outsidepublic. Revision2 adds two torso-side curved shoulders; same pivots/bounds/materials.",
+    "runtime": "Independent loading/fallback, inspection fade, gait/localX and conservative grounded-leg sole lift; no new collision capsule.",
+    "artAcceptance": false,
+    "limits": "Rigid gait, not a skeletal/knee/IK rig. Two normal-opposition candidates at a fringe end remain diagnostic, no global inversion proof. Final art/fidelity/device performance unverified.",
+    "exportedVertices": 27780,
+    "groundContact": {
+      "samples": 17,
+      "uncorrectedMinY": -0.06906254158449576,
+      "correctedMinY": 0,
+      "maxConservativeLift": 0.07529124056579159,
+      "neutralReturn": "EXACT",
+      "negativeChecks": 8,
+      "scope": "Actual runtime helper and GLB positions, flat contact plane only; not terrain-aware knee/IK animation."
+    }
+  }
+}

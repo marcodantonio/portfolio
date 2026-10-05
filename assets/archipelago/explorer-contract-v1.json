@@ -1,0 +1,32 @@
+{
+  "schema": "archipelago-rigid-explorer-contract-v1",
+  "asset": "explorer-v1",
+  "root": "Explorer_V1_Foot_Origin",
+  "units": "metres",
+  "axes": "Local glTF Y-up: X lateral, Y up, Z front. Blender source (X,Y,Z) exports as glTF (X,Z,-Y). Root is the foot plane, not the capsule centre.",
+  "heightTarget": 2.24,
+  "heightMax": 2.35,
+  "footPlane": 0,
+  "jointLabels": "L is the negative-X side and R the positive-X side, matching the current runtime arrays; these labels are a geometric convention, not an anatomical claim.",
+  "joints": [
+    { "name": "Explorer_body", "parent": "Explorer_V1_Foot_Origin", "translation": [0, 0, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1], "contents": ["shirt", "hips", "neck", "head", "face", "hair", "cap", "backpack", "straps"] },
+    { "name": "Explorer_arm_L", "parent": "Explorer_body", "translation": [-0.44, 1.31, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1], "contents": ["sleeve", "forearm", "hand", "fingers"] },
+    { "name": "Explorer_arm_R", "parent": "Explorer_body", "translation": [0.44, 1.31, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1], "contents": ["sleeve", "forearm", "hand", "fingers"] },
+    { "name": "Explorer_leg_L", "parent": "Explorer_V1_Foot_Origin", "translation": [-0.20, 0.73, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1], "contents": ["trouser", "cargo-pocket", "cuff", "sneaker", "laces", "flat-sole"] },
+    { "name": "Explorer_leg_R", "parent": "Explorer_V1_Foot_Origin", "translation": [0.20, 0.73, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1], "contents": ["trouser", "cargo-pocket", "cuff", "sneaker", "laces", "flat-sole"] }
+  ],
+  "physics": { "change": "none", "capsuleRadius": 0.32, "capsuleHalfHeight": 0.7, "controllerOffset": 0.025, "capsuleCentreAboveFoot": 1.045, "policy": "Existing Rapier capsule remains authoritative. Hat, backpack, hands and shoes are cosmetic geometry, not new collision hulls." },
+  "animation": {
+    "kind": "Rigid articulated groups, not a skinned/armature character",
+    "runtimeRotationAxis": "glTF local X for arm/leg swing",
+    "runtimeBodyBob": "Explorer_body local Y; arms inherit the body bob, legs remain root children",
+    "runtimeGroundContact": "Grounded rigid leg swing lifts each hip by max(0,-lowestRotatedLocalBoundY). Cosmetic sole contact only; the existing Rapier capsule remains unchanged. Airborne pose resets the hip to its contracted base.",
+    "neutralPose": "Arms down with a gentle outward silhouette, legs straight, both outsole bottoms exactly on the foot plane",
+    "authoredClips": [],
+    "baking": "Only material-compatible meshes within each individual joint may be combined. Never flatten the five pivots or bake across joints."
+  },
+  "authoringBudgets": { "trianglesMax": 70000, "meshObjectsMax": 96, "packedImagesMax": 6, "textureDimensionMax": 512, "glbBytesMax": 8388608 },
+  "style": "Original rounded tropical cartoon explorer: violet cap and collared shirt, amber backpack, dark cargo trousers, chunky off-white sneakers. Eyes, nose, mouth, ears, straps, panels and seams are modelled volumes.",
+  "factualBoundary": "Illustrative original avatar inspired by the supplied concept sheet. Not a scanned person, photograph, identity reconstruction or automatic image-to-3D output.",
+  "status": "Local articulated GLB prototype exported at Higgsfield revision2 and loaded ready in the built3046 world. Five rigid pivots, portable textures and source bounds verified; actual-source pose/contact checker and browser behavior recorded in design-qa. No skinned rig, authored animation clips, cinematic fidelity, LOD or device performance acceptance."
+}

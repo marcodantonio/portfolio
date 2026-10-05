@@ -24,6 +24,10 @@ export default function Header({ mode = "site" }: HeaderProps) {
   useEffect(() => {
     return subscribeScroll(() => {
       const next = window.scrollY > 60;
+      if (window.scrollY < 160 && activeRef.current !== null) {
+        activeRef.current = null;
+        setActive(null);
+      }
       if (next !== scrolledRef.current) {
         scrolledRef.current = next;
         setScrolled(next);

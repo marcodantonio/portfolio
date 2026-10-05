@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLanguage } from "@/context/language-context";
 import { siteProfile } from "@/content/site";
+import { ISLANDS } from "@/lib/island-map";
 
 type ModelContextTool = {
   name: string;
@@ -20,7 +21,7 @@ type ModelContextTool = {
 };
 
 type ModelContextSurface = {
-  registerTool: (tool: ModelContextTool, options?: { signal?: AbortSignal }) => void;
+  registerTool: (tool: ModelContextTool, options?: { signal?: AbortSignal }) => void | Promise<void>;
 };
 
 function getModelContext(): ModelContextSurface | undefined {
@@ -37,43 +38,52 @@ function getModelContext(): ModelContextSurface | undefined {
 
 export default function WebMCPTools() {
   const { lang } = useLanguage();
+  const langRef = useRef(lang);
+  const hasRegisteredRef = useRef(false);
 
   useEffect(() => {
+    langRef.current = lang;
+  }, [lang]);
+
+  useEffect(() => {
+    if (hasRegisteredRef.current) return;
+
     const modelContext = getModelContext();
     if (!modelContext?.registerTool) return;
 
-    const controller = new AbortController();
-    const currentLang = lang;
+    hasRegisteredRef.current = true;
 
     const register = (tool: ModelContextTool) => {
-      modelContext.registerTool(tool, { signal: controller.signal });
+      void Promise.resolve(modelContext.registerTool(tool)).catch(
+        (error: unknown) => {
+          console.error(`Unable to register WebMCP tool: ${tool.name}`, error);
+        },
+      );
     };
 
-    const scrollToSection = async ({ section }: { section?: string }) => {
-      const target = section === "top" ? null : document.getElementById(section ?? "");
-      if (!target) {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        return "Scrolled to the top of the page.";
-      }
+    const sections = ["top", ...ISLANDS.filter((island) => island.id !== "welcome").map((island) => island.id)];
+    const openSection = async ({ section }: { section?: string }) => {
+      if (!section || !sections.includes(section)) return "Unknown portfolio section.";
 
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-      return `Scrolled to section: ${section}.`;
+      const destination = section === "top" ? "home" : section;
+      window.dispatchEvent(new CustomEvent("island:open", { detail: destination }));
+      return section === "top" ? "Opened the archipelago map." : `Opened island content: ${section}.`;
     };
 
     register({
       name: "scroll_to_section",
-      description: "Scroll the portfolio to a named section.",
+      description: "Open a portfolio island's content, or return to the archipelago map with top.",
       inputSchema: {
         type: "object",
         properties: {
           section: {
             type: "string",
-            enum: ["top", "about", "education", "skills", "projects", "experience", "contact"],
+            enum: sections,
           },
         },
         required: ["section"],
       },
-      execute: scrollToSection,
+      execute: openSection,
       annotations: {
         readOnlyHint: false,
         untrustedContentHint: false,
@@ -81,18 +91,15 @@ export default function WebMCPTools() {
     });
 
     register({
-      name: "focus_contact_form",
-      description: "Jump to the contact section and focus the email field.",
+      name: "open_marco_ai",
+      description: "Open Marco.AI, Marco's digital assistant.",
       inputSchema: {
         type: "object",
         properties: {},
       },
       execute: async () => {
-        const section = document.getElementById("contact");
-        section?.scrollIntoView({ behavior: "smooth", block: "start" });
-        const input = document.querySelector<HTMLInputElement>('input[name="senderEmail"]');
-        input?.focus();
-        return "Focused the contact email field.";
+        window.dispatchEvent(new Event("personai:open"));
+        return "Opened Marco.AI.";
       },
       annotations: {
         readOnlyHint: false,
@@ -113,7 +120,7 @@ export default function WebMCPTools() {
         },
       },
       execute: async ({ lang: requestedLang }) => {
-        const targetLang = requestedLang === "it" || requestedLang === "en" ? requestedLang : currentLang;
+        const targetLang = requestedLang === "it" || requestedLang === "en" ? requestedLang : langRef.current;
         window.open(`/cv/${targetLang}`, "_blank", "noopener,noreferrer");
         return `Opened the ${targetLang.toUpperCase()} CV download.`;
       },
@@ -140,8 +147,10 @@ export default function WebMCPTools() {
       },
     });
 
-    return () => controller.abort();
-  }, [lang]);
+    // This bridge is document-scoped. Aborting its registration during React
+    // Strict Mode cleanup causes an unhandled host rejection; the page owns
+    // the registration lifecycle and the ref prevents duplicate registration.
+  }, []);
 
   return null;
 }

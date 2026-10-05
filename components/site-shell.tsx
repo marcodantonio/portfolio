@@ -1,24 +1,15 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import BootSequence from "@/components/boot-sequence";
-import Footer from "@/components/footer";
-import GrainOverlay from "@/components/grain-overlay";
-import Header from "@/components/header";
-import RevealManager from "@/components/system/reveal-manager";
-import ScrollProgress from "@/components/scroll-progress";
+import PersonAIDock from "@/components/person-ai-dock";
 import ThemeContextProvider from "@/context/theme-context";
 import LanguageProvider from "@/context/language-context";
 import type { Lang } from "@/content/i18n";
 import WebMCPTools from "@/components/webmcp-tools";
+import { useBootReady } from "@/lib/boot-state";
 
-const SmoothScroll = dynamic(() => import("@/components/system/smooth-scroll"), {
-  ssr: false,
-});
-const ToastPortal = dynamic(() => import("react-hot-toast").then((mod) => mod.Toaster), {
-  ssr: false,
-});
+const ToastPortal = lazy(() => import("react-hot-toast").then((mod) => ({ default: mod.Toaster })));
 
 type SiteShellProps = {
   initialLang: Lang;
@@ -27,39 +18,37 @@ type SiteShellProps = {
 
 export default function SiteShell({ initialLang, children }: SiteShellProps) {
   const [enhancementsReady, setEnhancementsReady] = useState(false);
+  const bootReady = useBootReady();
 
   useEffect(() => {
     const win = window as Window & {
       requestIdleCallback?: (callback: IdleRequestCallback) => number;
       cancelIdleCallback?: (handle: number) => void;
     };
+    const usesIdleCallback = typeof win.requestIdleCallback === "function";
     const idle = win.requestIdleCallback
       ? win.requestIdleCallback(() => setEnhancementsReady(true))
       : win.setTimeout(() => setEnhancementsReady(true), 1200);
 
     return () => {
-      if (typeof idle === "number") {
-        win.clearTimeout(idle);
-      } else {
+      if (usesIdleCallback) {
         win.cancelIdleCallback?.(idle);
+      } else {
+        win.clearTimeout(idle);
       }
     };
   }, []);
 
   return (
-      <ThemeContextProvider>
+    <ThemeContextProvider>
       <LanguageProvider initialLang={initialLang}>
-        {enhancementsReady ? <SmoothScroll /> : null}
-        <GrainOverlay />
         <BootSequence />
-        <ScrollProgress />
-        <Header />
-        <RevealManager />
-        {enhancementsReady ? <WebMCPTools /> : null}
-        {children}
-        <Footer />
-        {enhancementsReady ? (
-          <ToastPortal
+        <div id="portfolio-content" inert={!bootReady}>
+          <PersonAIDock className="island-ai-dock" />
+          {enhancementsReady ? <WebMCPTools /> : null}
+          {children}
+          {enhancementsReady ? (
+            <Suspense fallback={null}><ToastPortal
             position="bottom-center"
             gutter={12}
             toastOptions={{
@@ -87,8 +76,9 @@ export default function SiteShell({ initialLang, children }: SiteShellProps) {
                 },
               },
             }}
-          />
-        ) : null}
+            /></Suspense>
+          ) : null}
+        </div>
       </LanguageProvider>
     </ThemeContextProvider>
   );

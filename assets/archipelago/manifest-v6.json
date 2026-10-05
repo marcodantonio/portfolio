@@ -1,0 +1,88 @@
+{
+  "version": 6,
+  "created": "2026-10-01",
+  "previous": "manifest-v5.json",
+  "pipeline": {
+    "service": "Higgsfield MCP, dedicated 3D Jutsu Blender 5.2 project; no website automation",
+    "images": "Reused reference-sheets-v1/01-welcome-office.png and supplied Welcome/master references. No new image-generation job or new credit/billing assertion in this batch. Fifteen prior bitmap sheets remain unchanged.",
+    "meshes": "Reference-led manually authored real geometry, not automatic multiview image-to-3D reconstruction.",
+    "export": "GLB2 Y-up metres with embedded portable Principled PBR; editable Blender retained.",
+    "aggregation": "Static semantic/material batching with Float32 weld; no decimation/LOD.",
+    "status": "Five independent building aggregates plus the articulated explorer are locally integrated. Ten closed static catalog IDs, eleven editable masters including the separate explorer; five historical static studies are not mounted.",
+    "artAcceptance": false,
+    "hardwarePerformance": "unverified",
+    "productionDeployment": false
+  },
+  "harbor": {
+    "projectId": "f8bd6127-fc0e-40cd-8691-c144fbcbaaeb",
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/f8bd6127-fc0e-40cd-8691-c144fbcbaaeb",
+    "revision": 3,
+    "sceneSequence": 0,
+    "operationId": "harbor-v1-contact-finish-20261001-007",
+    "operationStatus": "succeeded",
+    "authoringOperationId": "harbor-v1-authoring-20261001-001",
+    "transformCorrectionOperationId": "harbor-v1-transform-finish-20261001-003",
+    "root": "WelcomeHarbor_V1_Origin_At_Deck_Centre",
+    "groups": ["Harbor_shell", "Harbor_roof", "Harbor_interior", "Harbor_decor"],
+    "previewArtifactId": "1e845aaaad7fba2ebe4417c4dd375bae",
+    "previewArtifactDimensions": [640, 500],
+    "preview": "assets/archipelago/previews-v6/welcome-harbor-v1-r3-full-browser-eevee.png",
+    "previewNote": "Browser screenshot of the native published Eevee image, visually inspected; not the raw artifact download or evidence of WebGL lighting parity.",
+    "sourceContract": "assets/archipelago/harbor-contract-v1.json",
+    "contractStatusNote": "The embedded JSON preserves the original authoring-status snapshot; current independent verification is recorded here and in design-qa.md.",
+    "master": {
+      "file": "public/models/archipelago/welcome-harbor-v1.glb",
+      "bytes": 3401416, "triangles": 85940, "vertices": 60715, "meshes": 859,
+      "materials": 21, "textures": 15, "embeddedImages": 8
+    },
+    "aggregate": {
+      "file": "public/models/archipelago/welcome-harbor-v1-batched.glb",
+      "bytes": 3070900, "triangles": 85940, "vertices": 60715, "meshes": 37,
+      "materials": 21, "textures": 15, "embeddedImages": 8
+    },
+    "boundsYUpMetres": [6.364, 6.06, 4.685],
+    "boundsMinYUpMetres": [-3.13, -0.36, -2.486],
+    "boundsMaxYUpMetres": [3.234, 5.7, 2.199],
+    "geometryDiagnostics": {"nearZeroAreaTriangles": 0, "normalOppositionCandidates": 0, "note": "Structural candidates only, not artistic/manifold acceptance."},
+    "aggregationParity": "PASS: source SHA256, PBR definitions, embedded image bytes, triangle accounting and bounds.",
+    "inGameMaster": false,
+    "inGameAggregate": true,
+    "loaderLimitsUnchanged": {"bytes": 8388608, "meshes": 96, "triangles": 180000},
+    "sharedSupport": {"anchor": [-13, 12.06, 70], "deckMetres": [6.2, 4.2, 0.24], "hulls": 11, "newStations": 0},
+    "physicalInvariants": "All six top/index/rim buffers, 576 Float32 coastal vertices, four bridges, all196 WORLD_PROPS, 21 hotspots, spawn(0,65), CONTACT_DOCK, both boarding ramps, four transfer endpoints and WALK_PATHS unchanged. No Welcome architecture clearing or new territory.",
+    "contactCorrection": "Counter panels inset25mm; wall battens fit unchanged3.3m depth and16cm wall hull; crate diagonals inset70mm and bands15mm; evaluated barrel base grounded. No collision envelope expanded.",
+    "portableContactReview": {"status": "PASS", "actualHardbodyVertices": 10886, "maximumFloat32HullExcessMetres": 0.000000096, "barrelBaseY": 0, "potBaseY": 0, "floorTopY": 0, "note": "Actual exported POSITION plus full affine hierarchy, not source-only fixtures. Buried map-trestle vertices are contained by the deck union; soft leaves/cloth/lamps are not solids."},
+    "revisions": {
+      "revision1": "Rejected export: fresh transforms were read through stale matrix_local; furniture/rafters lost their intended transforms, mast overlapped roof. Recoverable in Higgsfield project history, never mounted.",
+      "revision2": "Fresh Matrix.LocRotScale/matrix_basis and outboard mast correction. Explicit local master/aggregate/Blender backups in assets/archipelago/backups-v6; subsequently superseded by contact correction.",
+      "revision3": "Final measured trim/contact correction. Counts, outer bounds, source contract and all physical navigation remain unchanged. Whole authoring recipe contains equivalent geometry fixes."
+    },
+    "failedDiagnosticOperation": {"id": "harbor-v1-contact-finish-20261001-005", "status": "failed", "reason": "Crate bands also exceeded the unchanged hull; assertion prevented commit. Read-only diagnose-006 measured actual group bounds; corrected007 succeeded. No failed export mounted."},
+    "fallback": "Compact owned procedural kiosk on the shared lateral floor. Only this owned Welcome visual hides on ready; pending/failure keeps it visible. Old giant wavy plaza, annex and detached map-table dressing removed. External contact dock/boarding props preserved.",
+    "factualBoundary": "Original fictional welcome kiosk and illustrative map/compass; not project screenshots or personal factual proof. No content unlock gates."
+  },
+  "verification": {
+    "lint": "PASS: npm run lint",
+    "build": "PASS: fresh final r3 npm run build,106 Astro files, zero errors/warnings, one retained legacy FormEvent hint and Vite large-chunk warning.",
+    "actualModuleRapier": {"status": "PASS", "assertions": 10867, "harborTerrainSamples": 2709, "terrainRangeY": [11.930459, 11.991183], "harborFreeFloorSupports": 43, "harborHullContacts": 11, "harborRemovedHullNegatives": 11, "note": "Both +X entry/map approaches without jumping; removed-floor, seeded-prop rejection and clearing negatives pass. Eleven hulls unchanged in r3."},
+    "overview": {"status": "PASS", "assertions": 2092, "readySamplesPerViewport": 2011354, "fallbackSamplesPerViewport": 1551328, "viewports": [[1680,945],[1024,768],[390,844]], "clippedSamples": 0},
+    "worldArtCPU": {"status": "PASS", "assertions": 1229600, "note": "Includes real grounded-sea-cliff contact/foundation rays and negative fixtures; normal foundations -13.199999809m, Skills20.5m. Geometry evidence only, not GPU/FPS or final coast artistry."},
+    "staticChecks": "PASS: all ten catalog masters and all ten aggregates; exact aggregate source/PBR/image/triangle/bounds parity.",
+    "explorer": "PASS: fresh unchanged master structure and17 actual rigid poses. Optional negative suite not rerun in this batch; no new gait/art approval.",
+    "browser": "Fresh built3050 serves exact r3 master/aggregate hashes. Actual Asset Lab both variants HTTP200/ready, one canvas, no overflow, zero normal console errors/warnings; all eight hero/front/right/top images acquired and inspected. Desktop1680x945 six owners ready, no overflow/errors, day/night images inspected. Project reader/case pause at(-10.96,68.52), case switching and close-to-CANVAS verified in one complete browser run. Harbor404 fixture leaves only Harbor fallback, other five ready; removing fixture/reload restores ready. Initial no-listener and about:blank/boot-detachment attempts are discarded harness failures, not app passes. Mobile/reduced-motion acceptance is recorded separately in design-qa. User3021/3046 preserved; only own3050 restarted.",
+    "mobileLayout": "Fresh390x844/DPR3/coarse Chrome emulation: six owners ready, one canvas, no overflow day/night; actual PNG1170x2532 inspected. Reader/chat pause and focus H2/INPUT then CANVAS/BUTTON verified, JS errors=[] and zero AI requests. Chat emits two local Turnstile/postMessage cross-origin warnings. Not physical-device acceptance.",
+    "reducedMotionInput": "Reduced-motion mobile layout: six owners ready, no overflow/page errors. Browser mouse release outside movement control registers pointerup/lostpointercapture and stabilizes700ms with0.000315m residual; separate synthetic pointercancel stops with0.000861m residual. Not physical touch or complete transfer/FPS proof.",
+    "locale": "IT-to-EN UI switch retains the same canvas identity and six ready owners; lang=en, /en and immediate English Projects reading verified.",
+    "remainingArt": "Too-uniform tall coastal rims, sparse inhabited composition, lighting, simplified cartography and character quality remain materially different from the ten references. Roof can occlude the avatar near the kiosk. All gates here are separate from artistic acceptance."
+  },
+  "hashesSHA256": {
+    "public/models/archipelago/welcome-harbor-v1.glb": "37babc9f287df59f96a2f6ee40de1665b886373d31c3936cf249f23fd3431e0e",
+    "public/models/archipelago/welcome-harbor-v1-batched.glb": "b3bb21b3131cc397019a5fdf43ea472eab70e78dfd04c4dda3a5310fb7eb69e0",
+    "assets/archipelago/blender/welcome-harbor-v1.blend": "8be29426cb1a5fbe6960f59af0587366facb3f5906d2b2f997c3789cbd86fc61",
+    "assets/archipelago/blender/build_welcome_harbor_v1.py": "b3024017881d6cc4fb0c3eeff9a309d338a3c6c6ade0bc55bc567fff050da785",
+    "assets/archipelago/blender/finish_welcome_harbor_v1.py": "25446d6a786afbab8ce05f68bd7e38293c6a195330402bc44e843509ae5a53c4",
+    "assets/archipelago/blender/render_welcome_harbor_v1.py": "eddc9d7075152fe70a6ba41c2f7013a9025535d4963b41d2075596d15751bcaf",
+    "assets/archipelago/harbor-contract-v1.json": "fe2f8a5105af0df705845af86c1199f0b82c3f2f3eff2d42fed76ca72e28e7d6",
+    "assets/archipelago/previews-v6/welcome-harbor-v1-r3-full-browser-eevee.png": "fdb20aa2b5a26466f066079d442f8315873950062d0fb037a6ec17bda4156a9a"
+  }
+}

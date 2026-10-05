@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-provenance-guarded-saddle-candidate-20261005",
+  "status": "failed",
+  "revisionBefore": 7,
+  "revisionAfter": null,
+  "sceneSequence": null,
+  "code": "inspect_projects_island_v2_r8_guarded_candidate.py",
+  "recipeSHA256": "f5eb473daf11350e4ad9ee4aafb4eca0d52b9b5223f0f89cee47adad7899cae1",
+  "error": {
+    "code": "PYTHON_EXCEPTION",
+    "message": "R8 undeclared new surface contact: ('ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge', 1241, 'ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace', 2240, [-2.4200000762939453, 5.099999904632568, -21.963071823120117], [-1.8799999952316284, 5.099999904632568, -21.670000076293945])",
+    "retryable": false
+  },
+  "stderr": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r8-provenance-guarded-saddle-candidate-20261005>\", line 950, in <module>\n  File \"<operation:projects-v2-r8-provenance-guarded-saddle-candidate-20261005>\", line 733, in check_contacts\n  File \"<operation:projects-v2-r8-provenance-guarded-saddle-candidate-20261005>\", line 66, in require\nRuntimeError: R8 undeclared new surface contact: ('ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge', 1241, 'ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace', 2240, [-2.4200000762939453, 5.099999904632568, -21.963071823120117], [-1.8799999952316284, 5.099999904632568, -21.670000076293945])\n",
+  "generatedArtifacts": [],
+  "interpretation": "Ephemeral query failed closed on actual new upper ledge/Cannon middle terrace contact. No R8 committed; no renders published. Lower clipping provenance guard was reached and passed prior contacts; this is not blanket subface acceptance. Latest committed scene stays R7. Diagnostic collection/render is planned to inspect all contacts before a geometry/policy choice."
+}

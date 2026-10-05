@@ -1,0 +1,24 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r6-candidate-hero-top-20261005",
+  "status": "failed",
+  "revisionBefore": 5,
+  "revisionAfter": null,
+  "sceneSequenceAfter": null,
+  "startedAt": "2026-10-05T02:35:50.464Z",
+  "finishedAt": "2026-10-05T02:36:15.553Z",
+  "error": {
+    "code": "PYTHON_EXCEPTION",
+    "message": "R6 substantive shape rejected at all explicit backtracking steps: [{\"alpha\": 1.0, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 4.09107965949501e-06, \"minimum_area_ratio\": 0.06230493575383771, \"minimum_original_face_cosine\": -0.9999802260992752}}, {\"alpha\": 0.75, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 1.7286690617332863e-05, \"minimum_area_ratio\": 0.04265283738069308, \"minimum_original_face_cosine\": -0.9998618297723436}}, {\"alpha\": 0.5, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 2.2125016241380862e-05, \"minimum_area_ratio\": 0.22961483312137818, \"minimum_original_face_cosine\": -0.999851629954348}}, {\"alpha\": 0.375, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 2.5101477041255943e-05, \"minimum_area_ratio\": 0.3430492078434377, \"minimum_original_face_cosine\": -0.999840521821115}}]",
+    "retryable": false
+  },
+  "output": {
+    "stdoutTail": "",
+    "stderrTail": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r6-candidate-hero-top-20261005>\", line 924, in <module>\nRuntimeError: R6 substantive shape rejected at all explicit backtracking steps: [{\"alpha\": 1.0, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 4.09107965949501e-06, \"minimum_area_ratio\": 0.06230493575383771, \"minimum_original_face_cosine\": -0.9999802260992752}}, {\"alpha\": 0.75, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 1.7286690617332863e-05, \"minimum_area_ratio\": 0.04265283738069308, \"minimum_original_face_cosine\": -0.9998618297723436}}, {\"alpha\": 0.5, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 2.2125016241380862e-05, \"minimum_area_ratio\": 0.22961483312137818, \"minimum_original_face_cosine\": -0.999851629954348}}, {\"alpha\": 0.375, \"geometry\": {\"failed_owner\": \"ProjectsIsland_V2_Attached_Fracture_14\", \"minimum_cross\": 2.5101477041255943e-05, \"minimum_area_ratio\": 0.3430492078434377, \"minimum_original_face_cosine\": -0.999840521821115}}]\n",
+    "truncated": false
+  },
+  "committed": false,
+  "recipeSha256": "d2fa7b402c3b7066de22217de1605f6124800ac550e319077e24d8765e347ac9",
+  "recipe": "refine_projects_island_v2_r6_initial.py",
+  "guardThresholdsRelaxed": false
+}

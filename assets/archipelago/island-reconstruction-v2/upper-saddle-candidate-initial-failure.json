@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-two-shoulder-saddle-candidate-20261005",
+  "status": "failed",
+  "revisionBefore": 7,
+  "revisionAfter": null,
+  "sceneSequence": null,
+  "code": "inspect_projects_island_v2_r8_candidate.py",
+  "codeSHA256": "2ceb9e9c72293bd8f88d5ea02c815d6f44280b4b1f5e312b7fe7ec8aa1919d94",
+  "error": {
+    "code": "PYTHON_EXCEPTION",
+    "message": "R8 undeclared new surface contact: ('ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge', 490, 'ProjectsIsland_V2_Attached_Fracture_15', 639, [-19.42100715637207, 2.904374599456787, -17.71422576904297], [-19.378461837768555, 3.234999895095825, -17.44527244567871])",
+    "retryable": false
+  },
+  "stderr": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r8-two-shoulder-saddle-candidate-20261005>\", line 867, in <module>\n  File \"<operation:projects-v2-r8-two-shoulder-saddle-candidate-20261005>\", line 684, in check_contacts\n  File \"<operation:projects-v2-r8-two-shoulder-saddle-candidate-20261005>\", line 66, in require\nRuntimeError: R8 undeclared new surface contact: ('ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge', 490, 'ProjectsIsland_V2_Attached_Fracture_15', 639, [-19.42100715637207, 2.904374599456787, -17.71422576904297], [-19.378461837768555, 3.234999895095825, -17.44527244567871])\n",
+  "generatedArtifacts": [],
+  "interpretation": "Ephemeral query failed closed on lower collar source-clipping contact identity. No native R8 commit or rendering occurred; unchanged latest committed scene remains R7. No broad contact waiver is authorized."
+}

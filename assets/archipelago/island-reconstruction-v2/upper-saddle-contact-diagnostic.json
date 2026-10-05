@@ -1,0 +1,1875 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-all-contact-diagnostic-render-20261005",
+  "access": "query",
+  "status": "succeeded",
+  "revisionBefore": 7,
+  "revisionAfter": null,
+  "sceneSequenceAfter": 0,
+  "finishedAt": "2026-10-05T05:01:22.920Z",
+  "committedRevisionAfterInspection": 7,
+  "plannedCandidateRevision": 8,
+  "committed": false,
+  "mutationReady": false,
+  "sourceCode": {
+    "file": "inspect_projects_island_v2_r8_contact_diagnostic.py",
+    "sha256": "5fefd7f3a213405d637e637f8ac0f15c6b9629c00c63d2cf642fcc13012cdf6b",
+    "diagnosticRecipe": "diagnose_projects_island_v2_r8_contacts.py",
+    "diagnosticRecipeSHA256": "ef4893120fe0a72fe6230e2856b215bebf1a086d62b5847fa0c3d9660f20a46c",
+    "strictRecipeSHA256": "f5eb473daf11350e4ad9ee4aafb4eca0d52b9b5223f0f89cee47adad7899cae1"
+  },
+  "result": {
+    "sourceAudit": {
+      "revision": 8,
+      "status": "CONTACTS_UNRESOLVED / NOT_MUTATION_READY",
+      "diagnostic_only": true,
+      "mutation_ready": false,
+      "strict_recipe_sha256": "f5eb473daf11350e4ad9ee4aafb4eca0d52b9b5223f0f89cee47adad7899cae1",
+      "meshes": 44,
+      "triangles": 108546,
+      "hard_editable_triangle_limit": 180000,
+      "modified_owners": [
+        "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+        "ProjectsIsland_V2_Rear_Connected_Low_Saddle"
+      ],
+      "other42_full_source_states_exact": true,
+      "body_full_state_exact": true,
+      "all_triangles_touching_y085_geometry_uv_colour_exact": true,
+      "all_oriented_submerged_triangle_multisets_exact": true,
+      "prospective_approach_triangle_attributes_exact": true,
+      "full_body_apron": {
+        "clipped_upward_body_area_square_metres": 832.0000000000008,
+        "height": 4.8,
+        "note": "Full upper-triangle clipping, not an independent union or physics proof"
+      },
+      "two_pbr_graphs_and_six_png_bytes_exact": true,
+      "png_sha256": {
+        "ProjectsIsland_V2_Limestone_MetallicRoughness_1024": "1242a472494cd0b0856f143fc75375c8405ca3d01a229053374178a5833cd79f",
+        "ProjectsIsland_V2_Limestone_WornMicroNormal_512": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9",
+        "ProjectsIsland_V2_Limestone_NeutralAlbedo_R7_1024": "dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3",
+        "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024": "ac750c1d1117c9adc06491280c31a63a6480a3e2e1c17211775aa418e9981c87",
+        "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144",
+        "ProjectsIsland_V2_HoneyEarth_NeutralAlbedo_R7_1024": "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b"
+      },
+      "source_diagnostics": [
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_00",
+          "vertices": 638,
+          "triangles": 1272,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 35.535897506968105,
+          "minimum_float32_cross_length": 0.00006548627803710365,
+          "minimum_uv_determinant": 0.0000011626935929598403,
+          "minimum_normal_dot": 0.999999815420808,
+          "source_state_sha256": "57d58c364e255f1da85ff3df89d7aa966047e4a5d2ae2153243d686a26f97b87"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_01",
+          "vertices": 838,
+          "triangles": 1672,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 50.31949572724371,
+          "minimum_float32_cross_length": 0.0000062512858208547515,
+          "minimum_uv_determinant": 1.143812795589838e-7,
+          "minimum_normal_dot": 0.9999946376789371,
+          "source_state_sha256": "6418e3dadb67294c3265a6e106977a393e5460a358837a317cf5c34d3634ce4a"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_02",
+          "vertices": 752,
+          "triangles": 1500,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 58.42617350858138,
+          "minimum_float32_cross_length": 0.000008425941551257755,
+          "minimum_uv_determinant": 1.5199475456029177e-7,
+          "minimum_normal_dot": 0.9999974922296393,
+          "source_state_sha256": "7aa15e78324dac2cbe43c1e38b88f5a6c38c4f1de1f43f8fc2b121fd0ada3dcf"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_03",
+          "vertices": 709,
+          "triangles": 1414,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 32.62263540384362,
+          "minimum_float32_cross_length": 0.000006748617600979611,
+          "minimum_uv_determinant": 1.1202780569874449e-7,
+          "minimum_normal_dot": 0.999999291611115,
+          "source_state_sha256": "07b95973391becaa5141d5e208244dfe1db90fdfb29f5db7b7962d1b0304fec1"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_04",
+          "vertices": 626,
+          "triangles": 1248,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 23.957090611579986,
+          "minimum_float32_cross_length": 0.0000018835612807436966,
+          "minimum_uv_determinant": 3.094942258030642e-8,
+          "minimum_normal_dot": 0.999989471009696,
+          "source_state_sha256": "19c3aa02ad4954d9022aeebf97bdbefe70f3445074c058b147d8f8ef5e173412"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_05",
+          "vertices": 544,
+          "triangles": 1084,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 14.673397728900344,
+          "minimum_float32_cross_length": 0.0011205290417692266,
+          "minimum_uv_determinant": 0.00001944310639601099,
+          "minimum_normal_dot": 0.9999999765894283,
+          "source_state_sha256": "f28e6939e2227e73a9bcd5dca619481989c51a8528d96cfbe0982a84156f2008"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_06",
+          "vertices": 514,
+          "triangles": 1024,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 12.498591954670122,
+          "minimum_float32_cross_length": 0.0010437392817662379,
+          "minimum_uv_determinant": 0.00002043550861685617,
+          "minimum_normal_dot": 0.9999999895761359,
+          "source_state_sha256": "9240eb562178c9f3e2eee093341afbc50f12b09d987647c6bbb9fe0114e3781b"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_07",
+          "vertices": 477,
+          "triangles": 950,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 12.013160607859767,
+          "minimum_float32_cross_length": 0.000015102375196322826,
+          "minimum_uv_determinant": 2.849470659427311e-7,
+          "minimum_normal_dot": 0.9999996330909555,
+          "source_state_sha256": "256131953e7c0c4fc91e88a6d580332ab98207bb0bddd1a015ab7915a88ba6a2"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_08",
+          "vertices": 469,
+          "triangles": 934,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 12.58685514919839,
+          "minimum_float32_cross_length": 0.0005419436522996348,
+          "minimum_uv_determinant": 0.000009733372326792278,
+          "minimum_normal_dot": 0.9999999889916154,
+          "source_state_sha256": "4496d320bb5d287a5413fb65400b9a48e754a7a30d994552bf333cf00ff0829a"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_09",
+          "vertices": 567,
+          "triangles": 1130,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 14.037527054962386,
+          "minimum_float32_cross_length": 0.0000010069471011442204,
+          "minimum_uv_determinant": 1.740659172355663e-8,
+          "minimum_normal_dot": 0.999988531231074,
+          "source_state_sha256": "b38e442520289fae30ce0b64eeb2155dbd7cdc771b971ab331746f69953c409a"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_10",
+          "vertices": 529,
+          "triangles": 1054,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 12.695548374213319,
+          "minimum_float32_cross_length": 0.00011425219899646871,
+          "minimum_uv_determinant": 0.000002110948258859935,
+          "minimum_normal_dot": 0.9999998735198465,
+          "source_state_sha256": "4733543b3b9dd6dd003ae05d538ce5ff20d44550392bf9b679ed2bcf18bc6f44"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_11",
+          "vertices": 552,
+          "triangles": 1100,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 18.846961119675953,
+          "minimum_float32_cross_length": 0.000009390826455045093,
+          "minimum_uv_determinant": 1.4682072446703387e-7,
+          "minimum_normal_dot": 0.9999979903427998,
+          "source_state_sha256": "9d304c638e66e409f3b0f39d89c0ffb4854b26dfbc0d7af7f51ec6d8c6602d04"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_12",
+          "vertices": 797,
+          "triangles": 1590,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 30.361196637804348,
+          "minimum_float32_cross_length": 0.00002667759425028893,
+          "minimum_uv_determinant": 4.936265725064004e-7,
+          "minimum_normal_dot": 0.9999997542777848,
+          "source_state_sha256": "9872a3c53127eb4bd853c79250663bf7e2d9010f57dc0eb8fb0d1f5d7d8ea5f6"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_13",
+          "vertices": 624,
+          "triangles": 1244,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 16.98226964785584,
+          "minimum_float32_cross_length": 0.00032724192986068875,
+          "minimum_uv_determinant": 0.000005421564583940608,
+          "minimum_normal_dot": 0.9999999711022481,
+          "source_state_sha256": "f1b2036dc2b3cc896a52ef1892dca66898c2c2865eb24c620ce6db1d3d641495"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_14",
+          "vertices": 867,
+          "triangles": 1730,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 43.9311874839846,
+          "minimum_float32_cross_length": 0.00003004030254327017,
+          "minimum_uv_determinant": 4.7559569793520495e-7,
+          "minimum_normal_dot": 0.9999995685531207,
+          "source_state_sha256": "b3cf21d0f508eefd6a8ec90b1378ffd7f046ae411c9dab201c2e2aeff30bf397"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_15",
+          "vertices": 744,
+          "triangles": 1484,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 37.578808579568246,
+          "minimum_float32_cross_length": 0.000021629190314895603,
+          "minimum_uv_determinant": 3.8403106827900046e-7,
+          "minimum_normal_dot": 0.9999990415690493,
+          "source_state_sha256": "be680140935dd6e669121572ad2b6f41387449a43f74c453235df3d83b5dd024"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_16",
+          "vertices": 1150,
+          "triangles": 2296,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 78.30814950472258,
+          "minimum_float32_cross_length": 0.0000020564765820062177,
+          "minimum_uv_determinant": 3.99220994040661e-8,
+          "minimum_normal_dot": 0.9999699439061854,
+          "source_state_sha256": "3365c37d29164394890e2943e74e1c1ff42a518713b2c2ee80ba82683db8a7a8"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_17",
+          "vertices": 1076,
+          "triangles": 2148,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 64.00187614162651,
+          "minimum_float32_cross_length": 0.00017325733058438323,
+          "minimum_uv_determinant": 0.0000031115888532440295,
+          "minimum_normal_dot": 0.9999999512189733,
+          "source_state_sha256": "862fc3a263e8bf52d7df00e17bb68cff5e78fa1c504af959ea4a1486ce864f09"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_18",
+          "vertices": 956,
+          "triangles": 1908,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 70.73127799397216,
+          "minimum_float32_cross_length": 0.000034544755773108884,
+          "minimum_uv_determinant": 6.43645002185167e-7,
+          "minimum_normal_dot": 0.9999995402760157,
+          "source_state_sha256": "2aaf3b8dbd665699bd8fb03044394d2b5d53085db893883c4729bb789d7a57d5"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_19",
+          "vertices": 1033,
+          "triangles": 2062,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 73.11071821070034,
+          "minimum_float32_cross_length": 0.0006957118216843835,
+          "minimum_uv_determinant": 0.000013246504835251471,
+          "minimum_normal_dot": 0.9999999893699608,
+          "source_state_sha256": "72660bed7ae5fa1ae3fdf0492d2e712abcae61fa5a7747c8b1910c3fcc251f00"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_20",
+          "vertices": 1010,
+          "triangles": 2016,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 60.03945374992197,
+          "minimum_float32_cross_length": 0.000002287020961119294,
+          "minimum_uv_determinant": 4.662842911784537e-8,
+          "minimum_normal_dot": 0.9999974979262101,
+          "source_state_sha256": "b3cd247cdb80bbbc745c537aea8e162c15b3e1ce6e7ebd4fedce286267fef8b6"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_21",
+          "vertices": 796,
+          "triangles": 1588,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 44.85724873893174,
+          "minimum_float32_cross_length": 0.00005983123187389363,
+          "minimum_uv_determinant": 0.0000010574735824775416,
+          "minimum_normal_dot": 0.9999997571048264,
+          "source_state_sha256": "253efae523b6474d6148afd1ff3ef714294666ed7b172f378d411bb01e78122a"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_22",
+          "vertices": 716,
+          "triangles": 1428,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 29.70379436551534,
+          "minimum_float32_cross_length": 0.00014122751927580037,
+          "minimum_uv_determinant": 0.000002901445782299561,
+          "minimum_normal_dot": 0.9999998436180896,
+          "source_state_sha256": "af9df84c4c907153069aeaa33497e3396cd069b7432eea6d7bef8b4561769fd7"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_23",
+          "vertices": 620,
+          "triangles": 1236,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 39.310176497203734,
+          "minimum_float32_cross_length": 0.000005665268197216027,
+          "minimum_uv_determinant": 9.919904186972417e-8,
+          "minimum_normal_dot": 0.9999980285588479,
+          "source_state_sha256": "b1e2308379e596f8e2e9dae22292f47e9d48f5f94a72ae74b7718525c0e637c9"
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_24",
+          "vertices": 634,
+          "triangles": 1264,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 41.632753172677084,
+          "minimum_float32_cross_length": 0.000038912826029963454,
+          "minimum_uv_determinant": 7.382859621429816e-7,
+          "minimum_normal_dot": 0.9999990537143727,
+          "source_state_sha256": "eefe0c96eedfe551fc99a679353084627a27d8c612a84a4a45ce92562589decf"
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+          "vertices": 1612,
+          "triangles": 3220,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 1032.8895290482938,
+          "minimum_float32_cross_length": 0.0000023149067215073577,
+          "minimum_uv_determinant": 3.615599553086213e-8,
+          "minimum_normal_dot": 0.9999758248666353,
+          "source_state_sha256": "bbf36c00297494af2ec4766ad90886228e3e18fd86fdabe37405ab3025c439c1"
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+          "vertices": 2682,
+          "triangles": 5360,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 2495.389636813544,
+          "minimum_float32_cross_length": 7.392341638276587e-7,
+          "minimum_uv_determinant": 1.4287536487245234e-8,
+          "minimum_normal_dot": 0.9999284908184395,
+          "source_state_sha256": "b5245e29c4a227812c323762a8a37227f66c862f8b7f97e9ad861c1beae2cf42"
+        },
+        {
+          "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+          "vertices": 7421,
+          "triangles": 14838,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 48588.11691890645,
+          "minimum_float32_cross_length": 0.1795090522908457,
+          "minimum_uv_determinant": 0.00414173056692313,
+          "minimum_normal_dot": 0.9999999998299358,
+          "source_state_sha256": "5177ddac63354c5a07db9a5f619343d2b1b5e635f14baed4d112adf1723dc12f"
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+          "vertices": 1054,
+          "triangles": 2104,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 793.6438992539925,
+          "minimum_float32_cross_length": 0.00006669122190449126,
+          "minimum_uv_determinant": 0.0000011742548622351023,
+          "minimum_normal_dot": 0.9999995957422099,
+          "source_state_sha256": "9667080130d2971521c5fced1e251d0726df40399626b566aecec078b87e05e0"
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+          "vertices": 1363,
+          "triangles": 2722,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 674.254910957966,
+          "minimum_float32_cross_length": 0.000011851269506431624,
+          "minimum_uv_determinant": 2.1865440658075386e-7,
+          "minimum_normal_dot": 0.9998689306923494,
+          "source_state_sha256": "2ea5a14e03d9a9ae168812e11e7d0de2b022c05950172bae5748d37dce040dfc"
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+          "vertices": 1242,
+          "triangles": 2480,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 491.8800312655872,
+          "minimum_float32_cross_length": 0.00237573023899385,
+          "minimum_uv_determinant": 0.000042368915842416754,
+          "minimum_normal_dot": 0.9999999942296135,
+          "source_state_sha256": "f39b306b424736bdb0b1d9fdb07ee4677a9e731f4b421dd8debfd19164bd2783"
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+          "vertices": 1382,
+          "triangles": 2760,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 610.8592937788011,
+          "minimum_float32_cross_length": 0.00002715747914588262,
+          "minimum_uv_determinant": 4.7403671032952843e-7,
+          "minimum_normal_dot": 0.9999992039013125,
+          "source_state_sha256": "f2807675555d8ecdd58b833498dabe5c5fd80691bbf500a578ce6716372ff92f"
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+          "vertices": 1027,
+          "triangles": 2050,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 952.925039463076,
+          "minimum_float32_cross_length": 0.00003292570172783317,
+          "minimum_uv_determinant": 5.576924877459533e-7,
+          "minimum_normal_dot": 0.9999994985430231,
+          "source_state_sha256": "8fce9ba44c32377d4a0f5d67cafaf3f36ba20e5cdb075e1b031d732cb37bc16c"
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+          "vertices": 737,
+          "triangles": 1470,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 476.78260783738403,
+          "minimum_float32_cross_length": 0.000003075224616520561,
+          "minimum_uv_determinant": 5.6300279993592994e-8,
+          "minimum_normal_dot": 0.9996127553872274,
+          "source_state_sha256": "36d507e8f2ef9c890036c43dedec5ed251e6cf689b98e082bfa7040d1b28a785"
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+          "vertices": 1013,
+          "triangles": 2022,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 858.3392351121657,
+          "minimum_float32_cross_length": 0.00011104304182008898,
+          "minimum_uv_determinant": 0.0000017819180584410788,
+          "minimum_normal_dot": 0.9999989199491597,
+          "source_state_sha256": "44597e35ccd07095fcf694aef04ca837f8d612266931a471e6f257cd20a2085e"
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+          "vertices": 895,
+          "triangles": 1786,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 346.00542700867953,
+          "minimum_float32_cross_length": 0.000001624966604187964,
+          "minimum_uv_determinant": 2.983017566293711e-8,
+          "minimum_normal_dot": 0.9999921606981158,
+          "source_state_sha256": "b994926648abdb851d515215d3d88b6f1131fd8dfc374d8ec73f73cfe3ef63ee"
+        },
+        {
+          "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+          "vertices": 5667,
+          "triangles": 11330,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 12022.06105819911,
+          "minimum_float32_cross_length": 0.0000013875713480975184,
+          "minimum_uv_determinant": 2.224101081083063e-8,
+          "minimum_normal_dot": 0.9997238041501849,
+          "source_state_sha256": "b5034892d8b6ef224418f633da10dae8459639fb93cde8ea54bc116d23b2857e"
+        },
+        {
+          "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+          "vertices": 1050,
+          "triangles": 2096,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 969.6261179877927,
+          "minimum_float32_cross_length": 0.000003109273178875297,
+          "minimum_uv_determinant": 5.42972884431947e-8,
+          "minimum_normal_dot": 0.9999930445156896,
+          "source_state_sha256": "6ed32e3f3f8acff48dfc0c6cc8f7f575744ceda8be040042cd13f20c3db278a5"
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+          "vertices": 1698,
+          "triangles": 3392,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 1593.6265049835447,
+          "minimum_float32_cross_length": 0.00014543324461324358,
+          "minimum_uv_determinant": 0.0000027350073281695586,
+          "minimum_normal_dot": 0.9999983561693219,
+          "source_state_sha256": "f7061585ad0dfcca03083020b4ad20c9be78a82be46fb7ca8bfe59aabec4a964"
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+          "vertices": 2138,
+          "triangles": 4272,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 1669.5567931118824,
+          "minimum_float32_cross_length": 0.00005446917179306678,
+          "minimum_uv_determinant": 9.973928172257729e-7,
+          "minimum_normal_dot": 0.9999990929325192,
+          "source_state_sha256": "fb3e1f6f3a40df28c1d49fad78db02562bb7c0517fef8590db6b6c96ff27215f"
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+          "vertices": 1512,
+          "triangles": 3020,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 1055.8124657402836,
+          "minimum_float32_cross_length": 0.0036478953373700975,
+          "minimum_uv_determinant": 0.00006034052906933596,
+          "minimum_normal_dot": 0.9999999975404833,
+          "source_state_sha256": "df27f1a5aec9f66a10d07dfe45f5af92a18826498d56101e02106aa39f0c4a53"
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+          "vertices": 760,
+          "triangles": 1516,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 422.78797947901546,
+          "minimum_float32_cross_length": 0.002838134028004432,
+          "minimum_uv_determinant": 0.00006858609222604173,
+          "minimum_normal_dot": 0.9999999966364362,
+          "source_state_sha256": "b398bc084b2f4c872449a3d82c671851436f65b939c7a003ab6475cbe334fabc"
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+          "vertices": 1925,
+          "triangles": 3846,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 1296.9572106412384,
+          "minimum_float32_cross_length": 0.0000034909516950297795,
+          "minimum_uv_determinant": 6.53471943223849e-8,
+          "minimum_normal_dot": 0.9991405875037721,
+          "source_state_sha256": "42645372c43a2eaa4ee0c2688d14313d5f85eb4c298f5ec12209ded2e34fc7aa"
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+          "vertices": 945,
+          "triangles": 1886,
+          "closed_positive": true,
+          "opposite_halfedges_and_contiguous_bmesh_edges": true,
+          "signed_volume": 320.0109230615287,
+          "minimum_float32_cross_length": 2.2389136572020924e-9,
+          "minimum_uv_determinant": 4.7634785005357116e-11,
+          "minimum_normal_dot": 0.6971158415688894,
+          "source_state_sha256": "3c6b78a8ad9cb37adedcd52c54dd3c4f8cdb5392fd40b2c1b3d50089337ed503"
+        }
+      ],
+      "upper_sculptures": [
+        {
+          "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+          "cut_y": 3.234999895095825,
+          "original_base_y": 2.9,
+          "lower_boundary_vertices": 170,
+          "roof_boundary_vertices": 23,
+          "roof_triangles": 769,
+          "roof_outline_xz": [
+            [
+              -20,
+              -18
+            ],
+            [
+              -20,
+              -20.5
+            ],
+            [
+              -17,
+              -22.5
+            ],
+            [
+              -13,
+              -23
+            ],
+            [
+              -9,
+              -22.5
+            ],
+            [
+              -6,
+              -22
+            ],
+            [
+              -3,
+              -22.6
+            ],
+            [
+              0,
+              -22.8
+            ],
+            [
+              3,
+              -22.4
+            ],
+            [
+              6,
+              -23
+            ],
+            [
+              10,
+              -22.5
+            ],
+            [
+              13,
+              -20.5
+            ],
+            [
+              12.5,
+              -18.2
+            ],
+            [
+              9,
+              -17.3
+            ],
+            [
+              7,
+              -17.6
+            ],
+            [
+              4.5,
+              -19.4
+            ],
+            [
+              2,
+              -20.35
+            ],
+            [
+              -1,
+              -20.8
+            ],
+            [
+              -4,
+              -20.4
+            ],
+            [
+              -7,
+              -19.1
+            ],
+            [
+              -10,
+              -17.6
+            ],
+            [
+              -13,
+              -17.2
+            ],
+            [
+              -17,
+              -17.6
+            ]
+          ],
+          "central_front_recess_metres": 3.65,
+          "saddle_target_y": 5.1,
+          "shoulder_peak_targets_y": [
+            7.6,
+            6.5
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+          "actual_retained_r4_cut_y": 4.874480724334717,
+          "old_roof_triangles": 3568,
+          "new_roof_triangles": 3568,
+          "unchanged_nonroof_topology_triangles": 7762,
+          "roof_boundary_vertices": 190,
+          "changed_roof_vertices": 711,
+          "maximum_actual_roof_displacement_metres": 3.7681843860940525,
+          "minimum_original_mapped_projected_double_area": 0.0043030152992287185,
+          "edit_window_xz": [
+            -20,
+            13,
+            -25,
+            -15.6
+          ],
+          "rear_feather_note": "Two-metre transition behind the main -23..-17 sculpture window",
+          "saddle_target_y": 5.1
+        }
+      ],
+      "contacts": {
+        "status": "CONTACTS_UNRESOLVED / NOT_MUTATION_READY",
+        "diagnostic_only": true,
+        "mutation_ready": false,
+        "interowner_surface_contact_pairs_evaluated": 6491,
+        "retained_exact_contact_pairs": 3169,
+        "retained_clipped_old_surface_pairs": 46,
+        "all_nonretained_contact_counts": {
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_15": 52,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_16": 93,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_17": 25,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_18": 160,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_19": 207,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_20": 81,
+          "Front_Low_Connecting_Ridge_Ledge / Cannon_Continuous_Middle_Terrace": 272,
+          "Front_Low_Connecting_Ridge_Ledge / Continuous_Connected_Coast_And_Bedrock": 361,
+          "Front_Low_Connecting_Ridge_Ledge / Rear_Connected_Low_Saddle": 450,
+          "Front_Low_Connecting_Ridge_Ledge / Western_Broad_Second_Terrace": 173,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_15": 73,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_16": 174,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_17": 159,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_18": 167,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_19": 173,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_20": 147,
+          "Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace": 264,
+          "Rear_Connected_Low_Saddle / East_Long_Lower_Shoulder": 57,
+          "Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace": 188
+        },
+        "declared_policy_contact_counts": {
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_15": 52,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_16": 93,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_17": 25,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_18": 160,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_19": 207,
+          "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_20": 81,
+          "Front_Low_Connecting_Ridge_Ledge / Rear_Connected_Low_Saddle": 450,
+          "Front_Low_Connecting_Ridge_Ledge / Western_Broad_Second_Terrace": 173,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_15": 67,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_16": 174,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_17": 159,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_18": 167,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_19": 173,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_20": 147,
+          "Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace": 256,
+          "Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace": 178
+        },
+        "declared_policy_first20": [
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1772,
+              416
+            ],
+            "intersection_aabb_min": [
+              -19.787487030029297,
+              4.967025279998779,
+              -17.995859146118164
+            ],
+            "intersection_aabb_max": [
+              -19.62531852722168,
+              5.381989002227783,
+              -17.941734313964844
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 416
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1772,
+              687
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.914983749389648,
+              -17.941734313964844
+            ],
+            "intersection_aabb_max": [
+              -19.787487030029297,
+              5.381989002227783,
+              -17.723379135131836
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 687
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1772,
+              1177
+            ],
+            "intersection_aabb_min": [
+              -19.783336639404297,
+              4.968710422515869,
+              -18
+            ],
+            "intersection_aabb_max": [
+              -19.61964225769043,
+              5.381989002227783,
+              -17.950735092163086
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1177
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1772,
+              1411
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.453860282897949,
+              -17.941734313964844
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.967025279998779,
+              -17.723379135131836
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1411
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1772,
+              1423
+            ],
+            "intersection_aabb_min": [
+              -19.837196350097656,
+              4.967025279998779,
+              -17.995859146118164
+            ],
+            "intersection_aabb_max": [
+              -19.62531852722168,
+              5.381989002227783,
+              -17.731609344482422
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1423
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1773,
+              1411
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.453860282897949,
+              -17.941734313964844
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.967025279998779,
+              -17.723379135131836
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1411
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1774,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1774,
+              1411
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.453860282897949,
+              -17.941734313964844
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.967025279998779,
+              -17.723379135131836
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1411
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1781,
+              663
+            ],
+            "intersection_aabb_min": [
+              -19.817615509033203,
+              3.8914084434509277,
+              -17.827266693115234
+            ],
+            "intersection_aabb_max": [
+              -19.392221450805664,
+              4.406700611114502,
+              -17.513961791992188
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 663
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1781,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1781,
+              1387
+            ],
+            "intersection_aabb_min": [
+              -19.624698638916016,
+              3.3700785636901855,
+              -17.827266693115234
+            ],
+            "intersection_aabb_max": [
+              -19.392221450805664,
+              3.931159496307373,
+              -17.44381332397461
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1387
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1781,
+              1399
+            ],
+            "intersection_aabb_min": [
+              -19.817615509033203,
+              3.931159496307373,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.392221450805664,
+              4.453860282897949,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 1399
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1776,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1775,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1779,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1780,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1777,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              1778,
+              675
+            ],
+            "intersection_aabb_min": [
+              -19.956571578979492,
+              4.406700611114502,
+              -17.881376266479492
+            ],
+            "intersection_aabb_max": [
+              -19.602008819580078,
+              4.914983749389648,
+              -17.62617301940918
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 675
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              906,
+              414
+            ],
+            "intersection_aabb_min": [
+              -19.783851623535156,
+              5.099999904632568,
+              -18.016517639160156
+            ],
+            "intersection_aabb_max": [
+              -19.615419387817383,
+              5.512669086456299,
+              -17.962507247924805
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 414
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Attached_Fracture_15"
+            ],
+            "faces": [
+              906,
+              415
+            ],
+            "intersection_aabb_min": [
+              -19.783336639404297,
+              5.099999904632568,
+              -18.004901885986328
+            ],
+            "intersection_aabb_max": [
+              -19.61964225769043,
+              5.510326385498047,
+              -17.950735092163086
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 415
+          }
+        ],
+        "unresolved_interowner_contact_count": 714,
+        "unresolved_interowner_owner_pairs": {
+          "Front_Low_Connecting_Ridge_Ledge / Cannon_Continuous_Middle_Terrace": 272,
+          "Front_Low_Connecting_Ridge_Ledge / Continuous_Connected_Coast_And_Bedrock": 361,
+          "Rear_Connected_Low_Saddle / Attached_Fracture_15": 6,
+          "Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace": 8,
+          "Rear_Connected_Low_Saddle / East_Long_Lower_Shoulder": 57,
+          "Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace": 10
+        },
+        "unresolved_interowner_first20": [
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1241,
+              2240
+            ],
+            "intersection_aabb_min": [
+              -2.4200000762939453,
+              5.099999904632568,
+              -21.963071823120117
+            ],
+            "intersection_aabb_max": [
+              -1.8799999952316284,
+              5.099999904632568,
+              -21.670000076293945
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2240
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1242,
+              297
+            ],
+            "intersection_aabb_min": [
+              -2.4200000762939453,
+              5.099999904632568,
+              -21.670000076293945
+            ],
+            "intersection_aabb_max": [
+              -1.8799999952316284,
+              5.099999904632568,
+              -21.356626510620117
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 297
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1242,
+              2240
+            ],
+            "intersection_aabb_min": [
+              -2.4200000762939453,
+              5.099999904632568,
+              -21.670000076293945
+            ],
+            "intersection_aabb_max": [
+              -1.8799999952316284,
+              5.099999904632568,
+              -21.356626510620117
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2240
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1646,
+              64
+            ],
+            "intersection_aabb_min": [
+              -3,
+              3.639040231704712,
+              -20.963499069213867
+            ],
+            "intersection_aabb_max": [
+              -2.395641803741455,
+              4.074091911315918,
+              -20.866249084472656
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 64
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1248,
+              2241
+            ],
+            "intersection_aabb_min": [
+              -2.9600000381469727,
+              5.099999904632568,
+              -21.38564682006836
+            ],
+            "intersection_aabb_max": [
+              -2.522160768508911,
+              5.099999904632568,
+              -21.228944778442383
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2241
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1249,
+              297
+            ],
+            "intersection_aabb_min": [
+              -2.598414421081543,
+              5.099999904632568,
+              -21.670000076293945
+            ],
+            "intersection_aabb_max": [
+              -2.1500000953674316,
+              5.099999904632568,
+              -21.356626510620117
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 297
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1249,
+              2241
+            ],
+            "intersection_aabb_min": [
+              -2.690000057220459,
+              5.099999904632568,
+              -21.38564682006836
+            ],
+            "intersection_aabb_max": [
+              -2.522160768508911,
+              5.099999904632568,
+              -21.228944778442383
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2241
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1645,
+              64
+            ],
+            "intersection_aabb_min": [
+              -3.0734610557556152,
+              3.639040231704712,
+              -20.963499069213867
+            ],
+            "intersection_aabb_max": [
+              -2.7359166145324707,
+              4.074091911315918,
+              -20.866249084472656
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 64
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1239,
+              298
+            ],
+            "intersection_aabb_min": [
+              -3.2300000190734863,
+              5.099999904632568,
+              -21.38564682006836
+            ],
+            "intersection_aabb_max": [
+              -2.690000057220459,
+              5.099999904632568,
+              -21.1299991607666
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 298
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1239,
+              2241
+            ],
+            "intersection_aabb_min": [
+              -3.2300000190734863,
+              5.099999904632568,
+              -21.38564682006836
+            ],
+            "intersection_aabb_max": [
+              -2.690000057220459,
+              5.099999904632568,
+              -21.228944778442383
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2241
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1278,
+              298
+            ],
+            "intersection_aabb_min": [
+              -3.5,
+              5.099999904632568,
+              -21.38564682006836
+            ],
+            "intersection_aabb_max": [
+              -2.9600000381469727,
+              5.099999904632568,
+              -21.1299991607666
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 298
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1644,
+              64
+            ],
+            "intersection_aabb_min": [
+              -3.26723575592041,
+              3.639040231704712,
+              -20.963499069213867
+            ],
+            "intersection_aabb_max": [
+              -3,
+              4.074091911315918,
+              -20.866249084472656
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 64
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1644,
+              2007
+            ],
+            "intersection_aabb_min": [
+              -3.289342164993286,
+              3.639127492904663,
+              -21.182554244995117
+            ],
+            "intersection_aabb_max": [
+              -3,
+              4.075986385345459,
+              -20.866249084472656
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2007
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1644,
+              2008
+            ],
+            "intersection_aabb_min": [
+              -3.598159074783325,
+              3.639127492904663,
+              -21.31892204284668
+            ],
+            "intersection_aabb_max": [
+              -3.26723575592041,
+              4.077273368835449,
+              -20.963499069213867
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2008
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1640,
+              143
+            ],
+            "intersection_aabb_min": [
+              -4.2348809242248535,
+              4.075986385345459,
+              -21.31892204284668
+            ],
+            "intersection_aabb_max": [
+              -3.289342164993286,
+              4.512523174285889,
+              -21.182554244995117
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 143
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1640,
+              144
+            ],
+            "intersection_aabb_min": [
+              -5.0655083656311035,
+              4.077273368835449,
+              -21.353927612304688
+            ],
+            "intersection_aabb_max": [
+              -4.1559624671936035,
+              4.512523174285889,
+              -21.205745697021484
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 144
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1640,
+              223
+            ],
+            "intersection_aabb_min": [
+              -6,
+              4.513757705688477,
+              -21.744617462158203
+            ],
+            "intersection_aabb_max": [
+              -5.196743488311768,
+              4.963740825653076,
+              -21.07001304626465
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 223
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1640,
+              2087
+            ],
+            "intersection_aabb_min": [
+              -5.196743488311768,
+              4.0782575607299805,
+              -21.353927612304688
+            ],
+            "intersection_aabb_max": [
+              -4.2348809242248535,
+              4.513757705688477,
+              -21.07001304626465
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2087
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1640,
+              2088
+            ],
+            "intersection_aabb_min": [
+              -5.9530110359191895,
+              4.0782575607299805,
+              -21.744617462158203
+            ],
+            "intersection_aabb_max": [
+              -5.0655083656311035,
+              4.522017002105713,
+              -21.07001304626465
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 2088
+          },
+          {
+            "owners": [
+              "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+              "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace"
+            ],
+            "faces": [
+              1641,
+              143
+            ],
+            "intersection_aabb_min": [
+              -4.2348809242248535,
+              4.075986385345459,
+              -21.31892204284668
+            ],
+            "intersection_aabb_max": [
+              -3.289342164993286,
+              4.512523174285889,
+              -21.182554244995117
+            ],
+            "authored_origin_a": null,
+            "authored_origin_b": 143
+          }
+        ],
+        "nonadjacent_self_triangle_candidates_tested": 0,
+        "all_nonadjacent_self_contact_count": 0,
+        "all_nonadjacent_self_contact_owner_counts": {},
+        "all_nonadjacent_self_contact_first20": [],
+        "strict_acceptance": false,
+        "scope": "Actual BVH candidates plus SAT; self contacts include inherited source contacts, not baseline-subtracted; not a union/containment/adjacent-fold certificate"
+      },
+      "baseline_surface_contact_counts": {
+        "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_15": 54,
+        "Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_19": 34,
+        "Front_Low_Connecting_Ridge_Ledge / Continuous_Connected_Coast_And_Bedrock": 334,
+        "Front_Low_Connecting_Ridge_Ledge / Rear_Connected_Low_Saddle": 565,
+        "Front_Low_Connecting_Ridge_Ledge / Western_Broad_Second_Terrace": 145,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_14": 181,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_15": 285,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_16": 160,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_17": 148,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_18": 143,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_19": 143,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_20": 136,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_21": 126,
+        "Rear_Connected_Low_Saddle / Attached_Fracture_22": 120,
+        "Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace": 589,
+        "Rear_Connected_Low_Saddle / Continuous_Connected_Coast_And_Bedrock": 1199,
+        "Rear_Connected_Low_Saddle / East_Long_Lower_Shoulder": 409,
+        "Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace": 502
+      },
+      "fixtures": {
+        "negative_fixtures": 7,
+        "positive_fixtures": 4,
+        "single_reversed_face_closed_tetrahedron_rejected": true,
+        "clipped_old_surface_spoof_outside_and_reversal_rejected": true
+      },
+      "intentional_upper_embedding_policy": {
+        "owner_peers": {
+          "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge": [
+            "ProjectsIsland_V2_Attached_Fracture_15",
+            "ProjectsIsland_V2_Attached_Fracture_16",
+            "ProjectsIsland_V2_Attached_Fracture_17",
+            "ProjectsIsland_V2_Attached_Fracture_18",
+            "ProjectsIsland_V2_Attached_Fracture_19",
+            "ProjectsIsland_V2_Attached_Fracture_20",
+            "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+            "ProjectsIsland_V2_Western_Broad_Second_Terrace"
+          ],
+          "ProjectsIsland_V2_Rear_Connected_Low_Saddle": [
+            "ProjectsIsland_V2_Attached_Fracture_15",
+            "ProjectsIsland_V2_Attached_Fracture_16",
+            "ProjectsIsland_V2_Attached_Fracture_17",
+            "ProjectsIsland_V2_Attached_Fracture_18",
+            "ProjectsIsland_V2_Attached_Fracture_19",
+            "ProjectsIsland_V2_Attached_Fracture_20",
+            "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+            "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+            "ProjectsIsland_V2_Western_Broad_Second_Terrace"
+          ]
+        },
+        "intersection_aabb_min_max": [
+          [
+            -21,
+            3.15,
+            -25.01
+          ],
+          [
+            14,
+            9,
+            -16.49
+          ]
+        ],
+        "not_claimed": "Union/manifold of combined shells, contained-volume freedom, gameplay collision, full adjacent-fold proof"
+      },
+      "automatic_multiview_reconstruction": false,
+      "runtime_integration": false,
+      "contact_diagnostic_receipt_json": "{\"all_nonadjacent_self_contact_count\": 0, \"all_nonadjacent_self_contact_first20\": [], \"all_nonadjacent_self_contact_owner_counts\": {}, \"all_nonretained_contact_counts\": {\"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_15\": 52, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_16\": 93, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_17\": 25, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_18\": 160, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_19\": 207, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_20\": 81, \"Front_Low_Connecting_Ridge_Ledge / Cannon_Continuous_Middle_Terrace\": 272, \"Front_Low_Connecting_Ridge_Ledge / Continuous_Connected_Coast_And_Bedrock\": 361, \"Front_Low_Connecting_Ridge_Ledge / Rear_Connected_Low_Saddle\": 450, \"Front_Low_Connecting_Ridge_Ledge / Western_Broad_Second_Terrace\": 173, \"Rear_Connected_Low_Saddle / Attached_Fracture_15\": 73, \"Rear_Connected_Low_Saddle / Attached_Fracture_16\": 174, \"Rear_Connected_Low_Saddle / Attached_Fracture_17\": 159, \"Rear_Connected_Low_Saddle / Attached_Fracture_18\": 167, \"Rear_Connected_Low_Saddle / Attached_Fracture_19\": 173, \"Rear_Connected_Low_Saddle / Attached_Fracture_20\": 147, \"Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace\": 264, \"Rear_Connected_Low_Saddle / East_Long_Lower_Shoulder\": 57, \"Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace\": 188}, \"declared_policy_contact_counts\": {\"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_15\": 52, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_16\": 93, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_17\": 25, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_18\": 160, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_19\": 207, \"Front_Low_Connecting_Ridge_Ledge / Attached_Fracture_20\": 81, \"Front_Low_Connecting_Ridge_Ledge / Rear_Connected_Low_Saddle\": 450, \"Front_Low_Connecting_Ridge_Ledge / Western_Broad_Second_Terrace\": 173, \"Rear_Connected_Low_Saddle / Attached_Fracture_15\": 67, \"Rear_Connected_Low_Saddle / Attached_Fracture_16\": 174, \"Rear_Connected_Low_Saddle / Attached_Fracture_17\": 159, \"Rear_Connected_Low_Saddle / Attached_Fracture_18\": 167, \"Rear_Connected_Low_Saddle / Attached_Fracture_19\": 173, \"Rear_Connected_Low_Saddle / Attached_Fracture_20\": 147, \"Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace\": 256, \"Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace\": 178}, \"declared_policy_first20\": [{\"authored_origin_a\": null, \"authored_origin_b\": 416, \"faces\": [1772, 416], \"intersection_aabb_max\": [-19.62531852722168, 5.381989002227783, -17.941734313964844], \"intersection_aabb_min\": [-19.787487030029297, 4.967025279998779, -17.995859146118164], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 687, \"faces\": [1772, 687], \"intersection_aabb_max\": [-19.787487030029297, 5.381989002227783, -17.723379135131836], \"intersection_aabb_min\": [-19.956571578979492, 4.914983749389648, -17.941734313964844], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1177, \"faces\": [1772, 1177], \"intersection_aabb_max\": [-19.61964225769043, 5.381989002227783, -17.950735092163086], \"intersection_aabb_min\": [-19.783336639404297, 4.968710422515869, -18.0], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1411, \"faces\": [1772, 1411], \"intersection_aabb_max\": [-19.602008819580078, 4.967025279998779, -17.723379135131836], \"intersection_aabb_min\": [-19.956571578979492, 4.453860282897949, -17.941734313964844], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1423, \"faces\": [1772, 1423], \"intersection_aabb_max\": [-19.62531852722168, 5.381989002227783, -17.731609344482422], \"intersection_aabb_min\": [-19.837196350097656, 4.967025279998779, -17.995859146118164], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1411, \"faces\": [1773, 1411], \"intersection_aabb_max\": [-19.602008819580078, 4.967025279998779, -17.723379135131836], \"intersection_aabb_min\": [-19.956571578979492, 4.453860282897949, -17.941734313964844], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1774, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1411, \"faces\": [1774, 1411], \"intersection_aabb_max\": [-19.602008819580078, 4.967025279998779, -17.723379135131836], \"intersection_aabb_min\": [-19.956571578979492, 4.453860282897949, -17.941734313964844], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 663, \"faces\": [1781, 663], \"intersection_aabb_max\": [-19.392221450805664, 4.406700611114502, -17.513961791992188], \"intersection_aabb_min\": [-19.817615509033203, 3.8914084434509277, -17.827266693115234], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1781, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1387, \"faces\": [1781, 1387], \"intersection_aabb_max\": [-19.392221450805664, 3.931159496307373, -17.44381332397461], \"intersection_aabb_min\": [-19.624698638916016, 3.3700785636901855, -17.827266693115234], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 1399, \"faces\": [1781, 1399], \"intersection_aabb_max\": [-19.392221450805664, 4.453860282897949, -17.62617301940918], \"intersection_aabb_min\": [-19.817615509033203, 3.931159496307373, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1776, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1775, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1779, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1780, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1777, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 675, \"faces\": [1778, 675], \"intersection_aabb_max\": [-19.602008819580078, 4.914983749389648, -17.62617301940918], \"intersection_aabb_min\": [-19.956571578979492, 4.406700611114502, -17.881376266479492], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 414, \"faces\": [906, 414], \"intersection_aabb_max\": [-19.615419387817383, 5.512669086456299, -17.962507247924805], \"intersection_aabb_min\": [-19.783851623535156, 5.099999904632568, -18.016517639160156], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 415, \"faces\": [906, 415], \"intersection_aabb_max\": [-19.61964225769043, 5.510326385498047, -17.950735092163086], \"intersection_aabb_min\": [-19.783336639404297, 5.099999904632568, -18.004901885986328], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Attached_Fracture_15\"]}], \"diagnostic_only\": true, \"interowner_surface_contact_pairs_evaluated\": 6491, \"mutation_ready\": false, \"nonadjacent_self_triangle_candidates_tested\": 0, \"retained_clipped_old_surface_pairs\": 46, \"retained_exact_contact_pairs\": 3169, \"scope\": \"Actual BVH candidates plus SAT; self contacts include inherited source contacts, not baseline-subtracted; not a union/containment/adjacent-fold certificate\", \"status\": \"CONTACTS_UNRESOLVED / NOT_MUTATION_READY\", \"strict_acceptance\": false, \"unresolved_interowner_contact_count\": 714, \"unresolved_interowner_first20\": [{\"authored_origin_a\": null, \"authored_origin_b\": 2240, \"faces\": [1241, 2240], \"intersection_aabb_max\": [-1.8799999952316284, 5.099999904632568, -21.670000076293945], \"intersection_aabb_min\": [-2.4200000762939453, 5.099999904632568, -21.963071823120117], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 297, \"faces\": [1242, 297], \"intersection_aabb_max\": [-1.8799999952316284, 5.099999904632568, -21.356626510620117], \"intersection_aabb_min\": [-2.4200000762939453, 5.099999904632568, -21.670000076293945], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2240, \"faces\": [1242, 2240], \"intersection_aabb_max\": [-1.8799999952316284, 5.099999904632568, -21.356626510620117], \"intersection_aabb_min\": [-2.4200000762939453, 5.099999904632568, -21.670000076293945], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 64, \"faces\": [1646, 64], \"intersection_aabb_max\": [-2.395641803741455, 4.074091911315918, -20.866249084472656], \"intersection_aabb_min\": [-3.0, 3.639040231704712, -20.963499069213867], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2241, \"faces\": [1248, 2241], \"intersection_aabb_max\": [-2.522160768508911, 5.099999904632568, -21.228944778442383], \"intersection_aabb_min\": [-2.9600000381469727, 5.099999904632568, -21.38564682006836], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 297, \"faces\": [1249, 297], \"intersection_aabb_max\": [-2.1500000953674316, 5.099999904632568, -21.356626510620117], \"intersection_aabb_min\": [-2.598414421081543, 5.099999904632568, -21.670000076293945], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2241, \"faces\": [1249, 2241], \"intersection_aabb_max\": [-2.522160768508911, 5.099999904632568, -21.228944778442383], \"intersection_aabb_min\": [-2.690000057220459, 5.099999904632568, -21.38564682006836], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 64, \"faces\": [1645, 64], \"intersection_aabb_max\": [-2.7359166145324707, 4.074091911315918, -20.866249084472656], \"intersection_aabb_min\": [-3.0734610557556152, 3.639040231704712, -20.963499069213867], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 298, \"faces\": [1239, 298], \"intersection_aabb_max\": [-2.690000057220459, 5.099999904632568, -21.1299991607666], \"intersection_aabb_min\": [-3.2300000190734863, 5.099999904632568, -21.38564682006836], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2241, \"faces\": [1239, 2241], \"intersection_aabb_max\": [-2.690000057220459, 5.099999904632568, -21.228944778442383], \"intersection_aabb_min\": [-3.2300000190734863, 5.099999904632568, -21.38564682006836], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 298, \"faces\": [1278, 298], \"intersection_aabb_max\": [-2.9600000381469727, 5.099999904632568, -21.1299991607666], \"intersection_aabb_min\": [-3.5, 5.099999904632568, -21.38564682006836], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 64, \"faces\": [1644, 64], \"intersection_aabb_max\": [-3.0, 4.074091911315918, -20.866249084472656], \"intersection_aabb_min\": [-3.26723575592041, 3.639040231704712, -20.963499069213867], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2007, \"faces\": [1644, 2007], \"intersection_aabb_max\": [-3.0, 4.075986385345459, -20.866249084472656], \"intersection_aabb_min\": [-3.289342164993286, 3.639127492904663, -21.182554244995117], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2008, \"faces\": [1644, 2008], \"intersection_aabb_max\": [-3.26723575592041, 4.077273368835449, -20.963499069213867], \"intersection_aabb_min\": [-3.598159074783325, 3.639127492904663, -21.31892204284668], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 143, \"faces\": [1640, 143], \"intersection_aabb_max\": [-3.289342164993286, 4.512523174285889, -21.182554244995117], \"intersection_aabb_min\": [-4.2348809242248535, 4.075986385345459, -21.31892204284668], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 144, \"faces\": [1640, 144], \"intersection_aabb_max\": [-4.1559624671936035, 4.512523174285889, -21.205745697021484], \"intersection_aabb_min\": [-5.0655083656311035, 4.077273368835449, -21.353927612304688], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 223, \"faces\": [1640, 223], \"intersection_aabb_max\": [-5.196743488311768, 4.963740825653076, -21.07001304626465], \"intersection_aabb_min\": [-6.0, 4.513757705688477, -21.744617462158203], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2087, \"faces\": [1640, 2087], \"intersection_aabb_max\": [-4.2348809242248535, 4.513757705688477, -21.07001304626465], \"intersection_aabb_min\": [-5.196743488311768, 4.0782575607299805, -21.353927612304688], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 2088, \"faces\": [1640, 2088], \"intersection_aabb_max\": [-5.0655083656311035, 4.522017002105713, -21.07001304626465], \"intersection_aabb_min\": [-5.9530110359191895, 4.0782575607299805, -21.744617462158203], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}, {\"authored_origin_a\": null, \"authored_origin_b\": 143, \"faces\": [1641, 143], \"intersection_aabb_max\": [-3.289342164993286, 4.512523174285889, -21.182554244995117], \"intersection_aabb_min\": [-4.2348809242248535, 4.075986385345459, -21.31892204284668], \"owners\": [\"ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge\", \"ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace\"]}], \"unresolved_interowner_owner_pairs\": {\"Front_Low_Connecting_Ridge_Ledge / Cannon_Continuous_Middle_Terrace\": 272, \"Front_Low_Connecting_Ridge_Ledge / Continuous_Connected_Coast_And_Bedrock\": 361, \"Rear_Connected_Low_Saddle / Attached_Fracture_15\": 6, \"Rear_Connected_Low_Saddle / Cannon_Continuous_Middle_Terrace\": 8, \"Rear_Connected_Low_Saddle / East_Long_Lower_Shoulder\": 57, \"Rear_Connected_Low_Saddle / Western_Broad_Second_Terrace\": 10}}"
+    },
+    "actualTemporaryViews": [
+      {
+        "view": "hero",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            19.423599243164062
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": true,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      },
+      {
+        "view": "front",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            19.423599243164062
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": false,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      },
+      {
+        "view": "right",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            19.423599243164062
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": false,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      },
+      {
+        "view": "top",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            19.423599243164062
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": false,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      }
+    ],
+    "queryOnly": true,
+    "baseCommittedRevision": 7,
+    "candidateNotCommitted": true
+  },
+  "generatedArtifacts": [
+    {
+      "size": 352956,
+      "etag": "80b2264fa4b1026b9cb0441436cbde21",
+      "id": "93c5058384da32037ed59a37d6754fdb",
+      "name": "projects-island-v2-r8-contact-diagnostic-front.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "size": 379128,
+      "etag": "7263d7bf9af4a686bbf1dc1a735bae9e",
+      "id": "3456daecc92ea90d35847f997db3d88d",
+      "name": "projects-island-v2-r8-contact-diagnostic-hero.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "size": 336504,
+      "etag": "c772cdf4fa85b406a836beddbbaecae3",
+      "id": "5a5b7e4072f8a26d394904291feed58e",
+      "name": "projects-island-v2-r8-contact-diagnostic-right.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "size": 429165,
+      "etag": "ad4ea5157f9670f676db184a2d46f5ff",
+      "id": "931441bdab3ae0f5e65a2ebc989f6749",
+      "name": "projects-island-v2-r8-contact-diagnostic-top.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480
+    }
+  ],
+  "rootVisualReview": {
+    "allFour640x480ActuallyViewed": true,
+    "comparisonR7CommittedHeroAndGuideActuallyViewed": true,
+    "approved": false,
+    "finding": "Local ridge/saddle silhouette changes, but geology remains flat/repeated prism-like with little reference craft. Smooth unequal shoulders do not solve coherent rear-mass composition. No art acceptance.",
+    "notCommittedBecause": [
+      "714 unresolved interowner contacts; no widened whitelist/policy",
+      "Visual result insufficient; no full reference fidelity"
+    ]
+  },
+  "limits": [
+    "Native source gates only, not a portable R8 binary test",
+    "No R8 GLB/Blender export delivered",
+    "No game terrain/map/physics/coast/bridge/ocean/minimap change",
+    "No source-shell union/containment/adjacent-fold approval",
+    "Self-contact broadphase reported zero nonadjacent candidates; not comprehensive self-intersection proof",
+    "Diagnostic water is a query-only plane, not runtime ocean"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r1-export-slot-fixture-20261003",
+  "revision": 1,
+  "queryOnly": true,
+  "blender": "5.2.0 LTS",
+  "findings": {
+    "temporaryQueryOnly": true,
+    "committed": false,
+    "portableFilesDelivered": false,
+    "exports": [
+      {
+        "mode": "MATERIAL",
+        "primitives": [
+          {
+            "mesh": "Query_OnlyEarth",
+            "material": "ProjectsIsland_V2_HoneyEarth",
+            "minRGB": [
+              0.30000001192092896,
+              0.2199999988079071,
+              0.10000000149011612
+            ],
+            "maxRGB": [
+              0.4099999964237213,
+              0.2529999911785126,
+              0.11100000143051147
+            ]
+          },
+          {
+            "mesh": "Query_OnlyRock",
+            "material": "ProjectsIsland_V2_Limestone",
+            "minRGB": [
+              0.30000001192092896,
+              0.2199999988079071,
+              0.10000000149011612
+            ],
+            "maxRGB": [
+              0.4099999964237213,
+              0.2529999911785126,
+              0.11100000143051147
+            ]
+          },
+          {
+            "mesh": "Query_TwoSlots",
+            "material": "ProjectsIsland_V2_Limestone",
+            "minRGB": [
+              0.30000001192092896,
+              0.2199999988079071,
+              0.10000000149011612
+            ],
+            "maxRGB": [
+              0.3799999952316284,
+              0.24400000274181366,
+              0.1080000028014183
+            ]
+          },
+          {
+            "mesh": "Query_TwoSlots",
+            "material": "ProjectsIsland_V2_HoneyEarth",
+            "minRGB": [
+              1,
+              1,
+              1
+            ],
+            "maxRGB": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "ACTIVE",
+        "primitives": [
+          {
+            "mesh": "Query_OnlyEarth",
+            "material": "ProjectsIsland_V2_HoneyEarth",
+            "minRGB": [
+              0.30000001192092896,
+              0.2199999988079071,
+              0.10000000149011612
+            ],
+            "maxRGB": [
+              0.4099999964237213,
+              0.2529999911785126,
+              0.11100000143051147
+            ]
+          },
+          {
+            "mesh": "Query_OnlyRock",
+            "material": "ProjectsIsland_V2_Limestone",
+            "minRGB": [
+              0.30000001192092896,
+              0.2199999988079071,
+              0.10000000149011612
+            ],
+            "maxRGB": [
+              0.4099999964237213,
+              0.2529999911785126,
+              0.11100000143051147
+            ]
+          },
+          {
+            "mesh": "Query_TwoSlots",
+            "material": "ProjectsIsland_V2_Limestone",
+            "minRGB": [
+              0.30000001192092896,
+              0.2199999988079071,
+              0.10000000149011612
+            ],
+            "maxRGB": [
+              0.3799999952316284,
+              0.24400000274181366,
+              0.1080000028014183
+            ]
+          },
+          {
+            "mesh": "Query_TwoSlots",
+            "material": "ProjectsIsland_V2_HoneyEarth",
+            "minRGB": [
+              1,
+              1,
+              1
+            ],
+            "maxRGB": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "Two-slot reproduction fails earth COLOR_0 in MATERIAL and ACTIVE; both single-slot controls preserve actual paint. This proves a workaround on the fixture, not artistic or full-model R2 acceptance."
+}

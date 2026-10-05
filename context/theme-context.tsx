@@ -20,24 +20,24 @@ export default function ThemeContextProvider({
   children,
 }: ThemeContextProviderProps) {
   // Server and first client render must agree, so start from the static
-  // default ("dark", matching <html className="dark">) and reconcile with the
+  // daylight default (matching SiteLayout) and reconcile with the
   // stored preference only after mount.
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
   const [mounted, setMounted] = useState(false);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    window.localStorage.setItem("theme", newTheme);
+    try { window.localStorage.setItem("theme", newTheme); } catch { /* Optional preference. */ }
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
   useEffect(() => {
     // Post-mount reconciliation with the stored preference; running this in an
     // effect is what keeps SSR and first client render identical.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
-    const stored = window.localStorage.getItem("theme") as Theme | null;
+    let stored: string | null = null;
+    try { stored = window.localStorage.getItem("theme"); } catch { /* Optional preference. */ }
     if (stored === "light" || stored === "dark") setTheme(stored);
   }, []);
 

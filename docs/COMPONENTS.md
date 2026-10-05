@@ -1,279 +1,196 @@
 # Component Catalog
 
-## Page-Level Layout
+## Application shell
 
-### SpotlightSection
-Full-width section wrapper with cursor-tracking accent spotlight (radial-gradient that follows mouse).
+Astro server-renders PortfolioApp with client:load hydration. SiteShell retains
+language/theme providers, optional BootSequence and the single PersonAIDock.
+The game is progressive enhancement, not a replacement for semantic content.
+Daylight is the initial theme; a stored explicit light/dark choice is restored.
 
-```tsx
-<SpotlightSection id="about" className="py-24 sm:py-28">
-  <Container>{children}</Container>
-</SpotlightSection>
+SiteContent mounts IslandPortfolio. Old JourneyCanvas, former standalone
+sections, Lenis, custom cursor and the textured-board exhibition are unmounted.
+
+## IslandPortfolio
+
+components/island-portfolio.tsx coordinates:
+
+- Immediate identity, Projects/Contact/CV quick links, exploration and reading
+- Lazy game initialization with cancellation after unmount
+- Nine area labels, six-territory minimap and eight optional visit destinations
+- Contextual object and guided-transfer actions, including skip
+- Native dialog for map or area-specific semantic presentation
+- Selected object/case index, current area and reader/world presentation
+- Canvas-scoped keyboard and pointer-captured touch control
+- Theme, locale, opt-in sound, reduced motion and WebGL failure
+- Hash/island:open navigation and chat-aware pause
+- Complete no-JavaScript content for all eight destinations
+
+World interaction opens content immediately; camera framing accompanies it.
+Dialog content changes move focus to the new heading; close returns focus
+coherently to the exploration control. Native dialog top-layer behavior keeps
+keyboard input out of the canvas during reading.
+The passive desktop field hint sits beside the lower-left controls rather than
+across the foreground explorer. Mobile retains its separate compact/touch
+placement; it is guidance only, never a content or navigation gate.
+Initial reduced-motion preference is honored. Live OS/media changes are an
+open limitation of the currently installed useReducedMotion hook (initial
+useState without updates); the browser reproduction and engine boundary are
+recorded in design-qa.md. Do not inherit an all-preference-compliance claim.
+
+## IslandContent
+
+API:
+
+```ts
+IslandContent({
+  island: PortfolioIslandId,
+  selectedIndex?: number,
+  presentation?: "world" | "reader"
+})
 ```
 
-**Props:**
-- `id` (string, required) — for anchor nav
-- `as` (string, default "section") — HTML tag
-- `variant` (`"default" | "story"`, default `"default"`) — story enables the current homepage narrative flow
-- `className` (string) — additional styles (padding, bg)
-- `children` — inner content
-
-**Behavior:**
-- Full width (`w-full`)
-- Spotlight glow follows cursor (GPU-accelerated, safe)
-- Story variant adds `.story-section` for continuous homepage spacing and subtle connective background treatment
-- No motion on `prefers-reduced-motion`
-
-### Container
-Max-width wrapper for centering content. Every section uses this.
-
-```tsx
-<Container>{children}</Container>
-```
-
-**Fixed structure:**
-- max-w-1100px, mx-auto, w-full, px-6
-- Paired with SpotlightSection so spotlight is full-width, content is centered
-
----
-
-## Section-Level Components
-
-### KineticHeading
-Title with GSAP SplitText char-level masked reveal on scroll-in. Replaces ScrambleText for all section titles.
-
-```tsx
-<KineticHeading
-  text="Competenze"
-  as="h2"
-  className="mb-12"
-/>
-```
-
-**Props:**
-- `text` (string, required) — the title
-- `eyebrow` (string, optional) — small label above. Avoid it on the homepage story flow.
-- `as` (string, default "h2") — "h1" | "h2" | "h3"
-- `className` (string, optional) — extra styles
-
-**Behavior:**
-- Plain text stays in the DOM (accessible/selectable) until webfonts load
-- On `document.fonts.ready`, GSAP SplitText splits into `words,chars` with per-word clip masks
-- A `gsap.from(split.chars, { yPercent: 115, ease: "expo.out", stagger: 0.018 })` raises the chars once, triggered by ScrollTrigger (`start: "top 84%"`, `once: true`)
-- Split is reverted on unmount; heading remounts on text change via React `key`
-- Skipped under reduced motion (plain text shown)
-
-### Marquee
-Reusable infinite horizontal ticker (tech stack list). Pauses on hover; disabled under reduced-motion. It is no longer mounted in the homepage body.
-
-```tsx
-<Marquee items={["React", "Next.js", "Python", "Three.js"]} />
-```
-
-**Props:**
-- `items` (string[], required) — list of labels to loop
-
-**Behavior:**
-- Renders items twice (seamless loop via transform translateX -50%)
-- Marquee track animates continuously (32s linear loop)
-- Hover pauses animation
-- SVG gradient mask (fade in/out at edges)
-- Category-style dots between items (colored with --accent)
-
-### GrainOverlay
-Fixed film-grain layer for subtle depth. Applied at app root.
-
-```tsx
-<GrainOverlay />
-```
-
-**No props.** Pure CSS noise via SVG data-URI.
-
----
-
-## Reusable Motion Components
-
-### Smooth-Scroll Provider
-Wraps the app in Lenis (inertial scroll). Mount once at `<html>` level.
-
-```tsx
-// in layout.tsx
-<SmoothScroll />
-```
-
-**Behavior:**
-- Client-side only (safe SSR)
-- Disabled under `prefers-reduced-motion`
-- Lenis driven by `gsap.ticker` and bridged to ScrollTrigger (`lenis.on("scroll", ScrollTrigger.update)`) — one rAF for all scroll work
-- Handles anchor clicks (smooth `lenis.scrollTo(element, { offset: -80 })`)
-- Updates browser history on anchor click
-
-### RevealManager
-`ScrollTrigger.batch` entrance reveals for any element tagged `data-reveal`. Mounted once in the site shell. Renders nothing.
-
-```tsx
-// any element opts in
-<div data-reveal>...</div>
-```
-
-**Behavior:**
-- JS-applied initial state (`gsap.set(targets, { y: 28, opacity: 0 })`) — content stays visible without JS and under reduced motion
-- On enter, batches fade+rise in with stagger (`expo.out`)
-- Triggers killed and props cleared on unmount
-
-### CustomCursor
-Two-layer cursor (dot + trailing ring) driven by `gsap.quickTo`. Contextual states come from `data-cursor` attributes via document-level event delegation (no per-element listeners). Ring uses `mix-blend-mode: difference`.
-
-**Behavior:**
-- Only active on fine pointers (`(hover: hover) and (pointer: fine)`)
-- `quickTo` follows the pointer (fast dot, slower trailing ring)
-- States (`hov`/`drag`/`view`) toggled from the hovered element's `data-cursor`
-- Tweens killed on unmount
-
-### Magnetic
-Wraps a child with a radial magnetic pull toward the cursor, plus an elastic snap-back on release.
-
-```tsx
-<Magnetic strength={0.25} radius={160}>
-  <Button>Get in touch</Button>
-</Magnetic>
-```
-
-**Props:**
-- `children` (ReactNode, required)
-- `strength` (number, default 0.25) — pull intensity before lock
-- `radius` (number, default 160) — field radius in px
-- `className` (string, optional)
-
-**Behavior:**
-- Disabled on touch / coarse pointers
-- Pull driven by `gsap.quickTo`; release uses `elastic.out(1, 0.45)`
-- Releases on pointer-leave / blur / visibility change; tweens killed on unmount
-
----
-
-## Content Components
-
-### About
-Bio sections with a `KineticHeading`, paragraphs, and a syntax-highlighted profile.json card.
-
-**Pattern:** 2-col grid on large (left: bio, right: card). Uses semantic `bg-surface`, `border-line`.
-
-### Education
-Degree + thesis with a radar visualization (Pescara ↔ L'Aquila arc). Custom SVG.
-
-**Pattern:** Grid layout with animated SVG + text. Uses `content/i18n.ts` for all labels.
-
-### Skills
-3D Fibonacci sphere with tagged skills. Hover a category → dim others, glow the selected.
-
-**Pattern:** Three.js canvas, cursor repulsion, scroll-aware tilt. Categories from `lib/data.ts`.
-
-### Projects-Rail
-5 holographic cards in a horizontal rail. Hover → accent sheen follows cursor (subtle, on-palette). Each card includes a proof block with role and output so the project reads as evidence, not just a title.
-
-**Pattern:** On desktop (≥1024px, fine pointer, no reduced motion) a `gsap.matchMedia` block pins `#projects` and scrubs the card track horizontally via ScrollTrigger, with a progress bar, active-project context, larger cards, and velocity-linked skew. Touch keeps the existing momentum drag rail (pointer events + friction rAF). Card tilt uses `gsap.quickTo`; `holo-card` class carries `--mx`, `--my`, `--hop` for the cursor sheen. The `.projects-cinematic` wrapper is the main expanded story moment.
-
-### Experience
-Timeline with animated SVG vertical line. Fill line's `y2` attribute is driven by scroll progress.
-
-**Pattern:** A `ScrollTrigger.create({ scrub: true })` updates the fill `y2` from its `onUpdate`; a separate `ScrollTrigger.batch` reveals each `.tl-item`. Both killed on unmount.
-
-### Contact
-Email form (left) + social links (right). Uses the `.contact-command` treatment for the closing scene.
-
-**Pattern:** 2-col grid (mobile: 1-col). Form action via `sendEmail` server action.
-
----
-
-## Form & Input Components
-
-All from `components/ui/*` (shadcn base). Styled with semantic tokens.
-
-- `<Input />` — email field, text inputs. Rounded border, focus ring via accent.
-- `<Textarea />` — message field. Min-height, same focus styling.
-- `<Button />` — CTA buttons. Variants: default (filled), outline, ghost.
-- `<Badge />` — skill tags, category labels. Small pill-shaped.
-
-**Pattern:** All use `fieldClass` constant for consistent styling (bg, border, focus).
-
----
-
-## Canvas & WebGL
-
-### Hero Canvas (`hero-canvas.tsx`)
-Hero-only Three.js particle field (absolute, `zIndex 0`, inside `#hero-section`). Formation flourish + cursor tracking + chat shockwave.
-
-**Key features:**
-- Tiered particle count: 22k + DPR 1.6 on fine pointers, 7k + DPR 1.25 on coarse/touch pointers (lower frame budget)
-- Formation: particles assemble into "MARCO D'ANTONIO" on first load (~2.9s total)
-- Ambient field: Perlin-like noise, depth parallax
-- Cursor: repulsion + depth offset
-- Chat pulse: shockwave + color flare when chat sends/receives (`hero:pulse`)
-- Theme: additive blending (dark), normal blending (light)
-- Perf/robustness: render loop pauses on `visibilitychange` and while the hero is outside the viewport, pointer tracking is scoped to the hero instead of `window`, double-rAF guard for hidden-tab loads, WebGL capability guard, StrictMode double-mount guard
-
-**Lifecycle:**
-1. SSR-safe: dynamic import of `three`
-2. On mount: sample wordmark (offscreen 2D canvas) → target positions
-3. Emit `bootend` event when boot overlay clears → start formation
-4. Listen for `hero:pulse` events from chat
-5. Cache formation flag in sessionStorage (skip on repeat visits)
-
----
-
-## Patterns to Reuse
-
-### Heading Reveal
-Use `<KineticHeading>` — don't hand-roll. It splits the text with GSAP SplitText and reveals chars via ScrollTrigger (see ANIMATION-GUIDE.md).
-
-### Scroll-Linked Parallax
-Use a ScrollTrigger `scrub` tween from `lib/gsap`; kill it on unmount:
-
-```tsx
-const tween = gsap.fromTo(
-  element,
-  { yPercent: 20 },
-  { yPercent: -20, ease: "none", scrollTrigger: { trigger: element, scrub: true } }
-);
-return () => { tween.scrollTrigger?.kill(); tween.kill(); };
-```
-
-### Theme-Aware Styling
-Use `html.dark` selector in CSS or check `useTheme()` in JS:
-
-```tsx
-// CSS
-html.dark .component { /* dark styles */ }
-
-// JS
-const { theme } = useTheme();
-```
-
-All semantic tokens already have dark variants in `app/design-system.css`.
-
-### Hover Cursor Tracking
-Use `--mx` and `--my` CSS properties (updated on mousemove). Common on `.holo-card`:
-
-```css
-.holo-card::before {
-  background: radial-gradient(circle at var(--mx) var(--my), ...);
-}
-```
-
-JavaScript sets these on the card's parent:
-
-```tsx
-card.style.setProperty('--mx', `${(e.clientX / rect.width) * 100}%`);
-card.style.setProperty('--my', `${(e.clientY / rect.height) * 100}%`);
-```
-
----
-
-## Don't Reintroduce
-
-- `ScrambleText` (replaced by KineticHeading)
-- Custom scroll listeners or new `scroll-signal` subscribers for decorative motion (use GSAP ScrollTrigger via `lib/gsap`)
-- Importing `gsap` directly (always import from `@/lib/gsap`)
-- Dead components from old routes (check WORKLOG.md for what was removed)
-- Inline motion CSS (use motion tokens from design-system.css)
+PortfolioIslandId excludes welcome. Each presentation uses SpotlightSection,
+an inner Container, KineticHeading and shared UI buttons. The presentation
+variant does not substitute different facts.
+
+| Place | Actual document organization |
+| --- | --- |
+| About | Portrait notebook with complete opening summary and three thematic pages |
+| Projects | Five indexed cases: problem, contribution, solution, output, actual stack |
+| Skills | Five modules, actual technologies, links to relevant indexed project cases |
+| Experience | Two indexed career entries, latest first, dates/role/contributions |
+| Education | Three archive records with all/completed/ongoing filtering |
+| Tesla | Personal model reference, illustrative colour samples, documentation boundary |
+| Dance | Separate Athlete and Teacher disclosures; real-media/detail placeholders |
+| Contact | Actual email, topic-prefilled mailto, CV, social profiles and Marco.AI |
+
+Native disclosures keep all document content in SSR HTML. The selected project
+or skill opens initially, but the others are not dropped from the markup.
+Index links enhance normal anchors by opening the target disclosure and focusing
+its summary. Archive filters start at All and do not remove other source data.
+
+Tesla demo state is temporary. Each opening resets both the selected sample and
+the world car material; the sample never claims to be the owner's actual colour
+or a completed wrap. No fake project links, images, before/after, competition
+results, lessons schedule or service offerings are added.
+
+## Scene modules
+
+- createIslandGame initializes the world and exposes start/pause/focus, touch,
+  jump, travelTo, inspect/leaveStation, beginTransit/skipTransit, theme, reduced
+  motion, car colour and disposal. onOpenObject opens indexed content;
+  onTravel reports a nearby/running guided route.
+- createIslandWorld composes terrain, bridges, ocean and architecture, plus
+  scenery/ambience and independently owned architectural foundations. It forwards
+  car colour and camera-distance detail visibility.
+- createIslandArchitecture builds the studio, digital workshop, mechanical
+  suspended laboratory, two career stations, observatory/archive, car garage,
+  dance pavilion and lighthouse. Harbor/signage and low exhibit objects complete
+  the place identity. Batches are owned by the module.
+- createIslandHotspots owns lightweight shared selection-ring geometry and
+  materials, positioned with getGroundHeight over actual decks/bridges/docks.
+  It does not own long canvas text or old board panels.
+- createTransitProps owns the temporary boat and parachute meshes.
+- createIslandTerrainArt, createIslandBridges and createIslandOcean own their
+  geometry/materials/textures/render targets and expose explicit disposal.
+- createIslandPhysics owns Rapier surfaces/hulls and fixed-step movement,
+  last-safe recovery, supported teleport, stop and disposal. Its support state
+  uses getGroundHeight rather than terrain alone beneath structural floors.
+- island-foundation-map supplies pure exact terrain-triangle footprint clipping
+  and 71 shared boxes; createIslandFoundations owns their visible masonry/timber
+  batches. The previous 59 Studio/Archive solids plus eight Dance piers/four
+  cross-bearers sit below existing decks with 24 cm soil embedment or seabed
+  footing. They collide in Rapier without adding a new walking plane.
+  Contact's four short masonry toes are separate local building hulls among its
+  18 solids, not additions to this existing 71-box foundation owner.
+- buildExhibitCopy remains renderer-independent, supplying short factual object
+  titles/captions and contact actions from the same localized content.
+- createIslandAudio creates no playback until explicit user opt-in.
+
+The central map has 21 hotspots; renderer and physics must consume their actual
+transforms and approach clearings. Area IDs are not separate terrain meshes.
+See [CODEBASE.md](./CODEBASE.md) for geography and surface contracts.
+
+## Local asset review
+
+`/asset-lab` is an isolated loopback-host-only review page, not a new public
+content section. A fixed catalog selects bridge/palm/cliff/cliff-v2/studio/
+studio-v2/workshop/archive/laboratory/harbor/dance/lighthouse
+and validated master/batched variants. It displays
+an image-generated reference beside the actual embedded-texture GLB, with orbit
+and front/right/top orthographic cameras, measured file/geometry/resource/bounds
+statistics and an explicitly non-binding master profile. Named-root extraction
+excludes Blender preview lights/cameras. Texture failures must be errors, never
+an apparently successful white model. Loading is abortable, rendering on-demand
+and all owned geometries/materials/textures/ImageBitmaps are disposed on reload
+and exit. Missing GLBs, no JavaScript or unavailable WebGL leave the drawings
+and navigation meaningful. It imports no game/map/physics modules.
+
+The actual world separately owns createHomeStudioAsset,
+createDigitalWorkshopAsset, createArchiveObservatoryAsset,
+createSuspendedLaboratoryAsset, createWelcomeHarborAsset, createDancePavilionAsset
+and createContactLighthouseAsset: studio-v2, workshop, archive, laboratory, harbor,
+Dance and Contact aggregates replace their
+visible fallbacks only after independent successful loading. Shared
+map support/hulls remain active regardless of loading. This static prototype
+does not gate reading, engine readiness or focus and is not a production LOD.
+Harbor revision 3 hides only Architecture: welcome after ready, on its lateral 6.2×4.2 m
+floor; it does not replace spawn/plaza, docks or the other main-land buildings.
+Its four semantic groups remain inspectable through the tenth closed Asset Lab
+ID, harbor. Actual binary/parity and projection checks are separate from fresh
+built-browser loading/failure, physical-device or art acceptance.
+Dance is the eleventh static catalog ID and sixth mounted building owner.
+Revision 4's 6,490,128-byte, 28-mesh, 153,778-triangle aggregate retains the
+7,481,860-byte master's embedded PBR material/image/hard-hull contract. It uses
+an unscaled 22×16×.24 m structural floor at (82,−.54,100) with 28 solids; only
+Architecture: dance hides on success. The ground access skirts the west/front
+posts via (69.8,104) → (70.2,109.5) → (77,110.5) → arrival (82,114), without moving
+the bridge. WALK_PATHS follows it; historical seed clearance keeps 196 props
+unchanged. Six resulting terrain buffers and 21 hotspot anchors are preserved.
+
+createIslandExplorer owns an independent rigid-joint loader and the existing
+procedural fallback. Five named torso/arm/leg pivots preserve the foot origin and
+existing Rapier capsule. It must not run through the static scene flattener.
+Export and browser readiness are recorded separately in design-qa.md.
+This makes eight independent gameplay asset owners, twelve static catalog
+masters/aggregates and thirteen masters including explorer. Seventeen drawings
+remain modelling references, not automatic image-to-3D or fidelity approval.
+
+The Contact revision-2 owner mounts an experimental aggregate. Final lint/build,
+scoped CPU gates and independent final3059 browser smoke pass: eight ready owners,
+one canvas, desktop/emulated-mobile day/night, Contact HTML, reader/chat pause/
+focus, touch end/cancel and isolated Contact404 fallback/recovery. No AI requests
+or audio playback occur. Rounded-coordinate stability is not absolute-precision motion
+proof; whole-HUD/art, real-device/FPS, all-transfer and live preference checks
+remain open, including hint/hut-roof and palm/avatar portrait occlusion.
+The lighthouse is the twelfth static catalog ID; the new seventeenth 4K sheet
+guides original geometry, not automatic reconstruction. There are thirteen
+masters and eight async owners: seven independent building loaders plus explorer.
+Its actual aggregate is 7,392,264 bytes/45 meshes/115,524 triangles, with 25 PBR
+materials and 8 embedded 512px images. The 8,843,728-byte master stays review-only;
+native/binary/parity checks pass without raising runtime guards. Existing six-building readiness is not evidence
+for Contact. Its cream block tower, octagonal amber lantern, curved terracotta
+radio-hut roof and attached greenery retain shell/roof/interior/decor groups.
+The tower root is (17,.26,69); only the small hut floor is centred at
+(11.8,.26,71.7), 6.6×4.6×.24 m, with 18 map solids and one existing contact
+station. It adds the seventh support deck, not another territory or upper floor.
+Welcome-to-Dance bends north through (15,64) → (23,65) before the unchanged
+bridge shore. The six terrain XYZ buffers, 196 props and 21 stations are unchanged.
+No reshaping is performed here; future user-authorized terrain changes require
+coordinated art/map/physics/route review. Local docs do not establish deployment.
+
+## Boot, chat and server boundaries
+
+Boot remains skippable, localized and latched through lib/boot-state.ts. It is an
+intro, not a fabricated percentage of loaded assets. Engine readiness separately
+controls the play action; reading remains useful before game initialization.
+On a definitive WebGL failure the opening primary action becomes an enabled
+localized reader button, not a permanently spinning/loading disabled control.
+
+PersonAIDock lazily mounts the real HeroMiniChat once and preserves its state
+when closed. personai:state pauses gameplay. Focus, Escape, hidden/inert and
+Turnstile behavior remain owned by the chat. No local mock replaces inference.
+
+The Astro AI and CV routes are unchanged by the world redesign. Availability
+of UI controls does not establish live provider access. Current browser and
+build evidence belongs in [design-qa.md](../design-qa.md).

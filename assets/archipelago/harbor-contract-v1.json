@@ -1,0 +1,58 @@
+{
+  "schema": "archipelago-static-building-contract-v1",
+  "asset": "welcome-harbor-v1",
+  "root": "WelcomeHarbor_V1_Origin_At_Deck_Centre",
+  "units": "metres",
+  "axes": "Local glTF Y-up: X right, Y up, Z south; entrance opens toward +X. Blender(X,Y,Z) -> glTF(X,Z,-Y). No runtime yaw rotation.",
+  "anchor": { "island": "welcome", "x": -13, "y": 12.06, "z": 70, "yaw": 0 },
+  "deck": { "id": "welcome-harbor-deck", "x": 0, "z": 0, "width": 6.2, "depth": 4.2, "bottom": -0.24, "height": 0.24, "walkingTop": 0, "yaw": 0 },
+  "runtimeGroups": ["shell", "roof", "interior", "decor"],
+  "semanticNodes": ["Harbor_shell", "Harbor_roof", "Harbor_interior", "Harbor_decor"],
+  "visualEnvelope": { "shellWidth": 5.5, "shellDepth": 3.5, "roofWidth": 6.5, "roofDepth": 4.7, "roofSurfaceHalfDepth": 2.09, "heightMax": 7, "roofSoftNonSolid": true },
+  "navigation": {
+    "entry": { "x": 13, "z": -5 },
+    "mapApproach": { "x": 2.6, "z": -0.7 },
+    "outsideEntry": { "x": 3.7, "z": 0.6 },
+    "insideEntry": { "x": 0.65, "z": 0.6 },
+    "entryLaneClear": { "xMin": 0.65, "xMax": 3.7, "zMin": 0.5, "zMax": 0.7 },
+    "frontPortal": { "x": 2.55, "zMin": -1.33, "zMax": 1.33, "width": 2.66 },
+    "front": "Open +X toward the existing plaza. Four corner posts only; no front wall, steps, continuous rail or extra solid centre post.",
+    "noUpperWalkingFloors": true
+  },
+  "stations": [],
+  "hulls": [
+    { "id": "harbor-post-back-north", "role": "post", "kind": "box", "x": -2.55, "z": -1.5, "width": 0.34, "depth": 0.34, "bottom": 0, "height": 3.65, "yaw": 0 },
+    { "id": "harbor-post-back-south", "role": "post", "kind": "box", "x": -2.55, "z": 1.5, "width": 0.34, "depth": 0.34, "bottom": 0, "height": 3.65, "yaw": 0 },
+    { "id": "harbor-post-front-north", "role": "post", "kind": "box", "x": 2.55, "z": -1.5, "width": 0.34, "depth": 0.34, "bottom": 0, "height": 3.65, "yaw": 0 },
+    { "id": "harbor-post-front-south", "role": "post", "kind": "box", "x": 2.55, "z": 1.5, "width": 0.34, "depth": 0.34, "bottom": 0, "height": 3.65, "yaw": 0 },
+    { "id": "harbor-back-wall", "role": "wall", "kind": "box", "x": -2.65, "z": 0, "width": 0.16, "depth": 3.3, "bottom": 0, "height": 2.65, "yaw": 0 },
+    { "id": "harbor-counter", "role": "desk", "kind": "box", "x": -1.6, "z": 0, "width": 0.9, "depth": 2.15, "bottom": 0, "height": 1.1, "yaw": 0 },
+    { "id": "harbor-map-desk", "role": "desk", "kind": "box", "x": 1.1, "z": -0.7, "width": 1.2, "depth": 1.4, "bottom": 0, "height": 1.2, "yaw": 0 },
+    { "id": "harbor-crate", "role": "furniture", "kind": "box", "x": -0.15, "z": -1.3, "width": 0.65, "depth": 0.65, "bottom": 0, "height": 0.65, "yaw": 0 },
+    { "id": "harbor-compass-mast", "role": "machine", "kind": "cylinder", "x": -2.85, "z": -2.35, "radius": 0.105, "width": 0.21, "depth": 0.21, "bottom": -0.12, "height": 5.82, "yaw": 0 },
+    { "id": "harbor-barrel", "role": "furniture", "kind": "cylinder", "x": -0.2, "z": 1.2, "radius": 0.4, "width": 0.8, "depth": 0.8, "bottom": 0, "height": 1, "yaw": 0 },
+    { "id": "harbor-pot", "role": "furniture", "kind": "cylinder", "x": -1.9, "z": 1.65, "radius": 0.35, "width": 0.7, "depth": 0.7, "bottom": 0, "height": 0.8, "yaw": 0 }
+  ],
+  "collisionPolicy": {
+    "solid": "One 6.2x4.2 structural floor plus the eleven listed conservative hulls. Ten solids stand on the floor; the lowered mast base is on existing terrain just north of the roof. No separate landing, bridge or upper walking floor.",
+    "softNonSolid": ["roof and high rafters", "cloth and pennants", "leaves", "lamps", "compass decoration", "cartographic schematics", "books and small tools"],
+    "noUpperWalkingFloors": true,
+    "docksNotMerged": true
+  },
+  "mapProposal": {
+    "architectureClearing": null,
+    "preserved": ["six entire top/index buffers", "576 Float32 shoreline XYZ vertices", "four bridge profiles", "all 196 existing WORLD_PROPS", "all 21 hotspot anchors", "spawn (0,65) at Y12", "CONTACT_DOCK", "both boarding ramps", "four guided-transfer endpoints", "WALK_PATHS"],
+    "seededPlacementPolicy": "Exclude only the new Welcome deck/hulls from seeded WORLD_PROPS rejection, retaining every old position/id/scale/yaw. Do not exclude them from navigation or Rapier. Nearest preserved palm trunk is 2.7668m beyond the high soft roof envelope.",
+    "measuredTerrainRange": [11.93039, 11.99119],
+    "measuredPathEdgeClearanceMin": 1.823,
+    "existingDocks": {
+      "contact": { "x": 0, "z": 89, "top": 9.335671792282461, "width": 5, "depth": 7.5, "owner": "existing world/physics, not Harbor GLB" },
+      "harborBoatStart": { "x": -27, "z": 63 },
+      "harborBoatEnd": { "x": -47, "z": 63 },
+      "owner": "existing separate boarding ramps and transit props"
+    }
+  },
+  "authoringBudgets": { "trianglesSafetyMax": 135000, "materialsMax": 26, "imagesMax": 10, "textureDimensionMax": 384, "runtimeBytesMax": 8388608, "runtimeMeshesMax": 96, "runtimeTrianglesMax": 180000 },
+  "factualBoundary": "Original fictional nautical welcome kiosk. Decorative map and compass are not personal facts, project screenshots or proof. No new content station, personal claim or unlock gate.",
+  "status": "Approved source contract; local map/fallback and actual-module Rapier implementation in progress. Actual GLB fidelity, runtime readiness and device acceptance remain unverified."
+}

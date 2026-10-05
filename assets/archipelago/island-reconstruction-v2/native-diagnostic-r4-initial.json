@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "mutation": {
+    "id": "projects-v2-r4-constrained-geology-20261005",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "access": "mutation",
+    "status": "failed",
+    "baseRevision": 3,
+    "headRevision": 3,
+    "headSceneSequence": 0,
+    "stale": false,
+    "sceneSequenceBefore": 0,
+    "sceneSequenceAfter": null,
+    "revisionBefore": 3,
+    "revisionAfter": null,
+    "createdAt": "2026-10-05T00:12:44.222Z",
+    "startedAt": "2026-10-05T00:12:44.263Z",
+    "finishedAt": "2026-10-05T00:12:54.374Z",
+    "result": null,
+    "output": {
+      "stdoutTail": "",
+      "stderrTail": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r4-constrained-geology-20261005>\", line 765, in <module>\n  File \"<operation:projects-v2-r4-constrained-geology-20261005>\", line 458, in rebuild_cap\n  File \"<operation:projects-v2-r4-constrained-geology-20261005>\", line 225, in cdt\nRuntimeError: CDT made a collapsed planar face\n",
+      "truncated": false
+    },
+    "error": {
+      "code": "PYTHON_EXCEPTION",
+      "message": "CDT made a collapsed planar face",
+      "retryable": false
+    },
+    "artifacts": null,
+    "generatedArtifacts": []
+  },
+  "recipe": {
+    "file": "refine_projects_island_v2_r4_initial.py",
+    "sha256": "cb44beb92a5b35fe64d23c80e588cecc60b403180289b97cc5dd6f816fe06ad1"
+  },
+  "settledProjectAfterFailure": {
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "revision": 3,
+    "sceneSequence": 0,
+    "appliedSceneSequence": 0,
+    "activeOperationId": null,
+    "artifacts": {
+      "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+      "revision": 3,
+      "blend": {
+        "size": 23589256,
+        "etag": "e007c2880226a957b427e7861f84d208"
+      },
+      "glb": {
+        "size": 18215928,
+        "etag": "2a049ac3b947800f2cfe1fe341b7e955"
+      },
+      "generated": []
+    },
+    "createdAt": "2026-10-03T14:52:42.643Z",
+    "updatedAt": "2026-10-04T18:55:32.511Z"
+  },
+  "readOnlyDiagnostic": {
+    "operationId": "projects-v2-r4-cdt-failure-20261005",
+    "status": "succeeded",
+    "revisionBefore": 3,
+    "sceneSequenceAfter": 0,
+    "result": {
+      "error": "CDT made a collapsed planar face",
+      "completed": [],
+      "cdt_failure": {
+        "label": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau cap",
+        "triangle_ids": [
+          513,
+          515,
+          516
+        ],
+        "area_snapped": 0,
+        "points_snapped": [
+          [
+            0.6801642775535583,
+            -32.27900695800781
+          ],
+          [
+            0.6801651120185852,
+            -32.27900695800781
+          ],
+          [
+            0.6801645755767822,
+            -32.27900695800781
+          ]
+        ],
+        "points_raw": [
+          [
+            0.6801642775535583,
+            -32.27900695800781
+          ],
+          [
+            0.6801651120185852,
+            -32.27900695800781
+          ],
+          [
+            0.6801645755767822,
+            -32.27900695800781
+          ]
+        ],
+        "original_ids": [
+          [],
+          [],
+          []
+        ],
+        "boundary_count": 178,
+        "input_points": 511,
+        "output_points": 518
+      },
+      "temporary_query_only": true
+    }
+  },
+  "gameplaySourceChanged": false,
+  "goalComplete": false
+}

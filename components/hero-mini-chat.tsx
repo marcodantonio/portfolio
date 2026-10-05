@@ -1,5 +1,6 @@
 "use client";
 
+import { useReducedMotion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { useLanguage } from "@/context/language-context";
@@ -11,6 +12,7 @@ type Msg = { role: "user" | "ai"; text: string };
 export default function HeroMiniChat() {
   const { t, lang } = useLanguage();
   const { theme } = useTheme();
+  const reducedMotion = useReducedMotion();
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -81,7 +83,11 @@ export default function HeroMiniChat() {
       <div className="chat-hdr flex items-center gap-2.5 px-4 py-3">
         <span
           className="h-[7px] w-[7px] flex-shrink-0 rounded-full"
-          style={{ background: "#28C840", boxShadow: "0 0 6px #28C840", animation: "pulseDot 2.5s ease infinite" }}
+          style={{
+            background: "#28C840",
+            boxShadow: "0 0 6px #28C840",
+            animation: reducedMotion ? "none" : "pulseDot 2.5s ease infinite",
+          }}
         />
         <span className="chat-hdr-title font-mono text-[13px] font-medium">marco.ai</span>
         <span className="chat-hdr-sub ml-auto hidden font-mono text-[10.5px] sm:block">{t.hero.chatSub}</span>
@@ -91,6 +97,11 @@ export default function HeroMiniChat() {
       <div
         ref={msgsRef}
         data-lenis-prevent
+        role="log"
+        aria-label={t.journey.ai.label}
+        aria-live="polite"
+        aria-relevant="additions text"
+        aria-busy={loading}
         className="flex flex-col gap-2.5 overflow-y-auto px-4 py-3.5"
         style={{ height: "160px", scrollbarWidth: "thin" }}
       >
@@ -105,7 +116,7 @@ export default function HeroMiniChat() {
                 ? "chat-msg-ai self-start [border-bottom-left-radius:3px]"
                 : "chat-msg-user self-end [border-bottom-right-radius:3px]"
             }`}
-            style={{ animation: "msgIn 0.22s ease" }}
+            style={{ animation: reducedMotion ? "none" : "msgIn 0.22s ease" }}
           >
             {m.text}
           </div>
@@ -116,7 +127,7 @@ export default function HeroMiniChat() {
               <span
                 key={i}
                 className="h-1.5 w-1.5 rounded-full"
-                style={{ animation: `typDot 1.2s ease ${delay}s infinite` }}
+                style={{ animation: reducedMotion ? "none" : `typDot 1.2s ease ${delay}s infinite` }}
               />
             ))}
           </div>
@@ -128,6 +139,7 @@ export default function HeroMiniChat() {
         <div className="flex flex-wrap gap-1.5 px-3.5 py-2" style={{ borderTop: "1px solid rgba(124,107,255,0.1)" }}>
           {t.hero.chips.map((q) => (
             <button
+              type="button"
               key={q}
               onClick={() => send(q)}
               className="chat-chip rounded-full px-3 py-1.5 font-mono text-[10.5px]"
@@ -158,11 +170,12 @@ export default function HeroMiniChat() {
           style={{ fontFamily: "inherit" }}
         />
         <button
+          type="button"
           onClick={() => send(input)}
           disabled={loading}
-          className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-[7px] transition-all hover:brightness-110 hover:scale-105 disabled:opacity-50"
+          className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-[7px] hover:brightness-110 disabled:opacity-50"
           style={{ background: "var(--accent)" }}
-          aria-label="Send"
+          aria-label={t.hero.chatSend}
         >
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="22" y1="2" x2="11" y2="13" />

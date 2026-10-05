@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-all-contact-diagnostic-render-20261005",
+  "inspectedCommittedRevision": 7,
+  "plannedCandidateRevision": 8,
+  "committed": false,
+  "status": "DIAGNOSTIC CONTACTS_UNRESOLVED / NOT_MUTATION_READY",
+  "finishedAt": "2026-10-05T05:01:22.920Z",
+  "artApproved": false,
+  "allActuallyViewedByRoot": true,
+  "artifacts": [
+    {
+      "size": 352956,
+      "etag": "80b2264fa4b1026b9cb0441436cbde21",
+      "id": "93c5058384da32037ed59a37d6754fdb",
+      "name": "projects-island-v2-r8-contact-diagnostic-front.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480,
+      "file": "projects-island-v2-r8-contact-diagnostic-front.png"
+    },
+    {
+      "size": 379128,
+      "etag": "7263d7bf9af4a686bbf1dc1a735bae9e",
+      "id": "3456daecc92ea90d35847f997db3d88d",
+      "name": "projects-island-v2-r8-contact-diagnostic-hero.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480,
+      "file": "projects-island-v2-r8-contact-diagnostic-hero.png"
+    },
+    {
+      "size": 336504,
+      "etag": "c772cdf4fa85b406a836beddbbaecae3",
+      "id": "5a5b7e4072f8a26d394904291feed58e",
+      "name": "projects-island-v2-r8-contact-diagnostic-right.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480,
+      "file": "projects-island-v2-r8-contact-diagnostic-right.png"
+    },
+    {
+      "size": 429165,
+      "etag": "ad4ea5157f9670f676db184a2d46f5ff",
+      "id": "931441bdab3ae0f5e65a2ebc989f6749",
+      "name": "projects-island-v2-r8-contact-diagnostic-top.png",
+      "mediaType": "image/png",
+      "width": 640,
+      "height": 480,
+      "file": "projects-island-v2-r8-contact-diagnostic-top.png"
+    }
+  ],
+  "receipt": "../upper-saddle-contact-diagnostic.json"
+}

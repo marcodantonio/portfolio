@@ -1,0 +1,568 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r6-partial-geological-recomposition-20261005",
+  "revisionBefore": 5,
+  "revisionAfter": 6,
+  "sceneSequenceAfter": 0,
+  "status": "succeeded",
+  "finishedAt": "2026-10-05T03:06:18.261Z",
+  "recipeFile": "refine_projects_island_v2_r6_diagnostic.py",
+  "recipeSha256": "f951529f554340eb23d9247c2f83c0645e93e8a6db837906127eae4f53b2838b",
+  "result": {
+    "recipe": "projects-island-v2-r6-diagnostic-partial-geological-recomposition",
+    "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+    "audit": {
+      "meshes": 44,
+      "triangles": 109088,
+      "hard_triangle_limit": 180000,
+      "all_closed_positive": true,
+      "zero_area": 0,
+      "uv_degenerate": 0,
+      "normal_opposition": 0,
+      "body_xz_indices_exact": true,
+      "all_indices_and_counts_exact": true,
+      "all_original_submerged_geometry_exact": true,
+      "sea_ring_vertices_exact": 256,
+      "unselected_geometry_uv_corner_normals_exact": 22,
+      "original_pbr_definitions_exact": 2,
+      "original_packed_png_bytes_exact": 4,
+      "protected_clearing_approach_contact_basal_points_exact": true,
+      "actual_baseline_surface_pairs_exact": 25950,
+      "new_surface_contacts": 0,
+      "surface_contact_sha256": "21f58d004541ee648ffa55707ff694b9b68a2e0e98185f111f38abb8b8203c3d",
+      "not_union_self_intersection_or_art_approval": true,
+      "clearing": {
+        "summed_clipped_triangle_area_m2": 832.0000000000008,
+        "minimum_y": 4.800000190734863,
+        "maximum_y": 4.800000190734863,
+        "height_tolerance": 0.00001,
+        "not_union_or_physics_approval": true
+      },
+      "sea_origin_y": 0,
+      "foundation_y": -10,
+      "no_runtime_map_physics_ocean_mutations": true
+    },
+    "geometry": {
+      "Attached_Fracture_14": {
+        "changed_vertices": 129,
+        "maximum_move_metres": 0.3231610671212575,
+        "maximum_abs_y_move": 0.3059062957763672,
+        "minimum_original_face_cosine": 0.7039277941095263,
+        "minimum_area_ratio": 0.6479044996752392
+      },
+      "Attached_Fracture_15": {
+        "changed_vertices": 82,
+        "maximum_move_metres": 0.022915406692130113,
+        "maximum_abs_y_move": 0.02108907699584961,
+        "minimum_original_face_cosine": 0.999660658976637,
+        "minimum_area_ratio": 0.9530325803569881
+      },
+      "Attached_Fracture_16": {
+        "changed_vertices": 251,
+        "maximum_move_metres": 0.20741582705088227,
+        "maximum_abs_y_move": 0.19728946685791016,
+        "minimum_original_face_cosine": 0.031901611685039084,
+        "minimum_area_ratio": 0.6864373561440915
+      },
+      "Attached_Fracture_17": {
+        "changed_vertices": 75,
+        "maximum_move_metres": 0.07503604619380384,
+        "maximum_abs_y_move": 0.04842042922973633,
+        "minimum_original_face_cosine": 0.9962144263666293,
+        "minimum_area_ratio": 0.9291815660988498
+      },
+      "Attached_Fracture_18": {
+        "changed_vertices": 173,
+        "maximum_move_metres": 0.5741860839844822,
+        "maximum_abs_y_move": 0.560481071472168,
+        "minimum_original_face_cosine": 0.7471668633927031,
+        "minimum_area_ratio": 0.428027174544748
+      },
+      "Attached_Fracture_19": {
+        "changed_vertices": 189,
+        "maximum_move_metres": 0.19779854923883897,
+        "maximum_abs_y_move": 0.16914892196655273,
+        "minimum_original_face_cosine": 0.9900281438639219,
+        "minimum_area_ratio": 0.7271325133463022
+      },
+      "Attached_Fracture_20": {
+        "changed_vertices": 123,
+        "maximum_move_metres": 0.23139921038818825,
+        "maximum_abs_y_move": 0.22066879272460938,
+        "minimum_original_face_cosine": 0.9510979381868787,
+        "minimum_area_ratio": 0.7673818453529225
+      },
+      "Attached_Fracture_21": {
+        "changed_vertices": 187,
+        "maximum_move_metres": 0.27077571854098004,
+        "maximum_abs_y_move": 0.23955869674682617,
+        "minimum_original_face_cosine": 0.7435399820478066,
+        "minimum_area_ratio": 0.6887861545739624
+      },
+      "Attached_Fracture_22": {
+        "changed_vertices": 131,
+        "maximum_move_metres": 0.147211170387562,
+        "maximum_abs_y_move": 0.12769174575805664,
+        "minimum_original_face_cosine": 0.228767979680962,
+        "minimum_area_ratio": 0.4505082967001772
+      },
+      "Cannon_Asymmetric_High_Plateau": {
+        "changed_vertices": 352,
+        "maximum_move_metres": 0.9601185283824272,
+        "maximum_abs_y_move": 0.9181041717529297,
+        "minimum_original_face_cosine": 0.9022864594490869,
+        "minimum_area_ratio": 0.5928157638474604
+      },
+      "Cannon_Continuous_Middle_Terrace": {
+        "changed_vertices": 336,
+        "maximum_move_metres": 0.7929748585610783,
+        "maximum_abs_y_move": 0.7297229766845703,
+        "minimum_original_face_cosine": 0.7440132874076187,
+        "minimum_area_ratio": 0.5988341651253412
+      },
+      "Continuous_Connected_Coast_And_Bedrock": {
+        "changed_vertices": 875,
+        "maximum_move_metres": 0.6750000715255737,
+        "maximum_abs_y_move": 0.6750000715255737,
+        "minimum_original_face_cosine": 0.9143702161796564,
+        "minimum_area_ratio": 0.8112116673065823
+      },
+      "East_Long_Lower_Shoulder": {
+        "changed_vertices": 287,
+        "maximum_move_metres": 0.7586796298277811,
+        "maximum_abs_y_move": 0.7031726837158203,
+        "minimum_original_face_cosine": 0.8653627188768428,
+        "minimum_area_ratio": 0.5451619143145292
+      },
+      "Front_Central_Long_Finger": {
+        "changed_vertices": 169,
+        "maximum_move_metres": 0.48325582407301726,
+        "maximum_abs_y_move": 0.454958438873291,
+        "minimum_original_face_cosine": 0.9108874717919312,
+        "minimum_area_ratio": 0.7438945749488692
+      },
+      "Front_East_Short_Finger": {
+        "changed_vertices": 115,
+        "maximum_move_metres": 0.3803364221077342,
+        "maximum_abs_y_move": 0.36363816261291504,
+        "minimum_original_face_cosine": 0.9389362792072858,
+        "minimum_area_ratio": 0.791298427999052
+      },
+      "Front_Left_Principal_Finger": {
+        "changed_vertices": 165,
+        "maximum_move_metres": 0.3928074284183039,
+        "maximum_abs_y_move": 0.34277844429016113,
+        "minimum_original_face_cosine": 0.9558416504236932,
+        "minimum_area_ratio": 0.714324942703899
+      },
+      "Front_Low_Connecting_Ridge_Ledge": {
+        "changed_vertices": 187,
+        "maximum_move_metres": 0.14795528510508507,
+        "maximum_abs_y_move": 0.13654565811157227,
+        "minimum_original_face_cosine": 0.08077256128060296,
+        "minimum_area_ratio": 0.7748356138928145
+      },
+      "Rear_Connected_Low_Saddle": {
+        "changed_vertices": 672,
+        "maximum_move_metres": 0.8326062116309455,
+        "maximum_abs_y_move": 0.8172736167907715,
+        "minimum_original_face_cosine": 0.7920927375535972,
+        "minimum_area_ratio": 0.5825194411085627
+      },
+      "West_Front_Inner_Cleft_Buttress": {
+        "changed_vertices": 247,
+        "maximum_move_metres": 0.7014687750616211,
+        "maximum_abs_y_move": 0.6766438484191895,
+        "minimum_original_face_cosine": 0.8214198777389764,
+        "minimum_area_ratio": 0.6991046057922696
+      },
+      "West_Front_Outer_Cleft_Buttress": {
+        "changed_vertices": 246,
+        "maximum_move_metres": 0.40749631746176773,
+        "maximum_abs_y_move": 0.361846923828125,
+        "minimum_original_face_cosine": 0.9683296569149794,
+        "minimum_area_ratio": 0.7172567639172439
+      },
+      "Western_Broad_Second_Terrace": {
+        "changed_vertices": 216,
+        "maximum_move_metres": 0.6909481312182448,
+        "maximum_abs_y_move": 0.644587516784668,
+        "minimum_original_face_cosine": 0.6952843038393399,
+        "minimum_area_ratio": 0.5848147353610874
+      },
+      "Western_High_Shoulder_Connected_To_Cannon": {
+        "changed_vertices": 92,
+        "maximum_move_metres": 0.4831103370152956,
+        "maximum_abs_y_move": 0.4729042053222656,
+        "minimum_original_face_cosine": 0.8378048450125459,
+        "minimum_area_ratio": 0.7054556005638519
+      }
+    },
+    "protection": {
+      "Attached_Fracture_14": {
+        "protected": 733,
+        "free": 134,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_15": {
+        "protected": 642,
+        "free": 102,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_16": {
+        "protected": 880,
+        "free": 270,
+        "adaptive_added": 5,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_17": {
+        "protected": 1001,
+        "free": 75,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_18": {
+        "protected": 777,
+        "free": 179,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_19": {
+        "protected": 842,
+        "free": 191,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_20": {
+        "protected": 864,
+        "free": 146,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_21": {
+        "protected": 609,
+        "free": 187,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Attached_Fracture_22": {
+        "protected": 585,
+        "free": 131,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Cannon_Asymmetric_High_Plateau": {
+        "protected": 1260,
+        "free": 352,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Cannon_Continuous_Middle_Terrace": {
+        "protected": 2346,
+        "free": 336,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Continuous_Connected_Coast_And_Bedrock": {
+        "protected": 6315,
+        "free": 1106,
+        "adaptive_added": 0,
+        "embedded_faces": 1375,
+        "ambiguous_faces": 3
+      },
+      "East_Long_Lower_Shoulder": {
+        "protected": 1076,
+        "free": 287,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Front_Central_Long_Finger": {
+        "protected": 858,
+        "free": 169,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Front_East_Short_Finger": {
+        "protected": 622,
+        "free": 115,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Front_Left_Principal_Finger": {
+        "protected": 848,
+        "free": 165,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Front_Low_Connecting_Ridge_Ledge": {
+        "protected": 956,
+        "free": 210,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Rear_Connected_Low_Saddle": {
+        "protected": 4995,
+        "free": 672,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "West_Front_Inner_Cleft_Buttress": {
+        "protected": 1451,
+        "free": 247,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "West_Front_Outer_Cleft_Buttress": {
+        "protected": 1892,
+        "free": 246,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Western_Broad_Second_Terrace": {
+        "protected": 1709,
+        "free": 216,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      },
+      "Western_High_Shoulder_Connected_To_Cannon": {
+        "protected": 853,
+        "free": 92,
+        "adaptive_added": 0,
+        "embedded_faces": 0,
+        "ambiguous_faces": 0
+      }
+    },
+    "artistic_targets": {
+      "diagnostic_candidate_only": true,
+      "full_reference_fidelity_verified": false,
+      "body_and_major_caps_not_noop": {
+        "body_changed_vertices": 875,
+        "body_maximum_abs_y_delta_metres": 0.6750000715255737,
+        "major_caps_significant": 11,
+        "major_caps_attempted": 11,
+        "failclosed_minimum_body_vertices": 120,
+        "failclosed_minimum_body_y_delta_metres": 0.65,
+        "failclosed_minimum_major_caps": 8,
+        "major_cap_vertex_threshold": 12,
+        "major_cap_delta_threshold_metres": 0.35
+      },
+      "rear_fracture_variation": {
+        "target_significant_owners": 4,
+        "actual_significant_owners": 3,
+        "significant_owners": [
+          "Attached_Fracture_14",
+          "Attached_Fracture_18",
+          "Attached_Fracture_21"
+        ],
+        "vertex_threshold": 12,
+        "delta_threshold_metres": 0.25,
+        "geometric_target_met": false,
+        "status": "OPEN"
+      },
+      "front_low_connecting_ledge_reauthoring": {
+        "changed_vertices": 187,
+        "maximum_move_metres": 0.14795528510508507,
+        "vertex_threshold": 15,
+        "delta_threshold_metres": 0.35,
+        "geometric_target_met": false,
+        "status": "OPEN"
+      }
+    },
+    "backtracking_alpha": 0.375,
+    "failed_backtracking_steps": [
+      {
+        "alpha": 1,
+        "contact": null,
+        "bad_owners": [
+          {
+            "owner": "Attached_Fracture_16",
+            "bad_faces_count": 9,
+            "minimum_area_ratio": 0.17524915202795166,
+            "minimum_original_face_cosine": -0.20799155364204808
+          },
+          {
+            "owner": "Attached_Fracture_18",
+            "bad_faces_count": 54,
+            "minimum_area_ratio": 0.2351416006065637,
+            "minimum_original_face_cosine": -0.9986519033240535
+          },
+          {
+            "owner": "Attached_Fracture_22",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.37850553501069734,
+            "minimum_original_face_cosine": -0.7598860399090887
+          },
+          {
+            "owner": "Cannon_Asymmetric_High_Plateau",
+            "bad_faces_count": 16,
+            "minimum_area_ratio": 0.254463910318027,
+            "minimum_original_face_cosine": -0.43724044179299265
+          },
+          {
+            "owner": "Cannon_Continuous_Middle_Terrace",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.2722471674652782,
+            "minimum_original_face_cosine": -0.301270202780184
+          },
+          {
+            "owner": "East_Long_Lower_Shoulder",
+            "bad_faces_count": 20,
+            "minimum_area_ratio": 0.061844675424592196,
+            "minimum_original_face_cosine": -0.4826395166258907
+          },
+          {
+            "owner": "Front_Low_Connecting_Ridge_Ledge",
+            "bad_faces_count": 2,
+            "minimum_area_ratio": 0.47737551043023824,
+            "minimum_original_face_cosine": -0.1914734421385458
+          },
+          {
+            "owner": "Rear_Connected_Low_Saddle",
+            "bad_faces_count": 5,
+            "minimum_area_ratio": 0.1119609873036704,
+            "minimum_original_face_cosine": -0.9529122465920581
+          },
+          {
+            "owner": "West_Front_Inner_Cleft_Buttress",
+            "bad_faces_count": 2,
+            "minimum_area_ratio": 0.2109608639052139,
+            "minimum_original_face_cosine": -0.10603841286552412
+          },
+          {
+            "owner": "Western_Broad_Second_Terrace",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.3125358789569294,
+            "minimum_original_face_cosine": -0.4051564485373506
+          }
+        ]
+      },
+      {
+        "alpha": 0.75,
+        "contact": null,
+        "bad_owners": [
+          {
+            "owner": "Attached_Fracture_16",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.37811779743646257,
+            "minimum_original_face_cosine": -0.16192080392752803
+          },
+          {
+            "owner": "Attached_Fracture_18",
+            "bad_faces_count": 40,
+            "minimum_area_ratio": 0.04742402184854036,
+            "minimum_original_face_cosine": -0.9833759481841042
+          },
+          {
+            "owner": "Attached_Fracture_22",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.49621188034824315,
+            "minimum_original_face_cosine": -0.6655589619764756
+          },
+          {
+            "owner": "East_Long_Lower_Shoulder",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.23726318113853972,
+            "minimum_original_face_cosine": -0.045133838179689766
+          },
+          {
+            "owner": "Front_Low_Connecting_Ridge_Ledge",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.5768665857030598,
+            "minimum_original_face_cosine": -0.1384473893009782
+          },
+          {
+            "owner": "Rear_Connected_Low_Saddle",
+            "bad_faces_count": 4,
+            "minimum_area_ratio": 0.16792487801834505,
+            "minimum_original_face_cosine": 0.33621153831691775
+          },
+          {
+            "owner": "Western_Broad_Second_Terrace",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.4378336831854464,
+            "minimum_original_face_cosine": -0.11308346118925214
+          }
+        ]
+      },
+      {
+        "alpha": 0.5,
+        "contact": null,
+        "bad_owners": [
+          {
+            "owner": "Attached_Fracture_16",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.5831817893449449,
+            "minimum_original_face_cosine": -0.06609808575558396
+          },
+          {
+            "owner": "Attached_Fracture_22",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.6159802692610117,
+            "minimum_original_face_cosine": -0.3123315501000916
+          },
+          {
+            "owner": "Front_Low_Connecting_Ridge_Ledge",
+            "bad_faces_count": 1,
+            "minimum_area_ratio": 0.7046183506608462,
+            "minimum_original_face_cosine": -0.029262855187715632
+          }
+        ]
+      }
+    ],
+    "adaptive_fragile_face_repairs": [
+      {
+        "round": 1,
+        "newly_protected_vertices": 5,
+        "actual_failed_faces": {
+          "Attached_Fracture_16": [
+            {
+              "face": 801,
+              "reason": "actual_area_or_winding_failure"
+            },
+            {
+              "face": 802,
+              "reason": "actual_area_or_winding_failure"
+            }
+          ]
+        }
+      }
+    ],
+    "baseline_contacts": {
+      "tested_actual_triangle_pairs": 129482,
+      "surface_contact_pairs": 25950,
+      "surface_pair_sha256": "21f58d004541ee648ffa55707ff694b9b68a2e0e98185f111f38abb8b8203c3d",
+      "new_contact": null,
+      "contact_scope": "Actual 3D surface SAT plus coplanar in-plane axes; not union/volume/self-intersection proof"
+    },
+    "changed_geometry_owners": 22,
+    "painted_owners": 44,
+    "new_mesh_owners": 0,
+    "new_vertices_triangles": 0,
+    "provider_requests": 0,
+    "renders": 0,
+    "no_automatic_reconstruction": true
+  },
+  "fullArtistAcceptance": false
+}

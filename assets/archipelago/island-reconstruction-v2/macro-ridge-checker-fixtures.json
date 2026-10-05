@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "command": "node scripts/lib/projects-v2-macro-ridge-comparison.mjs --self-test",
+  "exitCode": 0,
+  "scriptSHA256": "39d1abfc2321ad1c946e8dedf0d12a33b82aadc8d2809056cdf071e9f9a05296",
+  "baselineSHA256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+  "baselineOwners": 44,
+  "frozenOwners": 28,
+  "retiredOwners": 15,
+  "protectedSaddleWholeFaces": 3714,
+  "whollySubmergedFaces": 19159,
+  "seaRingPoints": 256,
+  "apronSquareMetres": 832.0000000000008,
+  "prospectiveFaces": [
+    1049,
+    1519
+  ],
+  "synthetic": {
+    "scope": "Normalized in-memory comparator fixture from actual R7 cutloop; not an encoded GLB or native candidate",
+    "owners": 30,
+    "triangles": 67784,
+    "loopPoints": 360,
+    "capTriangles": 358,
+    "capAreaSquareMetres": 756.6019356086
+  },
+  "negativeFixtures": 18,
+  "actualMacroExportApproved": false,
+  "artApproved": false
+}

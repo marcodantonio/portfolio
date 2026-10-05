@@ -1,0 +1,549 @@
+{
+  "recipe": "refine_projects_island_v2_r4_canonical.py",
+  "sha256": "9d4cc4eaebe0986b77b89311852db0fa817fe9f0d59b0a4009b814f8ace71801",
+  "mutation": {
+    "ok": false,
+    "operation": {
+      "id": "projects-v2-r4-canonical-junctions-20261005",
+      "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+      "access": "mutation",
+      "status": "failed",
+      "baseRevision": 3,
+      "headRevision": 3,
+      "headSceneSequence": 0,
+      "stale": false,
+      "sceneSequenceBefore": 0,
+      "sceneSequenceAfter": null,
+      "revisionBefore": 3,
+      "revisionAfter": null,
+      "createdAt": "2026-10-05T00:25:08.802Z",
+      "startedAt": "2026-10-05T00:25:08.849Z",
+      "finishedAt": "2026-10-05T00:25:29.170Z",
+      "result": null,
+      "output": {
+        "stdoutTail": "",
+        "stderrTail": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r4-canonical-junctions-20261005>\", line 832, in <module>\n  File \"<operation:projects-v2-r4-canonical-junctions-20261005>\", line 747, in audit_sources\nRuntimeError: Actual R4 zero-area source: ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon triangle=1687 cross_length=4.018278929720422e-11\n",
+        "truncated": false
+      },
+      "error": {
+        "code": "PYTHON_EXCEPTION",
+        "message": "Actual R4 zero-area source: ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon triangle=1687 cross_length=4.018278929720422e-11",
+        "retryable": false
+      },
+      "artifacts": null,
+      "generatedArtifacts": []
+    },
+    "error": {
+      "code": "PYTHON_EXCEPTION",
+      "message": "Actual R4 zero-area source: ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon triangle=1687 cross_length=4.018278929720422e-11",
+      "retryable": false
+    },
+    "terminal": true,
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "sliverDiagnostic": {
+    "ok": true,
+    "operation": {
+      "id": "projects-v2-r4-canonical-sliver-diagnosis-20261005",
+      "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+      "access": "query",
+      "status": "succeeded",
+      "baseRevision": 3,
+      "headRevision": 3,
+      "headSceneSequence": 0,
+      "stale": false,
+      "sceneSequenceBefore": 0,
+      "sceneSequenceAfter": 0,
+      "revisionBefore": 3,
+      "revisionAfter": null,
+      "createdAt": "2026-10-05T00:26:27.802Z",
+      "startedAt": "2026-10-05T00:26:27.836Z",
+      "finishedAt": "2026-10-05T00:26:35.820Z",
+      "result": {
+        "cap": {
+          "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+          "triangles": 2276,
+          "vertices": 1140,
+          "cut_y": 11.015894889831543,
+          "upper_boundary_vertices": 120,
+          "cap_interior_points": 141,
+          "cap_triangles": 400,
+          "folded_planes": 3,
+          "real_v_faults": 2,
+          "canonical_fracture_graph": {
+            "analytical_junctions": 4,
+            "interior_constraint_runs": 5
+          }
+        },
+        "source_triangles": 2276,
+        "minimum_cross": 4.018278929720422e-11,
+        "bad": [
+          {
+            "id": 1398,
+            "ids": [
+              855,
+              857,
+              856
+            ],
+            "points": [
+              [
+                -19.699766159057617,
+                12.466151237487793,
+                -26.262964248657227
+              ],
+              [
+                -19.699737548828125,
+                12.46616268157959,
+                -26.26302146911621
+              ],
+              [
+                -19.699766159057617,
+                12.46615219116211,
+                -26.26296615600586
+              ]
+            ],
+            "cross": 6.924116427644287e-11
+          },
+          {
+            "id": 1410,
+            "ids": [
+              844,
+              839,
+              845
+            ],
+            "points": [
+              [
+                -18.630107879638672,
+                12.484920501708984,
+                -24.545562744140625
+              ],
+              [
+                -18.629945755004883,
+                12.484919548034668,
+                -24.545427322387695
+              ],
+              [
+                -18.630109786987305,
+                12.484920501708984,
+                -24.545564651489258
+              ]
+            ],
+            "cross": 5.0996625828251807e-11
+          },
+          {
+            "id": 1432,
+            "ids": [
+              868,
+              871,
+              869
+            ],
+            "points": [
+              [
+                -17.547826766967773,
+                13.170746803283691,
+                -29.002517700195312
+              ],
+              [
+                -17.547760009765625,
+                13.170764923095703,
+                -29.002567291259766
+              ],
+              [
+                -17.547822952270508,
+                13.170747756958008,
+                -29.002521514892578
+              ]
+            ],
+            "cross": 6.924116427644287e-11
+          },
+          {
+            "id": 1687,
+            "ids": [
+              810,
+              809,
+              811
+            ],
+            "points": [
+              [
+                -11.527458190917969,
+                13.174190521240234,
+                -23.517078399658203
+              ],
+              [
+                -11.527447700500488,
+                13.174189567565918,
+                -23.51707649230957
+              ],
+              [
+                -11.52746868133545,
+                13.17419147491455,
+                -23.5170841217041
+              ]
+            ],
+            "cross": 4.018278929720422e-11
+          }
+        ],
+        "original_source_minimum_cross": 2.2389136572020924e-9
+      },
+      "output": {
+        "stdoutTail": "",
+        "stderrTail": "",
+        "truncated": false
+      },
+      "error": null,
+      "artifacts": null,
+      "generatedArtifacts": []
+    },
+    "terminal": true,
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/706f7c64-0fc2-4bcf-bdfe-0a4157c34a65"
+  },
+  "actualBoundaryOrigins": {
+    "ok": true,
+    "operation": {
+      "id": "projects-v2-r4-canonical-cdt-origins-20261005",
+      "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+      "access": "query",
+      "status": "succeeded",
+      "baseRevision": 3,
+      "headRevision": 3,
+      "headSceneSequence": 0,
+      "stale": false,
+      "sceneSequenceBefore": 0,
+      "sceneSequenceAfter": 0,
+      "revisionBefore": 3,
+      "revisionAfter": null,
+      "createdAt": "2026-10-05T00:28:05.768Z",
+      "startedAt": "2026-10-05T00:28:05.802Z",
+      "finishedAt": "2026-10-05T00:28:13.316Z",
+      "result": {
+        "lowerVertices": 759,
+        "lowerTriangles": 1396,
+        "topVertices": 261,
+        "cdtInput": 261,
+        "outerCount": 120,
+        "generatedCDT": 0,
+        "bad": [
+          {
+            "triangle": 1398,
+            "points": [
+              [
+                -19.699766159057617,
+                12.466151237487793,
+                -26.262964248657227
+              ],
+              [
+                -19.699737548828125,
+                12.46616268157959,
+                -26.26302146911621
+              ],
+              [
+                -19.699766159057617,
+                12.46615219116211,
+                -26.26296615600586
+              ]
+            ],
+            "provenance": [
+              {
+                "meshId": 855,
+                "cdtId": 96,
+                "originalIds": [
+                  96
+                ],
+                "nearestInput": 96,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -19.699766159057617,
+                  -26.262964248657227
+                ],
+                "inputXZ": [
+                  -19.699766159057617,
+                  -26.262964248657227
+                ]
+              },
+              {
+                "meshId": 857,
+                "cdtId": 98,
+                "originalIds": [
+                  98
+                ],
+                "nearestInput": 98,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -19.699737548828125,
+                  -26.26302146911621
+                ],
+                "inputXZ": [
+                  -19.699737548828125,
+                  -26.26302146911621
+                ]
+              },
+              {
+                "meshId": 856,
+                "cdtId": 97,
+                "originalIds": [
+                  97
+                ],
+                "nearestInput": 97,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -19.699766159057617,
+                  -26.26296615600586
+                ],
+                "inputXZ": [
+                  -19.699766159057617,
+                  -26.26296615600586
+                ]
+              }
+            ]
+          },
+          {
+            "triangle": 1410,
+            "points": [
+              [
+                -18.630107879638672,
+                12.484920501708984,
+                -24.545562744140625
+              ],
+              [
+                -18.629945755004883,
+                12.484919548034668,
+                -24.545427322387695
+              ],
+              [
+                -18.630109786987305,
+                12.484920501708984,
+                -24.545564651489258
+              ]
+            ],
+            "provenance": [
+              {
+                "meshId": 844,
+                "cdtId": 85,
+                "originalIds": [
+                  85
+                ],
+                "nearestInput": 85,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -18.630107879638672,
+                  -24.545562744140625
+                ],
+                "inputXZ": [
+                  -18.630107879638672,
+                  -24.545562744140625
+                ]
+              },
+              {
+                "meshId": 839,
+                "cdtId": 80,
+                "originalIds": [
+                  80
+                ],
+                "nearestInput": 80,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -18.629945755004883,
+                  -24.545427322387695
+                ],
+                "inputXZ": [
+                  -18.629945755004883,
+                  -24.545427322387695
+                ]
+              },
+              {
+                "meshId": 845,
+                "cdtId": 86,
+                "originalIds": [
+                  86
+                ],
+                "nearestInput": 86,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -18.630109786987305,
+                  -24.545564651489258
+                ],
+                "inputXZ": [
+                  -18.630109786987305,
+                  -24.545564651489258
+                ]
+              }
+            ]
+          },
+          {
+            "triangle": 1432,
+            "points": [
+              [
+                -17.547826766967773,
+                13.170746803283691,
+                -29.002517700195312
+              ],
+              [
+                -17.547760009765625,
+                13.170764923095703,
+                -29.002567291259766
+              ],
+              [
+                -17.547822952270508,
+                13.170747756958008,
+                -29.002521514892578
+              ]
+            ],
+            "provenance": [
+              {
+                "meshId": 868,
+                "cdtId": 109,
+                "originalIds": [
+                  109
+                ],
+                "nearestInput": 109,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -17.547826766967773,
+                  -29.002517700195312
+                ],
+                "inputXZ": [
+                  -17.547826766967773,
+                  -29.002517700195312
+                ]
+              },
+              {
+                "meshId": 871,
+                "cdtId": 112,
+                "originalIds": [
+                  112
+                ],
+                "nearestInput": 112,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -17.547760009765625,
+                  -29.002567291259766
+                ],
+                "inputXZ": [
+                  -17.547760009765625,
+                  -29.002567291259766
+                ]
+              },
+              {
+                "meshId": 869,
+                "cdtId": 110,
+                "originalIds": [
+                  110
+                ],
+                "nearestInput": 110,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -17.547822952270508,
+                  -29.002521514892578
+                ],
+                "inputXZ": [
+                  -17.547822952270508,
+                  -29.002521514892578
+                ]
+              }
+            ]
+          },
+          {
+            "triangle": 1687,
+            "points": [
+              [
+                -11.527458190917969,
+                13.174190521240234,
+                -23.517078399658203
+              ],
+              [
+                -11.527447700500488,
+                13.174189567565918,
+                -23.51707649230957
+              ],
+              [
+                -11.52746868133545,
+                13.17419147491455,
+                -23.5170841217041
+              ]
+            ],
+            "provenance": [
+              {
+                "meshId": 810,
+                "cdtId": 51,
+                "originalIds": [
+                  51
+                ],
+                "nearestInput": 51,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -11.527458190917969,
+                  -23.517078399658203
+                ],
+                "inputXZ": [
+                  -11.527458190917969,
+                  -23.517078399658203
+                ]
+              },
+              {
+                "meshId": 809,
+                "cdtId": 50,
+                "originalIds": [
+                  50
+                ],
+                "nearestInput": 50,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -11.527447700500488,
+                  -23.51707649230957
+                ],
+                "inputXZ": [
+                  -11.527447700500488,
+                  -23.51707649230957
+                ]
+              },
+              {
+                "meshId": 811,
+                "cdtId": 52,
+                "originalIds": [
+                  52
+                ],
+                "nearestInput": 52,
+                "nearestDistance": 0,
+                "boundaryInput": true,
+                "outputXZ": [
+                  -11.52746868133545,
+                  -23.5170841217041
+                ],
+                "inputXZ": [
+                  -11.52746868133545,
+                  -23.5170841217041
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "output": {
+        "stdoutTail": "",
+        "stderrTail": "",
+        "truncated": false
+      },
+      "error": null,
+      "artifacts": null,
+      "generatedArtifacts": []
+    },
+    "terminal": true,
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/706f7c64-0fc2-4bcf-bdfe-0a4157c34a65"
+  },
+  "commitOccurred": false,
+  "settledPreviousRevision": 3,
+  "sceneSequence": 0,
+  "scope": "Exact readonly native reconstruction diagnostic; source area gate unchanged; no failed revision mounted"
+}

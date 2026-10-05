@@ -1,0 +1,26 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r5-bvh-api-20261005",
+  "status": "succeeded",
+  "revisionBefore": 4,
+  "sceneSequenceAfter": 0,
+  "result": {
+    "api": {
+      "fromPolygons": ".. classmethod:: FromPolygons(vertices, polygons, *, all_triangles=False, epsilon=0.0)\n\n   BVH tree constructed from geometry passed in as arguments.\n\n   :param vertices: float triplets each representing ``(x, y, z)`` coordinates.\n   :type vertices: Sequence[Sequence[float]]\n   :param polygons: Sequence of polygons, each containing indices to the vertices argument.\n   :type polygons: Sequence[Sequence[int]]\n   :param all_triangles: Use when all **polygons** are triangles for more efficient conversion.\n   :type all_triangles: bool\n   :param epsilon: Increase the threshold for detecting overlap and raycast hits.\n   :type epsilon: float\n   :return: BVHTree from polygon data.\n   :rtype: :class:`BVHTree`\n",
+      "overlap": ".. method:: overlap(other_tree, /)\n\n   Find overlapping indices between 2 trees.\n\n   :param other_tree: Other tree to perform overlap test on.\n   :type other_tree: :class:`BVHTree`\n   :return: Returns a list of unique index pairs, the first index referencing this tree, the second referencing the **other_tree**.\n   :rtype: list[tuple[int, int]]\n",
+      "nearest": ".. method:: find_nearest(origin, distance=1.84467e+19, /)\n\n   Find the nearest element (typically face index) to a point.\n\n   :param origin: Find nearest element to this point.\n   :type origin: :class:`Vector`\n   :param distance: Maximum distance threshold.\n   :type distance: float\n   :return: Returns a tuple: (position, normal, index, distance),\n      Values will all be None if no hit is found.\n   :rtype: tuple[:class:`Vector` | None, :class:`Vector` | None, int | None, float | None]\n"
+    },
+    "fixtures": {
+      "disjointCoplanarOverlappingBoxes": [],
+      "coplanarContained": [],
+      "crossingNonCoplanar": [
+        [
+          0,
+          0
+        ]
+      ],
+      "parallelSeparated": []
+    }
+  },
+  "interpretation": "Actual Blender5.2 BVH overlap misses the contained coplanar fixture. R5 contact protection must not rely on overlap alone."
+}

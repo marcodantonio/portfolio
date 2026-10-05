@@ -1,0 +1,1766 @@
+{
+  "schemaVersion": 1,
+  "study": "Projects bare-island V2",
+  "revision": 5,
+  "comparedWithRevision": 4,
+  "auditedOn": "2026-10-05",
+  "status": "PASS actual R4→R5 portable binary comparison; not visual/gameplay/union proof",
+  "files": {
+    "r4": {
+      "path": "assets/archipelago/island-reconstruction-v2/projects-island-v2-r4.glb",
+      "bytes": 14645972,
+      "sha256": "de0f985a5b3e505cbfc9e7d8c28fff0d3985326eef35eee223a6dc6fd948370b"
+    },
+    "r5": {
+      "path": "assets/archipelago/island-reconstruction-v2/projects-island-v2-r5.glb",
+      "bytes": 14684488,
+      "sha256": "93a39ca60a2feb7c21669eb003cc8938c98487f1a986c28eefe125d0e5520ec0"
+    }
+  },
+  "actualAssetStatistics": {
+    "r4": {
+      "owners": 44,
+      "primitives": 44,
+      "exportedVertices": 292041,
+      "triangles": 109088,
+      "boundsMinYUpMetres": [
+        -34.44200134277344,
+        -10,
+        -36.441688537597656
+      ],
+      "boundsMaxYUpMetres": [
+        34.27458572387695,
+        18.914897918701172,
+        34.44200134277344
+      ]
+    },
+    "r5": {
+      "owners": 44,
+      "primitives": 44,
+      "exportedVertices": 292492,
+      "triangles": 109088,
+      "boundsMinYUpMetres": [
+        -34.44200134277344,
+        -10,
+        -36.441688537597656
+      ],
+      "boundsMaxYUpMetres": [
+        34.27458572387695,
+        18.914897918701172,
+        34.44200134277344
+      ]
+    }
+  },
+  "comparativeSummary": {
+    "owners": 44,
+    "nonBodyWholeGeometryExact": 43,
+    "changedWholeGeometryOwners": 1,
+    "indexedRGBChangedOwners": 44,
+    "totalSubmergedTrianglesR4": 19159,
+    "totalSubmergedTrianglesR5": 19159
+  },
+  "method": {
+    "inputs": "Direct actual embedded GLB JSON/BIN decoding with complete active subtree Matrix4 transforms; actual indexed triangles and attributes, not manifests or accessor bounds alone",
+    "submerged": "Select actual transformed triangles with all3 vertices Y<=0; encode Float32 little-endian XYZ; canonicalize only cyclic corner rotations, never reversed winding; sort complete multiset retaining duplicates and compare SHA/count separately per44owner",
+    "wholeNonBody": "Same oriented Float32 XYZ triangle multiset for each of43 nonbody owners, independent of export vertex duplication and index/accessor ordering",
+    "bodyXZTopology": "Encode actual indexed triangle corner XZ Float32; canonical cyclic rotations only, retain duplicates; projected oriented multiset of14838 body triangles identical. This is exported corner-topology/geometry equivalence, not a claim of byte-identical source indices or accessors",
+    "bodyHeight": "Exact unique XZ groups with unchanged unique-Y multiplicity, ascending-height pairing. Maximum group multiplicity2; lower foundation/sea geometry unchanged independently. Actual positive upper-Y deltas bounded0.8m",
+    "seaRing": "Exact-position welded actual body points Y==0; sorted Float32 XYZ set of256 points and SHA compared",
+    "approaches": "Independent exact2D segment/triangle distance including crossing and endpoint containment; select all actual body triangles within prospective capsule radius+1.15m feather, compare complete oriented XYZ triangle multiset",
+    "clearing": "Full transformed upward-face clipping to X[-16,16]/Z[-16,10] and actual clipped Y classification at4.8/tolerance1e-5, not25 sparse probes alone",
+    "pngPbr": "Compare actual R4 portable embedded PNG payloads against actual R5 portable payloads; raw top-level material/texture/sampler JSON-array substrings and decoded values compared independently. Native source-packed MR payloads are deliberately not used as the portable baseline",
+    "color": "Actual expanded indexed RGB-corner multisets differ on44 owners; area-weighted actual triangle RGB means using linear COLOR_0. Categories use actual triangle centroid Y/XZ and geometric normal. Not rendered-pixel measurements"
+  },
+  "owners": [
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_00",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1272,
+      "fullGeometryTrianglesR5": 1272,
+      "fullGeometrySHA256R4": "0bf723dc40a297ea83d87985c17d5443676449787402bc52af7156e9bde511dd",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_01",
+      "submergedTriangles": 356,
+      "submergedOrientedFloat32SHA256": "76d885d9fc2b6132abb712429cd0250b5d17c1146137890bc2d7ee471260bbac",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1672,
+      "fullGeometryTrianglesR5": 1672,
+      "fullGeometrySHA256R4": "3fde671a45c9b191024d11be1b555b1b284ee11e051da063617562fc23061bb2",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_02",
+      "submergedTriangles": 354,
+      "submergedOrientedFloat32SHA256": "ba746b24f1ee0dc6c6e428c6b1676a8a211912f455c0d395a9f3a41d89f8b07b",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1500,
+      "fullGeometryTrianglesR5": 1500,
+      "fullGeometrySHA256R4": "2ce095f9faef972dfaa611ce6b5d75465cb4adf39d8f641784586a08c57fcc20",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_03",
+      "submergedTriangles": 347,
+      "submergedOrientedFloat32SHA256": "4dc38902bcc5e49c16ce1c8d5f7f510a77ff570bafbde1de631081424ca0c76f",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1414,
+      "fullGeometryTrianglesR5": 1414,
+      "fullGeometrySHA256R4": "9649becfcadb5b48c331ebe86cf27e28c904cca0633800f8816c3c52ae3912e0",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_04",
+      "submergedTriangles": 291,
+      "submergedOrientedFloat32SHA256": "fe3e2d6f0c0f47de3f121dd416b3d818919ff9689de27e97f4a722fd949fbdf3",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1248,
+      "fullGeometryTrianglesR5": 1248,
+      "fullGeometrySHA256R4": "634268db1d04cee36406804c8c00c1050ec1a52be295f2109416deed00cfdaa3",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_05",
+      "submergedTriangles": 302,
+      "submergedOrientedFloat32SHA256": "f23acbefcb1205c034cb95d2d88ebea06fa505e15fc4c7c490adf467a439c64b",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1084,
+      "fullGeometryTrianglesR5": 1084,
+      "fullGeometrySHA256R4": "69ab0b48fd52c870b00ac7da68e461469670a256fa458f6554d2d20d2b9618c6",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_06",
+      "submergedTriangles": 284,
+      "submergedOrientedFloat32SHA256": "d0f0d22c0ca39b51a55fc07e9269a4b6550d9eaa28b9651fc9d95bc21c8cfe73",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1024,
+      "fullGeometryTrianglesR5": 1024,
+      "fullGeometrySHA256R4": "6c6f035e50207b391977a9617c5ac3cef3fe96097208bcbb335b0ab83efea6d6",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_07",
+      "submergedTriangles": 265,
+      "submergedOrientedFloat32SHA256": "93465d26970941d77291179384797f58333b405c6a5ffdda124dbd6578103a1f",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 950,
+      "fullGeometryTrianglesR5": 950,
+      "fullGeometrySHA256R4": "4c886c0636bde75e56bd557a1375b1597d9957b109ce1b9db8eadc708e7a18a2",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_08",
+      "submergedTriangles": 236,
+      "submergedOrientedFloat32SHA256": "da654f85b7d716437b380079711844396ee38f33fe60f7b1065a56cfba6dcca9",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 934,
+      "fullGeometryTrianglesR5": 934,
+      "fullGeometrySHA256R4": "038cff9b8682169745915ff850117cce2ef3b97bdb8e8452546655c82f3a67ce",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_09",
+      "submergedTriangles": 319,
+      "submergedOrientedFloat32SHA256": "b2bacec3876a29e0a4538acaa852b6602e58ca453fd80c025b0248675c4b605e",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1130,
+      "fullGeometryTrianglesR5": 1130,
+      "fullGeometrySHA256R4": "61aeaad35413c5cbe38ee591fdb83fd3686730971dcdcf6536d5371f4bd80b61",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_10",
+      "submergedTriangles": 293,
+      "submergedOrientedFloat32SHA256": "9510ea174d6dc4ca096d897ad34df02c660fa2fd2588c376de485a9257935502",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1054,
+      "fullGeometryTrianglesR5": 1054,
+      "fullGeometrySHA256R4": "58780216088c4a224f2593700eb1c90729efe86c8c66180513eef311282ef783",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_11",
+      "submergedTriangles": 310,
+      "submergedOrientedFloat32SHA256": "67e02e9394c8a08ef08320dc0910c9ec6d4a98daff19b7fe3fff785d414f9e18",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1100,
+      "fullGeometryTrianglesR5": 1100,
+      "fullGeometrySHA256R4": "7fc67a6218282df662f94e0047e0bd28b76f09fa96d93709c831276466d2db26",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_12",
+      "submergedTriangles": 315,
+      "submergedOrientedFloat32SHA256": "6c79f7af26da7a55d919cc2e0f2f3f51b2e76e9b5291b611e7f32c6fb5ded1cb",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1590,
+      "fullGeometryTrianglesR5": 1590,
+      "fullGeometrySHA256R4": "b0288baf5a1caa90029cb3f766453e7ed9650a340e31a635bc66e28a9b1482ff",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_13",
+      "submergedTriangles": 302,
+      "submergedOrientedFloat32SHA256": "bd2b5f5c4e9fcff2ae50006e5310280af492f57355f4179faa3442d6e6673c35",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1244,
+      "fullGeometryTrianglesR5": 1244,
+      "fullGeometrySHA256R4": "6832b2be9f00fbd8ff678fd0fcbc03a7dcfa2bbaffc1310d30989538bb6e7466",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_14",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1730,
+      "fullGeometryTrianglesR5": 1730,
+      "fullGeometrySHA256R4": "20254364ef5c00d114c7f4cd5e461fcc9f9ca44b8c70eddbe4740a769a01f35d",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_15",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1484,
+      "fullGeometryTrianglesR5": 1484,
+      "fullGeometrySHA256R4": "57b9f54c27fc509311a8202699b8efcdca7266793b5edd26130746a73f8cc695",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_16",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2296,
+      "fullGeometryTrianglesR5": 2296,
+      "fullGeometrySHA256R4": "bd9344d69d09ce7df7047082af365baeedf0e165fcda79fee14f5b3669b3ee41",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_17",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2148,
+      "fullGeometryTrianglesR5": 2148,
+      "fullGeometrySHA256R4": "930a42d652f0f963787c96ba34aaaa0b61399be07f9ba5795e267f7aad29d34a",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_18",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1908,
+      "fullGeometryTrianglesR5": 1908,
+      "fullGeometrySHA256R4": "4f27569cd63e9da1924f5d49391f2ddf8ab9516bc466cd77995b16917bf71aea",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_19",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2062,
+      "fullGeometryTrianglesR5": 2062,
+      "fullGeometrySHA256R4": "e0ba14744247a18abd7d6198283bc3f1652d68242fa747637639cac28ea8aae9",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_20",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2016,
+      "fullGeometryTrianglesR5": 2016,
+      "fullGeometrySHA256R4": "d8c84c926dff01e083bc1a34dfc076539f5d26906b69d4c34b271ddff3a05a78",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_21",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1588,
+      "fullGeometryTrianglesR5": 1588,
+      "fullGeometrySHA256R4": "ad00daa4ab1d28f323f60ae58cfe5102a767ac9936eac1eb518f9cad4fbadd97",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_22",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1428,
+      "fullGeometryTrianglesR5": 1428,
+      "fullGeometrySHA256R4": "a45f89a16705f9a7cd6fe4c3fe79f5edce997a4b86dbe392fe7d57f487630599",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_23",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1236,
+      "fullGeometryTrianglesR5": 1236,
+      "fullGeometrySHA256R4": "dcce7d23b04f28fc2ab2afbcfab0e629c2cbcde8895d7bc2198cc57791860cdc",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_24",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1264,
+      "fullGeometryTrianglesR5": 1264,
+      "fullGeometrySHA256R4": "91eaaa22db43ddb9ece7e03bcbcde8e18ef079d1aaaf84f9aab5f23648a5d691",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 3220,
+      "fullGeometryTrianglesR5": 3220,
+      "fullGeometrySHA256R4": "8c1c6f46074ba533e3c341e69af58e0d4485ac028180bd899dca3ff3d9ee764c",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 5360,
+      "fullGeometryTrianglesR5": 5360,
+      "fullGeometrySHA256R4": "9d506ee9ae9f855b90c9186915d82126c76714e47a7d6a40cd26942ee610371f",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "submergedTriangles": 3840,
+      "submergedOrientedFloat32SHA256": "0d723790086145b5a796b9fb2c301a6e250eb9e0098fd1c5c83462687de59278",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 14838,
+      "fullGeometryTrianglesR5": 14838,
+      "fullGeometrySHA256R4": "ff864f0c2759719f734be2715d1f4f63b77a72f2bef597bed690156d9c844f33",
+      "fullGeometrySHA256R5": "f8d49c13a234a5c9b62887b056ca3f79f41914e2f89a0343eea34fb8619ac444",
+      "geometryExact": false,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+      "submergedTriangles": 820,
+      "submergedOrientedFloat32SHA256": "a63bfc986ecb726345911890cddd21daae8844ff4ad2f1d2bbd2c6388d3c516b",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2104,
+      "fullGeometryTrianglesR5": 2104,
+      "fullGeometrySHA256R4": "18dec94c1a83ecb524bfeb4fc05ee604124d114d3df939bfa0eee3e375c0ed1f",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2722,
+      "fullGeometryTrianglesR5": 2722,
+      "fullGeometrySHA256R4": "175c1a5c19a70004fa3030a136c508f9bf16d403f486b8f5f52c3c2fbbaa6e99",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+      "submergedTriangles": 682,
+      "submergedOrientedFloat32SHA256": "a174682721c641d160ac7337f14638581b231f6b7ab94bf4c05a9d3f9ae04d52",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2480,
+      "fullGeometryTrianglesR5": 2480,
+      "fullGeometrySHA256R4": "1ea304a2a9411d13c1852cd92e5109136de16fa7053eaece7df71c04c1a94385",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+      "submergedTriangles": 707,
+      "submergedOrientedFloat32SHA256": "6ddbfe4d7d821832351c0e824d658df7870b1514fdcbce7c0a1f38839333077e",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2760,
+      "fullGeometryTrianglesR5": 2760,
+      "fullGeometrySHA256R4": "4a6a811148150f0f126f5ff0a3756df72c9e68ac327117541d0cde89d141079c",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+      "submergedTriangles": 775,
+      "submergedOrientedFloat32SHA256": "2769b149883769f1b78d9804b3349935303aaf7385b00a6a59375f61974787c2",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2050,
+      "fullGeometryTrianglesR5": 2050,
+      "fullGeometrySHA256R4": "b08848d69da31dd31f0456035d6888b98792dcd2f0c8c9a41a82e117825e3f6d",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+      "submergedTriangles": 640,
+      "submergedOrientedFloat32SHA256": "8dcacd4a3614b701c53cbcd966f0a4ecaef715deca347ad2a2f423fc824d99f6",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1470,
+      "fullGeometryTrianglesR5": 1470,
+      "fullGeometrySHA256R4": "cba18bfbf56f045db788fe8cff9a13ceed1c07132f392321beed5ed5f0d2c0a6",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+      "submergedTriangles": 715,
+      "submergedOrientedFloat32SHA256": "2df7991e51ef50c235e8de079abb45f7c010b7cb89d7c73350796cd6450a7cb6",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2022,
+      "fullGeometryTrianglesR5": 2022,
+      "fullGeometrySHA256R4": "43eb2c6242f19809e14a9063b6ab8cd66f58c31c7c9495e0051a33f85b3ebfac",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2328,
+      "fullGeometryTrianglesR5": 2328,
+      "fullGeometrySHA256R4": "9c4e8f40e3a5044654e5eb94ef2bc5071c05689e7eab5108bf8b5c8f33b21f7d",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+      "submergedTriangles": 2634,
+      "submergedOrientedFloat32SHA256": "299e8206e38b0daf5793a32e0e5674994027705e0f8d64c777f2795f16b33a18",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 11330,
+      "fullGeometryTrianglesR5": 11330,
+      "fullGeometrySHA256R4": "dc5a9699fc6896b503d3beee9d28eb602f9aa3fcb4fa6b5e6ef05651168b384d",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+      "submergedTriangles": 865,
+      "submergedOrientedFloat32SHA256": "be2a09a7fd1f2c0549021c662466db4cb00e5388c3a09837338dd0975bcb7d4a",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 2096,
+      "fullGeometryTrianglesR5": 2096,
+      "fullGeometrySHA256R4": "034b8b47da3337f7445b966654ed2f5d1770b2dd0018275d8e11a23cdbe7ce0d",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+      "submergedTriangles": 957,
+      "submergedOrientedFloat32SHA256": "c470fb77deb5339ce50f79dd454898a7cfc8f0b68b8d1a7be790a6341e8eadeb",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 3392,
+      "fullGeometryTrianglesR5": 3392,
+      "fullGeometrySHA256R4": "ee5fdacf6555e633a58aafa9a8295f192fb790abcc684449ea7b09b8cd46bb96",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+      "submergedTriangles": 1129,
+      "submergedOrientedFloat32SHA256": "138473d133539aef26fee9157814a12fdbe9a2e2e02af192c9b21ba82fd5bb86",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 4272,
+      "fullGeometryTrianglesR5": 4272,
+      "fullGeometrySHA256R4": "0a1537728b6af7568709acc9a54ba98e6e21811ea6e9eeb2b6df8f40f3708448",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+      "submergedTriangles": 795,
+      "submergedOrientedFloat32SHA256": "15117d72e6849c893e52c15b7f3ec7fad4eaadff43a95d0273460d9ad099819d",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 3020,
+      "fullGeometryTrianglesR5": 3020,
+      "fullGeometrySHA256R4": "d961047c621e322510659ffe02c1583b9c8b1cdf3f03d338300ef9d74c88679b",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+      "submergedTriangles": 626,
+      "submergedOrientedFloat32SHA256": "84a871bce6048076166293c6cdb76ed4e5cb0a61aa3cd906eae06018bd2ac007",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1516,
+      "fullGeometryTrianglesR5": 1516,
+      "fullGeometrySHA256R4": "5d55c643598a2ddd8f6c38ae945b3e57117bbe636fed93efef15d10830409e1d",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 3846,
+      "fullGeometryTrianglesR5": 3846,
+      "fullGeometrySHA256R4": "058b9fb52c3d6198efdc3aca40ed986f1d253dada763a637804cb37cd411b1e7",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+      "submergedTriangles": 0,
+      "submergedOrientedFloat32SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "submergedExact": true,
+      "fullGeometryTrianglesR4": 1886,
+      "fullGeometryTrianglesR5": 1886,
+      "fullGeometrySHA256R4": "07f125feb4860829658ecbf04f526011a54c3c586a858e88371aededcb86229f",
+      "geometryExact": true,
+      "indexedRGBChanged": true
+    }
+  ],
+  "body": {
+    "orientedProjectedXZTrianglesR4": {
+      "triangles": 14838,
+      "sha256": "085604868b179ef4afa3be7103257afcd20216a3ed5dfbb682d42bfad830d2d8"
+    },
+    "orientedProjectedXZTrianglesR5": {
+      "triangles": 14838,
+      "sha256": "085604868b179ef4afa3be7103257afcd20216a3ed5dfbb682d42bfad830d2d8"
+    },
+    "projectedCornerTopologyExact": true,
+    "seaRingR4": {
+      "points": 256,
+      "sha256": "361395402a2870ef914273485d0ba8fe09d7b9e226d5c1c33ffa8b05b4efc275"
+    },
+    "seaRingR5": {
+      "points": 256,
+      "sha256": "361395402a2870ef914273485d0ba8fe09d7b9e226d5c1c33ffa8b05b4efc275"
+    },
+    "seaRingExact": true,
+    "heightComparison": {
+      "uniqueXZGroups": 7165,
+      "maximumHeightMultiplicityPerXZ": 2,
+      "changedUniqueXYZVertices": 769,
+      "maximumAbsYDelta": 0.7999999523162842,
+      "signedYDeltaRange": [
+        -0.7203109264373779,
+        0.7999999523162842
+      ],
+      "interpretation": "Exact XZ groups with identical unique-height multiplicities; ascending-height pairing preserves the unchanged lower foundation and bounded positive upper surface. No claim of original source indices or raw accessor-byte equality."
+    }
+  },
+  "prospectiveApproaches": [
+    {
+      "name": "Welcome→Projects prospective arrival",
+      "a": [
+        4.6834,
+        26.3442
+      ],
+      "b": [
+        0,
+        15
+      ],
+      "radius": 2.75,
+      "feather": 1.15,
+      "r4": {
+        "triangles": 473,
+        "sha256": "d432de1e8cd9cd6e6021f7ac7ed3ba93e7f93c703853f15b5d20bf99c7f90b87"
+      },
+      "r5": {
+        "triangles": 473,
+        "sha256": "d432de1e8cd9cd6e6021f7ac7ed3ba93e7f93c703853f15b5d20bf99c7f90b87"
+      },
+      "exact": true,
+      "interpretation": "Full actual projected-triangle capsule selection including feather; exact selected XYZ triangles, not walkability/3D-contact approval"
+    },
+    {
+      "name": "Projects→Experience prospective arrival",
+      "a": [
+        29.0315,
+        1.296
+      ],
+      "b": [
+        0,
+        15
+      ],
+      "radius": 1.75,
+      "feather": 1.15,
+      "r4": {
+        "triangles": 803,
+        "sha256": "bd478e27cc9e83a19f3a78adbb89aa453da339169030804af1dda57820c080b4"
+      },
+      "r5": {
+        "triangles": 803,
+        "sha256": "bd478e27cc9e83a19f3a78adbb89aa453da339169030804af1dda57820c080b4"
+      },
+      "exact": true,
+      "interpretation": "Full actual projected-triangle capsule selection including feather; exact selected XYZ triangles, not walkability/3D-contact approval"
+    }
+  ],
+  "bodyApron": {
+    "r4": {
+      "triangles": 10486,
+      "clippedTriangles": 2356,
+      "summedProjectedAreaSquareMetres": 832.0000000000008,
+      "summedPlanarAreaSquareMetres": 832.0000000000008,
+      "summedInclinedAreaSquareMetres": 0,
+      "minimumY": 4.800000190734863,
+      "maximumY": 4.800000190734863,
+      "proposedTopY": 4.8,
+      "tolerance": 0.00001,
+      "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+    },
+    "r5": {
+      "triangles": 10486,
+      "clippedTriangles": 2356,
+      "summedProjectedAreaSquareMetres": 832.0000000000008,
+      "summedPlanarAreaSquareMetres": 832.0000000000008,
+      "summedInclinedAreaSquareMetres": 0,
+      "minimumY": 4.800000190734863,
+      "maximumY": 4.800000190734863,
+      "proposedTopY": 4.8,
+      "tolerance": 0.00001,
+      "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+    }
+  },
+  "nonBodyApron": {
+    "clippedTriangles": 0,
+    "summedProjectedOverlap": 0
+  },
+  "actualAreaWeightedCOLOR0": {
+    "r4": {
+      "groups": {
+        "apron": {
+          "area": 832.0000000000008,
+          "faces": 2356,
+          "areaWeightedMeanCOLOR0": [
+            0.702128774525807,
+            0.4601789941860399,
+            0.2039968737796758
+          ]
+        },
+        "dryCliff": {
+          "area": 6088.623961094701,
+          "faces": 50410,
+          "areaWeightedMeanCOLOR0": [
+            0.4112196177002782,
+            0.40170331717731356,
+            0.3695868720577152
+          ]
+        },
+        "dryUpward": {
+          "area": 5028.5647862373,
+          "faces": 27037,
+          "areaWeightedMeanCOLOR0": [
+            0.4464909868091014,
+            0.4001376497770487,
+            0.3196496393084977
+          ]
+        },
+        "wetAboveSea": {
+          "area": 1626.7455057498614,
+          "faces": 8744,
+          "areaWeightedMeanCOLOR0": [
+            0.3584037214675408,
+            0.3543628282514327,
+            0.3327496170016369
+          ]
+        }
+      },
+      "perOwner": [
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_00",
+          "triangles": 1272,
+          "actualTriangleSurfaceArea": 69.87962600875142,
+          "areaWeightedMeanCOLOR0": [
+            0.40010053569154547,
+            0.39550727826329957,
+            0.3454850862934562
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_01",
+          "triangles": 1672,
+          "actualTriangleSurfaceArea": 83.13769943239869,
+          "areaWeightedMeanCOLOR0": [
+            0.38406373513282177,
+            0.371521429156288,
+            0.33844071368584083
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_02",
+          "triangles": 1500,
+          "actualTriangleSurfaceArea": 95.30742509781408,
+          "areaWeightedMeanCOLOR0": [
+            0.3702875303157816,
+            0.3609084171997321,
+            0.3265774755943314
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_03",
+          "triangles": 1414,
+          "actualTriangleSurfaceArea": 61.101012127690296,
+          "areaWeightedMeanCOLOR0": [
+            0.40995382771043765,
+            0.38625495084698674,
+            0.3402327284701523
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_04",
+          "triangles": 1248,
+          "actualTriangleSurfaceArea": 50.854093347882895,
+          "areaWeightedMeanCOLOR0": [
+            0.41204476703279375,
+            0.3927683507088791,
+            0.3495258057932859
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_05",
+          "triangles": 1084,
+          "actualTriangleSurfaceArea": 33.84781968993011,
+          "areaWeightedMeanCOLOR0": [
+            0.3480226700276578,
+            0.34172232919547557,
+            0.3139802204893735
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_06",
+          "triangles": 1024,
+          "actualTriangleSurfaceArea": 32.2968513033107,
+          "areaWeightedMeanCOLOR0": [
+            0.32912346662589487,
+            0.3291880830878341,
+            0.30791744284925837
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_07",
+          "triangles": 950,
+          "actualTriangleSurfaceArea": 31.505007101803876,
+          "areaWeightedMeanCOLOR0": [
+            0.3276870093763738,
+            0.32436669999521145,
+            0.30605277955797394
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_08",
+          "triangles": 934,
+          "actualTriangleSurfaceArea": 31.024983124996396,
+          "areaWeightedMeanCOLOR0": [
+            0.32488343251712437,
+            0.32283630674656083,
+            0.30656712914928014
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_09",
+          "triangles": 1130,
+          "actualTriangleSurfaceArea": 33.884980224828574,
+          "areaWeightedMeanCOLOR0": [
+            0.3495655733802183,
+            0.3421409256340342,
+            0.3049837668064545
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_10",
+          "triangles": 1054,
+          "actualTriangleSurfaceArea": 31.984090271183142,
+          "areaWeightedMeanCOLOR0": [
+            0.3658171966280313,
+            0.35435924935490404,
+            0.3204795125558722
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_11",
+          "triangles": 1100,
+          "actualTriangleSurfaceArea": 41.01369729492647,
+          "areaWeightedMeanCOLOR0": [
+            0.37802725374938745,
+            0.36157752489102907,
+            0.3256814632963349
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_12",
+          "triangles": 1590,
+          "actualTriangleSurfaceArea": 62.46681001850598,
+          "areaWeightedMeanCOLOR0": [
+            0.378106393252551,
+            0.3642775893272126,
+            0.330657485905979
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_13",
+          "triangles": 1244,
+          "actualTriangleSurfaceArea": 41.37222697172793,
+          "areaWeightedMeanCOLOR0": [
+            0.34026861302457573,
+            0.3364161452886122,
+            0.3169287075919579
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_14",
+          "triangles": 1730,
+          "actualTriangleSurfaceArea": 81.49512681556284,
+          "areaWeightedMeanCOLOR0": [
+            0.41258025444000335,
+            0.401040027791936,
+            0.36007901974966167
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_15",
+          "triangles": 1484,
+          "actualTriangleSurfaceArea": 72.39322618156935,
+          "areaWeightedMeanCOLOR0": [
+            0.4365119743499516,
+            0.41323662622053203,
+            0.36185347133880325
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_16",
+          "triangles": 2296,
+          "actualTriangleSurfaceArea": 123.43072057937687,
+          "areaWeightedMeanCOLOR0": [
+            0.4205304932782646,
+            0.4072416230664662,
+            0.3699155230253933
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_17",
+          "triangles": 2148,
+          "actualTriangleSurfaceArea": 112.93514524099503,
+          "areaWeightedMeanCOLOR0": [
+            0.444462012191217,
+            0.4252688048911363,
+            0.3753370227658403
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_18",
+          "triangles": 1908,
+          "actualTriangleSurfaceArea": 122.53520183385139,
+          "areaWeightedMeanCOLOR0": [
+            0.42373135713715104,
+            0.40537818913158424,
+            0.36408512544484134
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_19",
+          "triangles": 2062,
+          "actualTriangleSurfaceArea": 110.14259796278823,
+          "areaWeightedMeanCOLOR0": [
+            0.4345146008608234,
+            0.41500010448368263,
+            0.3710683197207989
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_20",
+          "triangles": 2016,
+          "actualTriangleSurfaceArea": 103.97796340670358,
+          "areaWeightedMeanCOLOR0": [
+            0.4598702803675037,
+            0.4380088329260758,
+            0.3886909469498925
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_21",
+          "triangles": 1588,
+          "actualTriangleSurfaceArea": 86.62680418539539,
+          "areaWeightedMeanCOLOR0": [
+            0.41109219516301987,
+            0.39692550909327834,
+            0.35858390727050127
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_22",
+          "triangles": 1428,
+          "actualTriangleSurfaceArea": 64.7154352483417,
+          "areaWeightedMeanCOLOR0": [
+            0.4114567410062558,
+            0.39885402216029187,
+            0.3567258453370032
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_23",
+          "triangles": 1236,
+          "actualTriangleSurfaceArea": 70.17241183551506,
+          "areaWeightedMeanCOLOR0": [
+            0.4194240191065221,
+            0.4039232078981219,
+            0.36440603040007025
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_24",
+          "triangles": 1264,
+          "actualTriangleSurfaceArea": 75.82779609128413,
+          "areaWeightedMeanCOLOR0": [
+            0.4046653360544175,
+            0.3922337977692887,
+            0.3515522955250679
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+          "triangles": 3220,
+          "actualTriangleSurfaceArea": 661.4089918724997,
+          "areaWeightedMeanCOLOR0": [
+            0.38203544502549835,
+            0.37464806535441975,
+            0.34333447847450904
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+          "triangles": 5360,
+          "actualTriangleSurfaceArea": 1282.0290265747874,
+          "areaWeightedMeanCOLOR0": [
+            0.4143348271360107,
+            0.39949665377309906,
+            0.3578507769200528
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+          "triangles": 14838,
+          "actualTriangleSurfaceArea": 10761.863495392023,
+          "areaWeightedMeanCOLOR0": [
+            0.387439304298314,
+            0.3508058362536912,
+            0.2940249169053018
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+          "triangles": 2104,
+          "actualTriangleSurfaceArea": 563.66783512154,
+          "areaWeightedMeanCOLOR0": [
+            0.3554291657546653,
+            0.3390672100423599,
+            0.30374836363737506
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+          "triangles": 2722,
+          "actualTriangleSurfaceArea": 526.3196140689367,
+          "areaWeightedMeanCOLOR0": [
+            0.42242259609099597,
+            0.40509872770264466,
+            0.35781235665831784
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+          "triangles": 2480,
+          "actualTriangleSurfaceArea": 422.7461991697732,
+          "areaWeightedMeanCOLOR0": [
+            0.33900456879179713,
+            0.3316665344817541,
+            0.30645899601167276
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+          "triangles": 2760,
+          "actualTriangleSurfaceArea": 523.6082272572972,
+          "areaWeightedMeanCOLOR0": [
+            0.3437695236632128,
+            0.33496787374022785,
+            0.3075867219675829
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+          "triangles": 2050,
+          "actualTriangleSurfaceArea": 593.7825915102329,
+          "areaWeightedMeanCOLOR0": [
+            0.32046525720434493,
+            0.31470912961940145,
+            0.29204816839608083
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+          "triangles": 1470,
+          "actualTriangleSurfaceArea": 377.6638280585065,
+          "areaWeightedMeanCOLOR0": [
+            0.36125556309700274,
+            0.34411391684231774,
+            0.3067030371236686
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+          "triangles": 2022,
+          "actualTriangleSurfaceArea": 542.1551074842783,
+          "areaWeightedMeanCOLOR0": [
+            0.34383834732773866,
+            0.33487742322536984,
+            0.30484219609855734
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+          "triangles": 2328,
+          "actualTriangleSurfaceArea": 375.8710441667486,
+          "areaWeightedMeanCOLOR0": [
+            0.4273313513289962,
+            0.4012311402399053,
+            0.35414687861367
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+          "triangles": 11330,
+          "actualTriangleSurfaceArea": 3668.996131703044,
+          "areaWeightedMeanCOLOR0": [
+            0.3558967305826486,
+            0.3390034102037531,
+            0.29956993562380174
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+          "triangles": 2096,
+          "actualTriangleSurfaceArea": 577.5482118083356,
+          "areaWeightedMeanCOLOR0": [
+            0.3299602155997525,
+            0.32035409220663186,
+            0.29121353915800147
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+          "triangles": 3392,
+          "actualTriangleSurfaceArea": 913.8839742379377,
+          "areaWeightedMeanCOLOR0": [
+            0.34065540288598023,
+            0.3316463635365694,
+            0.30382554206387996
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+          "triangles": 4272,
+          "actualTriangleSurfaceArea": 1077.7837569036267,
+          "areaWeightedMeanCOLOR0": [
+            0.3533205234498234,
+            0.3450793571175497,
+            0.31440237145888905
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+          "triangles": 3020,
+          "actualTriangleSurfaceArea": 602.3704096636643,
+          "areaWeightedMeanCOLOR0": [
+            0.35087666707784587,
+            0.34007963736928437,
+            0.3119745635986638
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+          "triangles": 1516,
+          "actualTriangleSurfaceArea": 379.65771777648547,
+          "areaWeightedMeanCOLOR0": [
+            0.3309162912795941,
+            0.3215701839146039,
+            0.2934061970378198
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+          "triangles": 3846,
+          "actualTriangleSurfaceArea": 796.408170691842,
+          "areaWeightedMeanCOLOR0": [
+            0.41848718248331496,
+            0.40103451644183463,
+            0.3518512928976304
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+          "triangles": 1886,
+          "actualTriangleSurfaceArea": 303.2225099805174,
+          "areaWeightedMeanCOLOR0": [
+            0.40691597545503677,
+            0.3933511712896052,
+            0.34901856139886217
+          ]
+        }
+      ],
+      "interpretation": "Area-weighted means of actual indexed RGB corners in linear COLOR_0; classifications by triangle centroid and actual geometric normal. Area sums include separate overlapping solids; not union areas or rendered pixel colours."
+    },
+    "r5": {
+      "groups": {
+        "apron": {
+          "area": 832.0000000000008,
+          "faces": 2356,
+          "areaWeightedMeanCOLOR0": [
+            0.7134775903344485,
+            0.5389053923250183,
+            0.3209542201741748
+          ]
+        },
+        "dryCliff": {
+          "area": 6088.623961094701,
+          "faces": 50410,
+          "areaWeightedMeanCOLOR0": [
+            0.6974487632003633,
+            0.63086999521283,
+            0.5041958668115358
+          ]
+        },
+        "dryUpward": {
+          "area": 5035.611012816045,
+          "faces": 27039,
+          "areaWeightedMeanCOLOR0": [
+            0.6959658864952694,
+            0.6121051926907338,
+            0.4686107836495851
+          ]
+        },
+        "wetAboveSea": {
+          "area": 1610.3901059747166,
+          "faces": 8742,
+          "areaWeightedMeanCOLOR0": [
+            0.6330495110144273,
+            0.5746713270892961,
+            0.4632497726331062
+          ]
+        }
+      },
+      "perOwner": [
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_00",
+          "triangles": 1272,
+          "actualTriangleSurfaceArea": 69.87962600875142,
+          "areaWeightedMeanCOLOR0": [
+            0.6420776260627167,
+            0.5938457193324588,
+            0.4924316628323039
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_01",
+          "triangles": 1672,
+          "actualTriangleSurfaceArea": 83.13769943239869,
+          "areaWeightedMeanCOLOR0": [
+            0.6568984283814688,
+            0.5910297475906391,
+            0.46840891077538094
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_02",
+          "triangles": 1500,
+          "actualTriangleSurfaceArea": 95.30742509781408,
+          "areaWeightedMeanCOLOR0": [
+            0.5997747192093259,
+            0.552892548566858,
+            0.46124615499311117
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_03",
+          "triangles": 1414,
+          "actualTriangleSurfaceArea": 61.101012127690296,
+          "areaWeightedMeanCOLOR0": [
+            0.6543987164062535,
+            0.5872641520384492,
+            0.4644646191705518
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_04",
+          "triangles": 1248,
+          "actualTriangleSurfaceArea": 50.854093347882895,
+          "areaWeightedMeanCOLOR0": [
+            0.5873753149406934,
+            0.5467869518664668,
+            0.4669675135425724
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_05",
+          "triangles": 1084,
+          "actualTriangleSurfaceArea": 33.84781968993011,
+          "areaWeightedMeanCOLOR0": [
+            0.6247638044361852,
+            0.5633789134747095,
+            0.4469041494574656
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_06",
+          "triangles": 1024,
+          "actualTriangleSurfaceArea": 32.2968513033107,
+          "areaWeightedMeanCOLOR0": [
+            0.625432409520091,
+            0.5642178104796604,
+            0.4493866853873304
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_07",
+          "triangles": 950,
+          "actualTriangleSurfaceArea": 31.505007101803876,
+          "areaWeightedMeanCOLOR0": [
+            0.6165606123387346,
+            0.556274331848907,
+            0.44264688133694174
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_08",
+          "triangles": 934,
+          "actualTriangleSurfaceArea": 31.024983124996396,
+          "areaWeightedMeanCOLOR0": [
+            0.6142576115762474,
+            0.55355278270148,
+            0.44001283840874506
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_09",
+          "triangles": 1130,
+          "actualTriangleSurfaceArea": 33.884980224828574,
+          "areaWeightedMeanCOLOR0": [
+            0.6200636366112926,
+            0.5573554107611739,
+            0.4418730291313147
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_10",
+          "triangles": 1054,
+          "actualTriangleSurfaceArea": 31.984090271183142,
+          "areaWeightedMeanCOLOR0": [
+            0.6303987943139425,
+            0.5670123209580672,
+            0.4491026097656513
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_11",
+          "triangles": 1100,
+          "actualTriangleSurfaceArea": 41.01369729492647,
+          "areaWeightedMeanCOLOR0": [
+            0.6390857411185986,
+            0.5733011647677311,
+            0.4526370982174731
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_12",
+          "triangles": 1590,
+          "actualTriangleSurfaceArea": 62.46681001850598,
+          "areaWeightedMeanCOLOR0": [
+            0.6153827855610409,
+            0.5628062461435005,
+            0.46121925232223127
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_13",
+          "triangles": 1244,
+          "actualTriangleSurfaceArea": 41.37222697172793,
+          "areaWeightedMeanCOLOR0": [
+            0.636932754391051,
+            0.5736194760591216,
+            0.45531088175961615
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_14",
+          "triangles": 1730,
+          "actualTriangleSurfaceArea": 81.49512681556284,
+          "areaWeightedMeanCOLOR0": [
+            0.7032987173394616,
+            0.6329232917094577,
+            0.5005316836394836
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_15",
+          "triangles": 1484,
+          "actualTriangleSurfaceArea": 72.39322618156935,
+          "areaWeightedMeanCOLOR0": [
+            0.7068422890145598,
+            0.6330831528565151,
+            0.49851698034642955
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_16",
+          "triangles": 2296,
+          "actualTriangleSurfaceArea": 123.43072057937687,
+          "areaWeightedMeanCOLOR0": [
+            0.7021281138219847,
+            0.6328484261153063,
+            0.5011769270621639
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_17",
+          "triangles": 2148,
+          "actualTriangleSurfaceArea": 112.93514524099503,
+          "areaWeightedMeanCOLOR0": [
+            0.7143804096816143,
+            0.6418948143738639,
+            0.5078052929877899
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_18",
+          "triangles": 1908,
+          "actualTriangleSurfaceArea": 122.53520183385139,
+          "areaWeightedMeanCOLOR0": [
+            0.7035211000259814,
+            0.6320073043026758,
+            0.49972998041759964
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_19",
+          "triangles": 2062,
+          "actualTriangleSurfaceArea": 110.14259796278823,
+          "areaWeightedMeanCOLOR0": [
+            0.7088509588460723,
+            0.6368574659959558,
+            0.5034606763299946
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_20",
+          "triangles": 2016,
+          "actualTriangleSurfaceArea": 103.97796340670358,
+          "areaWeightedMeanCOLOR0": [
+            0.7199319463698394,
+            0.6476935094027843,
+            0.5130120553038533
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_21",
+          "triangles": 1588,
+          "actualTriangleSurfaceArea": 86.62680418539539,
+          "areaWeightedMeanCOLOR0": [
+            0.6996705924360972,
+            0.6283297735142751,
+            0.4955345664559513
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_22",
+          "triangles": 1428,
+          "actualTriangleSurfaceArea": 64.7154352483417,
+          "areaWeightedMeanCOLOR0": [
+            0.6994921332287349,
+            0.6297270793083124,
+            0.49628499353020206
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_23",
+          "triangles": 1236,
+          "actualTriangleSurfaceArea": 70.17241183551506,
+          "areaWeightedMeanCOLOR0": [
+            0.6994880596378711,
+            0.630189503274111,
+            0.4994562929450252
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_24",
+          "triangles": 1264,
+          "actualTriangleSurfaceArea": 75.82779609128413,
+          "areaWeightedMeanCOLOR0": [
+            0.6994888559113017,
+            0.6275390986145366,
+            0.4959033040435975
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+          "triangles": 3220,
+          "actualTriangleSurfaceArea": 661.4089918724997,
+          "areaWeightedMeanCOLOR0": [
+            0.6873887066705828,
+            0.6189361326701319,
+            0.48964700663117117
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+          "triangles": 5360,
+          "actualTriangleSurfaceArea": 1282.0290265747874,
+          "areaWeightedMeanCOLOR0": [
+            0.7015905096740882,
+            0.6299039199724319,
+            0.4966899317091748
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+          "triangles": 14838,
+          "actualTriangleSurfaceArea": 10752.554322195649,
+          "areaWeightedMeanCOLOR0": [
+            0.6074064882233065,
+            0.5369808009712712,
+            0.4161424946237078
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+          "triangles": 2104,
+          "actualTriangleSurfaceArea": 563.66783512154,
+          "areaWeightedMeanCOLOR0": [
+            0.5988901015409209,
+            0.5374409032237213,
+            0.42441647368363883
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+          "triangles": 2722,
+          "actualTriangleSurfaceArea": 526.3196140689367,
+          "areaWeightedMeanCOLOR0": [
+            0.7021185583589268,
+            0.6304689255633075,
+            0.4955608417933147
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+          "triangles": 2480,
+          "actualTriangleSurfaceArea": 422.7461991697732,
+          "areaWeightedMeanCOLOR0": [
+            0.6043180228597504,
+            0.5448542072723321,
+            0.4331844536868843
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+          "triangles": 2760,
+          "actualTriangleSurfaceArea": 523.6082272572972,
+          "areaWeightedMeanCOLOR0": [
+            0.549536199792682,
+            0.5107563868513493,
+            0.4324578226648704
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+          "triangles": 2050,
+          "actualTriangleSurfaceArea": 593.7825915102329,
+          "areaWeightedMeanCOLOR0": [
+            0.5897234271340775,
+            0.5318178508708605,
+            0.4228939671249056
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+          "triangles": 1470,
+          "actualTriangleSurfaceArea": 377.6638280585065,
+          "areaWeightedMeanCOLOR0": [
+            0.5889649612346323,
+            0.5317425951218042,
+            0.4253847353602409
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+          "triangles": 2022,
+          "actualTriangleSurfaceArea": 542.1551074842783,
+          "areaWeightedMeanCOLOR0": [
+            0.587058187603195,
+            0.5326909033334318,
+            0.42905736023373087
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+          "triangles": 2328,
+          "actualTriangleSurfaceArea": 375.8710441667486,
+          "areaWeightedMeanCOLOR0": [
+            0.7017564551648144,
+            0.6265940204848929,
+            0.49181734881927774
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+          "triangles": 11330,
+          "actualTriangleSurfaceArea": 3668.996131703044,
+          "areaWeightedMeanCOLOR0": [
+            0.6089782535433761,
+            0.5458068060968905,
+            0.4307113222954786
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+          "triangles": 2096,
+          "actualTriangleSurfaceArea": 577.5482118083356,
+          "areaWeightedMeanCOLOR0": [
+            0.5859195469980079,
+            0.5270743803368552,
+            0.4179954828766176
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+          "triangles": 3392,
+          "actualTriangleSurfaceArea": 913.8839742379377,
+          "areaWeightedMeanCOLOR0": [
+            0.5955433465044926,
+            0.539482611809177,
+            0.4343045232243203
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+          "triangles": 4272,
+          "actualTriangleSurfaceArea": 1077.7837569036267,
+          "areaWeightedMeanCOLOR0": [
+            0.6087463459550109,
+            0.5519494975763073,
+            0.44311629193438257
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+          "triangles": 3020,
+          "actualTriangleSurfaceArea": 602.3704096636643,
+          "areaWeightedMeanCOLOR0": [
+            0.623887312042274,
+            0.5605371950436538,
+            0.4435364546080925
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+          "triangles": 1516,
+          "actualTriangleSurfaceArea": 379.65771777648547,
+          "areaWeightedMeanCOLOR0": [
+            0.58190520423994,
+            0.523976222938415,
+            0.4157642633105916
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+          "triangles": 3846,
+          "actualTriangleSurfaceArea": 796.408170691842,
+          "areaWeightedMeanCOLOR0": [
+            0.7017149196535439,
+            0.6289109062892231,
+            0.49295505385071636
+          ]
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+          "triangles": 1886,
+          "actualTriangleSurfaceArea": 303.2225099805174,
+          "areaWeightedMeanCOLOR0": [
+            0.6903080139126087,
+            0.6216884902884114,
+            0.4864136348961852
+          ]
+        }
+      ],
+      "interpretation": "Area-weighted means of actual indexed RGB corners in linear COLOR_0; classifications by triangle centroid and actual geometric normal. Area sums include separate overlapping solids; not union areas or rendered pixel colours."
+    }
+  },
+  "portableMaterials": {
+    "imagesR4": [
+      {
+        "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+        "bytes": 293590,
+        "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+        "bytes": 179855,
+        "sha256": "0f19fd39f048c3349f7ae5f63fd8d467807ed7f80c80c5fcee686db1751c574b",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+        "bytes": 270827,
+        "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+        "bytes": 209528,
+        "sha256": "69a0bab162c6a4b69872f0171788ffe7b687f0a40496bc21ccad9727aae56fb2",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "imagesR5": [
+      {
+        "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+        "bytes": 293590,
+        "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+        "bytes": 179855,
+        "sha256": "0f19fd39f048c3349f7ae5f63fd8d467807ed7f80c80c5fcee686db1751c574b",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+        "bytes": 270827,
+        "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+        "bytes": 209528,
+        "sha256": "69a0bab162c6a4b69872f0171788ffe7b687f0a40496bc21ccad9727aae56fb2",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "actualPngRecordsAndBytesExact": true,
+    "rawJSONExact": {
+      "materials": true,
+      "textures": true,
+      "samplers": true
+    },
+    "decodedJSONExact": {
+      "materials": true,
+      "textures": true,
+      "samplers": true
+    }
+  },
+  "embeddedNativeAuthoringReport": {
+    "interpretation": "Authoring report embedded in the actual GLB; independent binary comparisons above are separate. Native closed-manifold assertions are not inferred from glTF attribute seams; projected protection is a conservative superset, not actual3D contact or union proof",
+    "meshes": 44,
+    "triangles": 109088,
+    "hard_triangle_limit": 180000,
+    "all_closed_positive": true,
+    "zero_area": 0,
+    "uv_degenerate": 0,
+    "normal_opposition": 0,
+    "source43_geometry_uv_corner_normals_exact": true,
+    "body_xz_indices_and_protected_surface_exact": true,
+    "all_original_submerged_geometry_exact": true,
+    "sea_ring_vertices_exact": 256,
+    "original_material_definitions_exact": 2,
+    "original_packed_png_bytes_exact": 4,
+    "clearing": {
+      "summed_clipped_triangle_area_m2": 832.0000000000008,
+      "minimum_y": 4.800000190734863,
+      "maximum_y": 4.800000190734863,
+      "height_tolerance": 0.00001,
+      "not_union_or_physics_approval": true
+    },
+    "sea_origin_y": 0,
+    "foundation_y": -10,
+    "standalone_art_not_approved": true,
+    "no_runtime_map_physics_ocean_mutations": true
+  },
+  "provenance": {
+    "actualRecipe": "assets/archipelago/island-reconstruction-v2/refine_projects_island_v2_r5.py",
+    "actualRecipeSHA256": "d352da9ff704469ba41b4f899bb4943fbb267206b91496ee17a146778245dd35",
+    "actualRecipeLines": 646,
+    "previousR4ReceiptSHA256Preserved": "4f420f35f4b42c9c4fd0f5cef74ab649bfb03204cc04511e86455f4f140ab590",
+    "comparedPublicOrCatalogFiles": false,
+    "providerRequestsByThisAudit": 0,
+    "subagentsUsedByThisAudit": 0,
+    "runtimeFilesEditedByThisAudit": 0,
+    "strictChecker": "Fresh root-owned R5 strict/self-test exists separately; not duplicated or inherited as this comparison's result"
+  },
+  "limitations": {
+    "sourceManifoldNotInferredFromGltfSeams": true,
+    "contactSupersetSATNotAUnionOrActual3DContactProof": true,
+    "sharedPhysicsOrNavigationApproval": false,
+    "runtimeIntegrated": false,
+    "visualFidelityApproval": false,
+    "performanceApproval": false,
+    "unchangedRuntimeByteLimit": 8388608,
+    "actualMasterBytes": 14684488,
+    "masterExcessBytes": 6295880,
+    "reviewOnly": true,
+    "projectedAreaSumIsNotUnion": true,
+    "absenceOfOverlapNotCertified": true,
+    "automaticMultiviewReconstruction": false,
+    "assetSourceProposalIsNotGameMapPhysicsIntegration": true,
+    "brownOrRockPigmentDoesNotAddAnObstacleOrWalkingSurface": true
+  }
+}

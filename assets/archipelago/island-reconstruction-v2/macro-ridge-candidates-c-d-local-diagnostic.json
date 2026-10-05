@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "scope": "Independent read-only local numerical wall verification C→D on SHA-pinned actual R7 GLB; not a native query/result, export or artistic acceptance.",
+  "baseline": {
+    "path": "./projects-island-v2-r7.glb",
+    "sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+    "owner": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+    "weld": "Exact XYZ equality removes portable attribute splits for geometric source reconstruction only; no tolerance welding."
+  },
+  "nativeCFailureReceipt": "./macro-ridge-candidate-c-failure.json",
+  "candidateC": {
+    "recipe": "./rebuild_projects_island_v2_r9_integrated_ridge_c.py",
+    "sha256": "35cb4a00c19da812dd89bc4977e4000bbb4bfb2ef2d961a44084d2a97c69a31f",
+    "nativeFailureOperation": "projects-v2-r8-connected-rear-macro-candidate-c-20261005",
+    "nativeHeadAtFailure": 7,
+    "nativeGeneratedArtifacts": 0,
+    "localResult": {
+      "scope": "SHA-pinned actual R7 cutloop; pure C four wall rings/collar/u512roof; no Blender/CDT/provider",
+      "wallFaces": 4968,
+      "faceRange": [
+        11612,
+        16579
+      ],
+      "actualNativeSamples": [
+        [
+          15270,
+          15274
+        ],
+        [
+          15270,
+          15273
+        ],
+        [
+          15271,
+          15274
+        ],
+        [
+          14030,
+          14033
+        ],
+        [
+          14029,
+          14033
+        ],
+        [
+          14029,
+          14032
+        ],
+        [
+          14123,
+          14126
+        ]
+      ],
+      "reconstructedAllWallSelfHits": [
+        [
+          14029,
+          14032
+        ],
+        [
+          14029,
+          14033
+        ],
+        [
+          14030,
+          14033
+        ],
+        [
+          14123,
+          14126
+        ],
+        [
+          15270,
+          15273
+        ],
+        [
+          15270,
+          15274
+        ],
+        [
+          15271,
+          15274
+        ]
+      ],
+      "matchesAll7": true,
+      "directRoofJoinSelfHits": 0,
+      "aabbSatNonadjacentCandidates": 8740,
+      "sourceSha256": "35cb4a00c19da812dd89bc4977e4000bbb4bfb2ef2d961a44084d2a97c69a31f",
+      "baselineR7Sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+      "wallTopologyFloat32IndexedDigest": "d5159f31cc1a952f69921e76fb0f51aa2fe1743b8288441f19afbad553676279",
+      "collarFloat32PositionDigest": "36d331f55d1710716c126f699b42ce7d049cb1fb1a31d2414d986fa225c45162",
+      "roofBoundaryFloat32PositionDigest": "b9676eb4b85045a0bb12663e1f74e80110b5cfae608a2d1cb0c7a28160e23692",
+      "independentInteriorSegmentMetres": [
+        0.06252659197180431,
+        0.04617205305536896,
+        0.15932996880868927,
+        0.11351410855084307,
+        0.07641607731225697,
+        0.07867040072772892,
+        0.1279895324097625
+      ]
+    }
+  },
+  "candidateD": {
+    "recipe": "./rebuild_projects_island_v2_r9_integrated_ridge_d.py",
+    "sha256": "54f63a40476525de1208874c731ff66207b5c24df91cc9166fddf4d05c397daf",
+    "localResult": {
+      "scope": "Read-only actual SHA-pinned R7 cutloop + actual frozen D pure wall functions; no nativeCDT/provider/repair/export",
+      "sourceSha256": "54f63a40476525de1208874c731ff66207b5c24df91cc9166fddf4d05c397daf",
+      "baselineR7Sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+      "wallFaces": 4968,
+      "wallVertexCount": 2920,
+      "wallFaceRange": [
+        11612,
+        16579
+      ],
+      "aabbSatNonadjacentCandidates": 8545,
+      "allWallSelfHits": 0,
+      "pairs": [],
+      "collar360": 360,
+      "roof512": 512,
+      "frameReports": [
+        {
+          "continuous_base_chord_half_width_samples": 3,
+          "minimum_curvature_offset_cap_metres": 0.40156379793807295,
+          "normal_relief_min_max_metres": [
+            -0.5835608699984077,
+            0.95
+          ],
+          "pitch_min_max_metres": [
+            -0.06437982434276485,
+            0.14
+          ],
+          "local_erosion_taper": {
+            "roof_anchor_xz": [
+              16.3,
+              -19.3
+            ],
+            "measured_u": 0.6014398986388994,
+            "plateau_distance_metres": 0.5,
+            "fade_distance_metres": 1.75,
+            "minimum_gain": 0.75,
+            "global_gain": 1
+          }
+        },
+        {
+          "continuous_base_chord_half_width_samples": 3,
+          "minimum_curvature_offset_cap_metres": 0.5225608389894242,
+          "normal_relief_min_max_metres": [
+            -0.5969056142239832,
+            0.95
+          ],
+          "pitch_min_max_metres": [
+            -0.06518397184957869,
+            0.14
+          ],
+          "local_erosion_taper": {
+            "roof_anchor_xz": [
+              16.3,
+              -19.3
+            ],
+            "measured_u": 0.6014398986388994,
+            "plateau_distance_metres": 0.5,
+            "fade_distance_metres": 1.75,
+            "minimum_gain": 0.75,
+            "global_gain": 1
+          }
+        },
+        {
+          "continuous_base_chord_half_width_samples": 3,
+          "minimum_curvature_offset_cap_metres": 0.5587081622428215,
+          "normal_relief_min_max_metres": [
+            -0.5886671634311348,
+            0.95
+          ],
+          "pitch_min_max_metres": [
+            -0.06532532501309815,
+            0.14
+          ],
+          "local_erosion_taper": {
+            "roof_anchor_xz": [
+              16.3,
+              -19.3
+            ],
+            "measured_u": 0.6014398986388994,
+            "plateau_distance_metres": 0.5,
+            "fade_distance_metres": 1.75,
+            "minimum_gain": 0.75,
+            "global_gain": 1
+          }
+        },
+        {
+          "continuous_base_chord_half_width_samples": 3,
+          "minimum_curvature_offset_cap_metres": 0.5287433561204907,
+          "normal_relief_min_max_metres": [
+            -0.4924133818463271,
+            0.7916666666666667
+          ],
+          "pitch_min_max_metres": [
+            -0.054563405065597745,
+            0.1166666666666667
+          ],
+          "local_erosion_taper": {
+            "roof_anchor_xz": [
+              16.3,
+              -19.3
+            ],
+            "measured_u": 0.6014398986388994,
+            "plateau_distance_metres": 0.5,
+            "fade_distance_metres": 1.75,
+            "minimum_gain": 0.75,
+            "global_gain": 1
+          }
+        }
+      ],
+      "float32PlanarCellGuard": {
+        "actual_piecewise_planar_cells": 2048,
+        "minimum_float32_triangle_cross": 0.006004672444850322,
+        "minimum_cell_triangle_normal_dot": -0.7570387523612323,
+        "all_cells_share_only_their_one_edge": true,
+        "scope": "Intra-cell planar triangles only; not a bilinear Jacobian or global embedding certificate"
+      },
+      "negativeFixture": {
+        "nondegenerate_coplanar_overlap_rejected": true
+      },
+      "float32Finite": true,
+      "maximumRingNormalRelief": 0.95,
+      "notClaimed": "Whole roof interior CDT, cap/bottom geometry, native success, 30source protections, PBR/PNG binary, all44/R7geometry/contact unions, art, runtime",
+      "wallTopologyFloat32IndexedDigest": "d5159f31cc1a952f69921e76fb0f51aa2fe1743b8288441f19afbad553676279",
+      "collarFloat32PositionDigest": "36d331f55d1710716c126f699b42ce7d049cb1fb1a31d2414d986fa225c45162",
+      "roofBoundaryFloat32PositionDigest": "b9676eb4b85045a0bb12663e1f74e80110b5cfae608a2d1cb0c7a28160e23692"
+    }
+  },
+  "localParity": {
+    "wallTriangleIndicesExact": true,
+    "collar360Float32PositionsExact": true,
+    "roof512Float32BoundaryPositionsExact": true,
+    "digests": {
+      "wallTriangleIndices": "d5159f31cc1a952f69921e76fb0f51aa2fe1743b8288441f19afbad553676279",
+      "collar": "36d331f55d1710716c126f699b42ce7d049cb1fb1a31d2414d986fa225c45162",
+      "roofBoundary": "b9676eb4b85045a0bb12663e1f74e80110b5cfae608a2d1cb0c7a28160e23692"
+    },
+    "scope": "Normalized in-memory wall/collar/boundary arrays only, not a full native source or portable GLB graph/topology certificate."
+  },
+  "diagnosis": {
+    "C": "All7 native self-hit pairs independently reproduced across4968 wall faces; interior edge-to-triangle witnesses span0.046172–0.159330m. Direct roof join has0 local wall hits. Discontinuous per-roof-edge outward vectors cause6 cases; lateral gash/buttress offset nearu≈.6014 creates the remaining fold.",
+    "D": "Actual frozen source uses a continuous normal of each interpolated loft BASE from chord±3samples; signed offset capped to35% of a discrete estimated radius; C1 local gain75% around roof anchor(16.3,-19.3), plateau0.50m/fade1.75m. Global gain remains1.0, maximum normal relief remains0.95m.",
+    "counterfixture": "The actual source planar-cell guard accepts its2048 two-triangle cells and rejects its nondegenerate coplanar reversed/overlapping cell. Minimum normals cosine is -0.7570387523612323; no positive bilinear-Jacobian claim.",
+    "broadphaseScope": "8740 C and8545 frozen-D disjoint-topology AABB candidate pairs use1e-6m inclusive padding then actual3D SAT. Earlier8382 belongs to an unfrozen alternative global-gain fixture and is not asserted as this C or D result."
+  },
+  "reproduction": {
+    "runtime": "/Users/marcodantonio/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 with NumPy; cwd /Users/marcodantonio/Workspaces/portfolio",
+    "strategy": "Read frozen recipe AST; execute only named pure functions/constants, never bpy imports or mutation module body. Decode actual SHA-pinned R7 embedded POSITION/index accessors via owner-node mesh binding. Reconstruct exact Float32 cut360/rings/u512roof; explicit native half-open wall range11612–16580. AABB+SAT includes all nonadjacent wall pairs, not just the7 samples.",
+    "scripts": {
+      "C": "/Users/marcodantonio/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 - <<'PY'\nimport ast,json,struct,math,hashlib\nfrom collections import Counter\nimport numpy as np\nroot='assets/archipelago/island-reconstruction-v2/'\nsource=open(root+'rebuild_projects_island_v2_r9_integrated_ridge_c.py').read()\nnames={'require','smooth','cross2','area','inside','segment_distance','boundary','add_vertex','clip_lower','rotate_west','zipper','ribbon','signed_border','ridge_height','densify_outline','arc_data','arc_sample','arc_nearest','wall_displacement','ring_guard','contact_sat','provenance_zipper'}\nconstants={'CONTACT_EPS','CUT','BOTTOM','COLLAR','WALL_SAMPLES','WALL_LEVELS','ROOF_OUTLINE','REGIONS','FAULTS','ROOF_FRACTURES','WALL_BUTTRESSES'}\nselected=[n for n in ast.parse(source).body if (isinstance(n,ast.FunctionDef) and n.name in names) or (isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id in constants for t in n.targets))]\ng={'np':np,'math':math,'Counter':Counter};exec(compile(ast.Module(body=selected,type_ignores=[]),'<read-only-source-extraction>','exec'),g)\nb=open(root+'projects-island-v2-r7.glb','rb').read(); assert hashlib.sha256(b).hexdigest()=='03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2'\njlen=struct.unpack_from('<I',b,12)[0];d=json.loads(b[20:20+jlen]);binary=b[28+jlen:]\ndef read_accessor(i):\n a=d['accessors'][i];v=d['bufferViews'][a['bufferView']];dtype={5126:'<f4',5125:'<u4',5123:'<u2'}[a['componentType']];width={'VEC3':3,'SCALAR':1}[a['type']];size=np.dtype(dtype).itemsize\n return np.ndarray((a['count'],width),dtype=dtype,buffer=binary,offset=v.get('byteOffset',0)+a.get('byteOffset',0),strides=(v.get('byteStride',size*width),size)).copy()\nn=next(n for n in d['nodes'] if n.get('name')=='ProjectsIsland_V2_Rear_Connected_Low_Saddle');pr=d['meshes'][n['mesh']]['primitives'][0]\np=read_accessor(pr['attributes']['POSITION']).astype(np.float64);f=read_accessor(pr['indices']).ravel().reshape(-1,3)\n# Exact XYZ welding removes portable attribute splits only, not geometric corners.\nq,inv=np.unique(p,axis=0,return_inverse=True);f=inv[f]\nv,faces,origins,loop=g['clip_lower']({'p':q,'f':f},1.25);foot=np.asarray(v)[loop][:,[0,2]].tolist();assert len(loop)==360\noutline=g['densify_outline'](g['ROOF_OUTLINE']);footdata=g['arc_data'](foot);roofdata=g['arc_data'](outline)\nribs=[(g['arc_nearest'](roofdata,pt),w,bul,dr,gw,dep) for pt,w,bul,dr,gw,dep in g['WALL_BUTTRESSES']]\nrings=[]\nfor t in g['WALL_LEVELS']:\n pts=[]\n for i in range(512):\n  u=i/512;a,_=g['arc_sample'](footdata,u);roof,out=g['arc_sample'](roofdata,u);xy=a*(1-t)+roof*t;relief,pitch=g['wall_displacement'](u,t,roofdata[2],ribs)\n  if out[1]<0 and relief>0:relief=min(relief,max(0.,(-33.85-xy[1])/out[1]))\n  if out[1]>0 and relief>0 and abs(xy[0])<17.2:relief=min(relief,max(0.,(-16.35-xy[1])/out[1]))\n  moved=xy+out*relief;h=1.5+t*(float(g['ridge_height']([roof])[0])-1.5)+pitch;pts.append((moved[0],h,moved[1]))\n rings.append(np.asarray(pts,dtype=np.float32).astype(np.float64))\n\n# Pure actual-C wall reconstruction; roof interior CDT is not needed for these 7 native wall pairs.\nshared_u=np.arange(512)/512\nroof_xz=np.asarray([g['arc_sample'](roofdata,u)[0] for u in shared_u],dtype=np.float32).astype(np.float64)\nroof=np.asarray([[x,float(g['ridge_height']([(x,z)])[0]),z] for x,z in roof_xz],dtype=np.float32).astype(np.float64)\ncollar=np.asarray([[x,1.5,z] for x,z in foot],dtype=np.float32).astype(np.float64)\npoints=np.concatenate([collar,*rings,roof]);indices=[];offset=0\nfor r in (collar,*rings,roof):indices.append(list(range(offset,offset+len(r))));offset+=len(r)\ncollar_order=g['rotate_west'](indices[0],points);collar_u=footdata[1][:-1]/footdata[2]\nwf=list(g['provenance_zipper'](collar_order,collar_u,indices[1],shared_u))\nfor previous,current in zip(indices[1:-1],indices[2:]):\n for i,a in enumerate(previous):\n  bb,c,dd=previous[(i+1)%512],current[i],current[(i+1)%512];wf.extend(((bb,a,c),(bb,c,dd)))\nwf=np.asarray(wf);tris=points[wf];base=11612\nminima,maxima=tris.min(axis=1),tris.max(axis=1);hits=[];candidate_count=0\nfor i,a in enumerate(tris):\n ids=np.flatnonzero(np.all(minima<=maxima[i]+1e-6,axis=1)&np.all(maxima>=minima[i]-1e-6,axis=1));ids=[j for j in ids if j>i and not set(wf[i]).intersection(wf[j])]\n candidate_count+=len(ids)\n if ids:\n  for j in np.asarray(ids)[g['contact_sat'](a,tris[ids])]:hits.append((int(i+base),int(j+base)))\nsamples=[(15270,15274),(15270,15273),(15271,15274),(14030,14033),(14029,14033),(14029,14032),(14123,14126)]\nreport={'scope':'SHA-pinned actual R7 cutloop; pure C four wall rings/collar/u512roof; no Blender/CDT/provider','wallFaces':len(wf),'faceRange':[base,base+len(wf)-1],'actualNativeSamples':samples,'reconstructedAllWallSelfHits':hits,'matchesAll7':len(hits)==7 and set(hits)==set(samples),'directRoofJoinSelfHits':sum(a>=15556 or b>=15556 for a,b in hits),'samples':[]}\nfor aa,bb in samples:\n ta,tb=tris[aa-base],tris[bb-base];qa,qb=wf[aa-base],wf[bb-base];witness=[]\n for one,other in ((ta,tb),(tb,ta)):\n  for e0,e1 in zip(one,np.roll(one,-1,axis=0)):\n   mat=np.column_stack((other[1]-other[0],other[2]-other[0],e0-e1))\n   if abs(np.linalg.det(mat))<1e-10:continue\n   u,v,t=np.linalg.solve(mat,e0-other[0])\n   if u>0 and v>0 and u+v<1 and t>0 and t<1:witness.append((e0+t*(e1-e0)).tolist())\n report['samples'].append({'faces':[aa,bb],'triangles':[ta.tolist(),tb.tolist()],'wallVertices':[qa.tolist(),qb.tolist()],'intersectionAabb':[np.maximum(ta.min(0),tb.min(0)).tolist(),np.minimum(ta.max(0),tb.max(0)).tolist()],'interiorWitness':witness,'witnessSegmentMetres':float(np.linalg.norm(np.asarray(witness[0])-np.asarray(witness[1]))) if len(witness)>=2 else None})\n\nreport['aabbSatNonadjacentCandidates']=candidate_count\nreport['sourceSha256']=hashlib.sha256(source.encode()).hexdigest()\nreport['baselineR7Sha256']=hashlib.sha256(b).hexdigest()\nreport['wallTopologyFloat32IndexedDigest']=hashlib.sha256(wf.astype('<i4').tobytes()).hexdigest()\nreport['collarFloat32PositionDigest']=hashlib.sha256(collar.astype('<f4').tobytes()).hexdigest()\nreport['roofBoundaryFloat32PositionDigest']=hashlib.sha256(roof.astype('<f4').tobytes()).hexdigest()\nreport['independentInteriorSegmentMetres']=[sample['witnessSegmentMetres'] for sample in report.pop('samples')]\nprint(json.dumps(report,indent=2))\n\nPY",
+      "D": "/Users/marcodantonio/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 - <<'PY'\nimport ast,json,struct,math,hashlib\nfrom collections import Counter\nimport numpy as np\nroot='assets/archipelago/island-reconstruction-v2/'\nsource=open(root+'rebuild_projects_island_v2_r9_integrated_ridge_d.py').read()\nnames={'require','smooth','cross2','area','inside','segment_distance','boundary','add_vertex','clip_lower','rotate_west','zipper','ribbon','signed_border','ridge_height','densify_outline','arc_data','arc_sample','arc_nearest','wall_displacement','ring_guard','contact_sat','provenance_zipper','continuous_loft_ring','check_piecewise_planar_loft_cells','loft_cell_negative_fixture'}\nconstants={'CONTACT_EPS','CUT','BOTTOM','COLLAR','WALL_SAMPLES','WALL_LEVELS','ROOF_OUTLINE','REGIONS','FAULTS','ROOF_FRACTURES','WALL_BUTTRESSES'}\nselected=[n for n in ast.parse(source).body if (isinstance(n,ast.FunctionDef) and n.name in names) or (isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id in constants for t in n.targets))]\ng={'np':np,'math':math,'Counter':Counter};exec(compile(ast.Module(body=selected,type_ignores=[]),'<read-only-source-extraction>','exec'),g)\nb=open(root+'projects-island-v2-r7.glb','rb').read(); assert hashlib.sha256(b).hexdigest()=='03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2'\njlen=struct.unpack_from('<I',b,12)[0];d=json.loads(b[20:20+jlen]);binary=b[28+jlen:]\ndef read_accessor(i):\n a=d['accessors'][i];v=d['bufferViews'][a['bufferView']];dtype={5126:'<f4',5125:'<u4',5123:'<u2'}[a['componentType']];width={'VEC3':3,'SCALAR':1}[a['type']];size=np.dtype(dtype).itemsize\n return np.ndarray((a['count'],width),dtype=dtype,buffer=binary,offset=v.get('byteOffset',0)+a.get('byteOffset',0),strides=(v.get('byteStride',size*width),size)).copy()\nn=next(n for n in d['nodes'] if n.get('name')=='ProjectsIsland_V2_Rear_Connected_Low_Saddle');pr=d['meshes'][n['mesh']]['primitives'][0]\np=read_accessor(pr['attributes']['POSITION']).astype(np.float64);f=read_accessor(pr['indices']).ravel().reshape(-1,3)\n# Exact XYZ welding removes portable attribute splits only, not geometric corners.\nq,inv=np.unique(p,axis=0,return_inverse=True);f=inv[f]\nv,faces,origins,loop=g['clip_lower']({'p':q,'f':f},1.25);foot=np.asarray(v)[loop][:,[0,2]].tolist();assert len(loop)==360\noutline=g['densify_outline'](g['ROOF_OUTLINE']);footdata=g['arc_data'](foot);roofdata=g['arc_data'](outline)\nribs=[(g['arc_nearest'](roofdata,pt),w,bul,dr,gw,dep) for pt,w,bul,dr,gw,dep in g['WALL_BUTTRESSES']]\n\nrings=[];frames=[]\nfor t in g['WALL_LEVELS']:\n pts,frame=g['continuous_loft_ring'](footdata,roofdata,t,ribs)\n g['ring_guard'](pts,'independent D '+str(t))\n rings.append(np.asarray(pts,dtype=np.float32).astype(np.float64));frames.append(frame)\n# Pure actual-C wall reconstruction; roof interior CDT is not needed for these 7 native wall pairs.\nshared_u=np.arange(512)/512\nroof_xz=np.asarray([g['arc_sample'](roofdata,u)[0] for u in shared_u],dtype=np.float32).astype(np.float64)\nroof=np.asarray([[x,float(g['ridge_height']([(x,z)])[0]),z] for x,z in roof_xz],dtype=np.float32).astype(np.float64)\ncollar=np.asarray([[x,1.5,z] for x,z in foot],dtype=np.float32).astype(np.float64)\npoints=np.concatenate([collar,*rings,roof]);indices=[];offset=0\nfor r in (collar,*rings,roof):indices.append(list(range(offset,offset+len(r))));offset+=len(r)\ncollar_order=g['rotate_west'](indices[0],points);collar_u=footdata[1][:-1]/footdata[2]\nwf=list(g['provenance_zipper'](collar_order,collar_u,indices[1],shared_u));cells=[]\nfor previous,current in zip(indices[1:-1],indices[2:]):\n for i,a in enumerate(previous):\n  bb,c,dd=previous[(i+1)%512],current[i],current[(i+1)%512];wf.extend(((bb,a,c),(bb,c,dd)));cells.append((a,bb,c,dd))\nwf=np.asarray(wf);tris=points[wf];base=11612\nminima,maxima=tris.min(axis=1),tris.max(axis=1);hits=[];candidate_count=0\nfor i,a in enumerate(tris):\n ids=np.flatnonzero(np.all(minima<=maxima[i]+1e-6,axis=1)&np.all(maxima>=minima[i]-1e-6,axis=1));ids=[j for j in ids if j>i and not set(wf[i]).intersection(wf[j])]\n candidate_count+=len(ids)\n if ids:\n  for j in np.asarray(ids)[g['contact_sat'](a,tris[ids])]:hits.append((int(i+base),int(j+base)))\n\ncell_report=g['check_piecewise_planar_loft_cells'](points,cells);negative=g['loft_cell_negative_fixture']()\nreport={'scope':'Read-only actual SHA-pinned R7 cutloop + actual frozen D pure wall functions; no nativeCDT/provider/repair/export','sourceSha256':hashlib.sha256(source.encode()).hexdigest(),'baselineR7Sha256':hashlib.sha256(b).hexdigest(),'wallFaces':len(wf),'wallVertexCount':len(points),'wallFaceRange':[base,base+len(wf)-1],'aabbSatNonadjacentCandidates':candidate_count,'allWallSelfHits':len(hits),'pairs':hits,'collar360':len(collar),'roof512':len(roof),'frameReports':frames,'float32PlanarCellGuard':cell_report,'negativeFixture':negative,'float32Finite':bool(np.isfinite(points).all()),'maximumRingNormalRelief':max(f['normal_relief_min_max_metres'][1] for f in frames),'notClaimed':'Whole roof interior CDT, cap/bottom geometry, native success, 30source protections, PBR/PNG binary, all44/R7geometry/contact unions, art, runtime'}\n\nreport['wallTopologyFloat32IndexedDigest']=hashlib.sha256(wf.astype('<i4').tobytes()).hexdigest()\nreport['collarFloat32PositionDigest']=hashlib.sha256(collar.astype('<f4').tobytes()).hexdigest()\nreport['roofBoundaryFloat32PositionDigest']=hashlib.sha256(roof.astype('<f4').tobytes()).hexdigest()\nprint(json.dumps(report,indent=2))\n\nPY"
+    },
+    "exitCodes": {
+      "C": 0,
+      "D": 0
+    }
+  },
+  "limits": [
+    "Local wall fixture does not reconstruct the native CDT roof interior, stump-cap/bottom skin or all30 native sources.",
+    "Zero nonadjacent wall hits does not prove complete adjacent-vertex folds, all native roof/peer contacts, containment, Boolean union or global embedding.",
+    "Finite-difference curvature radius is an offset heuristic, not an exact curvature or bilinear-Jacobian certificate; planar-cell guard is limited to two actual triangles sharing one edge.",
+    "R7 whole BODY/apron/approach/submerged/source28/UV/COLOR/NORMAL/PBR6PNG preservation requires separate actual native/binary guards; not measured by this fixture.",
+    "D native query outcome, generated images, export, reference fidelity, gameplay/Rapier/ocean/minimap integration, runtime budget, FPS/device and production remain outside this receipt.",
+    "Earlier independent C smooth-normal/local-u308 taper is a different in-memory fixture from actual frozen D's BASE-frame/curvature/local-roof-anchor implementation; do not conflate them."
+  ],
+  "providerOrRecipeEdits": false,
+  "docsEdited": false,
+  "createdArtifactOnly": "macro-ridge-candidates-c-d-local-diagnostic.json"
+}

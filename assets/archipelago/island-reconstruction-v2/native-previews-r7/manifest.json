@@ -1,0 +1,161 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "revision": 7,
+  "sceneSequence": 0,
+  "operationId": "projects-v2-r7-committed-material-hero-20261005",
+  "terminalStatus": "succeeded",
+  "finishedAt": "2026-10-05T04:08:38.725Z",
+  "result": {
+    "view": {
+      "view": "hero",
+      "assetMeshes": 44,
+      "blenderBounds": [
+        [
+          -34.44200134277344,
+          -34.44200134277344,
+          -10
+        ],
+        [
+          34.27458572387695,
+          36.441688537597656,
+          19.423599243164062
+        ]
+      ],
+      "orthographic": true,
+      "diagnosticWater": true,
+      "sampleCount": 8,
+      "temporaryQueryOnly": true,
+      "noRuntimeWaterClaim": true
+    },
+    "committedSourceAudit": {
+      "schemaVersion": 1,
+      "recipe": "projects-island-v2-r7-neutral-mineral-albedo",
+      "source_revision": "R6",
+      "source_owners_exact": 44,
+      "source_triangles_exact": 109088,
+      "source_geometry_uv_corner_normals_colour_and_ownership_exact": true,
+      "source_state_sha256": "c8e4863bc8892648a7524227ff1479f6c0b344a5f5b458d9bee0370c30acbd94",
+      "historical_r6_audit_exact": true,
+      "original_native_png_bytes_exact": 4,
+      "new_albedo_pngs": 2,
+      "new_materials": 0,
+      "existing_terrain_materials": 2,
+      "textures": [
+        {
+          "name": "ProjectsIsland_V2_Limestone_NeutralAlbedo_R7_1024",
+          "kind": "Limestone",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 535090,
+          "sha256": "dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3",
+          "PNG": {
+            "bitDepth": 8,
+            "colorType": 6,
+            "opaque": true
+          },
+          "generated_linear_RGB_mean": [
+            0.9355714127900683,
+            0.9402371234255043,
+            0.9383736312170186
+          ],
+          "generated_linear_min_max_std": [
+            0.5562946200370789,
+            0.9980000257492065,
+            0.03190293163061142
+          ],
+          "actual_png_sRGB_RGB_mean": [
+            0.9709800662714088,
+            0.9731160310799964,
+            0.9722620625292961
+          ],
+          "actual_png_decoded_linear_RGB_mean": [
+            0.9355828331065368,
+            0.9402631785710014,
+            0.9383903712172241
+          ],
+          "maximum_linear_quantization_error": 0.004454433917999268,
+          "opposing_edge_texels_exact": true,
+          "nominal_metres_per_uv_tile": 6.4
+        },
+        {
+          "name": "ProjectsIsland_V2_HoneyEarth_NeutralAlbedo_R7_1024",
+          "kind": "HoneyEarth",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 802348,
+          "sha256": "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b",
+          "PNG": {
+            "bitDepth": 8,
+            "colorType": 6,
+            "opaque": true
+          },
+          "generated_linear_RGB_mean": [
+            0.9311750052991101,
+            0.9284866567261929,
+            0.9221484231890713
+          ],
+          "generated_linear_min_max_std": [
+            0.7354596257209778,
+            0.9980000257492065,
+            0.03790656849741936
+          ],
+          "actual_png_sRGB_RGB_mean": [
+            0.968945273212114,
+            0.9677049730888143,
+            0.9647759963442581
+          ],
+          "actual_png_decoded_linear_RGB_mean": [
+            0.931256280928551,
+            0.9285551107003016,
+            0.9221925037618348
+          ],
+          "maximum_linear_quantization_error": 0.004454374313354492,
+          "opposing_edge_texels_exact": true,
+          "nominal_metres_per_uv_tile": 6.4
+        }
+      ],
+      "graphs": [
+        {
+          "material": "ProjectsIsland_V2_Limestone",
+          "vertex_colour": "TerrainColour",
+          "uv_map": "UVMap",
+          "graph": "ShaderNodeMix RGBA MULTIPLY factor1: COLOR_0 x sRGB baseColorTexture",
+          "original_nodes_and_non_albedo_links_exact": true,
+          "new_nodes": 3
+        },
+        {
+          "material": "ProjectsIsland_V2_HoneyEarth",
+          "vertex_colour": "TerrainColour",
+          "uv_map": "UVMap",
+          "graph": "ShaderNodeMix RGBA MULTIPLY factor1: COLOR_0 x sRGB baseColorTexture",
+          "original_nodes_and_non_albedo_links_exact": true,
+          "new_nodes": 3
+        }
+      ],
+      "provider_requests": 0,
+      "renders": 0,
+      "exports": 0,
+      "original_roughness_metallic_normal_MR_graphs_exact": true,
+      "full_reference_fidelity_verified": false,
+      "runtime_integrated": false,
+      "scope": "Albedo-only; rear/ledge geometry targets remain OPEN. Not sculpting, union, gameplay, performance or art approval."
+    },
+    "inspectedSourceRoot": "ProjectsIsland_V2_Origin_At_Sea_Level",
+    "queryOnly": true
+  },
+  "generatedArtifacts": [
+    {
+      "size": 814763,
+      "etag": "df009e67a5b06ebcd5ae0788b22a3032",
+      "id": "243dec2b19f1a975311e82104fbc7e75",
+      "name": "projects-island-v2-r7-committed-hero.png",
+      "mediaType": "image/png",
+      "width": 960,
+      "height": 720
+    }
+  ],
+  "actualCommittedHeroReviewedByRoot": true,
+  "onlyDiagnosticWaterNotExportedOrRuntime": true,
+  "otherAxesAndTilesReviewedEphemerally": "../native-previews-r7-candidate/manifest.json",
+  "art": "Modest material detail only; repeated ledges/primitive silhouettes remain unapproved."
+}

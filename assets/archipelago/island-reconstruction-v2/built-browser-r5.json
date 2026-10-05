@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-05",
+  "port": 3060,
+  "scoped": "Built isolated Asset Lab, not gameplay/device/GPU/FPS acceptance",
+  "cameraPass": {
+    "rows": [
+      {
+        "variant": "batched",
+        "view": "hero",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.35 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "batched",
+        "view": "front",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.35 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "batched",
+        "view": "right",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.35 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "batched",
+        "view": "top",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.35 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "hero",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.00 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "front",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.00 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "right",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.00 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "top",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.00 MiB",
+          "triangles": "109.088",
+          "vertices": "292.492",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 28.91 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      }
+    ],
+    "errors": []
+  },
+  "datumResize404": {
+    "before": {
+      "state": "ready",
+      "datum": "visible",
+      "canvas": 1,
+      "overflow": false,
+      "stats": [
+        "14.00 MiB",
+        "109.088",
+        "292.492",
+        "44 / 2 / 4",
+        "68.72 × 28.91 × 70.88",
+        "Oltre il profilo orientativo; master da revisionare"
+      ]
+    },
+    "off": {
+      "state": "ready",
+      "datum": "hidden",
+      "canvas": 1,
+      "overflow": false,
+      "stats": [
+        "14.00 MiB",
+        "109.088",
+        "292.492",
+        "44 / 2 / 4",
+        "68.72 × 28.91 × 70.88",
+        "Oltre il profilo orientativo; master da revisionare"
+      ]
+    },
+    "on": {
+      "state": "ready",
+      "datum": "visible",
+      "canvas": 1,
+      "overflow": false,
+      "stats": [
+        "14.00 MiB",
+        "109.088",
+        "292.492",
+        "44 / 2 / 4",
+        "68.72 × 28.91 × 70.88",
+        "Oltre il profilo orientativo; master da revisionare"
+      ]
+    },
+    "small": {
+      "state": "ready",
+      "datum": "visible",
+      "canvas": 1,
+      "overflow": false,
+      "stats": [
+        "14.00 MiB",
+        "109.088",
+        "292.492",
+        "44 / 2 / 4",
+        "68.72 × 28.91 × 70.88",
+        "Oltre il profilo orientativo; master da revisionare"
+      ]
+    },
+    "missing": {
+      "state": "missing",
+      "canvas": 0,
+      "overflow": false,
+      "stats": [
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "Non verificato"
+      ]
+    },
+    "recovered": {
+      "state": "ready",
+      "datum": "visible",
+      "canvas": 1,
+      "overflow": false,
+      "stats": [
+        "14.35 MiB",
+        "109.088",
+        "292.492",
+        "2 / 2 / 4",
+        "68.72 × 28.91 × 70.88",
+        "Oltre il profilo orientativo; master da revisionare"
+      ]
+    }
+  },
+  "forcedWebgl": {
+    "state": "error",
+    "canvas": 0,
+    "referenceVisible": true,
+    "overflow": false,
+    "message": "Error creating WebGL context."
+  },
+  "imagesActuallyViewed": 8,
+  "datumImagesActuallyViewed": 2,
+  "smallViewportCaptureActuallyViewed": true,
+  "forcedWebglConsoleErrorExpected": true,
+  "isolated404ConsoleErrorExpected": true,
+  "harnessCorrections": [
+    "First malformed run-code input failed parsing before execution",
+    "Unqualified data-camera selector matched main+button; fixed selector to button only"
+  ],
+  "runtimeMutation": false
+}

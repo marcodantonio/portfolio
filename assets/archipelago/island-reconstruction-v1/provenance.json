@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-03",
+  "territory": "projects",
+  "pipeline": "User-requested image-first terrain → Higgsfield automatic multiview-to-3D → separate scenery.",
+  "status": "PARTIAL_IMAGE_STUDY_NOT_READY_FOR_3D_OR_RUNTIME",
+  "sources": [
+    {
+      "file": "/Users/marcodantonio/Downloads/ChatGPT Image Sep 27, 2026 at 01_34_48 AM-4.png",
+      "role": "User-supplied workshop style reference",
+      "media_id": "2d9b109f-ced7-4a4d-b387-5858444ca7ff"
+    },
+    {
+      "file": "/Users/marcodantonio/Downloads/ChatGPT Image Sep 27, 2026 at 01_34_46 AM-1.png",
+      "role": "User-supplied archipelago geography/style reference",
+      "media_id": "273d7fcf-d78c-4464-89d9-f531b017652b"
+    }
+  ],
+  "image_jobs": [
+    {
+      "role": "initial-concept",
+      "job_id": "2cfb8944-dd59-4374-89e4-14cda4f8f454",
+      "file": "projects-concept-oblique.png",
+      "bytes": 9205448,
+      "width": 3840,
+      "height": 2160,
+      "sha256": "61124623d5638a9477fb12c5bc7086aa0eda725eb9becbc290b4a5300f197670",
+      "params": {
+        "model": "gpt_image_2_5",
+        "quality": "xhigh",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "2d9b109f-ced7-4a4d-b387-5858444ca7ff"
+          },
+          {
+            "role": "image",
+            "value": "273d7fcf-d78c-4464-89d9-f531b017652b"
+          }
+        ],
+        "prompt": "Use case: stylized-concept. Asset type: FIRST FRONT ORTHOGRAPHIC reference image for a real tropical island terrain mesh, to be reconstructed in 3D and dressed with separate buildings afterwards. Input image 1 is the supplied digital workshop island art/style reference. Input image 2 is the overall archipelago geography/style reference. Extract the premium smooth sculpted cartoon ROCK AND SOIL craftsmanship of the workshop island, NOT buildings, trees, decks or UI. Subject: ONE BARE natural tropical coastal island, around 60 metres wide and 56 metres deep, with a broad usable central ground area of at least 32x26m for the later workshop. The inhabited ground is only 4.8m above an implied sea level; low sandy beach coves descend gently to sea contact. Real asymmetrical limestone terrain volume, three distinct eroded rock shoulders, larger angular-but-smooth bevelled warm grey stone strata, mineral fractures and weathered rounded edges; irregular grass cap and warm sand at low coastal pockets, sparse moss only in cracks. A front-left shallow cove and an offset front-right rocky promontory give identity, no round disc. Continuous SOLID SUBMERGED bedrock extends about 8m below implied sea level, broad and stable at its lowest extent, NEVER a tapering floating rock or pedestal supported by hanging stones. The implied sea is a geometric reference only: DO NOT render water, a waterline stripe, sky or landscape. Composition: exactly ONE STRICT FRONT orthographic elevation, camera horizontal looking along minus Z, Y up, north/rear minus Z, front plus Z; zero perspective convergence, no isometric view, no sheet/panels. The whole island complete and isolated on pure white with generous padding, one same object to be turned in later views. Soft neutral studio PBR lighting and readable depth, high-resolution detailed premium cartoon game art like the references; naturally rough mineral/sand surfaces, no baked dramatic shadows. Keep island surface simple and empty enough to place separate architecture and vegetation; only terrain/bedrock/ground materials belong in this asset. No buildings, wooden decks, bridges, ramps, paths, palms, shrubs, flowers, avatar, boats, signboards, labels, typography, logos, watermark, voxel/pixel style or flat primitive polygons. Do NOT copy UI or invented portfolio facts."
+      },
+      "review": "REJECTED as requested strict front elevation: broad top face visible; preserved only as subject concept.",
+      "status": "completed",
+      "quoted_credits": 7
+    },
+    {
+      "role": "front-reference",
+      "job_id": "84703d18-c8af-48b9-96ce-b775d816ef44",
+      "file": "projects-front.png",
+      "bytes": 7635268,
+      "width": 3840,
+      "height": 2160,
+      "sha256": "b6006c9c48c246c1d900af4d281380362263cfdf33bbc62cfba22146abcf5ec5",
+      "params": {
+        "model": "gpt_image_2_5",
+        "quality": "xhigh",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "2cfb8944-dd59-4374-89e4-14cda4f8f454"
+          },
+          {
+            "role": "image",
+            "value": "2d9b109f-ced7-4a4d-b387-5858444ca7ff"
+          }
+        ],
+        "prompt": "Use case: stylized-concept. Asset type: orthographic terrain reconstruction reference. Reference image 1 is the EXACT bare island subject to rotate, NOT a style-only suggestion; preserve its asymmetrical silhouette, three rear eroded limestone shoulders, broad central empty clearing, front-left sandy cove, smaller front-right sandy inlet and offset right rocky promontory. Reference image 2 is the user's original workshop scene, used ONLY for premium smooth sculpted tropical cartoon mineral/soil material craftsmanship, not for objects. Output ONE single isolated island on white, no sheet or panels. Do not redesign or invent a different island. No water, blue waterline stripe, sky, shadows from buildings, scenery, palms, shrubs, buildings, wooden decks, bridges, avatars, annotations or text. Terrain only; earthy grass cover, warm pale sand, weathered warm-grey limestone with rounded sharp strata. NOT pixelated, voxel, a floating tapered rock, thin disk, pedestal or pile of disconnected boulders. Solid broad bedrock is the submerged part in later integration, the shore-to-flat-clearing rise is only 4.8m and the whole body is about 60m wide and 56m deep. Preserve the same material/color boundaries and landscape landmarks in all views. Neutral studio lighting with no baked dramatic shadows, crisp high resolution, full uncropped asset with generous margins. CAMERA FOR THIS IMAGE: STRICT FRONT ELEVATION. Orthographic parallel projection. World Y is up and front is +Z. Camera looks horizontally along -Z, with exactly ZERO pitch and ZERO roll, optical axis parallel to the ground plane. Do NOT keep the reference camera's downward tilt. This must look like a game-environment model's straight-on FRONT blueprint silhouette with realistic PBR surfaces, not an aerial 3/4 render. Horizontal surface tops must be edge-on: no broad visible central top face, no overhead glimpse of the flat clearing, no isometric depth view. Show the front coast and continuous bedrock straight on, with rear shoulders rising behind. Keep front-left cove on image-left, right promontory on image-right. No text or dimension arrows."
+      },
+      "review": "Front-facing but tilted down: broad upper clearing remains visible. Not an approved zero-pitch orthographic elevation.",
+      "status": "completed",
+      "quoted_credits": 7
+    },
+    {
+      "role": "right-reference",
+      "job_id": "f79557c2-5d8e-4b8a-8666-9d53c191867a",
+      "file": "projects-right.png",
+      "bytes": 7797736,
+      "width": 3840,
+      "height": 2160,
+      "sha256": "8aa64b3709a082b1997c2298a0ebdd719bcd762d920ccfa8fa573f4881d3d234",
+      "params": {
+        "model": "gpt_image_2_5",
+        "quality": "xhigh",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "2cfb8944-dd59-4374-89e4-14cda4f8f454"
+          },
+          {
+            "role": "image",
+            "value": "2d9b109f-ced7-4a4d-b387-5858444ca7ff"
+          }
+        ],
+        "prompt": "Use case: stylized-concept. Asset type: orthographic terrain reconstruction reference. Reference image 1 is the EXACT bare island subject to rotate, NOT a style-only suggestion; preserve its asymmetrical silhouette, three rear eroded limestone shoulders, broad central empty clearing, front-left sandy cove, smaller front-right sandy inlet and offset right rocky promontory. Reference image 2 is the user's original workshop scene, used ONLY for premium smooth sculpted tropical cartoon mineral/soil material craftsmanship, not for objects. Output ONE single isolated island on white, no sheet or panels. Do not redesign or invent a different island. No water, blue waterline stripe, sky, shadows from buildings, scenery, palms, shrubs, buildings, wooden decks, bridges, avatars, annotations or text. Terrain only; earthy grass cover, warm pale sand, weathered warm-grey limestone with rounded sharp strata. NOT pixelated, voxel, a floating tapered rock, thin disk, pedestal or pile of disconnected boulders. Solid broad bedrock is the submerged part in later integration, the shore-to-flat-clearing rise is only 4.8m and the whole body is about 60m wide and 56m deep. Preserve the same material/color boundaries and landscape landmarks in all views. Neutral studio lighting with no baked dramatic shadows, crisp high resolution, full uncropped asset with generous margins. CAMERA FOR THIS IMAGE: STRICT RIGHT ELEVATION. Orthographic parallel projection. World Y up, front +Z. Camera is on the island's +X right/east side looking horizontally along -X, exactly ZERO pitch and ZERO roll. In this view island front (+Z) is screen LEFT and rear (-Z) is screen RIGHT. Do NOT preserve the reference camera direction and do NOT make another front view or mirror the front. No aerial perspective, no 3/4 view: the clearing's flat horizontal surface is edge-on. Preserve the exact same island, now rotate viewing axis by 90 degrees: the rear central tall shoulder moves to screen-right, front-right rocky promontory becomes the foreground near screen-left, front-left cove is far side. Show full continuous bedrock and material strata, not a newly invented symmetrical rock. No text or dimension arrows."
+      },
+      "review": "Right-facing but tilted down, showing broad clearing. Not an approved zero-pitch orthographic elevation; exact landmark/shape parity is unproven.",
+      "status": "completed",
+      "quoted_credits": 7
+    },
+    {
+      "role": "top-reference",
+      "job_id": "02536581-69e6-4226-9b36-f092667f6f77",
+      "file": "projects-top.png",
+      "bytes": 11344591,
+      "width": 2880,
+      "height": 2880,
+      "sha256": "940c209071b62770b0e33a7f04b9817a923f1d1e6137adbd60c2eb72a7429973",
+      "params": {
+        "model": "gpt_image_2_5",
+        "quality": "xhigh",
+        "resolution": "4k",
+        "aspect_ratio": "1:1",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "2cfb8944-dd59-4374-89e4-14cda4f8f454"
+          },
+          {
+            "role": "image",
+            "value": "2d9b109f-ced7-4a4d-b387-5858444ca7ff"
+          }
+        ],
+        "prompt": "Use case: stylized-concept. Asset type: orthographic terrain reconstruction reference. Reference image 1 is the EXACT bare island subject to rotate, NOT a style-only suggestion; preserve its asymmetrical silhouette, three rear eroded limestone shoulders, broad central empty clearing, front-left sandy cove, smaller front-right sandy inlet and offset right rocky promontory. Reference image 2 is the user's original workshop scene, used ONLY for premium smooth sculpted tropical cartoon mineral/soil material craftsmanship, not for objects. Output ONE single isolated island on white, no sheet or panels. Do not redesign or invent a different island. No water, blue waterline stripe, sky, shadows from buildings, scenery, palms, shrubs, buildings, wooden decks, bridges, avatars, annotations or text. Terrain only; earthy grass cover, warm pale sand, weathered warm-grey limestone with rounded sharp strata. NOT pixelated, voxel, a floating tapered rock, thin disk, pedestal or pile of disconnected boulders. Solid broad bedrock is the submerged part in later integration, the shore-to-flat-clearing rise is only 4.8m and the whole body is about 60m wide and 56m deep. Preserve the same material/color boundaries and landscape landmarks in all views. Neutral studio lighting with no baked dramatic shadows, crisp high resolution, full uncropped asset with generous margins. CAMERA FOR THIS IMAGE: STRICT TOP ORTHOGRAPHIC PLAN. Camera exactly vertically above along +Y, looking down -Y, no perspective and no tilt. Rear/north (-Z) at image TOP, front/south (+Z) at image BOTTOM, right/east (+X) at image RIGHT. Ground plane must be parallel to the picture plane. Show the full asymmetrical plan footprint with roughly 60:56 width-to-depth ratio, same 32x26m broad central mostly clear ground with grass and warm sand patches. All three limestone shoulders follow the rear/north edge and sides. The major front-left cove is lower-left and front-right rock promontory lower-right; broad bedrock below is hidden from this exact overhead view. This is an unlabelled top-down asset reference, NOT an oblique/isometric bird's eye view and NOT an illustrated cartographic map. No trees/objects/buildings/paths/text/dimensions."
+      },
+      "review": "Steep overhead oblique rather than exact vertical top plan; vertical rock faces remain substantially visible. Not an approved orthographic plan.",
+      "status": "completed",
+      "quoted_credits": 7
+    }
+  ],
+  "billing": {
+    "observed_before": 93.25,
+    "observed_after": 65.25,
+    "total_credit_delta": 28,
+    "quoted_total": 28,
+    "plan": "plus",
+    "trial_credits_reported_after": 100,
+    "trial_end": "2026-10-04T11:33:52Z",
+    "trial_unlim_available": false,
+    "promotional_bucket_debit_proven": false
+  },
+  "execution_capability": {
+    "catalog_model": "multi_image_to_3d",
+    "provider": "Meshy",
+    "accepts": "1–4 same-subject image references",
+    "verified_parameters": {
+      "should_texture": true,
+      "enable_pbr": true,
+      "should_remesh": true,
+      "target_polycount": 300000,
+      "topology": "triangle",
+      "symmetry_mode": "off",
+      "enable_rigging": false,
+      "enable_animation": false
+    },
+    "parameter_status": "PROPOSED review-master settings only; no execution call or 3D quote made",
+    "generate_3d_exposed": false,
+    "independent_tool_audit": {
+      "exposed_higgsfield_tools": 103,
+      "models_3d_catalog_entries": 10
+    },
+    "invalid_image_cost_preflight": {
+      "error_code": "INVALID_ARGUMENT",
+      "message": "model \"multi_image_to_3d\" is a 3d model; use generate_3d instead.",
+      "job_submitted": false
+    },
+    "automatic_3d_job_submitted": false,
+    "glb_generated": false,
+    "manual_blender_substitution_used": false
+  },
+  "integration": {
+    "mounted": false,
+    "terrain_or_physics_changed_for_images": false,
+    "island_dimensions_in_prompt_only": [
+      60,
+      56
+    ],
+    "gameplay_ground_clearance_metres": 4.8,
+    "exact_geometry_from_images_proven": false,
+    "other_territories_not_generated_in_this_batch": true,
+    "public_csp_unchanged": true,
+    "push_or_deploy": false
+  },
+  "required_next": [
+    "Expose a documented Higgsfield generate_3d tool or explicitly choose a different supported production workflow.",
+    "Approve/correct projection, low coast and cross-view landmark consistency before spending credits on 3D.",
+    "Inspect the real textured GLB and export real front/right/top views before acceptance.",
+    "Fit runtime geometry, supported terrain/Rapier colliders, bridges, shore field, approaches, assets and budgets together; then browser verification."
+  ],
+  "interpretation": "Bitmap material/style study only. Not certified CAD, exact reconstruction, image-identical fidelity, measured performance, a new native Blender scene, or a mounted terrain."
+}

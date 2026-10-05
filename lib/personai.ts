@@ -28,7 +28,9 @@ type PersonAIAnswer = {
   sources: string[];
 };
 
-const DEFAULT_WORKERS_AI_MODEL = "@cf/meta/llama-3.1-8b-instruct";
+// The non-fast Llama 3.1 8B endpoint was retired by Workers AI on 2026-05-30.
+// This active variant preserves the existing messages + JSON Mode contract.
+const DEFAULT_WORKERS_AI_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const DEFAULT_WORKERS_AI_MAX_TOKENS = 700;
 const DEFAULT_WORKERS_AI_TEMPERATURE = 0.2;
 

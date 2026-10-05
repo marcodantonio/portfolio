@@ -1,0 +1,50 @@
+{
+  "revision": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "queryOnly": true,
+  "engine": "BLENDER_EEVEE",
+  "samples": 8,
+  "images": [
+    {
+      "view": "hero",
+      "file": "native-previews-r1/projects-island-v2-hero.png",
+      "bytes": 208976,
+      "width": 480,
+      "height": 360,
+      "sha256": "e10ac21a4351e1f96e1032fd85f1b9f6fc1fc5dcb45515bf94a0f1bd3b7ad0a4",
+      "operationId": "projects-v2-r1-hero-20261003",
+      "artifactId": "3aab657e5543c7cbc14dec3f4f5fd480"
+    },
+    {
+      "view": "front",
+      "file": "native-previews-r1/projects-island-v2-front.png",
+      "bytes": 185876,
+      "width": 480,
+      "height": 360,
+      "sha256": "7079eaa532228eff23069d8d79e79db404634ca3ff9ef3a740bcc35a93ec00da",
+      "operationId": "projects-v2-r1-three-axes-20261003",
+      "artifactId": "88e91c97a9f0151da3732dd532d30683"
+    },
+    {
+      "view": "right",
+      "file": "native-previews-r1/projects-island-v2-right.png",
+      "bytes": 176206,
+      "width": 480,
+      "height": 360,
+      "sha256": "2c40684df13a3add7a760301bbd46e903e28278d8672a3aefc12ef72dffa21ae",
+      "operationId": "projects-v2-r1-three-axes-20261003",
+      "artifactId": "393275b1ac8b499553fd633363a5348f"
+    },
+    {
+      "view": "top",
+      "file": "native-previews-r1/projects-island-v2-top.png",
+      "bytes": 219666,
+      "width": 480,
+      "height": 360,
+      "sha256": "91590c92c77d121e01ada4ca9ded0bad75b05f1c7870ce563bb0c1ce756c18ff",
+      "operationId": "projects-v2-r1-three-axes-20261003",
+      "artifactId": "2cb9ed1059c93cdf3903b27c08999736"
+    }
+  ],
+  "review": "Same-mesh three actual orthographic axes; hero uses temporary flat sea datum. Large plate finish remains blockout. Native pixels do not prove portable colours; R1 GLB fails them."
+}

@@ -1,0 +1,2617 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r4-zipper-contour-20261005",
+  "revision": 4,
+  "sceneSequence": 0,
+  "humanScope": "Isola senza edifici, poi elementi separati",
+  "workflow": "Reference-first native Blender Scene Builder authoring; not automatic image-to-mesh",
+  "status": "REAL_NATIVE_R4; source and actual portable checks pass, art and gameplay integration incomplete",
+  "recipe": {
+    "file": "refine_projects_island_v2_r4.py",
+    "sha256": "88b09229d80d5239a56c0a8797dd05203e821e173ee62a4b8251b21bc818e655"
+  },
+  "nativeResult": {
+    "recipe": "projects-island-v2-r4-constrained-upper-retopology",
+    "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+    "audit": {
+      "meshes": 44,
+      "triangles": 109088,
+      "hard_triangle_limit": 180000,
+      "all_closed_positive": true,
+      "zero_area_triangles": 0,
+      "normal_opposition_candidates": 0,
+      "uv_degenerate_triangles": 0,
+      "all_actual_underwater_geometry_exact": true,
+      "true_clearing_32x26_at_y48": true,
+      "sea_origin_y": 0,
+      "foundation_y": -10,
+      "materials": 2,
+      "packed_original_png_unchanged": 4,
+      "source_details": [
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_00",
+          "triangles": 1272,
+          "closed": true,
+          "positive_signed_volume": 35.535897506968105,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_01",
+          "triangles": 1672,
+          "closed": true,
+          "positive_signed_volume": 50.31949572724371,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 356
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_02",
+          "triangles": 1500,
+          "closed": true,
+          "positive_signed_volume": 58.42617350858138,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 354
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_03",
+          "triangles": 1414,
+          "closed": true,
+          "positive_signed_volume": 32.62263540384362,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 347
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_04",
+          "triangles": 1248,
+          "closed": true,
+          "positive_signed_volume": 23.957090611579986,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 291
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_05",
+          "triangles": 1084,
+          "closed": true,
+          "positive_signed_volume": 14.673397728900344,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 302
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_06",
+          "triangles": 1024,
+          "closed": true,
+          "positive_signed_volume": 12.498591954670122,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 284
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_07",
+          "triangles": 950,
+          "closed": true,
+          "positive_signed_volume": 12.013160607859767,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 265
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_08",
+          "triangles": 934,
+          "closed": true,
+          "positive_signed_volume": 12.58685514919839,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 236
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_09",
+          "triangles": 1130,
+          "closed": true,
+          "positive_signed_volume": 14.037527054962386,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 319
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_10",
+          "triangles": 1054,
+          "closed": true,
+          "positive_signed_volume": 12.695548374213319,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 293
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_11",
+          "triangles": 1100,
+          "closed": true,
+          "positive_signed_volume": 18.846961119675953,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 310
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_12",
+          "triangles": 1590,
+          "closed": true,
+          "positive_signed_volume": 30.361196637804348,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 315
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_13",
+          "triangles": 1244,
+          "closed": true,
+          "positive_signed_volume": 16.98226964785584,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 302
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_14",
+          "triangles": 1730,
+          "closed": true,
+          "positive_signed_volume": 44.12091147057245,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_15",
+          "triangles": 1484,
+          "closed": true,
+          "positive_signed_volume": 37.57745064679695,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_16",
+          "triangles": 2296,
+          "closed": true,
+          "positive_signed_volume": 78.2044496939526,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_17",
+          "triangles": 2148,
+          "closed": true,
+          "positive_signed_volume": 63.955838985584194,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_18",
+          "triangles": 1908,
+          "closed": true,
+          "positive_signed_volume": 70.86236036359371,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_19",
+          "triangles": 2062,
+          "closed": true,
+          "positive_signed_volume": 73.02009539521731,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_20",
+          "triangles": 2016,
+          "closed": true,
+          "positive_signed_volume": 59.84640271692757,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_21",
+          "triangles": 1588,
+          "closed": true,
+          "positive_signed_volume": 45.049049361089246,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_22",
+          "triangles": 1428,
+          "closed": true,
+          "positive_signed_volume": 29.82129265791019,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_23",
+          "triangles": 1236,
+          "closed": true,
+          "positive_signed_volume": 39.310176497203734,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_24",
+          "triangles": 1264,
+          "closed": true,
+          "positive_signed_volume": 41.632753172677084,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+          "triangles": 3220,
+          "closed": true,
+          "positive_signed_volume": 1038.679406832044,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+          "triangles": 5360,
+          "closed": true,
+          "positive_signed_volume": 2514.765735689414,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+          "triangles": 14838,
+          "closed": true,
+          "positive_signed_volume": 48520.43458778348,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 3840
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+          "triangles": 2104,
+          "closed": true,
+          "positive_signed_volume": 793.6438992539925,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 820
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+          "triangles": 2722,
+          "closed": true,
+          "positive_signed_volume": 698.4059944197944,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+          "triangles": 2480,
+          "closed": true,
+          "positive_signed_volume": 491.8800312655872,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 682
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+          "triangles": 2760,
+          "closed": true,
+          "positive_signed_volume": 610.8592937788011,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 707
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+          "triangles": 2050,
+          "closed": true,
+          "positive_signed_volume": 961.5630557349959,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 775
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+          "triangles": 1470,
+          "closed": true,
+          "positive_signed_volume": 480.3913470735919,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 640
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+          "triangles": 2022,
+          "closed": true,
+          "positive_signed_volume": 858.6438244139689,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 715
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+          "triangles": 2328,
+          "closed": true,
+          "positive_signed_volume": 239.43676791154692,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+          "triangles": 11330,
+          "closed": true,
+          "positive_signed_volume": 12211.71784389513,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 2634
+        },
+        {
+          "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+          "triangles": 2096,
+          "closed": true,
+          "positive_signed_volume": 969.6261179877927,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 865
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+          "triangles": 3392,
+          "closed": true,
+          "positive_signed_volume": 1615.7489623134752,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 957
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+          "triangles": 4272,
+          "closed": true,
+          "positive_signed_volume": 1667.3151914553514,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 1129
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+          "triangles": 3020,
+          "closed": true,
+          "positive_signed_volume": 1055.8124657402836,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 795
+        },
+        {
+          "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+          "triangles": 1516,
+          "closed": true,
+          "positive_signed_volume": 422.78797947901546,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 626
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+          "triangles": 3846,
+          "closed": true,
+          "positive_signed_volume": 1314.7142787419102,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        },
+        {
+          "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+          "triangles": 1886,
+          "closed": true,
+          "positive_signed_volume": 322.9268886803072,
+          "zero_area": 0,
+          "normal_opposition": 0,
+          "uv_degenerate": 0,
+          "actual_submerged_triangles_exact": 0
+        }
+      ],
+      "not_automatic_reconstruction": true,
+      "art_and_runtime_not_approved": true
+    },
+    "body": {
+      "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "vertices": 7421,
+      "triangles": 14838,
+      "source_sea_ring": 256,
+      "submerged_triangle_count": 3840,
+      "true_square_boundary_vertices": 138,
+      "body_top_cdt_points": 5372
+    },
+    "caps": [
+      {
+        "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+        "triangles": 3220,
+        "vertices": 1612,
+        "cut_y": 14.004989624023438,
+        "original_lower_boundary_vertices": 178,
+        "upper_boundary_vertices": 58,
+        "cap_interior_points": 301,
+        "upper_contour_maximum_deviation_metres": 0.019614159122758306,
+        "cap_triangles": 658,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 4,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+        "triangles": 5360,
+        "vertices": 2682,
+        "cut_y": 9.147448539733887,
+        "original_lower_boundary_vertices": 212,
+        "upper_boundary_vertices": 108,
+        "cap_interior_points": 618,
+        "upper_contour_maximum_deviation_metres": 0.018104945418996807,
+        "cap_triangles": 1342,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 3,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+        "triangles": 2722,
+        "vertices": 1363,
+        "cut_y": 6.565587520599365,
+        "original_lower_boundary_vertices": 167,
+        "upper_boundary_vertices": 67,
+        "cap_interior_points": 299,
+        "upper_contour_maximum_deviation_metres": 0.01999680786176703,
+        "cap_triangles": 663,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 5,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+        "triangles": 2050,
+        "vertices": 1027,
+        "cut_y": 2.079587936401367,
+        "original_lower_boundary_vertices": 110,
+        "upper_boundary_vertices": 48,
+        "cap_interior_points": 190,
+        "upper_contour_maximum_deviation_metres": 0.018753342138253356,
+        "cap_triangles": 426,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 6,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+        "triangles": 1470,
+        "vertices": 737,
+        "cut_y": 1.464840292930603,
+        "original_lower_boundary_vertices": 94,
+        "upper_boundary_vertices": 35,
+        "cap_interior_points": 106,
+        "upper_contour_maximum_deviation_metres": 0.019686603198682925,
+        "cap_triangles": 245,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 6,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+        "triangles": 2022,
+        "vertices": 1013,
+        "cut_y": 2.9130821228027344,
+        "original_lower_boundary_vertices": 108,
+        "upper_boundary_vertices": 42,
+        "cap_interior_points": 148,
+        "upper_contour_maximum_deviation_metres": 0.01998755086694251,
+        "cap_triangles": 336,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 6,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+        "triangles": 11330,
+        "vertices": 5667,
+        "cut_y": 4.874480724334717,
+        "original_lower_boundary_vertices": 366,
+        "upper_boundary_vertices": 190,
+        "cap_interior_points": 1690,
+        "upper_contour_maximum_deviation_metres": 0.018649165693066842,
+        "cap_triangles": 3568,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 1,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+        "triangles": 3392,
+        "vertices": 1698,
+        "cut_y": 5.608368873596191,
+        "original_lower_boundary_vertices": 146,
+        "upper_boundary_vertices": 49,
+        "cap_interior_points": 204,
+        "upper_contour_maximum_deviation_metres": 0.018973625799539526,
+        "cap_triangles": 455,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 2,
+          "interior_constraint_runs": 6
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+        "triangles": 4272,
+        "vertices": 2138,
+        "cut_y": 6.990068435668945,
+        "original_lower_boundary_vertices": 172,
+        "upper_boundary_vertices": 73,
+        "cap_interior_points": 173,
+        "upper_contour_maximum_deviation_metres": 0.019944383434707502,
+        "cap_triangles": 417,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 3,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+        "triangles": 3846,
+        "vertices": 1925,
+        "cut_y": 7.721656322479248,
+        "original_lower_boundary_vertices": 191,
+        "upper_boundary_vertices": 79,
+        "cap_interior_points": 392,
+        "upper_contour_maximum_deviation_metres": 0.01821067699576204,
+        "cap_triangles": 861,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 6,
+          "interior_constraint_runs": 5
+        }
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+        "triangles": 1886,
+        "vertices": 945,
+        "cut_y": 11.015894889831543,
+        "original_lower_boundary_vertices": 120,
+        "upper_boundary_vertices": 46,
+        "cap_interior_points": 140,
+        "upper_contour_maximum_deviation_metres": 0.01857868245434455,
+        "cap_triangles": 324,
+        "folded_planes": 3,
+        "real_v_faults": 2,
+        "canonical_fracture_graph": {
+          "analytical_junctions": 3,
+          "interior_constraint_runs": 5
+        }
+      }
+    ],
+    "source_pigment": [
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_00",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.19256551563739777,
+          0.23114123940467834,
+          0.11676143109798431
+        ],
+        "maximum_source_rgb": [
+          0.5810139775276184,
+          0.5320059061050415,
+          0.43586674332618713
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_01",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.18922095000743866,
+          0.20211327075958252,
+          0.21234557032585144
+        ],
+        "maximum_source_rgb": [
+          0.6652752757072449,
+          0.5350618362426758,
+          0.43760138750076294
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_02",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1680004894733429,
+          0.18590529263019562,
+          0.13125263154506683
+        ],
+        "maximum_source_rgb": [
+          0.6407303810119629,
+          0.5096471905708313,
+          0.4249444305896759
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_03",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1633838713169098,
+          0.18000249564647675,
+          0.19673730432987213
+        ],
+        "maximum_source_rgb": [
+          0.6549978256225586,
+          0.5399040579795837,
+          0.44034188985824585
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_04",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.17044813930988312,
+          0.18611852824687958,
+          0.20117709040641785
+        ],
+        "maximum_source_rgb": [
+          0.5955557823181152,
+          0.5400055050849915,
+          0.4403991997241974
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_05",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15429386496543884,
+          0.172109916806221,
+          0.19096893072128296
+        ],
+        "maximum_source_rgb": [
+          0.5488813519477844,
+          0.5065287947654724,
+          0.4301906228065491
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_06",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.16661910712718964,
+          0.18279632925987244,
+          0.15814609825611115
+        ],
+        "maximum_source_rgb": [
+          0.505800187587738,
+          0.47940438985824585,
+          0.4272943139076233
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_07",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15975645184516907,
+          0.17686064541339874,
+          0.19445425271987915
+        ],
+        "maximum_source_rgb": [
+          0.5886743664741516,
+          0.45556437969207764,
+          0.42625191807746887
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_08",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.16574262082576752,
+          0.18204016983509064,
+          0.19820889830589294
+        ],
+        "maximum_source_rgb": [
+          0.49727335572242737,
+          0.45387306809425354,
+          0.3900573253631592
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_09",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1689758151769638,
+          0.1884160041809082,
+          0.11390327662229538
+        ],
+        "maximum_source_rgb": [
+          0.6619789004325867,
+          0.5128118991851807,
+          0.42487823963165283
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_10",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.16410855948925018,
+          0.1806289702653885,
+          0.19719049334526062
+        ],
+        "maximum_source_rgb": [
+          0.6039121747016907,
+          0.47642019391059875,
+          0.4234486520290375
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_11",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.17633222043514252,
+          0.1936066746711731,
+          0.20830591022968292
+        ],
+        "maximum_source_rgb": [
+          0.648923933506012,
+          0.5186817646026611,
+          0.4282560348510742
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_12",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1552862972021103,
+          0.17297479510307312,
+          0.19160646200180054
+        ],
+        "maximum_source_rgb": [
+          0.660276472568512,
+          0.5267479419708252,
+          0.4328726828098297
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_13",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.154219388961792,
+          0.17204497754573822,
+          0.19092100858688354
+        ],
+        "maximum_source_rgb": [
+          0.6705217957496643,
+          0.5188047289848328,
+          0.4283266067504883
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_14",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.21551398932933807,
+          0.24040411412715912,
+          0.18347784876823425
+        ],
+        "maximum_source_rgb": [
+          0.6545573472976685,
+          0.5320254564285278,
+          0.4383290112018585
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_15",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20624515414237976,
+          0.2313678115606308,
+          0.18781302869319916
+        ],
+        "maximum_source_rgb": [
+          0.684635579586029,
+          0.5440827012062073,
+          0.4426988363265991
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_16",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.21381023526191711,
+          0.23638799786567688,
+          0.2375224232673645
+        ],
+        "maximum_source_rgb": [
+          0.6104398965835571,
+          0.5431562662124634,
+          0.442176878452301
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_17",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.2154146283864975,
+          0.23722593486309052,
+          0.18125084042549133
+        ],
+        "maximum_source_rgb": [
+          0.6315563917160034,
+          0.535506010055542,
+          0.43785321712493896
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_18",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20517362654209137,
+          0.22833819687366486,
+          0.2477368265390396
+        ],
+        "maximum_source_rgb": [
+          0.6525335907936096,
+          0.5395851731300354,
+          0.44016170501708984
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_19",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20105522871017456,
+          0.2247476875782013,
+          0.2500090003013611
+        ],
+        "maximum_source_rgb": [
+          0.6768715381622314,
+          0.5319609642028809,
+          0.4358412027359009
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_20",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20566168427467346,
+          0.22876301407814026,
+          0.24773046374320984
+        ],
+        "maximum_source_rgb": [
+          0.5971319675445557,
+          0.5410569906234741,
+          0.44099292159080505
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_21",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.21469756960868835,
+          0.23817425966262817,
+          0.21997366845607758
+        ],
+        "maximum_source_rgb": [
+          0.6574695706367493,
+          0.5174846649169922,
+          0.4275684356689453
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_22",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20820137858390808,
+          0.2514397203922272,
+          0.13175415992736816
+        ],
+        "maximum_source_rgb": [
+          0.6789644360542297,
+          0.5241321325302124,
+          0.43137866258621216
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_23",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.2168426364660263,
+          0.2387520968914032,
+          0.23148657381534576
+        ],
+        "maximum_source_rgb": [
+          0.5623645186424255,
+          0.5102200508117676,
+          0.42338183522224426
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Attached_Fracture_24",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20583514869213104,
+          0.2289559543132782,
+          0.15790584683418274
+        ],
+        "maximum_source_rgb": [
+          0.6724559664726257,
+          0.5426904559135437,
+          0.4419143497943878
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.19530323147773743,
+          0.22446294128894806,
+          0.10729426890611649
+        ],
+        "maximum_source_rgb": [
+          0.6714257597923279,
+          0.5303559899330139,
+          0.4374517798423767
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.18129250407218933,
+          0.22446762025356293,
+          0.09930848330259323
+        ],
+        "maximum_source_rgb": [
+          0.6786308884620667,
+          0.5410569906234741,
+          0.44099292159080505
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+        "single_material": "ProjectsIsland_V2_HoneyEarth",
+        "minimum_source_rgb": [
+          0.1523090898990631,
+          0.17037780582904816,
+          0.1120304986834526
+        ],
+        "maximum_source_rgb": [
+          0.7798780202865601,
+          0.5418382883071899,
+          0.43881022930145264
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15569594502449036,
+          0.17333154380321503,
+          0.19186905026435852
+        ],
+        "maximum_source_rgb": [
+          0.6694726347923279,
+          0.5320459008216858,
+          0.43588948249816895
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1955834925174713,
+          0.22562499344348907,
+          0.10744891315698624
+        ],
+        "maximum_source_rgb": [
+          0.6902346611022949,
+          0.5429920554161072,
+          0.4420843720436096
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15871554613113403,
+          0.17595720291137695,
+          0.19379456341266632
+        ],
+        "maximum_source_rgb": [
+          0.5897725820541382,
+          0.5266714096069336,
+          0.43282902240753174
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15340480208396912,
+          0.1713344305753708,
+          0.19039613008499146
+        ],
+        "maximum_source_rgb": [
+          0.6712278723716736,
+          0.5363419651985168,
+          0.4383268654346466
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15342308580875397,
+          0.1713503897190094,
+          0.11590491235256195
+        ],
+        "maximum_source_rgb": [
+          0.6497442126274109,
+          0.5203188061714172,
+          0.43757686018943787
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1581295281648636,
+          0.1754481941461563,
+          0.19342224299907684
+        ],
+        "maximum_source_rgb": [
+          0.6861640810966492,
+          0.5321936011314392,
+          0.4359734058380127
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1532692015171051,
+          0.17121610045433044,
+          0.10713828355073929
+        ],
+        "maximum_source_rgb": [
+          0.6604486107826233,
+          0.5400055050849915,
+          0.4403991997241974
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.20178848505020142,
+          0.22538773715496063,
+          0.24851438403129578
+        ],
+        "maximum_source_rgb": [
+          0.6941258311271667,
+          0.5429303646087646,
+          0.4420495629310608
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15232951939105988,
+          0.1704694777727127,
+          0.102582648396492
+        ],
+        "maximum_source_rgb": [
+          0.7001116871833801,
+          0.5440827012062073,
+          0.4426988363265991
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15528742969036102,
+          0.17297577857971191,
+          0.18099680542945862
+        ],
+        "maximum_source_rgb": [
+          0.6904317736625671,
+          0.5425750017166138,
+          0.4418492317199707
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1531459391117096,
+          0.17110851407051086,
+          0.11786123365163803
+        ],
+        "maximum_source_rgb": [
+          0.6688261032104492,
+          0.5386160016059875,
+          0.4396698474884033
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15208052098751068,
+          0.1701781302690506,
+          0.10256581753492355
+        ],
+        "maximum_source_rgb": [
+          0.6791675090789795,
+          0.5399101972579956,
+          0.4403453469276428
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.15208052098751068,
+          0.1701781302690506,
+          0.18953996896743774
+        ],
+        "maximum_source_rgb": [
+          0.6655614972114563,
+          0.5396924614906311,
+          0.4402223229408264
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.154733806848526,
+          0.17249472439289093,
+          0.18570196628570557
+        ],
+        "maximum_source_rgb": [
+          0.6481336951255798,
+          0.5220795273780823,
+          0.43020424246788025
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1948980838060379,
+          0.22823160886764526,
+          0.1031026616692543
+        ],
+        "maximum_source_rgb": [
+          0.691683292388916,
+          0.5440827012062073,
+          0.4426988363265991
+        ]
+      },
+      {
+        "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+        "single_material": "ProjectsIsland_V2_Limestone",
+        "minimum_source_rgb": [
+          0.1926405131816864,
+          0.2280665934085846,
+          0.1286097913980484
+        ],
+        "maximum_source_rgb": [
+          0.6827707290649414,
+          0.5427619218826294,
+          0.441954642534256
+        ]
+      }
+    ],
+    "new_mesh_owners": 0,
+    "provider_requests": 0,
+    "renders": 0,
+    "original_png_bytes_unchanged": true,
+    "no_automatic_reconstruction": true,
+    "next": "Actual native/source/GLB audits and same-camera hero; never overlay above old gameplay terrain"
+  },
+  "actualPortable": {
+    "asset": "projects-island-terrain-v2",
+    "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+    "file": "/Users/marcodantonio/Workspaces/portfolio/assets/archipelago/island-reconstruction-v2/projects-island-v2-r4.glb",
+    "bytes": 14645972,
+    "sha256": "de0f985a5b3e505cbfc9e7d8c28fff0d3985326eef35eee223a6dc6fd948370b",
+    "status": "ACTUAL STANDALONE STRUCTURE PASS; not map/physics, visual fidelity, source manifold, performance or runtime acceptance",
+    "checks": 5333853,
+    "meshes": 44,
+    "primitives": 44,
+    "vertices": 292041,
+    "triangles": 109088,
+    "boundsMinYUpMetres": [
+      -34.44200134277344,
+      -10,
+      -36.441688537597656
+    ],
+    "boundsMaxYUpMetres": [
+      34.27458572387695,
+      18.914897918701172,
+      34.44200134277344
+    ],
+    "boundsYUpMetres": [
+      68.71658706665039,
+      28.914897918701172,
+      70.8836898803711
+    ],
+    "normalLengthRange": [
+      0.9999999085587412,
+      1.0000001582063545
+    ],
+    "geometryDiagnostics": {
+      "nearZeroAreaTriangles": 0,
+      "normalOppositionCandidates": 0,
+      "interpretation": "Actual transformed triangle shading diagnostics, not source manifold/watertightness certification from glTF seams"
+    },
+    "vertexPaint": [
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_00",
+        "vertices": 3746,
+        "triangles": 1272,
+        "minRGB": [
+          0.19256551563739777,
+          0.23114123940467834,
+          0.11676143109798431
+        ],
+        "maxRGB": [
+          0.5810139775276184,
+          0.5320059061050415,
+          0.43586674332618713
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_01",
+        "vertices": 4966,
+        "triangles": 1672,
+        "minRGB": [
+          0.18922095000743866,
+          0.20211327075958252,
+          0.21234557032585144
+        ],
+        "maxRGB": [
+          0.6652752757072449,
+          0.5350618362426758,
+          0.43760138750076294
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_02",
+        "vertices": 4440,
+        "triangles": 1500,
+        "minRGB": [
+          0.1680004894733429,
+          0.18590529263019562,
+          0.13125263154506683
+        ],
+        "maxRGB": [
+          0.6407303810119629,
+          0.5096471905708313,
+          0.4249444305896759
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_03",
+        "vertices": 4196,
+        "triangles": 1414,
+        "minRGB": [
+          0.1633838713169098,
+          0.18000249564647675,
+          0.19673730432987213
+        ],
+        "maxRGB": [
+          0.6549978256225586,
+          0.5399040579795837,
+          0.44034188985824585
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_04",
+        "vertices": 3700,
+        "triangles": 1248,
+        "minRGB": [
+          0.17044813930988312,
+          0.18611852824687958,
+          0.20117709040641785
+        ],
+        "maxRGB": [
+          0.5955557823181152,
+          0.5400055050849915,
+          0.4403991997241974
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_05",
+        "vertices": 3212,
+        "triangles": 1084,
+        "minRGB": [
+          0.15429386496543884,
+          0.172109916806221,
+          0.19096893072128296
+        ],
+        "maxRGB": [
+          0.5488813519477844,
+          0.5065287947654724,
+          0.4301906228065491
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_06",
+        "vertices": 3044,
+        "triangles": 1024,
+        "minRGB": [
+          0.16661910712718964,
+          0.18279632925987244,
+          0.15814609825611115
+        ],
+        "maxRGB": [
+          0.505800187587738,
+          0.47940438985824585,
+          0.4272943139076233
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_07",
+        "vertices": 2820,
+        "triangles": 950,
+        "minRGB": [
+          0.15975645184516907,
+          0.17686064541339874,
+          0.19445425271987915
+        ],
+        "maxRGB": [
+          0.5886743664741516,
+          0.45556437969207764,
+          0.42625191807746887
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_08",
+        "vertices": 2770,
+        "triangles": 934,
+        "minRGB": [
+          0.16574262082576752,
+          0.18204016983509064,
+          0.19820889830589294
+        ],
+        "maxRGB": [
+          0.49727335572242737,
+          0.45387306809425354,
+          0.3900573253631592
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_09",
+        "vertices": 3346,
+        "triangles": 1130,
+        "minRGB": [
+          0.1689758151769638,
+          0.1884160041809082,
+          0.11390327662229538
+        ],
+        "maxRGB": [
+          0.6619789004325867,
+          0.5128118991851807,
+          0.42487823963165283
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_10",
+        "vertices": 3128,
+        "triangles": 1054,
+        "minRGB": [
+          0.16410855948925018,
+          0.1806289702653885,
+          0.19719049334526062
+        ],
+        "maxRGB": [
+          0.6039121747016907,
+          0.47642019391059875,
+          0.4234486520290375
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_11",
+        "vertices": 3252,
+        "triangles": 1100,
+        "minRGB": [
+          0.17633222043514252,
+          0.1936066746711731,
+          0.20830591022968292
+        ],
+        "maxRGB": [
+          0.648923933506012,
+          0.5186817646026611,
+          0.4282560348510742
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_12",
+        "vertices": 4722,
+        "triangles": 1590,
+        "minRGB": [
+          0.1552862972021103,
+          0.17297479510307312,
+          0.19160646200180054
+        ],
+        "maxRGB": [
+          0.660276472568512,
+          0.5267479419708252,
+          0.4328726828098297
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_13",
+        "vertices": 3698,
+        "triangles": 1244,
+        "minRGB": [
+          0.154219388961792,
+          0.17204497754573822,
+          0.19092100858688354
+        ],
+        "maxRGB": [
+          0.6705217957496643,
+          0.5188047289848328,
+          0.4283266067504883
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_14",
+        "vertices": 5130,
+        "triangles": 1730,
+        "minRGB": [
+          0.21551398932933807,
+          0.24040411412715912,
+          0.18347784876823425
+        ],
+        "maxRGB": [
+          0.6545573472976685,
+          0.5320254564285278,
+          0.4383290112018585
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_15",
+        "vertices": 4392,
+        "triangles": 1484,
+        "minRGB": [
+          0.20624515414237976,
+          0.2313678115606308,
+          0.18781302869319916
+        ],
+        "maxRGB": [
+          0.684635579586029,
+          0.5440827012062073,
+          0.4426988363265991
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_16",
+        "vertices": 6824,
+        "triangles": 2296,
+        "minRGB": [
+          0.21381023526191711,
+          0.23638799786567688,
+          0.2375224232673645
+        ],
+        "maxRGB": [
+          0.6104398965835571,
+          0.5431562662124634,
+          0.442176878452301
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_17",
+        "vertices": 6386,
+        "triangles": 2148,
+        "minRGB": [
+          0.2154146283864975,
+          0.23722593486309052,
+          0.18125084042549133
+        ],
+        "maxRGB": [
+          0.6315563917160034,
+          0.535506010055542,
+          0.43785321712493896
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_18",
+        "vertices": 5660,
+        "triangles": 1908,
+        "minRGB": [
+          0.20517362654209137,
+          0.22833819687366486,
+          0.2477368265390396
+        ],
+        "maxRGB": [
+          0.6525335907936096,
+          0.5395851731300354,
+          0.44016170501708984
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_19",
+        "vertices": 6118,
+        "triangles": 2062,
+        "minRGB": [
+          0.20105522871017456,
+          0.2247476875782013,
+          0.2500090003013611
+        ],
+        "maxRGB": [
+          0.6768715381622314,
+          0.5319609642028809,
+          0.4358412027359009
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_20",
+        "vertices": 5996,
+        "triangles": 2016,
+        "minRGB": [
+          0.20566168427467346,
+          0.22876301407814026,
+          0.24773046374320984
+        ],
+        "maxRGB": [
+          0.5971319675445557,
+          0.5410569906234741,
+          0.44099292159080505
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_21",
+        "vertices": 4698,
+        "triangles": 1588,
+        "minRGB": [
+          0.21469756960868835,
+          0.23817425966262817,
+          0.21997366845607758
+        ],
+        "maxRGB": [
+          0.6574695706367493,
+          0.5174846649169922,
+          0.4275684356689453
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_22",
+        "vertices": 4235,
+        "triangles": 1428,
+        "minRGB": [
+          0.20820137858390808,
+          0.2514397203922272,
+          0.13175415992736816
+        ],
+        "maxRGB": [
+          0.6789644360542297,
+          0.5241321325302124,
+          0.43137866258621216
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_23",
+        "vertices": 3652,
+        "triangles": 1236,
+        "minRGB": [
+          0.2168426364660263,
+          0.2387520968914032,
+          0.23148657381534576
+        ],
+        "maxRGB": [
+          0.5623645186424255,
+          0.5102200508117676,
+          0.42338183522224426
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_24",
+        "vertices": 3736,
+        "triangles": 1264,
+        "minRGB": [
+          0.20583514869213104,
+          0.2289559543132782,
+          0.15790584683418274
+        ],
+        "maxRGB": [
+          0.6724559664726257,
+          0.5426904559135437,
+          0.4419143497943878
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+        "vertices": 8504,
+        "triangles": 3220,
+        "minRGB": [
+          0.19530323147773743,
+          0.22446294128894806,
+          0.10729426890611649
+        ],
+        "maxRGB": [
+          0.6714257597923279,
+          0.5303559899330139,
+          0.4374517798423767
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+        "vertices": 13356,
+        "triangles": 5360,
+        "minRGB": [
+          0.18129250407218933,
+          0.22446762025356293,
+          0.09930848330259323
+        ],
+        "maxRGB": [
+          0.6786308884620667,
+          0.5410569906234741,
+          0.44099292159080505
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+        "vertices": 28958,
+        "triangles": 14838,
+        "minRGB": [
+          0.1523090898990631,
+          0.17037780582904816,
+          0.1120304986834526
+        ],
+        "maxRGB": [
+          0.7798780202865601,
+          0.5418382883071899,
+          0.43881022930145264
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+        "vertices": 6130,
+        "triangles": 2104,
+        "minRGB": [
+          0.15569594502449036,
+          0.17333154380321503,
+          0.19186905026435852
+        ],
+        "maxRGB": [
+          0.6694726347923279,
+          0.5320459008216858,
+          0.43588948249816895
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+        "vertices": 7140,
+        "triangles": 2722,
+        "minRGB": [
+          0.1955834925174713,
+          0.22562499344348907,
+          0.10744891315698624
+        ],
+        "maxRGB": [
+          0.6902346611022949,
+          0.5429920554161072,
+          0.4420843720436096
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+        "vertices": 7330,
+        "triangles": 2480,
+        "minRGB": [
+          0.15871554613113403,
+          0.17595720291137695,
+          0.19379456341266632
+        ],
+        "maxRGB": [
+          0.5897725820541382,
+          0.5266714096069336,
+          0.43282902240753174
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+        "vertices": 8216,
+        "triangles": 2760,
+        "minRGB": [
+          0.15340480208396912,
+          0.1713344305753708,
+          0.19039613008499146
+        ],
+        "maxRGB": [
+          0.6712278723716736,
+          0.5363419651985168,
+          0.4383268654346466
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_Central_Long_Finger",
+        "vertices": 5594,
+        "triangles": 2050,
+        "minRGB": [
+          0.15342308580875397,
+          0.1713503897190094,
+          0.11590491235256195
+        ],
+        "maxRGB": [
+          0.6497442126274109,
+          0.5203188061714172,
+          0.43757686018943787
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_East_Short_Finger",
+        "vertices": 4142,
+        "triangles": 1470,
+        "minRGB": [
+          0.1581295281648636,
+          0.1754481941461563,
+          0.19342224299907684
+        ],
+        "maxRGB": [
+          0.6861640810966492,
+          0.5321936011314392,
+          0.4359734058380127
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+        "vertices": 5657,
+        "triangles": 2022,
+        "minRGB": [
+          0.1532692015171051,
+          0.17121610045433044,
+          0.10713828355073929
+        ],
+        "maxRGB": [
+          0.6604486107826233,
+          0.5400055050849915,
+          0.4403991997241974
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+        "vertices": 6684,
+        "triangles": 2328,
+        "minRGB": [
+          0.20178848505020142,
+          0.22538773715496063,
+          0.24851438403129578
+        ],
+        "maxRGB": [
+          0.6941258311271667,
+          0.5429303646087646,
+          0.4420495629310608
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+        "vertices": 25889,
+        "triangles": 11330,
+        "minRGB": [
+          0.15232951939105988,
+          0.1704694777727127,
+          0.102582648396492
+        ],
+        "maxRGB": [
+          0.7001116871833801,
+          0.5440827012062073,
+          0.4426988363265991
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+        "vertices": 6196,
+        "triangles": 2096,
+        "minRGB": [
+          0.15528742969036102,
+          0.17297577857971191,
+          0.18099680542945862
+        ],
+        "maxRGB": [
+          0.6904317736625671,
+          0.5425750017166138,
+          0.4418492317199707
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+        "vertices": 9557,
+        "triangles": 3392,
+        "minRGB": [
+          0.1531459391117096,
+          0.17110851407051086,
+          0.11786123365163803
+        ],
+        "maxRGB": [
+          0.6688261032104492,
+          0.5386160016059875,
+          0.4396698474884033
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+        "vertices": 12076,
+        "triangles": 4272,
+        "minRGB": [
+          0.15208052098751068,
+          0.1701781302690506,
+          0.10256581753492355
+        ],
+        "maxRGB": [
+          0.6791675090789795,
+          0.5399101972579956,
+          0.4403453469276428
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+        "vertices": 8872,
+        "triangles": 3020,
+        "minRGB": [
+          0.15208052098751068,
+          0.1701781302690506,
+          0.18953996896743774
+        ],
+        "maxRGB": [
+          0.6655614972114563,
+          0.5396924614906311,
+          0.4402223229408264
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+        "vertices": 4426,
+        "triangles": 1516,
+        "minRGB": [
+          0.154733806848526,
+          0.17249472439289093,
+          0.18570196628570557
+        ],
+        "maxRGB": [
+          0.6481336951255798,
+          0.5220795273780823,
+          0.43020424246788025
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+        "vertices": 10184,
+        "triangles": 3846,
+        "minRGB": [
+          0.1948980838060379,
+          0.22823160886764526,
+          0.1031026616692543
+        ],
+        "maxRGB": [
+          0.691683292388916,
+          0.5440827012062073,
+          0.4426988363265991
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+        "vertices": 5263,
+        "triangles": 1886,
+        "minRGB": [
+          0.1926405131816864,
+          0.2280665934085846,
+          0.1286097913980484
+        ],
+        "maxRGB": [
+          0.6827707290649414,
+          0.5427619218826294,
+          0.441954642534256
+        ]
+      }
+    ],
+    "reviewProfile": {
+      "maxTriangles": 180000,
+      "defaultV1MaxTriangles": 100000,
+      "interpretation": "Explicit standalone study guard, not runtime/performance acceptance"
+    },
+    "seaContact": {
+      "originY": 0,
+      "bodyNode": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "bodyNodeId": 28,
+      "bodyMinimumY": -10,
+      "bodyPrimitiveCount": 1,
+      "sections": [
+        {
+          "y": 0.3,
+          "crossingSamples": 1024,
+          "boundsXZ": {
+            "min": [
+              -34,
+              -35.97402572631836
+            ],
+            "max": [
+              33.83473205566406,
+              34
+            ]
+          },
+          "spanXZ": [
+            67.83473205566406,
+            69.97402572631836
+          ],
+          "minimumAngularRadius": 31.41190360295617
+        },
+        {
+          "y": 0,
+          "crossingSamples": 2048,
+          "boundsXZ": {
+            "min": [
+              -34,
+              -35.97402572631836
+            ],
+            "max": [
+              33.83473205566406,
+              34
+            ]
+          },
+          "spanXZ": [
+            67.83473205566406,
+            69.97402572631836
+          ],
+          "minimumAngularRadius": 31.41190360295617
+        },
+        {
+          "y": -9.5,
+          "crossingSamples": 1024,
+          "boundsXZ": {
+            "min": [
+              -34.41990089416504,
+              -36.41830539703369
+            ],
+            "max": [
+              34.25259304046631,
+              34.41990089416504
+            ]
+          },
+          "spanXZ": [
+            68.67249393463135,
+            70.83820629119873
+          ],
+          "minimumAngularRadius": 31.799841630702524
+        }
+      ],
+      "clearingFrame": {
+        "centreXZ": [
+          0,
+          -3
+        ],
+        "width": 32,
+        "depth": 26,
+        "boundsXZ": {
+          "min": [
+            -16,
+            -16
+          ],
+          "max": [
+            16,
+            10
+          ]
+        },
+        "proposedTopYAboveSea": 4.8
+      },
+      "clearingFrameProbes": [
+        {
+          "x": -16,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10.000000000000002,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10.000000000000002,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": -16,
+          "distinctIntersections": [
+            -9.999999999999998,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -9.999999999999998,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734864
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734864,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.907348643470641e-7
+        },
+        {
+          "x": 0,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734864
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734864,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.907348643470641e-7
+        },
+        {
+          "x": 8,
+          "z": -3,
+          "distinctIntersections": [
+            -9.999999999999998,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -9.999999999999998,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        }
+      ],
+      "fullBodyApronDiagnostic": {
+        "triangles": 10486,
+        "clippedTriangles": 2356,
+        "summedProjectedAreaSquareMetres": 832.0000000000008,
+        "summedPlanarAreaSquareMetres": 832.0000000000008,
+        "summedInclinedAreaSquareMetres": 0,
+        "minimumY": 4.800000190734863,
+        "maximumY": 4.800000190734863,
+        "proposedTopY": 4.8,
+        "tolerance": 0.00001,
+        "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+      },
+      "interpretation": "Actual body intersections plus sparse25point apron-frame diagnostics; no fixed V1 ray topology, manifold, sea-foam, flatness, collision or gameplay support acceptance"
+    },
+    "materials": [
+      {
+        "id": 0,
+        "name": "ProjectsIsland_V2_Limestone",
+        "metallicRoughnessTexture": 1,
+        "normalTexture": 0,
+        "baseColorTexture": null,
+        "occlusionTexture": null,
+        "aoInterpretation": "No glTF occlusion texture assigned; ORM filename alone does not certify AO"
+      },
+      {
+        "id": 1,
+        "name": "ProjectsIsland_V2_HoneyEarth",
+        "metallicRoughnessTexture": 3,
+        "normalTexture": 2,
+        "baseColorTexture": null,
+        "occlusionTexture": null,
+        "aoInterpretation": "No glTF occlusion texture assigned; ORM filename alone does not certify AO"
+      }
+    ],
+    "textures": 4,
+    "embeddedImages": [
+      {
+        "id": 0,
+        "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+        "width": 512,
+        "height": 512,
+        "bitDepth": 8,
+        "bytes": 293590,
+        "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9"
+      },
+      {
+        "id": 1,
+        "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "bytes": 179855,
+        "sha256": "0f19fd39f048c3349f7ae5f63fd8d467807ed7f80c80c5fcee686db1751c574b"
+      },
+      {
+        "id": 2,
+        "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+        "width": 512,
+        "height": 512,
+        "bitDepth": 8,
+        "bytes": 270827,
+        "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144"
+      },
+      {
+        "id": 3,
+        "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "bytes": 209528,
+        "sha256": "69a0bab162c6a4b69872f0171788ffe7b687f0a40496bc21ccad9727aae56fb2"
+      }
+    ],
+    "excludedPreviewNodes": [
+      "ProjectsIsland_V2_Cool_Sky_Fill_Preview_Only",
+      "ProjectsIsland_V2_Review_Camera_Excluded",
+      "ProjectsIsland_V2_Warm_Key_Preview_Only"
+    ],
+    "fixedMapOrImageFidelityAsserted": false,
+    "runtimeIntegrated": false,
+    "negativeFixtures": [],
+    "interfaceFixtures": []
+  },
+  "portableSelfTests": {
+    "negativeFixtures": 20,
+    "cliFixtureGroups": 4,
+    "command": "node scripts/island-terrain-asset-check.mjs --file assets/archipelago/island-reconstruction-v2/projects-island-v2-r4.glb --root ProjectsIsland_V2_Origin_At_Sea_Level --max-triangles 180000 --self-test",
+    "exitCode": 0
+  },
+  "files": {
+    "glb": {
+      "file": "projects-island-v2-r4.glb",
+      "bytes": 14645972,
+      "sha256": "de0f985a5b3e505cbfc9e7d8c28fff0d3985326eef35eee223a6dc6fd948370b"
+    },
+    "blend": {
+      "file": "projects-island-v2-r4.blend",
+      "bytes": 15673733,
+      "sha256": "e93348add0390b8c123947e004b5cb836444509f2d9ff1306bdbb27b2dadbd71"
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r4-batched.glb",
+      "bytes": 15028280,
+      "sha256": "e6620cab7bfd7c2a49dff8d1913731d848f5421134f35894b1366755a8f696fc",
+      "meshes": 2,
+      "triangles": 109088,
+      "vertices": 292041,
+      "removedFaces": 0,
+      "notLOD": true
+    }
+  },
+  "previousFailuresPreserved": [
+    "native-diagnostic-r4-initial.json",
+    "native-diagnostic-r4-canonical.json"
+  ],
+  "independentBinaryComparison": "binary-comparison-r4.json",
+  "binaryComparisonReceiptSha256": "4f420f35f4b42c9c4fd0f5cef74ab649bfb03204cc04511e86455f4f140ab590",
+  "builtBrowserReview": {
+    "dateUtc": "2026-10-05",
+    "buildCompletedUtc": "2026-10-05T00:38:30Z",
+    "lint": "PASS",
+    "build": "PASS",
+    "port": 3060,
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "bothVariantsFourCamerasReady": true,
+    "pageErrors": 0,
+    "canvasesPerView": 1,
+    "horizontalOverflow": false,
+    "seaDatum": {
+      "defaultOnAfterExplicitLoad": true,
+      "heroOnly": true,
+      "onlyAsset": "projects-terrain-v2",
+      "planeY": 0,
+      "renderClippingBelowWaterMetres": 0.001,
+      "statsIdenticalOffOn": true,
+      "immersedSourceExposedWithAxesOrOff": true,
+      "coplanarStripesObservedOnPreviousExactY0Plane": true,
+      "coplanarStripesAbsentOnFreshR4Hero": true,
+      "notGameOcean": true
+    },
+    "smallViewport": {
+      "size": [
+        390,
+        844
+      ],
+      "ready": true,
+      "horizontalOverflow": false,
+      "physicalDeviceTest": false
+    },
+    "fixtures": {
+      "isolated404": "missing/no canvas/disabled datum then retry ready",
+      "otherAsset": "bridge ready without datum control",
+      "unsupportedVariant": "no canvas or datum control",
+      "forcedWebglFailure": "handled error, reference visible, no canvas, datum disabled"
+    },
+    "intentional404NetworkErrors": 1,
+    "mainViewedAllEightRasterCaptures": true,
+    "scope": "Asset Lab only, not main gameplay, physical-device or FPS approval"
+  },
+  "nativeVisualReview": {
+    "mainInspectedNativeHeroAxesAndPerspectiveWaterline": true,
+    "heroPixels": [
+      960,
+      720
+    ],
+    "axisPixels": [
+      480,
+      360
+    ],
+    "perspectiveClosePixels": [
+      480,
+      360
+    ],
+    "improved": "Genuine interior cap crests/faults and much reduced parallel striping",
+    "remaining": [
+      "Too-rectangular honey clearing",
+      "Soft broad grey coastal annulus",
+      "Repeated rear ledges/fracture vocabulary",
+      "Cream-blue limestone palette insufficiently rich"
+    ],
+    "referenceFidelityApproved": false,
+    "waterline": "Perspective diagnostic contact observed, not runtime ocean/foam approval"
+  },
+  "bounds": [
+    68.71658706665039,
+    28.914897918701172,
+    70.8836898803711
+  ],
+  "limits": {
+    "runtimeMounted": false,
+    "mapChanged": false,
+    "physicsChanged": false,
+    "gameOceanChanged": false,
+    "referenceFidelityApproved": false,
+    "unifiedSolidOrIntersectionApproved": false,
+    "overUnchangedEightMibLimit": true,
+    "furtherPaidRasterAttempted": false,
+    "deploy": false,
+    "push": false
+  }
+}

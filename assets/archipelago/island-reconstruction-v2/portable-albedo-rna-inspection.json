@@ -1,0 +1,137 @@
+{
+  "operationId": "projects-v2-portable-albedo-rna-inspect-20261005",
+  "status": "succeeded",
+  "revisionBefore": 6,
+  "sceneSequenceAfter": 0,
+  "result": {
+    "Blender": "5.2.0 LTS",
+    "properties": [
+      {
+        "id": "filepath",
+        "type": "STRING",
+        "default": "",
+        "default_array_error": "'StringProperty' object has no attribute 'default_array'",
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items_error": "'StringProperty' object has no attribute 'enum_items'",
+        "enum_items_static_error": "'StringProperty' object has no attribute 'enum_items_static'"
+      },
+      {
+        "id": "export_format",
+        "type": "ENUM",
+        "default": "",
+        "default_array_error": "'EnumProperty' object has no attribute 'default_array'",
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items": [],
+        "enum_items_static": []
+      },
+      {
+        "id": "export_vertex_color",
+        "type": "ENUM",
+        "default": "MATERIAL",
+        "default_array_error": "'EnumProperty' object has no attribute 'default_array'",
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items": [
+          [
+            "MATERIAL",
+            "Material",
+            0
+          ],
+          [
+            "ACTIVE",
+            "Active",
+            1
+          ],
+          [
+            "NAME",
+            "Name",
+            2
+          ],
+          [
+            "NONE",
+            "None",
+            3
+          ]
+        ],
+        "enum_items_static": [
+          [
+            "MATERIAL",
+            "Material",
+            0
+          ],
+          [
+            "ACTIVE",
+            "Active",
+            1
+          ],
+          [
+            "NAME",
+            "Name",
+            2
+          ],
+          [
+            "NONE",
+            "None",
+            3
+          ]
+        ]
+      },
+      {
+        "id": "export_all_vertex_colors",
+        "type": "BOOLEAN",
+        "default": true,
+        "default_array": [],
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items_error": "'BoolProperty' object has no attribute 'enum_items'",
+        "enum_items_static_error": "'BoolProperty' object has no attribute 'enum_items_static'"
+      },
+      {
+        "id": "use_selection",
+        "type": "BOOLEAN",
+        "default": false,
+        "default_array": [],
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items_error": "'BoolProperty' object has no attribute 'enum_items'",
+        "enum_items_static_error": "'BoolProperty' object has no attribute 'enum_items_static'"
+      },
+      {
+        "id": "export_selected",
+        "absent": true
+      },
+      {
+        "id": "export_cameras",
+        "type": "BOOLEAN",
+        "default": false,
+        "default_array": [],
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items_error": "'BoolProperty' object has no attribute 'enum_items'",
+        "enum_items_static_error": "'BoolProperty' object has no attribute 'enum_items_static'"
+      },
+      {
+        "id": "export_lights",
+        "type": "BOOLEAN",
+        "default": false,
+        "default_array": [],
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items_error": "'BoolProperty' object has no attribute 'enum_items'",
+        "enum_items_static_error": "'BoolProperty' object has no attribute 'enum_items_static'"
+      },
+      {
+        "id": "export_animations",
+        "type": "BOOLEAN",
+        "default": true,
+        "default_array": [],
+        "is_enum_flag": false,
+        "is_readonly": false,
+        "enum_items_error": "'BoolProperty' object has no attribute 'enum_items'",
+        "enum_items_static_error": "'BoolProperty' object has no attribute 'enum_items_static'"
+      }
+    ]
+  }
+}

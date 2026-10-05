@@ -1,0 +1,1036 @@
+{
+  "recordedAt": "2026-10-05T07:20:00.331Z",
+  "command": "node scripts/island-terrain-asset-check.mjs --file assets/archipelago/island-reconstruction-v2/projects-island-v2-r8.glb --root ProjectsIsland_V2_Origin_At_Sea_Level --max-triangles 180000 --self-test",
+  "exitCode": 0,
+  "result": {
+    "asset": "projects-island-terrain-v2",
+    "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+    "file": "/Users/marcodantonio/Workspaces/portfolio/assets/archipelago/island-reconstruction-v2/projects-island-v2-r8.glb",
+    "bytes": 12044864,
+    "sha256": "61b6696c4c2b69642a391bbc1674617d0cd9943a87972285d4dab79a151a09f2",
+    "status": "ACTUAL STANDALONE STRUCTURE PASS; not map/physics, visual fidelity, source manifold, performance or runtime acceptance",
+    "checks": 3782133,
+    "meshes": 30,
+    "primitives": 30,
+    "vertices": 204200,
+    "triangles": 84530,
+    "boundsMinYUpMetres": [
+      -34.44200134277344,
+      -10,
+      -36.441688537597656
+    ],
+    "boundsMaxYUpMetres": [
+      34.27458572387695,
+      16.26666259765625,
+      34.44200134277344
+    ],
+    "boundsYUpMetres": [
+      68.71658706665039,
+      26.26666259765625,
+      70.8836898803711
+    ],
+    "normalLengthRange": [
+      0.9999999085587412,
+      1.0000001582063545
+    ],
+    "geometryDiagnostics": {
+      "nearZeroAreaTriangles": 0,
+      "normalOppositionCandidates": 0,
+      "interpretation": "Actual transformed triangle shading diagnostics, not source manifold/watertightness certification from glTF seams"
+    },
+    "vertexPaint": [
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_00",
+        "vertices": 3748,
+        "triangles": 1272,
+        "minRGB": [
+          0.2912573516368866,
+          0.3085353374481201,
+          0.20194025337696075
+        ],
+        "maxRGB": [
+          0.5858669877052307,
+          0.4967881143093109,
+          0.3993786871433258
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_01",
+        "vertices": 4966,
+        "triangles": 1672,
+        "minRGB": [
+          0.3475658893585205,
+          0.31960082054138184,
+          0.16866429150104523
+        ],
+        "maxRGB": [
+          0.6445868015289307,
+          0.49754559993743896,
+          0.3999876379966736
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_02",
+        "vertices": 4440,
+        "triangles": 1500,
+        "minRGB": [
+          0.23500236868858337,
+          0.24894306063652039,
+          0.16762934625148773
+        ],
+        "maxRGB": [
+          0.638883113861084,
+          0.49232596158981323,
+          0.3957914710044861
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_03",
+        "vertices": 4196,
+        "triangles": 1414,
+        "minRGB": [
+          0.33834680914878845,
+          0.3111235201358795,
+          0.16824698448181152
+        ],
+        "maxRGB": [
+          0.6457709074020386,
+          0.498742014169693,
+          0.40094947814941406
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_04",
+        "vertices": 3700,
+        "triangles": 1248,
+        "minRGB": [
+          0.23843801021575928,
+          0.251407265663147,
+          0.16729417443275452
+        ],
+        "maxRGB": [
+          0.6385309100151062,
+          0.49876704812049866,
+          0.40096956491470337
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_05",
+        "vertices": 3212,
+        "triangles": 1084,
+        "minRGB": [
+          0.33493170142173767,
+          0.3079831898212433,
+          0.21864375472068787
+        ],
+        "maxRGB": [
+          0.6005414128303528,
+          0.4951935410499573,
+          0.3980967700481415
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_06",
+        "vertices": 3044,
+        "triangles": 1024,
+        "minRGB": [
+          0.3395392894744873,
+          0.31222003698349,
+          0.21381306648254395
+        ],
+        "maxRGB": [
+          0.5997791886329651,
+          0.4905984401702881,
+          0.3944026529788971
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_07",
+        "vertices": 2820,
+        "triangles": 950,
+        "minRGB": [
+          0.3369956910610199,
+          0.3098810911178589,
+          0.16693732142448425
+        ],
+        "maxRGB": [
+          0.6291495561599731,
+          0.49387338757514954,
+          0.39703547954559326
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_08",
+        "vertices": 2770,
+        "triangles": 934,
+        "minRGB": [
+          0.3392173647880554,
+          0.311924010515213,
+          0.21743586659431458
+        ],
+        "maxRGB": [
+          0.5962213277816772,
+          0.47672849893569946,
+          0.3832523226737976
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_09",
+        "vertices": 3346,
+        "triangles": 1130,
+        "minRGB": [
+          0.3534034490585327,
+          0.32496869564056396,
+          0.16907042264938354
+        ],
+        "maxRGB": [
+          0.63832688331604,
+          0.49198609590530396,
+          0.3955182135105133
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_10",
+        "vertices": 3128,
+        "triangles": 1054,
+        "minRGB": [
+          0.33861494064331055,
+          0.3113700747489929,
+          0.16787368059158325
+        ],
+        "maxRGB": [
+          0.6385055780410767,
+          0.49209296703338623,
+          0.39560413360595703
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_11",
+        "vertices": 3252,
+        "triangles": 1100,
+        "minRGB": [
+          0.3451828956604004,
+          0.31740954518318176,
+          0.17113807797431946
+        ],
+        "maxRGB": [
+          0.6404761075973511,
+          0.49346286058425903,
+          0.39670541882514954
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_12",
+        "vertices": 4722,
+        "triangles": 1590,
+        "minRGB": [
+          0.23598800599575043,
+          0.24782094359397888,
+          0.16539350152015686
+        ],
+        "maxRGB": [
+          0.6425427794456482,
+          0.4954802989959717,
+          0.3983272910118103
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_13",
+        "vertices": 3698,
+        "triangles": 1244,
+        "minRGB": [
+          0.3349033296108246,
+          0.30795708298683167,
+          0.17059746384620667
+        ],
+        "maxRGB": [
+          0.6405133605003357,
+          0.4934937059879303,
+          0.3967302441596985
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_23",
+        "vertices": 3652,
+        "triangles": 1236,
+        "minRGB": [
+          0.4140174090862274,
+          0.37770333886146545,
+          0.16890458762645721
+        ],
+        "maxRGB": [
+          0.6234086751937866,
+          0.49133166670799255,
+          0.3949921429157257
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Attached_Fracture_24",
+        "vertices": 3736,
+        "triangles": 1264,
+        "minRGB": [
+          0.42511752247810364,
+          0.38396111130714417,
+          0.16824248433113098
+        ],
+        "maxRGB": [
+          0.6464501619338989,
+          0.49942833185195923,
+          0.40150120854377747
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+        "vertices": 29133,
+        "triangles": 14838,
+        "minRGB": [
+          0.23248815536499023,
+          0.24627982079982758,
+          0.1316765993833542
+        ],
+        "maxRGB": [
+          0.6596590280532837,
+          0.495676189661026,
+          0.39229339361190796
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+        "vertices": 6130,
+        "triangles": 2104,
+        "minRGB": [
+          0.3354649245738983,
+          0.30847346782684326,
+          0.16695556044578552
+        ],
+        "maxRGB": [
+          0.6438469290733337,
+          0.496798038482666,
+          0.3993866741657257
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+        "vertices": 7330,
+        "triangles": 2480,
+        "minRGB": [
+          0.33660513162612915,
+          0.30952197313308716,
+          0.19570143520832062
+        ],
+        "maxRGB": [
+          0.6090222001075745,
+          0.49546122550964355,
+          0.398311972618103
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+        "vertices": 8216,
+        "triangles": 2760,
+        "minRGB": [
+          0.23034000396728516,
+          0.24329908192157745,
+          0.16572794318199158
+        ],
+        "maxRGB": [
+          0.6372337341308594,
+          0.4978623688220978,
+          0.40024229884147644
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_Central_Long_Finger",
+        "vertices": 5946,
+        "triangles": 2050,
+        "minRGB": [
+          0.3345993459224701,
+          0.30767756700515747,
+          0.1672377735376358
+        ],
+        "maxRGB": [
+          0.643764078617096,
+          0.49840429425239563,
+          0.40067797899246216
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_East_Short_Finger",
+        "vertices": 4305,
+        "triangles": 1470,
+        "minRGB": [
+          0.28317853808403015,
+          0.2875730097293854,
+          0.16772699356079102
+        ],
+        "maxRGB": [
+          0.6461929082870483,
+          0.4968346953392029,
+          0.39941611886024475
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+        "vertices": 5874,
+        "triangles": 2022,
+        "minRGB": [
+          0.2285163849592209,
+          0.24147360026836395,
+          0.16709892451763153
+        ],
+        "maxRGB": [
+          0.6399424076080322,
+          0.49876704812049866,
+          0.40096956491470337
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Integrated_Rear_Ridge",
+        "vertices": 23507,
+        "triangles": 16580,
+        "minRGB": [
+          0.3639472424983978,
+          0.36666324734687805,
+          0.16677463054656982
+        ],
+        "maxRGB": [
+          0.646789014339447,
+          0.4997707009315491,
+          0.40177643299102783
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+        "vertices": 13341,
+        "triangles": 6214,
+        "minRGB": [
+          0.22840189933776855,
+          0.2419157326221466,
+          0.16694769263267517
+        ],
+        "maxRGB": [
+          0.6465635895729065,
+          0.49948737025260925,
+          0.40154868364334106
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+        "vertices": 6196,
+        "triangles": 2096,
+        "minRGB": [
+          0.33530980348587036,
+          0.30833086371421814,
+          0.1714472472667694
+        ],
+        "maxRGB": [
+          0.6464220285415649,
+          0.49939993023872375,
+          0.4014783799648285
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+        "vertices": 9925,
+        "triangles": 3392,
+        "minRGB": [
+          0.22972820699214935,
+          0.2431264966726303,
+          0.16735820472240448
+        ],
+        "maxRGB": [
+          0.6457192897796631,
+          0.498742014169693,
+          0.40094947814941406
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+        "vertices": 12571,
+        "triangles": 4272,
+        "minRGB": [
+          0.22876694798469543,
+          0.24233786761760712,
+          0.16621607542037964
+        ],
+        "maxRGB": [
+          0.6445868015289307,
+          0.49874353408813477,
+          0.40095067024230957
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+        "vertices": 8870,
+        "triangles": 3020,
+        "minRGB": [
+          0.33408504724502563,
+          0.30720463395118713,
+          0.16820168495178223
+        ],
+        "maxRGB": [
+          0.6457192897796631,
+          0.49868983030319214,
+          0.4009075164794922
+        ]
+      },
+      {
+        "node": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+        "vertices": 4426,
+        "triangles": 1516,
+        "minRGB": [
+          0.335103303194046,
+          0.3081401586532593,
+          0.17021355032920837
+        ],
+        "maxRGB": [
+          0.6413888335227966,
+          0.4943143427371979,
+          0.3973899483680725
+        ]
+      }
+    ],
+    "reviewProfile": {
+      "maxTriangles": 180000,
+      "defaultV1MaxTriangles": 100000,
+      "interpretation": "Explicit standalone study guard, not runtime/performance acceptance"
+    },
+    "seaContact": {
+      "originY": 0,
+      "bodyNode": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "bodyNodeId": 17,
+      "bodyMinimumY": -10,
+      "bodyPrimitiveCount": 1,
+      "sections": [
+        {
+          "y": 0.3,
+          "crossingSamples": 1276,
+          "boundsXZ": {
+            "min": [
+              -34,
+              -35.97402572631836
+            ],
+            "max": [
+              33.767303912086,
+              34
+            ]
+          },
+          "spanXZ": [
+            67.76730391208599,
+            69.97402572631836
+          ],
+          "minimumAngularRadius": 31.41190360295617
+        },
+        {
+          "y": 0,
+          "crossingSamples": 2048,
+          "boundsXZ": {
+            "min": [
+              -34,
+              -35.97402572631836
+            ],
+            "max": [
+              33.83473205566406,
+              34
+            ]
+          },
+          "spanXZ": [
+            67.83473205566406,
+            69.97402572631836
+          ],
+          "minimumAngularRadius": 31.41190360295617
+        },
+        {
+          "y": -9.5,
+          "crossingSamples": 1024,
+          "boundsXZ": {
+            "min": [
+              -34.41990089416504,
+              -36.41830539703369
+            ],
+            "max": [
+              34.25259304046631,
+              34.41990089416504
+            ]
+          },
+          "spanXZ": [
+            68.67249393463135,
+            70.83820629119873
+          ],
+          "minimumAngularRadius": 31.799841630702524
+        }
+      ],
+      "clearingFrame": {
+        "centreXZ": [
+          0,
+          -3
+        ],
+        "width": 32,
+        "depth": 26,
+        "boundsXZ": {
+          "min": [
+            -16,
+            -16
+          ],
+          "max": [
+            16,
+            10
+          ]
+        },
+        "proposedTopYAboveSea": 4.8
+      },
+      "clearingFrameProbes": [
+        {
+          "x": -16,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10.000000000000002,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10.000000000000002,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -16,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": -16,
+          "distinctIntersections": [
+            -9.999999999999998,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -9.999999999999998,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": -8,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 0,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734864
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734864,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.907348643470641e-7
+        },
+        {
+          "x": 0,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734864
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734864,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.907348643470641e-7
+        },
+        {
+          "x": 8,
+          "z": -3,
+          "distinctIntersections": [
+            -9.999999999999998,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -9.999999999999998,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 8,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": -16,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": -9.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": -3,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": 3.5,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        },
+        {
+          "x": 16,
+          "z": 10,
+          "distinctIntersections": [
+            -10,
+            4.800000190734863
+          ],
+          "bottomYAboveSea": -10,
+          "topYAboveSea": 4.800000190734863,
+          "reachesBedrock": true,
+          "hasDryTop": true,
+          "deviationFromProposedTop": 1.9073486345888568e-7
+        }
+      ],
+      "fullBodyApronDiagnostic": {
+        "triangles": 10486,
+        "clippedTriangles": 2356,
+        "summedProjectedAreaSquareMetres": 832.0000000000008,
+        "summedPlanarAreaSquareMetres": 832.0000000000008,
+        "summedInclinedAreaSquareMetres": 0,
+        "minimumY": 4.800000190734863,
+        "maximumY": 4.800000190734863,
+        "proposedTopY": 4.8,
+        "tolerance": 0.00001,
+        "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+      },
+      "interpretation": "Actual body intersections plus sparse25point apron-frame diagnostics; no fixed V1 ray topology, manifold, sea-foam, flatness, collision or gameplay support acceptance"
+    },
+    "materials": [
+      {
+        "id": 0,
+        "name": "ProjectsIsland_V2_Limestone",
+        "metallicRoughnessTexture": 2,
+        "normalTexture": 0,
+        "baseColorTexture": 1,
+        "occlusionTexture": null,
+        "aoInterpretation": "No glTF occlusion texture assigned; ORM filename alone does not certify AO"
+      },
+      {
+        "id": 1,
+        "name": "ProjectsIsland_V2_HoneyEarth",
+        "metallicRoughnessTexture": 5,
+        "normalTexture": 3,
+        "baseColorTexture": 4,
+        "occlusionTexture": null,
+        "aoInterpretation": "No glTF occlusion texture assigned; ORM filename alone does not certify AO"
+      }
+    ],
+    "textures": 6,
+    "embeddedImages": [
+      {
+        "id": 0,
+        "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+        "width": 512,
+        "height": 512,
+        "bitDepth": 8,
+        "bytes": 293590,
+        "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9"
+      },
+      {
+        "id": 1,
+        "name": "ProjectsIsland_V2_Limestone_NeutralAlbedo_R7_1024",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "bytes": 535090,
+        "sha256": "dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3"
+      },
+      {
+        "id": 2,
+        "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "bytes": 179855,
+        "sha256": "0f19fd39f048c3349f7ae5f63fd8d467807ed7f80c80c5fcee686db1751c574b"
+      },
+      {
+        "id": 3,
+        "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+        "width": 512,
+        "height": 512,
+        "bitDepth": 8,
+        "bytes": 270827,
+        "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144"
+      },
+      {
+        "id": 4,
+        "name": "ProjectsIsland_V2_HoneyEarth_NeutralAlbedo_R7_1024",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "bytes": 802348,
+        "sha256": "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b"
+      },
+      {
+        "id": 5,
+        "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "bytes": 209528,
+        "sha256": "69a0bab162c6a4b69872f0171788ffe7b687f0a40496bc21ccad9727aae56fb2"
+      }
+    ],
+    "excludedPreviewNodes": [
+      "ProjectsIsland_V2_Cool_Sky_Fill_Preview_Only",
+      "ProjectsIsland_V2_Review_Camera_Excluded",
+      "ProjectsIsland_V2_Warm_Key_Preview_Only"
+    ],
+    "fixedMapOrImageFidelityAsserted": false,
+    "runtimeIntegrated": false,
+    "negativeFixtures": [
+      "missing-all-exported-colours",
+      "empty-colour-accessor",
+      "uniform-colour-not-vertex-paint",
+      "nonfinite-position",
+      "nonfinite-colour",
+      "nonfinite-uv",
+      "zero-normals",
+      "inverted-normals",
+      "invalid-index",
+      "translated-sea-origin",
+      "external-buffer",
+      "external-image",
+      "missing-mr-map",
+      "missing-normal-map",
+      "invalid-embedded-png",
+      "lifted-bedrock-base",
+      "pinched-hanging-bedrock",
+      "explicit-study-triangle-budget",
+      "missing-v2-semantic-body",
+      "ambiguous-semantic-bedrock-owners"
+    ],
+    "interfaceFixtures": [
+      "legacy-v1-defaults",
+      "explicit-file-root-study-budget",
+      "seven-invalid-cli-fixtures",
+      "renamed-v2-root-semantic-body-on-current-binary-only"
+    ]
+  }
+}

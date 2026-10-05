@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-connected-rear-macro-candidate-a-20261005",
+  "committedRevision": 7,
+  "committed": false,
+  "artAcceptance": false,
+  "actualViews": [
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-front.png",
+      "bytes": 345813,
+      "width": 640,
+      "height": 480,
+      "sha256": "a16a313be9db77f6e43ab3fac8de04253815e4ee3a43316ae31fa1cd84f490bb",
+      "artifactId": "21160cdff13f9d59a6c776c9d767883c",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": false
+    },
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-hero.png",
+      "bytes": 365997,
+      "width": 640,
+      "height": 480,
+      "sha256": "4897552cfd720c68ad99bbc253776ff5d06530ca5ba867340b32690083b417ee",
+      "artifactId": "e6de94dbd7d7edffd74b70e50874231a",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": true
+    },
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-right.png",
+      "bytes": 329792,
+      "width": 640,
+      "height": 480,
+      "sha256": "6199ea2d5b46b955eaf4f7c570e73f14e131c53da9e5e52e3959708fa3f4c82a",
+      "artifactId": "95bf7683f33c3da4a94718acfcb1c38b",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": false
+    },
+    {
+      "name": "projects-island-v2-macro-ridge-candidate-top.png",
+      "bytes": 412647,
+      "width": 640,
+      "height": 480,
+      "sha256": "09199c21abaad361cfe928c2d5fbb355cba4f73275c31f3c779493c4cf563f3f",
+      "artifactId": "703864867ccc5d7a9f77c69cdfb3a16d",
+      "samples": 16,
+      "actuallyViewedByRoot": true,
+      "diagnosticWater": false
+    }
+  ],
+  "sourceAuditReceipt": "../macro-ridge-candidate-a.json",
+  "rootVisualReview": {
+    "rootActuallyViewedAllFour": true,
+    "referenceGuideActuallyViewed": true,
+    "promoted": false,
+    "fullReferenceFidelityVerified": false,
+    "reasons": [
+      "The continuous middle mass still reads as a long straight fortress wall.",
+      "Large flat wall/skirt facets remain visible; roof regions are too regular.",
+      "The right view exposes a strong rear cantilever/sloping skirt rather than natural stepped geology."
+    ],
+    "next": "Organic broken terraces, inclined fractured wall bands and integrated mineral ribs; keep buildings and vegetation separate."
+  }
+}

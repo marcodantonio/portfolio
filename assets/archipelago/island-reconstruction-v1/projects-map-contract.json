@@ -1,0 +1,144 @@
+{
+  "schema": "archipelago-reference-led-terrain-proposal-v1",
+  "territory": "projects",
+  "status": "OBSERVED_RUNTIME_BASELINE_WITH_SEPARATE_UNIMPLEMENTED_AUTHORING_PROPOSAL",
+  "units": "metres",
+  "workflow": "Reference-led Higgsfield Scene Builder / Blender authoring; not automatic image-to-3D reconstruction.",
+  "runtimeChanged": false,
+  "runtimeApproved": false,
+  "generatedGlb": false,
+  "coordinateSystem": {
+    "axes": "glTF Y up; X east/right; Z south/front. Rear is negative Z.",
+    "proposedRootWorld": { "x": -16, "y": -3.2, "z": -35, "yaw": 0 },
+    "localToWorld": "world = local + proposedRootWorld; no rotation or scale",
+    "note": "Local Y0 is the existing sea level, not the workshop walking floor. Local XZ0 is the territory centre, not the proposed asymmetric bounding-box centre."
+  },
+  "observed": {
+    "source": "lib/island-map.ts",
+    "sourceSha256": "077385233edc9db7c2ce5152681374226d19b428d776b609c52a808c6a8715d7",
+    "waterLevelWorldY": -3.2,
+    "seaCliffFoundationWorldY": -13.2,
+    "foundationSource": "lib/island-coast.ts: SEA_CLIFF_FOUNDATION_Y = WATER_LEVEL - 10",
+    "territoryCentreWorldXZ": { "x": -16, "z": -35 },
+    "nominalRadius": 27,
+    "nominalInhabitedWorldY": 1.6,
+    "nominalInhabitedSeaClearance": 4.8,
+    "terrainMesh": {
+      "angularSegments": 96,
+      "radialSegments": 28,
+      "vertices": 2689,
+      "triangles": 5280,
+      "worldBounds": {
+        "min": [-43.55232238769531, -2.817462682723999, -65.33609008789062],
+        "max": [15.281513214111328, 1.6672006845474243, -6.332519054412842],
+        "size": [58.83383560180664, 4.484663367271423, 59.00357103347778]
+      },
+      "shoreWorldYRange": [-2.817462682723999, -2.482537269592285],
+      "shoreSeaClearanceRange": [0.38253731727600115, 0.717462730407715],
+      "xyzFloat32Sha256": "5dfe4e74fd68978c7a2be0ab2ccd359eae536db5d7a29d48be862462569ba015",
+      "indicesUint32Sha256": "95da1b1ff224794cd1408e3fd7b886b4bd38f2438b91e86fcd95aa85c0ea9ec3"
+    },
+    "workshop": {
+      "deckId": "workshop-deck",
+      "root": "DigitalWorkshop_V1_Origin_At_Deck_Centre",
+      "anchorWorld": { "x": -16, "y": 1.66, "z": -38, "yaw": 0 },
+      "anchorInProposedTerrainLocal": { "x": 0, "y": 4.86, "z": -3 },
+      "floorWidth": 30,
+      "floorDepth": 24,
+      "floorThickness": 0.24,
+      "floorLocalXZBounds": { "xMin": -15, "xMax": 15, "zMin": -15, "zMax": 9 },
+      "hardHulls": 27,
+      "hullsSource": "lib/island-map.ts: WORKSHOP.hulls",
+      "hullsWorldJSONSha256": "28c6a9d953f5d168441a2cc1c9191bda6b01ad87478f1caa27f1238a443845bb",
+      "immutableAuthoringContract": "assets/archipelago/workshop-contract-v1.json",
+      "authoringHeightNotice": "The existing building authoring contract records historic world Y18.06. Actual runtime Y is1.66; local building geometry and the27 local hulls are unchanged.",
+      "nativeTerrainUnderFloor100mmGridRangeWorldY": [-0.3410329042508865, 1.602362235167847],
+      "nativeTerrainNotice": "The current terrain is not a perfectly flat32x26 clearing. Flattening it in a future terrain asset would be a genuine new height revision, not preservation of this baseline."
+    },
+    "arrival": { "worldXZ": { "x": -16, "z": -20 }, "terrainLocalXZ": { "x": 0, "z": 15 }, "groundWorldY": 1.5992737174277025 },
+    "bridgeLandings": [
+      {
+        "connection": ["welcome", "projects"],
+        "endWorld": { "x": -11.3165792019674, "y": -2.006358886865105, "z": -8.655758011066624 },
+        "endTerrainLocal": { "x": 4.6834207980326, "y": 1.1936411131348952, "z": 26.344241988933376 },
+        "nativeGroundWorldY": -1.946358886865105,
+        "width": 4.2,
+        "landApproachWidth": 5.5,
+        "landApproach": [{ "x": 4.6834207980326, "z": 26.344241988933376 }, { "x": 0, "z": 15 }],
+        "longitudinalOutwardUnitXZ": { "x": 0.1750333347174944, "z": 0.9845625077859067 }
+      },
+      {
+        "connection": ["projects", "experience"],
+        "startWorld": { "x": 13.031528560720204, "y": -2.0260365907588986, "z": -33.70394961782499 },
+        "startTerrainLocal": { "x": 29.031528560720204, "y": 1.1739634092411015, "z": 1.296050382175011 },
+        "nativeGroundWorldY": -1.9660365907588988,
+        "width": 4.2,
+        "landApproachWidth": 3.5,
+        "landApproach": [{ "x": 0, "z": 15 }, { "x": 29.031528560720204, "z": 1.296050382175011 }],
+        "longitudinalOutwardUnitXZ": { "x": 0.9990049946790789, "z": 0.04459843726245881 }
+      }
+    ],
+    "stations": [
+      { "id": "projects-0", "worldXZ": [-25, -36], "terrainLocalXZ": [-9, -1], "approachWorldXZ": [-25, -32.9], "approachTerrainLocalXZ": [-9, 2.1] },
+      { "id": "projects-1", "worldXZ": [-21, -42], "terrainLocalXZ": [-5, -7], "approachWorldXZ": [-21, -38.9], "approachTerrainLocalXZ": [-5, -3.9] },
+      { "id": "projects-2", "worldXZ": [-14, -42], "terrainLocalXZ": [2, -7], "approachWorldXZ": [-14, -38.9], "approachTerrainLocalXZ": [2, -3.9] },
+      { "id": "projects-3", "worldXZ": [-7, -40], "terrainLocalXZ": [9, -5], "approachWorldXZ": [-7, -36.9], "approachTerrainLocalXZ": [9, -1.9] },
+      { "id": "projects-4", "worldXZ": [-6, -32], "terrainLocalXZ": [10, 3], "approachWorldXZ": [-6, -28.9], "approachTerrainLocalXZ": [10, 6.1] }
+    ],
+    "stationDimensions": { "width": 4.4, "height": 1.3, "depth": 1.35, "yaw": 0, "approachDistance": 3.1, "groundWorldY": 1.66, "pathWidth": 2.6 },
+    "transfers": {
+      "cannonDepartureWorldXZ": [2, -21],
+      "cannonDepartureTerrainLocalXZ": [18, 14],
+      "cannonDepartureGroundWorldY": -0.8462023967617505,
+      "parachuteArrivalWorldXZ": [-1, -21],
+      "parachuteArrivalTerrainLocalXZ": [15, 14],
+      "parachuteArrivalGroundWorldY": 0.035367765357336864,
+      "pathWidth": 3,
+      "cannonSolid": { "id": "projects-cannon", "worldCentre": [4.1, 0.7537976032382496, -21.7], "terrainLocalXZ": [20.1, 13.3], "radius": 1.6, "height": 3.2 },
+      "note": "Cannon is an additional existing solid, separate from the workshop27. No boat dock or jetty belongs to Projects."
+    },
+    "preservationBaseline": {
+      "globalSeededProps": 196,
+      "projectsSeededProps": 47,
+      "projectsPropCounts": { "palm": 15, "rock": 12, "shrub": 20 },
+      "globalPropsJSONSha256": "18dfc876eddb0674f1f2160193212bc605c49b1ae985dfdaf1ee439a1f5d600b",
+      "globalStations": 21,
+      "globalStationsJSONSha256": "0c0da487ad243a81b9ca330cbc959974ab8e76706176c58fffcc0591a455a7aa",
+      "seedRisk": "WORLD_PROPS calls getShoreRadius and rejects against seeded paths/decks/hulls. Changing the current radius/clearance functions changes RNG consumption and coordinates. Isolate the historical placement geometry or retain the actual poses explicitly before a future reshape; do not accept a new hash as proof of preservation.",
+      "heightRisk": "Prop JSON storesXZ/scale/yaw, not groundY. A matching props hash does not prove unchanged height, palm crown clearance, rock contact or collision after reshaping."
+    }
+  },
+  "proposedAuthoringOnly": {
+    "role": "Bare continuous terrain/bedrock study; all buildings, bridges, cannonequipment and vegetation remain separate assets.",
+    "maximumPlanEnvelope": { "width": 60, "depth": 56, "xMin": -28.6, "xMax": 31.4, "zMin": -27.1, "zMax": 28.9, "boxCentreXZ": [1.4, 0.9] },
+    "envelopeNotice": "Asymmetric bounding envelope relative to the retained map centre; not a rectangular shore. Its small east/south offset accommodates both real landing collars inside60x56 without moving anchors. Current terrain58.8338x59.0036 and this60x56 study are different geometry.",
+    "centralClearing": { "centreXZ": [0, -3], "width": 32, "depth": 26, "xMin": -16, "xMax": 16, "zMin": -16, "zMax": 10, "worldY": 1.6, "localYAboveSea": 4.8 },
+    "clearingPolicy": "Broad worn sand/earth apron, not a new slab or uniform raised disc. Retain the30x24 workshop floor at localY4.86 and all27 hulls. Feather apron into real low coastal ramps; do not extend its flat height to the coastline.",
+    "rearHighlands": [
+      { "id": "rear-west-shoulder", "centreXZ": [-16.5, -20.5], "ellipticalSupportWidthDepth": [12, 8], "peakWorldY": 6.6, "peakLocalYAboveSea": 9.8 },
+      { "id": "rear-central-shoulder", "centreXZ": [0, -23], "ellipticalSupportWidthDepth": [15, 8], "peakWorldY": 9.1, "peakLocalYAboveSea": 12.3 },
+      { "id": "rear-east-shoulder", "centreXZ": [17.2, -20.5], "ellipticalSupportWidthDepth": [11.6, 7], "peakWorldY": 5.8, "peakLocalYAboveSea": 9 }
+    ],
+    "highlandPolicy": "Three unequal joined eroded shoulders behind the workshop. Their support frontmostZ is−16.5 or less, outside the clearing/deck and all existing pedestrian/transit approaches. Smooth mineral volumes and turf crowns, not disconnected boulder piles or upper walking platforms. Exact centres/heights are proposed design dimensions, not reconstructed measurements from bitmaps.",
+    "propConflictNotice": "Several preserved rear palms/rocks/shrubs lie within these proposed supports. Do not merge or silently delete them in the bare master. Later integration must reconcile their real ground height, trunk/crown/rock geometry and collision against the new surface; no unchanged prop-height claim is made.",
+    "shore": { "localYAboveSeaRange": [0.38, 0.72], "worldYRange": [-2.82, -2.48], "submergedBedrockBottomLocalY": -10, "submergedBedrockBottomWorldY": -13.2 },
+    "shorePolicy": "Front-left shallow sand cove, smaller front-right sandy inlet and offset right promontory. Connected broad bedrock reaches the seabed; its support is submerged, never an exposed pedestal or tapered floating underside. The generated images are cliff-heavy and tilted; correct these explicitly rather than treat them as metric orthographic geometry.",
+    "protectedLandingCollars": {
+      "longitudinalOutwardLength": 2.1,
+      "transverseHalfWidthIncludingCapsule": 2.445,
+      "capsuleMargin": 0.345,
+      "welcomeProjectsLocalPaddedBounds": { "xMin": 2.2761654664960576, "xMax": 7.458246132475881, "zMin": 25.916285485549103, "zMax": 28.839779758668055 },
+      "projectsExperienceLocalPaddedBounds": { "xMin": 28.92248538161349, "xMax": 31.238482228652984, "zMin": -1.1465168298153374, "zMax": 3.832274312416523 },
+      "policy": "Both true oriented collars must be solid connected terrain at the existing measured landing heights, with the current bridge top0.06m below land. A bounding-box fit alone is not a supported-entry proof. Keep the full5.5m/3.5m inward approach corridors unobstructed and walkable without jumping."
+    },
+    "integrationGateRequired": [
+      "Review actual GLB POSITION geometry, bounds, textures/materials, normals, zero-area faces and front/right/top orthographic renders; bitmap similarity is not acceptance.",
+      "Reconcile an actual terrain mesh with getTerrainHeight/territoryAt/isWalkable, Rapier trimesh, render geometry and coast/ocean sea-contact field; no unseen floor or art-only walkable land.",
+      "Retain all four bridge/transfer endpoint contracts, the workshop30x24 floor, all27 workshop hulls, separate cannon and five station/approach anchors; rerun actual Rapier walks in both directions with unchanged controller.",
+      "Preserve all196 seeded poses and21 station records by their historical placement source/hash; separately verify new groundY, trunk/crown/rock contact and supported transfer arrivals.",
+      "Treat Projects height/outline as an explicit new revision if mounted. Keep the other five terrain baselines and existing71 foundation contracts unchanged unless separately authorised and tested.",
+      "Rerun foundation contact, camera/overview, world/coast/ocean checks, lint/build and scoped browser failure/recovery/reading/input checks; no inheritance of old passing counts."
+    ],
+    "acceptanceBoundary": "Only a dimensional modelling proposal. No generated or mounted island, physics support, reference fidelity, artistic acceptance, frame-rate measurement or deployment is certified."
+  }
+}

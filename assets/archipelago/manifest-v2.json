@@ -1,0 +1,314 @@
+{
+  "version": 2,
+  "created": "2026-10-01",
+  "previous": "manifest-v1.json",
+  "pipeline": {
+    "images": "Built-in Images edit for cliff v2; original twelve sheets retained. prompts-v1/v2.json.",
+    "meshes": "Reference-led authored Blender 5.2; not automatic image-to-3D or exact reconstruction",
+    "export": "GLB 2.0 Y-up metres, portable embedded PNG PBR",
+    "aggregation": "Static affine baking/material batching, Float32 collapsed-triangle removal, no simplification/LOD/compression",
+    "status": "Partial art study; only studio aggregate mounted as local experimental prototype",
+    "artAcceptance": false,
+    "hardwarePerformance": "unverified"
+  },
+  "additionalReference": {
+    "file": "reference-sheets-v2/12-cliff-module.png",
+    "bytes": 2003576,
+    "sha256": "3aede877df93452c98ff9bfe3c5439e9b2d9d2f3c60fcaeb918ae48e8a83bf8c",
+    "limits": "Generated panels are not certified consistent orthographic CAD."
+  },
+  "newMasters": [
+    {
+      "id": "cliff-v2",
+      "projectId": "486d8623-a979-4671-9799-da8322269ad7",
+      "projectUrl": "https://higgsfield.ai/3d-jutsu/486d8623-a979-4671-9799-da8322269ad7",
+      "revision": 2,
+      "operationId": "cliff-v2-authoring-20261001-002",
+      "root": "Cliff_V2_Origin_At_Coast_Base",
+      "files": {
+        "glb": {
+          "path": "../../public/models/archipelago/cliff-v2.glb",
+          "bytes": 4216144,
+          "sha256": "f1127d4378e0566ddda08cb239ba7ef1fbc754fd378d9bfe5f30a761d661afdd"
+        },
+        "blend": {
+          "path": "blender/cliff-v2.blend",
+          "bytes": 4554473,
+          "sha256": "b9b9e54dd9aeafcbe96703b1c887fb6ea1300ea7d69a6475b2349877db683637"
+        },
+        "script": {
+          "path": "blender/build_cliff_v2.py",
+          "bytes": 31291,
+          "sha256": "52ba64ec8953d6d47170c665bd341d6149621ad0a2a2c287496963f6913be73d"
+        },
+        "preview": {
+          "path": "renders-v2/cliff-v2-eevee.png",
+          "bytes": 632262,
+          "sha256": "49b42ffbd0c38baa3c235271940a346f7cf05b67d94dc4646509e2ff8778f37f"
+        }
+      },
+      "geometry": {
+        "asset": "cliff-v2",
+        "bytes": 4216144,
+        "triangles": 19722,
+        "vertices": 18323,
+        "meshes": 37,
+        "materials": 3,
+        "textures": 5,
+        "embeddedImages": 5,
+        "boundsYUpMetres": [
+          7.9868,
+          6.9771,
+          5.992
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 2,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        }
+      },
+      "inGameMaster": false,
+      "artAcceptance": false
+    },
+    {
+      "id": "studio",
+      "projectId": "fd71a5de-3071-46b6-a3d5-ed21a88156d6",
+      "projectUrl": "https://higgsfield.ai/3d-jutsu/fd71a5de-3071-46b6-a3d5-ed21a88156d6",
+      "revision": 2,
+      "operationId": "studio-authoring-20261001-002",
+      "root": "HomeStudio_V1_Origin_At_Deck_Centre",
+      "files": {
+        "glb": {
+          "path": "../../public/models/archipelago/studio-v1.glb",
+          "bytes": 6042448,
+          "sha256": "af755ac4dd9fb6e79558012b46b2d93a7c8ceb8e79273e5d62266f40a61035f8"
+        },
+        "blend": {
+          "path": "blender/studio-v1.blend",
+          "bytes": 10195794,
+          "sha256": "46e8cbe7eb475fbfc32445c4d16d9269fcd9d4bc21493ca3cbe8fe4dfed04b4f"
+        },
+        "script": {
+          "path": "blender/build_studio_v1.py",
+          "bytes": 41808,
+          "sha256": "43421ce9ee06146cb053656292c4d772652336a46097d7b373083993eadc4d68"
+        },
+        "preview": {
+          "path": "renders-v2/studio-v1-eevee.png",
+          "bytes": 798155,
+          "sha256": "f80167b702e62a662feddc989ab5d2af1906a63fbbabda90c8ffce70d783760c"
+        }
+      },
+      "geometry": {
+        "asset": "studio",
+        "bytes": 6042448,
+        "triangles": 100732,
+        "vertices": 120005,
+        "meshes": 689,
+        "materials": 19,
+        "textures": 12,
+        "embeddedImages": 10,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        }
+      },
+      "inGameMaster": false,
+      "artAcceptance": false
+    }
+  ],
+  "aggregates": [
+    {
+      "asset": "bridge",
+      "bytes": 4360044,
+      "triangles": 75216,
+      "vertices": 54198,
+      "meshes": 8,
+      "materials": 6,
+      "textures": 4,
+      "embeddedImages": 4,
+      "boundsYUpMetres": [
+        5.997,
+        2.4156,
+        3.6058
+      ],
+      "geometryDiagnostics": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 0,
+        "interpretation": "Review candidates, not manifold or visual certification"
+      },
+      "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+      "file": "../../public/models/archipelago/bridge-v1-batched.glb",
+      "sha256": "fd90c22e218c833af08c475d0fca146a243c75622082b6ebf0c6182f5bd8e028",
+      "source": "../../public/models/archipelago/bridge-v1.glb",
+      "sourceSha256": "f6b648ffa843d968ef46f821f0dfc5eec7a97498f28b510379cde2240a1edb0d",
+      "sourceMeshes": 330,
+      "removedCollapsedTriangles": 576,
+      "inGame": false,
+      "semanticGroups": [],
+      "LOD": false,
+      "artAcceptance": false
+    },
+    {
+      "asset": "palm",
+      "bytes": 2407328,
+      "triangles": 55554,
+      "vertices": 30164,
+      "meshes": 7,
+      "materials": 7,
+      "textures": 6,
+      "embeddedImages": 6,
+      "boundsYUpMetres": [
+        6.6475,
+        7.2481,
+        5.9879
+      ],
+      "geometryDiagnostics": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 49,
+        "interpretation": "Review candidates, not manifold or visual certification"
+      },
+      "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+      "file": "../../public/models/archipelago/palm-v1-batched.glb",
+      "sha256": "fdd674ef0560c0be1514f4387060bfaffc846f49ad07543bd5656c83c3bd8284",
+      "source": "../../public/models/archipelago/palm-v1.glb",
+      "sourceSha256": "c06972d7285f8f50952118fb1f0bda363a38a905db9870bc1aabdd5104a9d622",
+      "sourceMeshes": 37,
+      "removedCollapsedTriangles": 192,
+      "inGame": false,
+      "semanticGroups": [],
+      "LOD": false,
+      "artAcceptance": false
+    },
+    {
+      "asset": "cliff",
+      "bytes": 7450572,
+      "triangles": 49896,
+      "vertices": 74959,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 5,
+      "embeddedImages": 5,
+      "boundsYUpMetres": [
+        8.1664,
+        6.9632,
+        5.3407
+      ],
+      "geometryDiagnostics": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 90,
+        "interpretation": "Review candidates, not manifold or visual certification"
+      },
+      "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+      "file": "../../public/models/archipelago/cliff-v1-batched.glb",
+      "sha256": "0eee9fca564a165b45c2c084520210027bce0970557c592ae49a053ed760bfa1",
+      "source": "../../public/models/archipelago/cliff-v1.glb",
+      "sourceSha256": "8739edcc04802b74f1d77738010d4cd2003aac754b485361640bac7ead89053b",
+      "sourceMeshes": 163,
+      "removedCollapsedTriangles": 14,
+      "inGame": false,
+      "semanticGroups": [],
+      "LOD": false,
+      "artAcceptance": false
+    },
+    {
+      "asset": "cliff-v2",
+      "bytes": 4170472,
+      "triangles": 19722,
+      "vertices": 18323,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 5,
+      "embeddedImages": 5,
+      "boundsYUpMetres": [
+        7.9868,
+        6.9771,
+        5.992
+      ],
+      "geometryDiagnostics": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 2,
+        "interpretation": "Review candidates, not manifold or visual certification"
+      },
+      "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+      "file": "../../public/models/archipelago/cliff-v2-batched.glb",
+      "sha256": "501551b220c4f810d2d7712246b8bed1a1f991a084a20c37d46fde1051183739",
+      "source": "../../public/models/archipelago/cliff-v2.glb",
+      "sourceSha256": "f1127d4378e0566ddda08cb239ba7ef1fbc754fd378d9bfe5f30a761d661afdd",
+      "sourceMeshes": 37,
+      "removedCollapsedTriangles": 0,
+      "inGame": false,
+      "semanticGroups": [],
+      "LOD": false,
+      "artAcceptance": false
+    },
+    {
+      "asset": "studio",
+      "bytes": 5847368,
+      "triangles": 100732,
+      "vertices": 120005,
+      "meshes": 30,
+      "materials": 19,
+      "textures": 12,
+      "embeddedImages": 10,
+      "boundsYUpMetres": [
+        12.1,
+        6.1439,
+        8.2097
+      ],
+      "geometryDiagnostics": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 0,
+        "interpretation": "Review candidates, not manifold or visual certification"
+      },
+      "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+      "file": "../../public/models/archipelago/studio-v1-batched.glb",
+      "sha256": "05bdbf75551e3b249be3a998235527eda783449b39ed70ea44fb3f2a8141c4c9",
+      "source": "../../public/models/archipelago/studio-v1.glb",
+      "sourceSha256": "af755ac4dd9fb6e79558012b46b2d93a7c8ceb8e79273e5d62266f40a61035f8",
+      "sourceMeshes": 689,
+      "removedCollapsedTriangles": 0,
+      "inGame": true,
+      "semanticGroups": [
+        "Studio_shell",
+        "Studio_roof",
+        "Studio_interior",
+        "Studio_decor"
+      ],
+      "LOD": false,
+      "artAcceptance": false
+    }
+  ],
+  "studioIntegration": {
+    "asset": "studio-v1-batched.glb",
+    "rootPositionYUpMetres": [
+      -15,
+      14.06,
+      42
+    ],
+    "scale": 1,
+    "deckMetres": [
+      12,
+      0.24,
+      8
+    ],
+    "deckTop": 14.06,
+    "sharedHulls": 21,
+    "physicalTerritories": 6,
+    "status": "Local static prototype; fallback shares support/hulls; no production deployment",
+    "remainingLimits": "Reference detail/vegetation, runtime LOD and physical-device performance remain open."
+  },
+  "verification": {
+    "assetStructure": "Five masters PASS",
+    "aggregationParity": "Five aggregates PASS; image bytes/material definitions/source hash/bounds/accounting; no collapsed output triangles",
+    "physics": "985 actual-module checks; 68 free-deck support checks, 20 full-world studio contacts, one occluded contact and four corners in isolated unchanged-module fixture; negative no-deck control",
+    "actualGLBCaptures": "renders-v2/{studio-v1,cliff-v2}-{master,batched}-{hero,front,right,top}.png",
+    "limits": "Structure and captures are not art, watertightness, FPS, GPU-memory or live production acceptance"
+  }
+}

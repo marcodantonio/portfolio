@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-05",
+  "port": 3060,
+  "revision": 6,
+  "scoped": "Actual built Asset Lab only; not gameplay/device/GPU/FPS acceptance",
+  "cameraPass": {
+    "rows": [
+      {
+        "variant": "batched",
+        "view": "hero",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.74 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "batched",
+        "view": "front",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.74 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "batched",
+        "view": "right",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.74 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "batched",
+        "view": "top",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.74 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "2 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "hero",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.46 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "front",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.46 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "right",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.46 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      },
+      {
+        "variant": "master",
+        "view": "top",
+        "state": "ready",
+        "canvas": 1,
+        "overflow": false,
+        "stats": {
+          "bytes": "14.46 MiB",
+          "triangles": "109.088",
+          "vertices": "301.854",
+          "resources": "44 / 2 / 4",
+          "bounds": "68.72 × 29.42 × 70.88",
+          "budget": "Oltre il profilo orientativo; master da revisionare"
+        }
+      }
+    ],
+    "pageErrors": [],
+    "capturedAllEightViewedByRoot": true,
+    "valuesRecordedFromActualSuccessfulPlaywrightOutput": true
+  },
+  "datum": {
+    "before": {
+      "bytes": "14.74 MiB",
+      "triangles": "109.088",
+      "vertices": "301.854",
+      "resources": "2 / 2 / 4",
+      "bounds": "68.72 × 29.42 × 70.88",
+      "budget": "Oltre il profilo orientativo; master da revisionare"
+    },
+    "off": {
+      "bytes": "14.74 MiB",
+      "triangles": "109.088",
+      "vertices": "301.854",
+      "resources": "2 / 2 / 4",
+      "bounds": "68.72 × 29.42 × 70.88",
+      "budget": "Oltre il profilo orientativo; master da revisionare"
+    },
+    "on": {
+      "bytes": "14.74 MiB",
+      "triangles": "109.088",
+      "vertices": "301.854",
+      "resources": "2 / 2 / 4",
+      "bounds": "68.72 × 29.42 × 70.88",
+      "budget": "Oltre il profilo orientativo; master da revisionare"
+    },
+    "exactStats": true
+  },
+  "narrow": {
+    "state": "ready",
+    "canvas": 1,
+    "overflow": false
+  },
+  "failure": {
+    "state": "missing",
+    "canvas": 0,
+    "overflow": false,
+    "referenceVisible": true
+  },
+  "recovery": {
+    "state": "ready",
+    "canvas": 1
+  },
+  "pageErrors": [],
+  "webglFailure": {
+    "state": "error",
+    "canvas": 0,
+    "overflow": false,
+    "referenceVisible": true,
+    "status": "Error creating WebGL context.",
+    "pageErrors": []
+  },
+  "harnessCorrections": [
+    "tabs command corrected to tab-list/open",
+    "input[data-sea-datum] resolves main/input strict selector collision"
+  ],
+  "harnessCorrectionsAreNotAppBugs": true,
+  "expectedConsoleErrors": "intentional asset404 and unavailable WebGL fixture",
+  "noneOfTheseEstablishReferenceFidelity": true
+}

@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-03",
+  "tool": "Higgsfield MCP",
+  "assets": [
+    {
+      "file": "reference-sheets-v5/14-dance-pavilion.png",
+      "sha256": "0d6f802b4ea476ea0474e9bd64b7df0eafc5a21085278676d8556e95b306647b",
+      "jobId": "b33530df-6131-4769-93c3-a4ec5bd77455",
+      "statusVerified": "completed, jobs_wait on 2026-10-03",
+      "model": "gpt_image_2_5",
+      "resolution": "3840x2160",
+      "requestedQuality": "xhigh",
+      "aspectRatio": "16:9",
+      "estimatedCreditsBeforeSubmission": 7,
+      "referenceMediaId": "a8e0d8d1-10bd-4af2-8aba-5e3191deacc5",
+      "referenceRoles": ["Original supplied Dance image: architecture, materials, tropical cartoon craftsmanship; not an edit target or factual evidence"],
+      "normalizedBrief": "Production modelling reference for one identical open 22x16 metre tropical dance pavilion: front, right, top and three-quarter beauty panels. Flat timber pergola 5.3 metres high, eight perimeter posts, polished parquet with a border, crafted bevels and brass joinery, ivory tied corner curtains and sparse canopy strips, amber lanterns and festoons, violet benches and original compass pennants, small tables and terracotta pots, broad-leaf vines and pink hibiscus concentrated on rear/edges. Leave the front and centre open and two low Athlete/Teacher consultation lecterns. Coherent metre proportions and warm physically credible original cartoon 3D materials. No character, dancing pair, statue, island, scenery backdrop, large information boards, pixel art, neon or invented achievement.",
+      "promptRecordLimit": "This normalized brief was recovered from the interrupted work's context. The exact submitted prompt is not retained here and must not be described as a verbatim API request.",
+      "limits": "Reference drawing only; front/right remain mildly perspective, not certified orthographic CAD. The actual exported mesh must be inspected on all three axes separately. This image is not runtime scenery or an automatically reconstructed 3D model."
+    }
+  ],
+  "billingEvidence": {
+    "previousSnapshotCredits": 107.25,
+    "previousSnapshotAfterGenerationCredits": 100.25,
+    "currentBalanceVerifiedOn": "2026-10-03",
+    "currentBalanceCredits": 100.25,
+    "trialCredits": 100,
+    "trialStatus": "active",
+    "trialEndsAt": "2026-10-04T11:33:52Z",
+    "observedTotalDebit": 7,
+    "trialDebitProven": false,
+    "limit": "The balance changed by seven credits in the preceding turn, while trial_credits stayed at 100. The provider does not identify which credit bucket funded that generation. No automatic image-to-3D job was submitted."
+  }
+}

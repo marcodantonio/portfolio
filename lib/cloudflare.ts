@@ -1,20 +1,17 @@
-import { getCloudflareContext } from "@opennextjs/cloudflare";
+import { env } from "cloudflare:workers";
 
 export type WorkersAIResult = unknown;
 
 export async function getCloudflareRuntimeEnv() {
-  try {
-    // Works in production on CF Workers and in Next.js dev with
-    // initOpenNextCloudflareForDev + experimental.remoteBindings.
-    const { env } = await getCloudflareContext({ async: true });
-    const e = env as unknown as Record<string, unknown>;
-    return {
-      AI: e.AI as { run: (...args: unknown[]) => Promise<unknown> } | undefined,
-    };
-  } catch {
-    // Outside CF/OpenNext context (plain next dev without remoteBindings).
-    return { AI: undefined };
-  }
+  const bindings = env as unknown as Record<string, unknown>;
+  return {
+    AI: bindings.AI as { run: (...args: unknown[]) => Promise<unknown> } | undefined,
+  };
+}
+
+export function getTurnstileSecret(): string | undefined {
+  const secret = (env as unknown as Record<string, unknown>).TURNSTILE_SECRET_KEY;
+  return typeof secret === "string" && secret.trim() ? secret : undefined;
 }
 
 export function readWorkersAIResponse(result: WorkersAIResult) {

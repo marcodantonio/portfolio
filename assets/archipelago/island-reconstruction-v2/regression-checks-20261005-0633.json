@@ -1,0 +1,66 @@
+{
+  "recordedAt": "2026-10-05T06:33:27.707Z",
+  "scope": "Unchanged current R7 and gameplay regressions, not macro candidate acceptance",
+  "build": {
+    "command": "npm run build",
+    "exit": 0,
+    "completedAt": "2026-10-05T06:17:50Z",
+    "diagnostics": "110files,0errors,0warnings,existing FormEvent hint and Vite chunk-size warning"
+  },
+  "lint": {
+    "command": "npm run lint",
+    "exit": 0
+  },
+  "cpu": [
+    {
+      "command": "node scripts/island-physics-check.mjs",
+      "exit": 0,
+      "checks": 160583,
+      "extraContactChecks": 130252,
+      "notClaimed": "New macro geometry integration, device, raster fidelity or FPS"
+    },
+    {
+      "command": "node scripts/island-world-art-check.mjs",
+      "exit": 0,
+      "checks": 4485950,
+      "scope": "CPU geometry, map parity, decorative clearance and resource ownership; no measured FPS, shader compilation or visual approval"
+    },
+    {
+      "command": "node scripts/island-overview-check.mjs",
+      "exit": 0,
+      "checks": 2290
+    },
+    {
+      "command": "node scripts/island-camera-check.mjs",
+      "exit": 0,
+      "checks": 222228,
+      "scope": "CPU actual-module projection checks; no raster/performance acceptance"
+    }
+  ],
+  "binaries": {
+    "masterSHA256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+    "batchedSHA256": "26d9fe68aa3ed3d6e13903ec85a5335847ce44c6f501ad95d433a7b7ebda84e4",
+    "publicAndDistClientEqual": true
+  },
+  "browser": {
+    "url": "http://127.0.0.1:3060/asset-lab?asset=projects-terrain-v2&variant=master",
+    "previewPID": 44776,
+    "browserPID": 44846,
+    "viewport": [
+      1440,
+      1000
+    ],
+    "explicitLoad": true,
+    "ready": true,
+    "canvas": 1,
+    "overflow": false,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "triangles": 109088,
+    "exportedVertices": 301854,
+    "rootActualHeroImageInspected": true,
+    "screenshot": "output/playwright/projects-r7-fresh-build-20261005-0631-hero.png",
+    "scope": "One current built master hero load only; NOT new C/allviews/mobile/fullruntime acceptance"
+  },
+  "nativeHeadUnchanged": 7
+}

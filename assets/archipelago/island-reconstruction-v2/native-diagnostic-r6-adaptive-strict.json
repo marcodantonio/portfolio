@@ -1,0 +1,23 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r6-adaptive-candidate-20261005",
+  "status": "failed",
+  "revisionBefore": 5,
+  "revisionAfter": null,
+  "finishedAt": "2026-10-05T02:51:40.818Z",
+  "error": {
+    "code": "PYTHON_EXCEPTION",
+    "message": "R6 protection blocked substantive geometry, not success: {\"body\": {\"changed_vertices\": 875, \"maximum_move_metres\": 0.6750000715255737, \"maximum_abs_y_move\": 0.6750000715255737, \"minimum_original_face_cosine\": 0.9143702161796564, \"minimum_area_ratio\": 0.8112116673065823, \"bounds_before\": [[-34.44200134277344, -10.0, -36.441688537597656], [34.27458572387695, 4.882262706756592, 34.44200134277344]], \"bounds_after\": [[-34.44200134277344, -10.0, -36.441688537597656], [34.27458572387695, 4.880761623382568, 34.44200134277344]]}, \"primary_significant\": [\"Rear_Connected_Low_Saddle\", \"Western_Broad_Second_Terrace\", \"Cannon_Continuous_Middle_Terrace\", \"Cannon_Asymmetric_High_Plateau\", \"Western_High_Shoulder_Connected_To_Cannon\", \"East_Long_Lower_Shoulder\", \"West_Front_Outer_Cleft_Buttress\", \"West_Front_Inner_Cleft_Buttress\", \"Front_Left_Principal_Finger\", \"Front_Central_Long_Finger\", \"Front_East_Short_Finger\"], \"rear_significant\": [\"Attached_Fracture_14\", \"Attached_Fracture_18\", \"Attached_Fracture_21\"], \"ledge\": {\"changed_vertices\": 187, \"maximum_move_metres\": 0.14795528510508507, \"maximum_abs_y_move\": 0.13654565811157227, \"minimum_original_face_cosine\": 0.08077256128060296, \"minimum_area_ratio\": 0.7748356138928145, \"bounds_before\": [[-19.540786743164062, 2.9000000953674316, -20.689659118652344], [12.43767261505127, 6.23652982711792, -16.61969757080078]], \"bounds_after\": [[-19.540786743164062, 2.9000000953674316, -20.689659118652344], [12.43767261505127, 6.23652982711792, -16.61969757080078]]}}",
+    "retryable": false
+  },
+  "output": {
+    "stdoutTail": "",
+    "stderrTail": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r6-adaptive-candidate-20261005>\", line 949, in <module>\nRuntimeError: R6 protection blocked substantive geometry, not success: {\"body\": {\"changed_vertices\": 875, \"maximum_move_metres\": 0.6750000715255737, \"maximum_abs_y_move\": 0.6750000715255737, \"minimum_original_face_cosine\": 0.9143702161796564, \"minimum_area_ratio\": 0.8112116673065823, \"bounds_before\": [[-34.44200134277344, -10.0, -36.441688537597656], [34.27458572387695, 4.882262706756592, 34.44200134277344]], \"bounds_after\": [[-34.44200134277344, -10.0, -36.441688537597656], [34.27458572387695, 4.880761623382568, 34.44200134277344]]}, \"primary_significant\": [\"Rear_Connected_Low_Saddle\", \"Western_Broad_Second_Terrace\", \"Cannon_Continuous_Middle_Terrace\", \"Cannon_Asymmetric_High_Plateau\", \"Western_High_Shoulder_Connected_To_Cannon\", \"East_Long_Lower_Shoulder\", \"West_Front_Outer_Cleft_Buttress\", \"West_Front_Inner_Cleft_Buttress\", \"Front_Left_Principal_Finger\", \"Front_Central_Long_Finger\", \"Front_East_Short_Finger\"], \"rear_significant\": [\"Attached_Fracture_14\", \"Attached_Fracture_18\", \"Attached_Fracture_21\"], \"ledge\": {\"changed_vertices\": 187, \"maximum_move_metres\": 0.14795528510508507, \"maximum_abs_y_move\": 0.13654565811157227, \"minimum_original_face_cosine\": 0.08077256128060296, \"minimum_area_ratio\": 0.7748356138928145, \"bounds_before\": [[-19.540786743164062, 2.9000000953674316, -20.689659118652344], [12.43767261505127, 6.23652982711792, -16.61969757080078]], \"bounds_after\": [[-19.540786743164062, 2.9000000953674316, -20.689659118652344], [12.43767261505127, 6.23652982711792, -16.61969757080078]]}}\n",
+    "truncated": false
+  },
+  "recipe": "refine_projects_island_v2_r6_adaptive_strict.py",
+  "recipeSha256": "8df56d7e4b950eb17dc9cffcc0455937c52cd40d79bda2950ac0d4401cb39cab",
+  "committed": false,
+  "geometrySafetyRelaxed": false,
+  "failureType": "Self-imposed partial artistic target not achieved: ledge and four rear fractures; eleven primary caps and body substantive"
+}

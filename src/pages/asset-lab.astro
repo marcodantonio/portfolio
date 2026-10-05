@@ -1,0 +1,156 @@
+---
+import { getIslandAssetEntry, getIslandAssetSelection, getIslandAssetVariant, ISLAND_ASSET_CATALOG, ISLAND_ASSET_IDS, ISLAND_ASSET_MASTER_PROFILE, ISLAND_ASSET_VARIANTS } from "../../lib/island-asset-catalog";
+// This review surface is opt-in and local; it is not a public portfolio route.
+const localHosts = new Set(["localhost", "127.0.0.1", "[::1]"]);
+if (!localHosts.has(Astro.url.hostname)) return new Response("Not found", { status: 404 });
+Astro.response.headers.set("X-Robots-Tag", "noindex, nofollow");
+Astro.response.headers.set("Cache-Control", "no-store");
+const asset = Astro.url.searchParams.get("asset") ?? "bridge";
+const variant = getIslandAssetVariant(Astro.url.searchParams.get("variant"));
+const selected = getIslandAssetSelection(asset, Astro.url.searchParams.get("variant"));
+const supported = Boolean(selected);
+const variantAsset = getIslandAssetEntry(asset) ? asset : "bridge";
+const variantSuffix = variant === "batched" ? "&variant=batched" : "";
+const number = new Intl.NumberFormat("it-IT");
+// An exact glob intentionally permits the reference sheet to arrive later.
+const references = import.meta.glob([
+  "../../assets/archipelago/reference-sheets-v1/10-timber-bridge.png",
+  "../../assets/archipelago/reference-sheets-v1/11-curved-palm.png",
+  "../../assets/archipelago/reference-sheets-v1/12-cliff-module.png",
+  "../../assets/archipelago/reference-sheets-v1/02-home-studio.png",
+  "../../assets/archipelago/reference-sheets-v2/12-cliff-module.png",
+  "../../assets/archipelago/reference-sheets-v3/03-digital-workshop.png",
+  "../../assets/archipelago/reference-sheets-v1/06-archive-observatory.png",
+  "../../assets/archipelago/reference-sheets-v1/04-suspended-lab.png",
+  "../../assets/archipelago/reference-sheets-v1/01-welcome-office.png",
+  "../../assets/archipelago/reference-sheets-v5/14-dance-pavilion.png",
+  "../../assets/archipelago/reference-sheets-v6/15-contact-lighthouse.png",
+  "../../assets/archipelago/island-reconstruction-v1/projects-concept-oblique.png",
+  "../../assets/archipelago/island-reconstruction-v2/projects-turnaround-v2.png",
+], {
+  eager: true, query: "?url", import: "default",
+});
+const reference = selected ? references[`../../assets/archipelago/${selected.sheet}`] as string | undefined : undefined;
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Asset Lab — {selected?.title ?? "Asset non supportato"}</title>
+  </head>
+  <body>
+    <main data-asset-lab data-asset={supported ? asset : "unsupported"} data-variant={variant ?? "unsupported"} data-state={supported ? "idle" : "unsupported"}>
+      <header>
+        <a href="/" class="back">← Portfolio</a>
+        <div><p class="kicker">Anteprima locale · prototipi originali in revisione</p><h1>{selected?.title ?? "Asset non supportato"}</h1></div>
+        {selected && <span class="version">{selected.file}</span>}
+      </header>
+      <nav class="asset-selector" aria-label="Selezione dell’asset">
+        {ISLAND_ASSET_IDS.map((id) => <a href={`/asset-lab?asset=${id}${variantSuffix}`} aria-current={asset === id ? "page" : undefined}>{ISLAND_ASSET_CATALOG[id].title}</a>)}
+      </nav>
+      <nav class="variant-selector" aria-label="Variante del modello">
+        {ISLAND_ASSET_VARIANTS.map((id) => <a href={`/asset-lab?asset=${variantAsset}${id === "batched" ? "&variant=batched" : ""}`} aria-current={variant === id ? "page" : undefined}>{id === "master" ? "Master" : "Aggregato"}</a>)}
+      </nav>
+      <p class="intro">Confronta i prototipi 3D con le tavole di riferimento. I modelli sono studi originali da valutare, non riproduzioni certificate delle immagini. Questa anteprima è separata dal mondo del portfolio.</p>
+      {asset === "projects-terrain-v2" && <p class="variant-note">Isola senza edifici: gli elementi saranno aggiunti separatamente. L’origine è al livello del mare. La vista Tre quarti può mostrare un piano diagnostico a Y = 0, nascondendo solo la parte immersa; disattivalo o scegli una vista sugli assi per vedere anche la fondazione fino a −10 m. Non è il mare del gioco. La tavola è una guida direzionale, non una ricostruzione 3D automatica.</p>}
+      <p class="variant-note">L’aggregato unisce geometrie statiche per materiale senza decimazione: non è un LOD.
+        {selected && (selected.worldStatus === "batched-prototype"
+          ? " Casa-studio v2, officina digitale, archivio, laboratorio sospeso, porto di benvenuto, padiglione Danza e faro aggregati sono le sette architetture GLB montate nel mondo locale: integrazioni sperimentali, non approvazioni artistiche dei modelli."
+          : " Questo asset non è ancora montato nel mondo del portfolio.")}
+        {" "}Questo laboratorio non certifica collisioni o prestazioni del gioco. Numero di mesh, peso del file e qualità visiva vanno confrontati; non dimostrano prestazioni o FPS.</p>
+      <div class="workspace">
+        <section class="model-panel" aria-labelledby="model-heading">
+          <div class="panel-heading"><h2 id="model-heading">Modello GLB</h2><button type="button" data-load disabled={!supported}>Carica il GLB locale</button></div>
+          <div class="viewport" data-viewport aria-busy="false">
+            <p class="empty" data-empty>Il modello non è ancora stato caricato.</p>
+          </div>
+          <div class="camera-controls" role="group" aria-label="Inquadratura del modello">
+            <button type="button" data-camera="hero" aria-pressed="true" disabled>Tre quarti</button>
+            <button type="button" data-camera="front" aria-pressed="false" disabled>Fronte</button>
+            <button type="button" data-camera="right" aria-pressed="false" disabled>Destra</button>
+            <button type="button" data-camera="top" aria-pressed="false" disabled>Dall’alto</button>
+          </div>
+          {asset === "projects-terrain-v2" && supported && <label class="datum-control"><input type="checkbox" data-sea-datum checked disabled />Riferimento mare Y = 0 · solo Tre quarti</label>}
+          <p data-status role="status" aria-live="polite">{supported ? "Disponibilità non ancora verificata. Il caricamento controllerà il file locale." : !variant ? "Variante non supportata. Scegli Master o Aggregato." : "Asset richiesto non disponibile. Seleziona uno degli asset nel catalogo del laboratorio."}</p>
+          {selected && <p class="path">{selected.url}</p>}
+          <p class="help">Trascina per ruotare, usa la rotella o due dita per lo zoom. Le viste ortografiche non deformano le proporzioni.</p>
+        </section>
+        <section class="reference-panel" aria-labelledby="reference-heading">
+          <div class="panel-heading"><h2 id="reference-heading">Tavola di riferimento</h2>{reference && <a href={reference} target="_blank" rel="noreferrer">Apri originale ↗</a>}</div>
+          {reference ? <img src={reference} alt={selected!.alt} /> : <p class="missing-reference">{selected ? `Tavola non disponibile: in attesa di ${selected.sheet}.` : "Seleziona uno degli asset disponibili."}</p>}
+          <p class="help">La tavola serve al confronto visivo; non è una texture applicata al modello.</p>
+        </section>
+      </div>
+      <section class="audit" aria-labelledby="audit-heading">
+        <h2 id="audit-heading">Controllo dell’asset</h2>
+        <dl>
+          <div><dt>File</dt><dd data-stat="bytes">—</dd></div>
+          <div><dt>Triangoli</dt><dd data-stat="triangles">—</dd></div>
+          <div><dt>Vertici</dt><dd data-stat="vertices">—</dd></div>
+          <div><dt>Mesh / materiali / texture</dt><dd data-stat="resources">—</dd></div>
+          <div><dt>Dimensioni X × Y × Z</dt><dd data-stat="bounds">—</dd></div>
+          <div><dt>Profilo master di studio</dt><dd data-stat="budget">Non verificato</dd></div>
+        </dl>
+        {selected && <p class="help">Confronto orientativo per il master: {ISLAND_ASSET_MASTER_PROFILE.bytes / 1048576} MiB, {number.format(selected.triangles)} triangoli, {ISLAND_ASSET_MASTER_PROFILE.materials} materiali e {ISLAND_ASSET_MASTER_PROFILE.textures} texture. Il confronto non blocca il caricamento e non approva l’asset per il gioco. Qualità visiva, LOD, memoria GPU e FPS richiedono verifiche dedicate. Le dimensioni sono espresse nelle unità glTF del modello.</p>}
+      </section>
+      <noscript><p class="no-script">Il modello 3D richiede JavaScript e WebGL. La tavola di riferimento rimane leggibile.</p></noscript>
+    </main>
+    <script>
+      import { mountIslandAssetLab } from "../../lib/island-asset-lab";
+      const root = document.querySelector<HTMLElement>("[data-asset-lab]");
+      if (root) mountIslandAssetLab(root);
+    </script>
+  </body>
+</html>
+
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(body) { margin: 0; background: #eef0f4; color: #172638; font: 15px/1.6 ui-sans-serif, system-ui, sans-serif; }
+  main { max-width: 1540px; margin: auto; padding: 30px clamp(18px, 4vw, 64px) 45px; }
+  header { display: flex; align-items: center; gap: 26px; }
+  a { color: #6743aa; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .back, .version, .kicker, .path { font: 12px/1.5 ui-monospace, monospace; }
+  .kicker { margin: 0; color: #6c7180; }
+  h1 { margin: 2px 0 0; font-size: clamp(24px, 3vw, 36px); letter-spacing: -.04em; }
+  .version { margin-left: auto; background: #e1d8f1; color: #513678; border-radius: 5px; padding: 7px 12px; }
+  .intro { color: #646f7c; max-width: 850px; margin: 20px 0; }
+  .asset-selector, .variant-selector { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 23px; }
+  :is(.asset-selector, .variant-selector) a { padding: 6px 12px; border: 1px solid #c8c9d3; border-radius: 6px; font-size: 13px; text-decoration: none; }
+  :is(.asset-selector, .variant-selector) a[aria-current="page"] { color: #fff; background: #6743aa; border-color: #6743aa; }
+  .variant-selector { margin-top: 11px; }
+  .variant-note { font-size: 12px; color: #738090; max-width: 880px; margin: -8px 0 20px; }
+  .workspace { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, 1fr); gap: 24px; }
+  section { min-width: 0; }
+  .model-panel, .reference-panel, .audit { background: #fff; border: 1px solid #d5dce5; border-radius: 12px; padding: 18px; }
+  .panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 15px; }
+  h2 { margin: 0; font-size: 15px; font-weight: 650; }
+  .panel-heading a { font-size: 12px; }
+  button { font: inherit; font-size: 12px; cursor: pointer; border: 1px solid #bfc5d0; border-radius: 6px; padding: 9px 12px; background: #fafbfc; color: #263248; }
+  button:focus-visible, a:focus-visible { outline: 3px solid #9870d1; outline-offset: 3px; }
+  button:disabled { opacity: .42; cursor: default; }
+  button[data-load] { background: #6743aa; border-color: #6743aa; color: white; }
+  .viewport { height: clamp(300px, 42vw, 520px); width: 100%; background: #e3ebef; border-radius: 8px; overflow: hidden; position: relative; }
+  :global([data-viewport] canvas) { width: 100%; height: 100%; display: block; touch-action: none; }
+  .empty { position: absolute; inset: 0; display: grid; place-items: center; padding: 30px; margin: 0; color: #627689; text-align: center; }
+  .empty[hidden] { display: none; }
+  .camera-controls { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+  .datum-control { display: flex; align-items: center; gap: 9px; margin-top: 13px; font-size: 12px; color: #536575; }
+  .datum-control input { accent-color: #6743aa; }
+  .datum-control input:focus-visible { outline: 3px solid #9870d1; outline-offset: 3px; }
+  [aria-pressed="true"] { background: #ebe3f8; border-color: #8760bd; color: #563589; }
+  [data-status] { min-height: 1.6em; margin: 14px 0 0; font-size: 13px; }
+  .path { margin: 4px 0 0; color: #7c8490; overflow-wrap: anywhere; }
+  .help { color: #738090; font-size: 12px; margin: 12px 0 0; }
+  img { display: block; width: 100%; height: auto; border-radius: 7px; }
+  .missing-reference { min-height: 300px; display: grid; place-items: center; text-align: center; color: #7c8490; background: #f2f3f6; border-radius: 7px; padding: 25px; }
+  .audit { margin-top: 24px; }
+  dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 17px 25px; margin: 16px 0 0; }
+  dt { font-size: 12px; color: #77818d; }
+  dd { margin: 2px 0 0; font: 13px/1.5 ui-monospace, monospace; overflow-wrap: anywhere; }
+  .no-script { border: 1px solid #d5dce5; padding: 15px; border-radius: 7px; }
+  @media (max-width: 850px) { .workspace { grid-template-columns: 1fr; } header { flex-wrap: wrap; gap: 12px; } .back { width: 100%; } dl { grid-template-columns: repeat(2, minmax(0, 1fr)); } .version { font-size: 10px; } }
+</style>

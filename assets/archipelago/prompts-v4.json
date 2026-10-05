@@ -1,0 +1,37 @@
+{
+  "created": "2026-10-01",
+  "tool": "Higgsfield MCP",
+  "project": {
+    "project_id": "526743aa-0b4a-4241-a9b6-acd6d52be712",
+    "default_folder_id": "526743aa-0b4a-4241-a9b6-acd6d52be712",
+    "workspace_id": "df8469e8-98e1-4ce3-a509-7eef60fe9d2f",
+    "name": "Marco Portfolio — reference sheets and character"
+  },
+  "assets": [
+    {
+      "file": "reference-sheets-v4/13-explorer-turnaround.png",
+      "jobId": "a7c3cc0b-a7c7-48a4-bc7d-fedfbdd82928",
+      "model": "gpt_image_2_5",
+      "estimatedCredits": 2.75,
+      "params": {
+        "model": "gpt_image_2_5",
+        "folder_id": "526743aa-0b4a-4241-a9b6-acd6d52be712",
+        "aspect_ratio": "16:9",
+        "resolution": "2k",
+        "quality": "high",
+        "background": "opaque",
+        "medias": [
+          {
+            "role": "image",
+            "value": "3a68c350-c6ec-4ce5-9395-dba259467eab"
+          }
+        ],
+        "prompt": "Create a premium game-character MODELING TURNAROUND sheet from the explorer visible in the attached tropical-archipelago concept. Reference role: preserve the purple flat cap, purple short-sleeved shirt, yellow backpack, dark trousers, white chunky sneakers, compact friendly male proportions and polished non-pixel cartoon 3D art direction. Isolate ONE identical original human explorer, do not reproduce environment or text/UI. Four clean strictly ORTHOGRAPHIC panels, FRONT, RIGHT PROFILE, BACK, and TOP, arranged on a neutral warm ivory background. Front/profile/back must share an identical ground baseline, exact same scale, pose, silhouette, cap brim/backpack dimensions, clothing seams and materials. Mild A-pose with relaxed arms slightly away from body; feet flat, not walking. Top shows the same rest pose seen directly vertically from above. Fine beveled volumes, soft readable facial features and dark hair, no toy brick joints, no pixel art, no faceted low-poly shortcuts. Model-friendly high-resolution craftsmanship: backpack straps/buckle, shoe sole separation, clean cuffs and cloth seams. Soft consistent studio daylight, ambient contact shadows, no dramatic perspective or depth blur. Small panel labels only, no measurements, no anatomy distortions, no extra characters, no logos, no scenic background. This is an artist's model sheet, not an illustration to substitute for the real playable 3D character."
+      },
+      "referenceRoles": [
+        "User original welcome scene, character wardrobe and art direction"
+      ],
+      "limits": "Generated reference only, not 3D geometry or certified orthographic reconstruction. Top view remains mildly oblique, panel consistency needs modeling interpretation."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "scope": "Read-only local algorithmic diagnosis of candidate B final wall-to-roof seam; not an actual B portable export or native repair",
+  "sourceAuditReceipt": "./macro-ridge-candidate-b.json",
+  "nativeOperationId": "projects-v2-r8-connected-rear-macro-candidate-b-20261005",
+  "nativeHeadRevision": 7,
+  "committed": false,
+  "baseline": {
+    "path": "./projects-island-v2-r7.glb",
+    "sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+    "owner": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+    "exactXYZWeldForPortableAttributeSplitsOnly": true
+  },
+  "recipe": {
+    "path": "./rebuild_projects_island_v2_r9_integrated_ridge_b.py",
+    "sha256": "1ab65d20e51597e125a869de8d030c47cb84424ff46ec7670ce39cfed4d9ea15",
+    "readOnlyPureFunctions": [
+      "clip_lower",
+      "densify_outline",
+      "arc_data",
+      "arc_sample",
+      "arc_nearest",
+      "wall_displacement",
+      "ridge_height",
+      "zipper",
+      "contact_sat"
+    ],
+    "codeLocations": {
+      "zipperRecomputedArcLengths": [
+        388,
+        407
+      ],
+      "wallSemanticUAndHeight": [
+        902,
+        918
+      ],
+      "finalWallRoofZipper": 933,
+      "diagnosticSelfHitsNotHardRejected": [
+        1000,
+        1026
+      ]
+    }
+  },
+  "method": "Inline Python AST extracts only constants and pure numerical functions. SHA-pinned real R7 GLB provides the true Saddle cut loop. Float32 reconstructed B four rings and 261 roof boundary points reproduce the final 773-face strip; no Blender/CDT/provider operation or geometry file write. AABB candidate filtering plus SAT, followed by independent segment-triangle interior witnesses.",
+  "nativeReport": {
+    "selfCandidates": 330,
+    "selfHits": 330,
+    "unknownPeerCount": 0,
+    "bodySurfacePairs": 897,
+    "saddleSurfacePairs": 1158
+  },
+  "reconstruction": {
+    "cutLoopPoints": 360,
+    "roofBoundaryPoints": 261,
+    "lastStripFaces": 773,
+    "nativeFaceRange": [
+      15313,
+      16085
+    ],
+    "ringWestIndices": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "roofWestIndex": 6,
+    "lastStripSelfSatHits": 130,
+    "reproducedNativeFirst20Pairs": [
+      [
+        15476,
+        15480
+      ],
+      [
+        15475,
+        15480
+      ],
+      [
+        15475,
+        15478
+      ],
+      [
+        15475,
+        15479
+      ],
+      [
+        15477,
+        15480
+      ],
+      [
+        15460,
+        15464
+      ],
+      [
+        15460,
+        15463
+      ],
+      [
+        15458,
+        15464
+      ]
+    ]
+  },
+  "causalEvidence": {
+    "semanticUDisplacedArcMaximumDrift": 0.023233933156204867,
+    "maximumEquivalentRoofMetreDrift": 3.0173657293811056,
+    "explanation": "Wall samples and heights use semantic u=i/512 on the original roof perimeter; zipper reparameterizes the already displaced ring by its new XZ arclength. The resulting correspondence shifts along the sharply varying roof height, causing actual final-strip faces to intersect. This is not merely a rotated west seam, shadow/material issue or SAT epsilon artifact.",
+    "independentInteriorIntersectionWitness": {
+      "nativeSampleFaces": [
+        15475,
+        15480
+      ],
+      "points": [
+        [
+          -4.602851528385381,
+          15.805892502289899,
+          -33.50694828584331
+        ],
+        [
+          -4.737765102847539,
+          15.691917344762377,
+          -33.533784546476525
+        ]
+      ],
+      "segmentLengthMetres": 0.1786398443582886
+    },
+    "inMemoryOnlyAB": {
+      "verticesMoved": 0,
+      "sourceRecipeEdited": false,
+      "change": "Use semantic ring u=i/512 and the true roof perimeter u for final strip pairing, instead of arclength recalculated from the sculpted ring.",
+      "oldFinalStripSelfHits": 130,
+      "newFinalStripSelfHits": 0
+    }
+  },
+  "proposal": "Retain an explicit common boundary-u ledger through collar/rings/roof; validate the whole actual native ridge after any repair, including roof-wall and preceding-wall contacts. Preserve all existing source/attribute/closure/apron/collar/PBR guards and require nonadjacent self-hit zero before promotion.",
+  "limits": [
+    "Only final-strip 130 hits independently reconstructed; remaining 200 reported native hits not independently retested here.",
+    "No actual native B mesh or portable GLB exported; roof interior CDT and complete whole-ridge contacts are not reconstructed.",
+    "Simple per-ring XZ contours, manifold half-edges and positive signed volume do not exclude 3D surface self-intersections.",
+    "Local in-memory topology pairing is a causal fixture, not a source fix, native result, art acceptance or runtime/physics approval.",
+    "Native BVH broadphase and nonadjacent-face scope are not complete coplanar containment, adjacent-fold or Boolean-union proof."
+  ],
+  "harness": {
+    "python": "Bundled Codex Python with NumPy",
+    "successfulLocalRuns": 3,
+    "earlyHarnessFailures": [
+      "Default python3 lacked NumPy; used bundled runtime.",
+      "Initial GLB lookup used source-owner name as mesh name; corrected to owner node mesh binding."
+    ]
+  },
+  "worldOrProviderEdits": false
+}

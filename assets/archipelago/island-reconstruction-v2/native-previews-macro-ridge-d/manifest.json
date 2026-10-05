@@ -1,0 +1,96 @@
+{
+  "recordedAt": "2026-10-05T07:10:18.807Z",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-connected-rear-macro-candidate-d-20261005",
+  "queryOnly": true,
+  "nativeCommittedRevisionAtQuery": 7,
+  "queryCreatesNoRevision": true,
+  "files": [
+    {
+      "view": "hero",
+      "file": "projects-island-v2-macro-ridge-candidate-d-hero.png",
+      "bytes": 368184,
+      "sha256": "41316620bd41b320c790afb3da848f82c3e4a9afd05ce73aa6382a010a8ea69a",
+      "width": 640,
+      "height": 480,
+      "artifact": {
+        "size": 368184,
+        "etag": "b5cb7c34751c8d79ad68cef7c6708b70",
+        "id": "d51cce057ba1a692919d7a9306b51f12",
+        "name": "projects-island-v2-macro-ridge-candidate-d-hero.png",
+        "mediaType": "image/png",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "view": "front",
+      "file": "projects-island-v2-macro-ridge-candidate-d-front.png",
+      "bytes": 346659,
+      "sha256": "729c53e1d1b478a336c6d837b5df593066fb71dc8001ec1c046e507aa652b632",
+      "width": 640,
+      "height": 480,
+      "artifact": {
+        "size": 346659,
+        "etag": "ee58daff9f06f684bc0f4a5b86f521f2",
+        "id": "aac46fb9411f0481dc9840db83507ae0",
+        "name": "projects-island-v2-macro-ridge-candidate-d-front.png",
+        "mediaType": "image/png",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "view": "right",
+      "file": "projects-island-v2-macro-ridge-candidate-d-right.png",
+      "bytes": 329743,
+      "sha256": "47901304129fc8c1319ffb2499da98aabff4df09679e7e0d1895592ab8db60be",
+      "width": 640,
+      "height": 480,
+      "artifact": {
+        "size": 329743,
+        "etag": "adf539e06b14afb768ee534aed7979dd",
+        "id": "7f04aa41b0f0ba7c4865eb8390ea44d4",
+        "name": "projects-island-v2-macro-ridge-candidate-d-right.png",
+        "mediaType": "image/png",
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "view": "top",
+      "file": "projects-island-v2-macro-ridge-candidate-d-top.png",
+      "bytes": 416510,
+      "sha256": "36fddf239f1099e271187957994badd37bceb4b65ed2c480ea8ef562c12d51c5",
+      "width": 640,
+      "height": 480,
+      "artifact": {
+        "size": 416510,
+        "etag": "7b7e7238976a5ee2fe044fd93732d36e",
+        "id": "54e7adeb482e6d8488bc4b28f4d45de0",
+        "name": "projects-island-v2-macro-ridge-candidate-d-top.png",
+        "mediaType": "image/png",
+        "width": 640,
+        "height": 480
+      }
+    }
+  ],
+  "rootReview": {
+    "allFourActualNativeViewsInspected": true,
+    "decision": "PARTIAL_WORKING_STUDY_FOR_PORTABLE_REVIEW_ONLY",
+    "notFinalArtApproval": true,
+    "reasons": [
+      "Roof join and seven residual wall self-intersections corrected under the unchanged native gate",
+      "Rear terraces lowered and retained boulders partly exposed; connected rear owner replaces repetitive overlapping upper owners"
+    ],
+    "open": [
+      "Rear remains too curtain-like and uniform",
+      "Body earth blob, broad flat apron and western prism-like masses remain distant from the guide",
+      "Union/complete contained-volume and gameplay support/cost acceptance remain separate"
+    ],
+    "committed": false,
+    "portableExport": false,
+    "runtimeIntegration": false,
+    "referenceFidelityAccepted": false
+  }
+}

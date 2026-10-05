@@ -1,0 +1,63 @@
+---
+import "@fontsource-variable/inter";
+import "@fontsource-variable/syne";
+import "@fontsource-variable/jetbrains-mono";
+import "../../app/globals.css";
+import type { Lang } from "@/content/i18n";
+import { getLocaleMetadata, getPersonJsonLd, PAGE_TITLE, SITE_URL } from "@/lib/seo";
+
+interface Props {
+  lang: Lang;
+  title?: string;
+}
+
+const { lang, title = PAGE_TITLE } = Astro.props;
+const metadata = getLocaleMetadata(lang);
+const canonical = new URL(lang === "en" ? "/en" : "/", SITE_URL).href;
+const structuredData = JSON.stringify(getPersonJsonLd(lang)).replace(/</g, "\\u003c");
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={metadata.description ?? undefined} />
+    <meta name="theme-color" content="#71beed" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="it-IT" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="en-US" href={`${SITE_URL}/en`} />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metadata.description ?? undefined} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : "it_IT"} />
+    <meta property="og:image" content={`${SITE_URL}/portrait.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metadata.description ?? undefined} />
+    <meta name="twitter:image" content={`${SITE_URL}/portrait.jpg`} />
+    <title>{title}</title>
+    <script is:inline>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") document.documentElement.classList.add("dark");
+      } catch { /* Storage is optional. */ }
+    </script>
+    <script type="application/ld+json" is:inline set:html={structuredData} />
+  </head>
+  <body class="relative bg-background text-foreground antialiased">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --font-inter: "Inter Variable";
+    --font-syne: "Syne Variable";
+    --font-jetbrains: "JetBrains Mono Variable";
+  }
+  body { font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif; }
+</style>

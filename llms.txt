@@ -1,15 +1,19 @@
 # Marco D'Antonio — Portfolio & personAI
 
 > One-page portfolio and AI assistant for Marco D'Antonio, full-stack developer & AI engineer.
-> Built with Next.js 16, Tailwind v4, Three.js, Lenis, Cloudflare Workers AI.
-> Deployed on Cloudflare Workers via OpenNext.
+> Built with Astro 7, React, Tailwind v4, Three.js, Rapier, GSAP, Howler, and Cloudflare Workers AI.
+> Cloudflare adapter configured; local implementation is not proof of deployment.
 
 ## Architecture
 
-Two locale routes: `/` (Italian) and `/en` (English). All content is anchor-navigated:
-`#about` → `#education` → `#skills` → `#projects` → `#experience` → `#contact`
+Two locale routes: `/` (Italian) and `/en` (English). A tropical exploration game
+shares accessible content panels with direct reading. Hashes `#about`, `#education`,
+`#skills`, `#projects`, `#experience`, and `#contact` open panels, not scroll scenes.
 
-The only dynamic route is `/api/personai` — a RAG-based chat endpoint powered by Cloudflare Workers AI (`llama-3.1-8b-instruct`).
+Server routes include `/api/personai` (the real RAG chat endpoint) and `/cv/[lang]`
+(localized CV). `/.well-known/api-catalog` and `/docs/api` expose API discovery.
+Browser tools are `scroll_to_section` (opens island content; `top` opens the map),
+`open_marco_ai`, `download_cv`, and `copy_email`.
 
 ## Docs
 
@@ -19,17 +23,18 @@ The only dynamic route is `/api/personai` — a RAG-based chat endpoint powered 
 - [docs/CODEBASE.md](./docs/CODEBASE.md) — architecture, file map, data flow
 - [docs/DESIGN-SYSTEM.md](./docs/DESIGN-SYSTEM.md) — tokens, primitives, patterns
 - [docs/COMPONENTS.md](./docs/COMPONENTS.md) — component catalog with usage examples
-- [docs/ANIMATION-GUIDE.md](./docs/ANIMATION-GUIDE.md) — motion patterns, scroll-signal, Lenis
+- [docs/ANIMATION-GUIDE.md](./docs/ANIMATION-GUIDE.md) — gameplay, camera, motion, audio
+- [docs/ASTRO-MIGRATION.md](./docs/ASTRO-MIGRATION.md) — current routes and legacy-runtime boundaries
 - [docs/I18N-GUIDE.md](./docs/I18N-GUIDE.md) — IT/EN bilingual setup
 - [docs/PERSONAI.md](./docs/PERSONAI.md) — personAI product intent & knowledge base
 - [docs/WORKLOG.md](./docs/WORKLOG.md) — recent changes
 
 ## Key conventions
 
-- One-page layout: all sections in `app/(it)/page.tsx` and `app/(en)/en/page.tsx` as SpotlightSection + Container
+- One-page game: `src/pages/index.astro` and `src/pages/en.astro` share `components/portfolio-app.tsx`; reader content uses SpotlightSection + Container
 - All UI text in `content/i18n.ts` (bilingual IT/EN dictionary)
 - `/en` is the English locale route; toggles should navigate the URL, not only state
-- Scroll-linked animations subscribe to `lib/scroll-signal` (one shared rAF listener)
+- The game is not scroll-driven; any future scroll-linked effect must use `lib/scroll-signal`
 - Reuse `components/system/*` before writing custom layout wrappers
 - Reuse `components/ui/*` before styling raw markup
 - Never reintroduce `.surface-card`, `.section-copy`, `.eyebrow` legacy helpers

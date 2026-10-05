@@ -1,0 +1,145 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "revision": 2,
+  "actualNativeRender": true,
+  "noGameplayOrFidelityClaim": true,
+  "operations": [
+    {
+      "operationId": "projects-v2-r2-hero-20261004",
+      "status": "succeeded",
+      "result": {
+        "view": "hero",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            15.700084686279297
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": true,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      },
+      "artifacts": [
+        {
+          "size": 219653,
+          "etag": "667e82dd15200d7cafc697910b1a99d9",
+          "id": "cad2dab1304cda8b4c79f59e43607fb0",
+          "name": "projects-island-v2-hero.png",
+          "mediaType": "image/png",
+          "width": 480,
+          "height": 360
+        }
+      ]
+    },
+    {
+      "operationId": "projects-v2-r2-three-axes-20261004",
+      "status": "succeeded",
+      "result": {
+        "axes": [
+          {
+            "view": "front",
+            "assetMeshes": 44,
+            "blenderBounds": [
+              [
+                -34.44200134277344,
+                -34.44200134277344,
+                -10
+              ],
+              [
+                34.27458572387695,
+                36.441688537597656,
+                15.700084686279297
+              ]
+            ],
+            "orthographic": true,
+            "diagnosticWater": false,
+            "sampleCount": 8,
+            "temporaryQueryOnly": true,
+            "noRuntimeWaterClaim": true
+          },
+          {
+            "view": "right",
+            "assetMeshes": 44,
+            "blenderBounds": [
+              [
+                -34.44200134277344,
+                -34.44200134277344,
+                -10
+              ],
+              [
+                34.27458572387695,
+                36.441688537597656,
+                15.700084686279297
+              ]
+            ],
+            "orthographic": true,
+            "diagnosticWater": false,
+            "sampleCount": 8,
+            "temporaryQueryOnly": true,
+            "noRuntimeWaterClaim": true
+          },
+          {
+            "view": "top",
+            "assetMeshes": 44,
+            "blenderBounds": [
+              [
+                -34.44200134277344,
+                -34.44200134277344,
+                -10
+              ],
+              [
+                34.27458572387695,
+                36.441688537597656,
+                15.700084686279297
+              ]
+            ],
+            "orthographic": true,
+            "diagnosticWater": false,
+            "sampleCount": 8,
+            "temporaryQueryOnly": true,
+            "noRuntimeWaterClaim": true
+          }
+        ],
+        "temporaryQueryOnly": true
+      },
+      "artifacts": [
+        {
+          "size": 206193,
+          "etag": "6aa6b195545948bc8319e30202e3cf86",
+          "id": "1feea12b8d81ab89eeeb084fdf482a32",
+          "name": "projects-island-v2-front.png",
+          "mediaType": "image/png",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "size": 194095,
+          "etag": "a220f1c69d271f01dfd53ca814b8fdc2",
+          "id": "f4796c0f091d6ad03d9fc26395ce0f4d",
+          "name": "projects-island-v2-right.png",
+          "mediaType": "image/png",
+          "width": 480,
+          "height": 360
+        },
+        {
+          "size": 231933,
+          "etag": "cf2f60951665fb7d8dd4a5c3ab05933b",
+          "id": "0824231b672b2189e87b29aeddbe5eae",
+          "name": "projects-island-v2-top.png",
+          "mediaType": "image/png",
+          "width": 480,
+          "height": 360
+        }
+      ]
+    }
+  ]
+}

@@ -2,3 +2,4 @@
 @config "../tailwind.config.js";
 
 @import "./design-system.css";
+@import "./island-game.css";

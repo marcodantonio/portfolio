@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "status": "native study rejected for artistic/method fidelity; NOT runtime integrated",
+  "humanAuthorization": "Use the same Higgsfield command/workflow as the lighthouse.",
+  "subsequentHumanFeedback": "Non mi sembra una isola generata come avevamo stabilito.",
+  "workflow": "Reference-led Blender/Python authoring in Higgsfield Scene Builder; NOT automatic multiview image reconstruction.",
+  "projectId": "0833ec7b-5fa5-4bcd-94bc-e52b05cd56ae",
+  "revision": 2,
+  "sceneSequence": 0,
+  "projectUrl": "https://higgsfield.ai/3d-jutsu/0833ec7b-5fa5-4bcd-94bc-e52b05cd56ae",
+  "root": "ProjectsIsland_V1_Origin_At_Sea_Level",
+  "origin": "glTF (0,0,0), sea level, metres, not walking-floor origin",
+  "images": "Four preceding image studies retained in provenance.json; they are not certified orthographic conversion inputs.",
+  "operations": [
+    {
+      "id": "projects-island-terrain-build-r1-20261003",
+      "status": "succeeded",
+      "revisionAfter": 1,
+      "issue": "Vertex colors not exported by the initial legacy MixRGB material graph."
+    },
+    {
+      "id": "projects-island-material-finish-r2-20261003",
+      "status": "succeeded",
+      "revisionAfter": 2,
+      "change": "VertexColor directly to Principled Base Color; geometry unchanged."
+    },
+    {
+      "id": "projects-island-r2-native-views-20261003",
+      "status": "timed_out",
+      "limitSeconds": 300,
+      "artifacts": 0,
+      "revisionCommitted": false
+    },
+    {
+      "id": "projects-island-render-rna-inspect-20261003",
+      "status": "succeeded",
+      "revisionBefore": 2,
+      "sceneSequenceAfter": 0
+    },
+    {
+      "id": "projects-island-r2-hero-small-20261003",
+      "status": "succeeded",
+      "revisionCommitted": false,
+      "width": 480,
+      "height": 360,
+      "samples": 8,
+      "artifactId": "40ec2cef4e7d5d15c07bd90a9128fcfc"
+    }
+  ],
+  "actualGeometry": {
+    "triangles": 47820,
+    "exportedVertices": 28134,
+    "meshes": 22,
+    "primitives": 22,
+    "materials": 2,
+    "boundsMinYUpMetres": [
+      -30.88924789428711,
+      -10,
+      -30.154891967773438
+    ],
+    "boundsMaxYUpMetres": [
+      33.77790832519531,
+      12.864402770996094,
+      28.939313888549805
+    ],
+    "boundsSizeYUpMetres": [
+      64.66715621948242,
+      22.864402770996094,
+      59.09420585632324
+    ],
+    "normalOppositionCandidates": 0,
+    "nearZeroAreaTriangles": 0,
+    "clearing": "Source analytic proposal: 32×26 m, centre Z -3, Y +4.8 above sea. Not a map/physics approval."
+  },
+  "portableMaterials": {
+    "vertexPaint": "All 22 actual primitives export varying finite COLOR_0",
+    "embeddedPngs": 4,
+    "normalSizes": [
+      [
+        512,
+        512
+      ],
+      [
+        512,
+        512
+      ]
+    ],
+    "metallicRoughnessSizes": [
+      [
+        1024,
+        1024
+      ],
+      [
+        1024,
+        1024
+      ]
+    ],
+    "baseColorTexture": false,
+    "occlusionTexture": false,
+    "caveat": "ORM file naming does not certify a glTF AO assignment. Source .blend retains two disconnected colour maps."
+  },
+  "artifacts": [
+    {
+      "file": "projects-island-v1.blend",
+      "bytes": 5099826,
+      "sha256": "96c41c8f08feee2def0738ba13a38adbcf3fbcbbcffabc85bc020a1baaa6e35f"
+    },
+    {
+      "file": "projects-island-v1.glb",
+      "bytes": 2139148,
+      "sha256": "6e2ec87c7cf2a33d8c0b27cb24a235a4f366ae97a4f7f444d140ccb0f253659a"
+    },
+    {
+      "file": "../../../public/models/archipelago/projects-island-v1-batched.glb",
+      "bytes": 2110536,
+      "meshes": 2,
+      "sha256": "4d81d1c0ca4eb5c7b628cc287bc359a00ae58d692909a87d42d120c361bac8f9",
+      "scope": "Review only; exact material/image/triangle/bounds parity, not LOD."
+    },
+    {
+      "file": "native-previews-r2/projects-island-r2-hero-small.png",
+      "bytes": 186330,
+      "sha256": "269c8f7f520331c7784e376b69618445119e15e116077c069dbc1f782cb0eb8b",
+      "inspection": "Actual mesh at temporary query-only sea level. Main and independent review reject smooth green carpet and stacked pillar hills."
+    }
+  ],
+  "checks": {
+    "assetMaster": "PASS",
+    "assetAggregateParity": "PASS",
+    "actualTerrainChecker": "PASS 742082 checks and 17 negative fixtures",
+    "lint": "PASS",
+    "build": "PASS:110 Astro files,0 errors,0 warnings,1 retained FormEvent hint; Vite large-chunk warning remains",
+    "browser": "Asset Lab route and GLB loaded; browser capture/axis verification unfinished at user objection. Initial callback syntax error is not product failure.",
+    "nativeVisual": "Small actual Eevee hero inspected. Four-axis native render timed out. No final art acceptance."
+  },
+  "billing": {
+    "precedingImagesCredits": 28,
+    "beforeNativeAuthoring": 65.25,
+    "afterNativeAuthoring": 65.25,
+    "observedBalanceDelta": 0,
+    "caveat": "Observed unchanged balance only; no automatic 3D job/cost quotation or promotional-bucket debit proof."
+  },
+  "runtime": {
+    "catalogId": "projects-terrain",
+    "reviewOnly": true,
+    "gameLoader": false,
+    "mapChanged": false,
+    "physicsChanged": false,
+    "waterChanged": false,
+    "CSPChanged": false,
+    "push": false,
+    "deploy": false
+  },
+  "limitations": [
+    "No automatic reconstruction",
+    "No faithful reference acceptance",
+    "No metric proposal/map parity",
+    "No runtime reshaped terrain integration",
+    "No collision/FPS/device acceptance",
+    "No complete orthographic raster review"
+  ],
+  "next": "Correct the agreed image/reference fidelity before more terrain detail or any runtime integration. R3 authoring was interrupted, not submitted."
+}

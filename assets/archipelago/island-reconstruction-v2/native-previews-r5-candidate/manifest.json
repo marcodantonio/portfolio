@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "date": "2026-10-05",
+  "recipeSha256": "d352da9ff704469ba41b4f899bb4943fbb267206b91496ee17a146778245dd35",
+  "operation": "projects-v2-r5-positional-candidate-hero-top-20261005",
+  "revision": 4,
+  "sceneSequence": 0,
+  "result": {
+    "candidate": {
+      "recipe": "projects-island-v2-r5-organic-coastal-finish",
+      "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+      "audit": {
+        "meshes": 44,
+        "triangles": 109088,
+        "hard_triangle_limit": 180000,
+        "all_closed_positive": true,
+        "zero_area": 0,
+        "uv_degenerate": 0,
+        "normal_opposition": 0,
+        "source43_geometry_uv_corner_normals_exact": true,
+        "body_xz_indices_and_protected_surface_exact": true,
+        "all_original_submerged_geometry_exact": true,
+        "sea_ring_vertices_exact": 256,
+        "original_material_definitions_exact": 2,
+        "original_packed_png_bytes_exact": 4,
+        "clearing": {
+          "summed_clipped_triangle_area_m2": 832.0000000000008,
+          "minimum_y": 4.800000190734863,
+          "maximum_y": 4.800000190734863,
+          "height_tolerance": 0.00001,
+          "not_union_or_physics_approval": true
+        },
+        "sea_origin_y": 0,
+        "foundation_y": -10,
+        "standalone_art_not_approved": true,
+        "no_runtime_map_physics_ocean_mutations": true
+      },
+      "protection": {
+        "protected_vertices": 6361,
+        "free_vertices": 1060,
+        "categories": {
+          "submerged_and_sea": 2049,
+          "full_triangle_clearing": 1248,
+          "full_triangle_prospective_approaches": 678,
+          "projected_actual_43_solid_superset": 2613,
+          "actual_surface_nearest_05m": 2219
+        },
+        "projected_body_faces_protected": 4667,
+        "projected_actual_triangle_pairs_tested": 428096,
+        "contact_scope": "Conservative actual projected43-solid superset plus real nearest0.5m; not measured 3D contact proof",
+        "corridor_radius_extra_metres": 1.15
+      },
+      "body_sculpt": {
+        "changed_body_vertices": 769,
+        "backtracking_alpha": 1,
+        "maximum_abs_y_delta_metres": 0.7999999523162842,
+        "free_upper_lip_vertices": 272,
+        "free_upper_lip_y_before": [
+          0.3799999952316284,
+          0.8430355787277222
+        ],
+        "free_upper_lip_y_after": [
+          0.23999999463558197,
+          0.8688661456108093
+        ],
+        "semantic_macro_regions": [
+          "West buttress pitched shoulder",
+          "Front spur paired slope planes",
+          "East access/channel Vplane"
+        ],
+        "body_xz_indices_unchanged": true,
+        "new_vertices_triangles_objects": 0
+      },
+      "painted_owners": 44,
+      "new_mesh_owners": 0,
+      "provider_requests": 0,
+      "renders": 0,
+      "no_automatic_reconstruction": true,
+      "next": "Ephemeral same-camera actual render, native/source/portable GLB audits; no automatic art acceptance"
+    },
+    "views": [
+      {
+        "view": "hero",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            18.914897918701172
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": true,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      },
+      {
+        "view": "top",
+        "assetMeshes": 44,
+        "blenderBounds": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            18.914897918701172
+          ]
+        ],
+        "orthographic": true,
+        "diagnosticWater": false,
+        "sampleCount": 8,
+        "temporaryQueryOnly": true,
+        "noRuntimeWaterClaim": true
+      }
+    ],
+    "ephemeralOnly": true,
+    "baseRevision": 4
+  },
+  "artifacts": [
+    {
+      "size": 791838,
+      "etag": "e962cb5b09a16f362f30e2281e088ff4",
+      "id": "379a690fb061acc2a35dbe0b1d230d9a",
+      "name": "projects-island-v2-hero.png",
+      "mediaType": "image/png",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "size": 846410,
+      "etag": "b5e2f8fcf0db48c30a0ee96855651b89",
+      "id": "b779866475de2f9551b65bdba91f65fd",
+      "name": "projects-island-v2-top.png",
+      "mediaType": "image/png",
+      "width": 960,
+      "height": 720
+    }
+  ],
+  "resolutionNote": "Both views are960x720; original R4top480x360. Same camera framing, not same pixel resolution.",
+  "status": "ephemeral native query, not a committed export"
+}

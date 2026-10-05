@@ -1,0 +1,155 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r6-committed-hero-axes-20261005",
+  "revision": 6,
+  "sceneSequence": 0,
+  "finishedAt": "2026-10-05T03:22:23.753Z",
+  "result": {
+    "hero": {
+      "view": "hero",
+      "assetMeshes": 44,
+      "blenderBounds": [
+        [
+          -34.44200134277344,
+          -34.44200134277344,
+          -10
+        ],
+        [
+          34.27458572387695,
+          36.441688537597656,
+          19.423599243164062
+        ]
+      ],
+      "orthographic": true,
+      "diagnosticWater": true,
+      "sampleCount": 8,
+      "temporaryQueryOnly": true,
+      "noRuntimeWaterClaim": true
+    },
+    "axes": {
+      "views": [
+        {
+          "view": "front",
+          "assetMeshes": 44,
+          "blenderBounds": [
+            [
+              -34.44200134277344,
+              -34.44200134277344,
+              -10
+            ],
+            [
+              34.27458572387695,
+              36.441688537597656,
+              19.423599243164062
+            ]
+          ],
+          "orthographic": true,
+          "diagnosticWater": false,
+          "sampleCount": 8,
+          "temporaryQueryOnly": true,
+          "noRuntimeWaterClaim": true
+        },
+        {
+          "view": "right",
+          "assetMeshes": 44,
+          "blenderBounds": [
+            [
+              -34.44200134277344,
+              -34.44200134277344,
+              -10
+            ],
+            [
+              34.27458572387695,
+              36.441688537597656,
+              19.423599243164062
+            ]
+          ],
+          "orthographic": true,
+          "diagnosticWater": false,
+          "sampleCount": 8,
+          "temporaryQueryOnly": true,
+          "noRuntimeWaterClaim": true
+        },
+        {
+          "view": "top",
+          "assetMeshes": 44,
+          "blenderBounds": [
+            [
+              -34.44200134277344,
+              -34.44200134277344,
+              -10
+            ],
+            [
+              34.27458572387695,
+              36.441688537597656,
+              19.423599243164062
+            ]
+          ],
+          "orthographic": true,
+          "diagnosticWater": false,
+          "sampleCount": 8,
+          "temporaryQueryOnly": true,
+          "noRuntimeWaterClaim": true
+        }
+      ],
+      "temporaryQueryOnly": true,
+      "seaPlaneExported": false
+    },
+    "committedRootActualVertexBounds": [
+      [
+        -34.44200134277344,
+        -34.44200134277344,
+        -10
+      ],
+      [
+        34.27458572387695,
+        36.441688537597656,
+        19.423599243164062
+      ]
+    ],
+    "allRendersQueryOnly": true
+  },
+  "generatedArtifacts": [
+    {
+      "size": 202050,
+      "etag": "91fe3e132e6ab44c6bd24362b3eec8dc",
+      "id": "e54330226f13d6dbb0d72e573326601c",
+      "name": "projects-island-v2-front.png",
+      "mediaType": "image/png",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "size": 802309,
+      "etag": "c1832aea897a90fe838549651f48dfb2",
+      "id": "78b111ef92521e1b3ba07844d83fe1ea",
+      "name": "projects-island-v2-hero.png",
+      "mediaType": "image/png",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "size": 189485,
+      "etag": "5e1517be66b6bf981af286f3f685dc78",
+      "id": "ed43abeaa023583426ba25cbd7115e87",
+      "name": "projects-island-v2-right.png",
+      "mediaType": "image/png",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "size": 238782,
+      "etag": "600df25cffa61b7b2e47e643c375507a",
+      "id": "f954edf2dd29943cbe775894911c11a4",
+      "name": "projects-island-v2-top.png",
+      "mediaType": "image/png",
+      "width": 480,
+      "height": 360
+    }
+  ],
+  "rootInspectedAllFourImages": true,
+  "fullReferenceFidelityVerified": false,
+  "remainingArt": "regular rear ledges, repeated triangle/chamfer structure, flat albedo; micro-fracture/texture/vegetation unfinished",
+  "axesExposeSubmergedFoundation": true,
+  "notRuntimeOceanOrGameplayApproval": true
+}

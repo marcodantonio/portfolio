@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-03",
+  "tool": "Higgsfield MCP",
+  "assets": [
+    {
+      "file": "reference-sheets-v6/15-contact-lighthouse.png",
+      "sha256": "4adb64c8a86d2d2c6e590f9bbf31fc5fed459999bbfdadf173a02db13ed1a53a",
+      "jobId": "085ff41d-2257-487a-af57-460f9885bf74",
+      "statusVerified": "completed, jobs_wait on 2026-10-03",
+      "model": "gpt_image_2_5",
+      "resolution": "3840x2160",
+      "requestedQuality": "xhigh",
+      "aspectRatio": "16:9",
+      "estimatedCreditsBeforeSubmission": 7,
+      "referenceMediaId": "3c3a81fe-d19a-4ade-aa36-d10cc8dba6c6",
+      "referenceRoles": [
+        "Original supplied Contact image: architecture, materials and tropical cartoon craftsmanship; not an edit target or factual evidence"
+      ],
+      "submittedPrompt": "Use case: stylized-concept. Asset type: production modelling turnaround for one original cartoon tropical contact lighthouse and radio hut, closely matching the attached user reference in architecture, craftsmanship and warm Mediterranean materials. The attachment is STYLE AND ARCHITECTURE REFERENCE, not an edit target and not factual personal evidence. Present the SAME building assembly in FOUR clean panels: true orthographic FRONT, RIGHT SIDE, TOP, and a larger three-quarter BEAUTY render. No perspective in the three orthographic panels, consistent proportions and identical details across panels, generous margins, warm neutral ivory background; no scenery, island, sea, mountain, avatar or title overlay. Lighthouse: tapering cream limestone masonry tower, a restrained terracotta-red horizontal band, inset timber-framed windows, crafted stone base, brass-and-dark-timber gallery railing, glazed octagonal warm amber lantern and curved terracotta conical cap with brass finial. A compact attached terracotta-tiled timber radio hut with open front, real roof depth, cream wall panels, brass lanterns, radio instruments, books and small maps on its desk; violet compass pennant, sparse climbing ivy and pink hibiscus at the side/back. Roof antenna and compact brass communication dish are reference-supported decoration. Materials have beautiful rounded edges, believable grain, varied blocks and tile thickness, layered craftsmanship rather than low-poly flat primitives; vivid but tasteful original stylized 3D in the supplied tropical adventure aesthetic. Keep tower height about 15 metres and inhabited hut about 6x4 metres, with clear open front approach, no upper walkable level, no giant platform beneath the whole asset, no floating rocks or tall island plinth. Avoid blocky pixelated style, huge signs, cyberpunk/neon, fabricated social/user credentials, logos, exact Crash assets, additional buildings or text beyond small panel labels FRONT / RIGHT / TOP / BEAUTY.",
+      "limits": "Reference drawing only; panels are not certified orthographic CAD. The model is manually authored in Blender/3D Jutsu, not automatically reconstructed. Actual GLB geometry, materials, physics and three-axis views require separate verification."
+    }
+  ],
+  "billingEvidence": {
+    "beforeGenerationCredits": 100.25,
+    "afterGenerationCredits": 93.25,
+    "currentBalanceVerifiedOn": "2026-10-03",
+    "observedTotalDebit": 7,
+    "trialCredits": 100,
+    "trialStatus": "active",
+    "trialEndsAt": "2026-10-04T11:33:52Z",
+    "trialDebitProven": false,
+    "limit": "Total balance decreased by seven; the separate trial counter stayed at 100, so the provider does not establish the debited bucket. No image-to-3D reconstruction job was submitted."
+  }
+}

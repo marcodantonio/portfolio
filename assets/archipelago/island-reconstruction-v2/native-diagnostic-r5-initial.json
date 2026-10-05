@@ -1,0 +1,17 @@
+{
+  "operationId": "projects-v2-r5-candidate-hero-top-20261005",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "status": "failed",
+  "revisionBefore": 4,
+  "revisionAfter": null,
+  "sceneSequenceBefore": 0,
+  "sceneSequenceAfter": null,
+  "error": {
+    "code": "PYTHON_EXCEPTION",
+    "message": "BVHTree.find_nearest() takes no keyword arguments",
+    "retryable": false
+  },
+  "initialRecipe": "refine_projects_island_v2_r5_initial.py",
+  "initialRecipeSha256": "4c64ed54e9e4457af520346aae2033fdd2fe9d0db9915daf1744e75d6eac47d0",
+  "scope": "Ephemeral query failed before render/commit: real Blender5.2 find_nearest requires positional arguments. No native scene edit committed."
+}

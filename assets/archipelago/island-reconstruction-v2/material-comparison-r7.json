@@ -1,0 +1,503 @@
+{
+  "schemaVersion": 1,
+  "study": "Projects bare-island V2",
+  "revision": 7,
+  "comparedWithRevision": 6,
+  "status": "PASS actual R6→R7 material-only exported-binary contract; not source/art/runtime approval",
+  "files": {
+    "r6": {
+      "path": "assets/archipelago/island-reconstruction-v2/projects-island-v2-r6.glb",
+      "bytes": 15159428,
+      "sha256": "419a93354d886eae4d5457fefa7124300595d66b14bcb896829a8b188a34efee"
+    },
+    "r7": {
+      "path": "assets/archipelago/island-reconstruction-v2/projects-island-v2-r7.glb",
+      "bytes": 16500232,
+      "sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2"
+    }
+  },
+  "statistics": {
+    "owners": 44,
+    "primitives": 44,
+    "vertices": 301854,
+    "triangles": 109088,
+    "boundsMinYUpMetres": [
+      -34.44200134277344,
+      -10,
+      -36.441688537597656
+    ],
+    "boundsMaxYUpMetres": [
+      34.27458572387695,
+      19.423599243164062,
+      34.44200134277344
+    ]
+  },
+  "contract": {
+    "geometryOwnersRawExact": 44,
+    "positionNormalUVColorAndIndexDescriptorsAndBytesExact": true,
+    "ownedHierarchyAndMaterialAssignmentsExact": true,
+    "modernVariableCOLOR0Preserved": true,
+    "originalPortablePNGsExact": 4,
+    "originalPBRFactorsNormalMRBindingsExact": 2,
+    "onlyTwoBaseColorTexturesAndTwoDistinctOpaqueVariablePNGsAdded": true,
+    "albedoTileContract": "Two1024×1024 RGBA8 sRGB-baseColor tiles; TEXCOORD_0 only",
+    "extrasAreNotRenderingProof": true,
+    "sourceVertexIndicesOrNativeGraphNotInferredFromGLB": true
+  },
+  "owners": [
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_00",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_01",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_02",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_03",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_04",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_05",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_06",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_07",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_08",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_09",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_10",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_11",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_12",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_13",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_14",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_15",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_16",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_17",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_18",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_19",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_20",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_21",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_22",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_23",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_24",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+      "primitives": 1,
+      "rawAttributesAndIndicesExact": true
+    }
+  ],
+  "originalImages": [
+    {
+      "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+      "bytes": 293590,
+      "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9",
+      "width": 512,
+      "height": 512,
+      "bitDepth": 8,
+      "channels": 4,
+      "pixelSHA256": "c1823171424a5bb37d6097efb4822587d2e53570befb0ef81a76adb556b3510a",
+      "minimumRGB": [
+        86,
+        97,
+        247
+      ],
+      "maximumRGB": [
+        169,
+        158,
+        255
+      ],
+      "meanRGB": [
+        127.43409729003906,
+        127.42123794555664,
+        254.38106536865234
+      ],
+      "varianceRGB": [
+        106.20107065117918,
+        66.63472671456111,
+        1.1610407106927596
+      ],
+      "variesRGB": true,
+      "opaque": true,
+      "exact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+      "bytes": 179855,
+      "sha256": "0f19fd39f048c3349f7ae5f63fd8d467807ed7f80c80c5fcee686db1751c574b",
+      "width": 1024,
+      "height": 1024,
+      "bitDepth": 8,
+      "channels": 3,
+      "pixelSHA256": "e7285b3cedb7d27536bd5f9fce15e0c1333c8899c398d8ac39b4518ec01d6fe7",
+      "minimumRGB": [
+        255,
+        198,
+        255
+      ],
+      "maximumRGB": [
+        255,
+        225,
+        255
+      ],
+      "meanRGB": [
+        255,
+        211.67334651947021,
+        255
+      ],
+      "varianceRGB": [
+        0,
+        30.144637416073238,
+        0
+      ],
+      "variesRGB": true,
+      "opaque": true,
+      "exact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+      "bytes": 270827,
+      "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144",
+      "width": 512,
+      "height": 512,
+      "bitDepth": 8,
+      "channels": 4,
+      "pixelSHA256": "e2294956ae9199f830724cc7d989fd195b670bc5326062cd84f1a17f1966dffc",
+      "minimumRGB": [
+        110,
+        114,
+        254
+      ],
+      "maximumRGB": [
+        145,
+        141,
+        255
+      ],
+      "meanRGB": [
+        127.49740219116211,
+        127.50130844116211,
+        254.7222671508789
+      ],
+      "varianceRGB": [
+        58.75280086857674,
+        33.922598080462194,
+        0.20059731364017352
+      ],
+      "variesRGB": true,
+      "opaque": true,
+      "exact": true
+    },
+    {
+      "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+      "bytes": 209528,
+      "sha256": "69a0bab162c6a4b69872f0171788ffe7b687f0a40496bc21ccad9727aae56fb2",
+      "width": 1024,
+      "height": 1024,
+      "bitDepth": 8,
+      "channels": 3,
+      "pixelSHA256": "ed6b2f7649bf2bc97d6f92523780de5a9d15c3655164a69de2cc58402822dc5e",
+      "minimumRGB": [
+        255,
+        225,
+        255
+      ],
+      "maximumRGB": [
+        255,
+        239,
+        255
+      ],
+      "meanRGB": [
+        255,
+        232.04491424560547,
+        255
+      ],
+      "varianceRGB": [
+        0,
+        8.769745558442082,
+        0
+      ],
+      "variesRGB": true,
+      "opaque": true,
+      "exact": true
+    }
+  ],
+  "materials": [
+    {
+      "name": "ProjectsIsland_V2_Limestone",
+      "originalPBRAndNormalMRExact": true,
+      "baseColorTexture": {
+        "index": 1,
+        "image": "ProjectsIsland_V2_Limestone_NeutralAlbedo_R7_1024",
+        "bytes": 535090,
+        "sha256": "dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "channels": 4,
+        "pixelSHA256": "20f659f96336931b5a2c6871f9eab0b45ac2918f9f6d4159ac41585e68dc6a18",
+        "minimumRGB": [
+          197,
+          197,
+          197
+        ],
+        "maximumRGB": [
+          255,
+          255,
+          255
+        ],
+        "meanRGB": [
+          247.59991645812988,
+          248.14458751678467,
+          247.92682552337646
+        ],
+        "varianceRGB": [
+          14.59293723362498,
+          14.605457250589097,
+          14.602676768859965
+        ],
+        "variesRGB": true,
+        "opaque": true,
+        "interpretation": "Standard glTF baseColorTexture sRGB samples multiplied by unchanged linear COLOR_0 and baseColorFactor",
+        "sampler": {
+          "magFilter": 9729,
+          "minFilter": 9987,
+          "wrapS": 10497,
+          "wrapT": 10497
+        },
+        "texCoord": 0
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_HoneyEarth",
+      "originalPBRAndNormalMRExact": true,
+      "baseColorTexture": {
+        "index": 4,
+        "image": "ProjectsIsland_V2_HoneyEarth_NeutralAlbedo_R7_1024",
+        "bytes": 802348,
+        "sha256": "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b",
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "channels": 4,
+        "pixelSHA256": "07404aaab3d380c22aa15f9528d36969700ed7fab936101f97a4532c57e909a4",
+        "minimumRGB": [
+          224,
+          223,
+          223
+        ],
+        "maximumRGB": [
+          255,
+          255,
+          255
+        ],
+        "meanRGB": [
+          247.08104419708252,
+          246.76476764678955,
+          246.01787853240967
+        ],
+        "varianceRGB": [
+          19.72550562199467,
+          19.84265596674959,
+          20.033843833116407
+        ],
+        "variesRGB": true,
+        "opaque": true,
+        "interpretation": "Standard glTF baseColorTexture sRGB samples multiplied by unchanged linear COLOR_0 and baseColorFactor",
+        "sampler": {
+          "magFilter": 9729,
+          "minFilter": 9987,
+          "wrapS": 10497,
+          "wrapT": 10497
+        },
+        "texCoord": 0
+      }
+    }
+  ],
+  "limits": {
+    "nativeSourceGeometryAuditRequiredSeparately": true,
+    "artworkOrPixelsReviewed": false,
+    "runtimeMounted": false,
+    "physicsUnionSupportOrPerformanceApproved": false,
+    "overUnchangedEightMiBRuntimeGuard": true
+  },
+  "completeOwnerEntryReportSHA256": "f82cd356a2667910c2546093ca6df590b07c56739fdb1299ffeb9c8c662e2e81"
+}

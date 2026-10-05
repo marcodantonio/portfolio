@@ -1,0 +1,15 @@
+{
+  "created": "2026-10-01",
+  "tool": "Built-in Images",
+  "assets": [
+    {
+      "file": "reference-sheets-v3/03-digital-workshop.png",
+      "prompt": "Use case: stylized-concept. Asset type: multiview production art reference for a real explorable 3D portfolio workshop. Input image 1 is the user's art-direction reference; input image 2 is the earlier workshop reference, not geometry truth. Generate a refined SINGLE consistent timber digital workshop in three strict orthographic views: front, right and top, equal scale, white neutral background, complete bounds with generous margin. Show the SAME asset, same five low workbenches, same posts and roof in all views. Footprint 30m wide by 24m deep; single flat traversable deck, open front and east/west passages. Asymmetric tall rear timber pergola with crossbraces and open canopy only above stations; a raised ornamental rear roof silhouette is NON-walkable, no staircase, no additional terrace. Three generous cream and violet tensioned canvas sails, five dedicated workbenches, three large blue illustrative code/node/cube screens plus two smaller prototypes, shelves with coloured books/tools, woven lanterns, cable loops and metal joinery. Soft drooping vines/broad leaves and restrained red flowers clustered on rear posts/edge shelves, not flooding pathways. Warm crafted wood with grain and bevels, credible cartoon smooth forms, terracotta/warm cream/violet/amber/cyan accents, tropical adventure style of supplied reference. Essential: richer silhouette and inhabited crafted material detail, not generic primitive hut or low-poly blockout. Do NOT include surrounding island, ocean, bridges, avatars, cannon, extra rooms, text/UI labels, company logos, false project screenshots, watermark. Exactly five workbenches and navigable wide gaps; style polished stylized 3D, not photorealistic, not pixelated. Exact CAD consistency is the target but not a certification.",
+      "referenceRoles": [
+        "User original workshop art direction",
+        "Earlier generated multiview study"
+      ],
+      "limits": "Top remains oblique and views inconsistent; actual model contracts take precedence."
+    }
+  ]
+}

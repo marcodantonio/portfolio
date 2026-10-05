@@ -1,0 +1,22 @@
+/** Deterministic clipping fixtures; no provider, files or gameplay mutation. */
+import assert from "node:assert/strict";
+import { clipApronTriangle, measureBodyApron } from "./lib/terrain-apron-diagnostic.mjs";
+let fixtures = 0;
+const near = (a, b) => assert(Math.abs(a - b) < 1e-8, `${a} != ${b}`);
+const rectangle = [[-16, 4.8, -16], [-16, 4.8, 10], [16, 4.8, 10], [16, 4.8, -16]];
+const entries = points => [{ points: new Float64Array(points.flat()), indices: new Uint32Array([0, 1, 2, 0, 2, 3]) }];
+let result = measureBodyApron(entries(rectangle));
+near(result.summedProjectedAreaSquareMetres, 832); near(result.summedPlanarAreaSquareMetres, 832); near(result.minimumY, 4.8); fixtures++;
+result = measureBodyApron(entries(rectangle.map(p => [p[0], p[1] + (p[0] + 16) / 32, p[2]])));
+near(result.summedProjectedAreaSquareMetres, 832); near(result.summedInclinedAreaSquareMetres, 832); near(result.maximumY, 5.8); fixtures++;
+result = measureBodyApron(entries(rectangle.map(p => [p[0], -10, p[2]])));
+near(result.summedProjectedAreaSquareMetres, 0); assert.equal(result.minimumY, null); fixtures++;
+result = measureBodyApron(entries(rectangle.map(p => [p[0] + 100, p[1], p[2]])));
+near(result.summedProjectedAreaSquareMetres, 0); fixtures++;
+near(clipApronTriangle([[16, 4.8, 0], [18, 4.8, 2], [17, 4.8, -2]]).areaXZ, 0); fixtures++;
+near(clipApronTriangle([[0, 3, 0], [4, 4, 0], [0, 5, 4]]).areaXZ, 8); fixtures++;
+const crossing = clipApronTriangle([[-100, 2, -100], [100, 4, -100], [0, 6, 100]]);
+near(crossing.areaXZ, 832); assert(crossing.minimumY >= 2 && crossing.maximumY <= 6); fixtures++;
+result = measureBodyApron([{ points: new Float64Array(rectangle.flat()), indices: new Uint32Array([2, 1, 0, 3, 2, 0]) }]);
+near(result.summedProjectedAreaSquareMetres, 0); fixtures++;
+console.log(JSON.stringify({ status: "PASS", fixtures, scope: "Actual triangle clipping mathematics; no real terrain or physics approval" }));

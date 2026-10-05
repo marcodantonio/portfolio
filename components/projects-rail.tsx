@@ -1,26 +1,14 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
-import {
-  Eye,
-  ShoppingBag,
-  CalendarRange,
-  Sparkles,
-  Globe,
-  type LucideIcon,
-} from "lucide-react";
+import { useEffect, useRef, useState, type MouseEvent, type PointerEvent } from "react";
+import { CalendarRange, ChevronLeft, ChevronRight, Eye, Globe, ShoppingBag, Sparkles, type LucideIcon } from "lucide-react";
 import { projectsData } from "@/lib/data";
 import { gsap } from "@/lib/gsap";
 import KineticHeading from "@/components/kinetic-heading";
 import { useLanguage } from "@/context/language-context";
 
 const ICONS: LucideIcon[] = [Eye, ShoppingBag, CalendarRange, Sparkles, Globe];
-
-// Evaluated once at module load — pointer media query doesn't change at runtime.
-const isFinePointer =
-  typeof window !== "undefined"
-    ? window.matchMedia("(hover: hover) and (pointer: fine)").matches
-    : false;
+const FRICTION = 0.93;
 
 function HoloCard({
   index,
@@ -30,6 +18,7 @@ function HoloCard({
   proofLabels,
   tags,
   active,
+  onActivate,
 }: {
   index: number;
   title: string;
@@ -38,19 +27,15 @@ function HoloCard({
   proofLabels: { role: string; output: string };
   tags: readonly string[];
   active: boolean;
+  onActivate: () => void;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const Icon = ICONS[index % ICONS.length];
-
-  const tiltRef = useRef<{
-    rx: (v: number) => void;
-    ry: (v: number) => void;
-    y: (v: number) => void;
-  } | null>(null);
+  const tiltRef = useRef<{ rx: (value: number) => void; ry: (value: number) => void; y: (value: number) => void } | null>(null);
 
   useEffect(() => {
     const node = ref.current;
-    if (!node || !isFinePointer) return;
+    if (!node || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
     gsap.set(node, { transformPerspective: 900 });
     const rx = gsap.quickTo(node, "rotationX", { duration: 0.4, ease: "power3.out" });
     const ry = gsap.quickTo(node, "rotationY", { duration: 0.4, ease: "power3.out" });
@@ -64,18 +49,18 @@ function HoloCard({
     };
   }, []);
 
-  const handleMove = (event: React.MouseEvent<HTMLDivElement>) => {
+  const handleMove = (event: MouseEvent<HTMLElement>) => {
     const node = ref.current;
     const tilt = tiltRef.current;
-    if (!node || !tilt || !isFinePointer) return;
+    if (!node || !tilt) return;
     const rect = node.getBoundingClientRect();
-    const px = (event.clientX - rect.left) / rect.width;
-    const py = (event.clientY - rect.top) / rect.height;
-    node.style.setProperty("--mx", `${px * 100}%`);
-    node.style.setProperty("--my", `${py * 100}%`);
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    node.style.setProperty("--mx", `${x * 100}%`);
+    node.style.setProperty("--my", `${y * 100}%`);
     node.style.setProperty("--hop", "0.6");
-    tilt.rx((py - 0.5) * -8);
-    tilt.ry((px - 0.5) * 10);
+    tilt.rx((y - 0.5) * -8);
+    tilt.ry((x - 0.5) * 10);
     tilt.y(-5);
   };
 
@@ -84,182 +69,97 @@ function HoloCard({
     const tilt = tiltRef.current;
     if (!node) return;
     node.style.setProperty("--hop", "0");
-    if (tilt) {
-      tilt.rx(0);
-      tilt.ry(0);
-      tilt.y(0);
-    }
+    tilt?.rx(0);
+    tilt?.ry(0);
+    tilt?.y(0);
   };
 
   return (
-    <div
+    <article
       ref={ref}
       onMouseMove={handleMove}
       onMouseLeave={reset}
+      onMouseEnter={onActivate}
+      onFocus={onActivate}
       data-cursor="view"
-      className={`holo-card flex w-[clamp(300px,78vw,520px)] flex-shrink-0 flex-col rounded-2xl border border-line-subtle bg-surface p-8 lg:min-h-[420px] lg:p-10${active ? " is-active" : ""}`}
+      className={`holo-card flex w-[clamp(288px,68vw,500px)] flex-shrink-0 flex-col rounded-2xl border border-line-subtle bg-surface p-7 lg:min-h-[390px] lg:p-9${active ? " is-active" : ""}`}
     >
-      <span
-        className="mb-8 flex h-11 w-11 items-center justify-center rounded-xl"
-        style={{ background: "var(--accent-soft)" }}
-      >
-        <Icon className="h-5 w-5" style={{ color: "var(--accent)" }} strokeWidth={1.5} />
+      <span aria-hidden="true" className="mb-8 flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft">
+        <Icon className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
       </span>
-      <h3 className="mb-2.5 font-display text-xl font-extrabold leading-tight tracking-[-0.03em]">
-        {title}
-      </h3>
+      <h3 className="mb-2.5 font-display text-xl font-extrabold leading-tight tracking-[-0.03em]">{title}</h3>
       <p className="mb-5 text-[13.5px] leading-relaxed text-copy-muted">{description}</p>
       <dl className="project-proof mb-5">
-        <div className="project-proof__row">
-          <dt>{proofLabels.role}</dt>
-          <dd>{proof.role}</dd>
-        </div>
-        <div className="project-proof__row">
-          <dt>{proofLabels.output}</dt>
-          <dd>{proof.output}</dd>
-        </div>
+        <div className="project-proof__row"><dt>{proofLabels.role}</dt><dd>{proof.role}</dd></div>
+        <div className="project-proof__row"><dt>{proofLabels.output}</dt><dd>{proof.output}</dd></div>
       </dl>
       <div className="mt-auto flex flex-wrap gap-1.5">
-        {tags.slice(0, 4).map((tag) => (
-          <span
-            key={tag}
-            className="rounded border border-line-subtle px-2 py-0.5 font-mono text-[10px] text-copy-muted"
-          >
-            {tag}
-          </span>
-        ))}
+        {tags.slice(0, 4).map((tag) => <span key={tag} className="rounded border border-line-subtle px-2 py-0.5 font-mono text-[10px] text-copy-muted">{tag}</span>)}
       </div>
-    </div>
+    </article>
   );
 }
 
-const FRICTION = 0.93;
-
+/**
+ * The rail keeps its direct drag, inertia and card tilt. It intentionally does
+ * not pin itself on scroll: the page-wide Three scene remains the only
+ * scroll-evolving animation.
+ */
 export default function ProjectsRail() {
   const { t } = useLanguage();
-  const projectCount = t.projects.items.length;
-  // outerRef  = the clip/cursor container (visible window)
-  // trackRef  = the moving flex track (transform target)
   const outerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const txRef    = useRef(0); // current translateX in px
-  const drag     = useRef({ active: false, startX: 0, startTx: 0 });
+  const progressRef = useRef<HTMLDivElement>(null);
+  const txRef = useRef(0);
+  const drag = useRef({ active: false, startX: 0, startTx: 0 });
   const velocity = useRef(0);
   const lastPageX = useRef(0);
-  const lastTime  = useRef(0);
-  const rafId     = useRef<number>(0);
-  const progressRef = useRef<HTMLDivElement>(null);
-  const pinnedRef = useRef(false);
-  const [pinActive, setPinActive] = useState(false);
+  const lastTime = useRef(0);
+  const rafId = useRef<number>(0);
   const [activeProject, setActiveProject] = useState(0);
-  const activeProjectRef = useRef(0);
 
-  useEffect(() => () => cancelAnimationFrame(rafId.current), []);
+  useEffect(() => () => window.cancelAnimationFrame(rafId.current), []);
 
-  useEffect(() => {
+  const bounds = () => {
     const outer = outerRef.current;
     const track = trackRef.current;
-    if (!outer || !track) return;
-
-    const mm = gsap.matchMedia();
-    mm.add(
-      "(hover: hover) and (pointer: fine) and (min-width: 1024px) and (prefers-reduced-motion: no-preference)",
-      () => {
-        const section = document.getElementById("projects");
-        if (!section) return;
-        pinnedRef.current = true;
-        setPinActive(true);
-        // Neutralize any leftover drag offset before the scrub takes over.
-        gsap.set(track, { x: 0 });
-        txRef.current = 0;
-        const skewTo = gsap.quickTo(track, "skewX", { duration: 0.5, ease: "power3.out" });
-        const distance = () => track.scrollWidth - outer.clientWidth;
-        const chapterDistance = () => Math.max(distance(), 1) * 1.25 + window.innerHeight * 0.35;
-        const setProjectFromProgress = (progress: number) => {
-          const next = Math.min(
-            projectCount - 1,
-            Math.max(0, Math.round(progress * (projectCount - 1)))
-          );
-          if (next !== activeProjectRef.current) {
-            activeProjectRef.current = next;
-            setActiveProject(next);
-          }
-        };
-        const tween = gsap.to(track, {
-          x: () => -distance(),
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: "top top",
-            end: () => `+=${chapterDistance()}`,
-            pin: true,
-            scrub: 1,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-            onUpdate: (self) => {
-              if (progressRef.current) {
-                progressRef.current.style.transform = `scaleX(${self.progress})`;
-              }
-              setProjectFromProgress(self.progress);
-              // Subtle velocity-linked skew (clamped), eased back to 0.
-              const skew = gsap.utils.clamp(-4, 4, self.getVelocity() / -350);
-              skewTo(skew);
-            },
-            onLeave: () => skewTo(0),
-            onLeaveBack: () => skewTo(0),
-          },
-        });
-        return () => {
-          pinnedRef.current = false;
-          setPinActive(false);
-          activeProjectRef.current = 0;
-          setActiveProject(0);
-          tween.scrollTrigger?.kill();
-          tween.kill();
-          gsap.set(track, { clearProps: "transform" });
-          txRef.current = 0;
-        };
-      }
-    );
-    return () => mm.revert();
-  }, [projectCount]);
-
-  const clamp = (v: number) => {
-    const outer = outerRef.current;
-    const track = trackRef.current;
-    if (!outer || !track) return v;
-    const min = -(track.scrollWidth - outer.offsetWidth);
-    return Math.min(0, Math.max(min, v));
+    if (!outer || !track) return { min: 0, max: 0 };
+    return { min: Math.min(0, outer.clientWidth - track.scrollWidth), max: 0 };
   };
 
-  const applyTx = (v: number) => {
-    txRef.current = v;
-    if (trackRef.current) trackRef.current.style.transform = `translateX(${v}px)`;
+  const applyTx = (value: number) => {
+    const { min, max } = bounds();
+    const next = Math.min(max, Math.max(min, value));
+    txRef.current = next;
+    if (trackRef.current) trackRef.current.style.transform = `translate3d(${next}px, 0, 0)`;
+    const progress = min === 0 ? 0 : Math.min(1, Math.max(0, next / min));
+    if (progressRef.current) progressRef.current.style.transform = `scaleX(${progress})`;
+    const index = Math.round(progress * (t.projects.items.length - 1));
+    setActiveProject((current) => current === index ? current : index);
   };
 
-  const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (pinnedRef.current) return;
+  const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.button !== 0) return;
     const outer = outerRef.current;
     if (!outer) return;
-    cancelAnimationFrame(rafId.current);
+    window.cancelAnimationFrame(rafId.current);
     velocity.current = 0;
-    drag.current = { active: true, startX: e.pageX, startTx: txRef.current };
-    lastPageX.current = e.pageX;
+    drag.current = { active: true, startX: event.pageX, startTx: txRef.current };
+    lastPageX.current = event.pageX;
     lastTime.current = performance.now();
-    outer.setPointerCapture(e.pointerId);
+    outer.setPointerCapture(event.pointerId);
     outer.classList.add("dragging");
   };
 
-  const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+  const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
     if (!drag.current.active) return;
-    e.preventDefault();
+    event.preventDefault();
     const now = performance.now();
-    const dt  = Math.max(now - lastTime.current, 1);
-    const raw = ((e.pageX - lastPageX.current) / dt) * 16;
-    velocity.current = velocity.current * 0.6 + raw * 0.4;
-    lastPageX.current = e.pageX;
-    lastTime.current  = now;
-    applyTx(clamp(drag.current.startTx + (e.pageX - drag.current.startX)));
+    const delta = ((event.pageX - lastPageX.current) / Math.max(now - lastTime.current, 1)) * 16;
+    velocity.current = velocity.current * 0.6 + delta * 0.4;
+    lastPageX.current = event.pageX;
+    lastTime.current = now;
+    applyTx(drag.current.startTx + event.pageX - drag.current.startX);
   };
 
   const stopDrag = () => {
@@ -270,10 +170,16 @@ export default function ProjectsRail() {
     const tick = () => {
       velocity.current *= FRICTION;
       if (Math.abs(velocity.current) < 0.4) return;
-      applyTx(clamp(txRef.current + velocity.current));
-      rafId.current = requestAnimationFrame(tick);
+      applyTx(txRef.current + velocity.current);
+      rafId.current = window.requestAnimationFrame(tick);
     };
-    rafId.current = requestAnimationFrame(tick);
+    rafId.current = window.requestAnimationFrame(tick);
+  };
+
+  const nudge = (direction: -1 | 1) => {
+    const outer = outerRef.current;
+    if (!outer) return;
+    applyTx(txRef.current - direction * Math.max(outer.clientWidth * 0.72, 300));
   };
 
   return (
@@ -282,22 +188,17 @@ export default function ProjectsRail() {
 
       <div className="projects-cinematic__meta">
         <div className="flex min-w-0 items-center gap-3 font-mono text-[11px] tracking-[0.08em] text-copy-muted">
-          <span
-            className="h-px max-w-[200px] flex-1"
-            style={{ background: "linear-gradient(to right, var(--accent), transparent)" }}
-          />
-          <span>{pinActive ? t.projects.scrollHint : t.projects.drag}</span>
+          <span aria-hidden="true" className="h-px max-w-[200px] flex-1 bg-[linear-gradient(to_right,var(--accent),transparent)]" />
+          <span>{t.projects.drag}</span>
         </div>
-        <div className="projects-cinematic__active">
-          <strong>{t.projects.items[activeProject]?.title}</strong>
+        <div className="projects-cinematic__active"><strong>{t.projects.items[activeProject]?.title}</strong></div>
+        <div className="flex items-center gap-2">
+          <button type="button" className="rail-nav-button" onClick={() => nudge(-1)} aria-label="Previous project"><ChevronLeft size={16} /></button>
+          <button type="button" className="rail-nav-button" onClick={() => nudge(1)} aria-label="Next project"><ChevronRight size={16} /></button>
         </div>
       </div>
 
-      {pinActive ? (
-        <div className="rail-progress" aria-hidden="true">
-          <div ref={progressRef} className="rail-progress-fill" />
-        </div>
-      ) : null}
+      <div className="rail-progress" aria-hidden="true"><div ref={progressRef} className="rail-progress-fill" /></div>
 
       <div
         ref={outerRef}
@@ -308,7 +209,6 @@ export default function ProjectsRail() {
         onPointerUp={stopDrag}
         onPointerCancel={stopDrag}
       >
-        {/* Track: transform-driven scroll, overflow visible — shadows never clipped */}
         <div ref={trackRef} className="rail-track px-6">
           {t.projects.items.map((project, index) => (
             <HoloCard
@@ -320,6 +220,7 @@ export default function ProjectsRail() {
               proofLabels={t.projects.proofLabels}
               tags={projectsData[index]?.tags ?? []}
               active={index === activeProject}
+              onActivate={() => setActiveProject(index)}
             />
           ))}
         </div>

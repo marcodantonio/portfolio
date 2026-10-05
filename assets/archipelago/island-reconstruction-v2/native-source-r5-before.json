@@ -1,0 +1,85 @@
+{
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r5-source-compact-20261005",
+  "status": "succeeded",
+  "revisionBefore": 4,
+  "sceneSequenceAfter": 0,
+  "result": {
+    "source": "actual native R4 beforeR5",
+    "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+    "rootMatrix": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "meshes": 44,
+    "triangles": 109088,
+    "allObjectsIdentity": true,
+    "recordedAuditTriangles": 109088,
+    "body": [
+      {
+        "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+        "vertices": 7421,
+        "triangles": 14838,
+        "positionSha256": "d87e6e112ecd3bccc5fcf08bd90b1abc911573dfca68d4cb6223bdcff6a5961a",
+        "boundsNative": [
+          [
+            -34.44200134277344,
+            -34.44200134277344,
+            -10
+          ],
+          [
+            34.27458572387695,
+            36.441688537597656,
+            4.800000190734863
+          ]
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+        "bytes": 226915,
+        "sha256": "ac750c1d1117c9adc06491280c31a63a6480a3e2e1c17211775aa418e9981c87"
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+        "bytes": 270827,
+        "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144"
+      },
+      {
+        "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+        "bytes": 195025,
+        "sha256": "1242a472494cd0b0856f143fc75375c8405ca3d01a229053374178a5833cd79f"
+      },
+      {
+        "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+        "bytes": 293590,
+        "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9"
+      }
+    ],
+    "noMutation": true
+  },
+  "scope": "Actual native R4 read before R5. Compact query, no mutation; not a new artistic or physics acceptance."
+}

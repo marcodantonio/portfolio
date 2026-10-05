@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import type { Lang } from "@/content/i18n";
 import { socialLinks, siteProfile, skillGroups } from "@/content/site";
 
@@ -45,7 +44,7 @@ function getKeywords() {
   );
 }
 
-export function getLocaleMetadata(lang: Lang): Metadata {
+export function getLocaleMetadata(lang: Lang) {
   const cfg = localeConfig[lang];
   const url = absoluteUrl(cfg.path);
 

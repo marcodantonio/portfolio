@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-10-05T06:42:12.939Z",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r8-connected-rear-macro-candidate-c-20261005",
+  "status": "failed",
+  "headRevision": 7,
+  "headSceneSequence": 0,
+  "revisionBefore": 7,
+  "revisionAfter": null,
+  "finishedAt": "2026-10-05T06:39:46.943Z",
+  "recipe": {
+    "file": "rebuild_projects_island_v2_r9_integrated_ridge_c.py",
+    "sha256": "35cb4a00c19da812dd89bc4977e4000bbb4bfb2ef2d961a44084d2a97c69a31f"
+  },
+  "query": {
+    "file": "inspect_projects_island_v2_macro_ridge_candidate_c.py",
+    "sha256": "ed7af7fe016d1a0d091055b93d09bb884c771c7a91f4324efcae1eaf54024621",
+    "bytes": 68857
+  },
+  "error": {
+    "code": "PYTHON_EXCEPTION",
+    "message": "MACRO_C nonadjacent self contact: {\"count\": 7, \"first20\": [{\"faces\": [15270, 15274]}, {\"faces\": [15270, 15273]}, {\"faces\": [15271, 15274]}, {\"faces\": [14030, 14033]}, {\"faces\": [14029, 14033]}, {\"faces\": [14029, 14032]}, {\"faces\": [14123, 14126]}], \"face_ranges\": {\"roof\": [2680, 11612], \"all_wall\": [11612, 16580], \"direct_roof_join\": [15556, 16580]}}",
+    "retryable": false
+  },
+  "output": {
+    "stdoutTail": "",
+    "stderrTail": "Traceback (most recent call last):\n  File \"/app/session.py\", line 286, in execute\n    exec(compiled, namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<operation:projects-v2-r8-connected-rear-macro-candidate-c-20261005>\", line 1161, in <module>\n  File \"<operation:projects-v2-r8-connected-rear-macro-candidate-c-20261005>\", line 142, in require\nRuntimeError: MACRO_C nonadjacent self contact: {\"count\": 7, \"first20\": [{\"faces\": [15270, 15274]}, {\"faces\": [15270, 15273]}, {\"faces\": [15271, 15274]}, {\"faces\": [14030, 14033]}, {\"faces\": [14029, 14033]}, {\"faces\": [14029, 14032]}, {\"faces\": [14123, 14126]}], \"face_ranges\": {\"roof\": [2680, 11612], \"all_wall\": [11612, 16580], \"direct_roof_join\": [15556, 16580]}}\n",
+    "truncated": false
+  },
+  "generatedArtifacts": [],
+  "rootDecision": "FAILED_GEOMETRY_GUARD_NO_MUTATION",
+  "nativeSelfHits": 7,
+  "artReviewed": false,
+  "exported": false,
+  "runtimeIntegrated": false
+}

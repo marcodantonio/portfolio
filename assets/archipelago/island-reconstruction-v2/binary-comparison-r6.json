@@ -1,0 +1,3446 @@
+{
+  "schemaVersion": 1,
+  "study": "Projects bare-island V2",
+  "revision": 6,
+  "comparedWithRevision": 5,
+  "auditedOn": "2026-10-05",
+  "status": "PASS scoped actual R5→R6 portable binary comparison; native source topology, art, contacts/union and gameplay require separate evidence",
+  "files": {
+    "r5": {
+      "path": "assets/archipelago/island-reconstruction-v2/projects-island-v2-r5.glb",
+      "bytes": 14684488,
+      "sha256": "93a39ca60a2feb7c21669eb003cc8938c98487f1a986c28eefe125d0e5520ec0"
+    },
+    "r6": {
+      "path": "assets/archipelago/island-reconstruction-v2/projects-island-v2-r6.glb",
+      "bytes": 15159428,
+      "sha256": "419a93354d886eae4d5457fefa7124300595d66b14bcb896829a8b188a34efee"
+    }
+  },
+  "actualAssetStatistics": {
+    "before": {
+      "owners": 44,
+      "primitives": 44,
+      "exportedVertices": 292492,
+      "triangles": 109088,
+      "boundsMinYUpMetres": [
+        -34.44200134277344,
+        -10,
+        -36.441688537597656
+      ],
+      "boundsMaxYUpMetres": [
+        34.27458572387695,
+        18.914897918701172,
+        34.44200134277344
+      ]
+    },
+    "after": {
+      "owners": 44,
+      "primitives": 44,
+      "exportedVertices": 301854,
+      "triangles": 109088,
+      "boundsMinYUpMetres": [
+        -34.44200134277344,
+        -10,
+        -36.441688537597656
+      ],
+      "boundsMaxYUpMetres": [
+        34.27458572387695,
+        19.423599243164062,
+        34.44200134277344
+      ]
+    }
+  },
+  "comparativeSummary": {
+    "owners": 44,
+    "allowedGeometryOwners": 22,
+    "exactOutsideAllowedOwners": 22,
+    "changedWholeGeometryOwners": 22,
+    "changedAllowedOwnerNames": [
+      "ProjectsIsland_V2_Attached_Fracture_14",
+      "ProjectsIsland_V2_Attached_Fracture_15",
+      "ProjectsIsland_V2_Attached_Fracture_16",
+      "ProjectsIsland_V2_Attached_Fracture_17",
+      "ProjectsIsland_V2_Attached_Fracture_18",
+      "ProjectsIsland_V2_Attached_Fracture_19",
+      "ProjectsIsland_V2_Attached_Fracture_20",
+      "ProjectsIsland_V2_Attached_Fracture_21",
+      "ProjectsIsland_V2_Attached_Fracture_22",
+      "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+      "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+      "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+      "ProjectsIsland_V2_Front_Central_Long_Finger",
+      "ProjectsIsland_V2_Front_East_Short_Finger",
+      "ProjectsIsland_V2_Front_Left_Principal_Finger",
+      "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+      "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+      "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+      "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+      "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+      "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon"
+    ],
+    "variableIndexedRGBOwners": 44,
+    "indexedRGBChangedOwners": 44,
+    "totalSubmergedTrianglesBefore": 19159,
+    "totalSubmergedTrianglesAfter": 19159
+  },
+  "method": {
+    "inputs": "Direct actual embedded GLB JSON/BIN with complete active subtree Matrix4 transforms; preview objects outside root excluded",
+    "orientedGeometry": "Float32 little-endian XYZ triangles, canonical cyclic rotations only, sorted full multisets retaining duplicates; never reversed winding",
+    "allowedOwnerTopology": "Triangle counts are independently checked, not connectivity proof. Native source per-owner index/orientation assertion required separately; no source-index or general graph-isomorphism claim",
+    "approaches": "Exact2D segment/triangle capsule distance with edge crossings, endpoint containment and radius+1.15m feather; complete selected oriented XYZ faces on all44 owners, BODY historical subset reported separately",
+    "apron": "Full actual triangle clipping, planar832m² sum and whole selected BODY-face equality; sums are not a union or navigation proof",
+    "portable": "Actual portable R5 PNG payloads and raw/decoded PBR/texture/sampler arrays; not native packed-file baseline",
+    "color": "Actual expanded indexed linear RGB-corner multisets and variation; not rendered pixel measurements"
+  },
+  "owners": [
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_00",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1272,
+        "sha256": "0bf723dc40a297ea83d87985c17d5443676449787402bc52af7156e9bde511dd"
+      },
+      "geometryAfter": {
+        "triangles": 1272,
+        "sha256": "0bf723dc40a297ea83d87985c17d5443676449787402bc52af7156e9bde511dd"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -32.456050872802734,
+          1.7999999523162842,
+          8.763751983642578
+        ],
+        "boundsMaxYUpMetres": [
+          -27.715686798095703,
+          6.483217716217041,
+          12.19446849822998
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -32.456050872802734,
+          1.7999999523162842,
+          8.763751983642578
+        ],
+        "boundsMaxYUpMetres": [
+          -27.715686798095703,
+          6.483217716217041,
+          12.19446849822998
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1272,
+        "sha256": "1cfaf895b24c7c4f2ca65bad907e6e81bef0292b4c6206862080e6cf247ca0ae",
+        "minimum": [
+          0.2912573516368866,
+          0.3085353374481201,
+          0.20194025337696075
+        ],
+        "maximum": [
+          0.5858669877052307,
+          0.4967881143093109,
+          0.3993786871433258
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_01",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1672,
+        "sha256": "3fde671a45c9b191024d11be1b555b1b284ee11e051da063617562fc23061bb2"
+      },
+      "geometryAfter": {
+        "triangles": 1672,
+        "sha256": "3fde671a45c9b191024d11be1b555b1b284ee11e051da063617562fc23061bb2"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 356,
+        "sha256": "76d885d9fc2b6132abb712429cd0250b5d17c1146137890bc2d7ee471260bbac"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -32.932647705078125,
+          -1.100000023841858,
+          16.943798065185547
+        ],
+        "boundsMaxYUpMetres": [
+          -28.909231185913086,
+          5.627105236053467,
+          20.136043548583984
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -32.932647705078125,
+          -1.100000023841858,
+          16.943798065185547
+        ],
+        "boundsMaxYUpMetres": [
+          -28.909231185913086,
+          5.627105236053467,
+          20.136043548583984
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1672,
+        "sha256": "c3f5a53cfdaa5166aad38d958cb9fb815f78587e09244d23e3941598a191f5fd",
+        "minimum": [
+          0.3475658893585205,
+          0.31960082054138184,
+          0.16866429150104523
+        ],
+        "maximum": [
+          0.6445868015289307,
+          0.49754559993743896,
+          0.3999876379966736
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_02",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1500,
+        "sha256": "2ce095f9faef972dfaa611ce6b5d75465cb4adf39d8f641784586a08c57fcc20"
+      },
+      "geometryAfter": {
+        "triangles": 1500,
+        "sha256": "2ce095f9faef972dfaa611ce6b5d75465cb4adf39d8f641784586a08c57fcc20"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 354,
+        "sha256": "ba746b24f1ee0dc6c6e428c6b1676a8a211912f455c0d395a9f3a41d89f8b07b"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -26.770936965942383,
+          -1.100000023841858,
+          18.754009246826172
+        ],
+        "boundsMaxYUpMetres": [
+          -21.763093948364258,
+          5.0207295417785645,
+          22.645675659179688
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -26.770936965942383,
+          -1.100000023841858,
+          18.754009246826172
+        ],
+        "boundsMaxYUpMetres": [
+          -21.763093948364258,
+          5.0207295417785645,
+          22.645675659179688
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1500,
+        "sha256": "4bf71dfb55f6c2a2e1c7c458a2bb00b0c0a419f2d936e0a6df594a5502376238",
+        "minimum": [
+          0.23500236868858337,
+          0.24894306063652039,
+          0.16762934625148773
+        ],
+        "maximum": [
+          0.638883113861084,
+          0.49232596158981323,
+          0.3957914710044861
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_03",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1414,
+        "sha256": "9649becfcadb5b48c331ebe86cf27e28c904cca0633800f8816c3c52ae3912e0"
+      },
+      "geometryAfter": {
+        "triangles": 1414,
+        "sha256": "9649becfcadb5b48c331ebe86cf27e28c904cca0633800f8816c3c52ae3912e0"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 347,
+        "sha256": "4dc38902bcc5e49c16ce1c8d5f7f510a77ff570bafbde1de631081424ca0c76f"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -22.462535858154297,
+          -1.100000023841858,
+          11.351263999938965
+        ],
+        "boundsMaxYUpMetres": [
+          -19.02654266357422,
+          4.288165092468262,
+          14.337261199951172
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -22.462535858154297,
+          -1.100000023841858,
+          11.351263999938965
+        ],
+        "boundsMaxYUpMetres": [
+          -19.02654266357422,
+          4.288165092468262,
+          14.337261199951172
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1414,
+        "sha256": "dde68d00566fdd6f623fc710871c303fc3e9a53d2d1f48cd505b1dd533176f7e",
+        "minimum": [
+          0.33834680914878845,
+          0.3111235201358795,
+          0.16824698448181152
+        ],
+        "maximum": [
+          0.6457709074020386,
+          0.498742014169693,
+          0.40094947814941406
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_04",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1248,
+        "sha256": "634268db1d04cee36406804c8c00c1050ec1a52be295f2109416deed00cfdaa3"
+      },
+      "geometryAfter": {
+        "triangles": 1248,
+        "sha256": "634268db1d04cee36406804c8c00c1050ec1a52be295f2109416deed00cfdaa3"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 291,
+        "sha256": "fe3e2d6f0c0f47de3f121dd416b3d818919ff9689de27e97f4a722fd949fbdf3"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -20.29154396057129,
+          -1.100000023841858,
+          26.25342559814453
+        ],
+        "boundsMaxYUpMetres": [
+          -17.109569549560547,
+          3.9762165546417236,
+          28.70713996887207
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -20.29154396057129,
+          -1.100000023841858,
+          26.25342559814453
+        ],
+        "boundsMaxYUpMetres": [
+          -17.109569549560547,
+          3.9762165546417236,
+          28.70713996887207
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1248,
+        "sha256": "a396f43748d1ff1da646dac8c0367010660b479e4ff7f5c17d9c19eb75dea78b",
+        "minimum": [
+          0.23843801021575928,
+          0.251407265663147,
+          0.16729417443275452
+        ],
+        "maximum": [
+          0.6385309100151062,
+          0.49876704812049866,
+          0.40096956491470337
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_05",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1084,
+        "sha256": "69ab0b48fd52c870b00ac7da68e461469670a256fa458f6554d2d20d2b9618c6"
+      },
+      "geometryAfter": {
+        "triangles": 1084,
+        "sha256": "69ab0b48fd52c870b00ac7da68e461469670a256fa458f6554d2d20d2b9618c6"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 302,
+        "sha256": "f23acbefcb1205c034cb95d2d88ebea06fa505e15fc4c7c490adf467a439c64b"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -14.995047569274902,
+          -1.100000023841858,
+          27.672019958496094
+        ],
+        "boundsMaxYUpMetres": [
+          -12.521607398986816,
+          2.6619365215301514,
+          30.268768310546875
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -14.995047569274902,
+          -1.100000023841858,
+          27.672019958496094
+        ],
+        "boundsMaxYUpMetres": [
+          -12.521607398986816,
+          2.6619365215301514,
+          30.268768310546875
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1084,
+        "sha256": "ffec848dd3f0745ae0984440808eb0a64865d25c80191a9aec27f0f0888aec0c",
+        "minimum": [
+          0.33493170142173767,
+          0.3079831898212433,
+          0.21864375472068787
+        ],
+        "maximum": [
+          0.6005414128303528,
+          0.4951935410499573,
+          0.3980967700481415
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_06",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1024,
+        "sha256": "6c6f035e50207b391977a9617c5ac3cef3fe96097208bcbb335b0ab83efea6d6"
+      },
+      "geometryAfter": {
+        "triangles": 1024,
+        "sha256": "6c6f035e50207b391977a9617c5ac3cef3fe96097208bcbb335b0ab83efea6d6"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 284,
+        "sha256": "d0f0d22c0ca39b51a55fc07e9269a4b6550d9eaa28b9651fc9d95bc21c8cfe73"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -4.267506122589111,
+          -1.100000023841858,
+          27.986480712890625
+        ],
+        "boundsMaxYUpMetres": [
+          -2.109175205230713,
+          3.0511839389801025,
+          30.375438690185547
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -4.267506122589111,
+          -1.100000023841858,
+          27.986480712890625
+        ],
+        "boundsMaxYUpMetres": [
+          -2.109175205230713,
+          3.0511839389801025,
+          30.375438690185547
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1024,
+        "sha256": "fbf6da00cdd1689ae9b57576c0875ad61c85851b7211ed42754b03d23718327a",
+        "minimum": [
+          0.3395392894744873,
+          0.31222003698349,
+          0.21381306648254395
+        ],
+        "maximum": [
+          0.5997791886329651,
+          0.4905984401702881,
+          0.3944026529788971
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_07",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 950,
+        "sha256": "4c886c0636bde75e56bd557a1375b1597d9957b109ce1b9db8eadc708e7a18a2"
+      },
+      "geometryAfter": {
+        "triangles": 950,
+        "sha256": "4c886c0636bde75e56bd557a1375b1597d9957b109ce1b9db8eadc708e7a18a2"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 265,
+        "sha256": "93465d26970941d77291179384797f58333b405c6a5ffdda124dbd6578103a1f"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          0.44226956367492676,
+          -1.100000023841858,
+          29.4412784576416
+        ],
+        "boundsMaxYUpMetres": [
+          2.9876937866210938,
+          2.671447277069092,
+          31.509462356567383
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          0.44226956367492676,
+          -1.100000023841858,
+          29.4412784576416
+        ],
+        "boundsMaxYUpMetres": [
+          2.9876937866210938,
+          2.671447277069092,
+          31.509462356567383
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 950,
+        "sha256": "dd8e84d0bb867f7771e96feda75320c20384afeaf91d93da238ef8ffdc707400",
+        "minimum": [
+          0.3369956910610199,
+          0.3098810911178589,
+          0.16693732142448425
+        ],
+        "maximum": [
+          0.6291495561599731,
+          0.49387338757514954,
+          0.39703547954559326
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_08",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 934,
+        "sha256": "038cff9b8682169745915ff850117cce2ef3b97bdb8e8452546655c82f3a67ce"
+      },
+      "geometryAfter": {
+        "triangles": 934,
+        "sha256": "038cff9b8682169745915ff850117cce2ef3b97bdb8e8452546655c82f3a67ce"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 236,
+        "sha256": "da654f85b7d716437b380079711844396ee38f33fe60f7b1065a56cfba6dcca9"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          10.703442573547363,
+          -1.100000023841858,
+          26.622894287109375
+        ],
+        "boundsMaxYUpMetres": [
+          13.453085899353027,
+          2.1957499980926514,
+          28.940967559814453
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          10.703442573547363,
+          -1.100000023841858,
+          26.622894287109375
+        ],
+        "boundsMaxYUpMetres": [
+          13.453085899353027,
+          2.1957499980926514,
+          28.940967559814453
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 934,
+        "sha256": "aaa961167288cb267703b31278578096cd63b4d9f839c2ccf7aefd021833a56f",
+        "minimum": [
+          0.3392173647880554,
+          0.311924010515213,
+          0.21743586659431458
+        ],
+        "maximum": [
+          0.5962213277816772,
+          0.47672849893569946,
+          0.3832523226737976
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_09",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1130,
+        "sha256": "61aeaad35413c5cbe38ee591fdb83fd3686730971dcdcf6536d5371f4bd80b61"
+      },
+      "geometryAfter": {
+        "triangles": 1130,
+        "sha256": "61aeaad35413c5cbe38ee591fdb83fd3686730971dcdcf6536d5371f4bd80b61"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 319,
+        "sha256": "b2bacec3876a29e0a4538acaa852b6602e58ca453fd80c025b0248675c4b605e"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          26.047245025634766,
+          -1.100000023841858,
+          24.273967742919922
+        ],
+        "boundsMaxYUpMetres": [
+          29.309999465942383,
+          1.9398934841156006,
+          26.671985626220703
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          26.047245025634766,
+          -1.100000023841858,
+          24.273967742919922
+        ],
+        "boundsMaxYUpMetres": [
+          29.309999465942383,
+          1.9398934841156006,
+          26.671985626220703
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1130,
+        "sha256": "ad469337fece183cc2fd0627a27f68ada82cd14c6c43cf2fb3ad1ef05dcdb163",
+        "minimum": [
+          0.3534034490585327,
+          0.32496869564056396,
+          0.16907042264938354
+        ],
+        "maximum": [
+          0.63832688331604,
+          0.49198609590530396,
+          0.3955182135105133
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_10",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1054,
+        "sha256": "58780216088c4a224f2593700eb1c90729efe86c8c66180513eef311282ef783"
+      },
+      "geometryAfter": {
+        "triangles": 1054,
+        "sha256": "58780216088c4a224f2593700eb1c90729efe86c8c66180513eef311282ef783"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 293,
+        "sha256": "9510ea174d6dc4ca096d897ad34df02c660fa2fd2588c376de485a9257935502"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          28.71480369567871,
+          -1.100000023841858,
+          20.941604614257812
+        ],
+        "boundsMaxYUpMetres": [
+          31.47376251220703,
+          2.2107417583465576,
+          23.18629264831543
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          28.71480369567871,
+          -1.100000023841858,
+          20.941604614257812
+        ],
+        "boundsMaxYUpMetres": [
+          31.47376251220703,
+          2.2107417583465576,
+          23.18629264831543
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1054,
+        "sha256": "2e5b0ac9c67afa02209a7e05c8010a614ab92662f03fe1733af4f3151a233cd0",
+        "minimum": [
+          0.33861494064331055,
+          0.3113700747489929,
+          0.16787368059158325
+        ],
+        "maximum": [
+          0.6385055780410767,
+          0.49209296703338623,
+          0.39560413360595703
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_11",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1100,
+        "sha256": "7fc67a6218282df662f94e0047e0bd28b76f09fa96d93709c831276466d2db26"
+      },
+      "geometryAfter": {
+        "triangles": 1100,
+        "sha256": "7fc67a6218282df662f94e0047e0bd28b76f09fa96d93709c831276466d2db26"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 310,
+        "sha256": "67e02e9394c8a08ef08320dc0910c9ec6d4a98daff19b7fe3fff785d414f9e18"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          28.78702735900879,
+          -1.100000023841858,
+          5.347015380859375
+        ],
+        "boundsMaxYUpMetres": [
+          31.950775146484375,
+          2.8084237575531006,
+          7.653567790985107
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          28.78702735900879,
+          -1.100000023841858,
+          5.347015380859375
+        ],
+        "boundsMaxYUpMetres": [
+          31.950775146484375,
+          2.8084237575531006,
+          7.653567790985107
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1100,
+        "sha256": "2a4901b0dd941a681027edf3bb57a209091be81369bad1b064b9f20235523bfd",
+        "minimum": [
+          0.3451828956604004,
+          0.31740954518318176,
+          0.17113807797431946
+        ],
+        "maximum": [
+          0.6404761075973511,
+          0.49346286058425903,
+          0.39670541882514954
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_12",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1590,
+        "sha256": "b0288baf5a1caa90029cb3f766453e7ed9650a340e31a635bc66e28a9b1482ff"
+      },
+      "geometryAfter": {
+        "triangles": 1590,
+        "sha256": "b0288baf5a1caa90029cb3f766453e7ed9650a340e31a635bc66e28a9b1482ff"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 315,
+        "sha256": "6c79f7af26da7a55d919cc2e0f2f3f51b2e76e9b5291b611e7f32c6fb5ded1cb"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          27.46552276611328,
+          -1.100000023841858,
+          -10.022956848144531
+        ],
+        "boundsMaxYUpMetres": [
+          30.520299911499023,
+          5.312206745147705,
+          -7.262436866760254
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          27.46552276611328,
+          -1.100000023841858,
+          -10.022956848144531
+        ],
+        "boundsMaxYUpMetres": [
+          30.520299911499023,
+          5.312206745147705,
+          -7.262436866760254
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1590,
+        "sha256": "4a341941e24422073157290ff3b8a47bd35a10c625783e90989981a13e098f72",
+        "minimum": [
+          0.23598800599575043,
+          0.24782094359397888,
+          0.16539350152015686
+        ],
+        "maximum": [
+          0.6425427794456482,
+          0.4954802989959717,
+          0.3983272910118103
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_13",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1244,
+        "sha256": "6832b2be9f00fbd8ff678fd0fcbc03a7dcfa2bbaffc1310d30989538bb6e7466"
+      },
+      "geometryAfter": {
+        "triangles": 1244,
+        "sha256": "6832b2be9f00fbd8ff678fd0fcbc03a7dcfa2bbaffc1310d30989538bb6e7466"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 302,
+        "sha256": "bd2b5f5c4e9fcff2ae50006e5310280af492f57355f4179faa3442d6e6673c35"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          23.183494567871094,
+          -1.100000023841858,
+          -4.7025861740112305
+        ],
+        "boundsMaxYUpMetres": [
+          25.44417381286621,
+          4.0942583084106445,
+          -2.003602981567383
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          23.183494567871094,
+          -1.100000023841858,
+          -4.7025861740112305
+        ],
+        "boundsMaxYUpMetres": [
+          25.44417381286621,
+          4.0942583084106445,
+          -2.003602981567383
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1244,
+        "sha256": "bbbb80dc0d2c675def206d1ceed157aaf14823de530514c6d92d5c9e9e15a3d9",
+        "minimum": [
+          0.3349033296108246,
+          0.30795708298683167,
+          0.17059746384620667
+        ],
+        "maximum": [
+          0.6405133605003357,
+          0.4934937059879303,
+          0.3967302441596985
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_14",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1730,
+        "sha256": "20254364ef5c00d114c7f4cd5e461fcc9f9ca44b8c70eddbe4740a769a01f35d"
+      },
+      "geometryAfter": {
+        "triangles": 1730,
+        "sha256": "17eb0b222bab9b7cbb07b5574a5c3ee9f2ef40c49ac5d6c2fdd5a9deea93c7e0"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 867,
+        "changedUniqueGeometricPoints": 129,
+        "maximumEuclideanDeltaMetres": 0.3231610671212575,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.3059062957763672,
+            -0.04772377014160156
+          ],
+          [
+            0.09261131286621094,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -28.757484436035156,
+          1.7999999523162842,
+          -23.121564865112305
+        ],
+        "boundsMaxYUpMetres": [
+          -24.396175384521484,
+          7.870871067047119,
+          -19.879222869873047
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -28.757484436035156,
+          1.7999999523162842,
+          -23.121564865112305
+        ],
+        "boundsMaxYUpMetres": [
+          -24.396175384521484,
+          7.870566368103027,
+          -19.879222869873047
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1730,
+        "sha256": "fa1d5efe0133fa547098d85d6d9d9a5a9b0d47c6c6511fe0751299b29f62683c",
+        "minimum": [
+          0.42974853515625,
+          0.38947156071662903,
+          0.16690057516098022
+        ],
+        "maximum": [
+          0.6449621319770813,
+          0.4979565143585205,
+          0.4003179967403412
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_15",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1484,
+        "sha256": "57b9f54c27fc509311a8202699b8efcdca7266793b5edd26130746a73f8cc695"
+      },
+      "geometryAfter": {
+        "triangles": 1484,
+        "sha256": "922326cdd3e95d1f60a9307768e51e08c89e824c2cb971d80d5a39e69e91a76f"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 744,
+        "changedUniqueGeometricPoints": 89,
+        "maximumEuclideanDeltaMetres": 0.022915406692130113,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.0001373291015625,
+            -0.02108907699584961,
+            -0.009187698364257812
+          ],
+          [
+            0.003665924072265625,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -23.986286163330078,
+          1.7999999523162842,
+          -19.900959014892578
+        ],
+        "boundsMaxYUpMetres": [
+          -19.2716064453125,
+          6.968210697174072,
+          -16.766183853149414
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -23.986286163330078,
+          1.7999999523162842,
+          -19.900959014892578
+        ],
+        "boundsMaxYUpMetres": [
+          -19.2716064453125,
+          6.968210697174072,
+          -16.766183853149414
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1484,
+        "sha256": "f2c9da2efff661e6b50b750322d05d980e74c228b9a6c8df2d1db3c6b66110bc",
+        "minimum": [
+          0.42153483629226685,
+          0.3889084756374359,
+          0.16822683811187744
+        ],
+        "maximum": [
+          0.646789014339447,
+          0.4997707009315491,
+          0.40177643299102783
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_16",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2296,
+        "sha256": "bd9344d69d09ce7df7047082af365baeedf0e165fcda79fee14f5b3669b3ee41"
+      },
+      "geometryAfter": {
+        "triangles": 2296,
+        "sha256": "1f2c7ed2997bfbd2532a0e786e7755bf5e0208aa5ed4601066650e5ed082141e"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1150,
+        "changedUniqueGeometricPoints": 260,
+        "maximumEuclideanDeltaMetres": 0.2074158270508823,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.19728946685791016,
+            -0.03275108337402344
+          ],
+          [
+            0.05500507354736328,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -19.628589630126953,
+          1.7999999523162842,
+          -24.716087341308594
+        ],
+        "boundsMaxYUpMetres": [
+          -14.100818634033203,
+          9.385431289672852,
+          -21.080860137939453
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -19.628589630126953,
+          1.7999999523162842,
+          -24.716087341308594
+        ],
+        "boundsMaxYUpMetres": [
+          -14.100818634033203,
+          9.385431289672852,
+          -21.080860137939453
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2296,
+        "sha256": "97eb40b9764385ecb1a73963fd5608dd50904cc98a0edbebf22603ee4c5ceda1",
+        "minimum": [
+          0.412228524684906,
+          0.3777065873146057,
+          0.16700823605060577
+        ],
+        "maximum": [
+          0.6408113241195679,
+          0.4995429217815399,
+          0.40159332752227783
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_17",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2148,
+        "sha256": "930a42d652f0f963787c96ba34aaaa0b61399be07f9ba5795e267f7aad29d34a"
+      },
+      "geometryAfter": {
+        "triangles": 2148,
+        "sha256": "ba41681e3ac1bab57324950e575cf5bbab78d9f800e707db3e68a43c36abc76e"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1076,
+        "changedUniqueGeometricPoints": 75,
+        "maximumEuclideanDeltaMetres": 0.07503604619380384,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.007602691650390625,
+            -0.04842042922973633,
+            -0.05681610107421875
+          ],
+          [
+            0.0023088455200195312,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -13.036293029785156,
+          1.7999999523162842,
+          -25.14349937438965
+        ],
+        "boundsMaxYUpMetres": [
+          -7.880783557891846,
+          9.914812088012695,
+          -21.94741439819336
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -13.036293029785156,
+          1.7999999523162842,
+          -25.14349937438965
+        ],
+        "boundsMaxYUpMetres": [
+          -7.880783557891846,
+          9.914812088012695,
+          -21.94741439819336
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2148,
+        "sha256": "0960f307d29c2453ddd11a02d11e914dd0546a4d4894fab9249daf82b0560471",
+        "minimum": [
+          0.42844387888908386,
+          0.38848498463630676,
+          0.16734743118286133
+        ],
+        "maximum": [
+          0.6424496173858643,
+          0.49765557050704956,
+          0.4000760316848755
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_18",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1908,
+        "sha256": "4f27569cd63e9da1924f5d49391f2ddf8ab9516bc466cd77995b16917bf71aea"
+      },
+      "geometryAfter": {
+        "triangles": 1908,
+        "sha256": "994b2a3ad64ffeb9ce60b03d5839c6fef46fcd24988f4bcb96c66525c18a62c6"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 956,
+        "changedUniqueGeometricPoints": 175,
+        "maximumEuclideanDeltaMetres": 0.5741860839844822,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.560481071472168,
+            -0.11434745788574219
+          ],
+          [
+            0.07030415534973145,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -6.850269794464111,
+          1.7999999523162842,
+          -23.638917922973633
+        ],
+        "boundsMaxYUpMetres": [
+          -0.7323240637779236,
+          9.378366470336914,
+          -20.470584869384766
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -6.850269794464111,
+          1.7999999523162842,
+          -23.638917922973633
+        ],
+        "boundsMaxYUpMetres": [
+          -0.7323240637779236,
+          9.365683555603027,
+          -20.470584869384766
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1908,
+        "sha256": "af890606d0e116941bdff1a2c83553bfb0a297f276c12889e3c8c548479115ca",
+        "minimum": [
+          0.42475244402885437,
+          0.3831048905849457,
+          0.16779720783233643
+        ],
+        "maximum": [
+          0.6441380977630615,
+          0.49866336584091187,
+          0.4008862376213074
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_19",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2062,
+        "sha256": "e0ba14744247a18abd7d6198283bc3f1652d68242fa747637639cac28ea8aae9"
+      },
+      "geometryAfter": {
+        "triangles": 2062,
+        "sha256": "cc710dcb1ea82f34edfa9bddff0ca6b53b32479a340289a0a621e11a595aa5b6"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1033,
+        "changedUniqueGeometricPoints": 191,
+        "maximumEuclideanDeltaMetres": 0.19779854923883897,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.16914892196655273,
+            -0.05719947814941406
+          ],
+          [
+            0.10223579406738281,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          1.2616382837295532,
+          1.7999999523162842,
+          -23.505643844604492
+        ],
+        "boundsMaxYUpMetres": [
+          6.557332515716553,
+          9.226591110229492,
+          -19.901086807250977
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          1.2616382837295532,
+          1.7999999523162842,
+          -23.505643844604492
+        ],
+        "boundsMaxYUpMetres": [
+          6.557332515716553,
+          9.226591110229492,
+          -19.901086807250977
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2062,
+        "sha256": "a01e3869c571ff8b8598367cab765ce46f4c224d1b19d57afce7c10629e9ab23",
+        "minimum": [
+          0.4232426583766937,
+          0.3881300091743469,
+          0.1677112579345703
+        ],
+        "maximum": [
+          0.6438260674476624,
+          0.4967769682407379,
+          0.3993697166442871
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_20",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2016,
+        "sha256": "d8c84c926dff01e083bc1a34dfc076539f5d26906b69d4c34b271ddff3a05a78"
+      },
+      "geometryAfter": {
+        "triangles": 2016,
+        "sha256": "9cebc6a2f063839bc7dccb6e62edead25a262029fb12cdd5c0c5ba211e70f272"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1010,
+        "changedUniqueGeometricPoints": 136,
+        "maximumEuclideanDeltaMetres": 0.23139921038818828,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.22066879272460938,
+            -0.07013702392578125
+          ],
+          [
+            0.030531883239746094,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          7.727819442749023,
+          1.7999999523162842,
+          -24.667966842651367
+        ],
+        "boundsMaxYUpMetres": [
+          12.763886451721191,
+          9.477638244628906,
+          -21.349395751953125
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          7.727819442749023,
+          1.7999999523162842,
+          -24.667966842651367
+        ],
+        "boundsMaxYUpMetres": [
+          12.763886451721191,
+          9.477638244628906,
+          -21.349395751953125
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2016,
+        "sha256": "c7388e30698a951f8b8be92d411390c909b2c245979353a4853900bd4153e2ef",
+        "minimum": [
+          0.4249303638935089,
+          0.38396045565605164,
+          0.19916993379592896
+        ],
+        "maximum": [
+          0.6167563199996948,
+          0.49902617931365967,
+          0.40117791295051575
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_21",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1588,
+        "sha256": "ad00daa4ab1d28f323f60ae58cfe5102a767ac9936eac1eb518f9cad4fbadd97"
+      },
+      "geometryAfter": {
+        "triangles": 1588,
+        "sha256": "cd4131b81aaff233e5c21adf8ef2bf88d1fa729b2e2453fd62f3ae91f75af05e"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 796,
+        "changedUniqueGeometricPoints": 187,
+        "maximumEuclideanDeltaMetres": 0.27077571854098004,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.23955869674682617,
+            -0.042308807373046875
+          ],
+          [
+            0.1295795440673828,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          16.417903900146484,
+          1.7999999523162842,
+          -22.03738021850586
+        ],
+        "boundsMaxYUpMetres": [
+          21.47014617919922,
+          7.60799503326416,
+          -18.718908309936523
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          16.417903900146484,
+          1.7999999523162842,
+          -22.03738021850586
+        ],
+        "boundsMaxYUpMetres": [
+          21.47014617919922,
+          7.593250751495361,
+          -18.718908309936523
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1588,
+        "sha256": "b29893890acd5830e3189d6699f09fb31e8374bb1fe6fe2cf2915dca75cbe274",
+        "minimum": [
+          0.4176486134529114,
+          0.3879748284816742,
+          0.16797897219657898
+        ],
+        "maximum": [
+          0.6387929916381836,
+          0.49316227436065674,
+          0.3964637815952301
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_22",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1428,
+        "sha256": "a45f89a16705f9a7cd6fe4c3fe79f5edce997a4b86dbe392fe7d57f487630599"
+      },
+      "geometryAfter": {
+        "triangles": 1428,
+        "sha256": "e3f377b5ca4eb34bcfce6a3d5a054fba0d67f05862f249b2b80f943d6581d262"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 716,
+        "changedUniqueGeometricPoints": 131,
+        "maximumEuclideanDeltaMetres": 0.147211170387562,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.00173187255859375,
+            -0.12769174575805664,
+            -0.0677032470703125
+          ],
+          [
+            0.02906036376953125,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          22.428434371948242,
+          1.7999999523162842,
+          -21.567426681518555
+        ],
+        "boundsMaxYUpMetres": [
+          26.26727867126465,
+          7.28743314743042,
+          -18.514415740966797
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          22.428434371948242,
+          1.7999999523162842,
+          -21.567426681518555
+        ],
+        "boundsMaxYUpMetres": [
+          26.26727867126465,
+          7.28743314743042,
+          -18.514415740966797
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1428,
+        "sha256": "2ebba99824737e2749f9248f640ee166b2db11204f0124aca9cc2e8fdfd4f0ee",
+        "minimum": [
+          0.4190569221973419,
+          0.3845160901546478,
+          0.168757826089859
+        ],
+        "maximum": [
+          0.6418967247009277,
+          0.494827538728714,
+          0.39780253171920776
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_23",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1236,
+        "sha256": "dcce7d23b04f28fc2ab2afbcfab0e629c2cbcde8895d7bc2198cc57791860cdc"
+      },
+      "geometryAfter": {
+        "triangles": 1236,
+        "sha256": "dcce7d23b04f28fc2ab2afbcfab0e629c2cbcde8895d7bc2198cc57791860cdc"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -7.023439884185791,
+          9.199999809265137,
+          -28.917861938476562
+        ],
+        "boundsMaxYUpMetres": [
+          -1.9046201705932617,
+          13.634554862976074,
+          -25.638959884643555
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -7.023439884185791,
+          9.199999809265137,
+          -28.917861938476562
+        ],
+        "boundsMaxYUpMetres": [
+          -1.9046201705932617,
+          13.634554862976074,
+          -25.638959884643555
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1236,
+        "sha256": "575499ef8d6c5bfea43bf5de2ceb5474e090a1304c2568da34b66781b08899b5",
+        "minimum": [
+          0.4140174090862274,
+          0.37770333886146545,
+          0.16890458762645721
+        ],
+        "maximum": [
+          0.6234086751937866,
+          0.49133166670799255,
+          0.3949921429157257
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Attached_Fracture_24",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1264,
+        "sha256": "91eaaa22db43ddb9ece7e03bcbcde8e18ef079d1aaaf84f9aab5f23648a5d691"
+      },
+      "geometryAfter": {
+        "triangles": 1264,
+        "sha256": "91eaaa22db43ddb9ece7e03bcbcde8e18ef079d1aaaf84f9aab5f23648a5d691"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          3.216698408126831,
+          9.199999809265137,
+          -28.808168411254883
+        ],
+        "boundsMaxYUpMetres": [
+          8.590164184570312,
+          13.635000228881836,
+          -25.34825897216797
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          3.216698408126831,
+          9.199999809265137,
+          -28.808168411254883
+        ],
+        "boundsMaxYUpMetres": [
+          8.590164184570312,
+          13.635000228881836,
+          -25.34825897216797
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1264,
+        "sha256": "a7811a69c59a548caef349b235eb249ec51cbb90a4ce791b411c78334e69724c",
+        "minimum": [
+          0.42511752247810364,
+          0.38396111130714417,
+          0.16824248433113098
+        ],
+        "maximum": [
+          0.6464501619338989,
+          0.49942833185195923,
+          0.40150120854377747
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Cannon_Asymmetric_High_Plateau",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 3220,
+        "sha256": "8c1c6f46074ba533e3c341e69af58e0d4485ac028180bd899dca3ff3d9ee764c"
+      },
+      "geometryAfter": {
+        "triangles": 3220,
+        "sha256": "3657d6f3f1361aa8a94ae066e4969bebd8122407953b16a07bdef17588034d58"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1612,
+        "changedUniqueGeometricPoints": 352,
+        "maximumEuclideanDeltaMetres": 0.9601185283824272,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.2720961570739746,
+            -0.9181041717529297,
+            -0.17865371704101562
+          ],
+          [
+            0,
+            0.6453628540039062,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -9.164700508117676,
+          8.699999809265137,
+          -35.12216567993164
+        ],
+        "boundsMaxYUpMetres": [
+          12.19029426574707,
+          18.914897918701172,
+          -25.76186752319336
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -9.164700508117676,
+          8.699999809265137,
+          -35.12216567993164
+        ],
+        "boundsMaxYUpMetres": [
+          12.19029426574707,
+          19.423599243164062,
+          -25.76186752319336
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 3220,
+        "sha256": "4326e8cb19e540012970439fb93b6bdc4ef5adc505e558f4935c76f81c77ac52",
+        "minimum": [
+          0.4134669899940491,
+          0.3766072690486908,
+          0.16708438098430634
+        ],
+        "maximum": [
+          0.643431544303894,
+          0.49838536977767944,
+          0.40085867047309875
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Cannon_Continuous_Middle_Terrace",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 5360,
+        "sha256": "9d506ee9ae9f855b90c9186915d82126c76714e47a7d6a40cd26942ee610371f"
+      },
+      "geometryAfter": {
+        "triangles": 5360,
+        "sha256": "b6f3c049ec4ad8f6b9d5d97e6c70038ecc3b2fbdaad86c74d7e400bbcec60b62"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 2682,
+        "changedUniqueGeometricPoints": 336,
+        "maximumEuclideanDeltaMetres": 0.7929748585610784,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.19659054279327393,
+            -0.7297229766845703,
+            -0.2527046203613281
+          ],
+          [
+            0,
+            0.01911640167236328,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -15.773399353027344,
+          3.0999999046325684,
+          -34.260765075683594
+        ],
+        "boundsMaxYUpMetres": [
+          19.181541442871094,
+          14.57824993133545,
+          -20.125415802001953
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -15.773399353027344,
+          3.0999999046325684,
+          -34.260765075683594
+        ],
+        "boundsMaxYUpMetres": [
+          19.181541442871094,
+          14.57824993133545,
+          -20.125415802001953
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 5360,
+        "sha256": "a54ac1063a1e1f4d2945e02368a719fc37c43b24939f023dcda5a3b2a1fc50fc",
+        "minimum": [
+          0.4127035140991211,
+          0.37666916847229004,
+          0.16622430086135864
+        ],
+        "maximum": [
+          0.6464501619338989,
+          0.49902617931365967,
+          0.40117791295051575
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 14838,
+        "sha256": "f8d49c13a234a5c9b62887b056ca3f79f41914e2f89a0343eea34fb8619ac444"
+      },
+      "geometryAfter": {
+        "triangles": 14838,
+        "sha256": "ed040f409d641620e593b9e751513aeb2e83b982a6423bc20caec8641b27b652"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 3840,
+        "sha256": "0d723790086145b5a796b9fb2c301a6e250eb9e0098fd1c5c83462687de59278"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 7421,
+        "changedUniqueGeometricPoints": 875,
+        "maximumEuclideanDeltaMetres": 0.6750000715255737,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.4977903366088867,
+            0
+          ],
+          [
+            0,
+            0.6750000715255737,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -34.44200134277344,
+          -10,
+          -36.441688537597656
+        ],
+        "boundsMaxYUpMetres": [
+          34.27458572387695,
+          4.882262706756592,
+          34.44200134277344
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -34.44200134277344,
+          -10,
+          -36.441688537597656
+        ],
+        "boundsMaxYUpMetres": [
+          34.27458572387695,
+          4.880761623382568,
+          34.44200134277344
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 14838,
+        "sha256": "a587d0269da99fe8904aa797973538edb7ceed04da41d5966b78e1f198adcb49",
+        "minimum": [
+          0.23248815536499023,
+          0.24627982079982758,
+          0.1316765993833542
+        ],
+        "maximum": [
+          0.6596590280532837,
+          0.495676189661026,
+          0.39229339361190796
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 2104,
+        "sha256": "18dec94c1a83ecb524bfeb4fc05ee604124d114d3df939bfa0eee3e375c0ed1f"
+      },
+      "geometryAfter": {
+        "triangles": 2104,
+        "sha256": "18dec94c1a83ecb524bfeb4fc05ee604124d114d3df939bfa0eee3e375c0ed1f"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 820,
+        "sha256": "a63bfc986ecb726345911890cddd21daae8844ff4ad2f1d2bbd2c6388d3c516b"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          22.125459671020508,
+          -10,
+          2.9996860027313232
+        ],
+        "boundsMaxYUpMetres": [
+          33.31528091430664,
+          4.031717300415039,
+          13.816564559936523
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          22.125459671020508,
+          -10,
+          2.9996860027313232
+        ],
+        "boundsMaxYUpMetres": [
+          33.31528091430664,
+          4.031717300415039,
+          13.816564559936523
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2104,
+        "sha256": "1f68c3e685cdeb3e77a9eb5c1fbaabc87bc65b17b2129b9a46448d03b5cb8eb7",
+        "minimum": [
+          0.3354649245738983,
+          0.30847346782684326,
+          0.16695556044578552
+        ],
+        "maximum": [
+          0.6438469290733337,
+          0.496798038482666,
+          0.3993866741657257
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Long_Lower_Shoulder",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2722,
+        "sha256": "175c1a5c19a70004fa3030a136c508f9bf16d403f486b8f5f52c3c2fbbaa6e99"
+      },
+      "geometryAfter": {
+        "triangles": 2722,
+        "sha256": "cb08a442efd46ea9fb08259fa7daf81ad9c9092e1d71e058d583e46e250d93b8"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1363,
+        "changedUniqueGeometricPoints": 287,
+        "maximumEuclideanDeltaMetres": 0.758679629827781,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.13160324096679688,
+            -0.7031726837158203,
+            -0.26849937438964844
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          10.827486991882324,
+          3.0999999046325684,
+          -29.229907989501953
+        ],
+        "boundsMaxYUpMetres": [
+          27.940448760986328,
+          10.8326416015625,
+          -16.468059539794922
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          10.827486991882324,
+          3.0999999046325684,
+          -29.229907989501953
+        ],
+        "boundsMaxYUpMetres": [
+          27.940448760986328,
+          10.777003288269043,
+          -16.468059539794922
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2722,
+        "sha256": "c94a179dbb335f9429896c959d0099eb9299b395a5ce2ff65bd2cbe386c96c72",
+        "minimum": [
+          0.4236125648021698,
+          0.380034476518631,
+          0.16589272022247314
+        ],
+        "maximum": [
+          0.6441351175308228,
+          0.4995025396347046,
+          0.40156087279319763
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 2480,
+        "sha256": "1ea304a2a9411d13c1852cd92e5109136de16fa7053eaece7df71c04c1a94385"
+      },
+      "geometryAfter": {
+        "triangles": 2480,
+        "sha256": "1ea304a2a9411d13c1852cd92e5109136de16fa7053eaece7df71c04c1a94385"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 682,
+        "sha256": "a174682721c641d160ac7337f14638581b231f6b7ab94bf4c05a9d3f9ae04d52"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          20.261749267578125,
+          -10,
+          -7.502499580383301
+        ],
+        "boundsMaxYUpMetres": [
+          25.97960662841797,
+          6.94867467880249,
+          1.3714606761932373
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          20.261749267578125,
+          -10,
+          -7.502499580383301
+        ],
+        "boundsMaxYUpMetres": [
+          25.97960662841797,
+          6.94867467880249,
+          1.3714606761932373
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2480,
+        "sha256": "2ecf9f7dd3fffef487e226f06b11394821e224cffe45dd8de1d112b1f695a6e1",
+        "minimum": [
+          0.33660513162612915,
+          0.30952197313308716,
+          0.19570143520832062
+        ],
+        "maximum": [
+          0.6090222001075745,
+          0.49546122550964355,
+          0.398311972618103
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_East_Waterfall_Channel_Rear_Bank",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 2760,
+        "sha256": "4a6a811148150f0f126f5ff0a3756df72c9e68ac327117541d0cde89d141079c"
+      },
+      "geometryAfter": {
+        "triangles": 2760,
+        "sha256": "4a6a811148150f0f126f5ff0a3756df72c9e68ac327117541d0cde89d141079c"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 707,
+        "sha256": "6ddbfe4d7d821832351c0e824d658df7870b1514fdcbce7c0a1f38839333077e"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          26.71196937561035,
+          -10,
+          -15.670125961303711
+        ],
+        "boundsMaxYUpMetres": [
+          32.07854461669922,
+          8.66866397857666,
+          -4.782352447509766
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          26.71196937561035,
+          -10,
+          -15.670125961303711
+        ],
+        "boundsMaxYUpMetres": [
+          32.07854461669922,
+          8.66866397857666,
+          -4.782352447509766
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2760,
+        "sha256": "6c71dba5a79199c809b74a0f7c2ec903d7bafe45fdb01a8e45a117ba620bc09c",
+        "minimum": [
+          0.23034000396728516,
+          0.24329908192157745,
+          0.16572794318199158
+        ],
+        "maximum": [
+          0.6372337341308594,
+          0.4978623688220978,
+          0.40024229884147644
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2050,
+        "sha256": "b08848d69da31dd31f0456035d6888b98792dcd2f0c8c9a41a82e117825e3f6d"
+      },
+      "geometryAfter": {
+        "triangles": 2050,
+        "sha256": "7dd657fe44ecccadbcf3eaca11ff5776ccd187b6c21e7638d439bdee8338bba2"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 775,
+        "sha256": "2769b149883769f1b78d9804b3349935303aaf7385b00a6a59375f61974787c2"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1027,
+        "changedUniqueGeometricPoints": 169,
+        "maximumEuclideanDeltaMetres": 0.4832558240730172,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.454958438873291,
+            -0.12437248229980469
+          ],
+          [
+            0.1396021842956543,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -5.672268867492676,
+          -10,
+          22.336732864379883
+        ],
+        "boundsMaxYUpMetres": [
+          3.763570547103882,
+          5.610897064208984,
+          33.835975646972656
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -5.672268867492676,
+          -10,
+          22.336732864379883
+        ],
+        "boundsMaxYUpMetres": [
+          3.763570547103882,
+          5.443751335144043,
+          33.835975646972656
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2050,
+        "sha256": "4b167da16ad4a9fe92f038100aab83f74909c4fdd73e948130c451ac4b2ca8e2",
+        "minimum": [
+          0.3345993459224701,
+          0.30767756700515747,
+          0.1672377735376358
+        ],
+        "maximum": [
+          0.643764078617096,
+          0.49840429425239563,
+          0.40067797899246216
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_East_Short_Finger",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1470,
+        "sha256": "cba18bfbf56f045db788fe8cff9a13ceed1c07132f392321beed5ed5f0d2c0a6"
+      },
+      "geometryAfter": {
+        "triangles": 1470,
+        "sha256": "4359f1f37cf4ed0d61025595d2063dd0e9ece111ead64140db77d7d23f4f90e9"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 640,
+        "sha256": "8dcacd4a3614b701c53cbcd966f0a4ecaef715deca347ad2a2f423fc824d99f6"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 737,
+        "changedUniqueGeometricPoints": 115,
+        "maximumEuclideanDeltaMetres": 0.3803364221077342,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.041900634765625,
+            -0.36363816261291504,
+            -0.19243812561035156
+          ],
+          [
+            0.038967132568359375,
+            0.05062150955200195,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          8.689008712768555,
+          -10,
+          22.206695556640625
+        ],
+        "boundsMaxYUpMetres": [
+          16.2558650970459,
+          3.7401697635650635,
+          29.901519775390625
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          8.689008712768555,
+          -10,
+          22.206695556640625
+        ],
+        "boundsMaxYUpMetres": [
+          16.2558650970459,
+          3.6739861965179443,
+          29.901519775390625
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1470,
+        "sha256": "38cfbecc54a579b96168d6f7dd607223abf7233987447dc851219d63324a4911",
+        "minimum": [
+          0.28317853808403015,
+          0.2875730097293854,
+          0.16772699356079102
+        ],
+        "maximum": [
+          0.6461929082870483,
+          0.4968346953392029,
+          0.39941611886024475
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Left_Principal_Finger",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2022,
+        "sha256": "43eb2c6242f19809e14a9063b6ab8cd66f58c31c7c9495e0051a33f85b3ebfac"
+      },
+      "geometryAfter": {
+        "triangles": 2022,
+        "sha256": "0c3a38c5e74f6e249eb288b12085656e94c65a597585c43ca078b75f49de7dab"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 715,
+        "sha256": "2df7991e51ef50c235e8de079abb45f7c010b7cb89d7c73350796cd6450a7cb6"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1013,
+        "changedUniqueGeometricPoints": 165,
+        "maximumEuclideanDeltaMetres": 0.3928074284183039,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.1842060089111328,
+            -0.34277844429016113,
+            0
+          ],
+          [
+            0,
+            0.23664569854736328,
+            0.1411304473876953
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -20.236713409423828,
+          -10,
+          20.5072021484375
+        ],
+        "boundsMaxYUpMetres": [
+          -12.003110885620117,
+          5.263510227203369,
+          31.204055786132812
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -20.236713409423828,
+          -10,
+          20.5072021484375
+        ],
+        "boundsMaxYUpMetres": [
+          -12.003110885620117,
+          5.3793864250183105,
+          31.204055786132812
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2022,
+        "sha256": "e6c0db396ff0d379549d4d25dfead2d931bd464f7381a4c6e0ffe7a5cf2a323b",
+        "minimum": [
+          0.2285163849592209,
+          0.24147360026836395,
+          0.16709892451763153
+        ],
+        "maximum": [
+          0.6399424076080322,
+          0.49876704812049866,
+          0.40096956491470337
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Front_Low_Connecting_Ridge_Ledge",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 2328,
+        "sha256": "9c4e8f40e3a5044654e5eb94ef2bc5071c05689e7eab5108bf8b5c8f33b21f7d"
+      },
+      "geometryAfter": {
+        "triangles": 2328,
+        "sha256": "c488d608d4d0b0232b8f2b2fe99efd64fd58fbfccf229a28a3998458c719ab72"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1166,
+        "changedUniqueGeometricPoints": 196,
+        "maximumEuclideanDeltaMetres": 0.14795528510508507,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.0017147064208984375,
+            -0.13654565811157227,
+            -0.05888175964355469
+          ],
+          [
+            0.0033707618713378906,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -19.540786743164062,
+          2.9000000953674316,
+          -20.689659118652344
+        ],
+        "boundsMaxYUpMetres": [
+          12.43767261505127,
+          6.23652982711792,
+          -16.61969757080078
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -19.540786743164062,
+          2.9000000953674316,
+          -20.689659118652344
+        ],
+        "boundsMaxYUpMetres": [
+          12.43767261505127,
+          6.23652982711792,
+          -16.61969757080078
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2328,
+        "sha256": "0d7828cef48303bac30d46f48c34831f8b95539c2c0975fde4952375d087b8f4",
+        "minimum": [
+          0.4235125780105591,
+          0.3831048905849457,
+          0.16822683811187744
+        ],
+        "maximum": [
+          0.6438260674476624,
+          0.49948734045028687,
+          0.4015486538410187
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Rear_Connected_Low_Saddle",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 11330,
+        "sha256": "dc5a9699fc6896b503d3beee9d28eb602f9aa3fcb4fa6b5e6ef05651168b384d"
+      },
+      "geometryAfter": {
+        "triangles": 11330,
+        "sha256": "d4c074122eb1143232e3843a113c2b29da803d6f3a3b9f71629f482614069833"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 2634,
+        "sha256": "299e8206e38b0daf5793a32e0e5674994027705e0f8d64c777f2795f16b33a18"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 5667,
+        "changedUniqueGeometricPoints": 672,
+        "maximumEuclideanDeltaMetres": 0.8326062116309455,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.006556510925292969,
+            -0.8172736167907715,
+            -0.1754016876220703
+          ],
+          [
+            0.027977943420410156,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -29.437829971313477,
+          -10,
+          -33.405609130859375
+        ],
+        "boundsMaxYUpMetres": [
+          29.467519760131836,
+          8.364511489868164,
+          -15.61022663116455
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -29.437829971313477,
+          -10,
+          -33.405609130859375
+        ],
+        "boundsMaxYUpMetres": [
+          29.467519760131836,
+          8.364511489868164,
+          -15.61022663116455
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 11330,
+        "sha256": "008bbeeb2876bb7466bf4a04a8ac1e785675d7e347d0cff7161c79740419a0fc",
+        "minimum": [
+          0.22840189933776855,
+          0.2419157326221466,
+          0.16702446341514587
+        ],
+        "maximum": [
+          0.646789014339447,
+          0.4997707009315491,
+          0.40177643299102783
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Southeast_Low_Access_Headland",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 2096,
+        "sha256": "034b8b47da3337f7445b966654ed2f5d1770b2dd0018275d8e11a23cdbe7ce0d"
+      },
+      "geometryAfter": {
+        "triangles": 2096,
+        "sha256": "034b8b47da3337f7445b966654ed2f5d1770b2dd0018275d8e11a23cdbe7ce0d"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 865,
+        "sha256": "be2a09a7fd1f2c0549021c662466db4cb00e5388c3a09837338dd0975bcb7d4a"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          19.919384002685547,
+          -10,
+          16.653423309326172
+        ],
+        "boundsMaxYUpMetres": [
+          31.24107551574707,
+          2.858691692352295,
+          28.390478134155273
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          19.919384002685547,
+          -10,
+          16.653423309326172
+        ],
+        "boundsMaxYUpMetres": [
+          31.24107551574707,
+          2.858691692352295,
+          28.390478134155273
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 2096,
+        "sha256": "87e1eb8e781f3759babd9d949905b36f1d4ac085d65a174b5359985c98d2b3cb",
+        "minimum": [
+          0.33530980348587036,
+          0.30833086371421814,
+          0.1714472472667694
+        ],
+        "maximum": [
+          0.6464220285415649,
+          0.49939993023872375,
+          0.4014783799648285
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Front_Inner_Cleft_Buttress",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 3392,
+        "sha256": "ee5fdacf6555e633a58aafa9a8295f192fb790abcc684449ea7b09b8cd46bb96"
+      },
+      "geometryAfter": {
+        "triangles": 3392,
+        "sha256": "4f55d44404c2629de05c23159b39128279981f1db759768016e1d66a73afb06e"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 957,
+        "sha256": "c470fb77deb5339ce50f79dd454898a7cfc8f0b68b8d1a7be790a6341e8eadeb"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1698,
+        "changedUniqueGeometricPoints": 247,
+        "maximumEuclideanDeltaMetres": 0.701468775061621,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.6766438484191895,
+            -0.1421070098876953
+          ],
+          [
+            0.14742088317871094,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -26.886856079101562,
+          -10,
+          7.322357654571533
+        ],
+        "boundsMaxYUpMetres": [
+          -18.789451599121094,
+          8.690349578857422,
+          24.791410446166992
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -26.886856079101562,
+          -10,
+          7.322357654571533
+        ],
+        "boundsMaxYUpMetres": [
+          -18.789451599121094,
+          8.474411010742188,
+          24.791410446166992
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 3392,
+        "sha256": "8c14a72bbb8e9569813163f4d7d4ff0f1e70acb6b03d5b187d5f11ee99e9ef2b",
+        "minimum": [
+          0.22972820699214935,
+          0.2431264966726303,
+          0.16735820472240448
+        ],
+        "maximum": [
+          0.6457192897796631,
+          0.498742014169693,
+          0.40094947814941406
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Front_Outer_Cleft_Buttress",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 4272,
+        "sha256": "0a1537728b6af7568709acc9a54ba98e6e21811ea6e9eeb2b6df8f40f3708448"
+      },
+      "geometryAfter": {
+        "triangles": 4272,
+        "sha256": "7ea1a8c2da61d84517c772268b865131bca67ad4dca70f60b54a6290a549ff3d"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 1129,
+        "sha256": "138473d133539aef26fee9157814a12fdbe9a2e2e02af192c9b21ba82fd5bb86"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 2138,
+        "changedUniqueGeometricPoints": 246,
+        "maximumEuclideanDeltaMetres": 0.40749631746176773,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.20011329650878906,
+            -0.3322744369506836,
+            0
+          ],
+          [
+            0,
+            0.361846923828125,
+            0.07728815078735352
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -33.841312408447266,
+          -10,
+          4.938056468963623
+        ],
+        "boundsMaxYUpMetres": [
+          -27.11634635925293,
+          11.420502662658691,
+          25.540016174316406
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -33.841312408447266,
+          -10,
+          4.938056468963623
+        ],
+        "boundsMaxYUpMetres": [
+          -27.11634635925293,
+          11.383950233459473,
+          25.540016174316406
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 4272,
+        "sha256": "072d38be850ec2ffdb22b32502cd6a1d330fb824696695aad0b79f5e852dfa32",
+        "minimum": [
+          0.22876694798469543,
+          0.24233786761760712,
+          0.16621607542037964
+        ],
+        "maximum": [
+          0.6445868015289307,
+          0.49874353408813477,
+          0.40095067024230957
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Low_Shelf_Before_Cleft",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 3020,
+        "sha256": "d961047c621e322510659ffe02c1583b9c8b1cdf3f03d338300ef9d74c88679b"
+      },
+      "geometryAfter": {
+        "triangles": 3020,
+        "sha256": "d961047c621e322510659ffe02c1583b9c8b1cdf3f03d338300ef9d74c88679b"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 795,
+        "sha256": "15117d72e6849c893e52c15b7f3ec7fad4eaadff43a95d0273460d9ad099819d"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -30.966081619262695,
+          -4.5,
+          -3.692453384399414
+        ],
+        "boundsMaxYUpMetres": [
+          -19.942625045776367,
+          6.997818946838379,
+          10.34012508392334
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -30.966081619262695,
+          -4.5,
+          -3.692453384399414
+        ],
+        "boundsMaxYUpMetres": [
+          -19.942625045776367,
+          6.997818946838379,
+          10.34012508392334
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 3020,
+        "sha256": "354edc3872c7f3cc4f4aa1cd0fcfc77fdedbf4f206df5e1695b6585ecdd7baff",
+        "minimum": [
+          0.33408504724502563,
+          0.30720463395118713,
+          0.16820168495178223
+        ],
+        "maximum": [
+          0.6457192897796631,
+          0.49868983030319214,
+          0.4009075164794922
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_West_Toe_Grounded_Not_Hanging",
+      "geometryChangeAllowed": false,
+      "geometryExact": true,
+      "geometryBefore": {
+        "triangles": 1516,
+        "sha256": "5d55c643598a2ddd8f6c38ae945b3e57117bbe636fed93efef15d10830409e1d"
+      },
+      "geometryAfter": {
+        "triangles": 1516,
+        "sha256": "5d55c643598a2ddd8f6c38ae945b3e57117bbe636fed93efef15d10830409e1d"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 626,
+        "sha256": "84a871bce6048076166293c6cdb76ed4e5cb0a61aa3cd906eae06018bd2ac007"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Exact oriented geometry multiset",
+        "changedUniqueGeometricPoints": 0,
+        "maximumEuclideanDeltaMetres": 0
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -34.05821990966797,
+          -10,
+          12.257230758666992
+        ],
+        "boundsMaxYUpMetres": [
+          -29.15045928955078,
+          2.388075351715088,
+          24.248371124267578
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -34.05821990966797,
+          -10,
+          12.257230758666992
+        ],
+        "boundsMaxYUpMetres": [
+          -29.15045928955078,
+          2.388075351715088,
+          24.248371124267578
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1516,
+        "sha256": "1bc4457765970df29228cf3af375699136d7bc8b9c0c454774adc206d61f70c8",
+        "minimum": [
+          0.335103303194046,
+          0.3081401586532593,
+          0.17021355032920837
+        ],
+        "maximum": [
+          0.6413888335227966,
+          0.4943143427371979,
+          0.3973899483680725
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Western_Broad_Second_Terrace",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 3846,
+        "sha256": "058b9fb52c3d6198efdc3aca40ed986f1d253dada763a637804cb37cd411b1e7"
+      },
+      "geometryAfter": {
+        "triangles": 3846,
+        "sha256": "7d194d646c92432643cdcaeda2d2091728526ac69569c8eab4745f8241e86c39"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 1925,
+        "changedUniqueGeometricPoints": 216,
+        "maximumEuclideanDeltaMetres": 0.6909481312182447,
+        "signedXYZDeltaRangeMetres": [
+          [
+            0,
+            -0.644587516784668,
+            -0.24520492553710938
+          ],
+          [
+            0.13134384155273438,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -29.340656280517578,
+          2.799999952316284,
+          -30.19256591796875
+        ],
+        "boundsMaxYUpMetres": [
+          -6.7172651290893555,
+          12.57328987121582,
+          -16.987306594848633
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -29.340656280517578,
+          2.799999952316284,
+          -30.19256591796875
+        ],
+        "boundsMaxYUpMetres": [
+          -6.7172651290893555,
+          12.57328987121582,
+          -16.987306594848633
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 3846,
+        "sha256": "4933e150a7cbb399c2a239889fbaaa941ad8728479b0c893023f704f246e40b1",
+        "minimum": [
+          0.42055320739746094,
+          0.37928375601768494,
+          0.16620545089244843
+        ],
+        "maximum": [
+          0.6464675664901733,
+          0.4997707009315491,
+          0.40177643299102783
+        ],
+        "varies": true
+      }
+    },
+    {
+      "name": "ProjectsIsland_V2_Western_High_Shoulder_Connected_To_Cannon",
+      "geometryChangeAllowed": true,
+      "geometryExact": false,
+      "geometryBefore": {
+        "triangles": 1886,
+        "sha256": "07f125feb4860829658ecbf04f526011a54c3c586a858e88371aededcb86229f"
+      },
+      "geometryAfter": {
+        "triangles": 1886,
+        "sha256": "c540aaba8e14baf9ebf6c63714dc5edcd1c664b2648b23afb09c201cc29781f6"
+      },
+      "submergedExact": true,
+      "submerged": {
+        "triangles": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "displacement": {
+        "available": true,
+        "method": "Actual ordered expanded-corner bijection after exact position welding; not source vertex IDs, accessor-byte or general graph-isomorphism proof",
+        "weldedGeometricPoints": 945,
+        "changedUniqueGeometricPoints": 92,
+        "maximumEuclideanDeltaMetres": 0.48311033701529554,
+        "signedXYZDeltaRangeMetres": [
+          [
+            -0.0011224746704101562,
+            -0.4729042053222656,
+            -0.09857177734375
+          ],
+          [
+            0.012004852294921875,
+            0,
+            0
+          ]
+        ]
+      },
+      "boundsBefore": {
+        "boundsMinYUpMetres": [
+          -22.094053268432617,
+          7.099999904632568,
+          -29.589664459228516
+        ],
+        "boundsMaxYUpMetres": [
+          -9.072528839111328,
+          13.598749160766602,
+          -21.898029327392578
+        ]
+      },
+      "boundsAfter": {
+        "boundsMinYUpMetres": [
+          -22.094053268432617,
+          7.099999904632568,
+          -29.589664459228516
+        ],
+        "boundsMaxYUpMetres": [
+          -9.072528839111328,
+          13.566962242126465,
+          -21.898029327392578
+        ]
+      },
+      "indexedRGBChanged": true,
+      "colorAfter": {
+        "count": 1886,
+        "sha256": "9cefc11ca9762510f47e3f22fb5bbb6333aa4a9d5cce808f1906b0e8b2123117",
+        "minimum": [
+          0.41548898816108704,
+          0.37463024258613586,
+          0.16593307256698608
+        ],
+        "maximum": [
+          0.6464675664901733,
+          0.49944591522216797,
+          0.4015153646469116
+        ],
+        "varies": true
+      }
+    }
+  ],
+  "body": {
+    "seaRingBefore": {
+      "points": 256,
+      "sha256": "361395402a2870ef914273485d0ba8fe09d7b9e226d5c1c33ffa8b05b4efc275"
+    },
+    "seaRingAfter": {
+      "points": 256,
+      "sha256": "361395402a2870ef914273485d0ba8fe09d7b9e226d5c1c33ffa8b05b4efc275"
+    },
+    "seaRingExact": true,
+    "apronFacesBefore": {
+      "triangles": 2356,
+      "sha256": "f7ce8797f94e2631027b59fc40a44104d5e0da9e5f60e5acb2d30fb4ad4439b3"
+    },
+    "apronFacesAfter": {
+      "triangles": 2356,
+      "sha256": "f7ce8797f94e2631027b59fc40a44104d5e0da9e5f60e5acb2d30fb4ad4439b3"
+    }
+  },
+  "prospectiveApproaches": [
+    {
+      "name": "Welcome→Projects prospective arrival",
+      "a": [
+        4.6834,
+        26.3442
+      ],
+      "b": [
+        0,
+        15
+      ],
+      "radius": 2.75,
+      "feather": 1.15,
+      "before": {
+        "triangles": 473,
+        "sha256": "d432de1e8cd9cd6e6021f7ac7ed3ba93e7f93c703853f15b5d20bf99c7f90b87"
+      },
+      "after": {
+        "triangles": 473,
+        "sha256": "d432de1e8cd9cd6e6021f7ac7ed3ba93e7f93c703853f15b5d20bf99c7f90b87"
+      },
+      "exact": true,
+      "scope": "BODY historical subset plus independently selected full faces of all44 owners; radius+1.15m feather",
+      "allOwnerSelectedFaceTotals": {
+        "before": 1049,
+        "after": 1049
+      },
+      "ownerFaces": [
+        {
+          "name": "ProjectsIsland_V2_Attached_Fracture_07",
+          "before": {
+            "triangles": 40,
+            "sha256": "47353c5b3028b18e89a2fa534276c72955b2834d4f2b8e21994d8da97d4e85e4"
+          },
+          "after": {
+            "triangles": 40,
+            "sha256": "47353c5b3028b18e89a2fa534276c72955b2834d4f2b8e21994d8da97d4e85e4"
+          },
+          "exact": true
+        },
+        {
+          "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+          "before": {
+            "triangles": 473,
+            "sha256": "d432de1e8cd9cd6e6021f7ac7ed3ba93e7f93c703853f15b5d20bf99c7f90b87"
+          },
+          "after": {
+            "triangles": 473,
+            "sha256": "d432de1e8cd9cd6e6021f7ac7ed3ba93e7f93c703853f15b5d20bf99c7f90b87"
+          },
+          "exact": true
+        },
+        {
+          "name": "ProjectsIsland_V2_Front_Central_Long_Finger",
+          "before": {
+            "triangles": 536,
+            "sha256": "be970e32d30b821b52777079772cf6c9765c515fcf88bfed6d982cacfc83959d"
+          },
+          "after": {
+            "triangles": 536,
+            "sha256": "be970e32d30b821b52777079772cf6c9765c515fcf88bfed6d982cacfc83959d"
+          },
+          "exact": true
+        }
+      ]
+    },
+    {
+      "name": "Projects→Experience prospective arrival",
+      "a": [
+        29.0315,
+        1.296
+      ],
+      "b": [
+        0,
+        15
+      ],
+      "radius": 1.75,
+      "feather": 1.15,
+      "before": {
+        "triangles": 803,
+        "sha256": "bd478e27cc9e83a19f3a78adbb89aa453da339169030804af1dda57820c080b4"
+      },
+      "after": {
+        "triangles": 803,
+        "sha256": "bd478e27cc9e83a19f3a78adbb89aa453da339169030804af1dda57820c080b4"
+      },
+      "exact": true,
+      "scope": "BODY historical subset plus independently selected full faces of all44 owners; radius+1.15m feather",
+      "allOwnerSelectedFaceTotals": {
+        "before": 1519,
+        "after": 1519
+      },
+      "ownerFaces": [
+        {
+          "name": "ProjectsIsland_V2_Continuous_Connected_Coast_And_Bedrock",
+          "before": {
+            "triangles": 803,
+            "sha256": "bd478e27cc9e83a19f3a78adbb89aa453da339169030804af1dda57820c080b4"
+          },
+          "after": {
+            "triangles": 803,
+            "sha256": "bd478e27cc9e83a19f3a78adbb89aa453da339169030804af1dda57820c080b4"
+          },
+          "exact": true
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Ledge_North_Of_Access",
+          "before": {
+            "triangles": 413,
+            "sha256": "a1c20bafa5beea490d273f3c26c078df4d57824249ec3d41b95ef5cbbdece9f2"
+          },
+          "after": {
+            "triangles": 413,
+            "sha256": "a1c20bafa5beea490d273f3c26c078df4d57824249ec3d41b95ef5cbbdece9f2"
+          },
+          "exact": true
+        },
+        {
+          "name": "ProjectsIsland_V2_East_Waterfall_Channel_Front_Bank",
+          "before": {
+            "triangles": 303,
+            "sha256": "2fa70517b1b10c955344b78ec1cf5e4760b14783cff3d3e46896bdd4007e1405"
+          },
+          "after": {
+            "triangles": 303,
+            "sha256": "2fa70517b1b10c955344b78ec1cf5e4760b14783cff3d3e46896bdd4007e1405"
+          },
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "bodyApron": {
+    "before": {
+      "triangles": 10486,
+      "clippedTriangles": 2356,
+      "summedProjectedAreaSquareMetres": 832.0000000000008,
+      "summedPlanarAreaSquareMetres": 832.0000000000008,
+      "summedInclinedAreaSquareMetres": 0,
+      "minimumY": 4.800000190734863,
+      "maximumY": 4.800000190734863,
+      "proposedTopY": 4.8,
+      "tolerance": 0.00001,
+      "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+    },
+    "after": {
+      "triangles": 10486,
+      "clippedTriangles": 2356,
+      "summedProjectedAreaSquareMetres": 832.0000000000008,
+      "summedPlanarAreaSquareMetres": 832.0000000000008,
+      "summedInclinedAreaSquareMetres": 0,
+      "minimumY": 4.800000190734863,
+      "maximumY": 4.800000190734863,
+      "proposedTopY": 4.8,
+      "tolerance": 0.00001,
+      "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+    }
+  },
+  "nonBodyApron": {
+    "clippedTriangles": 0,
+    "summedProjectedOverlap": 0
+  },
+  "portablePBR": {
+    "materials": {
+      "exact": true,
+      "rawSHA256": "b46ad9ddf78025b5509f63a3031bcc1da096e49cab225f36d81031c0362e89d4"
+    },
+    "textures": {
+      "exact": true,
+      "rawSHA256": "4834fef112abc4c5582d7807fe4b564ee8155f4a69a6ef995c36386f31bc66bf"
+    },
+    "samplers": {
+      "exact": true,
+      "rawSHA256": "0f3273e4b92d4e98e3ee78749a96168498f4fee421d1a0c06c987583d57064e5"
+    }
+  },
+  "actualPortablePNGs": [
+    {
+      "name": "ProjectsIsland_V2_Limestone_WornMicroNormal_512",
+      "bytes": 293590,
+      "sha256": "11e7d290e9302e02c0f37ec446a6ac263d54b91a263877eb6081c4db4285a8d9",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "ProjectsIsland_V2_Limestone_MetallicRoughness_1024",
+      "bytes": 179855,
+      "sha256": "0f19fd39f048c3349f7ae5f63fd8d467807ed7f80c80c5fcee686db1751c574b",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "ProjectsIsland_V2_HoneyEarth_WornMicroNormal_512",
+      "bytes": 270827,
+      "sha256": "2167248438b2f71a7b9aacc5bf1ae21448ee87c3f4a6f0badcc2b651031c5144",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "ProjectsIsland_V2_HoneyEarth_MetallicRoughness_1024",
+      "bytes": 209528,
+      "sha256": "69a0bab162c6a4b69872f0171788ffe7b687f0a40496bc21ccad9727aae56fb2",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "limits": {
+    "nativeSourceTopologyAssertionRequired": true,
+    "sourceManifoldCertified": false,
+    "solidUnionOrContactCertified": false,
+    "runtimeMounted": false,
+    "overUnchangedEightMiBRuntimeGuard": true,
+    "artOrGameplayApproved": false
+  },
+  "independentVerification": {
+    "helper": "scripts/lib/projects-v2-revision-comparison.mjs",
+    "command": "node scripts/lib/projects-v2-revision-comparison.mjs assets/archipelago/island-reconstruction-v2/projects-island-v2-r5.glb assets/archipelago/island-reconstruction-v2/projects-island-v2-r6.glb",
+    "candidateExpectedSHA256Verified": true,
+    "candidateExpectedBytesVerified": 15159428,
+    "expectedChangedOwnersVerified": 22,
+    "expectedFrozenOwnersVerified": 22,
+    "filesWritten": [
+      "assets/archipelago/island-reconstruction-v2/binary-comparison-r6.json"
+    ],
+    "providersOrBrowserUsed": false
+  }
+}

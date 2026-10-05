@@ -8,6 +8,10 @@ node_modules
 
 # Cloudflare / Wrangler build artifacts
 .wrangler/
+.astro/
+/dist/
+.dev.vars
+.dev.vars.*
 
 # Editor configs (optional — remove if you want to track these)
 .cursor/
@@ -117,3 +121,4 @@ sketch
 .superpowers/
 
 .playwright-cli/
+/output/playwright/

@@ -1,0 +1,29 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import KineticHeading from "@/components/kinetic-heading";
+import SpotlightSection from "@/components/system/spotlight-section";
+import { agentCatalog, homepageLinkHeader } from "@/lib/agent-discovery";
+---
+
+<SiteLayout lang="en" title="API & Agent Resources — Marco D'Antonio">
+  <main class="mx-auto max-w-5xl px-6 py-24">
+    <a href="/" class="text-accent underline">Marco D’Antonio</a>
+    <SpotlightSection className="py-10">
+      <KineticHeading text="API & Agent Resources" />
+      <p class="mt-6 text-copy-muted">Public portfolio, CV, and agent-facing resources.</p>
+      <pre class="my-8 overflow-auto rounded-xl border border-line-subtle p-5"><code>{homepageLinkHeader}</code></pre>
+      <a href="/.well-known/api-catalog" class="text-accent underline">Machine-readable API catalog</a>
+    </SpotlightSection>
+    <ul class="space-y-4">
+      {agentCatalog.endpoints.map((endpoint) => (
+        <li class="rounded-xl border border-line-subtle p-5">
+          <p class="font-mono text-sm">{endpoint.method} {endpoint.path}</p>
+          <p class="mt-2 text-copy-muted">{endpoint.description}</p>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-10 text-sm text-copy-muted">
+      <a href="/security.txt" class="underline">security.txt</a> · <a href="/robots.txt" class="underline">robots.txt</a> · <a href="/sitemap.xml" class="underline">sitemap.xml</a>
+    </p>
+  </main>
+</SiteLayout>

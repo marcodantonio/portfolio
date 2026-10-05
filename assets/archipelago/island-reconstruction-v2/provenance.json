@@ -1,0 +1,1021 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "status": "DIRECTIONAL_GUIDE_AND_REAL_NATIVE_R8; partial connected rear ridge, actual portable/catalog/lint/build/scoped Asset Lab and HTTP-dist SHA PASS; art/gameplay/device/FPS unapproved",
+  "updatedUtcDate": "2026-10-05",
+  "currentReceiptKey": "currentR8Receipt",
+  "historicalReceiptKeysRetained": ["currentR3Receipt", "currentR4Receipt", "currentR5Receipt", "currentR6Receipt", "currentR7Receipt"],
+  "workflow": "Image-first bare terrain, then explicit lighthouse-style Higgsfield Scene Builder native Blender authoring; not automatic image-to-mesh",
+  "humanScope": "Isola senza edifici, poi elementi separati",
+  "sourceReferences": [
+    {
+      "role": "Original digital workshop terrain/art",
+      "mediaId": "2d9b109f-ced7-4a4d-b387-5858444ca7ff",
+      "file": "/Users/marcodantonio/Downloads/ChatGPT Image Sep 27, 2026 at 01_34_48 AM-4.png"
+    },
+    {
+      "role": "Original whole-map morphology/style",
+      "mediaId": "273d7fcf-d78c-4464-89d9-f531b017652b",
+      "file": "/Users/marcodantonio/Downloads/ChatGPT Image Sep 27, 2026 at 01_34_46 AM-1.png"
+    }
+  ],
+  "job": {
+    "id": "73c4ceed-f3c8-46e6-90c2-0c9d9eb24830",
+    "status": "completed",
+    "file": "projects-turnaround-v2.png",
+    "width": 2880,
+    "height": 2880,
+    "bytes": 9121087,
+    "sha256": "58460547d846476260db09949f612d880d66b57f2c9b701f345f3abe7fa045ef",
+    "quotedCredits": 7,
+    "params": {
+      "model": "gpt_image_2_5",
+      "quality": "xhigh",
+      "resolution": "4k",
+      "aspect_ratio": "1:1",
+      "count": 1,
+      "medias": [
+        {
+          "role": "image",
+          "value": "2d9b109f-ced7-4a4d-b387-5858444ca7ff"
+        },
+        {
+          "role": "image",
+          "value": "273d7fcf-d78c-4464-89d9-f531b017652b"
+        }
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: a game environment MODELLING TURNAROUND SHEET, not a landscape illustration.\nReference image 1: the user's ORIGINAL digital workshop island. Extract its warm sculpted limestone terrain craftsmanship, large fractured mineral volumes, honey-coloured earth and irregular tropical vegetation margins. The wooden workshop and props will be built separately.\nReference image 2: the original whole-archipelago reference, for the natural inhabited coastal geography and polished cartoon game art.\n\nCreate ONE rigorously coherent three-view modelling sheet of the SAME bare Projects island, on clean white, isolated and uncropped. This is a technical orthographic model sheet like a vehicle front/side/top drawing, NOT three aerial concept illustrations. Every terrain landmark has exactly the same position and shape in all three panels.\n\nLAYOUT:\nUpper-left: TRUE TOP PLAN, optical axis vertical. Rear/north at top, front/south at bottom, east at right. No vertical cliff faces visible in this panel.\nLower-left directly aligned under top: TRUE FRONT ELEVATION, optical axis horizontal with ZERO downward pitch, parallel projection. It shares exactly the top panel's X extents. Flat ground surfaces are edge-on, not wide visible lawns.\nLower-right: TRUE RIGHT ELEVATION, optical axis horizontal with ZERO downward pitch, parallel projection. Front/south at left, rear/north at right. No wide visible top clearing.\nUse consistent metric scale; front and right share a horizontal sea datum. Only small panel captions \"TOP\", \"FRONT\", \"RIGHT\" outside each object, no decorative UI. Blank upper-right space is acceptable. Crisp large detailed surfaces, high-resolution professional modeller reference sheet.\n\nSUBJECT — FOLLOW THE ORIGINAL WORKSHOP TERRAIN, NOT A NEW THREE-MESA ISLAND:\nOne connected, asymmetrical, terraced limestone mass, about60m wide by56m deep. A central wide IRREGULAR HONEY-EARTH workshop apron32x26m is genuinely horizontal at4.8m above implied sea level. It is not a domed hill or a green lawn. Around it are these SAME seven landmarks across views:\n1) An elongated honey-earth apron with small mineral outcrops and generous future building/walking space.\n2) ONE offset rear cannon ridge: broad upper terrace integrated with two staggered rock shoulders, not a free-standing central mountain or cylinder.\n3) A substantial front-left inclined limestone buttress with a deep vertical blue-grey cleft and worn rounded corners.\n4) An articulated front face: two or three broad interlocking stone spurs separated by deep recesses and a few small ledges. Uneven non-circular silhouette, not an unbroken retaining wall.\n5) A narrower lower front-right headland with a legible future approach to the east bridge, no actual bridge yet.\n6) A smaller rear-right saddle linked continuously to the cannon ridge by a soil/stone terrace, not a third isolated monolith.\n7) A distinctive small right-flank rock incision below the cannon zone, reserved for a future waterfall; terrain channel only, no water/effect.\nMaintain a low sea-relative inhabited level and natural sandy descent at two coastal pockets; the tall original reference cliffs are adapted downward, not turned into a floating plateau.\nRock covers steep escarpments/spurs/clefts, compact honey earth covers the central apron and connections; olive-green grass/moss is in interrupted pockets on ledges/rims/cracks, no continuous grass cap. Sand is limited to low coves, NOT an even beige ring.\nLarge sculpted interlocking limestone planes with oblique fractures, chamfered weathered corners and selected dark grey-blue clefts, visibly different stratum widths. Detailed enough to reproduce with actual rock geometry; not small random noise on primitives.\nThe submerged solid body continues broadly10m below a subtle common sea datum in FRONT/RIGHT, never an exposed taper/cone or hanging rock stem. Exact TOP must hide submerged sides.\n\nSTYLE:\nPremium polished tropical cartoon game environment, smooth non-pixelated material detail and credible volume, original art. Neutral soft studio light with readable geology, not dramatic baked light/shadow. The shape/material craftsmanship must match the user's image, not a simple low-poly game blockout.\n\nEXCLUDE:\nNo buildings, timber decks, bridges, palms, trees, shrubs, flowers, waterfalls, boats, people, cannons, signs, lamps, sky, ocean plane or other islands; these will be separate elements. No isometric/three-quarter tilt, no aerial elevations, no smooth green blob, round disc, disconnected stacked pillars, voxel/pixel style, plastic clay toy, thin terrain card, copied labels from reference, logos or watermark."
+    }
+  },
+  "billing": {
+    "beforeImage": 65.25,
+    "afterImage": 58.25,
+    "observedImageDebit": 7,
+    "trialCounter": 100,
+    "trialEndsAt": "2026-10-04T11:33:52Z",
+    "debitedBucketProven": false,
+    "freshRecheckUtc": "2026-10-04T18:43:26Z",
+    "freshCredits": 0,
+    "freshPlan": "plus",
+    "freshTrialStatus": "past_due",
+    "freshUnlimitedAvailable": false,
+    "balanceDifferenceAttributedToNativeEdit": false,
+    "furtherPaidImageGenerationAttempted": false
+  },
+  "r8UpperSaddleDiagnostic": {
+    "scope": "Historical rejected two-owner query at R7; separate from later actual macro D R8 commit",
+    "nativeCommittedRevisionRemains": 7,
+    "sceneSequence": 0,
+    "operationId": "projects-v2-r8-all-contact-diagnostic-render-20261005",
+    "status": "EPHEMERAL_DIAGNOSTIC_SUCCEEDED; CONTACTS_UNRESOLVED / NOT_MUTATION_READY; art rejected for promotion",
+    "committed": false,
+    "exportedR8": false,
+    "sourceTriangles": 108546,
+    "modifiedOwners": 2,
+    "otherSourceOwnersExact": 42,
+    "unresolvedContactPairs": 714,
+    "fourNativePNGsActuallyViewed": true,
+    "fullReferenceFidelityVerified": false,
+    "runtimeIntegrated": false,
+    "receipt": "upper-saddle-contact-diagnostic.json",
+    "viewManifest": "native-previews-r8-diagnostic/manifest.json",
+    "fixtureOnlyCheckerReceipt": "upper-saddle-checker-fixtures.json",
+    "strictFailureReceipts": ["upper-saddle-candidate-initial-failure.json", "upper-saddle-candidate-guarded-failure.json"]
+  },
+  "nativeProject": {
+    "id": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "status": "SETTLED_NATIVE_R8_S0; macro D partial working study, portable/catalog/lint/build/scoped browser PASS; full art false/gameplay unapproved",
+    "revision": 8,
+    "sceneSequence": 0,
+    "operationId": "projects-v2-r8-connected-ridge-d-partial-working-study-20261005",
+    "manifest": "macro-ridge-r8-d-mutation.json",
+    "manifestStatus": "CURRENT_R8_PARTIAL_NATIVE_COMMIT_PORTABLE_REVIEW",
+    "blender": "5.2.0 LTS",
+    "automaticImageToMesh": false,
+    "preservedRevisions": [
+      {
+        "revision": 1,
+        "manifest": "native-manifest-r1.json",
+        "portableColourPassed": false
+      },
+      {
+        "revision": 2,
+        "manifest": "native-manifest-r2.json",
+        "operationId": "projects-v2-r2-geology-bounded-20261004",
+        "portableColourPassed": true
+      },
+      {
+        "revision": 3,
+        "manifest": "native-manifest-r3.json",
+        "operationId": "projects-v2-r3-macro-geology-20261004",
+        "portableColourPassed": true,
+        "historicalScopedBrowserEvidence": true
+      },
+      {
+        "revision": 4,
+        "manifest": "native-manifest-r4.json",
+        "operationId": "projects-v2-r4-zipper-contour-20261005",
+        "portableColourPassed": true,
+        "historicalScopedBrowserEvidence": true
+      },
+      {
+        "revision": 5,
+        "manifest": "native-manifest-r5.json",
+        "operationId": "projects-v2-r5-organic-coastal-finish-20261005",
+        "portableColourPassed": true,
+        "historicalScopedBrowserEvidence": true,
+        "independentComparison": "binary-comparison-r5.json"
+      },
+      {
+        "revision": 6,
+        "manifest": "native-manifest-r6.json",
+        "operationId": "projects-v2-r6-partial-geological-recomposition-20261005",
+        "portableColourPassed": true,
+        "historicalScopedBrowserEvidence": true,
+        "independentComparison": "binary-comparison-r6.json"
+      },
+      {
+        "revision": 7,
+        "manifest": "native-manifest-r7.json",
+        "operationId": "projects-v2-r7-portable-mineral-albedo-20261005",
+        "portableColourPassed": true,
+        "historicalScopedBrowserEvidence": true,
+        "independentComparison": "material-comparison-r7.json"
+      }
+    ]
+  },
+  "currentR3Receipt": {
+    "utcDate": "2026-10-04",
+    "master": {
+      "file": "projects-island-v2-r3.glb",
+      "bytes": 18215928,
+      "sha256": "5d8f741914b8a932fed4b440a723dd7877e4c9ac069adc690d68231e59cb2f82",
+      "meshes": 44,
+      "vertices": 354247,
+      "triangles": 172522
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r3-batched.glb",
+      "bytes": 18615604,
+      "sha256": "8a5ffce5deed9016b83e7540b77baeaf6d942c542b0df5e41892e0ba702b8577",
+      "meshes": 2,
+      "vertices": 354247,
+      "triangles": 172522,
+      "exactParity": true,
+      "notLOD": true
+    },
+    "source": {
+      "closedPositiveVolumeSolids": 44,
+      "vertices": 86349,
+      "triangles": 172522,
+      "zeroArea": 0,
+      "uvDegenerate": 0,
+      "normalOpposition": 0,
+      "unionManifoldApproved": false
+    },
+    "portable": {
+      "checks": 6709753,
+      "negativeFixtures": 20,
+      "cliFixtures": 4,
+      "varyingColor0Primitives": 44,
+      "materials": 2,
+      "validEmbeddedPngs": 4,
+      "aoAssigned": false,
+      "externalUris": 0
+    },
+    "comparedWithR2": {
+      "changedMacroGeometryMeshes": 43,
+      "changedIndexedRgbMeshes": 43,
+      "bodyPositionNormalUvColourIndicesByteExact": true,
+      "fourPngPayloadsAndPbrDefinitionsByteExact": true,
+      "newTriangles": 0,
+      "extraExportSplitVertices": 71,
+      "bodyPositionSha256": "c50844c299d31bed99d1113dca1d371da46197a7bc3291ad94ef56b7c7c3affb"
+    },
+    "dimensions": {
+      "boundsYUpMetres": [
+        68.71658706665039,
+        28.287363052368164,
+        70.8836898803711
+      ],
+      "baseYAboveSea": -10,
+      "capMaximumYAboveSea": 18.287363052368164
+    },
+    "apron": {
+      "frameXZ": {
+        "min": [
+          -16,
+          -16
+        ],
+        "max": [
+          16,
+          10
+        ]
+      },
+      "nonBodyTrianglesTested": 94698,
+      "nonBodyOverlap": 0,
+      "bodyTopProjectedAreaSquareMetres": 832,
+      "inclinedEdgeAreaSquareMetres": 3.852,
+      "minimumTopYAboveSea": 4.68362,
+      "minimumTopXZ": [
+        8.78967,
+        10
+      ],
+      "sparseBodyProbes": 25,
+      "sparseProbeMaximumDeviationMetres": 0.005832787310798615,
+      "wholeFramePlanarityApproved": false,
+      "physicsSupportApproved": false
+    },
+    "localEvidence": {
+      "rootLintBuild": "PASS 2026-10-04T19:03Z",
+      "builtPort": 3060,
+      "masterAndAggregateFourCamerasReady": true,
+      "isolated404RecoveryReady": true,
+      "pageErrors": 0,
+      "intentionallyInduced404": 1,
+      "nativeHeroPixels": [
+        960,
+        720
+      ],
+      "nativeAxisPixels": [
+        480,
+        360
+      ],
+      "gameplayMobileOrFpsAcceptance": false
+    },
+    "artReview": {
+      "perspectiveWaterlineGroundedContactObserved": true,
+      "orthographicWaterlineIsSubmergedCutawayNotFloatingProof": true,
+      "remaining": [
+        "Thin straight beige soil rims",
+        "Comb-like earth/rock transitions",
+        "Inherited inclined apron edge"
+      ],
+      "referenceFidelityApproved": false
+    },
+    "nativeSucceededUnderReportedPastDuePlan": true,
+    "furtherPaidRasterSubmitted": false,
+    "runtimeMounted": false,
+    "overUnchangedEightMibProfile": true
+  },
+  "currentR4Receipt": {
+    "utcDate": "2026-10-05",
+    "manifest": "native-manifest-r4.json",
+    "recipe": {
+      "file": "refine_projects_island_v2_r4.py",
+      "sha256": "88b09229d80d5239a56c0a8797dd05203e821e173ee62a4b8251b21bc818e655"
+    },
+    "master": {
+      "file": "projects-island-v2-r4.glb",
+      "bytes": 14645972,
+      "sha256": "de0f985a5b3e505cbfc9e7d8c28fff0d3985326eef35eee223a6dc6fd948370b",
+      "meshes": 44,
+      "vertices": 292041,
+      "triangles": 109088
+    },
+    "blend": {
+      "file": "projects-island-v2-r4.blend",
+      "bytes": 15673733,
+      "sha256": "e93348add0390b8c123947e004b5cb836444509f2d9ff1306bdbb27b2dadbd71"
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r4-batched.glb",
+      "bytes": 15028280,
+      "sha256": "e6620cab7bfd7c2a49dff8d1913731d848f5421134f35894b1366755a8f696fc",
+      "meshes": 2,
+      "vertices": 292041,
+      "triangles": 109088,
+      "removedFaces": 0,
+      "exactParity": true,
+      "notLOD": true
+    },
+    "source": {
+      "closedPositiveVolumeSolids": 44,
+      "triangles": 109088,
+      "zeroArea": 0,
+      "uvDegenerate": 0,
+      "normalOpposition": 0,
+      "allOriginalSubmergedGeometryUnchanged": true,
+      "bodyVertices": 7421,
+      "bodyTriangles": 14838,
+      "bodySeaRingVertices": 256,
+      "bodySubmergedTriangles": 3840,
+      "retopologizedPrimaryCaps": 11,
+      "upperContourMaximumDeviationBoundMetres": 0.02,
+      "singlePbrSlotPerSolid": true,
+      "fourOriginalPackedPngsUnchanged": true,
+      "unionManifoldApproved": false
+    },
+    "portable": {
+      "checks": 5333853,
+      "negativeFixtures": 20,
+      "cliFixtureGroups": 4,
+      "varyingColor0Primitives": 44,
+      "materials": 2,
+      "validEmbeddedPngs": 4,
+      "aoAssigned": false,
+      "externalUris": 0
+    },
+    "comparedWithR3": {
+      "fourPortablePngPayloadsByteExact": true,
+      "twoPbrDefinitionsDeepEqual": true
+    },
+    "apron": {
+      "frameXZ": {
+        "min": [
+          -16,
+          -16
+        ],
+        "max": [
+          16,
+          10
+        ]
+      },
+      "summedProjectedAreaSquareMetres": 832.0000000000008,
+      "summedPlanarAreaSquareMetres": 832.0000000000008,
+      "summedInclinedAreaSquareMetres": 0,
+      "minimumClippedYAboveSea": 4.800000190734863,
+      "maximumClippedYAboveSea": 4.800000190734863,
+      "planarityToleranceMetres": 0.00001,
+      "clippedUpFacesPlanarAtTolerance": true,
+      "unionOrOverlapApproved": false,
+      "physicsSupportApproved": false,
+      "mathematicsFixtureScript": "../../../scripts/island-terrain-apron-check.mjs",
+      "mathematicsFixtures": 8
+    },
+    "preservedFailedAttempts": [
+      {
+        "receipt": "native-diagnostic-r4-initial.json",
+        "recipe": "refine_projects_island_v2_r4_initial.py",
+        "sceneCommitted": false,
+        "cause": "Solver-generated sub-micron triple-line intersection"
+      },
+      {
+        "receipt": "native-diagnostic-r4-canonical.json",
+        "recipe": "refine_projects_island_v2_r4_canonical.py",
+        "sceneCommitted": false,
+        "cause": "Four micrometre WesternHigh shoulder boundary ears"
+      }
+    ],
+    "localEvidence": {
+      "rootLintBuild": "PASS 2026-10-05T00:38:30Z",
+      "retainedFormEventHintAndChunkWarning": true,
+      "nativePreviewManifest": "native-previews-r4/manifest.json",
+      "builtBrowser": "PASS scoped fresh Asset Lab3060; not gameplay/device/FPS acceptance",
+      "builtPort": 3060,
+      "desktopViewport": [
+        1440,
+        1000
+      ],
+      "masterAndAggregateFourCamerasReady": true,
+      "viewedGlbViews": 8,
+      "oneCanvasWhenReady": true,
+      "pageErrors": 0,
+      "documentOverflow": false,
+      "datumOffOnSixResourceStatisticsUnchanged": true,
+      "resizedViewport": [
+        390,
+        844
+      ],
+      "resizedReadyWithoutOverflow": true,
+      "isolatedAggregate404MissingNoCanvasThenRetryReady": true,
+      "forcedWebglCreationFailureReferenceVisibleNoCanvas": true,
+      "expected404ConsoleErrors": 1,
+      "nativeHeroPixels": [
+        960,
+        720
+      ],
+      "nativeAxisPixels": [
+        480,
+        360
+      ],
+      "perspectiveWaterlineViews": 2,
+      "gameplayMobileOrFpsAcceptance": false
+    },
+    "reviewDatum": {
+      "scope": "Loopback V2 hero only; default on after explicit GLB loading, axes/off retain full source",
+      "renderOnlyClipMillimetresBelowWater": 1,
+      "geometryExportStatisticsRootWaterPlaneChanged": false,
+      "gameOceanOrPhysicsChanged": false
+    },
+    "artReview": {
+      "remaining": [
+        "Square apron",
+        "Soft grey annulus",
+        "Repeated rim forms",
+        "Palette"
+      ],
+      "referenceFidelityApproved": false,
+      "imageIdenticalReconstructionClaimed": false,
+      "finalArtistAcceptance": false
+    },
+    "furtherPaidRasterSubmitted": false,
+    "runtimeMounted": false,
+    "overUnchangedEightMibProfile": true
+  },
+  "review": {
+    "improvements": [
+      "One interconnected asymmetric rock mass instead of three separate pillar caps",
+      "Honey-earth clearing instead of continuous green carpet",
+      "Front buttresses/recesses, rear terraces and lower right headland",
+      "Mineral faces and plant pockets separated at readable scale"
+    ],
+    "failures": [
+      "TOP remains oblique rather than vertical",
+      "FRONT remains slightly down-tilted",
+      "Panel scale/alignment is not exact; no CAD/metric approval",
+      "Unexpected water strip and repeated FRONT caption",
+      "Unseen sides of the original are design interpretation, not recovered detail"
+    ],
+    "noClaimOf": [
+      "Exact three-view mesh equivalence",
+      "Faithful3D reconstruction",
+      "Runtime terrain/collision integration",
+      "Original-image identity"
+    ]
+  },
+  "limits": {
+    "automatic3dToolExposed": false,
+    "newModelSubmitted": true,
+    "precedingRejectedV1ModelUnchanged": true,
+    "isolatedReviewSourceChanged": true,
+    "gameplaySourceChanged": false,
+    "terrainMapChanged": false,
+    "physicsChanged": false,
+    "gameOceanChanged": false,
+    "push": false,
+    "deploy": false
+  },
+  "currentR5Receipt": {
+    "schemaVersion": 1,
+    "date": "2026-10-05",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "operationId": "projects-v2-r5-organic-coastal-finish-20261005",
+    "revision": 5,
+    "sceneSequence": 0,
+    "humanScope": "Isola senza edifici, poi elementi separati",
+    "workflow": "Reference-led native Blender Scene Builder; not automatic multiview to mesh",
+    "status": "REAL_NATIVE_R5; scoped source, binary and Asset Lab checks pass; art and gameplay integration incomplete",
+    "recipe": {
+      "file": "refine_projects_island_v2_r5.py",
+      "sha256": "d352da9ff704469ba41b4f899bb4943fbb267206b91496ee17a146778245dd35"
+    },
+    "nativeResult": {
+      "recipe": "projects-island-v2-r5-organic-coastal-finish",
+      "root": "ProjectsIsland_V2_Origin_At_Sea_Level",
+      "audit": {
+        "meshes": 44,
+        "triangles": 109088,
+        "hard_triangle_limit": 180000,
+        "all_closed_positive": true,
+        "zero_area": 0,
+        "uv_degenerate": 0,
+        "normal_opposition": 0,
+        "source43_geometry_uv_corner_normals_exact": true,
+        "body_xz_indices_and_protected_surface_exact": true,
+        "all_original_submerged_geometry_exact": true,
+        "sea_ring_vertices_exact": 256,
+        "original_material_definitions_exact": 2,
+        "original_packed_png_bytes_exact": 4,
+        "clearing": {
+          "summed_clipped_triangle_area_m2": 832.0000000000008,
+          "minimum_y": 4.800000190734863,
+          "maximum_y": 4.800000190734863,
+          "height_tolerance": 0.00001,
+          "not_union_or_physics_approval": true
+        },
+        "sea_origin_y": 0,
+        "foundation_y": -10,
+        "standalone_art_not_approved": true,
+        "no_runtime_map_physics_ocean_mutations": true
+      },
+      "protection": {
+        "protected_vertices": 6361,
+        "free_vertices": 1060,
+        "categories": {
+          "submerged_and_sea": 2049,
+          "full_triangle_clearing": 1248,
+          "full_triangle_prospective_approaches": 678,
+          "projected_actual_43_solid_superset": 2613,
+          "actual_surface_nearest_05m": 2219
+        },
+        "projected_body_faces_protected": 4667,
+        "projected_actual_triangle_pairs_tested": 428096,
+        "contact_scope": "Conservative actual projected43-solid superset plus real nearest0.5m; not measured 3D contact proof",
+        "corridor_radius_extra_metres": 1.15
+      },
+      "body_sculpt": {
+        "changed_body_vertices": 769,
+        "backtracking_alpha": 1,
+        "maximum_abs_y_delta_metres": 0.7999999523162842,
+        "free_upper_lip_vertices": 272,
+        "free_upper_lip_y_before": [
+          0.3799999952316284,
+          0.8430355787277222
+        ],
+        "free_upper_lip_y_after": [
+          0.23999999463558197,
+          0.8688661456108093
+        ],
+        "semantic_macro_regions": [
+          "West buttress pitched shoulder",
+          "Front spur paired slope planes",
+          "East access/channel Vplane"
+        ],
+        "body_xz_indices_unchanged": true,
+        "new_vertices_triangles_objects": 0
+      },
+      "painted_owners": 44,
+      "new_mesh_owners": 0,
+      "provider_requests": 0,
+      "renders": 0,
+      "no_automatic_reconstruction": true,
+      "next": "Ephemeral same-camera actual render, native/source/portable GLB audits; no automatic art acceptance"
+    },
+    "files": {
+      "master": {
+        "file": "projects-island-v2-r5.glb",
+        "bytes": 14684488,
+        "sha256": "93a39ca60a2feb7c21669eb003cc8938c98487f1a986c28eefe125d0e5520ec0",
+        "meshes": 44,
+        "vertices": 292492,
+        "triangles": 109088
+      },
+      "blend": {
+        "file": "projects-island-v2-r5.blend",
+        "bytes": 15691937,
+        "sha256": "f9552aec223d4f9b7edd6cac3b42526282d0118602514f8ab116af8ea92d0d0e"
+      },
+      "aggregate": {
+        "file": "../../../public/models/archipelago/projects-island-v2-r5-batched.glb",
+        "bytes": 15048124,
+        "sha256": "dd51d8b44a4fecf27d65eec6d371376d98d2f9696173441b08479b3f4628c5ab",
+        "meshes": 2,
+        "vertices": 292492,
+        "triangles": 109088,
+        "removedFaces": 0,
+        "exactParity": true,
+        "notLOD": true
+      },
+      "publicDistModelShaParity": true
+    },
+    "portable": {
+      "report": "portable-check-r5.json",
+      "checks": 5341069,
+      "negativeFixtures": 20,
+      "interfaceFixtureGroups": 4,
+      "geometry": {
+        "nearZeroAreaTriangles": 0,
+        "normalOppositionCandidates": 0,
+        "interpretation": "Actual transformed triangle shading diagnostics, not source manifold/watertightness certification from glTF seams"
+      },
+      "apron": {
+        "triangles": 10486,
+        "clippedTriangles": 2356,
+        "summedProjectedAreaSquareMetres": 832.0000000000008,
+        "summedPlanarAreaSquareMetres": 832.0000000000008,
+        "summedInclinedAreaSquareMetres": 0,
+        "minimumY": 4.800000190734863,
+        "maximumY": 4.800000190734863,
+        "proposedTopY": 4.8,
+        "tolerance": 0.00001,
+        "interpretation": "Full transformed upward-face clipping in X[-16,16]/Z[-16,10]; area sums are not a union, absence-of-overlap, Rapier or navigation-support certification."
+      },
+      "variableColorOwners": 44,
+      "materials": 2,
+      "pngs": 4,
+      "aoAssigned": false
+    },
+    "independentComparison": "binary-comparison-r5.json",
+    "preservedFailedQuery": {
+      "operationId": "projects-v2-r5-candidate-hero-top-20261005",
+      "cause": "Blender BVHTree.find_nearest accepts positional distance only",
+      "recipe": "refine_projects_island_v2_r5_initial.py",
+      "recipeSha256": "4c64ed54e9e4457af520346aae2033fdd2fe9d0db9915daf1744e75d6eac47d0",
+      "receipt": "native-diagnostic-r5-initial.json",
+      "committed": false,
+      "gatesRelaxed": false
+    },
+    "nativePreviewManifest": "native-previews-r5/manifest.json",
+    "candidateManifest": "native-previews-r5-candidate/manifest.json",
+    "browser": {
+      "report": "built-browser-r5.json",
+      "port": 3060,
+      "masterAndAggregateViews": 8,
+      "actuallyViewed": 8,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "oneCanvasWhenReady": true,
+      "horizontalOverflow": false,
+      "pageErrorsDuringCameraPass": [],
+      "datumSixStatisticsUnchanged": true,
+      "resizedViewport": [
+        390,
+        844
+      ],
+      "resizedReadyNotPhysicalMobileTest": true,
+      "isolated404MissingAndRetryReady": true,
+      "forcedWebglErrorReferenceVisible": true
+    },
+    "local": {
+      "lint": "PASS",
+      "build": "PASS 2026-10-05T01:34:55Z; 110files0errors0warnings/retained FormEvent hint and Vite chunk warning",
+      "apronMathFixtures": 8
+    },
+    "art": {
+      "referenceFidelityApproved": false,
+      "imageIdenticalClaimed": false,
+      "remaining": [
+        "Regular rear ledge and repeated crests",
+        "Soft broad coastal annulus and apron junctions",
+        "Browser materials still washed compared with rich reference geology"
+      ]
+    },
+    "boundaries": {
+      "bareIsland": true,
+      "newBuildings": false,
+      "runtimeMounted": false,
+      "mapPhysicsOceanMinimapChanged": false,
+      "otherFiveTerritoriesChanged": false,
+      "readerCvMarcoAiChanged": false,
+      "overUnchangedEightMibGuard": true,
+      "unionContactsCollisionPerformanceApproved": false,
+      "furtherPaidRasterSubmitted": false,
+      "push": false,
+      "deploy": false
+    },
+    "independentComparisonSha256": "d21c34ae30be0e6587ec657acd0d6cf5f3452bf6595222308ea2e2d1aec488ea"
+  },
+  "currentR6Receipt": {
+    "date": "2026-10-05",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "operationId": "projects-v2-r6-partial-geological-recomposition-20261005",
+    "revision": 6,
+    "sceneSequence": 0,
+    "terminalStatus": "succeeded",
+    "finishedAt": "2026-10-05T03:06:18.261Z",
+    "manifest": "native-manifest-r6.json",
+    "nativeResult": "native-result-r6.json",
+    "recipe": {
+      "file": "refine_projects_island_v2_r6_diagnostic.py",
+      "sha256": "f951529f554340eb23d9247c2f83c0645e93e8a6db837906127eae4f53b2838b",
+      "partialDiagnosticNotFinalArt": true
+    },
+    "master": {
+      "file": "projects-island-v2-r6.glb",
+      "bytes": 15159428,
+      "sha256": "419a93354d886eae4d5457fefa7124300595d66b14bcb896829a8b188a34efee",
+      "meshes": 44,
+      "primitives": 44,
+      "vertices": 301854,
+      "triangles": 109088
+    },
+    "blend": {
+      "file": "projects-island-v2-r6.blend",
+      "bytes": 15753247,
+      "sha256": "6137c2d68e285b50a3733a3735ccfcc92531924abf7b6d5a28ad524c73a8da5a"
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r6-batched.glb",
+      "bytes": 15460056,
+      "sha256": "a263b372fd46a3fb98f9fc1ac59405a915fd1f81d7f30dd8b181fa894f12d6cc",
+      "meshes": 2,
+      "triangles": 109088,
+      "removedFaces": 0,
+      "exactSourceMaterialImageAttributeTriangleBoundsParity": true,
+      "notLOD": true
+    },
+    "nativeSource": {
+      "closedPositiveVolumeSolids": 44,
+      "triangles": 109088,
+      "sourceIndicesAndCountsExact": true,
+      "bodyXZExact": true,
+      "zeroArea": 0,
+      "uvDegenerate": 0,
+      "normalOpposition": 0,
+      "protectedClearingApproachContactBasalPointsExact": true,
+      "baselineSurfacePairsExact": 25950,
+      "newSurfaceContacts": 0,
+      "notUnionSelfIntersectionOrArtApproval": true
+    },
+    "portable": {
+      "report": "portable-check-r6.json",
+      "checks": 5490861,
+      "negativeFixtures": 20,
+      "cliFixtureGroups": 4,
+      "variableColorOwners": 44,
+      "materials": 2,
+      "actualEmbeddedPNGs": 4
+    },
+    "independentBinary": {
+      "report": "binary-comparison-r6.json",
+      "sha256": "5c975da3333ffec6361819386bb5cac2b6e34f76bf8aa97713d7c114973b72e2",
+      "geometryChangedOwners": 22,
+      "frozenGeometryOwnersExact": 22,
+      "bodyChangedGeometricPoints": 875,
+      "bodyMaximumAbsYDeltaMetres": 0.6750000715255737,
+      "majorCapsChanged": 11,
+      "seaRingPointsExact": 256,
+      "submergedOrientedTrianglesExact": 19159,
+      "summedPlanarApronSquareMetres": 832.0000000000008,
+      "apronMinimumMaximumY": [4.800000190734863, 4.800000190734863],
+      "allOwnerProspectiveApproachTrianglesExact": [1049, 1519],
+      "historicalBodyApproachSubsetExact": [473, 803],
+      "portablePBRTextureSamplerAndFourActualPNGsExact": true,
+      "indexedRGBChangedOwners": 44,
+      "nativeSourceIndicesRequireSeparateAssertion": true,
+      "noContactUnionArtGameplayApproval": true
+    },
+    "art": {
+      "fullReferenceFidelityVerified": false,
+      "rearFractureVariation": {"actualSignificantOwners": 3, "target": 4, "status": "OPEN"},
+      "frontLowConnectingLedge": {"maximumMoveMetres": 0.14795528510508507, "targetMetres": 0.35, "status": "OPEN"},
+      "candidateManifest": "native-previews-r6-candidate/manifest.json",
+      "candidateHeroAndTopActuallyReviewed": true,
+      "committedNativePreviewManifest": "native-previews-r6/manifest.json",
+      "committedHeroFrontRightTopActuallyReviewed": true,
+      "observed": "Honey-earth pigment improves; severe flat low-poly forms and regular rear ledge remain unapproved",
+      "noImageIdenticalClaim": true
+    },
+    "currentR6BrowserLintBuildEvidence": "PASS scoped R6 root-owned receipts; prior R5 checks remain historical; not art/gameplay/device/FPS approval",
+    "local": {
+      "lint": "PASS",
+      "build": "PASS 2026-10-05T03:24:57Z; 110files/0errors/0warnings, retained FormEvent hint and Vite chunk warning",
+      "catalogMaster": "PASS",
+      "catalogBatched": "PASS exact source/material/image/attribute/triangle/bounds parity",
+      "publicDistMasterAndAggregateShaParity": true,
+      "receipt": "native-manifest-r6.json",
+      "qa": "../../../design-qa.md"
+    },
+    "browser": {
+      "report": "built-browser-r6.json",
+      "scope": "Actual built Asset Lab3060 only; not gameplay/physical-device/touch/GPU/FPS acceptance",
+      "variants": ["master", "batched"],
+      "views": ["hero", "front", "right", "top"],
+      "eightActualCapturesViewedByRoot": true,
+      "allReadyOneCanvasNoOverflow": true,
+      "pageErrors": [],
+      "datumSixStatsUnchanged": true,
+      "resizedViewport": [390, 844],
+      "resizedReadyOneCanvasNoOverflowNotPhysicalMobile": true,
+      "isolated404MissingZeroCanvasReferenceVisible": true,
+      "retryReadyOneCanvas": true,
+      "isolatedWebglUnavailableHandledErrorZeroCanvasReferenceVisibleNoOverflow": true,
+      "isolatedWebglUnavailablePageErrors": [],
+      "temporaryWebglPageClosed": true,
+      "expected404AndWebglConsoleErrorsAreFixtures": true,
+      "harnessCorrectionsAreNotApplicationDefects": true,
+      "referenceFidelityEstablished": false
+    },
+    "runtimeMounted": false,
+    "overUnchangedEightMiBRuntimeGuard": true,
+    "gameplayTerrainMapPhysicsOceanMinimapChanged": false,
+    "readerCvMarcoAiChanged": false,
+    "preservedRevisions": [1, 2, 3, 4, 5],
+    "strictFailedR6RecipesAndDiagnosticsRetained": true,
+    "geometrySafetyGuardsRelaxed": false,
+    "furtherPaidRasterSubmitted": false,
+    "push": false,
+    "deploy": false
+  },
+  "currentR7Receipt": {
+    "date": "2026-10-05",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "operationId": "projects-v2-r7-portable-mineral-albedo-20261005",
+    "revision": 7,
+    "sceneSequence": 0,
+    "terminalStatus": "succeeded",
+    "finishedAt": "2026-10-05T04:06:55.192Z",
+    "nativeResult": "native-result-r7.json",
+    "manifest": "native-manifest-r7.json",
+    "recipe": {
+      "file": "refine_projects_island_v2_r7_albedo.py",
+      "sha256": "a06ee7dc16224d0fca00a9afd5f6cb4ca205615dc3c89d42ed02a0d96dbbd512",
+      "albedoOnly": true
+    },
+    "master": {
+      "file": "projects-island-v2-r7.glb",
+      "bytes": 16500232,
+      "sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+      "meshes": 44,
+      "vertices": 301854,
+      "triangles": 109088
+    },
+    "blend": {
+      "file": "projects-island-v2-r7.blend",
+      "bytes": 17127654,
+      "sha256": "73ab1800da86ba2d5ec4ad2e633144020a843c3b85cfefdaeac02e4e6ccf2985"
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r7-batched.glb",
+      "bytes": 16797916,
+      "sha256": "26d9fe68aa3ed3d6e13903ec85a5335847ce44c6f501ad95d433a7b7ebda84e4",
+      "meshes": 2,
+      "vertices": 301854,
+      "triangles": 109088,
+      "removedFaces": 0,
+      "exactParity": true,
+      "notLOD": true
+    },
+    "nativeSource": {
+      "sourceSnapshotGeometryUvCornerNormalsColourOwnershipExact": true,
+      "sourceOwners": 44,
+      "sourceTriangles": 109088,
+      "historicalR6AuditAnnotationsExactNotNewSculptAudit": true,
+      "newMaterials": 0,
+      "originalNativePNGBytesExact": 4,
+      "recipeCountersDoNotProveProviderCheckpointOrCreditCharges": true
+    },
+    "materialComparison": {
+      "report": "material-comparison-r7.json",
+      "sha256": "57e193400f3d5c3ed782058d470704d837ceca09370b9792db6637c149e0fb61",
+      "independentRealRerun": "PASS",
+      "rawAccessorBytesAndDescriptorsExactOwners": 44,
+      "positionNormalUvCOLOR0IndicesHierarchyBindingsCountsBoundsExact": true,
+      "originalPortablePNGBytesExact": 4,
+      "originalPBRFactorsNormalMRBindingSamplerSemanticsExact": 2,
+      "newAlbedoPNGCount": 2,
+      "newAlbedoFormat": "1024×1024 RGBA8; sRGB baseColorTexture multiplied by unchanged linear COLOR_0",
+      "newAlbedoPNGBytes": [535090, 802348],
+      "newAlbedoPNGSHA256": ["dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3", "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b"],
+      "actualDecodedNewAlbedoVariesAndIsOpaque": true,
+      "checkerNegativeFixtures": 21,
+      "checkerPNGDecodeFixtures": 6,
+      "nativeSourceTopologyUnionArtRuntimeNotInferred": true
+    },
+    "portable": {
+      "report": "portable-check-r7.json",
+      "checks": 5492953,
+      "negativeFixtures": 20,
+      "cliFixtureGroups": 4,
+      "materials": 2,
+      "actualEmbeddedPNGs": 6,
+      "modernVariableCOLOR0Preserved": true
+    },
+    "local": {
+      "lint": "PASS",
+      "build": "PASS 2026-10-05T04:10:30Z; 110files/0errors/0warnings, retained FormEvent hint and Vite chunk warning",
+      "catalogMaster": "PASS",
+      "catalogBatched": "PASS exact source/material/image/attribute/triangle/bounds parity",
+      "publicDistModelShaParity": true,
+      "qa": "../../../design-qa.md"
+    },
+    "browser": {
+      "status": "PASS scoped actual built R7 Asset Lab; preceding R6 evidence is historical, not inherited",
+      "report": "built-browser-r7.json",
+      "port": 3060,
+      "variants": ["master", "batched"],
+      "views": ["hero", "front", "right", "top"],
+      "eightActualCapturesViewedByRoot": true,
+      "allReadyOneCanvasNoOverflow": true,
+      "pageErrors": [],
+      "datumSixStatsUnchanged": true,
+      "resizedViewport": [390, 844],
+      "resizedReadyOneCanvasNoOverflowNotPhysicalMobile": true,
+      "resizedScreenshotActuallyViewed": true,
+      "isolated404MissingZeroCanvasReferenceVisibleRetryEnabled": true,
+      "retryReadyOneCanvas": true,
+      "isolatedWebglUnavailableHandledErrorZeroCanvasReferenceVisibleNoOverflow": true,
+      "isolatedWebglUnavailablePageErrors": [],
+      "temporaryWebglPageClosed": true,
+      "expected404ConsoleIsFixture": true,
+      "initialRunCodeSyntaxErrorWasCorrectedShellHarnessEscaping": true,
+      "notPhysicalDeviceTouchGpuFpsGameplayApproval": true,
+      "referenceFidelityEstablished": false
+    },
+    "art": {
+      "fullReferenceFidelityVerified": false,
+      "candidateManifest": "native-previews-r7-candidate/manifest.json",
+      "candidateHeroThreeAxesAndTwoTilesActuallyReviewed": true,
+      "committedNativePreviewManifest": "native-previews-r7/manifest.json",
+      "committedHeroActuallyReviewed": true,
+      "committedHeroQuery": "projects-v2-r7-committed-material-hero-20261005",
+      "committedHeroDimensions": [960, 720],
+      "rearFractureVariation": {"actualSignificantOwners": 3, "target": 4, "status": "OPEN"},
+      "frontLowConnectingLedge": {"maximumMoveMetres": 0.14795528510508507, "targetMetres": 0.35, "status": "OPEN"},
+      "geometryUnchangedMaterialChecksDoNotResolveFlatRegularForms": true
+    },
+    "runtimeMounted": false,
+    "overUnchangedEightMiBRuntimeGuard": true,
+    "gameplayTerrainMapPhysicsOceanMinimapChanged": false,
+    "readerCvMarcoAiChanged": false,
+    "preservedRevisions": [1, 2, 3, 4, 5, 6],
+    "geometrySafetyGuardsRelaxed": false,
+    "furtherPaidRasterSubmitted": false,
+    "push": false,
+    "deploy": false
+  },
+  "currentR8Receipt": {
+    "date": "2026-10-05",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "operationId": "projects-v2-r8-connected-ridge-d-partial-working-study-20261005",
+    "revision": 8,
+    "sceneSequence": 0,
+    "terminalStatus": "succeeded",
+    "finishedAt": "2026-10-05T07:09:06.029Z",
+    "humanScope": "Isola senza edifici, poi elementi separati",
+    "status": "PARTIAL_NATIVE_WORKING_STUDY_FOR_PORTABLE_REVIEW_ONLY",
+    "recipe": {
+      "file": "rebuild_projects_island_v2_r9_integrated_ridge_d.py",
+      "sha256": "54f63a40476525de1208874c731ff66207b5c24df91cc9166fddf4d05c397daf"
+    },
+    "mutationReceipt": "macro-ridge-r8-d-mutation.json",
+    "queryReceipt": "macro-ridge-candidate-d.json",
+    "sourceViews": "native-previews-macro-ridge-d/manifest.json",
+    "nativeSource": {
+      "closedMeshes": 30,
+      "triangles": 84530,
+      "frozenOwnersExact": 28,
+      "nonAdjacentSelfTriangleHits": 0,
+      "unknownContactPeers": 0,
+      "booleanUnionProven": false,
+      "fullyContainedFootingProven": false
+    },
+    "master": {
+      "file": "projects-island-v2-r8.glb",
+      "bytes": 12044864,
+      "sha256": "61b6696c4c2b69642a391bbc1674617d0cd9943a87972285d4dab79a151a09f2",
+      "meshes": 30,
+      "vertices": 204200,
+      "triangles": 84530
+    },
+    "blend": {
+      "file": "projects-island-v2-r8.blend",
+      "bytes": 18651968,
+      "sha256": "9e855eeb141d0d9b2eda8fef14a39d972d96a3d88864509677d7e52bcb84c2ad"
+    },
+    "aggregate": {
+      "file": "projects-island-v2-r8-batched.glb",
+      "bytes": 12206456,
+      "sha256": "c55b1cc7fa3ed31fbc2c6ed51b61dbe4e983d5437515517d09806b4885dd2f8f",
+      "meshes": 2,
+      "vertices": 204200,
+      "triangles": 84530,
+      "removedFaces": 0
+    },
+    "portable": {
+      "comparison": "macro-ridge-r8-portable-comparison.json",
+      "strict": "macro-ridge-r8-strict-portable.json",
+      "strictChecks": 3782133,
+      "negativeFixtures": 20,
+      "interfaceFixtureGroups": 4,
+      "wholeSubmergedTrianglesExact": 19159,
+      "seaVerticesExact": 256,
+      "fullClippedApronSquareMetres": 832,
+      "prospectiveApproachCompleteFaces": [
+        1049,
+        1519
+      ],
+      "sixEmbeddedPNGPayloadsExact": true,
+      "catalogChecks": "macro-ridge-r8-catalog-checks.json",
+      "all14MasterAndBatchedStructureParityPass": true
+    },
+    "local": {
+      "lint": "PASS current R8 selectors",
+      "build": "PASS fresh R8 selectors/public binaries;110 files,0 errors,0 warnings,1 existing hint",
+      "receipt": "built-browser-r8.json"
+    },
+    "browser": {
+      "currentR8": "PASS scoped isolated Asset Lab only",
+      "receipt": "built-browser-r8.json",
+      "actualMasterAndAggregateFourViewsEach": true,
+      "rootViewedAll11Screenshots": true,
+      "actualHTTPAndDistSHAParity": true,
+      "resize390x844WithoutOverflow": true,
+      "missing404NoCanvasThenRetryReadyOneCanvas": true,
+      "forcedWebGLFailureReferenceVisibleNoCanvas": true,
+      "pageErrors": 0,
+      "expected404FixtureConsoleErrors": 1,
+      "physicalDeviceTouchGPUFPSOrGameplayApproval": false
+    },
+    "art": {
+      "rootViewedFourActualNativeViews": true,
+      "finalArtistAcceptance": false,
+      "fullReferenceFidelity": false,
+      "remaining": [
+        "Long regular rear curtain",
+        "Broad uniform earth apron",
+        "Western prismatic rock masses"
+      ],
+      "automatedImageToMesh": false
+    },
+    "runtimeMounted": false,
+    "overUnchangedEightMiBRuntimeGuard": true,
+    "gameplayTerrainMapPhysicsOceanMinimapChanged": false,
+    "readerCvMarcoAiChanged": false,
+    "preservedRevisions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "furtherPaidRasterSubmitted": false,
+    "push": false,
+    "deploy": false
+  }
+}

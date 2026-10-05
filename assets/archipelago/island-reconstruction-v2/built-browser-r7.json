@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "revision": 7,
+  "buildCompletedAt": "2026-10-05T04:10:30Z",
+  "url": "http://127.0.0.1:3060/asset-lab?asset=projects-terrain-v2&variant=batched",
+  "session": "portfolio-projects-terrain-oct4",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "variants": [
+    {
+      "variant": "master",
+      "stats": {
+        "bytes": "15.74 MiB",
+        "triangles": "109.088",
+        "vertices": "301.854",
+        "resources": "44 / 2 / 6",
+        "bounds": "68.72 × 29.42 × 70.88",
+        "budget": "Oltre il profilo orientativo; master da revisionare"
+      },
+      "views": [
+        {
+          "view": "hero",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "view": "front",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "view": "right",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "view": "top",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "variant": "batched",
+      "stats": {
+        "bytes": "16.02 MiB",
+        "triangles": "109.088",
+        "vertices": "301.854",
+        "resources": "2 / 2 / 6",
+        "bounds": "68.72 × 29.42 × 70.88",
+        "budget": "Oltre il profilo orientativo; master da revisionare"
+      },
+      "views": [
+        {
+          "view": "hero",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "view": "front",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "view": "right",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "view": "top",
+          "state": "ready",
+          "canvas": 1,
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "scope": "Actual R7 built3060; resized viewport not physical mobile, failure fixtures isolated.",
+  "datum": {
+    "before": {
+      "bytes": "16.02 MiB",
+      "triangles": "109.088",
+      "vertices": "301.854",
+      "resources": "2 / 2 / 6",
+      "bounds": "68.72 × 29.42 × 70.88",
+      "budget": "Oltre il profilo orientativo; master da revisionare"
+    },
+    "off": {
+      "stats": {
+        "bytes": "16.02 MiB",
+        "triangles": "109.088",
+        "vertices": "301.854",
+        "resources": "2 / 2 / 6",
+        "bounds": "68.72 × 29.42 × 70.88",
+        "budget": "Oltre il profilo orientativo; master da revisionare"
+      },
+      "datum": "hidden"
+    },
+    "on": {
+      "stats": {
+        "bytes": "16.02 MiB",
+        "triangles": "109.088",
+        "vertices": "301.854",
+        "resources": "2 / 2 / 6",
+        "bounds": "68.72 × 29.42 × 70.88",
+        "budget": "Oltre il profilo orientativo; master da revisionare"
+      },
+      "datum": "visible"
+    },
+    "exact": true
+  },
+  "mobile": {
+    "state": "ready",
+    "canvas": 1,
+    "overflow": false,
+    "width": 390,
+    "height": 844
+  },
+  "missing": {
+    "state": "missing",
+    "canvas": 0,
+    "reference": true,
+    "retryEnabled": true
+  },
+  "recovered": {
+    "state": "ready",
+    "canvas": 1
+  },
+  "webgl": {
+    "state": "error",
+    "canvas": 0,
+    "reference": true,
+    "overflow": false,
+    "status": "Error creating WebGL context."
+  },
+  "webglPageErrors": [],
+  "screenshots": {
+    "eightViews": "output/playwright/projects-v2-r7-{master,batched}-{hero,front,right,top}.png",
+    "resized": "output/playwright/projects-v2-r7-resized-390.png",
+    "allActuallyViewedByRoot": true
+  },
+  "publicDistSHAParity": {
+    "master": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+    "aggregate": "26d9fe68aa3ed3d6e13903ec85a5335847ce44c6f501ad95d433a7b7ebda84e4"
+  },
+  "harness": {
+    "initialRunCodeShellQuotingSyntaxError": true,
+    "correctedSingleQuotedCode": true,
+    "applicationDefect": false
+  },
+  "expectedConsoleFailures": "One aggregate404 and isolated forced unavailable WebGL fixtures; not unhandled page errors.",
+  "limits": [
+    "Asset Lab only; not gameplay integration",
+    "390x844 resize, not physical mobile/touch/GPU test",
+    "No FPS, LOD, transfer/reduced-motion or final reference-fidelity acceptance"
+  ],
+  "artReview": "Two actual baseColorTextures load but flat/repeated bevel-prism geology and long rear shelf remain very far from reference."
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "operationId": "projects-v2-r7-portable-mineral-albedo-20261005",
+  "revision": 7,
+  "sceneSequence": 0,
+  "humanScope": "Isola senza edifici, poi elementi separati",
+  "workflow": "Reference-led native Blender Scene Builder; not automatic multiview-to-mesh",
+  "status": "REAL_NATIVE_R7_ALBEDO_ONLY; actual source/binary/scoped built-browser checks pass, art not approved",
+  "recipe": {
+    "file": "refine_projects_island_v2_r7_albedo.py",
+    "sha256": "a06ee7dc16224d0fca00a9afd5f6cb4ca205615dc3c89d42ed02a0d96dbbd512"
+  },
+  "nativeResult": "native-result-r7.json",
+  "fullReferenceFidelityVerified": false,
+  "runtimeIntegrated": false,
+  "geometryScope": {
+    "rawPortableStreamsExactVsR6": true,
+    "nativeStateExact": true,
+    "nativeStateSHA": "c8e4863bc8892648a7524227ff1479f6c0b344a5f5b458d9bee0370c30acbd94",
+    "owners": 44,
+    "artisticRearVariationAndLedgeTargets": "OPEN; this revision cannot resolve geometry targets"
+  },
+  "files": {
+    "master": {
+      "file": "projects-island-v2-r7.glb",
+      "bytes": 16500232,
+      "sha256": "03dab463ed067bcbce217d93a41a5124f1a0288770e89b83ca582d886f534cd2",
+      "meshes": 44,
+      "vertices": 301854,
+      "triangles": 109088
+    },
+    "blend": {
+      "file": "projects-island-v2-r7.blend",
+      "bytes": 17127654,
+      "sha256": "73ab1800da86ba2d5ec4ad2e633144020a843c3b85cfefdaeac02e4e6ccf2985"
+    },
+    "aggregate": {
+      "file": "../../../public/models/archipelago/projects-island-v2-r7-batched.glb",
+      "bytes": 16797916,
+      "sha256": "26d9fe68aa3ed3d6e13903ec85a5335847ce44c6f501ad95d433a7b7ebda84e4",
+      "meshes": 2,
+      "vertices": 301854,
+      "triangles": 109088,
+      "removedFaces": 0,
+      "exactParity": true,
+      "notLOD": true
+    },
+    "publicDistModelShaParity": true
+  },
+  "materials": {
+    "existingPBRs": 2,
+    "oldPortablePNGByteExact": 4,
+    "newBaseColorPNGs": 2,
+    "totalEmbeddedPNGs": 6,
+    "colour0RetainedExact": true,
+    "baseColorProduct": "Modern RGBA MULTIPLY factor1: linear vertex colour x sRGB image",
+    "nativeSourceTextures": [
+      {
+        "name": "ProjectsIsland_V2_Limestone_NeutralAlbedo_R7_1024",
+        "kind": "Limestone",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 535090,
+        "sha256": "dff53099c31424a94cfd5cdea68577caec60bd14af8bafeed4baf81a2293f3f3",
+        "PNG": {
+          "bitDepth": 8,
+          "colorType": 6,
+          "opaque": true
+        },
+        "generated_linear_RGB_mean": [
+          0.9355714127900683,
+          0.9402371234255043,
+          0.9383736312170186
+        ],
+        "generated_linear_min_max_std": [
+          0.5562946200370789,
+          0.9980000257492065,
+          0.03190293163061142
+        ],
+        "actual_png_sRGB_RGB_mean": [
+          0.9709800662714088,
+          0.9731160310799964,
+          0.9722620625292961
+        ],
+        "actual_png_decoded_linear_RGB_mean": [
+          0.9355828331065368,
+          0.9402631785710014,
+          0.9383903712172241
+        ],
+        "maximum_linear_quantization_error": 0.004454433917999268,
+        "opposing_edge_texels_exact": true,
+        "nominal_metres_per_uv_tile": 6.4
+      },
+      {
+        "name": "ProjectsIsland_V2_HoneyEarth_NeutralAlbedo_R7_1024",
+        "kind": "HoneyEarth",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 802348,
+        "sha256": "6c6c6f6a4c209154d1ec841d74f0753aa82f82b93c06bbc5f70270562ee6a69b",
+        "PNG": {
+          "bitDepth": 8,
+          "colorType": 6,
+          "opaque": true
+        },
+        "generated_linear_RGB_mean": [
+          0.9311750052991101,
+          0.9284866567261929,
+          0.9221484231890713
+        ],
+        "generated_linear_min_max_std": [
+          0.7354596257209778,
+          0.9980000257492065,
+          0.03790656849741936
+        ],
+        "actual_png_sRGB_RGB_mean": [
+          0.968945273212114,
+          0.9677049730888143,
+          0.9647759963442581
+        ],
+        "actual_png_decoded_linear_RGB_mean": [
+          0.931256280928551,
+          0.9285551107003016,
+          0.9221925037618348
+        ],
+        "maximum_linear_quantization_error": 0.004454374313354492,
+        "opposing_edge_texels_exact": true,
+        "nominal_metres_per_uv_tile": 6.4
+      }
+    ]
+  },
+  "actualChecks": {
+    "strictPortable": {
+      "result": "PASS",
+      "checks": 5492953,
+      "negativeFixtures": 20,
+      "cliFixtureGroups": 4,
+      "receipt": "portable-check-r7.json"
+    },
+    "independentMaterialComparison": {
+      "result": "PASS",
+      "owners": 44,
+      "negativeFixtures": 21,
+      "pngDecodeTests": 6,
+      "receipt": "material-comparison-r7.json"
+    },
+    "masterAndBatchedCatalog": "PASS",
+    "lint": "PASS",
+    "build": {
+      "result": "PASS",
+      "completedAt": "2026-10-05T04:10:30Z",
+      "astroFiles": 110,
+      "errors": 0,
+      "warnings": 0,
+      "retainedHint": "FormEvent",
+      "retainedViteWarning": "Chunk size"
+    },
+    "browser": {
+      "receipt": "built-browser-r7.json",
+      "actualR7Fresh": true
+    }
+  },
+  "actualNativeViews": {
+    "candidate": "native-previews-r7-candidate/manifest.json",
+    "candidateSixPNGsActuallyViewed": true,
+    "candidateIsEphemeral": true,
+    "committed": "native-previews-r7/manifest.json",
+    "committedHeroActuallyViewed": true,
+    "committedAxesNotClaimed": true
+  },
+  "billing": "No new paid raster. Recipe's provider_requests/renders/exports=0 describe recipe body only, not native service operations or billing.",
+  "runtimeLimit": {
+    "bytes": 8388608,
+    "bothVariantsOver": true,
+    "studyOnly": true
+  },
+  "unchanged": [
+    "game terrain/map/physics/bridges/ocean/minimap",
+    "other five territories/eight game asset owners",
+    "reader/CV/Marco.AI",
+    "R1-R6 and failure receipts"
+  ],
+  "notPerformed": [
+    "push",
+    "deployment",
+    "production mutation",
+    "automatic image-to-mesh",
+    "final art approval"
+  ]
+}

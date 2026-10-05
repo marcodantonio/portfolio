@@ -1,0 +1,76 @@
+{
+  "schema": "archipelago-static-building-contract-v1",
+  "asset": "suspended-lab-v1",
+  "root": "SuspendedLab_V1_Origin_At_Deck_Centre",
+  "units": "metres",
+  "axes": "Local glTF Y-up: X right, Y up, Z front; Blender(X,Y,Z) -> glTF(X,Z,-Y).",
+  "anchor": { "island": "skills", "x": -9, "y": 38.06, "z": -133, "yaw": 0 },
+  "deck": { "id": "lab-deck", "x": 0, "z": 0, "width": 20, "depth": 16, "bottom": -0.24, "height": 0.24, "walkingTop": 0, "yaw": 0 },
+  "runtimeGroups": ["shell", "roof", "interior", "decor"],
+  "semanticNodes": ["Lab_shell", "Lab_roof", "Lab_interior", "Lab_decor"],
+  "navigation": {
+    "entry": { "x": 0, "z": 15 },
+    "glideDeparture": { "x": 9, "z": 13 },
+    "frontEntryClear": { "xMin": -2, "xMax": 2, "zMin": 8, "zMax": 15.7 },
+    "frontCrossingClear": { "xMin": -8, "xMax": 9.7, "zMin": 8.1, "zMax": 10.3 },
+    "stationApproachOffsetZ": 3.1,
+    "approachHalfWidth": 0.6,
+    "approachHalfDepth": 0.7,
+    "front": "No front wall, continuous rail or central post. Existing terrain supports cannon arrival, parachute departure and the front station approach outside the structural deck.",
+    "centre": "Rearward holography at local(0,-2.9), not on the arrival or front station route.",
+    "landingNet": { "x": 0, "z": 14.5, "width": 3.6, "depth": 2, "surfaceY": 0.03, "collision": "soft decoration only; existing terrain owns support" },
+    "noUpperWalkingFloors": true
+  },
+  "stations": [
+    { "id": "skills-0", "x": -7, "z": 1, "width": 3, "depth": 1.35, "height": 1.3, "approach": { "x": -7, "z": 4.1 } },
+    { "id": "skills-1", "x": -6, "z": -6, "width": 3, "depth": 1.35, "height": 1.3, "approach": { "x": -6, "z": -2.9 } },
+    { "id": "skills-2", "x": 6, "z": -6, "width": 3, "depth": 1.35, "height": 1.3, "approach": { "x": 6, "z": -2.9 } },
+    { "id": "skills-3", "x": 7, "z": 1, "width": 3, "depth": 1.35, "height": 1.3, "approach": { "x": 7, "z": 4.1 } },
+    { "id": "skills-4", "x": 0, "z": 6, "width": 3, "depth": 1.35, "height": 1.3, "approach": { "x": 0, "z": 9.1 } }
+  ],
+  "hulls": [
+    { "id": "lab-post-back-left", "role": "post", "kind": "box", "x": -9.1, "z": -7, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 6.8, "yaw": 0 },
+    { "id": "lab-post-back-mid-left", "role": "post", "kind": "box", "x": -4.5, "z": -7, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 7.7, "yaw": 0 },
+    { "id": "lab-post-back-mid-right", "role": "post", "kind": "box", "x": 4.5, "z": -7, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 7.2, "yaw": 0 },
+    { "id": "lab-post-back-right", "role": "post", "kind": "box", "x": 9.1, "z": -7, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 7.8, "yaw": 0 },
+    { "id": "lab-post-left-middle", "role": "post", "kind": "box", "x": -9.1, "z": -2, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 5.2, "yaw": 0 },
+    { "id": "lab-post-right-middle", "role": "post", "kind": "box", "x": 9.1, "z": -2, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 5.4, "yaw": 0 },
+    { "id": "lab-post-left-front", "role": "post", "kind": "box", "x": -9.1, "z": 6.7, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 4.4, "yaw": 0 },
+    { "id": "lab-post-right-front", "role": "post", "kind": "box", "x": 9.1, "z": 6.7, "width": 0.46, "depth": 0.46, "bottom": 0, "height": 4.4, "yaw": 0 },
+    { "id": "skills-0-station", "role": "desk", "kind": "box", "x": -7, "z": 1, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "skills-1-station", "role": "desk", "kind": "box", "x": -6, "z": -6, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "skills-2-station", "role": "desk", "kind": "box", "x": 6, "z": -6, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "skills-3-station", "role": "desk", "kind": "box", "x": 7, "z": 1, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "skills-4-station", "role": "desk", "kind": "box", "x": 0, "z": 6, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "skills-machine", "role": "machine", "kind": "cylinder", "x": 0, "z": -2.9, "radius": 3.2, "width": 6.4, "depth": 6.4, "bottom": 0, "height": 3.2, "yaw": 0 },
+    { "id": "lab-rear-technical-mast", "role": "machine", "kind": "cylinder", "x": -3.65, "z": -6.55, "radius": 0.85, "width": 1.7, "depth": 1.7, "bottom": 0, "height": 7, "yaw": 0 },
+    { "id": "lab-pot-front-left", "role": "furniture", "kind": "cylinder", "x": -9, "z": 5.2, "radius": 0.45, "width": 0.9, "depth": 0.9, "bottom": 0, "height": 0.8, "yaw": 0 },
+    { "id": "lab-pot-back-left", "role": "furniture", "kind": "cylinder", "x": -9, "z": -5.5, "radius": 0.45, "width": 0.9, "depth": 0.9, "bottom": 0, "height": 0.8, "yaw": 0 },
+    { "id": "lab-pot-middle-right", "role": "furniture", "kind": "cylinder", "x": 9, "z": -4.5, "radius": 0.45, "width": 0.9, "depth": 0.9, "bottom": 0, "height": 0.8, "yaw": 0 },
+    { "id": "lab-stool-0", "role": "furniture", "kind": "box", "x": -8.15, "z": 2.4, "width": 0.68, "depth": 0.68, "bottom": 0, "height": 0.86, "yaw": 0 },
+    { "id": "lab-stool-1", "role": "furniture", "kind": "box", "x": -7.15, "z": -4.6, "width": 0.68, "depth": 0.68, "bottom": 0, "height": 0.86, "yaw": 0 },
+    { "id": "lab-stool-2", "role": "furniture", "kind": "box", "x": 7.15, "z": -4.6, "width": 0.68, "depth": 0.68, "bottom": 0, "height": 0.86, "yaw": 0 },
+    { "id": "lab-stool-3", "role": "furniture", "kind": "box", "x": 8.2, "z": 2.4, "width": 0.68, "depth": 0.68, "bottom": 0, "height": 0.86, "yaw": 0 }
+  ],
+  "collisionPolicy": {
+    "solid": "One structural deck plus22 listed conservative hulls. Authoring annotations do not automatically create Rapier colliders.",
+    "softNonSolid": ["cloth", "leaves", "vines", "lamps", "screen schematics", "catch net", "under-deck thrusters", "high crane/dish/windsock"],
+    "noUpperWalkingFloors": true,
+    "existingTerritoryUndersideNotMerged": true
+  },
+  "visualMechanisms": {
+    "thrusters": [ { "x": -8, "z": 1 }, { "x": 0, "z": -3 }, { "x": 8, "z": 1 } ],
+    "thrusterLocalYRange": [ -20.33, -17 ],
+    "sideServiceCableEnvelopeX": [ -13.64, 13.64 ],
+    "rockBelly": "Existing Skills terrain reaches approximately localY=-17.56. Lower motors emerge beneath it; the isolated GLB intentionally has a void filled by runtime terrain.",
+    "allPartsKeepAuthoredPivots": true
+  },
+  "mapProposal": {
+    "architectureClearing": { "width": 20, "depth": 13 },
+    "preserved": ["six physical territories", "four bridge profiles", "five Skills anchors", "cannon arrival", "parachute departure"],
+    "integrationVerification": "2026-10-01: 20x16 structural deck at 38.06 and 22 hulls locally integrated while ARCHITECTURE clearing remains 20x13. Six shared top/coast buffers and four bridge profiles remain exact. Revision-2 actual-module Rapier 7,962, overview 1,953 and CPU world-art 1,285,119 checks pass; final lint/build and all nine static aggregate gates pass. Scoped built-browser desktop/emulated-mobile day/night smoke reports all five imported owners ready, isolated lab-404 fallback/recovery, natural glide, cannon skip and chat/reader pause/focus. Complete transfer/reduced-motion, art, LOD and real-device performance remain separate."
+  },
+  "authoringBudgets": { "trianglesSafetyMax": 135000, "materialsMax": 26, "imagesMax": 10, "textureDimensionMax": 384, "runtimeBytesMax": 8388608, "runtimeMeshesMax": 96, "runtimeTrianglesMax": 180000 },
+  "factualBoundary": "Original fictional architecture and five decorative technical schematic styles. Existing five skill groups stay factual HTML; no scores, project screenshots, certifications or added personal claims.",
+  "status": "Locally integrated static-building prototype. Blender revision-2 GLB and 42-mesh aggregate preserve material/image/bounds parity; shared 20x16 deck/22 hulls are source- and physics-verified. Cosmetic net geometry is lifted by 0.09m, without hull changes. Final local gates, actual master/aggregate GLB views and scoped built-browser desktop/emulated-mobile readiness/fallback/travel/pause/focus smoke pass; complete transfer/reduced-motion behavior, cinematic fidelity, LOD and real-device performance remain open."
+}

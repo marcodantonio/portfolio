@@ -1,0 +1,71 @@
+{
+  "schema": "archipelago-static-building-contract-v1",
+  "asset": "dance-pavilion-v1",
+  "root": "DancePavilion_V1_Origin_At_Deck_Centre",
+  "units": "metres",
+  "axes": "glTF X right, Y up, Z front; Blender(X,-Z,Y)",
+  "deck": { "id": "dance-pavilion-deck", "width": 22, "depth": 16, "bottom": -0.24, "height": 0.24, "walkingTop": 0 },
+  "hulls": [
+    { "id": "post_west_0", "role": "post", "kind": "box", "x": -10.75, "z": -7.75, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_west_1", "role": "post", "kind": "box", "x": -10.75, "z": -2.6, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_west_2", "role": "post", "kind": "box", "x": -10.75, "z": 2.6, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_west_3", "role": "post", "kind": "box", "x": -10.75, "z": 7.75, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_east_0", "role": "post", "kind": "box", "x": 10.75, "z": -7.75, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_east_1", "role": "post", "kind": "box", "x": 10.75, "z": -2.6, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_east_2", "role": "post", "kind": "box", "x": 10.75, "z": 2.6, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "post_east_3", "role": "post", "kind": "box", "x": 10.75, "z": 7.75, "width": 0.5, "depth": 0.5, "bottom": 0, "height": 5.3, "yaw": 0 },
+    { "id": "rear_bench_west", "role": "furniture", "kind": "box", "x": -5.35, "z": -6.48, "width": 3.7, "depth": 1.35, "bottom": 0, "height": 1.4, "yaw": 0 },
+    { "id": "rear_bench_east", "role": "furniture", "kind": "box", "x": 5.35, "z": -6.48, "width": 3.7, "depth": 1.35, "bottom": 0, "height": 1.4, "yaw": 0 },
+    { "id": "side_bench_west", "role": "furniture", "kind": "box", "x": -9.1, "z": -0.5, "width": 1.35, "depth": 3.7, "bottom": 0, "height": 1.4, "yaw": 0 },
+    { "id": "side_bench_east", "role": "furniture", "kind": "box", "x": 9.1, "z": -0.5, "width": 1.35, "depth": 3.7, "bottom": 0, "height": 1.4, "yaw": 0 },
+    { "id": "side_table_0", "role": "furniture", "kind": "cylinder", "x": -2.6, "z": -6.36, "width": 0.88, "depth": 0.88, "bottom": 0, "height": 0.75, "yaw": 0, "radius": 0.44 },
+    { "id": "side_table_1", "role": "furniture", "kind": "cylinder", "x": 2.6, "z": -6.36, "width": 0.88, "depth": 0.88, "bottom": 0, "height": 0.75, "yaw": 0, "radius": 0.44 },
+    { "id": "side_table_2", "role": "furniture", "kind": "cylinder", "x": -9.08, "z": -3.5, "width": 0.88, "depth": 0.88, "bottom": 0, "height": 0.75, "yaw": 0, "radius": 0.44 },
+    { "id": "side_table_3", "role": "furniture", "kind": "cylinder", "x": 9.08, "z": -3.5, "width": 0.88, "depth": 0.88, "bottom": 0, "height": 0.75, "yaw": 0, "radius": 0.44 },
+    { "id": "terracotta_planter_0", "role": "furniture", "kind": "cylinder", "x": -9.6, "z": -6.5, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_1", "role": "furniture", "kind": "cylinder", "x": 9.6, "z": -6.5, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_2", "role": "furniture", "kind": "cylinder", "x": -8.3, "z": -4.65, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_3", "role": "furniture", "kind": "cylinder", "x": 8.3, "z": -4.65, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_4", "role": "furniture", "kind": "cylinder", "x": -9.65, "z": 2.8, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_5", "role": "furniture", "kind": "cylinder", "x": 9.65, "z": 2.8, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_6", "role": "furniture", "kind": "cylinder", "x": -9.6, "z": 6.45, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "terracotta_planter_7", "role": "furniture", "kind": "cylinder", "x": 9.6, "z": 6.45, "width": 0.89, "depth": 0.89, "bottom": 0, "height": 0.84, "yaw": 0, "radius": 0.445 },
+    { "id": "dance_athlete_consultation", "role": "desk", "kind": "box", "x": -7, "z": 5, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "dance_teacher_consultation", "role": "desk", "kind": "box", "x": 7, "z": 5, "width": 3, "depth": 1.35, "bottom": 0, "height": 1.3, "yaw": 0 },
+    { "id": "rear_herb_trough_-1", "role": "furniture", "kind": "box", "x": -5.3, "z": -7.42, "width": 8.15, "depth": 0.54, "bottom": 0, "height": 0.38, "yaw": 0 },
+    { "id": "rear_herb_trough_1", "role": "furniture", "kind": "box", "x": 5.3, "z": -7.42, "width": 8.15, "depth": 0.54, "bottom": 0, "height": 0.38, "yaw": 0 }
+  ],
+  "stations": [{ "kind": "athlete", "x": -7, "z": 5 }, { "kind": "teacher", "x": 7, "z": 5 }],
+  "clearApproach": { "xMin": -5, "xMax": 5, "zMin": -4.8, "zMax": 8 },
+  "softNonSolid": ["pergola beams/roof above head height", "cloth", "leaves and vines", "lanterns", "stationery", "compass motif"],
+  "integrationStatus": "PROPOSED only: root must approve map/hulls/support and actual GLB before gameplay",
+  "runtimeGuards": { "bytesMax": 8388608, "meshesMax": 96, "trianglesMax": 180000 },
+  "factualBoundary": "Athlete/Teacher identity only; no person/statue/results/venue/service claims",
+  "authoringProvenance": {
+    "recipe": "assets/archipelago/blender/build_dance_pavilion_v1.py",
+    "proposalStatusPreserved": true,
+    "placement": "The Blender proposal contains no world anchor: its root is at the local deck centre. Original local geometry/hulls and PROPOSED status are retained above; runtime placement is approved separately below."
+  },
+  "runtimeApproval": {
+    "anchor": { "island": "dance", "territory": "dance", "x": 82, "y": -0.54, "z": 100, "yaw": 0 },
+    "heightPolicy": "Existing shared Dance elevation + 0.06; no authored world-height relocation or asset scaling.",
+    "runtimeGroups": ["shell", "roof", "interior", "decor"],
+    "semanticNodes": ["Dance_shell", "Dance_roof", "Dance_interior", "Dance_decor"],
+    "navigation": {
+      "entry": { "x": 0, "z": 14 },
+      "outsideEntry": { "x": 0, "z": 9 },
+      "insideEntry": { "x": 0, "z": 7 },
+      "bridgeApproachWorld": [{ "x": 69.8, "z": 104 }, { "x": 70.2, "z": 109.5 }, { "x": 77, "z": 110.5 }],
+      "bridgeApproachPolicy": "The original Dance arrival-to-shore chord hits post_west_2 after the new pavilion. Three real-terrain waypoints skirt its west/front side; bridge/arrival endpoints and profiles remain unchanged. WALK_PATHS follows this access; seeded exclusion geometry remains historical to preserve all props.",
+      "approachHalfWidth": 0.6, "approachHalfDepth": 0.6,
+      "stations": [
+        { "id": "dance-0", "hull": "dance_athlete_consultation", "x": -7, "z": 5, "width": 3, "height": 1.3, "depth": 1.35, "approach": { "x": -7, "z": 8.1 } },
+        { "id": "dance-1", "hull": "dance_teacher_consultation", "x": 7, "z": 5, "width": 3, "height": 1.3, "depth": 1.35, "approach": { "x": 7, "z": 8.1 } }
+      ]
+    },
+    "collisionPolicy": "One existing-coast 22x16x0.24 structural floor and 28 authored solid hulls replace four native posts and two desks. No upper walking floor, bridge floor or new terrain. Underfloor timber piers are separate visible foundations, never an additional walking support query.",
+    "seededPlacementPolicy": "Retain the original 22x16 architecture clearing and original connection exclusion geometry solely for seeded props; exclude new Dance hulls from circular RNG rejection, not from physics. Actual WALK_PATHS follows the approved west/front approach. Do not regenerate any of the 196 existing props.",
+    "preserved": ["six entire terrain XYZ/index buffers", "576 Float32 shoreline XYZ vertices", "four bridge profiles", "196 exact props", "21 exact stations", "all arrivals", "two boarding ramps", "four guided-transfer endpoints", "WALK_PATHS except the explicitly approved local Dance approach", "unchanged Rapier controller"],
+    "status": "Shared map/hulls locally approved: actual editable GLB hard POSITION/embedded proposal parity and actual-module Rapier entry/centre/station/support/28 positive plus 28 removed-hull checks pass. The original blocked straight chord is rejected; the approved three-waypoint approach passes both ways. All six terrain buffers and 196 props remain exact. This is not runtime loading, final artistic or device acceptance."
+  }
+}

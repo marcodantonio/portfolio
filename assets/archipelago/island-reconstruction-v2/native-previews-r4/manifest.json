@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+  "revision": 4,
+  "sceneSequence": 0,
+  "queryOnly": true,
+  "hero": {
+    "id": "projects-v2-r4-hero-960-20261005",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "access": "query",
+    "status": "succeeded",
+    "baseRevision": 4,
+    "headRevision": 4,
+    "headSceneSequence": 0,
+    "stale": false,
+    "sceneSequenceBefore": 0,
+    "sceneSequenceAfter": 0,
+    "revisionBefore": 4,
+    "revisionAfter": null,
+    "createdAt": "2026-10-05T00:35:32.268Z",
+    "startedAt": "2026-10-05T00:35:32.299Z",
+    "finishedAt": "2026-10-05T00:36:18.927Z",
+    "result": {
+      "view": "hero",
+      "assetMeshes": 44,
+      "blenderBounds": [
+        [
+          -34.44200134277344,
+          -34.44200134277344,
+          -10
+        ],
+        [
+          34.27458572387695,
+          36.441688537597656,
+          18.914897918701172
+        ]
+      ],
+      "orthographic": true,
+      "diagnosticWater": true,
+      "sampleCount": 8,
+      "temporaryQueryOnly": true,
+      "noRuntimeWaterClaim": true
+    },
+    "error": null,
+    "artifacts": null,
+    "generatedArtifacts": [
+      {
+        "size": 821640,
+        "etag": "646105c53f7fb559747692dd8ab8aa0d",
+        "id": "728777725c38b20a4b2baf713a61934a",
+        "name": "projects-island-v2-hero.png",
+        "mediaType": "image/png",
+        "width": 960,
+        "height": 720
+      }
+    ]
+  },
+  "axes": {
+    "id": "projects-v2-r4-three-axes-20261005",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "access": "query",
+    "status": "succeeded",
+    "baseRevision": 4,
+    "headRevision": 4,
+    "headSceneSequence": 0,
+    "stale": false,
+    "sceneSequenceBefore": 0,
+    "sceneSequenceAfter": 0,
+    "revisionBefore": 4,
+    "revisionAfter": null,
+    "createdAt": "2026-10-05T00:37:31.474Z",
+    "startedAt": "2026-10-05T00:37:31.541Z",
+    "finishedAt": "2026-10-05T00:38:06.729Z",
+    "result": {
+      "views": [
+        {
+          "view": "front",
+          "assetMeshes": 44,
+          "blenderBounds": [
+            [
+              -34.44200134277344,
+              -34.44200134277344,
+              -10
+            ],
+            [
+              34.27458572387695,
+              36.441688537597656,
+              18.914897918701172
+            ]
+          ],
+          "orthographic": true,
+          "diagnosticWater": false,
+          "sampleCount": 8,
+          "temporaryQueryOnly": true,
+          "noRuntimeWaterClaim": true
+        },
+        {
+          "view": "right",
+          "assetMeshes": 44,
+          "blenderBounds": [
+            [
+              -34.44200134277344,
+              -34.44200134277344,
+              -10
+            ],
+            [
+              34.27458572387695,
+              36.441688537597656,
+              18.914897918701172
+            ]
+          ],
+          "orthographic": true,
+          "diagnosticWater": false,
+          "sampleCount": 8,
+          "temporaryQueryOnly": true,
+          "noRuntimeWaterClaim": true
+        },
+        {
+          "view": "top",
+          "assetMeshes": 44,
+          "blenderBounds": [
+            [
+              -34.44200134277344,
+              -34.44200134277344,
+              -10
+            ],
+            [
+              34.27458572387695,
+              36.441688537597656,
+              18.914897918701172
+            ]
+          ],
+          "orthographic": true,
+          "diagnosticWater": false,
+          "sampleCount": 8,
+          "temporaryQueryOnly": true,
+          "noRuntimeWaterClaim": true
+        }
+      ],
+      "temporaryQueryOnly": true,
+      "seaPlaneExported": false
+    },
+    "error": null,
+    "artifacts": null,
+    "generatedArtifacts": [
+      {
+        "size": 209633,
+        "etag": "c3dbf251932a553133ee7f425bbc883d",
+        "id": "b2e4da9a8cf770f8ccc035b0ec68724f",
+        "name": "projects-island-v2-front.png",
+        "mediaType": "image/png",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "size": 198960,
+        "etag": "3eeb53e85646efe686bc9fb46d08f577",
+        "id": "c6ac8b44d8f5a6f46db3dd9cb7f9508b",
+        "name": "projects-island-v2-right.png",
+        "mediaType": "image/png",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "size": 247567,
+        "etag": "00069fc963a98f899ca6b669440c2c31",
+        "id": "a4618b57dc2f0677705c637dce9607fa",
+        "name": "projects-island-v2-top.png",
+        "mediaType": "image/png",
+        "width": 480,
+        "height": 360
+      }
+    ]
+  },
+  "waterlinePerspective": {
+    "id": "projects-v2-r4-waterline-perspective-20261005",
+    "projectId": "706f7c64-0fc2-4bcf-bdfe-0a4157c34a65",
+    "access": "query",
+    "status": "succeeded",
+    "baseRevision": 4,
+    "headRevision": 4,
+    "headSceneSequence": 0,
+    "stale": false,
+    "sceneSequenceBefore": 0,
+    "sceneSequenceAfter": 0,
+    "revisionBefore": 4,
+    "revisionAfter": null,
+    "createdAt": "2026-10-05T00:40:41.179Z",
+    "startedAt": "2026-10-05T00:40:41.211Z",
+    "finishedAt": "2026-10-05T00:41:11.685Z",
+    "result": {
+      "views": [
+        {
+          "name": "west-waterline-perspective",
+          "focusGltf": [
+            -27,
+            2,
+            14
+          ],
+          "eyeGltf": [
+            -42,
+            11,
+            40
+          ],
+          "perspectiveLensMm": 40,
+          "diagnosticSeaY": 0
+        },
+        {
+          "name": "front-waterline-perspective",
+          "focusGltf": [
+            0,
+            2,
+            30
+          ],
+          "eyeGltf": [
+            0,
+            8,
+            75
+          ],
+          "perspectiveLensMm": 48,
+          "diagnosticSeaY": 0
+        }
+      ],
+      "actualAssetMeshes": 44,
+      "temporaryQueryOnly": true,
+      "waterExported": false,
+      "samples": 8,
+      "noRuntimeWaterOrContactApproval": true
+    },
+    "output": {
+      "stdoutTail": "",
+      "stderrTail": "",
+      "truncated": false
+    },
+    "error": null,
+    "artifacts": null,
+    "generatedArtifacts": [
+      {
+        "size": 217237,
+        "etag": "7d739107e685f144a22564b5feae1180",
+        "id": "251ae9ec12149da793e175fcacd3fb73",
+        "name": "projects-island-v2-front-waterline-perspective.png",
+        "mediaType": "image/png",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "size": 245116,
+        "etag": "e55973ee10d98d12fe1a7ee20d173346",
+        "id": "ac636b52093f96ed7fd605141b63182a",
+        "name": "projects-island-v2-west-waterline-perspective.png",
+        "mediaType": "image/png",
+        "width": 480,
+        "height": 360
+      }
+    ]
+  },
+  "interpretation": "Actual native meshes rendered; temporary hero datum at Y0 is not exported/runtime ocean; axes expose whole immersed foundation, not floating-island evidence",
+  "referenceFidelityApproved": false
+}

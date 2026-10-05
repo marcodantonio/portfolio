@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "buildCompletedAt": "2026-10-05T05:04:51Z",
+  "catalogRevision": 7,
+  "actualPostRestartBrowser": {
+    "state": "ready",
+    "canvases": 1,
+    "overflow": false,
+    "stats": {
+      "bytes": "15.74 MiB",
+      "triangles": "109.088",
+      "vertices": "301.854",
+      "resources": "44 / 2 / 6",
+      "bounds": "68.72 × 29.42 × 70.88",
+      "budget": "Oltre il profilo orientativo; master da revisionare"
+    },
+    "faviconStatus": 200,
+    "pageErrors": [],
+    "scope": "Restartedpreview after finalbuild05:04:51UTC; actualselectedR7master only; R8notmounted."
+  },
+  "publicDistSHAParityAfterFinalBuild": true,
+  "transientBeforeRestart": {
+    "http500": [
+      "/favicon.svg",
+      "/models/archipelago/projects-island-v2-r7.glb"
+    ],
+    "readyWaitTimeout": true,
+    "previewHadRemainedRunningAcrossBuild": true,
+    "rootOwnedPIDRestarted": 42334,
+    "newRootOwnedPID": 43576,
+    "userPreview3021Untouched": true
+  },
+  "harness": {
+    "postRestartInvalidSelector": "[data-viewport]canvas",
+    "correctedSelector": "[data-viewport] canvas",
+    "applicationDefect": false
+  },
+  "limits": "Single R7 master reload after restart, not repeated eight-view raster/device/world/AI/performance acceptance."
+}

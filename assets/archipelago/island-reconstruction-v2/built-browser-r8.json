@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-05T07:47:11.149Z",
+  "revision": 8,
+  "asset": "projects-terrain-v2",
+  "preview": "http://127.0.0.1:3060/asset-lab?asset=projects-terrain-v2",
+  "browserHarness": "Playwright CLI portfolio-projects-terrain-oct4; built Astro preview on own3060, user3021 untouched",
+  "build": {
+    "passed": true,
+    "recordedAt": "2026-10-05 07:43:25 UTC",
+    "checkedFiles": 110,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 1,
+    "knownMessages": [
+      "Existing deprecated FormEvent hint",
+      "Existing Vite large-chunk warning"
+    ]
+  },
+  "lint": {
+    "command": "npm run lint",
+    "exitCode": 0
+  },
+  "publicDistSHAParity": true,
+  "observations": {
+    "review": {
+      "views": [
+        {
+          "variant": "master",
+          "shot": "hero",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "master",
+          "shot": "front",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "master",
+          "shot": "right",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "master",
+          "shot": "top",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "batched",
+          "shot": "hero",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "batched",
+          "shot": "front",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "batched",
+          "shot": "right",
+          "canvas": 1,
+          "overflow": false
+        },
+        {
+          "variant": "batched",
+          "shot": "top",
+          "canvas": 1,
+          "overflow": false
+        }
+      ],
+      "mobile": {
+        "canvas": 1,
+        "overflow": false
+      },
+      "errors": []
+    },
+    "exports": [
+      {
+        "file": "projects-island-v2-r8.glb",
+        "status": 200,
+        "bytes": 12044864,
+        "sha256": "61b6696c4c2b69642a391bbc1674617d0cd9943a87972285d4dab79a151a09f2"
+      },
+      {
+        "file": "projects-island-v2-r8-batched.glb",
+        "status": 200,
+        "bytes": 12206456,
+        "sha256": "c55b1cc7fa3ed31fbc2c6ed51b61dbe4e983d5437515517d09806b4885dd2f8f"
+      }
+    ],
+    "missing": {
+      "state": "missing",
+      "canvas": 0
+    },
+    "retry": {
+      "state": "ready",
+      "canvas": 1
+    },
+    "webgl": {
+      "state": "error",
+      "canvas": 0,
+      "referenceVisible": true,
+      "pageErrors": [],
+      "status": "Error creating WebGL context."
+    },
+    "errors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "stats": [
+      [
+        "bytes",
+        "11.64 MiB"
+      ],
+      [
+        "triangles",
+        "84.530"
+      ],
+      [
+        "vertices",
+        "204.200"
+      ],
+      [
+        "resources",
+        "2 / 2 / 6"
+      ],
+      [
+        "bounds",
+        "68.72 × 26.27 × 70.88"
+      ],
+      [
+        "budget",
+        "Oltre il profilo orientativo; master da revisionare"
+      ]
+    ]
+  },
+  "screenshots": [
+    "output/playwright/projects-r8-master-hero-20261005.png",
+    "output/playwright/projects-r8-master-front-20261005.png",
+    "output/playwright/projects-r8-master-right-20261005.png",
+    "output/playwright/projects-r8-master-top-20261005.png",
+    "output/playwright/projects-r8-batched-hero-20261005.png",
+    "output/playwright/projects-r8-batched-front-20261005.png",
+    "output/playwright/projects-r8-batched-right-20261005.png",
+    "output/playwright/projects-r8-batched-top-20261005.png",
+    "output/playwright/projects-r8-batched-resized390-20261005.png",
+    "output/playwright/projects-r8-batched-hero-full-foundation-20261005.png",
+    "output/playwright/projects-r8-handled-webgl-failure-20261005.png"
+  ],
+  "rootActuallyViewedAll11Screenshots": true,
+  "datumScope": "Visual seaY0 clips only hero submerged foundation; off and three axes show full actual source. No export/game water modification.",
+  "rootArtReview": {
+    "acceptedForFinalArt": false,
+    "fullReferenceFidelity": false,
+    "remaining": [
+      "Rear wall remains long and regular",
+      "Earth apron broad and uniform",
+      "Western rock masses still prismatic",
+      "No terrain vegetation yet; it must remain a separate owner"
+    ],
+    "observation": "Actual master and aggregate are visibly coherent and match each other; not close enough to generated or original reference. Foundation observed with datum off is deliberately below sea; diagnostic water is not game ocean."
+  },
+  "notProven": [
+    "Actual physical mobile/touch/GPU/FPS",
+    "Gameplay map, Rapier, sea-foam and navigation integration",
+    "Complete source Boolean union and fully embedded overlaps",
+    "Final artistic acceptance or image-identical reconstruction",
+    "Live AI, deploy or production routing"
+  ],
+  "runtimeMounted": false,
+  "push": false,
+  "deploy": false
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "created": "2026-10-01",
+  "imageGeneration": "Built-in image_gen edit; originals retained",
+  "status": "Art reference only, not certified orthographic geometry",
+  "prompts": [
+    {
+      "file": "reference-sheets-v2/12-cliff-module.png",
+      "editTarget": "reference-sheets-v1/12-cliff-module.png",
+      "styleReference": "User master-map image Sep27",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: a three-view rock asset sheet; Image2 is art-style reference only. Keep the white sheet, three separate front/right/top views, grey-warm limestone, restrained moss/sand, soft studio lighting and richly crafted tropical cartoon material finish. Change ONLY the rock geometry/design away from repeated straight basalt columns: one highly irregular eroded limestone coastal MASS with 5-7 large oblique fractured slabs, broad convex/concave faces, deep diagonal fissures, broken curved shoulders, undercut base and unequal bulges. No identical pillar widths or horizontally stacked uniform blocks. About 8m wide by6m deep by7m tall. Small irregular sandy summit clearing with moss tightly adhering in a few crevices, no chunky green pancakes. Front elevation shows asymmetric mass, right side genuinely different consistent shape, top DIRECTLY OVERHEAD orthographic plan without visible vertical cliff walls. The same geological details and silhouette belong to all3 views. No buildings, people, oceans, UI, text or extra props. Smooth premium sculpted game asset, neither voxel/pixel nor crude low-poly. Do not reproduce Image2 labels or island composition."
+    }
+  ]
+}

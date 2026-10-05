@@ -1,0 +1,29 @@
+{
+  "operationId": "projects-v2-portable-albedo-format-callback-20261005",
+  "status": "succeeded",
+  "revisionBefore": 6,
+  "sceneSequenceAfter": 0,
+  "finishedAt": "2026-10-05T03:35:53.687Z",
+  "result": {
+    "rnaIdentifier": "EXPORT_SCENE_OT_gltf",
+    "classFound": true,
+    "classModule": "io_scene_gltf2",
+    "declaringClass": "ExportGLTF2_Base",
+    "annotationType": "_PropertyDeferred",
+    "itemsType": "function",
+    "callbackSource": "def get_format_items(scene, context):\n\n    items = (('GLB', n_('glTF Binary (.glb)'),\n              n_('Exports a single file, with all data packed in binary form. '\n                 'Most efficient and portable, but more difficult to edit later')),\n             ('GLTF_SEPARATE', n_('glTF Separate (.gltf + .bin + textures)'),\n              n_('Exports multiple files, with separate JSON, binary and texture data. '\n                 'Easiest to edit later')))\n\n    addon_preferences = bpy.context.preferences.addons['io_scene_gltf2'].preferences\n    if addon_preferences and addon_preferences.allow_embedded_format:\n        # At initialization, the preferences are not yet loaded\n        # The second line check is needed until the PR is merge in Blender, for github CI tests\n        items += (('GLTF_EMBEDDED', n_('glTF Embedded (.gltf)'),\n                   n_('Exports a single file, with all data packed in JSON. '\n                      'Less efficient than binary, but easier to edit later')\n                   ),)\n\n    return items\n",
+    "contextItems": [
+      [
+        "GLB",
+        "glTF Binary (.glb)",
+        "Exports a single file, with all data packed in binary form. Most efficient and portable, but more difficult to edit later"
+      ],
+      [
+        "GLTF_SEPARATE",
+        "glTF Separate (.gltf + .bin + textures)",
+        "Exports multiple files, with separate JSON, binary and texture data. Easiest to edit later"
+      ]
+    ]
+  },
+  "notActualMaterialIntegration": true
+}

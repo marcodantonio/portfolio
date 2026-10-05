@@ -1,0 +1,241 @@
+{
+  "version": 5,
+  "created": "2026-10-01",
+  "previous": "manifest-v4.json",
+  "pipeline": {
+    "service": "Higgsfield MCP / dedicated 3D Jutsu Blender project; no website automation",
+    "images": "Reused reference-sheets-v1/04-suspended-lab.png and the user's supplied Skills image. No new image job in this batch; prior image provenance and billing snapshots stay historical in earlier manifests.",
+    "meshes": "Reference-led manual Blender 5.2 authoring; no callable automatic image-to-3D reconstruction used.",
+    "export": "GLB2 Y-up metres, portable embedded PBR; editable Blender master retained.",
+    "aggregation": "Static semantic material batching, exact Float32 weld; no decimation or LOD.",
+    "status": "Four static building aggregates plus one independently articulated explorer are locally mounted. Five other static catalog studies are not mounted.",
+    "artAcceptance": false,
+    "hardwarePerformance": "unverified",
+    "productionDeployment": false
+  },
+  "laboratory": {
+    "projectId": "ede5c0f4-3553-4556-8860-2e250d4b66b1",
+    "projectUrl": "https://higgsfield.ai/3d-jutsu/ede5c0f4-3553-4556-8860-2e250d4b66b1",
+    "revision": 2,
+    "operationId": "lab-v1-net-finish-20261001-004",
+    "operationStatus": "succeeded",
+    "originalAuthoringOperationId": "lab-v1-authoring-20261001-002",
+    "root": "SuspendedLab_V1_Origin_At_Deck_Centre",
+    "groups": [
+      "Lab_shell",
+      "Lab_roof",
+      "Lab_interior",
+      "Lab_decor"
+    ],
+    "previewArtifactId": "91724be9026c8ced1ff542ace7d58280",
+    "preview": "assets/archipelago/previews-v5/suspended-lab-v1-r2-eevee.png",
+    "sourceContract": "assets/archipelago/laboratory-contract-v1.json",
+    "master": {
+      "file": "public/models/archipelago/suspended-lab-v1.glb",
+      "bytes": 4815560,
+      "triangles": 100304,
+      "vertices": 86641,
+      "meshes": 1339,
+      "materials": 22,
+      "textures": 18,
+      "embeddedImages": 9
+    },
+    "aggregate": {
+      "file": "public/models/archipelago/suspended-lab-v1-batched.glb",
+      "bytes": 4020100,
+      "triangles": 100304,
+      "vertices": 86641,
+      "meshes": 42,
+      "materials": 22,
+      "textures": 18,
+      "embeddedImages": 9
+    },
+    "boundsYUpMetres": [
+      24.8755,
+      29.8203,
+      23.55
+    ],
+    "boundsMinYUpMetres": [
+      -12.4377,
+      -20.33,
+      -8
+    ],
+    "boundsMaxYUpMetres": [
+      12.4377,
+      9.4903,
+      15.55
+    ],
+    "geometryDiagnostics": {
+      "nearZeroAreaTriangles": 0,
+      "normalOppositionCandidates": 0,
+      "interpretation": "Structural diagnostics only, not manifold or artistic acceptance."
+    },
+    "aggregationParity": "PASS: material/PBR definitions, embedded image bytes, source hash, triangle accounting and bounds.",
+    "inGameMaster": false,
+    "inGameAggregate": true,
+    "loaderLimitsUnchanged": {
+      "bytes": 8388608,
+      "meshes": 96,
+      "triangles": 180000
+    },
+    "sharedSupport": {
+      "anchor": [
+        -9,
+        38.06,
+        -133
+      ],
+      "deckMetres": [
+        20,
+        16,
+        0.24
+      ],
+      "hulls": 22,
+      "stations": 5,
+      "architectureClearingMetres": [
+        20,
+        13
+      ]
+    },
+    "physicalInvariants": "All six existing terrain top position/index/coast-XYZ buffers, four bridge profiles, five Skills station anchors, cannon arrival and glide departure are unchanged. No new territory.",
+    "revisions": {
+      "revision1": "Original source, GLB and .blend retained outside serving as recoverable authoring baseline.",
+      "revision2": "Only 26 decorative catch-net meshes raised 0.09m so the net appears above the original terrain. Geometry counts, bounds and all solid hulls unchanged."
+    },
+    "mechanisms": "Static authored crane/dish/windsock/holography/engines; not rigged animation. Three engines at localY -17 to -20.33 emerge below existing runtime rock, intentionally omitted from isolated GLB.",
+    "failedReviewOperation": {
+      "id": "lab-v1-axes-review-20261001-003",
+      "status": "timed_out",
+      "committedSceneUnchanged": true,
+      "deliveredImages": 0,
+      "note": "Four-render Blender query produced no artifacts; actual exported GLB front/right/top/hero were instead inspected through the local Asset Lab."
+    },
+    "fallback": "Owned procedural Skills fallback matches the structural deck and shared solid envelopes; the replacement rectangular soft net hides independently with it. No external guided-transfer cannon removed."
+  },
+  "worldArt": {
+    "ocean": "Fragment-only multiscale derivative-filtered gradient normals, directional swell faces, scattered light, caustics, bounded irregular shore wash/cellular foam, broader variance-filtered sun reflection and restrained whitecaps. Original planar reflection, geometry and lifecycle retained.",
+    "oceanResources": {
+      "meshes": 1,
+      "materials": 1,
+      "coastalTextures": 1,
+      "reflectionTargets": 1,
+      "desktopTriangles": 10368,
+      "compactTriangles": 3200,
+      "desktopReflectionPixels": 768,
+      "compactReflectionPixels": 384,
+      "desktopReflectionHz": 24,
+      "compactReflectionHz": 15,
+      "note": "Configured quality limits, not measured frame rates."
+    },
+    "mineral": "Fragment-only world-aligned grey/brown deposits, filtered irregular vertical joints, bounded concavity relief and coastal wetness. Correct final batch/instance/view transform respected; timber finish preserved. Macro rock geometry remains artistically incomplete.",
+    "importedLighting": "Two bounded owned non-shadow-casting warm interior lights for each mounted building, including the laboratory. No new postprocessing pass."
+  },
+  "verification": {
+    "lint": "PASS",
+    "build": "PASS: 105 Astro files, zero errors/warnings, one legacy FormEvent hint and retained large Vite chunk warning",
+    "actualModuleRapier": {
+      "status": "PASS",
+      "assertions": 7962,
+      "labUnobstructedSupports": 106,
+      "labHullContacts": 22,
+      "labRemovedHullNegativeFixtures": 22,
+      "terrainSampleCount": 1353,
+      "maxTerrainY": 38.056841,
+      "terrainBelowDeckTop": true
+    },
+    "overview": {
+      "status": "PASS",
+      "assertions": 1953,
+      "readySamplesPerViewport": 2062900,
+      "viewports": [
+        [
+          1680,
+          945
+        ],
+        [
+          1024,
+          768
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "clippedSamples": 0
+    },
+    "worldArtCPU": {
+      "status": "PASS",
+      "assertions": 1285119,
+      "note": "Geometry/map/clearance/ownership only; not shader compilation or hardware FPS."
+    },
+    "staticAggregateChecks": "PASS: all nine catalog aggregates; final laboratory master and aggregate checked separately.",
+    "character": "Existing explorer actual-GLB/pose/negative fixtures PASS; not new character art acceptance.",
+    "browserAssetLab": "Both final r2 variants HTTP200/ready, one canvas, zero normal errors/warnings. Hero/front/right/top of both actual GLBs inspected. Right view identical, maximum other mean absolute raster difference 0.00085/255; this is observed aggregation parity, not art acceptance.",
+    "browserBuiltWorld": "Final owned preview3046, desktop1680x945 and mobile390x844 day/night; all five owners ready, one canvas, no horizontal overflow. Laboratory HTTP404 fixture retains unique fallback, other owners ready; removed fixture and reload recovers ready.",
+    "browserTransfer": "Skills glide naturally reaches Projects; return cannon skip reaches original Skills(-9,-118) and restores canvas focus. Full character/transfer gait remains unverified.",
+    "browserContent": "E opens selected capability HTML immediately; close restores canvas. Mobile chat INPUT and reader H2 keep player fixed under held arrows; close returns the respective launch button/canvas. No AI request submitted and audio remains off.",
+    "physicalDevice": "unverified",
+    "allRoutesManualTraversal": "not reverified",
+    "reducedMotionAndNoJS": "Prior scoped historical smoke retained; not claimed as fresh complete checks for this batch.",
+    "deployment": "No commit, push, deploy, remote migration, secret read or production mutation."
+  },
+  "openVisualFindings": [
+    "World architecture occupies too little of sparse, plateau-like land compared with the densely inhabited terraces in the references.",
+    "Cliff macro geometry remains rounded/puffy; revised shader alone does not reconstruct vertical fractured rock volumes.",
+    "Laboratory front space and decorative architecture remain sparse, screens schematic, wood grain uniform and central cyan holography visually weak.",
+    "Lighting, local contact contrast and adult explorer proportions/art/rig remain incomplete.",
+    "Five remaining semantic place subjects still lack their faithful complete building masters; nonmounted catalog studies are not substitutes.",
+    "Physical-device performance, LOD, compression, authored skeletal gait and full cinematic fidelity are unverified."
+  ],
+  "files": [
+    {
+      "path": "public/models/archipelago/suspended-lab-v1.glb",
+      "bytes": 4815560,
+      "sha256": "8be08e9218bd581101c6c8bceb14aa19e4aa942c245e687c99f7e17e750319c2"
+    },
+    {
+      "path": "public/models/archipelago/suspended-lab-v1-batched.glb",
+      "bytes": 4020100,
+      "sha256": "971cc8e1a24a83f88ece30c6f7aab196106b5586bcca422d7a5063d93955fe44"
+    },
+    {
+      "path": "assets/archipelago/blender/suspended-lab-v1.blend",
+      "bytes": 14770354,
+      "sha256": "edc1b1752973f5a88b6a990bd7fc923dfb0c927777e803a3c20ebcad19af8523"
+    },
+    {
+      "path": "assets/archipelago/blender/suspended-lab-v1-r2.blend",
+      "bytes": 14770354,
+      "sha256": "ff2d7782ced5fd15853351ca4ffd344e79d01fc2b1fa4506f519f407e098cadf"
+    },
+    {
+      "path": "assets/archipelago/blender/suspended-lab-v1-r1.glb",
+      "bytes": 4814520,
+      "sha256": "e8ad3290d6997ebd1931d6ac5f3e3c7cf738ed08ff08bbb2bc006adadc3f5df7"
+    },
+    {
+      "path": "assets/archipelago/blender/build_suspended_lab_v1.py",
+      "bytes": 59234,
+      "sha256": "8a78c6b1858268c8148168d67be03aab475067d33f43f50341218ac2d44d7055"
+    },
+    {
+      "path": "assets/archipelago/blender/finish_suspended_lab_v1.py",
+      "bytes": 1360,
+      "sha256": "38338755cd1ce6e94463a686a54e47ad29e58f14fbc1b5762458ed0cfbf31ddc"
+    },
+    {
+      "path": "assets/archipelago/blender/review_suspended_lab_v1.py",
+      "bytes": 1412,
+      "sha256": "bb44165d9f62d21d99ad4216d9a10bd3c7d2efe9ca36b19f7315a1281e2f9882"
+    },
+    {
+      "path": "assets/archipelago/previews-v5/suspended-lab-v1-eevee.png",
+      "bytes": 630387,
+      "sha256": "e4de7b17f4e4569d02d2c4e1b1c4ca6df03d3f876b311f7fc8bd374bb16ac010"
+    },
+    {
+      "path": "assets/archipelago/previews-v5/suspended-lab-v1-r2-eevee.png",
+      "bytes": 414748,
+      "sha256": "e81686ad6c024619571325204daa543c8dead888c43333352307d4ff94520fe5"
+    }
+  ]
+}

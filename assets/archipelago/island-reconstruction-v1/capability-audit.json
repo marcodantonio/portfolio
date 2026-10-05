@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-03T13:34:18Z",
+  "workflow": "Higgsfield multiview image-to-3D for bare Projects terrain",
+  "check": "Read-only continuation revalidation; no submissions, charges, permissions, dependencies installed or source changes",
+  "plugin": {
+    "id": "plugin_asdk_app_6a3293e129088191abf0875820e839da",
+    "installed": true,
+    "status": "enabled",
+    "user_enabled": true
+  },
+  "dependencies": {
+    "declared": 1,
+    "optional": true,
+    "canonical_plugin": "Higgsfield",
+    "installed": true,
+    "enabled": true,
+    "unresolved_apps": []
+  },
+  "execution": {
+    "generate_3d_tool_exposed": false,
+    "estimate_3d_tool_exposed": false,
+    "model_catalog_available": true,
+    "scope": "Current ALL_TOOLS and live provider catalog, not public website or hidden APIs",
+    "refresh_guaranteed_to_fix": false
+  },
+  "conclusion": "No declared missing external plugin dependency was found. A documented 3D execution tool is still absent. This is not a credential/credit failure and does not authorize substituting Blender authoring or bypassing the MCP.",
+  "required_external_change": "Expose a callable documented Higgsfield generate_3d tool, or obtain an explicit different supported production workflow choice.",
+  "goal_status": "active_incomplete",
+  "blocked_audit_turn": 2,
+  "prior_goal_turn_classification": "progress: four completed/saved image jobs, new current catalog/execution evidence and verified image/billing provenance",
+  "this_goal_turn_classification": "new evidence: installed/enabled plugin and dependency resolution verified live, no unresolved declared apps; no 3D job/model produced"
+}

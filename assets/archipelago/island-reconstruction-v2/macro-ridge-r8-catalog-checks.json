@@ -1,0 +1,954 @@
+{
+  "recordedAt": "2026-10-05T07:40:56.741Z",
+  "master": {
+    "command": "node scripts/island-asset-check.mjs",
+    "exitCode": 0,
+    "result": [
+      {
+        "asset": "bridge",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/bridge-v1.glb",
+        "bytes": 4100252,
+        "triangles": 75792,
+        "vertices": 55350,
+        "meshes": 330,
+        "materials": 6,
+        "textures": 4,
+        "embeddedImages": 4,
+        "boundsYUpMetres": [
+          5.997,
+          2.4156,
+          3.6058
+        ],
+        "boundsMinYUpMetres": [
+          -2.9985,
+          -0.65,
+          -1.8041
+        ],
+        "boundsMaxYUpMetres": [
+          2.9985,
+          1.7656,
+          1.8016
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 456,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "palm",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/palm-v1.glb",
+        "bytes": 2393780,
+        "triangles": 55746,
+        "vertices": 30170,
+        "meshes": 37,
+        "materials": 7,
+        "textures": 6,
+        "embeddedImages": 6,
+        "boundsYUpMetres": [
+          6.6475,
+          7.2481,
+          5.9879
+        ],
+        "boundsMinYUpMetres": [
+          -3.0193,
+          -0.1455,
+          -2.98
+        ],
+        "boundsMaxYUpMetres": [
+          3.6283,
+          7.1027,
+          3.008
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 192,
+          "normalOppositionCandidates": 49,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "cliff",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/cliff-v1.glb",
+        "bytes": 7381968,
+        "triangles": 49910,
+        "vertices": 74971,
+        "meshes": 163,
+        "materials": 3,
+        "textures": 5,
+        "embeddedImages": 5,
+        "boundsYUpMetres": [
+          8.1664,
+          6.9632,
+          5.3407
+        ],
+        "boundsMinYUpMetres": [
+          -4.0038,
+          -0.0008,
+          -2.7315
+        ],
+        "boundsMaxYUpMetres": [
+          4.1626,
+          6.9624,
+          2.6093
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 14,
+          "normalOppositionCandidates": 90,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "cliff-v2",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/cliff-v2.glb",
+        "bytes": 4216144,
+        "triangles": 19722,
+        "vertices": 18323,
+        "meshes": 37,
+        "materials": 3,
+        "textures": 5,
+        "embeddedImages": 5,
+        "boundsYUpMetres": [
+          7.9868,
+          6.9771,
+          5.992
+        ],
+        "boundsMinYUpMetres": [
+          -3.9912,
+          0,
+          -2.9985
+        ],
+        "boundsMaxYUpMetres": [
+          3.9956,
+          6.9771,
+          2.9935
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 2,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "studio",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/studio-v1.glb",
+        "bytes": 6042448,
+        "triangles": 100732,
+        "vertices": 120005,
+        "meshes": 689,
+        "materials": 19,
+        "textures": 12,
+        "embeddedImages": 10,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "boundsMinYUpMetres": [
+          -6.05,
+          -0.58,
+          -4.1597
+        ],
+        "boundsMaxYUpMetres": [
+          6.05,
+          5.5639,
+          4.05
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "studio-v2",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/studio-v2.glb",
+        "bytes": 7909672,
+        "triangles": 144702,
+        "vertices": 160994,
+        "meshes": 1189,
+        "materials": 25,
+        "textures": 17,
+        "embeddedImages": 11,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "boundsMinYUpMetres": [
+          -6.05,
+          -0.58,
+          -4.1597
+        ],
+        "boundsMaxYUpMetres": [
+          6.05,
+          5.5639,
+          4.05
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "workshop",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/workshop-v1.glb",
+        "bytes": 8496964,
+        "triangles": 133340,
+        "vertices": 189352,
+        "meshes": 1521,
+        "materials": 21,
+        "textures": 11,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          30,
+          9.9,
+          24
+        ],
+        "boundsMinYUpMetres": [
+          -15,
+          -0.5,
+          -12
+        ],
+        "boundsMaxYUpMetres": [
+          15,
+          9.4,
+          12
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": false,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "archive",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/archive-v1.glb",
+        "bytes": 10856840,
+        "triangles": 168324,
+        "vertices": 185238,
+        "meshes": 3354,
+        "materials": 29,
+        "textures": 21,
+        "embeddedImages": 15,
+        "boundsYUpMetres": [
+          18.1634,
+          12.4166,
+          14.055
+        ],
+        "boundsMinYUpMetres": [
+          -9.0884,
+          -0.7032,
+          -7
+        ],
+        "boundsMaxYUpMetres": [
+          9.075,
+          11.7135,
+          7.055
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": false,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "laboratory",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/suspended-lab-v1.glb",
+        "bytes": 4815560,
+        "triangles": 100304,
+        "vertices": 86641,
+        "meshes": 1339,
+        "materials": 22,
+        "textures": 18,
+        "embeddedImages": 9,
+        "boundsYUpMetres": [
+          24.8755,
+          29.8203,
+          23.55
+        ],
+        "boundsMinYUpMetres": [
+          -12.4377,
+          -20.33,
+          -8
+        ],
+        "boundsMaxYUpMetres": [
+          12.4377,
+          9.4903,
+          15.55
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "harbor",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/welcome-harbor-v1.glb",
+        "bytes": 3401416,
+        "triangles": 85940,
+        "vertices": 60715,
+        "meshes": 859,
+        "materials": 21,
+        "textures": 15,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          6.364,
+          6.06,
+          4.685
+        ],
+        "boundsMinYUpMetres": [
+          -3.13,
+          -0.36,
+          -2.486
+        ],
+        "boundsMaxYUpMetres": [
+          3.234,
+          5.7,
+          2.199
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "dance",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/dance-pavilion-v1.glb",
+        "bytes": 7481860,
+        "triangles": 153778,
+        "vertices": 141084,
+        "meshes": 1928,
+        "materials": 18,
+        "textures": 16,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          22.7696,
+          6.4834,
+          16.4629
+        ],
+        "boundsMinYUpMetres": [
+          -11.3636,
+          -0.24,
+          -8.259
+        ],
+        "boundsMaxYUpMetres": [
+          11.406,
+          6.2434,
+          8.2039
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "lighthouse",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/contact-lighthouse-v1.glb",
+        "bytes": 8843728,
+        "triangles": 115524,
+        "vertices": 187011,
+        "meshes": 2025,
+        "materials": 25,
+        "textures": 9,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          11.7405,
+          17.73,
+          8.174
+        ],
+        "boundsMinYUpMetres": [
+          -8.8925,
+          -0.5,
+          -2.848
+        ],
+        "boundsMaxYUpMetres": [
+          2.848,
+          17.23,
+          5.326
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": false,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "projects-terrain",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/projects-island-v1.glb",
+        "bytes": 2139148,
+        "triangles": 47820,
+        "vertices": 28134,
+        "meshes": 22,
+        "materials": 2,
+        "textures": 4,
+        "embeddedImages": 4,
+        "boundsYUpMetres": [
+          64.6672,
+          22.8644,
+          59.0942
+        ],
+        "boundsMinYUpMetres": [
+          -30.8892,
+          -10,
+          -30.1549
+        ],
+        "boundsMaxYUpMetres": [
+          33.7779,
+          12.8644,
+          28.9393
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "projects-terrain-v2",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/projects-island-v2-r8.glb",
+        "bytes": 12044864,
+        "triangles": 84530,
+        "vertices": 204200,
+        "meshes": 30,
+        "materials": 2,
+        "textures": 6,
+        "embeddedImages": 6,
+        "boundsYUpMetres": [
+          68.7166,
+          26.2667,
+          70.8837
+        ],
+        "boundsMinYUpMetres": [
+          -34.442,
+          -10,
+          -36.4417
+        ],
+        "boundsMaxYUpMetres": [
+          34.2746,
+          16.2667,
+          34.442
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "belowStudyProfile": false,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      }
+    ]
+  },
+  "batched": {
+    "command": "node scripts/island-asset-check.mjs --batched",
+    "exitCode": 0,
+    "result": [
+      {
+        "asset": "bridge",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/bridge-v1-batched.glb",
+        "bytes": 4360044,
+        "triangles": 75216,
+        "vertices": 54198,
+        "meshes": 8,
+        "materials": 6,
+        "textures": 4,
+        "embeddedImages": 4,
+        "boundsYUpMetres": [
+          5.997,
+          2.4156,
+          3.6058
+        ],
+        "boundsMinYUpMetres": [
+          -2.9985,
+          -0.65,
+          -1.8041
+        ],
+        "boundsMaxYUpMetres": [
+          2.9985,
+          1.7656,
+          1.8016
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "palm",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/palm-v1-batched.glb",
+        "bytes": 2407328,
+        "triangles": 55554,
+        "vertices": 30164,
+        "meshes": 7,
+        "materials": 7,
+        "textures": 6,
+        "embeddedImages": 6,
+        "boundsYUpMetres": [
+          6.6475,
+          7.2481,
+          5.9879
+        ],
+        "boundsMinYUpMetres": [
+          -3.0193,
+          -0.1455,
+          -2.98
+        ],
+        "boundsMaxYUpMetres": [
+          3.6283,
+          7.1027,
+          3.008
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 49,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "cliff",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/cliff-v1-batched.glb",
+        "bytes": 7450572,
+        "triangles": 49896,
+        "vertices": 74959,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 5,
+        "embeddedImages": 5,
+        "boundsYUpMetres": [
+          8.1664,
+          6.9632,
+          5.3407
+        ],
+        "boundsMinYUpMetres": [
+          -4.0038,
+          -0.0008,
+          -2.7315
+        ],
+        "boundsMaxYUpMetres": [
+          4.1626,
+          6.9624,
+          2.6093
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 90,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "cliff-v2",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/cliff-v2-batched.glb",
+        "bytes": 4170472,
+        "triangles": 19722,
+        "vertices": 18323,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 5,
+        "embeddedImages": 5,
+        "boundsYUpMetres": [
+          7.9868,
+          6.9771,
+          5.992
+        ],
+        "boundsMinYUpMetres": [
+          -3.9912,
+          0,
+          -2.9985
+        ],
+        "boundsMaxYUpMetres": [
+          3.9956,
+          6.9771,
+          2.9935
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 2,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "studio",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/studio-v1-batched.glb",
+        "bytes": 5847368,
+        "triangles": 100732,
+        "vertices": 120005,
+        "meshes": 30,
+        "materials": 19,
+        "textures": 12,
+        "embeddedImages": 10,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "boundsMinYUpMetres": [
+          -6.05,
+          -0.58,
+          -4.1597
+        ],
+        "boundsMaxYUpMetres": [
+          6.05,
+          5.5639,
+          4.05
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "studio-v2",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/studio-v2-batched.glb",
+        "bytes": 7271624,
+        "triangles": 144702,
+        "vertices": 160994,
+        "meshes": 39,
+        "materials": 25,
+        "textures": 17,
+        "embeddedImages": 11,
+        "boundsYUpMetres": [
+          12.1,
+          6.1439,
+          8.2097
+        ],
+        "boundsMinYUpMetres": [
+          -6.05,
+          -0.58,
+          -4.1597
+        ],
+        "boundsMaxYUpMetres": [
+          6.05,
+          5.5639,
+          4.05
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "workshop",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/workshop-v1-batched.glb",
+        "bytes": 7816240,
+        "triangles": 133340,
+        "vertices": 189346,
+        "meshes": 30,
+        "materials": 21,
+        "textures": 11,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          30,
+          9.9,
+          24
+        ],
+        "boundsMinYUpMetres": [
+          -15,
+          -0.5,
+          -12
+        ],
+        "boundsMaxYUpMetres": [
+          15,
+          9.4,
+          12
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "archive",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/archive-v1-batched.glb",
+        "bytes": 8152984,
+        "triangles": 168324,
+        "vertices": 185238,
+        "meshes": 43,
+        "materials": 29,
+        "textures": 21,
+        "embeddedImages": 15,
+        "boundsYUpMetres": [
+          18.1634,
+          12.4166,
+          14.055
+        ],
+        "boundsMinYUpMetres": [
+          -9.0884,
+          -0.7032,
+          -7
+        ],
+        "boundsMaxYUpMetres": [
+          9.075,
+          11.7135,
+          7.055
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "laboratory",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/suspended-lab-v1-batched.glb",
+        "bytes": 4020100,
+        "triangles": 100304,
+        "vertices": 86641,
+        "meshes": 42,
+        "materials": 22,
+        "textures": 18,
+        "embeddedImages": 9,
+        "boundsYUpMetres": [
+          24.8755,
+          29.8203,
+          23.55
+        ],
+        "boundsMinYUpMetres": [
+          -12.4377,
+          -20.33,
+          -8
+        ],
+        "boundsMaxYUpMetres": [
+          12.4377,
+          9.4903,
+          15.55
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "harbor",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/welcome-harbor-v1-batched.glb",
+        "bytes": 3070900,
+        "triangles": 85940,
+        "vertices": 60715,
+        "meshes": 37,
+        "materials": 21,
+        "textures": 15,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          6.364,
+          6.06,
+          4.685
+        ],
+        "boundsMinYUpMetres": [
+          -3.13,
+          -0.36,
+          -2.486
+        ],
+        "boundsMaxYUpMetres": [
+          3.234,
+          5.7,
+          2.199
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "dance",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/dance-pavilion-v1-batched.glb",
+        "bytes": 6490128,
+        "triangles": 153778,
+        "vertices": 141070,
+        "meshes": 28,
+        "materials": 18,
+        "textures": 16,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          22.7696,
+          6.4834,
+          16.4629
+        ],
+        "boundsMinYUpMetres": [
+          -11.3636,
+          -0.24,
+          -8.259
+        ],
+        "boundsMaxYUpMetres": [
+          11.406,
+          6.2434,
+          8.2039
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "lighthouse",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/contact-lighthouse-v1-batched.glb",
+        "bytes": 7392264,
+        "triangles": 115524,
+        "vertices": 187011,
+        "meshes": 45,
+        "materials": 25,
+        "textures": 9,
+        "embeddedImages": 8,
+        "boundsYUpMetres": [
+          11.7405,
+          17.73,
+          8.174
+        ],
+        "boundsMinYUpMetres": [
+          -8.8925,
+          -0.5,
+          -2.848
+        ],
+        "boundsMaxYUpMetres": [
+          2.848,
+          17.23,
+          5.326
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "projects-terrain",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/projects-island-v1-batched.glb",
+        "bytes": 2110536,
+        "triangles": 47820,
+        "vertices": 28134,
+        "meshes": 2,
+        "materials": 2,
+        "textures": 4,
+        "embeddedImages": 4,
+        "boundsYUpMetres": [
+          64.6672,
+          22.8644,
+          59.0942
+        ],
+        "boundsMinYUpMetres": [
+          -30.8892,
+          -10,
+          -30.1549
+        ],
+        "boundsMaxYUpMetres": [
+          33.7779,
+          12.8644,
+          28.9393
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": true,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      },
+      {
+        "asset": "projects-terrain-v2",
+        "file": "/Users/marcodantonio/Workspaces/portfolio/public/models/archipelago/projects-island-v2-r8-batched.glb",
+        "bytes": 12206456,
+        "triangles": 84530,
+        "vertices": 204200,
+        "meshes": 2,
+        "materials": 2,
+        "textures": 6,
+        "embeddedImages": 6,
+        "boundsYUpMetres": [
+          68.7166,
+          26.2667,
+          70.8837
+        ],
+        "boundsMinYUpMetres": [
+          -34.442,
+          -10,
+          -36.4417
+        ],
+        "boundsMaxYUpMetres": [
+          34.2746,
+          16.2667,
+          34.442
+        ],
+        "geometryDiagnostics": {
+          "nearZeroAreaTriangles": 0,
+          "normalOppositionCandidates": 0,
+          "interpretation": "Review candidates, not manifold or visual certification"
+        },
+        "aggregationParity": "PASS: source hash, material/texture definitions, image bytes, triangle accounting and bounds",
+        "belowStudyProfile": false,
+        "status": "STRUCTURE PASS only; not visual, LOD, collision or performance acceptance"
+      }
+    ]
+  },
+  "scope": "Actual catalog structure/parity, not complete art/runtime/FPS approval. Legacy geometry diagnostic warnings retained."
+}
